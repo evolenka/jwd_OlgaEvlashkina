@@ -1,1 +1,1 @@
-Задания для курса Jawa Web Development
+Задания по курсу Jawa Web Development
