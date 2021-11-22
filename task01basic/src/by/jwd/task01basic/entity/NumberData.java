@@ -12,6 +12,7 @@ public class NumberData {
 	}
 
 	public void addNumberData(double number) {
+		//comment
 		data.add(number);
 	}
 
