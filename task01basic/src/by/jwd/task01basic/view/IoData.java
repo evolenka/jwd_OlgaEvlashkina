@@ -6,11 +6,13 @@ import java.io.InputStreamReader;
 
 public class IoData {
 
+	// method to show all availiable menu to user
 	public void showMenu() {
 		System.out.println("nMenu:\n" + "1 - Arithmetic operations\n" + "2 - Geometric operations:\n"
 				+ "    1 - Rectangle\n" + "    2 - Triangle\n" + "3 - Physics\n" + "4 - Text/char operations\n");
 	}
 
+	// methods to show each task of under the respective menu point
 	public void showArithmeticTask() {
 		System.out.println("++Task: Find average of two numbers++");
 	}
@@ -34,6 +36,7 @@ public class IoData {
 				"++Task: Input any character in the range [a-z] to find its ordinal number, the previous and the next characters++");
 	}
 
+	// method to read data inputed by user
 	public String input() {
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -45,11 +48,13 @@ public class IoData {
 		}
 	}
 
+	// method to output the message to user
 	public String print(String message) {
 		System.out.println(message);
 		return " ";
 	}
 
+	// method to output the responce to user
 	public String printResponce(String message, String result) {
 		System.out.println(message + result);
 		return " ";

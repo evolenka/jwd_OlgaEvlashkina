@@ -23,13 +23,15 @@ import by.jwd.task01basic.view.IoData;
 public class Runner {
 
 	public static void main(String[] args) {
-		
-		//show user the menu
+
+		// show menu to user
 
 		IoData iodata = new IoData();
 		iodata.showMenu();
 
-		//
+		// ask user to choose point in menu, then depending on point, show the
+		// respective task and ask to input data
+
 		String commandName;
 		iodata.print("Please choose the respective point of menu (1, 2, 3, or 4)\n>>");
 		commandName = iodata.input();
@@ -38,6 +40,10 @@ public class Runner {
 		Command command;
 
 		switch (commandName) {
+
+		// case 1 - arithmetic task
+		// pass the inputed numbers as parameters (params)to the method execute()
+
 		case "1": {
 			iodata.showArithmeticTask();
 			iodata.print("Please input two numbers with space\n>>");
@@ -46,7 +52,13 @@ public class Runner {
 			command.execute(params);
 		}
 			break;
+
+		// case 2 - geometric tasks
+		// ask user to choose the point in submenu and then to input data, pass the
+		// point of submenu and data as parameters (params) to the method execute()
+
 		case "2": {
+
 			iodata.print("Please input 1 to choose operations for rectangle or 2  - for triangle\n>>");
 			params = new String[2];
 			params[0] = iodata.input();
@@ -65,6 +77,10 @@ public class Runner {
 			command.execute(params);
 		}
 			break;
+
+		// case 3 - physics
+		// pass the inputed data as parameters (params)to the method execute()
+
 		case "3": {
 			iodata.showPhysicsTask();
 			iodata.print("Please input four numbers for V, V1, T1 and T2 respectively (with spaces)\n>> ");
@@ -73,6 +89,10 @@ public class Runner {
 			command.execute(params);
 		}
 			break;
+
+		// case 4 - text task
+		// pass the inputed character as parameter (params) to the method execute()
+
 		case "4": {
 			iodata.showTextTask();
 			iodata.print("Please input any character from a to z\n>>");
