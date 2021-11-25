@@ -9,24 +9,32 @@ import by.jwd.task01basic.view.IoData;
 public class PhysicsControllerImpl implements Command {
 	IoData iodata = new IoData();
 	PhysicsService physicsService = new PhysicsServiceImpl();
+	PhysicsData physicsData = new PhysicsData();
 
 	@Override
-	public String execute(String[] params) {
+	public String execute(String[] params) throws IllegalArgumentException {
 		try {
-			PhysicsData physicsData = new PhysicsData();
+			for (String i : params) {
+				if (Integer.parseInt(i) < 0) {
+					throw new IllegalArgumentException();
+				}
+			}
 			physicsData.setBoatSpeed(Integer.parseInt(params[0]));
 			physicsData.setRiverSpeed(Integer.parseInt(params[1]));
 			physicsData.setTimeWithStream(Integer.parseInt(params[2]));
 			physicsData.setTimeAgainstStream(Integer.parseInt(params[3]));
-
+			
 			int result = physicsService.doCalculation(physicsData);
 			return iodata.printResponce("The distance =  ", Integer.toString(result));
+			
 		} catch (NumberFormatException e) {
-			return iodata.print("Incorrect format of numbers");
-		}
-
-		catch (ArrayIndexOutOfBoundsException e) {
-			return iodata.print("Four numbers are requested");
+			return iodata.print("Incorrect input: wrong format of numbers");
+			
+		} catch (IllegalArgumentException e) {
+			return iodata.print("Incorrect input: numbers should be positive");
+			
+		} catch (ArrayIndexOutOfBoundsException e) {
+			return iodata.print("Incorrect input: four numbers are requested");
 		}
 	}
 }

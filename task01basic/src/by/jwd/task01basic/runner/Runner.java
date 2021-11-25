@@ -4,7 +4,7 @@ import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.controller.impl.ArithmeticControllerImpl;
 import by.jwd.task01basic.controller.impl.GeometricControllerImpl;
 import by.jwd.task01basic.controller.impl.PhysicsControllerImpl;
-import by.jwd.task01basic.controller.impl.TextOperationControllerImpl;
+import by.jwd.task01basic.controller.impl.CharOperationsControllerImpl;
 import by.jwd.task01basic.view.IoData;
 
 /* Java basics:
@@ -18,7 +18,7 @@ import by.jwd.task01basic.view.IoData;
  3. Physics:
    Task: Calculate the distance traveled by the boat, if its speed in still water is V (km / h), the speed of the river is V1 (km / h), the time of movement on the river is T1 (h), and time against the stream of the river - T2 (h)++ (31)
  4. Text:
-   Task: Input any character and find its ordinal number, the previous and the next characters(33)*/
+   Task: Input any character and find its number designation, the previous and the next characters(33)*/
 
 public class Runner {
 
@@ -95,10 +95,10 @@ public class Runner {
 
 		case "4": {
 			iodata.showTextTask();
-			iodata.print("Please input any character from a to z\n>>");
+			iodata.print("Please input any character\n>>");
 			params = new String[1];
 			params[0] = iodata.input();
-			command = new TextOperationControllerImpl();
+			command = new CharOperationsControllerImpl();
 			command.execute(params);
 		}
 			break;

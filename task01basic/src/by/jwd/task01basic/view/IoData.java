@@ -8,7 +8,7 @@ public class IoData {
 
 	// method to show all availiable menu to user
 	public void showMenu() {
-		System.out.println("nMenu:\n" + "1 - Arithmetic operations\n" + "2 - Geometric operations:\n"
+		System.out.println("+++Menu+++:\n" + "1 - Arithmetic operations\n" + "2 - Geometric operations:\n"
 				+ "    1 - Rectangle\n" + "    2 - Triangle\n" + "3 - Physics\n" + "4 - Text/char operations\n");
 	}
 
@@ -33,7 +33,7 @@ public class IoData {
 
 	public void showTextTask() {
 		System.out.println(
-				"++Task: Input any character in the range [a-z] to find its ordinal number, the previous and the next characters++");
+				"++Task: Input any character and find its number designation, the previous and the next characters++");
 	}
 
 	// method to read data inputed by user

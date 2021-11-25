@@ -16,7 +16,7 @@ public class Rectangle {
 		return length;
 	}
 
-	public void setLength(int length) {
+	public void setLength(double length) {
 		this.length = length;
 	}
 

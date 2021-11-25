@@ -7,7 +7,6 @@ public class ArithmeticServiceImpl implements ArithmeticService {
 
 	@Override
 	public double calculate(NumberData numberData) {
-
 		return (numberData.getNumberData().get(0) + numberData.getNumberData().get(1)) / 2;
 	}
 }

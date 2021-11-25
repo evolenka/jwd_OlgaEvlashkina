@@ -19,14 +19,14 @@ public class ArithmeticControllerImpl implements Command {
 			numberData.addNumberData(Integer.parseInt(params[0]));
 			numberData.addNumberData(Integer.parseInt(params[1]));
 			result = arithmeticservice.calculate(numberData);
-			return iodata.printResponce("The average of the given numbers =  ", Double.toString(result));
+			return iodata.printResponce("The average of two numbers =  ", Double.toString(result));
 
 		} catch (NumberFormatException e) {
-			return iodata.print("Incorrect format of numbers");
+			return iodata.print("Incorrect input: wrong format of numbers");
 		}
 
 		catch (ArrayIndexOutOfBoundsException e) {
-			return iodata.print("Two numbers are requested");
+			return iodata.print("Incorrect input: two numbers are requested");
 		}
 	}
 }
