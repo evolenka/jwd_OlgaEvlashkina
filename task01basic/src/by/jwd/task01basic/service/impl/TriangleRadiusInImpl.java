@@ -7,6 +7,7 @@ public class TriangleRadiusInImpl implements TriangleService {
 	
 	@Override
 	public double doCalculation(Triangle triangle) {
+		
 		return (triangle.getSide1()) / (2 * (Math.sqrt(3)));
 	}
 }

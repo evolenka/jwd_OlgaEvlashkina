@@ -6,13 +6,13 @@ import java.io.InputStreamReader;
 
 public class IoData {
 
-	// method to show all availiable menu to user
+	// show available menu to user
 	public void showMenu() {
-		System.out.println("+++Menu+++:\n" + "1 - Arithmetic operations\n" + "2 - Geometric operations:\n"
-				+ "    1 - Rectangle\n" + "    2 - Triangle\n" + "3 - Physics\n" + "4 - Text/char operations\n");
+		System.out.println("+++Task menu+++:\n" + "1 - Arithmetic\n" + "2 - Geometry:\n" + "    1 - Rectangle\n"
+				+ "    2 - Triangle\n" + "3 - Physics\n" + "4 - Text/char operations\n");
 	}
 
-	// methods to show each task of under the respective menu point
+	// description of each task
 	public void showArithmeticTask() {
 		System.out.println("++Task: Find average of two numbers++");
 	}
@@ -36,7 +36,7 @@ public class IoData {
 				"++Task: Input any character and find its number designation, the previous and the next characters++");
 	}
 
-	// method to read data inputed by user
+	// read data inputed by user
 	public String input() {
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -48,13 +48,13 @@ public class IoData {
 		}
 	}
 
-	// method to output the message to user
+	// output message to user
 	public String print(String message) {
 		System.out.println(message);
 		return " ";
 	}
 
-	// method to output the responce to user
+	// output responce to user
 	public String printResponce(String message, String result) {
 		System.out.println(message + result);
 		return " ";

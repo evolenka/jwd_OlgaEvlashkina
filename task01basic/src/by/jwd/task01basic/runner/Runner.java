@@ -10,13 +10,14 @@ import by.jwd.task01basic.view.IoData;
 /* Java basics:
  1. Arithmetic:
    Task: Find average of two numbers (5)
- 2. Geometric Arithmetic:
+ 2. Geometry:
    2.1. Rectangle:
         Task: The width of rectangle is half the length. Find the area of a rectangle (7)
    2.2. Triangle:
         Task: Find the area of the equilateral triangle, its height, the radius of the inscribed and circumscribed circles(19)
  3. Physics:
-   Task: Calculate the distance traveled by the boat, if its speed in still water is V (km / h), the speed of the river is V1 (km / h), the time of movement on the river is T1 (h), and time against the stream of the river - T2 (h)++ (31)
+   Task: Calculate the distance traveled by the boat, if its speed in still water is V (km / h), the speed of
+    the river is V1 (km / h), the time of movement on the river is T1 (h), and time against the stream of the river - T2 (h) (31)
  4. Text:
    Task: Input any character and find its number designation, the previous and the next characters(33)*/
 
@@ -29,8 +30,8 @@ public class Runner {
 		IoData iodata = new IoData();
 		iodata.showMenu();
 
-		// ask user to choose point in menu, then depending on point, show the
-		// respective task and ask to input data
+		// ask user to choose point in menu, then show the respective task and ask to
+		// input data
 
 		String commandName;
 		iodata.print("Please choose the respective point of menu (1, 2, 3, or 4)\n>>");
@@ -42,7 +43,7 @@ public class Runner {
 		switch (commandName) {
 
 		// case 1 - arithmetic task
-		// pass the inputed numbers as parameters (params)to the method execute()
+		// pass the inputed numbers as parameters (params) to the method execute()
 
 		case "1": {
 			iodata.showArithmeticTask();
@@ -65,9 +66,11 @@ public class Runner {
 			if (params[0].equals("1")) {
 				iodata.showTaskRectangle();
 				iodata.print("Please input the length of rectangle>>");
+
 			} else if (params[0].equals("2")) {
 				iodata.showTaskTriangle();
 				iodata.print("Please input the side of an equilateral triangle\n>>");
+
 			} else {
 				iodata.print("Incorrect menu point");
 				break;

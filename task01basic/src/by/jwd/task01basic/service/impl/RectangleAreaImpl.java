@@ -7,6 +7,7 @@ public class RectangleAreaImpl implements RectangleService {
 
 	@Override
 	public double doCalculation(Rectangle rectangle) {
+		
 		return rectangle.getWidth() * rectangle.getLength();
 	}
 }

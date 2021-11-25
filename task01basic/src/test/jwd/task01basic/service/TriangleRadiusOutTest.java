@@ -36,7 +36,8 @@ public class TriangleRadiusOutTest {
 	}
 
 	@Test(dataProvider = "DataForRadiusOut")
-	public void testRadiusInCalculation(double a, double c) {
+	public void testRadiusOutCalculation(double a, double c) {
+		
 		triangle.setSide1(a);
 		double actual = triangleService.doCalculation(triangle);
 		double expected = c;

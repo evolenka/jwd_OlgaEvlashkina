@@ -19,6 +19,7 @@ public class ConvertToCharServiceImpl implements ConvertToCharService {
 		else if (index == 126) {
 			nextChar = '0';
 			previousChar = (char) (index - 1);
+			
 		} else {
 			nextChar = (char) (index + 1);
 			previousChar = (char) (index - 1);

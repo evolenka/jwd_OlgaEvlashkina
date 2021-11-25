@@ -36,6 +36,7 @@ public class TriangleAreaTest {
 
 	@Test(dataProvider = "DataForArea")
 	public void testAreaCalculation(double a, double c) {
+		
 		triangle.setSide1(a);
 		double actual = triangleService.doCalculation(triangle);
 		double expected = c;

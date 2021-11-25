@@ -37,6 +37,7 @@ public class TriangleHeightTest {
 
 	@Test(dataProvider = "DataForHeight")
 	public void testHeightCalculation(double a, double c) {
+		
 		triangle.setSide1(a);
 		double actual = triangleService.doCalculation(triangle);
 		double expected = c;

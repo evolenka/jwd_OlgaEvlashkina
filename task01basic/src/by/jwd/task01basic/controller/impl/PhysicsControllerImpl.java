@@ -7,6 +7,7 @@ import by.jwd.task01basic.service.impl.PhysicsServiceImpl;
 import by.jwd.task01basic.view.IoData;
 
 public class PhysicsControllerImpl implements Command {
+	
 	IoData iodata = new IoData();
 	PhysicsService physicsService = new PhysicsServiceImpl();
 	PhysicsData physicsData = new PhysicsData();

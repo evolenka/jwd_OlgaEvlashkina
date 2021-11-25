@@ -7,7 +7,8 @@ public class PhysicsServiceImpl implements PhysicsService {
 
 	@Override
 	public int doCalculation(PhysicsData physicsData) {
-		return (physicsData.getBoatSpeed() + physicsData.getRiverSpeed()) * physicsData.getTimeWithStream()
+		
+		return physicsData.getBoatSpeed() * physicsData.getTimeWithStream()
 				+ (physicsData.getBoatSpeed() - physicsData.getRiverSpeed()) * physicsData.getTimeAgainstStream();
 	}
 }

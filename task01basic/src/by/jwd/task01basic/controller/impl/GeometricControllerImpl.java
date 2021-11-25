@@ -19,7 +19,7 @@ public class GeometricControllerImpl implements Command {
 	TriangleService triangleService;
 
 	@Override
-	public String execute(String[] params) {
+	public String execute(String[] params) throws IllegalArgumentException {
 
 		try {
 			double length = Double.parseDouble(params[1]);
@@ -36,7 +36,7 @@ public class GeometricControllerImpl implements Command {
 				rectangleService = new RectangleAreaImpl();
 
 				double result = rectangleService.doCalculation(rectangle);
-				return iodata.printResponce("The rectangle square =  ", Double.toString(result));
+				return iodata.printResponce("The rectangle area =  ", Double.toString(result));
 
 			} else {
 

@@ -28,16 +28,17 @@ public class PhysicsServiceTest {
 	public Object[][] createDataForDistance() {
 		return new Object[][] {
 			{ new int[] { 0, 0, 0, 0 }, 0 },
-			{ new int[] { 1, 1, 1, 1 }, 2 },
-			{ new int[] { 5, 2, 3, 2 }, 23 },
+			{ new int[] { 1, 1, 1, 1 }, 1 },
+			{ new int[] { 5, 2, 3, 2 }, 19 },
 			{ new int[] { 2, 0, 0, 1 }, 0 },
-			{ new int[] { 5, 1, 2, 5 }, 10 },
-			{ new int[] {Integer.MAX_VALUE, 1, 0, 0}, Integer.MAX_VALUE},
-			{ new int[] {Integer.MAX_VALUE, 1, 1, Integer.MAX_VALUE}, -2}};
+			{ new int[] { 5, 1, 2, 5 }, 5 },
+			{ new int[] {Integer.MAX_VALUE, 1, 0, Integer.MAX_VALUE}, Integer.MAX_VALUE},
+			{ new int[] {Integer.MAX_VALUE, 1, 1, 0}, -2}};
 	}
 	
 	@Test(dataProvider = "DataForPhysics")
 	public void testDistance(int[] ab, int c) {
+		
 		physicsData.setBoatSpeed(ab[0]);
 		physicsData.setTimeWithStream(ab[1]);
 		physicsData.setTimeAgainstStream(ab[2]);

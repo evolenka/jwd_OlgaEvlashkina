@@ -7,6 +7,7 @@ import by.jwd.task01basic.service.impl.ArithmeticServiceImpl;
 import by.jwd.task01basic.view.IoData;
 
 public class ArithmeticControllerImpl implements Command {
+	
 	IoData iodata = new IoData();
 	ArithmeticService arithmeticservice = new ArithmeticServiceImpl();
 
@@ -15,10 +16,12 @@ public class ArithmeticControllerImpl implements Command {
 
 		NumberData numberData = new NumberData();
 		double result;
+		
 		try {
 			numberData.addNumberData(Integer.parseInt(params[0]));
 			numberData.addNumberData(Integer.parseInt(params[1]));
 			result = arithmeticservice.calculate(numberData);
+			
 			return iodata.printResponce("The average of two numbers =  ", Double.toString(result));
 
 		} catch (NumberFormatException e) {

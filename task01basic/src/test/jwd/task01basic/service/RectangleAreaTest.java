@@ -37,8 +37,10 @@ public class RectangleAreaTest {
 
 	@Test(dataProvider = "DataForArea")
 	public void testAreaCalculation(double[] ab, double c) {
+		
 		rectangle.setLength(ab[0]);
 		rectangle.setWidth(ab[1]);
+		
 		double actual = rectangleService.doCalculation(rectangle);
 		double expected = c;
 		assertEquals(actual, expected);

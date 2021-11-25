@@ -35,9 +35,11 @@ public class ArithmeticTest {
 
 	@Test (dataProvider = "DataForAverage")
 	public void testCalculationAverage(double[] ab, double c) {
+		
 		NumberData numberdata = new NumberData(); 
 		numberdata.addNumberData(ab[0]);
 		numberdata.addNumberData(ab[1]);
+		
 		double actual = arithmetic.calculate(numberdata);
 		double expected = c;
 		assertEquals(actual, expected);

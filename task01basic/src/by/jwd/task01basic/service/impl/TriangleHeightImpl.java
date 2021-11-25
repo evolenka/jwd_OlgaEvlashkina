@@ -7,6 +7,7 @@ public class TriangleHeightImpl implements TriangleService{
 	
 	@Override
 	public double doCalculation(Triangle triangle) {
+		
 		return (Math.sqrt(3)) / 2 * triangle.getSide1();
 	}
 }
