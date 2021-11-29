@@ -3,7 +3,8 @@ package by.jwd.task01basic.service.impl;
 import by.jwd.task01basic.service.ConvertToCharService;
 
 public class ConvertToCharServiceImpl implements ConvertToCharService {
-
+	
+	@Override
 	public char[] doAction(int index) {
 
 		char[] result = new char[2];
@@ -19,7 +20,7 @@ public class ConvertToCharServiceImpl implements ConvertToCharService {
 		else if (index == 126) {
 			nextChar = '0';
 			previousChar = (char) (index - 1);
-			
+
 		} else {
 			nextChar = (char) (index + 1);
 			previousChar = (char) (index - 1);

@@ -3,11 +3,11 @@ package by.jwd.task01basic.service.impl;
 import by.jwd.task01basic.entity.Triangle;
 import by.jwd.task01basic.service.TriangleService;
 
-public class TriangleRadiusOutImpl implements TriangleService {
+public class TriangleHeightServiceImpl implements TriangleService{
 	
 	@Override
 	public double doCalculation(Triangle triangle) {
 		
-		return triangle.getSide1() / (Math.sqrt(3));
+		return (Math.sqrt(3)) / 2 * triangle.getSide1();
 	}
 }

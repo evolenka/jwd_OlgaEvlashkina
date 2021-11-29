@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import by.jwd.task01basic.service.ConvertToCharService;
 import by.jwd.task01basic.service.impl.ConvertToCharServiceImpl;
 
-public class ConvertToCharServiceTest {
+public class ConvertToCharTest {
 
 	ConvertToCharService convertToChar = new ConvertToCharServiceImpl();
 
@@ -22,7 +22,7 @@ public class ConvertToCharServiceTest {
 
 	}
 
-	@Test(dataProvider = "DataForConvertToChar")
+	@Test(groups = {"service"}, dataProvider = "DataForConvertToChar")
 	public void testConvertToChar(char[] c, int a) {
 
 		char[] actual = convertToChar.doAction(a);

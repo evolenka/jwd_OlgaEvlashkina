@@ -70,6 +70,6 @@ public class Triangle {
 
 	@Override
 	public String toString() {
-		return "Triangle [side1=" + side1 + ", side2=" + side2 + ", side3=" + side3 + "]";
+		return "Triangle first side =" + side1 + ", Triangle second side =" + side2 + ", Triangle third side =" + side3;
 	}
 }

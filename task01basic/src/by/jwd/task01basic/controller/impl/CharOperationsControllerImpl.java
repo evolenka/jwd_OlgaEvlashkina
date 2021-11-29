@@ -1,6 +1,6 @@
 package by.jwd.task01basic.controller.impl;
 
-import by.jwd.task01basic.view.IoData;
+import by.jwd.task01basic.view.Output;
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.service.ConvertToCharService;
 import by.jwd.task01basic.service.ConvertToIntService;
@@ -9,7 +9,7 @@ import by.jwd.task01basic.service.impl.ConvertToIntServiceImpl;
 
 public class CharOperationsControllerImpl implements Command {
 
-	IoData iodata = new IoData();
+	Output output = new Output();
 	ConvertToIntService convertToInt = new ConvertToIntServiceImpl();
 	ConvertToCharService convertToChar = new ConvertToCharServiceImpl();
 
@@ -19,19 +19,19 @@ public class CharOperationsControllerImpl implements Command {
 		int index = convertToInt.doAction(params[0].charAt(0));
 		char[] result = convertToChar.doAction(index);
 
-		iodata.printResponce("The index of your character - ", Integer.toString(index));
+		output.printResponce("The index of your character - ", Integer.toString(index));
 
 		if (result[0] == '0') {
-			return iodata.print("The next character - no")
-					+ iodata.printResponce("The previous character  - ", Character.toString(result[1]));
+			return output.print("The next character - no")
+					+ output.printResponce("The previous character  - ", Character.toString(result[1]));
 
 		} else if (result[1] == '0') {
-			return iodata.printResponce("The next character  - ", Character.toString(result[0]))
-					+ iodata.print("The previous character - no");
+			return output.printResponce("The next character  - ", Character.toString(result[0]))
+					+ output.print("The previous character - no");
 
 		} else {
-			return iodata.printResponce("The next character - ", Character.toString(result[0]))
-					+ iodata.printResponce("The previous character  - ", Character.toString(result[1]));
+			return output.printResponce("The next character - ", Character.toString(result[0]))
+					+ output.printResponce("The previous character  - ", Character.toString(result[1]));
 		}
 	}
 }

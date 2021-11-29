@@ -82,7 +82,7 @@ public class PhysicsData {
 
 	@Override
 	public String toString() {
-		return "PhysicsData [boatSpeed=" + boatSpeed + ", riverSpeed=" + riverSpeed + ", timeAgainstStream="
-				+ timeAgainstStream + ", timeWithStream=" + timeWithStream + "]";
+		return "Boat speed =" + boatSpeed + ", River speed =" + riverSpeed + ", Time passed against stream ="
+				+ timeAgainstStream + ", Time passed with stream =" + timeWithStream;
 	}
 }

@@ -3,23 +3,23 @@ package by.jwd.task01basic.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NumberData {
+public class NumberData<T> {
 
-	private List<Double> data;
+	private List<T> data;
 
 	public NumberData() {
 		data = new ArrayList<>();
 	}
 
-	public void addNumberData(double number) {
+	public void addNumberData(T number) {
 		data.add(number);
 	}
 
-	public List<Double> getNumberData() {
+	public List<T> getNumberData() {
 		return data;
 	}
 
-	public void setNumberData(List<Double> data) {
+	public void setNumberData(List<T> data) {
 		this.data = data;
 	}
 
@@ -39,7 +39,7 @@ public class NumberData {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		NumberData other = (NumberData) obj;
+		NumberData<?> other = (NumberData<?>) obj;
 		if (data == null) {
 			if (other.data != null)
 				return false;
@@ -50,6 +50,6 @@ public class NumberData {
 
 	@Override
 	public String toString() {
-		return "NumberData [data=" + data + "]";
+		return "data: " + data;
 	}
 }

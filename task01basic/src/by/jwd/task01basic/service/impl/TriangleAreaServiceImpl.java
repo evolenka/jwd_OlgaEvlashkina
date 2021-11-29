@@ -3,7 +3,7 @@ package by.jwd.task01basic.service.impl;
 import by.jwd.task01basic.entity.Triangle;
 import by.jwd.task01basic.service.TriangleService;
 
-public class TriangleAreaImpl implements TriangleService {
+public class TriangleAreaServiceImpl implements TriangleService {
 	
 	@Override
 	public double doCalculation(Triangle triangle) {
