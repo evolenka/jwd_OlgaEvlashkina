@@ -1,0 +1,17 @@
+2021-11-29 23:53:45 [main] TRACE jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - Start
+2021-11-29 23:53:45 [main] ERROR jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - wrong quantity of args
+ 2021-11-30 22:55:39 [main] TRACE jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - Start
+2021-11-30 22:55:39 [main] ERROR jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - wrong format of args
+2021-11-30 22:56:51 [main] ERROR jwd.task01basic.controller.impl.PhysicsControllerImpl - wrong quantity of args
+2021-11-30 23:00:16 [main] ERROR jwd.task01basic.controller.impl.SumOfPositiveRowMemberControllerImpl - wrong format of args
+2021-11-30 23:00:16 [main] ERROR jwd.task01basic.controller.impl.SumOfPositiveRowMemberControllerImpl - wrong format of args
+2021-11-30 23:07:40 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:07:40 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:07:40 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong format of args
+2021-11-30 23:07:40 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong format of args
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - end validation
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - end validation
+2021-12-01 00:20:40 [main] ERROR jwd.task01basic.controller.impl.GuessNumberControllerImpl - wrong format of args
+2021-12-01 00:20:40 [main] ERROR jwd.task01basic.controller.impl.GuessNumberControllerImpl - wrong format of args

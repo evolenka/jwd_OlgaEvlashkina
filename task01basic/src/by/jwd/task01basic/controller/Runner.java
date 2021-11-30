@@ -1,10 +1,10 @@
-package by.jwd.task01basic.runner;
+package by.jwd.task01basic.controller;
 
-import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.controller.impl.TriangleControllerImpl;
 import by.jwd.task01basic.controller.impl.RectangleAreaControllerImpl;
 import by.jwd.task01basic.controller.impl.SumOfOddNumberControllerImpl;
 import by.jwd.task01basic.controller.impl.SumOfPositiveRowMemberControllerImpl;
+import by.jwd.task01basic.controller.impl.SwapExtraTaskControllerImpl;
 import by.jwd.task01basic.controller.impl.PhysicsControllerImpl;
 import by.jwd.task01basic.controller.impl.QuantityOfPositiveNumberControllerImpl;
 import by.jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl;
@@ -22,7 +22,7 @@ import by.jwd.task01basic.view.Output;
 /* Linear tasks (5,7,19,31,33)
  * Condidional tasks (5,7,19,31,33)
  * Loops tasks (5,7,19,31,33)
- */
+ * Extra task (to swap numbers in 3 ways)*/
 
 public class Runner {
 
@@ -43,7 +43,7 @@ public class Runner {
 		String[] params = null;
 		Command command;
 
-		output.print("Please choose the respective point of menu (1, 2, or 3)\n>>");
+		output.print("Please choose the respective point of menu (1, 2, 3 or 4)\n>>");
 		commandName = input.read();
 
 		switch (commandName) {
@@ -77,14 +77,14 @@ public class Runner {
 			}
 				break;
 			case "4": {
-				output.print("Please input four numbers for V, V1, T1 and T2 respectively (with spaces)\n");
+				output.print("Please input four numbers for V, V1, T1 and T2 respectively (with spaces)\n>>");
 				params = input.read().split("\\s+");
 				command = new PhysicsControllerImpl();
 				command.execute(params);
 			}
 				break;
 			case "5": {
-				output.print("Please input any character\n");
+				output.print("Please input any character\n>>");
 				params = input.read().split("\\s+");
 				command = new CharOperationsControllerImpl();
 				command.execute(params);
@@ -126,14 +126,14 @@ public class Runner {
 				break;
 			case "4": {
 				output.print("Please input five numbers for the length and width of the rectangle"
-						+ " and for the measures of the brick x,y,z respectively (with spaces)\n");
+						+ " and for the measures of the brick x,y,z respectively (with spaces)\n>>");
 				params = input.read().split("\\s+");
 				command = new DoesBrickFitRectangleControllerImpl();
 				command.execute(params);
 			}
 				break;
 			case "5": {
-				output.print("Please input your password\n");
+				output.print("Please input your password\n>>");
 				params = input.read().split("\\s+");
 				command = new AccessByPasswordControllerImpl();
 				command.execute(params);
@@ -172,14 +172,14 @@ public class Runner {
 			}
 				break;
 			case "4": {
-				output.print("Please input five numbers with spaces\n");
+				output.print("Please input five numbers with spaces\n>>");
 				params = input.read().split("\\s+");
 				command = new GuessNumberControllerImpl();
 				command.execute(params);
 			}
 				break;
 			case "5": {
-				output.print("Please input any natural number\n");
+				output.print("Please input any natural number\n>>");
 				params = input.read().split("\\s+");
 				command = new MaxDigitOfNumberControllerImpl();
 				command.execute(params);
@@ -190,6 +190,17 @@ public class Runner {
 			}
 		}
 			break;
+
+		/* extra swap task */
+		case "4": {
+			output.showExtraTask();
+			output.print("Please input two numbers with spaces\n>>");
+			params = input.read().split("\\s+");
+			command = new SwapExtraTaskControllerImpl();
+			command.execute(params);
+		}
+			break;
+
 		default:
 			output.print("Incorrect menu point");
 		}

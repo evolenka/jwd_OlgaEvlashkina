@@ -1,5 +1,8 @@
 package by.jwd.task01basic.controller.impl;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.entity.Rectangle;
@@ -13,6 +16,8 @@ public class DoesBrickFitRectangleControllerImpl implements Command {
 	RectangleLogicService service = new DoesBrickFitRectangleServiceImpl();
 	NumberData<Double> numberData = new NumberData<>();
 	Rectangle rectangle = new Rectangle();
+
+	static Logger LOGGER = LogManager.getLogger(DoesBrickFitRectangleControllerImpl.class);
 
 	@Override
 	public String execute(String[] params) {
@@ -45,12 +50,15 @@ public class DoesBrickFitRectangleControllerImpl implements Command {
 				return output.print("The brick does not fit the rectangle hole");
 
 		} catch (NumberFormatException e) {
+			LOGGER.error("wrong format of args");
 			return output.print("Incorrect input: wrong format of numbers");
 
 		} catch (IllegalArgumentException e) {
+			LOGGER.error("negative or 0");
 			return output.print("Incorrect input: numbers should be positive and can not be equal to 0");
 
 		} catch (ArrayIndexOutOfBoundsException e) {
+			LOGGER.error("wrong guantity of args");
 			return output.print("Incorrect input: five numbers are requested");
 		}
 	}

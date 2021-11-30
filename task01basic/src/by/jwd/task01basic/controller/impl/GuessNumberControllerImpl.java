@@ -1,6 +1,10 @@
 package by.jwd.task01basic.controller.impl;
 
 import java.util.List;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.GuessNumberService;
@@ -12,6 +16,8 @@ public class GuessNumberControllerImpl implements Command {
 	Output output = new Output();
 	GuessNumberService service = new GuessNumberServiceImpl();
 	NumberData<Integer> numberData = new NumberData<>();
+	
+	static Logger LOGGER = LogManager.getLogger(GuessNumberControllerImpl.class);
 
 	@Override
 	public String execute(String[] params) {
@@ -32,10 +38,12 @@ public class GuessNumberControllerImpl implements Command {
 							+ result.get(2).getNumberData().toString());
 
 		} catch (NumberFormatException e) {
+			LOGGER.error("wrong format of args");
 			return output.print("Incorrect input: wrong format of numbers");
 		}
 
 		catch (ArrayIndexOutOfBoundsException e) {
+			LOGGER.error("wrong quantity of args");
 			return output.print("Incorrect input: five numbers are requested");
 		}
 	}

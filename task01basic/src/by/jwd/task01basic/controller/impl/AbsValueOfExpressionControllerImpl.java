@@ -1,5 +1,7 @@
 package by.jwd.task01basic.controller.impl;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.ArithmeticDoubleService;
@@ -8,13 +10,15 @@ import by.jwd.task01basic.view.Output;
 
 public class AbsValueOfExpressionControllerImpl implements Command {
 
+	static Logger LOGGER = LogManager.getLogger(AbsValueOfExpressionControllerImpl.class);
+
 	Output output = new Output();
 	ArithmeticDoubleService service = new AbsValueOfExpressionServiceImpl();
 	NumberData<Double> numberData = new NumberData<>();
 
 	@Override
 	public String execute(String[] params) {
-
+		
 		double result;
 
 		try {
@@ -24,13 +28,16 @@ public class AbsValueOfExpressionControllerImpl implements Command {
 			numberData.addNumberData(Double.parseDouble(params[3]));
 
 			result = service.calculate(numberData);
+			
 			return output.printResponce("The absolute value of this expression =  ", Double.toString(result));
-
 		} catch (NumberFormatException e) {
+			LOGGER.error("wrong format of args");
 			return output.print("Incorrect input: wrong format of numbers");
+			
 		}
 
 		catch (ArrayIndexOutOfBoundsException e) {
+			LOGGER.error("wrong quantity of args");
 			return output.print("Incorrect input: four numbers are requested");
 		}
 	}

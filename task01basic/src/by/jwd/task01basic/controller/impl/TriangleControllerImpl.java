@@ -1,5 +1,8 @@
 package by.jwd.task01basic.controller.impl;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.Triangle;
 import by.jwd.task01basic.service.TriangleService;
@@ -13,6 +16,8 @@ public class TriangleControllerImpl implements Command {
 
 	Output output = new Output();
 	TriangleService triangleService;
+	
+	static Logger LOGGER = LogManager.getLogger(TriangleControllerImpl.class);
 
 	@Override
 	public String execute(String[] params) {
@@ -48,9 +53,11 @@ public class TriangleControllerImpl implements Command {
 					+ output.printResponce("The radius of inscribed circle = ", Double.toString(radiusIn));
 
 		} catch (NumberFormatException e) {
+			LOGGER.error("wrong format of args");
 			return output.print("Incorrect input: incorrect format of numbers");
 
 		} catch (IllegalArgumentException e) {
+			LOGGER.error("negative or o");
 			return output.print("Incorrect input: number should be positive and can not be equal to 0");
 		}
 	}

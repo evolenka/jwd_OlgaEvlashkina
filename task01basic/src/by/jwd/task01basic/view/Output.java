@@ -5,7 +5,7 @@ public class Output {
 	/* show available menu to user */
 	public void showMenu() {
 		System.out.println("+++Task menu+++:\n" + "1 - Java linear tasks\n" + "2 - Java conditional tasks\n"
-				+ "3 - Java loops tasks");
+				+ "3 - Java loops tasks\n" + "4 - Extra task");
 	}
 
 	/* show list of tasks for each point of menu */
@@ -33,6 +33,10 @@ public class Output {
 				+ "3 - There are given the number row and the number e. Find the sum of numbers, which absolute values equal to or more than the number e, where a = 1/2^n + 1/3^n\n"
 				+ "4 - There are 5 random numbers in the range 1 - 15 including. Try to guess these numbers\n"
 				+ "5 - Find max digit of the given natural number");
+	}
+
+	public void showExtraTask() {
+		System.out.println("+++Extra task+++:\n" + "Swap two numbers in 3 different ways");
 	}
 
 	/* output message to user */

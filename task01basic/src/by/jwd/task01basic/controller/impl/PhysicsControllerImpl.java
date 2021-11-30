@@ -1,5 +1,8 @@
 package by.jwd.task01basic.controller.impl;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.PhysicsData;
 import by.jwd.task01basic.service.PhysicsService;
@@ -11,6 +14,8 @@ public class PhysicsControllerImpl implements Command {
 	Output output = new Output();
 	PhysicsService physicsService = new PhysicsServiceImpl();
 	PhysicsData physicsData = new PhysicsData();
+	
+	static Logger LOGGER = LogManager.getLogger(PhysicsControllerImpl.class);
 
 	@Override
 	public String execute(String[] params) {
@@ -32,12 +37,15 @@ public class PhysicsControllerImpl implements Command {
 			return output.printResponce("The distance =  ", Integer.toString(result));
 
 		} catch (NumberFormatException e) {
+			LOGGER.error("wrong format of args");
 			return output.print("Incorrect input: wrong format of numbers");
 
 		} catch (IllegalArgumentException e) {
+			LOGGER.error("negative number");
 			return output.print("Incorrect input: numbers should be positive");
 
 		} catch (ArrayIndexOutOfBoundsException e) {
+			LOGGER.error("wrong quantity of args");
 			return output.print("Incorrect input: four numbers are requested");
 		}
 	}

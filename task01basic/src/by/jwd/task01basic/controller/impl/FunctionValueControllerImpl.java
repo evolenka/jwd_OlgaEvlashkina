@@ -1,5 +1,8 @@
 package by.jwd.task01basic.controller.impl;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.FunctionValueService;
@@ -11,6 +14,8 @@ public class FunctionValueControllerImpl implements Command {
 	Output output = new Output();
 	FunctionValueService service = new FunctionValueServiceImpl();
 	NumberData<Double> numberData = new NumberData<>();
+	
+	static Logger LOGGER = LogManager.getLogger(FunctionValueControllerImpl.class);
 
 	@Override
 	public String execute(String[] params) {
