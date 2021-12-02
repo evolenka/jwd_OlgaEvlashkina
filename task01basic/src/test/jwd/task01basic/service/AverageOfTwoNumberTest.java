@@ -9,13 +9,7 @@ import by.jwd.task01basic.service.impl.AverageOfTwoNumberServiceImpl;
 
 public class AverageOfTwoNumberTest {
 
-	
-
-//	@BeforeClass
-//	@BeforeGroups(groups = { "service" })
-//	public void setUp() {
 	ArithmeticDoubleService arithmetic = new AverageOfTwoNumberServiceImpl();
-	
 
 	@DataProvider(name = "DataForAverage")
 	public Object[][] createDataForCalculationAverage() {
@@ -28,7 +22,7 @@ public class AverageOfTwoNumberTest {
 				{ new double[] { -Integer.MAX_VALUE, -Integer.MAX_VALUE }, -Integer.MAX_VALUE } };
 	}
 
-	@Test(groups = {"service"}, dataProvider = "DataForAverage")
+	@Test(groups = { "service" }, dataProvider = "DataForAverage")
 	public void testCalculationAverage(double[] ab, double c) {
 
 		NumberData<Double> numberdata = new NumberData<>();
@@ -39,9 +33,4 @@ public class AverageOfTwoNumberTest {
 		double expected = c;
 		assertEquals(actual, expected);
 	}
-
-//	@AfterClass
-//	public void tierDown(){
-//	arithmetic = null;
-	// }
 }

@@ -16,8 +16,8 @@ public class CharOperationsControllerImpl implements Command {
 	@Override
 	public String execute(String[] params) {
 
-		int index = convertToInt.doAction(params[0].charAt(0));
-		char[] result = convertToChar.doAction(index);
+		int index = convertToInt.convert(params[0].charAt(0));
+		char[] result = convertToChar.convert(index);
 
 		output.printResponce("The index of your character - ", Integer.toString(index));
 

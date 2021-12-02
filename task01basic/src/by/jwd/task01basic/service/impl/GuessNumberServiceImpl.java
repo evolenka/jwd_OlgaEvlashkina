@@ -7,11 +7,19 @@ import java.util.Random;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.GuessNumberService;
 
-/*31. There are 5 random numbers in the range 1 - 15 including. Try to guess these numbers.*/
+/*31 loops task: There are 5 random numbers in the range 1 - 15 including. The user should try to guess these numbers.*/
 
 public class GuessNumberServiceImpl implements GuessNumberService {
 
-	public List<NumberData<Integer>> doAction(NumberData<Integer> numberData) {
+	public List<NumberData<Integer>> guess(NumberData<Integer> numberData) {
+		
+		/**
+		 * Compare random numbers to the numbers of the user, output guessed numbers, unguessed user numbers
+		 * @author evlashkina
+		 * @version 1
+		 * @param numberData (a, b and h)
+		 * @return NumberData <Double>  (list of function values)
+		 */
 
 		NumberData<Integer> guessedNumbers = new NumberData<>();
 		NumberData<Integer> unguessedNumbers = new NumberData<>();

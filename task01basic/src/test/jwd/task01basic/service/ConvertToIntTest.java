@@ -21,7 +21,7 @@ public class ConvertToIntTest {
 	@Test(groups = {"service"}, dataProvider = "DataForConvertToInt")
 	public void testConvertToInt(char ch, int a) {
 
-		int actual = convertToInt.doAction(ch);
+		int actual = convertToInt.convert(ch);
 		int expected = a;
 		assertEquals(actual, expected);
 	}

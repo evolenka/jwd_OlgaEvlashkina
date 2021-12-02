@@ -42,7 +42,7 @@ public class DoesBrickFitRectangleControllerImpl implements Command {
 			numberData.addNumberData(y);
 			numberData.addNumberData(z);
 
-			result = service.doAction(rectangle, numberData);
+			result = service.doLogic(rectangle, numberData);
 
 			if (result) {
 				return output.print("The brick fits the rectangle hole");

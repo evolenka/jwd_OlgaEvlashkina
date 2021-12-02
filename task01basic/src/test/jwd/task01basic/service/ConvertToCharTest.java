@@ -25,7 +25,7 @@ public class ConvertToCharTest {
 	@Test(groups = {"service"}, dataProvider = "DataForConvertToChar")
 	public void testConvertToChar(char[] c, int a) {
 
-		char[] actual = convertToChar.doAction(a);
+		char[] actual = convertToChar.convert(a);
 		char[] expected = c;
 		assertEquals(actual, expected);
 	}

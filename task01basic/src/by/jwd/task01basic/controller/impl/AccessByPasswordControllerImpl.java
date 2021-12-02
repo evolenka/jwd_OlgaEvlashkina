@@ -15,7 +15,7 @@ public class AccessByPasswordControllerImpl implements Command {
 
 		String result;
 
-		result = service.doAction(params[0]);
+		result = service.getInfo(params[0]);
 		return output.printResponce("", result);
 	}
 }

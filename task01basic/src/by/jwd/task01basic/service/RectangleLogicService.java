@@ -5,6 +5,6 @@ import by.jwd.task01basic.entity.Rectangle;
 
 public interface RectangleLogicService {
 
-	public boolean doAction(Rectangle rectangle, NumberData<Double> numberData);
+	public boolean doLogic(Rectangle rectangle, NumberData<Double> numberData);
 
 }

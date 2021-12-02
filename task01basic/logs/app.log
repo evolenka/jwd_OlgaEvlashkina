@@ -15,3 +15,5 @@
 2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - end validation
 2021-12-01 00:20:40 [main] ERROR jwd.task01basic.controller.impl.GuessNumberControllerImpl - wrong format of args
 2021-12-01 00:20:40 [main] ERROR jwd.task01basic.controller.impl.GuessNumberControllerImpl - wrong format of args
+2021-12-02 08:24:23 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong quantity of args
+2021-12-02 08:24:23 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong quantity of args

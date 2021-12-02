@@ -3,10 +3,18 @@ package by.jwd.task01basic.service.impl;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.FunctionValueService;
 
-/*Find the value of function  y on the segment [a, b] with the step h:
+/*7 loops task: Find the value of function  y on the segment [a, b] with the step h:
 y = x, if x > 2 and y = -x, if x <= 2*/
 
 public class FunctionValueServiceImpl implements FunctionValueService {
+	
+	/**
+	 * Find the value of function y on the segment [a, b] with the step h, given that y = x, if x > 2 and y = -x, if x less or = 2
+	 * @author evlashkina
+	 * @version 1
+	 * @param numberData (a, b and h)
+	 * @return list of function values (NumberData)
+	 */
 
 	@Override
 	public NumberData<Double> findFunctionValue(NumberData<Double> numberData) {

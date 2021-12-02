@@ -8,8 +8,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class
-				name="test.jwd.task01basic.service.AverageOfTwoNumberTest" />
+			<class name="test.jwd.task01basic.service.AverageOfTwoNumberTest"/>
 			<class name="test.jwd.task01basic.service.ConvertToIntTest" />
 			<class name="test.jwd.task01basic.service.ConvertToCharTest" />
 			<class name="test.jwd.task01basic.service.RectangleAreaTest" />
@@ -17,8 +16,12 @@
 			<class name="test.jwd.task01basic.service.TriangleAreaTest" />
 			<class name="test.jwd.task01basic.service.TriangleHeightTest" />
 			<class name="test.jwd.task01basic.service.TriangleRadiusInTest" />
-			<class
-				name="test.jwd.task01basic.service.TriangleRadiusOutTest" />
+			<class name="test.jwd.task01basic.service.TriangleRadiusOutTest" />
+			<class name="test.jwd.task01basic.service.DoesBrickFitRectangleTest" />
+			<class name="test.jwd.task01basic.service.AbsValueOfExpressionTest" />
+			<class name="test.jwd.task01basic.service.SumOfOddNumberTest" />
+			<class name="test.jwd.task01basic.service.QuantityOfPositiveNumberTest" />
+			
 		</classes>
 	</test> <!-- Default test -->
 </suite> <!-- Default suite -->

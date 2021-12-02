@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>55/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 29 17:05:52 MSK 2021</td>
+<td>Started on:</td><td>Thu Dec 02 16:00:51 MSK 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (153 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (77 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,716 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@5032714f, 1</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1363793720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1363793720'><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@57a78e3, 1</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace980697799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace980697799'><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@402c4085, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1961002599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1961002599'><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@6fa51cd4, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1715248762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1715248762'><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@2767e23c, 3</td>
+<td><div><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1959910454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959910454'><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@710c2b53, 1</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1418555530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1418555530'><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@5386659f, 3</td>
+<td><div><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace212890971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace212890971'><pre>java.lang.AssertionError: expected [3] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@14028087, 1</td>
+<td><div><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1898325501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898325501'><pre>java.lang.AssertionError: expected [1] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@cecf639, 2</td>
+<td><div><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2035616217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2035616217'><pre>java.lang.AssertionError: expected [2] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber(QuantityOfPositiveNumberTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,280 +785,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@6c4906d3, 0</td>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@1caa0244, 0</td>
 <td></td>
 <td>0</td>
-<td>test.jwd.task01basic.service.PhysicsTest@5f9b2141</td></tr>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
 <tr>
-<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 100, 86.603</td>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@7ce026d3, 0</td>
 <td></td>
 <td>0</td>
-<td>test.jwd.task01basic.service.TriangleHeightTest@223aa2f7</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: !, 33</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToIntTest@3514a4c0</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Parameters: 10.0, 43.30127018922193</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleAreaTest@446293d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 2.0, 0.57735</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusInTest@6bedbc4d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Parameters: 1.0, 0.4330127018922193</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleAreaTest@446293d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@65987993, 1.5</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@71075444, 0.0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: k, 107</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToIntTest@3514a4c0</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@4f32a3ad, 126</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToCharTest@20f5239f</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@6b695b06, 5</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.PhysicsTest@5f9b2141</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 5.0, 2.886751</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusOutTest@10163d6</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: ~, 126</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToIntTest@3514a4c0</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Parameters: 2.0, 1.7320508075688772</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleAreaTest@446293d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@4d1bf319, 3.0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@6f53b8a, -4.5</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 100, 28.867513</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusInTest@6bedbc4d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 1.0, 0.57735</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusOutTest@10163d6</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@5c80cf32, 32</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToCharTest@20f5239f</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@7d900ecf, 0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.PhysicsTest@5f9b2141</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@6f01b95f, -1.5</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@4007f65e, 2147483647</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Parameters: 2147483647, 1.99691862125803878E18</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleAreaTest@446293d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@1a245833, 2147483647</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.PhysicsTest@5f9b2141</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 2.0, 1.732</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleHeightTest@223aa2f7</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 2147483647, 6.19925130837885E8</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusInTest@6bedbc4d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 5.0, 1.443376</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusInTest@6bedbc4d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 2147483647, 1.8597753925136538E9</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleHeightTest@223aa2f7</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: =, 61</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToIntTest@3514a4c0</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@673fdbce, 0.0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@5965d37, 1.0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@7a5ceedd, 0.5</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.RectangleAreaTest@6c130c45</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@4201c465, 99</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToCharTest@20f5239f</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@5b799640, -2</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.PhysicsTest@5f9b2141</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 1.0, 0.866</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleHeightTest@223aa2f7</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@6cb107fd, 2.0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.RectangleAreaTest@6c130c45</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@710636b0, 0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 1.0, 0.288675</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusInTest@6bedbc4d</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@3de8f619, 1</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.PhysicsTest@5f9b2141</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@2ab4bc72, -2147483647</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: [, 91</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToIntTest@3514a4c0</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 100, 57.735027</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusOutTest@10163d6</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@4e5ed836, 91</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToCharTest@20f5239f</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 2147483647, 1.239850261675769E9</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusOutTest@10163d6</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters:  , 32</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToIntTest@3514a4c0</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@eadd4fb, 2147483647</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.RectangleAreaTest@6c130c45</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@740fb309, 125</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToCharTest@20f5239f</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@7bd7d6d6, 5000.0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.RectangleAreaTest@6c130c45</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@43f02ef2, 2147483647</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.RectangleAreaTest@6c130c45</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@239a307b, 19</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.PhysicsTest@5f9b2141</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 5.0, 4.33</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleHeightTest@223aa2f7</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 2.0, 1.154701</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.TriangleRadiusOutTest@10163d6</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@2a8448fa, 6.0</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@2f8dad04</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@6f204a1a, 78</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToCharTest@20f5239f</td></tr>
-<tr>
-<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: M, 77</td>
-<td></td>
-<td>0</td>
-<td>test.jwd.task01basic.service.ConvertToIntTest@3514a4c0</td></tr>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@346d61be</td></tr>
 </table><p>
 </body>
 </html>

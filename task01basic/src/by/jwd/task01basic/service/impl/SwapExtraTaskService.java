@@ -2,7 +2,18 @@ package by.jwd.task01basic.service.impl;
 
 import by.jwd.task01basic.entity.NumberData;
 
+/* Extra task: swap two numbers in 3 different ways*/
+
 public class SwapExtraTaskService {
+
+	/**
+	 * Swap values of two int numbers through temp variable
+	 * 
+	 * @author evlashkina
+	 * @version 1
+	 * @param numberdata (two given data)
+	 * @return two int numbers after swap (NumberData)
+	 */
 
 	public NumberData<Integer> swapFirstMethod(NumberData<Integer> numberdata) {
 
@@ -18,14 +29,23 @@ public class SwapExtraTaskService {
 		a = b;
 		b = temp;
 
-		swapedData = new NumberData<Integer>();
+		swapedData = new NumberData<>();
 
 		swapedData.addNumberData(a);
 		swapedData.addNumberData(b);
 
 		return swapedData;
 	}
-
+	
+	/**
+	 * Swap values of two int numbers by the arithmetic operations
+	 * 
+	 * @author evlashkina
+	 * @version 1
+	 * @param numberdata (two given data)
+	 * @return two int numbers after swap (NumberData)
+	 */
+	
 	public NumberData<Integer> swapSecondMethod(NumberData<Integer> numberdata) {
 
 		int a;
@@ -39,14 +59,23 @@ public class SwapExtraTaskService {
 		b = a - b;
 		a = a - b;
 
-		swapedData = new NumberData<Integer>();
+		swapedData = new NumberData<>();
 
 		swapedData.addNumberData(a);
 		swapedData.addNumberData(b);
 
 		return swapedData;
 	}
-
+	
+	/**
+	 * Swap values of two int numbers by operator ^
+	 * 
+	 * @author evlashkina
+	 * @version 1
+	 * @param numberdata (two given data)
+	 * @return two int numbers after swap (NumberData)
+	 */
+	
 	public NumberData<Integer> swapThirdMethod(NumberData<Integer> numberdata) {
 
 		int a;
@@ -60,7 +89,7 @@ public class SwapExtraTaskService {
 		b = b ^ a;
 		a = a ^ b;
 
-		swapedData = new NumberData<Integer>();
+		swapedData = new NumberData<>();
 
 		swapedData.addNumberData(a);
 		swapedData.addNumberData(b);

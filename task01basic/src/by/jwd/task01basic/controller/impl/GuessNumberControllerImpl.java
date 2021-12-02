@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.GuessNumberService;
@@ -31,7 +30,7 @@ public class GuessNumberControllerImpl implements Command {
 			numberData.addNumberData(Integer.parseInt(params[3]));
 			numberData.addNumberData(Integer.parseInt(params[4]));
 
-			result = service.doAction(numberData);
+			result = service.guess(numberData);
 			return output.printResponce("Guessed numbbers:  ",
 					result.get(0).getNumberData().toString() + "\nUnguessed numbers: "
 							+ result.get(1).getNumberData().toString() + "\nMistaken numbers:"

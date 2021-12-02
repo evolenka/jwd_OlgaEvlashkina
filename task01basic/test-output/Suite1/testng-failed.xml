@@ -8,11 +8,11 @@
       </run>
     </groups>
     <classes>
-      <class name="test.jwd.task01basic.service.PhysicsTest">
+      <class name="test.jwd.task01basic.service.QuantityOfPositiveNumberTest">
         <methods>
-          <include name="testDistance" invocation-numbers="0 1 2 3 4 5 6"/>
+          <include name="testDataForQuantityOfPositiveNumber" invocation-numbers="1 2 3 4 5 6 7 10"/>
         </methods>
-      </class> <!-- test.jwd.task01basic.service.PhysicsTest -->
+      </class> <!-- test.jwd.task01basic.service.QuantityOfPositiveNumberTest -->
     </classes>
   </test> <!-- CheckGroup(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
