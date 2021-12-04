@@ -21,9 +21,17 @@ public class PhysicsServiceImpl implements PhysicsService {
 	 */
 
 	@Override
-	public int doCalculation(PhysicsData physicsData) {
-
-		return physicsData.getBoatSpeed() * physicsData.getTimeWithStream()
-				+ (physicsData.getBoatSpeed() - physicsData.getRiverSpeed()) * physicsData.getTimeAgainstStream();
+	public int doCalculation(PhysicsData physicsData) throws ServiceException {
+		try {
+			// validation
+			if (physicsData.getBoatSpeed() < 0 || physicsData.getTimeWithStream() < 0 || physicsData.getRiverSpeed() < 0
+					|| physicsData.getTimeAgainstStream() < 0) {
+				throw new IllegalArgumentException();
+			}
+			return physicsData.getBoatSpeed() * physicsData.getTimeWithStream()
+					+ (physicsData.getBoatSpeed() - physicsData.getRiverSpeed()) * physicsData.getTimeAgainstStream();
+		} catch (IllegalArgumentException e) {
+			throw new ServiceException();
+		}
 	}
 }

@@ -30,7 +30,7 @@ public class SumOfPositiveRowMemberServiceImpl implements ArithmeticDoubleServic
 		e = numberData.getNumberData().get(0);
 		n = numberData.getNumberData().get(1);
 
-		for (int i = 0; i <= n; i++) {
+		for (int i = 1; i <= n; i++) {
 			a = 1 / Math.pow(2, i) + 1 / Math.pow(3, i);
 			if (Math.abs(a) >= e) {
 				sum = +a;

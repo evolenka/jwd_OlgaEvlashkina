@@ -17,8 +17,18 @@ public class TriangleHeightServiceImpl implements TriangleService {
 	 */
 
 	@Override
-	public double doCalculation(Triangle triangle) {
+	public double doCalculation(Triangle triangle) throws ServiceException {
+		
+		try {
+			// validation
+			if (triangle.getSide1() <= 0) {
+				throw new IllegalArgumentException();
+			}
 
-		return (Math.sqrt(3)) / 2 * triangle.getSide1();
+			return (Math.sqrt(3)) / 2 * triangle.getSide1();
+			
+		} catch (IllegalArgumentException e) {
+			throw new ServiceException();
+		}
 	}
 }

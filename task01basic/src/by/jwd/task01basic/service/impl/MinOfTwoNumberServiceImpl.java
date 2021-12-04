@@ -19,9 +19,9 @@ public class MinOfTwoNumberServiceImpl implements ArithmeticDoubleService {
 	@Override
 	public double calculate(NumberData<Double> numberData) {
 
-		if (numberData.getNumberData().get(0) < numberData.getNumberData().get(1)) {
-			return numberData.getNumberData().get(0);
-		} else
-			return numberData.getNumberData().get(1);
+		double number1 = numberData.getNumberData().get(0);
+		double number2 = numberData.getNumberData().get(1);
+
+		return number1 < number2 ? number1 : number2;
 	}
 }

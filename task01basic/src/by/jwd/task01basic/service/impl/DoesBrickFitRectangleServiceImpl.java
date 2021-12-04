@@ -21,25 +21,31 @@ public class DoesBrickFitRectangleServiceImpl implements RectangleLogicService {
 	 *         {@code false} otherwise
 	 */
 
-	public boolean doLogic(Rectangle rectangle, NumberData<Double> numberData) {
+	public boolean doLogic(Rectangle rectangle, NumberData<Double> numberData) throws ServiceException {
 
-		boolean result;
+		try {
+			// validation
+			if (numberData.getNumberData().get(0) <= 0 || numberData.getNumberData().get(1) <= 0
+					|| numberData.getNumberData().get(2) <= 0) {
+				throw new IllegalArgumentException();
+			}
 
-		RectangleService rectangleService = new RectangleAreaServiceImpl();
+			RectangleService rectangleService = new RectangleAreaServiceImpl();
 
-		double rectangleArea;
+			double rectangleArea;
+			rectangleArea = rectangleService.doCalculation(rectangle);
 
-		rectangleArea = rectangleService.doCalculation(rectangle);
+			double x;
+			double y;
+			double z;
 
-		double x;
-		double y;
-		double z;
+			x = numberData.getNumberData().get(0);
+			y = numberData.getNumberData().get(1);
+			z = numberData.getNumberData().get(2);
 
-		x = numberData.getNumberData().get(0);
-		y = numberData.getNumberData().get(1);
-		z = numberData.getNumberData().get(2);
-
-		result = rectangleArea > x * y && rectangleArea > y * z && rectangleArea > x * z;
-		return result;
+			return rectangleArea > x * y && rectangleArea > y * z && rectangleArea > x * z;
+		} catch (IllegalArgumentException e) {
+			throw new ServiceException();
+		}
 	}
 }

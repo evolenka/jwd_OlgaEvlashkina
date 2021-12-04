@@ -16,8 +16,17 @@ public class RectangleAreaServiceImpl implements RectangleService {
 	 */
 
 	@Override
-	public double doCalculation(Rectangle rectangle) {
+	public double doCalculation(Rectangle rectangle) throws ServiceException {
 
-		return rectangle.getWidth() * rectangle.getLength();
+		try {
+			// validation
+			if (rectangle.getLength() <= 0 || rectangle.getWidth() <= 0) {
+				throw new IllegalArgumentException();
+			}
+			return rectangle.getLength() * rectangle.getWidth();
+
+		} catch (IllegalArgumentException e) {
+			throw new ServiceException();
+		}
 	}
 }

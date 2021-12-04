@@ -7,19 +7,23 @@ import by.jwd.task01basic.view.Output;
 
 public class SumOfOddNumberControllerImpl implements Command {
 
-	Output output = new Output();
-	SumOfOddNumberServiceImpl service = new SumOfOddNumberServiceImpl();
-	NumberData<Integer> numberdata = new NumberData<>();
+	private SumOfOddNumberServiceImpl service;
+	private NumberData<Integer> numberdata;
+
+	public SumOfOddNumberControllerImpl(SumOfOddNumberServiceImpl service, NumberData<Integer> numberdata) {
+
+		this.service = service;
+		this.numberdata = numberdata;
+	}
 
 	@Override
-	public String execute(String[] params) {
+	public void execute() {
 
-		int result;
+		Output output = new Output();
 
-		for (int i = 0; i < 100; i++) {
-			numberdata.addNumberData(i);
-		}
-		result = service.calculate(numberdata);
-		return output.printResponce("The sum of odd numbers from 1 to 99 =  ", Integer.toString(result));
+		int result = service.calculate(numberdata);
+
+		output.showResponce("The sum of odd numbers from 1 to 99 =  " + Integer.toString(result));
+		
 	}
 }

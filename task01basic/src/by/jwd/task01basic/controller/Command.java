@@ -1,15 +1,13 @@
 package by.jwd.task01basic.controller;
 
-public interface Command {
-	
-	/**
-	 * Get data from user and return responce
-	 * 
-	 * @author evlashkina
-	 * @version 1
-	 * @param params (String data from user)
-	 * @return String responce
-	 */
+/**
+ * Execute commands received from TaskManager
+ * 
+ * @author evlashkina
+ * @version 1
+ */
 
-	public String execute(String[] params);
+public interface Command {
+
+	public void execute();
 }

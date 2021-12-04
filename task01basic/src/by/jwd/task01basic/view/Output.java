@@ -39,15 +39,13 @@ public class Output {
 		System.out.println("+++Extra task+++:\n" + "Swap two numbers in 3 different ways");
 	}
 
-	/* output message to user */
-	public String print(String message) {
+	/* output responce to user */
+	public void showResponce(String message) {
 		System.out.println(message);
-		return " ";
 	}
 
-	/* output responce to user */
-	public String printResponce(String message, String result) {
-		System.out.println(message + result);
-		return " ";
+	/* output message to user */
+	public void showMessage(String message) {
+		System.out.println(message);
 	}
 }

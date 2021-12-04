@@ -1,7 +1,6 @@
 package by.jwd.task01basic.controller.impl;
 
 import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import by.jwd.task01basic.controller.Command;
@@ -12,38 +11,26 @@ import by.jwd.task01basic.view.Output;
 
 public class GuessNumberControllerImpl implements Command {
 
-	Output output = new Output();
-	GuessNumberService service = new GuessNumberServiceImpl();
-	NumberData<Integer> numberData = new NumberData<>();
-	
 	static Logger LOGGER = LogManager.getLogger(GuessNumberControllerImpl.class);
 
+	private GuessNumberService service = new GuessNumberServiceImpl();
+	private NumberData<Integer> numberData = new NumberData<>();
+
+	public GuessNumberControllerImpl(GuessNumberService service, NumberData<Integer> numberData) {
+		this.service = service;
+		this.numberData = numberData;
+	}
+
 	@Override
-	public String execute(String[] params) {
+	public void execute() {
+		
+		Output output = new Output();
+		
+		List<NumberData<Integer>> result =  service.guess(numberData);
+		
+		output.showResponce("Guessed numbbers:  " + result.get(0).getNumberData().toString() + "\nUnguessed numbers: "
+				+ result.get(1).getNumberData().toString() + "\nMistaken numbers:"
+				+ result.get(2).getNumberData().toString());
 
-		List<NumberData<Integer>> result;
-
-		try {
-			numberData.addNumberData(Integer.parseInt(params[0]));
-			numberData.addNumberData(Integer.parseInt(params[1]));
-			numberData.addNumberData(Integer.parseInt(params[2]));
-			numberData.addNumberData(Integer.parseInt(params[3]));
-			numberData.addNumberData(Integer.parseInt(params[4]));
-
-			result = service.guess(numberData);
-			return output.printResponce("Guessed numbbers:  ",
-					result.get(0).getNumberData().toString() + "\nUnguessed numbers: "
-							+ result.get(1).getNumberData().toString() + "\nMistaken numbers:"
-							+ result.get(2).getNumberData().toString());
-
-		} catch (NumberFormatException e) {
-			LOGGER.error("wrong format of args");
-			return output.print("Incorrect input: wrong format of numbers");
-		}
-
-		catch (ArrayIndexOutOfBoundsException e) {
-			LOGGER.error("wrong quantity of args");
-			return output.print("Incorrect input: five numbers are requested");
-		}
 	}
 }

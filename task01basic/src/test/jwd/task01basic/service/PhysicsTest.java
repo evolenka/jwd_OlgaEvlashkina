@@ -6,17 +6,14 @@ import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.PhysicsData;
 import by.jwd.task01basic.service.PhysicsService;
 import by.jwd.task01basic.service.impl.PhysicsServiceImpl;
+import by.jwd.task01basic.service.impl.ServiceException;
 
 public class PhysicsTest {
 
 	PhysicsService physics = new PhysicsServiceImpl();;
 	PhysicsData physicsData = new PhysicsData();
 
-	/*
-	 * data should be >= 0, see validation in
-	 * by.jwd.task01basic.controller.impl.PhysicsControllerImpl
-	 */
-
+	
 	@DataProvider(name = "DataForPhysics")
 	public Object[][] createDataForDistance() {
 		return new Object[][] { { new int[] { 0, 0, 0, 0 }, 0 }, { new int[] { 1, 1, 1, 1 }, 1 },
@@ -26,7 +23,7 @@ public class PhysicsTest {
 	}
 
 	@Test(groups = { "service" }, dataProvider = "DataForPhysics")
-	public void testDistance(int[] ab, int c) {
+	public void testDistance(int[] ab, int c) throws ServiceException {
 
 		physicsData.setBoatSpeed(ab[0]);
 		physicsData.setTimeWithStream(ab[1]);

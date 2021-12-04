@@ -22,7 +22,7 @@ public class FunctionValueServiceImpl implements FunctionValueService {
 		NumberData<Double> result = new NumberData<>();
 
 		double a;
-		double b;
+		double b;  
 		double h;
 		double x;
 

@@ -3,12 +3,11 @@ package test.jwd.task01basic.service;
 import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.NumberData;
-import by.jwd.task01basic.service.ArithmeticIntegerService;
 import by.jwd.task01basic.service.impl.SumOfOddNumberServiceImpl;
 
 public class SumOfOddNumberTest {
 
-	ArithmeticIntegerService service = new SumOfOddNumberServiceImpl();
+	SumOfOddNumberServiceImpl service = new SumOfOddNumberServiceImpl();
 	NumberData<Integer> numberdata = new NumberData<>();
 
 	@Test(groups = { "service" })

@@ -5,12 +5,11 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.NumberData;
-import by.jwd.task01basic.service.ArithmeticIntegerService;
 import by.jwd.task01basic.service.impl.QuantityOfPositiveNumberServiceImpl;
 
 public class QuantityOfPositiveNumberTest {
 
-	ArithmeticIntegerService a = new QuantityOfPositiveNumberServiceImpl();
+	QuantityOfPositiveNumberServiceImpl service = new QuantityOfPositiveNumberServiceImpl();
 	
 	@DataProvider(name = "DataForQuantityOfPositiveNumber")
 	public Object[][] createDataForDistance() {
@@ -24,12 +23,13 @@ public class QuantityOfPositiveNumberTest {
 
 	@Test(groups = { "service" }, dataProvider = "DataForQuantityOfPositiveNumber")
 	public void testDataForQuantityOfPositiveNumber(int[] ab, int c) {
+		
 		NumberData<Integer> numberdata = new NumberData<>();
 		numberdata.addNumberData(ab[0]);
 		numberdata.addNumberData(ab[1]);
 		numberdata.addNumberData(ab[2]);
 
-		int actual = a.calculate(numberdata);
+		int actual = service.calculate(numberdata);
 		int expected = c;
 		assertEquals(actual, expected);
 	}

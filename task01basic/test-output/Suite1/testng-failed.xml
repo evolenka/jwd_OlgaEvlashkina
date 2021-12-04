@@ -8,11 +8,11 @@
       </run>
     </groups>
     <classes>
-      <class name="test.jwd.task01basic.service.QuantityOfPositiveNumberTest">
+      <class name="test.jwd.task01basic.service.FunctionValueTest">
         <methods>
-          <include name="testDataForQuantityOfPositiveNumber" invocation-numbers="1 2 3 4 5 6 7 10"/>
+          <include name="testFunctionValue"/>
         </methods>
-      </class> <!-- test.jwd.task01basic.service.QuantityOfPositiveNumberTest -->
+      </class> <!-- test.jwd.task01basic.service.FunctionValueTest -->
     </classes>
   </test> <!-- CheckGroup(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

@@ -5,17 +5,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.Triangle;
 import by.jwd.task01basic.service.TriangleService;
+import by.jwd.task01basic.service.impl.ServiceException;
 import by.jwd.task01basic.service.impl.TriangleRadiusInServiceImpl;
 
 public class TriangleRadiusInTest {
 
 	TriangleService triangleService = new TriangleRadiusInServiceImpl();
 	Triangle triangle = new Triangle();
-
-	/*
-	 * data should be > 0, see validation in
-	 * by.jwd.task01basic.controller.impl.GeometricControllerImpl
-	 */
 
 	@DataProvider(name = "DataForRadiusIn")
 	public Object[][] createDataForRadiusInCalculation() {
@@ -24,7 +20,7 @@ public class TriangleRadiusInTest {
 	}
 
 	@Test(groups = { "service" }, dataProvider = "DataForRadiusIn")
-	public void testRadiusInCalculation(double a, double c) {
+	public void testRadiusInCalculation(double a, double c) throws ServiceException {
 
 		triangle.setSide1(a);
 		double actual = triangleService.doCalculation(triangle);

@@ -4,34 +4,41 @@ import by.jwd.task01basic.view.Output;
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.service.ConvertToCharService;
 import by.jwd.task01basic.service.ConvertToIntService;
-import by.jwd.task01basic.service.impl.ConvertToCharServiceImpl;
-import by.jwd.task01basic.service.impl.ConvertToIntServiceImpl;
 
 public class CharOperationsControllerImpl implements Command {
 
-	Output output = new Output();
-	ConvertToIntService convertToInt = new ConvertToIntServiceImpl();
-	ConvertToCharService convertToChar = new ConvertToCharServiceImpl();
+	private ConvertToIntService convertToInt;
+	private ConvertToCharService convertToChar;
+	char character;
+
+	public CharOperationsControllerImpl(ConvertToIntService convertToInt, ConvertToCharService convertToChar,
+			char character) {
+		this.convertToInt = convertToInt;
+		this.convertToChar = convertToChar;
+		this.character = character;
+	}
 
 	@Override
-	public String execute(String[] params) {
+	public void execute() {
+		
+		Output output = new Output();
 
-		int index = convertToInt.convert(params[0].charAt(0));
+		int index = convertToInt.convert(character);
 		char[] result = convertToChar.convert(index);
 
-		output.printResponce("The index of your character - ", Integer.toString(index));
+		output.showResponce("The index of your character -" + Integer.toString(index));
 
 		if (result[0] == '0') {
-			return output.print("The next character - no")
-					+ output.printResponce("The previous character  - ", Character.toString(result[1]));
+			output.showResponce(
+					"The next character - no" + "\nThe previous character  - " + Character.toString(result[1]));
 
 		} else if (result[1] == '0') {
-			return output.printResponce("The next character  - ", Character.toString(result[0]))
-					+ output.print("The previous character - no");
+			output.showResponce(
+					"The next character  - " + Character.toString(result[0]) + "\nThe previous character - no");
 
 		} else {
-			return output.printResponce("The next character - ", Character.toString(result[0]))
-					+ output.printResponce("The previous character  - ", Character.toString(result[1]));
+			output.showResponce("The next character - " + Character.toString(result[0]) + "\nThe previous character  - "
+					+ Character.toString(result[1]));
 		}
 	}
 }

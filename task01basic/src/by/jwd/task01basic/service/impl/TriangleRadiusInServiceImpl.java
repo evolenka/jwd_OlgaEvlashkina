@@ -18,8 +18,19 @@ public class TriangleRadiusInServiceImpl implements TriangleService {
 	 */
 
 	@Override
-	public double doCalculation(Triangle triangle) {
+	public double doCalculation(Triangle triangle) throws ServiceException {
+		
+		try {
+			// validation
+			if (triangle.getSide1() <= 0) {
+				throw new IllegalArgumentException();
+			}
 
-		return (triangle.getSide1()) / (2 * (Math.sqrt(3)));
+			return (triangle.getSide1()) / (2 * (Math.sqrt(3)));
+			
+		} catch (IllegalArgumentException e) {
+			
+			throw new ServiceException();
+		}
 	}
 }

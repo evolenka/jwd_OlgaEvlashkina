@@ -5,6 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.Triangle;
 import by.jwd.task01basic.service.TriangleService;
+import by.jwd.task01basic.service.impl.ServiceException;
 import by.jwd.task01basic.service.impl.TriangleAreaServiceImpl;
 
 
@@ -13,11 +14,7 @@ public class TriangleAreaTest {
 	TriangleService triangleService = new TriangleAreaServiceImpl();
 	Triangle triangle = new Triangle();
 	
-	/*
-	 * data should be > 0, see validation in
-	 * by.jwd.task01basic.controller.impl.GeometricControllerImpl
-	 */
-	
+		
 	@DataProvider(name = "DataForArea")
 	public Object[][] createDataForAreaCalculation() {
 		return new Object[][] {
@@ -28,7 +25,7 @@ public class TriangleAreaTest {
 	}
 
 	@Test(groups = {"service"}, dataProvider = "DataForArea")
-	public void testAreaCalculation(double a, double c) {
+	public void testAreaCalculation(double a, double c) throws ServiceException {
 		
 		triangle.setSide1(a);
 		double actual = triangleService.doCalculation(triangle);

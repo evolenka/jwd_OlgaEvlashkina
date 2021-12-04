@@ -21,6 +21,9 @@
 			<class name="test.jwd.task01basic.service.AbsValueOfExpressionTest" />
 			<class name="test.jwd.task01basic.service.SumOfOddNumberTest" />
 			<class name="test.jwd.task01basic.service.QuantityOfPositiveNumberTest" />
+			<class name="test.jwd.task01basic.service.SumOfPositiveRowMemberTest" />
+			<class name="test.jwd.task01basic.service.MinOfTwoNumberTest" />
+			<class name="test.jwd.task01basic.service.FunctionValueTest" />
 			
 		</classes>
 	</test> <!-- Default test -->

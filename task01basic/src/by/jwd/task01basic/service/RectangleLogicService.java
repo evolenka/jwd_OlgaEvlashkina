@@ -2,9 +2,10 @@ package by.jwd.task01basic.service;
 
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.entity.Rectangle;
+import by.jwd.task01basic.service.impl.ServiceException;
 
 public interface RectangleLogicService {
 
-	public boolean doLogic(Rectangle rectangle, NumberData<Double> numberData);
+	public boolean doLogic(Rectangle rectangle, NumberData<Double> numberData) throws ServiceException;
 
 }
