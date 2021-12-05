@@ -5,12 +5,12 @@ import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.impl.SumOfOddNumberServiceImpl;
 import by.jwd.task01basic.view.Output;
 
-public class SumOfOddNumberControllerImpl implements Command {
+public class SumOfOddNumberCommandImpl implements Command {
 
 	private SumOfOddNumberServiceImpl service;
 	private NumberData<Integer> numberdata;
 
-	public SumOfOddNumberControllerImpl(SumOfOddNumberServiceImpl service, NumberData<Integer> numberdata) {
+	public SumOfOddNumberCommandImpl(SumOfOddNumberServiceImpl service, NumberData<Integer> numberdata) {
 
 		this.service = service;
 		this.numberdata = numberdata;
@@ -24,6 +24,5 @@ public class SumOfOddNumberControllerImpl implements Command {
 		int result = service.calculate(numberdata);
 
 		output.showResponce("The sum of odd numbers from 1 to 99 =  " + Integer.toString(result));
-		
 	}
 }

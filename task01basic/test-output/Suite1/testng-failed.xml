@@ -8,11 +8,11 @@
       </run>
     </groups>
     <classes>
-      <class name="test.jwd.task01basic.service.FunctionValueTest">
+      <class name="test.jwd.task01basic.service.GuessNumberTest">
         <methods>
-          <include name="testFunctionValue"/>
+          <include name="testGuessNumber"/>
         </methods>
-      </class> <!-- test.jwd.task01basic.service.FunctionValueTest -->
+      </class> <!-- test.jwd.task01basic.service.GuessNumberTest -->
     </classes>
   </test> <!-- CheckGroup(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

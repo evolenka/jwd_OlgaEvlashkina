@@ -4,6 +4,14 @@ import by.jwd.task01basic.view.Output;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/*
+* Java Basics tasks: 
+* Linear tasks (5,7,19,31,33)
+* Condidional tasks (5,7,19,31,33)
+* Loops tasks (5,7,19,31,33)
+* Extra task (to swap numbers in 3 ways)
+*/
+
 public class Runner {
 
 	static Logger logger = LogManager.getLogger(Runner.class);

@@ -7,9 +7,11 @@ import by.jwd.task01basic.service.FunctionValueService;
 y = x, if x > 2 and y = -x, if x <= 2*/
 
 public class FunctionValueServiceImpl implements FunctionValueService {
-	
+
 	/**
-	 * Find the value of function y on the segment [a, b] with the step h, given that y = x, if x > 2 and y = -x, if x less or = 2
+	 * Find the value of function y on the segment [a, b] with the step h, given
+	 * that y = x, if x > 2 and y = -x, if x less or = 2
+	 * 
 	 * @author evlashkina
 	 * @version 1
 	 * @param numberData (a, b and h)
@@ -22,7 +24,7 @@ public class FunctionValueServiceImpl implements FunctionValueService {
 		NumberData<Double> result = new NumberData<>();
 
 		double a;
-		double b;  
+		double b;
 		double h;
 		double x;
 

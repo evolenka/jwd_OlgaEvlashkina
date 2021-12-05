@@ -15,7 +15,7 @@ public class SumOfPositiveRowMemberServiceImpl implements ArithmeticDoubleServic
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param numberData (given number e and the length of the row)
+	 * @param NumberData<Double>numberData
 	 * @return double result of calculation
 	 */
 
@@ -31,9 +31,11 @@ public class SumOfPositiveRowMemberServiceImpl implements ArithmeticDoubleServic
 		n = numberData.getNumberData().get(1);
 
 		for (int i = 1; i <= n; i++) {
+
 			a = 1 / Math.pow(2, i) + 1 / Math.pow(3, i);
+
 			if (Math.abs(a) >= e) {
-				sum = +a;
+				sum += a;
 			}
 		}
 		return sum;

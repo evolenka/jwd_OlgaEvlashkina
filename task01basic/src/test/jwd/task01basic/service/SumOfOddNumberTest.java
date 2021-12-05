@@ -10,7 +10,7 @@ public class SumOfOddNumberTest {
 	SumOfOddNumberServiceImpl service = new SumOfOddNumberServiceImpl();
 	NumberData<Integer> numberdata = new NumberData<>();
 
-	@Test(groups = { "service" })
+	@Test(description = "Sum of odd numbers from 1 to 99", groups = { "service" })
 	public void testSumOfOddNumber() {
 
 		/* numbers from 1 to 99 (including) */

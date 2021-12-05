@@ -4,20 +4,20 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import by.jwd.task01basic.controller.impl.AbsValueOfExpressionCommandImpl;
-import by.jwd.task01basic.controller.impl.AccessByPasswordControllerImpl;
+import by.jwd.task01basic.controller.impl.AccessByPasswordCommandImpl;
 import by.jwd.task01basic.controller.impl.AverageOfTwoNumberCommandImpl;
-import by.jwd.task01basic.controller.impl.CharOperationsControllerImpl;
+import by.jwd.task01basic.controller.impl.CharOperationsCommandImpl;
 import by.jwd.task01basic.controller.impl.DoesBrickFitRectangleCommandImpl;
-import by.jwd.task01basic.controller.impl.FunctionValueControllerImpl;
-import by.jwd.task01basic.controller.impl.GuessNumberControllerImpl;
+import by.jwd.task01basic.controller.impl.FunctionValueCommandImpl;
+import by.jwd.task01basic.controller.impl.GuessNumberCommandImpl;
 import by.jwd.task01basic.controller.impl.MaxDigitOfNumberCommandImpl;
 import by.jwd.task01basic.controller.impl.MinOfTwoNumberCommandImpl;
 import by.jwd.task01basic.controller.impl.PhysicsCommandImpl;
-import by.jwd.task01basic.controller.impl.QuantityOfPositiveNumberControllerImpl;
+import by.jwd.task01basic.controller.impl.QuantityOfPositiveNumberCommandImpl;
 import by.jwd.task01basic.controller.impl.RectangleAreaCommandImpl;
-import by.jwd.task01basic.controller.impl.SumOfOddNumberControllerImpl;
+import by.jwd.task01basic.controller.impl.SumOfOddNumberCommandImpl;
 import by.jwd.task01basic.controller.impl.SumOfPositiveRowMemberCommandImpl;
-import by.jwd.task01basic.controller.impl.SwapExtraTaskControllerImpl;
+import by.jwd.task01basic.controller.impl.SwapExtraTaskCommandImpl;
 import by.jwd.task01basic.controller.impl.TriangleCommandImpl;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.entity.PhysicsData;
@@ -58,9 +58,10 @@ import by.jwd.task01basic.view.Input;
 import by.jwd.task01basic.view.Output;
 
 /*
- * Java Basics tasks: Linear tasks (5,7,19,31,33) Condidional tasks
- * (5,7,19,31,33) Loops tasks (5,7,19,31,33) Extra task (to swap numbers in 3
- * ways)
+ * ask user to choose the menu point,
+ * show the respective tasks to user,
+ * ask user to choose the task and to input the respective data for task,
+ * invoke the provider to execute the respectice task (command)
  */
 
 public class TaskManager {
@@ -93,26 +94,28 @@ public class TaskManager {
 			/* Absolute value of expression */
 			case "1": {
 				output.showMessage("Please input two numbers with space\n>>");
+
 				params = input.read().split("\\s+");
 
 				NumberData<Double> numberdata = new NumberData<>();
-
 				numberdata.addNumberData(Double.parseDouble(params[0]));
 				numberdata.addNumberData(Double.parseDouble(params[1]));
 
-				ArithmeticDoubleService service = new AverageOfTwoNumberServiceImpl();
+				ArithmeticDoubleService service = new AverageOfTwoNumberServiceImpl(); // create receiver object
 
-				command = new AverageOfTwoNumberCommandImpl(service, numberdata);
+				command = new AverageOfTwoNumberCommandImpl(service, numberdata); // create command object
 
-				provider.setCommand(command);
-				provider.executeCommand();
+				provider.setCommand(command); // pass the command to the provider
+				provider.executeCommand(); // invoke the command execution
 			}
 				break;
 			case "2": {
 				output.showMessage("Please input the length of rectangle\n>>");
 				params = input.read().split("\\s+");
-				Rectangle rectangle = new Rectangle(Double.parseDouble(params[0]), Double.parseDouble(params[0]) / 2);
-
+				
+				double length = Double.parseDouble(params[0]);
+				Rectangle rectangle = new Rectangle(length, length / 2);
+				
 				RectangleService service = new RectangleAreaServiceImpl();
 
 				command = new RectangleAreaCommandImpl(service, rectangle);
@@ -126,7 +129,6 @@ public class TaskManager {
 				params = input.read().split("\\s+");
 
 				double length = Double.parseDouble(params[0]);
-
 				Triangle triangle = new Triangle(length, length, length);
 
 				TriangleService areaService = new TriangleAreaServiceImpl();
@@ -147,7 +149,6 @@ public class TaskManager {
 				params = input.read().split("\\s+");
 
 				PhysicsData physicsData = new PhysicsData();
-
 				physicsData.setBoatSpeed(Integer.parseInt(params[0]));
 				physicsData.setRiverSpeed(Integer.parseInt(params[1]));
 				physicsData.setTimeWithStream(Integer.parseInt(params[2]));
@@ -156,6 +157,7 @@ public class TaskManager {
 				PhysicsService physicsService = new PhysicsServiceImpl();
 
 				command = new PhysicsCommandImpl(physicsService, physicsData);
+				
 				provider.setCommand(command);
 				provider.executeCommand();
 			}
@@ -167,7 +169,8 @@ public class TaskManager {
 				ConvertToIntService convertToInt = new ConvertToIntServiceImpl();
 				ConvertToCharService convertToChar = new ConvertToCharServiceImpl();
 
-				command = new CharOperationsControllerImpl(convertToInt, convertToChar, params[0].charAt(0));
+				command = new CharOperationsCommandImpl(convertToInt, convertToChar, params[0].charAt(0));
+				
 				provider.setCommand(command);
 				provider.executeCommand();
 			}
@@ -218,6 +221,7 @@ public class TaskManager {
 				ArithmeticDoubleService service = new AbsValueOfExpressionServiceImpl();
 
 				command = new AbsValueOfExpressionCommandImpl(service, numberdata);
+				
 				provider.setCommand(command);
 				provider.executeCommand();
 			}
@@ -234,7 +238,8 @@ public class TaskManager {
 
 				QuantityOfPositiveNumberServiceImpl service = new QuantityOfPositiveNumberServiceImpl();
 
-				command = new QuantityOfPositiveNumberControllerImpl(service, numberdata);
+				command = new QuantityOfPositiveNumberCommandImpl(service, numberdata);
+				
 				provider.setCommand(command);
 				provider.executeCommand();
 			}
@@ -247,7 +252,6 @@ public class TaskManager {
 				Rectangle rectangle = new Rectangle(Double.parseDouble(params[0]), Double.parseDouble(params[1]));
 
 				NumberData<Double> numberdata = new NumberData<>();
-
 				numberdata.addNumberData(Double.parseDouble(params[2]));
 				numberdata.addNumberData(Double.parseDouble(params[3]));
 				numberdata.addNumberData(Double.parseDouble(params[4]));
@@ -263,9 +267,10 @@ public class TaskManager {
 			case "5": {
 				output.showMessage("Please input your password\n>>");
 				String password = input.read();
+				
 				PasswordService service = new AccessByPasswordServiceImpl();
 
-				command = new AccessByPasswordControllerImpl(service, password);
+				command = new AccessByPasswordCommandImpl(service, password);
 
 				provider.setCommand(command);
 				provider.executeCommand();
@@ -294,7 +299,7 @@ public class TaskManager {
 
 				SumOfOddNumberServiceImpl service = new SumOfOddNumberServiceImpl();
 
-				command = new SumOfOddNumberControllerImpl(service, numberdata);
+				command = new SumOfOddNumberCommandImpl(service, numberdata);
 
 				provider.setCommand(command);
 				provider.executeCommand();
@@ -312,7 +317,7 @@ public class TaskManager {
 
 				FunctionValueService service = new FunctionValueServiceImpl();
 
-				command = new FunctionValueControllerImpl(service, numberdata);
+				command = new FunctionValueCommandImpl(service, numberdata);
 
 				provider.setCommand(command);
 				provider.executeCommand();
@@ -330,6 +335,7 @@ public class TaskManager {
 				ArithmeticDoubleService service = new SumOfPositiveRowMemberServiceImpl();
 
 				command = new SumOfPositiveRowMemberCommandImpl(service, numberdata);
+				
 				provider.setCommand(command);
 				provider.executeCommand();
 			}
@@ -348,7 +354,8 @@ public class TaskManager {
 
 				GuessNumberService service = new GuessNumberServiceImpl();
 
-				command = new GuessNumberControllerImpl(service, numberData);
+				command = new GuessNumberCommandImpl(service, numberData);
+				
 				provider.setCommand(command);
 				provider.executeCommand();
 
@@ -357,6 +364,7 @@ public class TaskManager {
 			case "5": {
 				output.showMessage("Please input any natural number\n>>");
 				params = input.read().split("\\s+");
+				
 				ArithmeticIntegerService service = new MaxDigitOfNumberServiceImpl();
 
 				NumberData<Integer> numberData = new NumberData<>();
@@ -388,7 +396,8 @@ public class TaskManager {
 
 			SwapExtraTaskService service = new SwapExtraTaskService();
 
-			command = new SwapExtraTaskControllerImpl(service, numberData);
+			command = new SwapExtraTaskCommandImpl(service, numberData);
+			
 			provider.setCommand(command);
 			provider.executeCommand();
 		}

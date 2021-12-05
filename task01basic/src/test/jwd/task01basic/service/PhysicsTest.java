@@ -5,8 +5,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.PhysicsData;
 import by.jwd.task01basic.service.PhysicsService;
+import by.jwd.task01basic.service.ServiceException;
 import by.jwd.task01basic.service.impl.PhysicsServiceImpl;
-import by.jwd.task01basic.service.impl.ServiceException;
 
 public class PhysicsTest {
 

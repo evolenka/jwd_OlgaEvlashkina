@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.Rectangle;
 import by.jwd.task01basic.service.RectangleService;
-import by.jwd.task01basic.service.impl.ServiceException;
+import by.jwd.task01basic.service.ServiceException;
 import by.jwd.task01basic.view.Output;
 
 public class RectangleAreaCommandImpl implements Command {
@@ -22,6 +22,7 @@ public class RectangleAreaCommandImpl implements Command {
 
 	@Override
 	public void execute() {
+		
 		Output output = new Output();
 		
 		try {

@@ -5,8 +5,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.Rectangle;
 import by.jwd.task01basic.service.RectangleService;
+import by.jwd.task01basic.service.ServiceException;
 import by.jwd.task01basic.service.impl.RectangleAreaServiceImpl;
-import by.jwd.task01basic.service.impl.ServiceException;
 
 public class RectangleAreaTest {
 

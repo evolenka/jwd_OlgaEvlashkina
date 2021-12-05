@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="93" passed="93" failed="0" skipped="0">
+<testng-results ignored="0" total="121" passed="121" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-05T02:36:03 MSK" name="Suite1" finished-at="2021-12-05T02:36:03 MSK" duration-ms="198">
+  <suite started-at="2021-12-05T20:17:16 MSK" name="Suite1" finished-at="2021-12-05T20:17:16 MSK" duration-ms="307">
     <groups>
       <group name="service">
-        <method signature="AbsValueOfExpressionTest.testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" name="testAbsValueOfExpression" class="test.jwd.task01basic.service.AbsValueOfExpressionTest"/>
-        <method signature="AverageOfTwoNumberTest.testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" name="testCalculationAverage" class="test.jwd.task01basic.service.AverageOfTwoNumberTest"/>
-        <method signature="ConvertToCharTest.testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@10feca44]" name="testConvertToChar" class="test.jwd.task01basic.service.ConvertToCharTest"/>
-        <method signature="ConvertToIntTest.testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" name="testConvertToInt" class="test.jwd.task01basic.service.ConvertToIntTest"/>
-        <method signature="DoesBrickFitRectangleTest.testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" name="testNegBrickAndRectangle" class="test.jwd.task01basic.service.DoesBrickFitRectangleTest"/>
-        <method signature="DoesBrickFitRectangleTest.testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" name="testPosBrickAndRectangle" class="test.jwd.task01basic.service.DoesBrickFitRectangleTest"/>
-        <method signature="FunctionValueTest.testFunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@2a54a73f]" name="testFunctionValue" class="test.jwd.task01basic.service.FunctionValueTest"/>
-        <method signature="MinOfTwoNumberTest.testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@662b4c69]" name="testMinOfTwo" class="test.jwd.task01basic.service.MinOfTwoNumberTest"/>
-        <method signature="PhysicsTest.testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" name="testDistance" class="test.jwd.task01basic.service.PhysicsTest"/>
-        <method signature="QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" name="testDataForQuantityOfPositiveNumber" class="test.jwd.task01basic.service.QuantityOfPositiveNumberTest"/>
-        <method signature="RectangleAreaTest.testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@2b48a640]" name="testAreaCalculation" class="test.jwd.task01basic.service.RectangleAreaTest"/>
-        <method signature="SumOfOddNumberTest.testSumOfOddNumber()[pri:0, instance:test.jwd.task01basic.service.SumOfOddNumberTest@6d4e5011]" name="testSumOfOddNumber" class="test.jwd.task01basic.service.SumOfOddNumberTest"/>
-        <method signature="SumOfPositiveRowMemberTest.testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@67c33749]" name="testSumOfPositive" class="test.jwd.task01basic.service.SumOfPositiveRowMemberTest"/>
-        <method signature="TriangleAreaTest.testAreaCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@3d5c822d]" name="testAreaCalculation" class="test.jwd.task01basic.service.TriangleAreaTest"/>
-        <method signature="TriangleHeightTest.testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@73700b80]" name="testHeightCalculation" class="test.jwd.task01basic.service.TriangleHeightTest"/>
-        <method signature="TriangleRadiusInTest.testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@3e84448c]" name="testRadiusInCalculation" class="test.jwd.task01basic.service.TriangleRadiusInTest"/>
-        <method signature="TriangleRadiusOutTest.testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@429bffaa]" name="testRadiusOutCalculation" class="test.jwd.task01basic.service.TriangleRadiusOutTest"/>
+        <method signature="AbsValueOfExpressionTest.testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" name="testAbsValueOfExpression" class="test.jwd.task01basic.service.AbsValueOfExpressionTest"/>
+        <method signature="AccessByPasswordTest.testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" name="testAccessByPassword" class="test.jwd.task01basic.service.AccessByPasswordTest"/>
+        <method signature="AverageOfTwoNumberTest.testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" name="testCalculationAverage" class="test.jwd.task01basic.service.AverageOfTwoNumberTest"/>
+        <method signature="ConvertToCharTest.testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@4a7f959b]" name="testConvertToChar" class="test.jwd.task01basic.service.ConvertToCharTest"/>
+        <method signature="ConvertToIntTest.testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" name="testConvertToInt" class="test.jwd.task01basic.service.ConvertToIntTest"/>
+        <method signature="DoesBrickFitRectangleTest.testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" name="testNegBrickAndRectangle" class="test.jwd.task01basic.service.DoesBrickFitRectangleTest"/>
+        <method signature="DoesBrickFitRectangleTest.testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" name="testPosBrickAndRectangle" class="test.jwd.task01basic.service.DoesBrickFitRectangleTest"/>
+        <method signature="FunctionValueTest.test1FunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@a8e6492]" name="test1FunctionValue" class="test.jwd.task01basic.service.FunctionValueTest"/>
+        <method signature="FunctionValueTest.test2FunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@a8e6492]" name="test2FunctionValue" class="test.jwd.task01basic.service.FunctionValueTest"/>
+        <method signature="FunctionValueTest.test3FunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@a8e6492]" name="test3FunctionValue" class="test.jwd.task01basic.service.FunctionValueTest"/>
+        <method signature="MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" name="testMaxDigitOfNumberNeg" class="test.jwd.task01basic.service.MaxDigitOfNumberTest"/>
+        <method signature="MaxDigitOfNumberTest.testMaxDigitOfNumberPos(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" name="testMaxDigitOfNumberPos" class="test.jwd.task01basic.service.MaxDigitOfNumberTest"/>
+        <method signature="MinOfTwoNumberTest.testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a]" name="testMinOfTwo" class="test.jwd.task01basic.service.MinOfTwoNumberTest"/>
+        <method signature="PhysicsTest.testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" name="testDistance" class="test.jwd.task01basic.service.PhysicsTest"/>
+        <method signature="QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" name="testDataForQuantityOfPositiveNumber" class="test.jwd.task01basic.service.QuantityOfPositiveNumberTest"/>
+        <method signature="RectangleAreaTest.testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@505a9d7c]" name="testAreaCalculation" class="test.jwd.task01basic.service.RectangleAreaTest"/>
+        <method signature="SumOfOddNumberTest.testSumOfOddNumber()[pri:0, instance:test.jwd.task01basic.service.SumOfOddNumberTest@1fcb4808]" name="testSumOfOddNumber" class="test.jwd.task01basic.service.SumOfOddNumberTest"/>
+        <method signature="SumOfPositiveRowMemberTest.testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" name="testSumOfPositive" class="test.jwd.task01basic.service.SumOfPositiveRowMemberTest"/>
+        <method signature="SwapExtraTaskTest.testSwapExtraTask1()[pri:0, instance:test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b]" name="testSwapExtraTask1" class="test.jwd.task01basic.service.SwapExtraTaskTest"/>
+        <method signature="SwapExtraTaskTest.testSwapExtraTask2()[pri:0, instance:test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b]" name="testSwapExtraTask2" class="test.jwd.task01basic.service.SwapExtraTaskTest"/>
+        <method signature="SwapExtraTaskTest.testSwapExtraTask3()[pri:0, instance:test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b]" name="testSwapExtraTask3" class="test.jwd.task01basic.service.SwapExtraTaskTest"/>
+        <method signature="TriangleAreaTest.testAreaCalculationNeg(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" name="testAreaCalculationNeg" class="test.jwd.task01basic.service.TriangleAreaTest"/>
+        <method signature="TriangleAreaTest.testAreaCalculationPos(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" name="testAreaCalculationPos" class="test.jwd.task01basic.service.TriangleAreaTest"/>
+        <method signature="TriangleHeightTest.testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@45c8d09f]" name="testHeightCalculation" class="test.jwd.task01basic.service.TriangleHeightTest"/>
+        <method signature="TriangleRadiusInTest.testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0]" name="testRadiusInCalculation" class="test.jwd.task01basic.service.TriangleRadiusInTest"/>
+        <method signature="TriangleRadiusOutTest.testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a]" name="testRadiusOutCalculation" class="test.jwd.task01basic.service.TriangleRadiusOutTest"/>
       </group> <!-- service -->
     </groups>
-    <test started-at="2021-12-05T02:36:03 MSK" name="CheckGroup" finished-at="2021-12-05T02:36:03 MSK" duration-ms="198">
+    <test started-at="2021-12-05T20:17:16 MSK" name="CheckGroup" finished-at="2021-12-05T20:17:16 MSK" duration-ms="307">
       <class name="test.jwd.task01basic.service.AbsValueOfExpressionTest">
-        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" started-at="2021-12-05T02:36:03 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" started-at="2021-12-05T20:17:16 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@38145825]]>
+                <![CDATA[[D@71104a4]]>
               </value>
             </param>
             <param index="1">
@@ -42,11 +51,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAbsValueOfExpression -->
-        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" started-at="2021-12-05T02:36:03 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" started-at="2021-12-05T20:17:16 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@f68f0dc]]>
+                <![CDATA[[D@29cfd92b]]>
               </value>
             </param>
             <param index="1">
@@ -58,11 +67,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAbsValueOfExpression -->
-        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" started-at="2021-12-05T02:36:03 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" started-at="2021-12-05T20:17:16 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@1224144a]]>
+                <![CDATA[[D@1bdf8190]]>
               </value>
             </param>
             <param index="1">
@@ -74,11 +83,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAbsValueOfExpression -->
-        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" started-at="2021-12-05T02:36:03 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" started-at="2021-12-05T20:17:16 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@1b66c0fb]]>
+                <![CDATA[[D@7859e786]]>
               </value>
             </param>
             <param index="1">
@@ -90,11 +99,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAbsValueOfExpression -->
-        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" started-at="2021-12-05T02:36:03 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" started-at="2021-12-05T20:17:16 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@d2de489]]>
+                <![CDATA[[D@4f8969b0]]>
               </value>
             </param>
             <param index="1">
@@ -106,11 +115,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAbsValueOfExpression -->
-        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" started-at="2021-12-05T02:36:03 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" started-at="2021-12-05T20:17:16 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@1df8da7a]]>
+                <![CDATA[[D@192f2f27]]>
               </value>
             </param>
             <param index="1">
@@ -122,11 +131,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAbsValueOfExpression -->
-        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@28f3b248]" started-at="2021-12-05T02:36:03 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAbsValueOfExpression([D,double)[pri:0, instance:test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545]" started-at="2021-12-05T20:17:16 MSK" name="testAbsValueOfExpression" data-provider="AbsValueOfExpression" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@2f953efd]]>
+                <![CDATA[[D@3a1d593e]]>
               </value>
             </param>
             <param index="1">
@@ -140,11 +149,11 @@
         </test-method> <!-- testAbsValueOfExpression -->
       </class> <!-- test.jwd.task01basic.service.AbsValueOfExpressionTest -->
       <class name="test.jwd.task01basic.service.SumOfPositiveRowMemberTest">
-        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@67c33749]" started-at="2021-12-05T02:36:03 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@66ea810]]>
+                <![CDATA[[D@293bb8a5]]>
               </value>
             </param>
             <param index="1">
@@ -156,13 +165,109 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSumOfPositive -->
-      </class> <!-- test.jwd.task01basic.service.SumOfPositiveRowMemberTest -->
-      <class name="test.jwd.task01basic.service.MinOfTwoNumberTest">
-        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@662b4c69]" started-at="2021-12-05T02:36:03 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@12591ac8]]>
+                <![CDATA[[D@11acdc30]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumOfPositive -->
+        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@74bdc168]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumOfPositive -->
+        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@c65a5ef]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.1944444444444444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumOfPositive -->
+        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@460f76a6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.1944444444444444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumOfPositive -->
+        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@54361a9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.3564814814814814]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumOfPositive -->
+        <test-method signature="testSumOfPositive([D,double)[pri:0, instance:test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfPositive" data-provider="SumOfPositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@403132fc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumOfPositive -->
+      </class> <!-- test.jwd.task01basic.service.SumOfPositiveRowMemberTest -->
+      <class name="test.jwd.task01basic.service.MinOfTwoNumberTest">
+        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a]" started-at="2021-12-05T20:17:16 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@4985cbcb]]>
               </value>
             </param>
             <param index="1">
@@ -174,11 +279,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMinOfTwo -->
-        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@662b4c69]" started-at="2021-12-05T02:36:03 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a]" started-at="2021-12-05T20:17:16 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@508dec2b]]>
+                <![CDATA[[D@72f46e16]]>
               </value>
             </param>
             <param index="1">
@@ -190,11 +295,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMinOfTwo -->
-        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@662b4c69]" started-at="2021-12-05T02:36:03 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a]" started-at="2021-12-05T20:17:16 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@9816741]]>
+                <![CDATA[[D@77307458]]>
               </value>
             </param>
             <param index="1">
@@ -206,11 +311,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMinOfTwo -->
-        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@662b4c69]" started-at="2021-12-05T02:36:03 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a]" started-at="2021-12-05T20:17:16 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@5d908d47]]>
+                <![CDATA[[D@7997b197]]>
               </value>
             </param>
             <param index="1">
@@ -222,11 +327,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMinOfTwo -->
-        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@662b4c69]" started-at="2021-12-05T02:36:03 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a]" started-at="2021-12-05T20:17:16 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@2d29b4ee]]>
+                <![CDATA[[D@ec0c838]]>
               </value>
             </param>
             <param index="1">
@@ -238,11 +343,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMinOfTwo -->
-        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@662b4c69]" started-at="2021-12-05T02:36:03 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testMinOfTwo([D,double)[pri:0, instance:test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a]" started-at="2021-12-05T20:17:16 MSK" name="testMinOfTwo" data-provider="MinOfTwo" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@6a4f1a55]]>
+                <![CDATA[[D@285d851a]]>
               </value>
             </param>
             <param index="1">
@@ -256,11 +361,11 @@
         </test-method> <!-- testMinOfTwo -->
       </class> <!-- test.jwd.task01basic.service.MinOfTwoNumberTest -->
       <class name="test.jwd.task01basic.service.RectangleAreaTest">
-        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@2b48a640]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@505a9d7c]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@626abbd0]]>
+                <![CDATA[[D@7876d598]]>
               </value>
             </param>
             <param index="1">
@@ -272,11 +377,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAreaCalculation -->
-        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@2b48a640]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@505a9d7c]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@465232e9]]>
+                <![CDATA[[D@644c78d4]]>
               </value>
             </param>
             <param index="1">
@@ -288,11 +393,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAreaCalculation -->
-        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@2b48a640]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@505a9d7c]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@660acfb]]>
+                <![CDATA[[D@18e7143f]]>
               </value>
             </param>
             <param index="1">
@@ -304,11 +409,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAreaCalculation -->
-        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@2b48a640]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@505a9d7c]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@46d59067]]>
+                <![CDATA[[D@32232e55]]>
               </value>
             </param>
             <param index="1">
@@ -320,11 +425,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAreaCalculation -->
-        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@2b48a640]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testAreaCalculation([D,double)[pri:0, instance:test.jwd.task01basic.service.RectangleAreaTest@505a9d7c]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[D@1f9f6368]]>
+                <![CDATA[[D@1922e6d]]>
               </value>
             </param>
             <param index="1">
@@ -338,23 +443,31 @@
         </test-method> <!-- testAreaCalculation -->
       </class> <!-- test.jwd.task01basic.service.RectangleAreaTest -->
       <class name="test.jwd.task01basic.service.SumOfOddNumberTest">
-        <test-method signature="testSumOfOddNumber()[pri:0, instance:test.jwd.task01basic.service.SumOfOddNumberTest@6d4e5011]" started-at="2021-12-05T02:36:03 MSK" name="testSumOfOddNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testSumOfOddNumber()[pri:0, instance:test.jwd.task01basic.service.SumOfOddNumberTest@1fcb4808]" started-at="2021-12-05T20:17:16 MSK" name="testSumOfOddNumber" description="Sum of odd numbers from 1 to 99" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSumOfOddNumber -->
       </class> <!-- test.jwd.task01basic.service.SumOfOddNumberTest -->
       <class name="test.jwd.task01basic.service.FunctionValueTest">
-        <test-method signature="testFunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@2a54a73f]" started-at="2021-12-05T02:36:03 MSK" name="testFunctionValue" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="test1FunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@a8e6492]" started-at="2021-12-05T20:17:16 MSK" name="test1FunctionValue" description="FunctionValueTest1" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFunctionValue -->
+        </test-method> <!-- test1FunctionValue -->
+        <test-method signature="test2FunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@a8e6492]" started-at="2021-12-05T20:17:16 MSK" name="test2FunctionValue" description="FunctionValueTest2" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2FunctionValue -->
+        <test-method signature="test3FunctionValue()[pri:0, instance:test.jwd.task01basic.service.FunctionValueTest@a8e6492]" started-at="2021-12-05T20:17:16 MSK" name="test3FunctionValue" description="FunctionValueTest3" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3FunctionValue -->
       </class> <!-- test.jwd.task01basic.service.FunctionValueTest -->
       <class name="test.jwd.task01basic.service.QuantityOfPositiveNumberTest">
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@29f7cefd]]>
+                <![CDATA[[I@5cc69cfe]]>
               </value>
             </param>
             <param index="1">
@@ -366,11 +479,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@14bdbc74]]>
+                <![CDATA[[I@4a8ab068]]>
               </value>
             </param>
             <param index="1">
@@ -382,11 +495,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@3b35a229]]>
+                <![CDATA[[I@6e46d9f4]]>
               </value>
             </param>
             <param index="1">
@@ -398,11 +511,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@6f36c2f0]]>
+                <![CDATA[[I@2f7a7219]]>
               </value>
             </param>
             <param index="1">
@@ -414,11 +527,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@45385f75]]>
+                <![CDATA[[I@21c64522]]>
               </value>
             </param>
             <param index="1">
@@ -430,11 +543,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@2d0399f4]]>
+                <![CDATA[[I@332a7fce]]>
               </value>
             </param>
             <param index="1">
@@ -446,11 +559,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@f58853c]]>
+                <![CDATA[[I@2c177f9e]]>
               </value>
             </param>
             <param index="1">
@@ -462,11 +575,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@7dfb0c0f]]>
+                <![CDATA[[I@532a02d9]]>
               </value>
             </param>
             <param index="1">
@@ -478,11 +591,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@14dd7b39]]>
+                <![CDATA[[I@f9b7332]]>
               </value>
             </param>
             <param index="1">
@@ -494,11 +607,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@2584b82d]]>
+                <![CDATA[[I@4a8a60bc]]>
               </value>
             </param>
             <param index="1">
@@ -510,11 +623,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
-        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@76c3e77a]" started-at="2021-12-05T02:36:03 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDataForQuantityOfPositiveNumber([I,int)[pri:0, instance:test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397]" started-at="2021-12-05T20:17:16 MSK" name="testDataForQuantityOfPositiveNumber" data-provider="DataForQuantityOfPositiveNumber" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@49c90a9c]]>
+                <![CDATA[[I@76a82f33]]>
               </value>
             </param>
             <param index="1">
@@ -528,7 +641,163 @@
         </test-method> <!-- testDataForQuantityOfPositiveNumber -->
       </class> <!-- test.jwd.task01basic.service.QuantityOfPositiveNumberTest -->
       <class name="test.jwd.task01basic.service.TriangleAreaTest">
-        <test-method signature="testAreaCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@3d5c822d]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testAreaCalculationNeg(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculationNeg" description="Negative scenario" data-provider="DataForAreaNeg" finished-at="2021-12-05T20:17:16 MSK" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAreaCalculationNeg -->
+        <test-method signature="testAreaCalculationNeg(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculationNeg" description="Negative scenario" data-provider="DataForAreaNeg" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAreaCalculationNeg -->
+        <test-method signature="testAreaCalculationNeg(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculationNeg" description="Negative scenario" data-provider="DataForAreaNeg" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-2147483647]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAreaCalculationNeg -->
+        <test-method signature="testAreaCalculationPos(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculationPos" description="Positive scenario" data-provider="DataForAreaPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -543,8 +812,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAreaCalculation -->
-        <test-method signature="testAreaCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@3d5c822d]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        </test-method> <!-- testAreaCalculationPos -->
+        <test-method signature="testAreaCalculationPos(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculationPos" description="Positive scenario" data-provider="DataForAreaPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -559,8 +828,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAreaCalculation -->
-        <test-method signature="testAreaCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@3d5c822d]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        </test-method> <!-- testAreaCalculationPos -->
+        <test-method signature="testAreaCalculationPos(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculationPos" description="Positive scenario" data-provider="DataForAreaPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -575,8 +844,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAreaCalculation -->
-        <test-method signature="testAreaCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@3d5c822d]" started-at="2021-12-05T02:36:03 MSK" name="testAreaCalculation" data-provider="DataForArea" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        </test-method> <!-- testAreaCalculationPos -->
+        <test-method signature="testAreaCalculationPos(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleAreaTest@72cf2de5]" started-at="2021-12-05T20:17:16 MSK" name="testAreaCalculationPos" description="Positive scenario" data-provider="DataForAreaPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -591,585 +860,10 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAreaCalculation -->
+        </test-method> <!-- testAreaCalculationPos -->
       </class> <!-- test.jwd.task01basic.service.TriangleAreaTest -->
-      <class name="test.jwd.task01basic.service.DoesBrickFitRectangleTest">
-        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@2254127a]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <exception class="by.jwd.task01basic.service.impl.ServiceException">
-            <full-stacktrace>
-              <![CDATA[by.jwd.task01basic.service.impl.ServiceException
-at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:29)
-at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:36)
-at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- by.jwd.task01basic.service.impl.ServiceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNegBrickAndRectangle -->
-        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@5c86a017]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <exception class="by.jwd.task01basic.service.impl.ServiceException">
-            <full-stacktrace>
-              <![CDATA[by.jwd.task01basic.service.impl.ServiceException
-at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:29)
-at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:36)
-at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- by.jwd.task01basic.service.impl.ServiceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNegBrickAndRectangle -->
-        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@41330d4f]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <exception class="by.jwd.task01basic.service.impl.ServiceException">
-            <full-stacktrace>
-              <![CDATA[by.jwd.task01basic.service.impl.ServiceException
-at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:29)
-at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:36)
-at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- by.jwd.task01basic.service.impl.ServiceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNegBrickAndRectangle -->
-        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@d23e042]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <exception class="by.jwd.task01basic.service.impl.ServiceException">
-            <full-stacktrace>
-              <![CDATA[by.jwd.task01basic.service.impl.ServiceException
-at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:48)
-at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- by.jwd.task01basic.service.impl.ServiceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNegBrickAndRectangle -->
-        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@37313c65]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <exception class="by.jwd.task01basic.service.impl.ServiceException">
-            <full-stacktrace>
-              <![CDATA[by.jwd.task01basic.service.impl.ServiceException
-at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:48)
-at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- by.jwd.task01basic.service.impl.ServiceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNegBrickAndRectangle -->
-        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@6e2aa843]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <exception class="by.jwd.task01basic.service.impl.ServiceException">
-            <full-stacktrace>
-              <![CDATA[by.jwd.task01basic.service.impl.ServiceException
-at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:48)
-at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:73)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- by.jwd.task01basic.service.impl.ServiceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNegBrickAndRectangle -->
-        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@798162bc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPosBrickAndRectangle -->
-        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@51891008]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPosBrickAndRectangle -->
-        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@5efa40fe]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPosBrickAndRectangle -->
-        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@24c1b2d2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPosBrickAndRectangle -->
-        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@7e5afaa6]" started-at="2021-12-05T02:36:03 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@3e0e1046]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPosBrickAndRectangle -->
-      </class> <!-- test.jwd.task01basic.service.DoesBrickFitRectangleTest -->
-      <class name="test.jwd.task01basic.service.AverageOfTwoNumberTest">
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@6cd24612]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@7dc19a70]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@126253fd]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[3.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@700fb871]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[6.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@5dafbe45]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@7dfd3c81]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[-1.5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@7486b455]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1.5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@6933b6c6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[-4.5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@169bb4dd]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[2147483647]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@57db2b13]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@22e357dc]" started-at="2021-12-05T02:36:03 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[D@7fb4f2a9]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[-2147483647]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculationAverage -->
-      </class> <!-- test.jwd.task01basic.service.AverageOfTwoNumberTest -->
       <class name="test.jwd.task01basic.service.TriangleRadiusOutTest">
-        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@429bffaa]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1185,7 +879,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadiusOutCalculation -->
-        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@429bffaa]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1201,7 +895,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadiusOutCalculation -->
-        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@429bffaa]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1217,7 +911,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadiusOutCalculation -->
-        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@429bffaa]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1233,7 +927,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadiusOutCalculation -->
-        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@429bffaa]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testRadiusOutCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusOutCalculation" data-provider="DataForRadiusOut" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1250,12 +944,809 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- testRadiusOutCalculation -->
       </class> <!-- test.jwd.task01basic.service.TriangleRadiusOutTest -->
-      <class name="test.jwd.task01basic.service.PhysicsTest">
-        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" started-at="2021-12-05T02:36:03 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+      <class name="test.jwd.task01basic.service.DoesBrickFitRectangleTest">
+        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@1c9b0314]]>
+                <![CDATA[[D@314b8f2d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegBrickAndRectangle -->
+        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@6b5176f2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegBrickAndRectangle -->
+        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@5af28b27]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegBrickAndRectangle -->
+        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@33617539]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegBrickAndRectangle -->
+        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@55f3c410]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegBrickAndRectangle -->
+        <test-method signature="testNegBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testNegBrickAndRectangle" description="Negative_scenario" data-provider="BrickAndRectangleNegative" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@549621f3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegBrickAndRectangle -->
+        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@37ebc9d8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPosBrickAndRectangle -->
+        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@669513d8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPosBrickAndRectangle -->
+        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@2fab4aff]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPosBrickAndRectangle -->
+        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@3c9168dc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPosBrickAndRectangle -->
+        <test-method signature="testPosBrickAndRectangle([D,boolean)[pri:0, instance:test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b]" started-at="2021-12-05T20:17:16 MSK" name="testPosBrickAndRectangle" description="Positive_scenario" data-provider="BrickAndRectanglePositive" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@2cab9998]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPosBrickAndRectangle -->
+      </class> <!-- test.jwd.task01basic.service.DoesBrickFitRectangleTest -->
+      <class name="test.jwd.task01basic.service.AverageOfTwoNumberTest">
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@6e9319f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@6bab2585]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@361c294e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@71c5b236]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@7bb3a9fe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@1fc0053e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@2416a51]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@611f8234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-4.5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@11dee337]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2147483647]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@74cec793]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+        <test-method signature="testCalculationAverage([D,double)[pri:0, instance:test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28]" started-at="2021-12-05T20:17:16 MSK" name="testCalculationAverage" data-provider="DataForAverage" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[D@770d4269]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-2147483647]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalculationAverage -->
+      </class> <!-- test.jwd.task01basic.service.AverageOfTwoNumberTest -->
+      <class name="test.jwd.task01basic.service.MaxDigitOfNumberTest">
+        <test-method signature="testMaxDigitOfNumberNeg(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" started-at="2021-12-05T20:17:16 MSK" name="testMaxDigitOfNumberNeg" description="Negative_scenario" data-provider="MaxDigitOfNumberNeg" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaxDigitOfNumberNeg -->
+        <test-method signature="testMaxDigitOfNumberNeg(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" started-at="2021-12-05T20:17:16 MSK" name="testMaxDigitOfNumberNeg" description="Negative_scenario" data-provider="MaxDigitOfNumberNeg" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaxDigitOfNumberNeg -->
+        <test-method signature="testMaxDigitOfNumberNeg(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" started-at="2021-12-05T20:17:16 MSK" name="testMaxDigitOfNumberNeg" description="Negative_scenario" data-provider="MaxDigitOfNumberNeg" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-98567]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="by.jwd.task01basic.service.ServiceException">
+            <full-stacktrace>
+              <![CDATA[by.jwd.task01basic.service.ServiceException
+at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- by.jwd.task01basic.service.ServiceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaxDigitOfNumberNeg -->
+        <test-method signature="testMaxDigitOfNumberPos(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" started-at="2021-12-05T20:17:16 MSK" name="testMaxDigitOfNumberPos" description="Positive_scenario" data-provider="MaxDigitOfNumberPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1589]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaxDigitOfNumberPos -->
+        <test-method signature="testMaxDigitOfNumberPos(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" started-at="2021-12-05T20:17:16 MSK" name="testMaxDigitOfNumberPos" description="Positive_scenario" data-provider="MaxDigitOfNumberPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8426]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaxDigitOfNumberPos -->
+        <test-method signature="testMaxDigitOfNumberPos(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" started-at="2021-12-05T20:17:16 MSK" name="testMaxDigitOfNumberPos" description="Positive_scenario" data-provider="MaxDigitOfNumberPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1151]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaxDigitOfNumberPos -->
+        <test-method signature="testMaxDigitOfNumberPos(int,int)[pri:0, instance:test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea]" started-at="2021-12-05T20:17:16 MSK" name="testMaxDigitOfNumberPos" description="Positive_scenario" data-provider="MaxDigitOfNumberPos" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5555]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaxDigitOfNumberPos -->
+      </class> <!-- test.jwd.task01basic.service.MaxDigitOfNumberTest -->
+      <class name="test.jwd.task01basic.service.PhysicsTest">
+        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" started-at="2021-12-05T20:17:16 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[I@5217f3d0]]>
               </value>
             </param>
             <param index="1">
@@ -1267,11 +1758,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDistance -->
-        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" started-at="2021-12-05T02:36:03 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" started-at="2021-12-05T20:17:16 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@7d3e8655]]>
+                <![CDATA[[I@389adf1d]]>
               </value>
             </param>
             <param index="1">
@@ -1283,11 +1774,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDistance -->
-        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" started-at="2021-12-05T02:36:03 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" started-at="2021-12-05T20:17:16 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@3aa078fd]]>
+                <![CDATA[[I@290b1b2e]]>
               </value>
             </param>
             <param index="1">
@@ -1299,11 +1790,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDistance -->
-        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" started-at="2021-12-05T02:36:03 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" started-at="2021-12-05T20:17:16 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@475c9c31]]>
+                <![CDATA[[I@6fa590ba]]>
               </value>
             </param>
             <param index="1">
@@ -1315,11 +1806,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDistance -->
-        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" started-at="2021-12-05T02:36:03 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" started-at="2021-12-05T20:17:16 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@23941fb4]]>
+                <![CDATA[[I@47874b25]]>
               </value>
             </param>
             <param index="1">
@@ -1331,11 +1822,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDistance -->
-        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" started-at="2021-12-05T02:36:03 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" started-at="2021-12-05T20:17:16 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@7bbc8656]]>
+                <![CDATA[[I@209775a9]]>
               </value>
             </param>
             <param index="1">
@@ -1347,11 +1838,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDistance -->
-        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@14555e0a]" started-at="2021-12-05T02:36:03 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testDistance([I,int)[pri:0, instance:test.jwd.task01basic.service.PhysicsTest@19ae6bb]" started-at="2021-12-05T20:17:16 MSK" name="testDistance" data-provider="DataForPhysics" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[I@1b919693]]>
+                <![CDATA[[I@7bf9b098]]>
               </value>
             </param>
             <param index="1">
@@ -1364,8 +1855,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- testDistance -->
       </class> <!-- test.jwd.task01basic.service.PhysicsTest -->
+      <class name="test.jwd.task01basic.service.SwapExtraTaskTest">
+        <test-method signature="testSwapExtraTask1()[pri:0, instance:test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b]" started-at="2021-12-05T20:17:16 MSK" name="testSwapExtraTask1" description="SwapExtraTaskTest1" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwapExtraTask1 -->
+        <test-method signature="testSwapExtraTask2()[pri:0, instance:test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b]" started-at="2021-12-05T20:17:16 MSK" name="testSwapExtraTask2" description="SwapExtraTaskTest2" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwapExtraTask2 -->
+        <test-method signature="testSwapExtraTask3()[pri:0, instance:test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b]" started-at="2021-12-05T20:17:16 MSK" name="testSwapExtraTask3" description="SwapExtraTaskTest3" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwapExtraTask3 -->
+      </class> <!-- test.jwd.task01basic.service.SwapExtraTaskTest -->
       <class name="test.jwd.task01basic.service.TriangleHeightTest">
-        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@73700b80]" started-at="2021-12-05T02:36:03 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@45c8d09f]" started-at="2021-12-05T20:17:16 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1381,7 +1886,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHeightCalculation -->
-        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@73700b80]" started-at="2021-12-05T02:36:03 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@45c8d09f]" started-at="2021-12-05T20:17:16 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1397,7 +1902,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHeightCalculation -->
-        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@73700b80]" started-at="2021-12-05T02:36:03 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@45c8d09f]" started-at="2021-12-05T20:17:16 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1413,7 +1918,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHeightCalculation -->
-        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@73700b80]" started-at="2021-12-05T02:36:03 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@45c8d09f]" started-at="2021-12-05T20:17:16 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1429,7 +1934,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHeightCalculation -->
-        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@73700b80]" started-at="2021-12-05T02:36:03 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testHeightCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleHeightTest@45c8d09f]" started-at="2021-12-05T20:17:16 MSK" name="testHeightCalculation" data-provider="DataForHeight" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1446,12 +1951,126 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- testHeightCalculation -->
       </class> <!-- test.jwd.task01basic.service.TriangleHeightTest -->
-      <class name="test.jwd.task01basic.service.ConvertToCharTest">
-        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@10feca44]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+      <class name="test.jwd.task01basic.service.AccessByPasswordTest">
+        <test-method signature="testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" started-at="2021-12-05T20:17:16 MSK" name="testAccessByPassword" data-provider="AccessByPassword" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[C@1f9e9475]]>
+                <![CDATA[9583]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your acess level: bases A,B,C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessByPassword -->
+        <test-method signature="testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" started-at="2021-12-05T20:17:16 MSK" name="testAccessByPassword" data-provider="AccessByPassword" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1748]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your acess level: bases A,B,C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessByPassword -->
+        <test-method signature="testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" started-at="2021-12-05T20:17:16 MSK" name="testAccessByPassword" data-provider="AccessByPassword" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3331]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your acess level: bases B,C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessByPassword -->
+        <test-method signature="testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" started-at="2021-12-05T20:17:16 MSK" name="testAccessByPassword" data-provider="AccessByPassword" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7922]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your acess level: bases B,C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessByPassword -->
+        <test-method signature="testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" started-at="2021-12-05T20:17:16 MSK" name="testAccessByPassword" data-provider="AccessByPassword" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9455]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your acess level: base C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessByPassword -->
+        <test-method signature="testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" started-at="2021-12-05T20:17:16 MSK" name="testAccessByPassword" data-provider="AccessByPassword" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8997]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your acess level: base C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessByPassword -->
+        <test-method signature="testAccessByPassword(java.lang.String,java.lang.String)[pri:0, instance:test.jwd.task01basic.service.AccessByPasswordTest@7b324585]" started-at="2021-12-05T20:17:16 MSK" name="testAccessByPassword" data-provider="AccessByPassword" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[45845455]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Invalid password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAccessByPassword -->
+      </class> <!-- test.jwd.task01basic.service.AccessByPasswordTest -->
+      <class name="test.jwd.task01basic.service.ConvertToCharTest">
+        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@4a7f959b]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[C@5db4c359]]>
               </value>
             </param>
             <param index="1">
@@ -1463,11 +2082,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToChar -->
-        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@10feca44]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@4a7f959b]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[C@4dc27487]]>
+                <![CDATA[[C@8a589a2]]>
               </value>
             </param>
             <param index="1">
@@ -1479,11 +2098,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToChar -->
-        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@10feca44]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@4a7f959b]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[C@1807f5a7]]>
+                <![CDATA[[C@b672aa8]]>
               </value>
             </param>
             <param index="1">
@@ -1495,11 +2114,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToChar -->
-        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@10feca44]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@4a7f959b]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[C@1e4f4a5c]]>
+                <![CDATA[[C@72e34f77]]>
               </value>
             </param>
             <param index="1">
@@ -1511,11 +2130,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToChar -->
-        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@10feca44]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@4a7f959b]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[C@5a7fe64f]]>
+                <![CDATA[[C@4a3e3e8b]]>
               </value>
             </param>
             <param index="1">
@@ -1527,11 +2146,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToChar -->
-        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@10feca44]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToChar([C,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToCharTest@4a7f959b]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToChar" data-provider="DataForConvertToChar" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[C@69ee81fc]]>
+                <![CDATA[[C@6fefce9e]]>
               </value>
             </param>
             <param index="1">
@@ -1545,7 +2164,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testConvertToChar -->
       </class> <!-- test.jwd.task01basic.service.ConvertToCharTest -->
       <class name="test.jwd.task01basic.service.TriangleRadiusInTest">
-        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@3e84448c]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1561,23 +2180,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadiusInCalculation -->
-        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@3e84448c]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0.57735]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRadiusInCalculation -->
-        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@3e84448c]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1593,7 +2196,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadiusInCalculation -->
-        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@3e84448c]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.57735]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRadiusInCalculation -->
+        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1609,7 +2228,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRadiusInCalculation -->
-        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@3e84448c]" started-at="2021-12-05T02:36:03 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testRadiusInCalculation(double,double)[pri:0, instance:test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0]" started-at="2021-12-05T20:17:16 MSK" name="testRadiusInCalculation" data-provider="DataForRadiusIn" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1627,7 +2246,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- testRadiusInCalculation -->
       </class> <!-- test.jwd.task01basic.service.TriangleRadiusInTest -->
       <class name="test.jwd.task01basic.service.ConvertToIntTest">
-        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1643,7 +2262,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToInt -->
-        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1659,7 +2278,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToInt -->
-        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T20:17:16 MSK" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1675,7 +2294,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToInt -->
-        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1691,7 +2310,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToInt -->
-        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T20:17:16 MSK" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1707,7 +2326,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToInt -->
-        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T02:36:03 MSK" duration-ms="0" status="PASS">
+        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1723,7 +2342,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testConvertToInt -->
-        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@3059cbc]" started-at="2021-12-05T02:36:03 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T02:36:03 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testConvertToInt(char,int)[pri:0, instance:test.jwd.task01basic.service.ConvertToIntTest@10d307f1]" started-at="2021-12-05T20:17:16 MSK" name="testConvertToInt" data-provider="DataForConvertToInt" finished-at="2021-12-05T20:17:16 MSK" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>

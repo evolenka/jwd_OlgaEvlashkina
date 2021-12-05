@@ -24,6 +24,9 @@
 			<class name="test.jwd.task01basic.service.SumOfPositiveRowMemberTest" />
 			<class name="test.jwd.task01basic.service.MinOfTwoNumberTest" />
 			<class name="test.jwd.task01basic.service.FunctionValueTest" />
+			<class name="test.jwd.task01basic.service.AccessByPasswordTest" />
+			<class name="test.jwd.task01basic.service.MaxDigitOfNumberTest" />
+			<class name="test.jwd.task01basic.service.SwapExtraTaskTest" />
 			
 		</classes>
 	</test> <!-- Default test -->

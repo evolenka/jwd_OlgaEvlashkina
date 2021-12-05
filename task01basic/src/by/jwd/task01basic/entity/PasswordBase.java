@@ -3,11 +3,11 @@ package by.jwd.task01basic.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Password {
+public class PasswordBase {
 
 	private List<String> passwordBase;
 
-	public Password() {
+	public PasswordBase() {
 
 		passwordBase = new ArrayList<>();
 		passwordBase.add("9583");
@@ -46,7 +46,7 @@ public class Password {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Password other = (Password) obj;
+		PasswordBase other = (PasswordBase) obj;
 		if (passwordBase == null) {
 			if (other.passwordBase != null)
 				return false;
@@ -57,6 +57,6 @@ public class Password {
 
 	@Override
 	public String toString() {
-		return "passwords: " + passwordBase;
+		return "password base: " + passwordBase;
 	}
 }

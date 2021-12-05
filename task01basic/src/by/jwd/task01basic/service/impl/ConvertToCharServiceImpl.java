@@ -5,16 +5,17 @@ import by.jwd.task01basic.service.ConvertToCharService;
 /*33 linear task: input any character and find the previous and the next characters (second part of task)*/
 
 public class ConvertToCharServiceImpl implements ConvertToCharService {
-	
+
 	/**
-	 * Find the previous and the next characters by the number designation of the character
+	 * Find the previous and the next characters by the number designation of the
+	 * character (ASCII)
 	 * 
 	 * @author evlashkina
 	 * @version 1
 	 * @param index (number designation of the character)
-	 * @return char array consisting of the next and the previous characters
+	 * @return char array consisting of the next and the previous characters (ASCII)
 	 */
-	
+
 	@Override
 	public char[] convert(int index) {
 

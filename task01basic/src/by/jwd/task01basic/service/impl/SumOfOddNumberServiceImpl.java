@@ -24,7 +24,7 @@ public class SumOfOddNumberServiceImpl implements ArithmeticIntegerService {
 
 		while (i < numberdata.getNumberData().size()) {
 			if (i % 2 != 0) {
-				sum = sum + i;
+				sum +=  i;
 			}
 			i++;
 		}

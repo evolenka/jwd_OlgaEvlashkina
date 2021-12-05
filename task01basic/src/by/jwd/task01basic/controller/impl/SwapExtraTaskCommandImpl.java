@@ -1,20 +1,16 @@
 package by.jwd.task01basic.controller.impl;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.service.impl.SwapExtraTaskService;
 import by.jwd.task01basic.view.Output;
 
-public class SwapExtraTaskControllerImpl implements Command {
-
-	static Logger LOGGER = LogManager.getLogger(GuessNumberControllerImpl.class);
+public class SwapExtraTaskCommandImpl implements Command {
 
 	private SwapExtraTaskService service;
 	private NumberData<Integer> numberData;
 
-	public SwapExtraTaskControllerImpl(SwapExtraTaskService service, NumberData<Integer> numberData) {
+	public SwapExtraTaskCommandImpl(SwapExtraTaskService service, NumberData<Integer> numberData) {
 
 		this.service = service;
 		this.numberData = numberData;
@@ -38,6 +34,5 @@ public class SwapExtraTaskControllerImpl implements Command {
 				+ result2.getNumberData().get(0).toString() + "; b = " + result2.getNumberData().get(1).toString()
 				+ "\nNumbers after third swap:  a = " + result3.getNumberData().get(0).toString() + "; b = "
 				+ result3.getNumberData().get(1).toString());
-
 	}
 }

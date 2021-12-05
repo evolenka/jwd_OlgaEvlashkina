@@ -4,8 +4,8 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.Triangle;
+import by.jwd.task01basic.service.ServiceException;
 import by.jwd.task01basic.service.TriangleService;
-import by.jwd.task01basic.service.impl.ServiceException;
 import by.jwd.task01basic.service.impl.TriangleRadiusInServiceImpl;
 
 public class TriangleRadiusInTest {

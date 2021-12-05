@@ -6,12 +6,13 @@ import by.jwd.task01basic.service.ArithmeticIntegerService;
 /*19 conditional task: ñount quantity of positive numbers among a,b,c.*/
 
 public class QuantityOfPositiveNumberServiceImpl implements ArithmeticIntegerService {
-	
+
 	/**
-	 * Ñount the quantity of positive numbers among  given numbers a,b,c.
+	 * Ñount the quantity of positive numbers among the given numbers a,b,c.
+	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param numberData (given data)
+	 * @param NumberData<Integer>numberData
 	 * @return int result of counting
 	 */
 

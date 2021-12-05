@@ -6,7 +6,7 @@ import by.jwd.task01basic.controller.Command;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.entity.Rectangle;
 import by.jwd.task01basic.service.RectangleLogicService;
-import by.jwd.task01basic.service.impl.ServiceException;
+import by.jwd.task01basic.service.ServiceException;
 import by.jwd.task01basic.view.Output;
 
 public class DoesBrickFitRectangleCommandImpl implements Command {

@@ -12,7 +12,7 @@ public class MinOfTwoNumberServiceImpl implements ArithmeticDoubleService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param numberData (two given double numbers)
+	 * @param NumberData<Double> numberData
 	 * @return double number
 	 */
 

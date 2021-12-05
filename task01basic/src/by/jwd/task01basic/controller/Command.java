@@ -1,13 +1,12 @@
 package by.jwd.task01basic.controller;
 
 /**
- * Execute commands received from TaskManager
+ * Contains the method to execute commands received from TaskManager
  * 
  * @author evlashkina
  * @version 1
  */
 
 public interface Command {
-
-	public void execute();
+	public void execute ();
 }

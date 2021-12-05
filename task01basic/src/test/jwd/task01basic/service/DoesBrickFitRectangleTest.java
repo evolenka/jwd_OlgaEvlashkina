@@ -8,17 +8,12 @@ import org.testng.annotations.Test;
 import by.jwd.task01basic.entity.NumberData;
 import by.jwd.task01basic.entity.Rectangle;
 import by.jwd.task01basic.service.RectangleLogicService;
+import by.jwd.task01basic.service.ServiceException;
 import by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl;
-import by.jwd.task01basic.service.impl.ServiceException;
 
 public class DoesBrickFitRectangleTest {
 
 	RectangleLogicService arithmetic = new DoesBrickFitRectangleServiceImpl();
-
-	/*
-	 * data should be > 0, see validation in
-	 * by.jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl
-	 */
 
 	@DataProvider(name = "BrickAndRectanglePositive")
 	public Object[][] createPositiveDataForBrickAndRectangle() {

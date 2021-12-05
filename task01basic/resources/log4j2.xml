@@ -19,7 +19,7 @@
     </Appenders>
 
     <Loggers>
-        <Logger name = "by.jwd.task01basic" level = "debug">
+        <Logger name = "by.jwd.task01basic" level = "error">
             <AppenderRef ref="LogFile"></AppenderRef>
         </Logger>
 

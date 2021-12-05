@@ -1,7 +1,12 @@
 package by.jwd.task01basic.service.impl;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 import by.jwd.task01basic.entity.PhysicsData;
 import by.jwd.task01basic.service.PhysicsService;
+import by.jwd.task01basic.service.ServiceException;
 
 /*31 linear task: calculate the distance traveled by the boat, if its speed in still water is V (km / h),
  * the speed of the river is V1 (km / h), the time of movement on the river is T1 (h), and time against the stream of the river - T2 (h)*/
@@ -18,7 +23,10 @@ public class PhysicsServiceImpl implements PhysicsService {
 	 * @version 1
 	 * @param physicsData (given data)
 	 * @return int result of distance calculation
+	 * @exception ServiceException
+	 * @throws ServiceException if the argument is invalid for the calculation
 	 */
+	static Logger logger = LogManager.getLogger(PhysicsServiceImpl.class);
 
 	@Override
 	public int doCalculation(PhysicsData physicsData) throws ServiceException {
@@ -31,6 +39,7 @@ public class PhysicsServiceImpl implements PhysicsService {
 			return physicsData.getBoatSpeed() * physicsData.getTimeWithStream()
 					+ (physicsData.getBoatSpeed() - physicsData.getRiverSpeed()) * physicsData.getTimeAgainstStream();
 		} catch (IllegalArgumentException e) {
+			logger.error("negative number (or = 0)");
 			throw new ServiceException();
 		}
 	}
