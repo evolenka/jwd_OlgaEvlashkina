@@ -12,7 +12,7 @@ public class QuantityOfPositiveNumberServiceImpl implements ArithmeticIntegerSer
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param NumberData<Integer>numberData
+	 * @param numberData (three numbers)
 	 * @return int result of counting
 	 */
 

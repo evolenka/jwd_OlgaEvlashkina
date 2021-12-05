@@ -9,10 +9,10 @@ public interface PhysicsService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param PhysicsData physicsData
+	 * @param physicsData
 	 * @return int result of calculation
 	 * @exception ServiceException
-	 * @throws ServiceException if the argument is invalid for the calculation
+	 * @throws ServiceException, if the argument is invalid for the calculation
 	 */
 
 	public int doCalculation(PhysicsData physicsData) throws ServiceException;

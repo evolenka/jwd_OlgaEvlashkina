@@ -21,7 +21,7 @@ public class PhysicsServiceImpl implements PhysicsService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param physicsData (given data)
+	 * @param physicsData
 	 * @return int result of distance calculation
 	 * @exception ServiceException
 	 * @throws ServiceException if the argument is invalid for the calculation

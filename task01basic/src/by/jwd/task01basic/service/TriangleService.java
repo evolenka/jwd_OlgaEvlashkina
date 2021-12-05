@@ -8,7 +8,7 @@ public interface TriangleService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param Triangle triangle
+	 * @param triangle
 	 * @return double result of calculation
 	 * @exception ServiceException
 	 * @throws ServiceException if the argument is invalid for the calculation

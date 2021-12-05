@@ -22,12 +22,12 @@ public class TriangleRadiusInServiceImpl implements TriangleService {
 	 * @exception ServiceException
 	 * @throws ServiceException if the argument is invalid for the calculation
 	 */
-	
+
 	static Logger logger = LogManager.getLogger(TriangleRadiusInServiceImpl.class);
-	
+
 	@Override
 	public double doCalculation(Triangle triangle) throws ServiceException {
-		
+
 		try {
 			// validation
 			if (triangle.getSide1() <= 0) {
@@ -35,7 +35,7 @@ public class TriangleRadiusInServiceImpl implements TriangleService {
 			}
 
 			return (triangle.getSide1()) / (2 * (Math.sqrt(3)));
-			
+
 		} catch (IllegalArgumentException e) {
 			logger.error("negative number (or = 0)");
 			throw new ServiceException();

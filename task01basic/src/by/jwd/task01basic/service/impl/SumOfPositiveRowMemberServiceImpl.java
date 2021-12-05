@@ -15,7 +15,7 @@ public class SumOfPositiveRowMemberServiceImpl implements ArithmeticDoubleServic
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param NumberData<Double>numberData
+	 * @param numberData (number e, number n)
 	 * @return double result of calculation
 	 */
 

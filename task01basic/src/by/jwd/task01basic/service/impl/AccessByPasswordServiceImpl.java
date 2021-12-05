@@ -9,11 +9,13 @@ Input the password and find out your access to the secret base.*/
 public class AccessByPasswordServiceImpl implements PasswordService {
 
 	/**
-	 * Compare user password to the list of passwords from PasswordBase
-	 * and retutn the information about user`s access to the bases
+	 * Compare user password to the list of passwords from PasswordBase and retutn
+	 * the information about user`s access to the bases
 	 * 
+	 * @author evlashkina
+	 * @version 1
 	 * @param password (inputed by user)
-	 * @return String result
+	 * @return String result (information about user`s access to the bases)
 	 */
 
 	@Override

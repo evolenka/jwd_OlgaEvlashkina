@@ -10,7 +10,7 @@ public interface RectangleLogicService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param Rectangle rectangle, NumberData<Double> numberData
+	 * @param rectangle, numberData
 	 * @return boolean result
 	 * @exception ServiceException
 	 * @throws ServiceException if the argument is invalid (negative or 0)

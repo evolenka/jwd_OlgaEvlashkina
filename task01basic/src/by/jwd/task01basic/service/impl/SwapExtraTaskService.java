@@ -7,12 +7,12 @@ import by.jwd.task01basic.entity.NumberData;
 public class SwapExtraTaskService {
 
 	/**
-	 * Swap values of two numbers through temp variable 
+	 * Swap values of two numbers through temp variable
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param NumberData<Integer>numberdata
-	 * @return two int numbers after swap (NumberData<Integer>)
+	 * @param numberdata (two numbers)
+	 * @return two numbers after swap
 	 */
 
 	public NumberData<Integer> swapFirstMethod(NumberData<Integer> numberdata) {
@@ -20,7 +20,7 @@ public class SwapExtraTaskService {
 		int a;
 		int b;
 		int temp;
-		
+
 		NumberData<Integer> swapedData;
 
 		a = numberdata.getNumberData().get(0);
@@ -43,8 +43,8 @@ public class SwapExtraTaskService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param NumberData<Integer>numberdata
-	 * @return two int numbers after swap (NumberData<Integer>)
+	 * @param numberdata (two numbers)
+	 * @return two numbers after swap
 	 */
 
 	public NumberData<Integer> swapSecondMethod(NumberData<Integer> numberdata) {
@@ -73,8 +73,8 @@ public class SwapExtraTaskService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param NumberData<Integer>numberdata
-	 * @return two int numbers after swap (NumberData<Integer>)
+	 * @param numberdata (two numbers)
+	 * @return two numbers after swap
 	 */
 
 	public NumberData<Integer> swapThirdMethod(NumberData<Integer> numberdata) {

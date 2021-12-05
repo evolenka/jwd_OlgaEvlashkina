@@ -15,8 +15,8 @@ public class MaxDigitOfNumberServiceImpl implements ArithmeticIntegerService {
 	 * 
 	 * @author evlashkina
 	 * @version 1
-	 * @param NumberData<Integer> numberData
-	 * @return int digit
+	 * @param numberData (int number)
+	 * @return int digit (max digit)
 	 * @exception ServiceException
 	 * @throws ServiceException if the argument is invalid (not natural number)
 	 */

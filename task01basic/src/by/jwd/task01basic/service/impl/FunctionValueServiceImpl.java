@@ -15,7 +15,7 @@ public class FunctionValueServiceImpl implements FunctionValueService {
 	 * @author evlashkina
 	 * @version 1
 	 * @param numberData (a, b and h)
-	 * @return list of function values (NumberData)
+	 * @return list of function values
 	 */
 
 	@Override
