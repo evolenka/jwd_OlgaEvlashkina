@@ -9,13 +9,14 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.task02array.service.ServiceException;
 import by.jwd.task02array.service.ServiceFactory;
 import by.jwd.task02array.service.impl.ExternalSortService;
+import by.jwd.task02array.view.MessageManager;
 import by.jwd.task02array.view.Output;
 
 public class ExternalSortCommandImpl implements Command {
 	static Logger logger = LogManager.getLogger(ExternalSortCommandImpl.class);
 
 	@Override
-	public void execute() {
+	public void execute(MessageManager current) {
 
 		ServiceFactory servicefactory = ServiceFactory.getInstance();
 
@@ -25,11 +26,11 @@ public class ExternalSortCommandImpl implements Command {
 		Output view = new Output();
 
 		try {
-		service.sortArrayFromFile(new File ("source/data2.txt"));
-			view.print("See array after external sort in the file");
+		service.sortArrayFromFile(new File ("resources/data2.txt"));
+		view.print(current.getString("res8"));
 		} catch (ServiceException e) {
 			logger.error("error");
-			view.print("error");
+			view.print(current.getString("err2"));
 		}
 	}
 }

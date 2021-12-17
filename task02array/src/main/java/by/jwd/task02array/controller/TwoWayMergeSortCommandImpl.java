@@ -6,10 +6,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import by.jwd.task02array.entity.Array;
-import by.jwd.task02array.service.ArrayCreatorService;
-import by.jwd.task02array.service.ArrayService;
+import by.jwd.task02array.service.ArrayCreator;
+import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 import by.jwd.task02array.service.ServiceFactory;
+import by.jwd.task02array.view.MessageManager;
 import by.jwd.task02array.view.Output;
 
 public class TwoWayMergeSortCommandImpl implements Command {
@@ -17,23 +18,23 @@ public class TwoWayMergeSortCommandImpl implements Command {
 	static Logger logger = LogManager.getLogger(TwoWayMergeSortCommandImpl.class);
 
 	@Override
-	public void execute() {
+	public void execute(MessageManager current) {
 
 		ServiceFactory servicefactory = ServiceFactory.getInstance();
 
-		ArrayService<Integer> service = servicefactory.getMergeSort();
+		ArraySortingService<Integer> service = servicefactory.getMergeSort();
 
-		ArrayCreatorService arrayCreator = servicefactory.getArrayCreator();
+		ArrayCreator arrayCreator = servicefactory.getArrayCreator();
 
 		Output view = new Output();
 
 		try {
-			Array<Integer> array = arrayCreator.createArrayFromFile(new File("source/data2.txt"));
+			Array<Integer> array = arrayCreator.createArrayFromFile(new File("resources/data2.txt"));
 			Array<Integer> sortedArray = service.sortArray(array);
-			view.print("Array after two way merge sort:\n " + sortedArray.toString());
+			view.print(current.getString("res6")+ sortedArray.toString());
 		} catch (ServiceException e) {
 			logger.error("error");
-			view.print("error");
+			view.print(current.getString("err2"));
 		}
 	}
 } 
