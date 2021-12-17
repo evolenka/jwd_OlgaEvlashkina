@@ -6,7 +6,7 @@ import by.jwd.task02array.dao.DaoFactory;
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
 
-public class ArrayCreatorService {
+public class ArrayCreator {
 
 	private final DaoFactory daofactory = DaoFactory.getInstance();
 
