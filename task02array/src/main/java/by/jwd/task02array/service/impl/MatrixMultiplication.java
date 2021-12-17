@@ -4,7 +4,7 @@ import by.jwd.task02array.entity.Matrix;
 import by.jwd.task02array.entity.MatrixException;
 import by.jwd.task02array.service.ServiceException;
 
-public class MatrixMultiplicationService {
+public class MatrixMultiplication {
 
 	public Matrix<Integer> multiply(Matrix<Integer> p, Matrix<Integer> q) throws ServiceException {
 		try {

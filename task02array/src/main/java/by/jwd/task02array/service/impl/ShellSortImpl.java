@@ -2,10 +2,10 @@ package by.jwd.task02array.service.impl;
 
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
-import by.jwd.task02array.service.ArrayService;
+import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
-public class ShellSortImpl implements ArrayService<Integer> {
+public class ShellSortImpl implements ArraySortingService<Integer> {
 
 	@Override
 	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {

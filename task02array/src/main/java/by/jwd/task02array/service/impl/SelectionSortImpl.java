@@ -2,7 +2,7 @@ package by.jwd.task02array.service.impl;
 
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
-import by.jwd.task02array.service.ArrayService;
+import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
 /*
@@ -11,7 +11,7 @@ import by.jwd.task02array.service.ServiceException;
  * минимальное среди оставишихся элементов и ставим его на второе место и т.д.)
  */
 
-public class SelectionSortImpl implements ArrayService<Integer> {
+public class SelectionSortImpl implements ArraySortingService<Integer> {
 
 	@Override
 	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {

@@ -16,48 +16,48 @@ public final class ServiceFactory {
 	private ServiceFactory() {
 	}
 
-	private ArrayService<Integer> bubbleSort = new BubbleSortImpl();
-	private ArrayService<Integer> insertionSort = new InsertionSortImpl();
-	private ArrayService<Integer> selectionSort = new SelectionSortImpl();
-	private ArrayService<Integer> shakerSort = new ShakerSortImpl();
-	private ArrayService<Integer> shellSort = new ShellSortImpl();
-	private ArrayService<Integer> mergeSort = new TwoWayMergeSortImpl();
-	private ArrayService<Integer> insertionByAddressSort = new InsertionSortByAddressCalculationImpl();
+	private ArraySortingService<Integer> bubbleSort = new BubbleSortImpl();
+	private ArraySortingService<Integer> insertionSort = new InsertionSortImpl();
+	private ArraySortingService<Integer> selectionSort = new SelectionSortImpl();
+	private ArraySortingService<Integer> shakerSort = new ShakerSortImpl();
+	private ArraySortingService<Integer> shellSort = new ShellSortImpl();
+	private ArraySortingService<Integer> mergeSort = new TwoWayMergeSortImpl();
+	private ArraySortingService<Integer> insertionByAddressSort = new InsertionSortByAddressCalculationImpl();
 	private ExternalSortService externalSort = new ExternalSortService();
 
-	private MatrixService<Integer> matrixService;
+	private MatrixOperationService<Integer> matrixService;
 
-	private ArrayCreatorService arrayCreator = new ArrayCreatorService();
+	private ArrayCreator arrayCreator = new ArrayCreator();
 
 	public static ServiceFactory getInstance() {
 		return instance;
 	}
 
-	public ArrayService<Integer> getBubbleSort() {
+	public ArraySortingService<Integer> getBubbleSort() {
 		return bubbleSort;
 	}
 
-	public ArrayService<Integer> getInsertionSort() {
+	public ArraySortingService<Integer> getInsertionSort() {
 		return insertionSort;
 	}
 
-	public ArrayService<Integer> getSelectionSort() {
+	public ArraySortingService<Integer> getSelectionSort() {
 		return selectionSort;
 	}
 
-	public ArrayService<Integer> getShakerSort() {
+	public ArraySortingService<Integer> getShakerSort() {
 		return shakerSort;
 	}
 
-	public ArrayService<Integer> getShellSort() {
+	public ArraySortingService<Integer> getShellSort() {
 		return shellSort;
 	}
 
-	public ArrayService<Integer> getMergeSort() {
+	public ArraySortingService<Integer> getMergeSort() {
 		return mergeSort;
 	}
 	
-	public ArrayService<Integer> getInsertionByAddressSort() {
+	public ArraySortingService<Integer> getInsertionByAddressSort() {
 		return insertionByAddressSort;
 	}
 	
@@ -65,39 +65,39 @@ public final class ServiceFactory {
 		return externalSort;
 	}
 
-	public MatrixService<Integer> getMatrix() {
+	public MatrixOperationService<Integer> getMatrix() {
 		return matrixService;
 	}
 
-	public ArrayCreatorService getArrayCreator() {
+	public ArrayCreator getArrayCreator() {
 		return arrayCreator;
 	}
 	
-	public void setBubbleSort(ArrayService<Integer> bubbleSort) {
+	public void setBubbleSort(ArraySortingService<Integer> bubbleSort) {
 		this.bubbleSort = bubbleSort;
 	}
 
-	public void setInsertionSort(ArrayService<Integer> insertSort) {
+	public void setInsertionSort(ArraySortingService<Integer> insertSort) {
 		this.insertionSort = insertSort;
 	}
 
-	public void setSelectionSort(ArrayService<Integer> selectionSort) {
+	public void setSelectionSort(ArraySortingService<Integer> selectionSort) {
 		this.selectionSort = selectionSort;
 	}
 
-	public void setShakerSort(ArrayService<Integer> shakerSort) {
+	public void setShakerSort(ArraySortingService<Integer> shakerSort) {
 		this.shakerSort = shakerSort;
 	}
 
-	public void setShellSort(ArrayService<Integer> shellSort) {
+	public void setShellSort(ArraySortingService<Integer> shellSort) {
 		this.shellSort = shellSort;
 	}
 	
-	public void setMergeSort(ArrayService<Integer> mergeSort) {
+	public void setMergeSort(ArraySortingService<Integer> mergeSort) {
 		this.mergeSort = mergeSort;
 	}
 
-	public void setInsertionByAddressSort(ArrayService<Integer> insertionByAddressSort) {
+	public void setInsertionByAddressSort(ArraySortingService<Integer> insertionByAddressSort) {
 		this.insertionByAddressSort = insertionByAddressSort;
 	}
 	
@@ -105,11 +105,11 @@ public final class ServiceFactory {
 		this.externalSort = externalSort;
 	}
 
-	public void setMatrixService(MatrixService<Integer> matrixService) {
+	public void setMatrixService(MatrixOperationService<Integer> matrixService) {
 		this.matrixService = matrixService;
 	}
 
-	public void setArrayCreatorService(ArrayCreatorService arrayCreator) {
+	public void setArrayCreatorService(ArrayCreator arrayCreator) {
 		this.arrayCreator = arrayCreator;
 	}
 }

@@ -7,17 +7,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
-import by.jwd.task02array.service.ArrayService;
 import by.jwd.task02array.service.ServiceException;
 
 public class ExternalSortService {
 	
 	public void sortArrayFromFile (File file) throws ServiceException {
 	
-	ArrayService <Integer> bubblesort = new BubbleSortImpl ();
-	
 	Array <Integer> array;
-	Array <Integer> sortedArray;
+	//Array <Integer> sortedArray;
 
 	BufferedReader br = null;
 	FileWriter newFile = null;
@@ -33,20 +30,21 @@ public class ExternalSortService {
 
 		if (param != null) {
 			array = new Array<>(param.length);
+			//sortedArray = new Array<>(param.length);
 			for (int i = 0; i < array.getLength(); i++) {
 				array.setElement(i, Integer.parseInt(param[i]));
 			}
 		
 			int n =1;
 			newFile = new FileWriter (new File ("file" + n +".txt"));
-			sortedArray = bubblesort.sortArray(array);
-			for (int i = 0; i < sortedArray.getLength(); i++) {
+			//sortedArray = bubblesort.sortArray(array);
+			for (int i = 0; i < array.getLength(); i++) {
 				
-				newFile.write (sortedArray.getElement(i));
+				newFile.write (Integer.toString(array.getElement(i)) + ", ");
 			}	
 		}
 			
-	} catch (NumberFormatException | ArrayException | IOException |ServiceException e) {
+	} catch (NumberFormatException | ArrayException | IOException e) {
 		throw new ServiceException();
 	} finally {
 

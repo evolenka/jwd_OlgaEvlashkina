@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
-import by.jwd.task02array.service.ArrayService;
+import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
 /*
@@ -14,7 +14,7 @@ import by.jwd.task02array.service.ServiceException;
  * в начало массива
  */
 
-public class ShakerSortImpl implements ArrayService<Integer> {
+public class ShakerSortImpl implements ArraySortingService<Integer> {
 
 	static Logger logger = LogManager.getLogger(ShakerSortImpl.class);
 

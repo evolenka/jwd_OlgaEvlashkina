@@ -2,7 +2,7 @@ package by.jwd.task02array.service.impl;
 
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
-import by.jwd.task02array.service.ArrayService;
+import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
 //сортируем массив по возрастанию обменами (сравниваем два соседних числа и делается перестановка,
@@ -15,22 +15,12 @@ import by.jwd.task02array.service.ServiceException;
 //будет равна 0 и цикл while будет завершен (для запуска цикла присваиваем начальное значение переменной = 1
 //затем обнуляем его в цикле)
 
-public class BubbleSortImpl implements ArrayService<Integer> {
+public class BubbleSortImpl implements ArraySortingService <Integer> {
 
 	@Override
 	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
 
-		Array<Integer> result;
-
-		Integer[] sortedArray = new Integer[array.getLength()];
 		try {
-			for (int i = 0; i < sortedArray.length; i++) {
-				sortedArray[i] = array.getElement(i);
-			}
-	     } catch (ArrayException e) {
-			throw new ServiceException();
-		}
-
 			int quantity = 1;
 
 			// внешний цикл для запуска внутреннего цикла снова и снова, пока все элементы
@@ -39,18 +29,29 @@ public class BubbleSortImpl implements ArrayService<Integer> {
 				quantity = 0;
 
 				// внутренний цикл для сравнения соседних элементов массива по порядку
-				for (int i = 1; i < sortedArray.length; i++) {
+				for (int i = 1; i < array.getLength(); i++) {
 
-					if (sortedArray[i] < sortedArray[i - 1]) {
-						int temp = sortedArray[i];
-						sortedArray[i] = sortedArray[i - 1];
-						sortedArray[i - 1] = temp;
+					if (array.getElement(i) < array.getElement(i - 1)) {
+						swap(array, i, i - 1);
 						quantity++;
 					}
 				}
 			}
 
-			result = new Array<>(sortedArray);
-			return result;
+			return array;
+		} catch (ArrayException e) {
+			throw new ServiceException();
 		}
 	}
+
+	/* вспомогательный метод для обмена элементов местами */
+	public <T> void swap(Array<T> array, int i, int j) throws ServiceException {
+		try {
+			T temp = array.getElement(i);
+			array.setElement(i, array.getElement(j));
+			array.setElement(j, temp);
+		} catch (ArrayException e) {
+			throw new ServiceException();
+		}
+	}
+}

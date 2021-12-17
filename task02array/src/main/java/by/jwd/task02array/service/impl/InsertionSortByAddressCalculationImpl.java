@@ -2,14 +2,13 @@ package by.jwd.task02array.service.impl;
 
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
-import by.jwd.task02array.service.ArrayService;
+import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.MyLinkedList;
 import by.jwd.task02array.service.ServiceException;
 
-public class InsertionSortByAddressCalculationImpl implements ArrayService<Integer> {
+public class InsertionSortByAddressCalculationImpl implements ArraySortingService<Integer> {
 
 	static final int SIZE = 10;
-	
 
 	@Override
 	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
@@ -34,7 +33,12 @@ public class InsertionSortByAddressCalculationImpl implements ArrayService<Integ
 
 			for (int i = 0; i < array.getLength(); i++) {
 				int value = array.getElement(i);
-				address = (int) (value * 1.0) / max * (SIZE - 1);
+				if (max != 0) {
+					address = (int) (value * 1.0) / max * (SIZE - 1);
+				} else {
+					address = (int) (value * 1.0) * (SIZE - 1);
+				}
+				address = address < 0 ? 0 : address;
 				lists[address].insert(value);
 			}
 
@@ -43,8 +47,7 @@ public class InsertionSortByAddressCalculationImpl implements ArrayService<Integ
 			 * вставки числа из списка в массив описан в классе MyLinkedList
 			 */
 
-				MyLinkedList.passToArray(array, lists);
-				
+			MyLinkedList.passToArray(array, lists);
 
 			return result;
 

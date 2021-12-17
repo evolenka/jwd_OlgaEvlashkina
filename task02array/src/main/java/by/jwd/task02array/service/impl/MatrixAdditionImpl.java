@@ -4,7 +4,7 @@ import by.jwd.task02array.entity.Matrix;
 import by.jwd.task02array.entity.MatrixException;
 import by.jwd.task02array.service.ServiceException;
 
-public class MatrixAdditionService {
+public class MatrixAdditionImpl {
 
 	public Matrix<Integer> add(Matrix<Integer> p, Matrix<Integer> q) throws ServiceException {
 		try {
