@@ -10,13 +10,6 @@ public class Array<T> {
 		this.a = a;
 	}
 
-	public Array(int length) throws ArrayException {
-		if (length < 1) {
-			throw new ArrayException();
-		}
-		a = (T[]) new Object[length];
-	}
-
 	public int getLength() {
 		return a.length;
 	}
@@ -59,9 +52,9 @@ public class Array<T> {
 
 	@Override
 	public String toString() {
-		StringBuilder s = new StringBuilder("\nArray: ");
+		StringBuilder s = new StringBuilder(": ");
 		for (T value : a) {
-			s.append(value + ", ");
+			s.append(value + " ");
 		}
 		return s.toString();
 	}

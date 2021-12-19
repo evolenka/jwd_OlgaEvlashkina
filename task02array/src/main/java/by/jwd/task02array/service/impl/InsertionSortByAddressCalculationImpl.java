@@ -6,6 +6,17 @@ import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.MyLinkedList;
 import by.jwd.task02array.service.ServiceException;
 
+
+/**
+ * Insertion sorting by address calculation
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param array
+ * @return Arrray <Integer>
+ * @exception ServiceException
+ * @throws ServiceException if the file not found, invalid data
+ */
 public class InsertionSortByAddressCalculationImpl implements ArraySortingService<Integer> {
 
 	static final int SIZE = 10;

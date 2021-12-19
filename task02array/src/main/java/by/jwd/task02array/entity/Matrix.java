@@ -8,13 +8,6 @@ public class Matrix<T> {
 		this.a = a;
 	}
 
-	public Matrix(int rowQuantity, int columnQuantity) throws MatrixException {
-		if (rowQuantity < 1 || columnQuantity < 1) {
-			throw new MatrixException();
-		}
-		a = (T[][]) new Object[rowQuantity][columnQuantity];
-	}
-
 	public int getRowQuantity() {
 		return a.length;
 	}
@@ -42,7 +35,7 @@ public class Matrix<T> {
 	@Override
 	public String toString() {
 		final String BLANK = " ";
-		StringBuilder s = new StringBuilder("\nMatrix : " + a.length + "x" + a[0].length + "\n");
+		StringBuilder s = new StringBuilder("\n" + a.length + "x" + a[0].length + "\n");
 		for (T[] row : a) {
 			for (T value : row) {
 				s.append(value).append(BLANK);

@@ -6,7 +6,8 @@ import by.jwd.task02array.view.Output;
 public class WrongRequestImpl implements Command {
 
 	@Override
-	public void execute(MessageManager current) {
+	public void execute(MessageManager current, String[] param) {
+
 		Output view = new Output();
 
 		view.print(current.getString("err1"));

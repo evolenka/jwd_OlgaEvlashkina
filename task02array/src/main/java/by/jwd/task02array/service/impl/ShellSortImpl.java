@@ -5,6 +5,17 @@ import by.jwd.task02array.entity.ArrayException;
 import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
+/**
+ * Shell sorting of array
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param array
+ * @return Arrray <Integer>
+ * @exception ServiceException
+ * @throws ServiceException if the file not found, invalid data
+ */
+
 public class ShellSortImpl implements ArraySortingService<Integer> {
 
 	@Override

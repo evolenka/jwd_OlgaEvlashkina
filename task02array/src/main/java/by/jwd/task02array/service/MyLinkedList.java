@@ -3,6 +3,8 @@ package by.jwd.task02array.service;
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
 
+/* класс для создания связанных списков, используемых в сортировке вставками с вычислением адреса*/
+
 public class MyLinkedList {
 
 	private Node head = null;
@@ -15,20 +17,24 @@ public class MyLinkedList {
 			this.value = value;
 		}
 	}
-
+/* метод для вставки элементов в связанный список в отсортированном порядке*/
+	
 	public void insert(int value) {
 		Node newnode = new Node(value);
 		Node current;
 
-		/* Special case for the head end */
+		/*
+		 * вставка на первое место в список, когда он еще пуст, или первый элемент
+		 * больше вставляемого
+		 */
 		if (head == null || head.value >= newnode.value) {
 			newnode.next = head;
 			head = newnode;
 		}
 
+		/* вставляем элемент перед текущей позицией вставки */
 		else {
 			current = head;
-			/* Locate the node before the point of insertion */
 			while ((current.next != null) && (current.next.value < newnode.value)) {
 
 				current = current.next;
@@ -38,6 +44,8 @@ public class MyLinkedList {
 			current.next = newnode;
 		}
 	}
+	
+	/*вспомогательный метод для передачи элементов из связанного списка в массив*/
 
 	public static void passToArray(Array<Integer> array, MyLinkedList[] list) throws ServiceException {
 		try {

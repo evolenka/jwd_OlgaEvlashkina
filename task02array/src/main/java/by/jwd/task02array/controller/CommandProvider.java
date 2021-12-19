@@ -3,6 +3,7 @@ package by.jwd.task02array.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class CommandProvider {
 
 	private Map<String, Command> commands = new HashMap<>();
@@ -16,6 +17,8 @@ public class CommandProvider {
 		commands.put("6", new TwoWayMergeSortCommandImpl());
 		commands.put("7", new InsertionSortByAddressCommandImpl());
 		commands.put("8", new ExternalSortCommandImpl());
+		commands.put("9", new MatrixMultiplicationCommandImpl());
+		commands.put("10", new MatrixAdditionCommandImpl());
 		commands.put("wrongRequest", new WrongRequestImpl());
 	}
 

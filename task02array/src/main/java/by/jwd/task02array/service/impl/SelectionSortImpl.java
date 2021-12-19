@@ -5,6 +5,17 @@ import by.jwd.task02array.entity.ArrayException;
 import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
+/**
+ * Selection sorting of array
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param array
+ * @return Arrray <Integer>
+ * @exception ServiceException
+ * @throws ServiceException if the file not found, invalid data
+ */
+
 /*
  * сортировка посредством выбора (метод простого выбора) находим минимальное
  * значение элемента, меняем его местами с первым элементом далее находим

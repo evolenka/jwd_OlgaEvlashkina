@@ -7,11 +7,21 @@ import by.jwd.task02array.entity.ArrayException;
 import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
+/**
+ * Shaker sorting of array
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param array
+ * @return Arrray <Integer>
+ * @exception ServiceException
+ * @throws ServiceException if the file not found, invalid data
+ */
+
 /*
- * обменная сортировка «Шейкер-сортировка» 
- * обрабатываем массив сначала слева направо, перемещая  наибольший
- * элемент в конец массива, а затем справа налево, перемещая наименьший элемент
- * в начало массива
+ * обменная сортировка «Шейкер-сортировка» обрабатываем массив сначала слева
+ * направо, перемещая наибольший элемент в конец массива, а затем справа налево,
+ * перемещая наименьший элемент в начало массива
  */
 
 public class ShakerSortImpl implements ArraySortingService<Integer> {
@@ -51,10 +61,8 @@ public class ShakerSortImpl implements ArraySortingService<Integer> {
 
 				for (int i = leftBounder; i < rightBounder; i++) {
 					if (array.getElement(i) > array.getElement(i + 1)) {
-						logger.debug("start swap");
 						swap(array, i, i + 1);
 						indexLastSwap = i;
-						logger.debug("end swap");
 					}
 				}
 				/*

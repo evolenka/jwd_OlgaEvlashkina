@@ -5,6 +5,17 @@ import by.jwd.task02array.entity.ArrayException;
 import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
+/**
+ * Two way merge sorting of array
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param array
+ * @return Arrray <Integer>
+ * @exception ServiceException
+ * @throws ServiceException if the file not found, invalid data
+ */
+
 public class TwoWayMergeSortImpl implements ArraySortingService<Integer> {
 
 	@Override
@@ -15,38 +26,41 @@ public class TwoWayMergeSortImpl implements ArraySortingService<Integer> {
 
 	}
 
-	public void mergeSort(Array<Integer> array, int l, int r) throws ServiceException {
-		if (l < r) {
+	public void mergeSort(Array<Integer> array, int first, int last) throws ServiceException {
+		if (first < last) {
 			// Find the middle point
-			int m = l + (r - l) / 2;
+			int middle = first + (last - first) / 2;
 
 			// Sort first and second halves
-			mergeSort(array, l, m);
-			mergeSort(array, m + 1, r);
+			mergeSort(array, first, middle);
+			mergeSort(array, middle + 1, last);
 
 			// Merge the sorted halves
-			merge(array, l, m, r);
+			merge(array, first, middle, last);
 		}
 	}
 
-	// Merges two subarrays of arr[].
-	// First subarray is arr[l..m]
-	// Second subarray is arr[m+1..r]
-	public void merge(Array<Integer> array, int l, int m, int r) throws ServiceException {
+	/*
+	 * Merges two subarrays of arr[first..middle..last]. First subarray is
+	 * arr[first..middle]. Second subarray is arr[middle+1..last]
+	 */
+
+	public void merge(Array<Integer> array, int first, int middle, int last) throws ServiceException {
 		try {
-			// Find sizes of two subarrays to be merged
-			int n1 = m - l + 1;
-			int n2 = r - m;
+
+			/* Find sizes of two subarrays to be merged */
+			int n1 = middle - first + 1;
+			int n2 = last - middle;
 
 			/* Create temp arrays */
-			int L[] = new int[n1];
-			int R[] = new int[n2];
+			int firstTempArray[] = new int[n1];
+			int secondTempArray[] = new int[n2];
 
 			/* Copy data to temp arrays */
 			for (int i = 0; i < n1; ++i)
-				L[i] = array.getElement(l + i);
+				firstTempArray[i] = array.getElement(first + i);
 			for (int j = 0; j < n2; ++j)
-				R[j] = array.getElement(m + 1 + j);
+				secondTempArray[j] = array.getElement(middle + 1 + j);
 
 			/* Merge the temp arrays */
 
@@ -54,28 +68,29 @@ public class TwoWayMergeSortImpl implements ArraySortingService<Integer> {
 			int i = 0, j = 0;
 
 			// Initial index of merged subarray array
-			int k = l;
+			int k = first;
 			while (i < n1 && j < n2) {
-				if (L[i] <= R[j]) {
-					array.setElement(k, L[i]);
+
+				if (firstTempArray[i] <= secondTempArray[j]) {
+					array.setElement(k, firstTempArray[i]);
 					i++;
 				} else {
-					array.setElement(k, R[j]);
+					array.setElement(k, secondTempArray[j]);
 					j++;
 				}
 				k++;
 			}
 
-			/* Copy remaining elements of L[] if any */
+			/* Copy remaining elements of firstTempArray[] if any */
 			while (i < n1) {
-				array.setElement(k, L[i]);
+				array.setElement(k, firstTempArray[i]);
 				i++;
 				k++;
 			}
 
-			/* Copy remaining elements of R[] if any */
+			/* Copy remaining elements of secondTempArray[] if any */
 			while (j < n2) {
-				array.setElement(k, R[j]);
+				array.setElement(k, secondTempArray[j]);
 				j++;
 				k++;
 			}

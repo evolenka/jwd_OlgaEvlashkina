@@ -7,48 +7,51 @@ import by.jwd.task02array.view.Input;
 import by.jwd.task02array.view.MessageManager;
 import by.jwd.task02array.view.Output;
 
-
 public class Runner {
 
 	static Logger logger = LogManager.getLogger(Runner.class);
 
 	public static void main(String[] args) {
+
 		Output output = new Output();
 		Input input = new Input();
+		MessageManager current;
 
 		output.print("1 — eng\n2 — rus\nany — default");
 
-		String i = null;
 		try {
-			i = input.read();
-		} catch (IOException e) {
-			logger.error("Incorrect input");
-			output.print("Incorrect input");
-		}
+			String language = input.read();
 
-		MessageManager current = MessageManager.EN;
+			switch (language) {
+			case "1":
+				current = MessageManager.EN;
+				break;
+			case "2":
+				current = MessageManager.RU;
+				break;
+			default:
+				current = MessageManager.EN;
+			}
 
-		switch (i) {
-		case "1":
-			current = MessageManager.EN;
-			break;
-		case "2":
-			current = MessageManager.RU;
-			break;
-		}
+			CommandProvider provider = new CommandProvider();
+			Command command;
 
-		CommandProvider provider = new CommandProvider();
-		Command command;
+			output.print(current.getString("menu"));
+			output.print(current.getString("request1"));
 
-		output.print(current.getString("menu"));
-		output.print(current.getString("request"));
-
-		try {
 			String commandName = input.read();
+			if (commandName.equals("9") || commandName.equals("10")) {
+				output.print(current.getString("request3"));
+			} else {
+				output.print(current.getString("request2"));
+			}
+			String[] param = input.read().split("\\s+");
+
 			command = provider.getCommand(commandName);
-			command.execute(current);
+			command.execute(current, param);
 		} catch (IOException e) {
 			output.print("Incorrect input");
+			logger.error("Incorrect input");
 		}
 	}
 }

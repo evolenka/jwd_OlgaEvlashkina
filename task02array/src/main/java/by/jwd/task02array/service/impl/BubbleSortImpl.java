@@ -5,6 +5,17 @@ import by.jwd.task02array.entity.ArrayException;
 import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.ServiceException;
 
+/**
+ * Bubble Sorting of array
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param array
+ * @return Arrray <Integer>
+ * @exception ServiceException
+ * @throws ServiceException if the file not found, invalid data
+ */
+
 //сортируем массив по возрастанию обменами (сравниваем два соседних числа и делается перестановка,
 //если второе число больше первого. Так продолжается до тех пор, пока все элементы не станут расположены
 //в порядке возрастания. Подсчитываем при этом количество перестановок. 
