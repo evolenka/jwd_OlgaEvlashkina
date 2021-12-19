@@ -1,8 +1,6 @@
 package by.jwd.task02array.service;
 
 import by.jwd.task02array.service.impl.BubbleSortImpl;
-
-import by.jwd.task02array.service.impl.ExternalSortService;
 import by.jwd.task02array.service.impl.InsertionSortByAddressCalculationImpl;
 import by.jwd.task02array.service.impl.InsertionSortImpl;
 import by.jwd.task02array.service.impl.MatrixAdditionImpl;
