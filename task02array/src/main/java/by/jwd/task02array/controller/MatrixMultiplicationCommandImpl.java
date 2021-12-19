@@ -2,11 +2,7 @@ package by.jwd.task02array.controller;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.Matrix;
-import by.jwd.task02array.service.ArrayCreator;
-import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.MatrixCreator;
 import by.jwd.task02array.service.MatrixOperationService;
 import by.jwd.task02array.service.ServiceException;
@@ -16,7 +12,7 @@ import by.jwd.task02array.view.Output;
 
 public class MatrixMultiplicationCommandImpl implements Command {
 
-	static Logger logger = LogManager.getLogger(BubbleSortCommandImpl.class);
+	static Logger logger = LogManager.getLogger(MatrixMultiplicationCommandImpl.class);
 
 	@Override
 	public void execute(MessageManager current, String[] param) {
