@@ -1,5 +1,6 @@
 package by.jwd.task03polymorphism.dao;
 
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -11,10 +12,12 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+
 
 import by.jwd.task03polymorphism.entity.CoffeeBean;
 import by.jwd.task03polymorphism.entity.GroundCoffee;
@@ -27,74 +30,76 @@ public class ReadFromJSONDao {
 	/**
 	 * @return
 	 * @throws DaoException
+	 * @throws ParseException
 	 * @throws IOException
 	 * @throws FileNotFoundException
 	 * @throws CoffeeBean            coffee
 	 */
 
-	public List<ItemOfCoffee> readDataFromFile() throws DaoException {
+	public List<ItemOfCoffee> readDataFromFile(String fileName) throws DaoException {
 
 		List<ItemOfCoffee> assortment = new ArrayList<>();
 
 		File file;
 		try {
-			URL res = getClass().getClassLoader().getResource("r.json");
+			URL res = getClass().getClassLoader().getResource(fileName);
 			file = Paths.get(res.toURI()).toFile();
-		} catch (URISyntaxException e) {
+		} catch (URISyntaxException|NullPointerException e) {
 			throw new DaoException();
 		}
 
 		JSONParser parser = new JSONParser();
 
 		try {
-			JSONArray arr = (JSONArray) parser.parse(new FileReader(file));
-			
-			CoffeeBean coffee = null;
-			Packing packing = null;
 
-			for (Object o : arr) {
+			Object obj = parser.parse(new FileReader(file));
+
+			JSONArray jsonObjects = (JSONArray) obj;
+
+			for (Object o : jsonObjects) {
 
 				JSONObject item = (JSONObject) o;
-
-				String title = (String) item.get("title");
-				String trademark = (String) item.get("trademark");
-				String sort = (String) item.get("sort");
-				String roastDegree = (String) item.get("roastDegree");
-				Double pricePerKg = (Double) item.get("pricePerKg");
-				int netWeight = Integer.parseInt((String) item.get("netWeight"));
+				
+				JSONObject coffeeItem = (JSONObject) item.get ("coffee");
+								
+					
+				CoffeeBean coffee = null;
+				
+				String title = (String) coffeeItem.get("title");
+				String trademark = (String) coffeeItem.get("trademark");
+				String sort = (String) coffeeItem.get("sort");
+				String roastDegree = (String) coffeeItem.get("roastDegree");
+				Double pricePerKg = (Double) coffeeItem.get("pricePerKg");
+			    int netWeight = (int)(long) coffeeItem.get("netWeight");
 
 				if (title.equals("молотый")) {
-					String grindingDegree = (String) item.get("grindingDegree");
+					String grindingDegree = (String) coffeeItem.get("grindingDegree");
 					coffee = new GroundCoffee(sort, trademark, roastDegree, pricePerKg, netWeight, grindingDegree);
 				}
 
-				else if(title.equals("растворимый")) {
-					String shape = (String) item.get("shape");
-					coffee = new InstantCoffee(sort, trademark,roastDegree, pricePerKg, netWeight, shape);
+				else if (title.equals("растворимый")) {
+					String shape = (String) coffeeItem.get("shape");
+					coffee = new InstantCoffee(sort, trademark, roastDegree, pricePerKg, netWeight, shape);
 				}
 
 				else {
 					coffee = new CoffeeBean(sort, trademark, roastDegree, pricePerKg, netWeight);
 				}
+				
+				JSONObject pack = (JSONObject) item.get ("packing");
+				Packing packing = null;
+				
+				String type = (String) pack.get("type");
+				Double price = (Double) pack.get("price");
+				Double volume = (Double) pack.get("volume");
+				int weight = (int) (long) pack.get("weight");
 
-				JSONArray pack = (JSONArray) item.get("packing");
-
-				for (Object p : pack) {
-					JSONObject packingObj = (JSONObject) p;
-
-					String type = (String) packingObj.get("type");
-					Double price = (Double) packingObj.get("price");
-					Double volume = (Double) packingObj.get("volume");
-					int weight = Integer.parseInt((String) packingObj.get("weight"));
-
-					packing = new Packing(type, price, volume, weight);
-				}
+				packing = new Packing(type, price, volume, weight);
 
 				assortment.add(new ItemOfCoffee(coffee, packing));
-
 			}
+			
 			return assortment;
-
 		} catch (IOException | ParseException e) {
 			throw new DaoException();
 		}

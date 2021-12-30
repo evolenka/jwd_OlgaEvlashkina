@@ -13,7 +13,7 @@ public class VanOfCoffee implements Serializable {
 
 	public VanOfCoffee() {
 	}
-	
+
 	public VanOfCoffee(List<ItemOfCoffee> assortment) {
 		this.assortment = assortment;
 	}
@@ -53,9 +53,44 @@ public class VanOfCoffee implements Serializable {
 
 	public boolean checkVolume(int capacity, List<ItemOfCoffee> assortment) {
 		double assortmentVolume = 0;
+		final int COEFFICIENT = 1000;
+
 		for (int i = 0; i < assortment.size(); i++) {
-			assortmentVolume = assortment.get(i).getPacking().getVolume();
+			assortmentVolume += assortment.get(i).getPacking().getVolume();
 		}
-		return (capacity > assortmentVolume);
+		return (capacity * COEFFICIENT > assortmentVolume);
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((assortment == null) ? 0 : assortment.hashCode());
+		result = prime * result + capacity;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		VanOfCoffee other = (VanOfCoffee) obj;
+		if (assortment == null) {
+			if (other.assortment != null)
+				return false;
+		} else if (!assortment.equals(other.assortment))
+			return false;
+		if (capacity != other.capacity)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "\n capacity: " + capacity + "\n" + assortment;
 	}
 }

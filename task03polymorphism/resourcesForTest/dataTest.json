@@ -1,0 +1,66 @@
+[
+ {"coffee": { "title":"зерновой",
+	             "trademark":"Lavazza",
+	             "sort":"арабика",
+	             "roastDegree":"средняя",
+	             "pricePerKg": 70.50,
+	             "netWeight": 500},
+                 "packing": { 
+	    			"type" : "пластиковая банка",
+	    			"price": 5.50,
+	    			"volume": 0.500,
+	    			"weight": 10}
+      },
+   { "coffee":{ "title":"зерновой",
+	             "trademark":"Lavazza",
+	             "sort":"арабика",
+	             "roastDegree":"темная",
+	             "pricePerKg": 69.00,
+	             "netWeight": 1000},
+                 "packing": { 
+	    			"type" : "бумажный пакет",
+	    			"price": 2.50,
+	    			"volume": 1.10,
+	    			"weight": 2}
+      },
+     
+      {"coffee": {"title":"молотый",
+	         "trademark":"Jardin",
+             "sort":"робуста",
+             "roastDegree":"темная",
+             "pricePerKg": 38.00,
+             "netWeight": 500,
+             "grindingDegree": "мелкий"},
+             "packing":{
+                    "type" : "пресованная пачка",
+	    			"price": 3.75,
+	    			"volume": 0.500,
+	    			"weight": 3}
+      },
+      {"coffee": {"title":"молотый",
+	         "trademark":"Jardin",
+             "sort":"либерика",
+             "roastDegree":"средняя",
+             "pricePerKg": 42.00,
+             "netWeight": 250,
+             "grindingDegree": "средний"},
+             "packing":{
+                    "type" : "пресованная пачка",
+	    			"price": 3.75,
+	    			"volume": 0.500,
+	    			"weight": 3}
+	   },
+       {"coffee": {"title":"растворимый",
+	         "trademark":"Nescafe",
+             "sort":"арабика",
+             "roastDegree":"светлая",
+             "pricePerKg": 25.00,
+             "netWeight": 125,
+             "shape": "сублимированный"},
+             "packing": {
+                    "type" : "стеклянная банка",
+	    			"price": 7.00,
+	    			"volume": 0.150,
+	    			"weight": 10}
+	  }
+]  

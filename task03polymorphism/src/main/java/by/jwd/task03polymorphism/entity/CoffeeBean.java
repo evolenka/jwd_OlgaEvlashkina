@@ -2,7 +2,7 @@ package by.jwd.task03polymorphism.entity;
 
 public class CoffeeBean {
 
-	private String title = "зерновой";
+	private String title;
 	private String sort;
 	private String trademark;
 	private String roastDegree;
@@ -10,6 +10,7 @@ public class CoffeeBean {
 	private int netWeight;
 
 	public CoffeeBean(String sort, String trademark, String roastDegree, double pricePerKg, int netWeight) {
+		this.title = "зерновой";
 		this.sort = sort;
 		this.trademark = trademark;
 		this.roastDegree = roastDegree;
@@ -19,6 +20,10 @@ public class CoffeeBean {
 
 	public String getTitle() {
 		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public String getSort() {
@@ -112,8 +117,8 @@ public class CoffeeBean {
 
 	@Override
 	public String toString() {
-		return "CoffeeBean [title=" + title + "sort=" + sort + ", trademark=" + trademark + ", roastDegree="
-				+ roastDegree + ", pricePerKg=" + pricePerKg + ", netWeight=" + netWeight + "]";
+		return "title: " + title + ", sort: " + sort + ", trademark: " + trademark + ", roastDegree: "
+				+ roastDegree + ", pricePerKg: " + pricePerKg + ", netWeight: " + netWeight;
 	}
 
 }

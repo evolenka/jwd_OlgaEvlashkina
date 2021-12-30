@@ -1,5 +1,6 @@
 package by.jwd.task03polymorphism.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import by.jwd.task03polymorphism.dao.DaoException;
@@ -7,11 +8,12 @@ import by.jwd.task03polymorphism.dao.DaoFactory;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 import by.jwd.task03polymorphism.service.FindByParameterService;
+import by.jwd.task03polymorphism.service.MaxNetWeightService;
 import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.Validation;
 
 public class FindBySeveralParametersServiceImpl implements FindByParameterService<String[]> {
-	
+
 	private final DaoFactory daofactory = DaoFactory.getInstance();
 
 	Validation validation = new Validation();
@@ -28,8 +30,88 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 		VanOfCoffee vanTemp = van;
 		findedItem = van.getAssortment();
 
-		String title;
+		List<String> parsedParam = parseParam(param);
+		try {
+			if (parsedParam.get(0) != null) {
 
+				FindByParameterService<String> service = new FindByCoffeeTypeServiceImpl();
+				findedItem = service.find(parsedParam.get(0), vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if (parsedParam.get(1) != null) {
+				FindByParameterService<String> service = new FindBySortServiceImpl();
+				findedItem = service.find(parsedParam.get(1), vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if (parsedParam.get(2) != null) {
+				FindByParameterService<String> service = new FindByTrademarkServiceImpl();
+				findedItem = service.find(parsedParam.get(2), vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if (parsedParam.get(3) != null) {
+
+				FindByParameterService<String> service = new FindByRoastDegreeServiceImpl();
+				findedItem = service.find(parsedParam.get(3), vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if (parsedParam.get(4) != null) {
+
+				FindByParameterService<Double> service = new FindByMaxPriceServiceImpl();
+				findedItem = service.find(Double.parseDouble(parsedParam.get(4)), vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if ((parsedParam.get(5) != null) || parsedParam.get(6) != null) {
+
+				MaxNetWeightService max = new MaxNetWeightService();
+				int minNetWeight = 0;
+				int maxNetWeight = max.findMaxNetWeight(vanTemp);
+
+				if (parsedParam.get(5) != null) {
+					minNetWeight = Integer.parseInt(param[5]);
+				}
+				if (parsedParam.get(6) != null) {
+					maxNetWeight = Integer.parseInt(param[6]);
+				}
+				Integer[] netWeight = { minNetWeight, maxNetWeight };
+
+				FindByParameterService<Integer[]> service = new FindByNetWeightServiceImpl();
+				findedItem = service.find(netWeight, vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if (parsedParam.get(7) != null) {
+				FindByParameterService<String> service = new FindByGrindingDegreeServiceImpl();
+				findedItem = service.find(parsedParam.get(7), vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if (parsedParam.get(8) != null) {
+				FindByParameterService<String> service = new FindByShapeServiceImpl();
+				findedItem = service.find(parsedParam.get(8), vanTemp);
+				vanTemp = new VanOfCoffee(findedItem);
+			}
+
+			if (parsedParam.get(9) != null) {
+				FindByParameterService<String> service = new FindByPackingTypeServiceImpl();
+				findedItem = service.find(parsedParam.get(9), vanTemp);
+			}
+			daofactory.getWriter().writeDataToJSONFile(findedItem, "SearchResult.json");
+		} catch (DaoException | NumberFormatException e) {
+			throw new ServiceException();
+		}
+		return findedItem;
+	}
+
+	public List<String> parseParam(String[] param) {
+
+		List<String> list = new ArrayList<>();
+
+		String title;
 		if (!(param[0].equals(""))) {
 
 			switch (param[0]) {
@@ -48,45 +130,48 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 			default:
 				title = null;
 			}
-
-			FindByParameterService<String> service = new FindByCoffeeTypeServiceImpl();
-			findedItem = service.find(title, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
+		} else {
+			title = null;
 		}
 
+		list.add(title);
+
+		String sort;
 		if (!(param[1].equals(""))) {
-			String sort;
+
 			switch (param[1]) {
 			case "1": {
-				sort = "Arabica";
+				sort = "арабика";
 			}
 				break;
 			case "2": {
-				sort = "Robusta";
+				sort = "робуста";
 			}
 				break;
 			case "3": {
-				sort = "Liberica";
+				sort = "либерика";
 			}
 				break;
 			default:
 				sort = null;
 			}
-			FindByParameterService<String> service = new FindBySortServiceImpl();
-			findedItem = service.find(sort, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
+		} else {
+			sort = null;
 		}
 
+		list.add(sort);
+
+		String trademark;
 		if (!(param[2].equals(""))) {
-			String trademark = param[2];
-
-			FindByParameterService<String> service = new FindByTrademarkServiceImpl();
-			findedItem = service.find(trademark, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
+			trademark = param[2];
+		} else {
+			trademark = null;
 		}
 
+		list.add(trademark);
+
+		String roastDegree;
 		if (!(param[3].equals(""))) {
-			String roastDegree;
 			switch (param[3]) {
 			case "1": {
 				roastDegree = "темная";
@@ -103,38 +188,42 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 			default:
 				roastDegree = null;
 			}
-			FindByParameterService<String> service = new FindByRoastDegreeServiceImpl();
-			findedItem = service.find(roastDegree, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
 		}
 
+		else {
+			roastDegree = null;
+		}
+		list.add(roastDegree);
+
+		String price;
 		if (!(param[4].equals(""))) {
-			double price = Double.parseDouble(param[4]);
-			FindByParameterService<Double> service = new FindByMaxPriceServiceImpl();
-			findedItem = service.find(price, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
+			price = param[4];
+		} else
+			price = null;
+		list.add(price);
+
+		String minNetWeight;
+
+		if (!(param[5].equals(""))) {
+			minNetWeight = param[5];
+		} else
+			minNetWeight = null;
+		list.add(minNetWeight);
+
+		String maxNetWeight;
+		if (!(param[6].equals(""))) {
+			maxNetWeight = param[6];
+		} else {
+			maxNetWeight = null;
 		}
+		list.add(maxNetWeight);
 
-		if (!(param[5].equals("")) || (!(param[6].equals("")))) {
-			int minNetWeight = 0;
-			int maxNetWeight = 8000;
-			if (!(param[5].equals(""))) {
-				minNetWeight = Integer.parseInt(param[5]);
-			} else if (!(param[6].equals(""))) {
-				maxNetWeight = Integer.parseInt(param[6]);
-			}
-			Integer[] netWeight = { minNetWeight, maxNetWeight };
-
-			FindByParameterService<Integer[]> service = new FindByNetWeightServiceImpl();
-			findedItem = service.find(netWeight, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
-		}
-
+		String grindingDegree;
 		if (!(param[7].equals(""))) {
-			String grindingDegree;
+
 			switch (param[7]) {
 			case "1": {
-				grindingDegree = "тонкий";
+				grindingDegree = "мелкий";
 			}
 				break;
 			case "2": {
@@ -148,14 +237,15 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 			default:
 				grindingDegree = null;
 			}
-
-			FindByParameterService<String> service = new FindByGrindingDegreeServiceImpl();
-			findedItem = service.find(grindingDegree, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
+		} else {
+			grindingDegree = null;
 		}
 
+		list.add(grindingDegree);
+
+		String shape;
 		if (!(param[8].equals(""))) {
-			String shape;
+
 			switch (param[8]) {
 			case "1": {
 				shape = "гранулированный";
@@ -172,13 +262,15 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 			default:
 				shape = null;
 			}
-			FindByParameterService<String> service = new FindByShapeServiceImpl();
-			findedItem = service.find(shape, vanTemp);
-			vanTemp = new VanOfCoffee(findedItem);
+		} else {
+			shape = null;
 		}
 
+		list.add(shape);
+
+		String packing;
 		if (!(param[9].equals(""))) {
-			String packing;
+
 			switch (param[9]) {
 			case "1": {
 				packing = "пластиковая банка";
@@ -195,20 +287,19 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 			case "4": {
 				packing = "чалды";
 			}
+			case "5": {
+				packing = "стеклянная банка";
+			}
 				break;
 			default:
 				packing = null;
 			}
-			FindByParameterService<String> service = new FindByPackingTypeServiceImpl();
-			findedItem = service.find(packing, vanTemp);
+		} else {
+			packing = null;
 		}
-		
-		try {
-			daofactory.getWriter().writeDataToJSONFile(findedItem, "SearchResult.json");
 
-		} catch (DaoException e) {
-			throw new ServiceException();
-		}
-		return findedItem;
+		list.add(packing);
+
+		return list;
 	}
 }

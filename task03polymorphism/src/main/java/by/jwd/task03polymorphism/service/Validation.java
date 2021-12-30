@@ -4,13 +4,10 @@ import by.jwd.task03polymorphism.entity.VanOfCoffee;
 
 public class Validation {
 
-	public boolean isValid(VanOfCoffee van) {
+	public boolean isValid(VanOfCoffee van) throws ServiceException {
 
 		boolean res = true;
-		if (van == null || van.getAssortment() == null) {
-			res = false;
-		} else {
-
+		try {
 			for (int i = 0; i < van.getAssortment().size(); i++) {
 
 				if (van.getItemOfCoffee(i).getCoffee().getPricePerKg() < 0
@@ -23,8 +20,10 @@ public class Validation {
 					break;
 				}
 			}
-		}
 
-		return res;
+			return res;
+		} catch (NullPointerException e) {
+			throw new ServiceException();
+		}
 	}
 }

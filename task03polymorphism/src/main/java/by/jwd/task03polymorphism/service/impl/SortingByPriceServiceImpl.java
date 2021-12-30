@@ -13,7 +13,7 @@ import by.jwd.task03polymorphism.service.SortingService;
 import by.jwd.task03polymorphism.service.Validation;
 
 public class SortingByPriceServiceImpl implements SortingService {
-	
+
 	private final DaoFactory daofactory = DaoFactory.getInstance();
 
 	Validation validation = new Validation();
@@ -28,7 +28,7 @@ public class SortingByPriceServiceImpl implements SortingService {
 		List<ItemOfCoffee> sortedAssortment = van.getAssortment();
 
 		Collections.sort(sortedAssortment, new PriceComparator());
-		
+
 		try {
 			daofactory.getWriter().writeDataToJSONFile(sortedAssortment, "SortingByPrice.json");
 

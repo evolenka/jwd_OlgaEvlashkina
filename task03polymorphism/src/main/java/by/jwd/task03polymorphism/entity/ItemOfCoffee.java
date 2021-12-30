@@ -1,7 +1,11 @@
 package by.jwd.task03polymorphism.entity;
 
-public class ItemOfCoffee {
+import java.io.Serializable;
 
+public class ItemOfCoffee implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
 	private CoffeeBean coffee;
 	private Packing packing;
 	double totalPrice;
@@ -40,9 +44,45 @@ public class ItemOfCoffee {
 	}
 
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((coffee == null) ? 0 : coffee.hashCode());
+		result = prime * result + grossWeight;
+		result = prime * result + ((packing == null) ? 0 : packing.hashCode());
+		result = prime * result + (int) totalPrice;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ItemOfCoffee other = (ItemOfCoffee) obj;
+		if (coffee == null) {
+			if (other.coffee != null)
+				return false;
+		} else if (!coffee.equals(other.coffee))
+			return false;
+		if (grossWeight != other.grossWeight)
+			return false;
+		if (packing == null) {
+			if (other.packing != null)
+				return false;
+		} else if (!packing.equals(other.packing))
+			return false;
+		if (totalPrice != other.totalPrice)
+			return false;
+		return true;
+	}
+
+	@Override
 	public String toString() {
-		return "ItemOfCoffee [\ncoffee=" + coffee + ", packing=" + packing + ", price=" + totalPrice + ", grossweight="
-				+ grossWeight + "]";
+		return "\n" + coffee + ", total price:" + totalPrice + ", grossweight:" + grossWeight + ", Packing:" + packing;
 	}
 
 	class Price {

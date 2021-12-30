@@ -51,12 +51,9 @@ public class Packing {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		long temp;
-		temp = Double.doubleToLongBits(price);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * (int) price;
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
-		temp = Double.doubleToLongBits(volume);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * (int) volume;
 		result = prime * result + weight;
 		return result;
 	}
@@ -70,14 +67,14 @@ public class Packing {
 		if (getClass() != obj.getClass())
 			return false;
 		Packing other = (Packing) obj;
-		if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
+		if (price != (other.price))
 			return false;
 		if (type == null) {
 			if (other.type != null)
 				return false;
 		} else if (!type.equals(other.type))
 			return false;
-		if (Double.doubleToLongBits(volume) != Double.doubleToLongBits(other.volume))
+		if (volume != other.volume)
 			return false;
 		if (weight != other.weight)
 			return false;
@@ -86,6 +83,6 @@ public class Packing {
 
 	@Override
 	public String toString() {
-		return "Packing [type=" + type + ", price=" + price + ", volume=" + volume + ", weight=" + weight + "]";
+		return " type: " + type + ", price: " + price + ", volume:" + volume + ", weight:" + weight;
 	}
 }
