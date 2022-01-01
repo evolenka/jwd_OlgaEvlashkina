@@ -39,21 +39,28 @@ public class ExternalSortService {
 	 * устанавливаем статическую переменную, ограничивающую количество символов,
 	 * которое будем записывать в один файл
 	 */
-	private static final int FILELIMIT = 1000;
+	private static final int FILELIMIT = 10000;
 
 	public void sortArrayFromFile(String fileName) throws ServiceException {
 
-		Array<Integer> array;
-		FileWriter newFile = null;
-		int nextNumber;
+		Array<Integer> array;//массив, в который записываем части файла
+
 		List<File> fileList = new ArrayList<>();
+
 		int quantityOfFiles = 0;
 
-		try {
-			URL res = getClass().getClassLoader().getResource(fileName);
-			File file = Paths.get(res.toURI()).toFile();
+		File file;
 
-			Scanner sc = new Scanner(file);
+		try {
+
+			URL res = getClass().getClassLoader().getResource(fileName);
+			file = Paths.get(res.toURI()).toFile();
+		} catch (URISyntaxException e) {
+			throw new ServiceException();
+		}
+
+		try (Scanner sc = new Scanner(file)) {
+
 			/* внешний цикл для чтения файла до конца */
 
 			while ((sc.hasNextInt())) {
@@ -68,8 +75,7 @@ public class ExternalSortService {
 				 */
 				for (int i = 0; i < FILELIMIT; i++) {
 					if (sc.hasNextInt()) {
-						nextNumber = sc.nextInt();
-						array.setElement(i, nextNumber);
+						array.setElement(i, sc.nextInt());
 						counter++; // подсчитваем количество записанных символов
 					}
 				}
@@ -77,6 +83,8 @@ public class ExternalSortService {
 				 * создаем файл для записи отсортированной части под порядковым номером
 				 * quantityOfFiles
 				 */
+				
+				FileWriter newFile;//для записи отсортированной части в файл
 				File sortedPartFile = new File("part" + quantityOfFiles + ".txt");
 				newFile = new FileWriter(sortedPartFile);
 
@@ -116,8 +124,7 @@ public class ExternalSortService {
 				quantityOfFiles++;
 				newFile.close();
 			}
-			sc.close();// закрываем исходный внешний файл
-
+			
 			/*
 			 * создаем список списков файлов, помещаем в него наш первый список с
 			 * файлами-отсортированными частями
@@ -187,7 +194,7 @@ public class ExternalSortService {
 				i++;// переходим к следующему циклу слияний
 
 			}
-		} catch (ArrayException | URISyntaxException | IOException e) {
+		} catch (ArrayException | IOException e) {
 			throw new ServiceException();
 		}
 	}

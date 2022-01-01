@@ -14,8 +14,6 @@ public final class ServiceFactory {
 
 	public static final ServiceFactory instance = new ServiceFactory();
 
-	private ServiceFactory() {
-	}
 
 	private ArraySortingService<Integer> bubbleSort = new BubbleSortImpl();
 	private ArraySortingService<Integer> insertionSort = new InsertionSortImpl();
@@ -30,6 +28,9 @@ public final class ServiceFactory {
 
 	private ArrayCreator arrayCreator = new ArrayCreator();
 	private MatrixCreator matrixCreator = new MatrixCreator();
+	
+	private ServiceFactory() {
+	}
 
 	public static ServiceFactory getInstance() {
 		return instance;

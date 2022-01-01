@@ -15,7 +15,7 @@ public class Runner {
 
 		Output output = new Output();
 		Input input = new Input();
-		MessageManager current;
+		MessageManager current = MessageManager.EN;
 
 		output.print("1 — eng\n2 — rus\nany — default");
 
@@ -50,7 +50,7 @@ public class Runner {
 			command = provider.getCommand(commandName);
 			command.execute(current, param);
 		} catch (IOException e) {
-			output.print("Incorrect input");
+			output.print(current.getString("err3"));
 			logger.error("Incorrect input");
 		}
 	}

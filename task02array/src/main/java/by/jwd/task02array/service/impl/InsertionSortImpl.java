@@ -49,9 +49,7 @@ public class InsertionSortImpl implements ArraySortingService<Integer> {
 
 			}
 			return array;
-		} catch (
-
-		ArrayException e) {
+		} catch (ArrayException e) {
 			throw new ServiceException();
 		}
 	}

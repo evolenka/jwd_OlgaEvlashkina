@@ -34,7 +34,7 @@ public class InsertionSortByAddressCommandImpl implements Command {
 			view.print(current.getString("res7") + sortedArray.toString());
 
 		} catch (ServiceException e) {
-			logger.error("error");
+			logger.error("file not founded of file data incorrect");
 			view.print(current.getString("err2"));
 		}
 	}

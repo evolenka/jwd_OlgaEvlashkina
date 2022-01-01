@@ -41,8 +41,16 @@ public class MatrixAdditionCommandImpl implements Command {
 			view.print(current.getString("res10") + resultMatrix.toString());
 
 		} catch (ServiceException e) {
-			logger.error("error");
+			logger.error("file not founded of file data incorrect");
 			view.print(current.getString("err2"));
+
+		} catch (NumberFormatException e) {
+			logger.error("wrong number format");
+			view.print(current.getString("err4"));
+
+		} catch (ArrayIndexOutOfBoundsException e) {
+			logger.error("wrong quantity of args");
+			view.print(current.getString("err5"));
 		}
 	}
 }

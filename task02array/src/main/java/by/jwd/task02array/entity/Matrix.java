@@ -50,7 +50,7 @@ public class Matrix<T> {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Matrix <?> other = (Matrix <?>) obj;
+		Matrix<?> other = (Matrix<?>) obj;
 		if (!Arrays.deepEquals(a, other.a))
 			return false;
 		return true;
@@ -71,11 +71,7 @@ public class Matrix<T> {
 	}
 
 	private boolean checkRange(int i, int j) {
-		if (i < 0 || i > a.length - 1 || j < 0 || j > a[0].length - 1) {
-			return false;
-		} else {
-			return true;
-		}
+		return (i < 0 || i > a.length - 1 || j < 0 || j > a[0].length - 1) ? false : true;
 	}
 
 }

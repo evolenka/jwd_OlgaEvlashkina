@@ -1,8 +1,5 @@
 package by.jwd.task02array.dao;
 
-import by.jwd.task02array.dao.impl.ReaderFromFileDao;
-
-
 public final class DaoFactory {
 
 	private static final DaoFactory instance = new DaoFactory();

@@ -34,7 +34,7 @@ public class InsertionSortCommandImpl implements Command {
 			view.print(current.getString("res2") + sortedArray.toString());
 			
 		} catch (ServiceException e) {
-			logger.error("error");
+			logger.error("file not founded of file data incorrect");
 			view.print(current.getString("err2"));
 		}
 	}

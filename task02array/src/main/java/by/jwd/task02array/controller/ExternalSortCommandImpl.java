@@ -3,13 +3,14 @@ package by.jwd.task02array.controller;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.jwd.task02array.service.ExternalSortService;
 import by.jwd.task02array.service.ServiceException;
 import by.jwd.task02array.service.ServiceFactory;
-import by.jwd.task02array.service.impl.ExternalSortService;
 import by.jwd.task02array.view.MessageManager;
 import by.jwd.task02array.view.Output;
 
 public class ExternalSortCommandImpl implements Command {
+	
 	static Logger logger = LogManager.getLogger(ExternalSortCommandImpl.class);
 
 	@Override
@@ -31,7 +32,7 @@ public class ExternalSortCommandImpl implements Command {
 			
 		} catch (ServiceException e) {
 			
-			logger.error("error");
+			logger.error("file not founded of file data incorrect");
 			view.print(current.getString("err2"));
 		}
 	}

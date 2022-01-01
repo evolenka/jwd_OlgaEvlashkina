@@ -35,7 +35,7 @@ public class BubbleSortCommandImpl implements Command {
 			view.print(current.getString("res1") + sortedArray.toString());
 
 		} catch (ServiceException e) {
-			logger.error("error");
+			logger.error("file not founded of file data incorrect");
 			view.print(current.getString("err2"));
 		}
 	}

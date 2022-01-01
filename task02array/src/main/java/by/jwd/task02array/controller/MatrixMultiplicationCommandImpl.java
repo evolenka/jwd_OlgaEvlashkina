@@ -39,10 +39,18 @@ public class MatrixMultiplicationCommandImpl implements Command {
 			Matrix<Integer> resultMatrix = service.doOperation(matrix1, matrix2);
 
 			view.print(current.getString("res9") + resultMatrix.toString());
-			
+
 		} catch (ServiceException e) {
 			logger.error("error");
 			view.print(current.getString("err2"));
+
+		} catch (NumberFormatException e) {
+			logger.error("wrong number format");
+			view.print(current.getString("err4"));
+
+		} catch (ArrayIndexOutOfBoundsException e) {
+			logger.error("wrong quantity of args");
+			view.print(current.getString("err5"));
 		}
 	}
 }
