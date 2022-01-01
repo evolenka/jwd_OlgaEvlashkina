@@ -32,7 +32,7 @@
              "netWeight": 500,
              "grindingDegree": "мелкий"},
              "packing":{
-                    "type" : "пресованная пачка",
+                     "type" : "прессованная пачка",
 	    			"price": 3.75,
 	    			"volume": 0.500,
 	    			"weight": 3}
@@ -45,7 +45,7 @@
              "netWeight": 250,
              "grindingDegree": "средний"},
              "packing":{
-                    "type" : "пресованная пачка",
+                    "type" : "прессованная пачка",
 	    			"price": 3.75,
 	    			"volume": 0.500,
 	    			"weight": 3}

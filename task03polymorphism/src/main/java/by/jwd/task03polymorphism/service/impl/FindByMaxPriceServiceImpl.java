@@ -9,6 +9,17 @@ import by.jwd.task03polymorphism.service.FindByParameterService;
 import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.Validation;
 
+/**
+ * Find coffee item by max price among assortment loaded in the van
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param price, van
+ * @return List<ItemOfCoffee>
+ * @exception ServiceException
+ * @throws ServiceException in case of invalid data or file not found
+ */
+
 public class FindByMaxPriceServiceImpl implements FindByParameterService<Double> {
 
 	Validation validation = new Validation();
@@ -22,13 +33,12 @@ public class FindByMaxPriceServiceImpl implements FindByParameterService<Double>
 			throw new ServiceException();
 		}
 
-			for (int i = 0; i < van.getAssortment().size(); i++) {
+		for (int i = 0; i < van.getAssortment().size(); i++) {
 
-				if (van.getItemOfCoffee(i).getPrice() <= price) {
-					findedItem.add(van.getItemOfCoffee(i));
-				}
+			if (van.getItemOfCoffee(i).getPrice() <= price) {
+				findedItem.add(van.getItemOfCoffee(i));
 			}
-		
+		}
 
 		return findedItem;
 	}

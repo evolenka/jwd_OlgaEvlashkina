@@ -12,8 +12,18 @@ import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.SortingService;
 import by.jwd.task03polymorphism.service.Validation;
 
+/**
+ * Sorting coffee assortment in the van by ratio of price to net weight
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param van
+ * @return List<ItemOfCoffee>
+ * @exception ServiceException
+ * @throws ServiceException in case of invalid data or file not found
+ */
 public class SortingByPriceToNetWeightRatioServiceImpl implements SortingService {
-	
+
 	private final DaoFactory daofactory = DaoFactory.getInstance();
 
 	Validation validation = new Validation();
@@ -27,7 +37,7 @@ public class SortingByPriceToNetWeightRatioServiceImpl implements SortingService
 		List<ItemOfCoffee> sortedAssortment = van.getAssortment();
 
 		Collections.sort(sortedAssortment, new PriceToNetWeightComparator());
-		
+
 		try {
 			daofactory.getWriter().writeDataToJSONFile(sortedAssortment, "SortingByRatio.json");
 

@@ -10,7 +10,8 @@ import by.jwd.task03polymorphism.entity.VanException;
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 
 /**
- * Load van for given amount of coffee items and nit exceeding the van capacity
+ * Load van of coffee with the assortment for the amount not exceeding the given
+ * amount and the van capacity
  * 
  * @author evlashkina
  * @version 1

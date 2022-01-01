@@ -22,7 +22,7 @@ import by.jwd.task03polymorphism.service.ServiceException;
 @RunWith(JUnitPlatform.class)
 @SelectPackages({ "test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao" })
 
-public class LoadVanTest {
+class LoadVanTest {
 
 	LoadVanService service = new LoadVanService();
 

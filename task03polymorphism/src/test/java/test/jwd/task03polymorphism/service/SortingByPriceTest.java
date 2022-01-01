@@ -22,8 +22,7 @@ import by.jwd.task03polymorphism.service.SortingService;
 import by.jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl;
 
 @RunWith(JUnitPlatform.class)
-@SelectPackages({"test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao"})
-
+@SelectPackages({ "test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao" })
 
 class SortingByPriceTest {
 

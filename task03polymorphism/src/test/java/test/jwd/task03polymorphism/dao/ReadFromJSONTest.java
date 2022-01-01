@@ -41,11 +41,11 @@ class ReadFromJSONTest {
 		ItemOfCoffee item2 = new ItemOfCoffee(coffeeBean2, pack2);
 
 		GroundCoffee ground3 = new GroundCoffee("робуста", "Jardin", "темная", 38.0, 500, "мелкий");
-		Packing pack3 = new Packing("пресованная пачка", 3.75, 0.50, 3);
+		Packing pack3 = new Packing("прессованная пачка", 3.75, 0.50, 3);
 		ItemOfCoffee item3 = new ItemOfCoffee(ground3, pack3);
 
 		GroundCoffee ground4 = new GroundCoffee("либерика", "Jardin", "средняя", 42.0, 250, "средний");
-		Packing pack4 = new Packing("пресованная пачка", 3.75, 0.50, 3);
+		Packing pack4 = new Packing("прессованная пачка", 3.75, 0.50, 3);
 		ItemOfCoffee item4 = new ItemOfCoffee(ground4, pack4);
 
 		InstantCoffee instant5 = new InstantCoffee("арабика", "Nescafe", "светлая", 25.0, 125, "сублимированный");

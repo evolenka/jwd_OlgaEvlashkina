@@ -23,7 +23,7 @@ import by.jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServ
 @RunWith(JUnitPlatform.class)
 @SelectPackages({ "test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao" })
 
- class SortingByPriceToNetWeightRatioTest {
+class SortingByPriceToNetWeightRatioTest {
 
 	SortingService service = new SortingByPriceToNetWeightRatioServiceImpl();
 	List<ItemOfCoffee> assortment = new ArrayList<>();

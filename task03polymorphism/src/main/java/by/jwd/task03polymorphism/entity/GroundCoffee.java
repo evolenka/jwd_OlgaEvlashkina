@@ -51,5 +51,4 @@ public class GroundCoffee extends CoffeeBean {
 				+ getRoastDegree() + ", pricePerKg: " + getPricePerKg() + ", netWeight: " + getNetWeight()
 				+ ", grindingDegree: " + grindingDegree;
 	}
-
 }

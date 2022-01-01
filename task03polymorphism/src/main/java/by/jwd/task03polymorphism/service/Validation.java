@@ -2,6 +2,17 @@ package by.jwd.task03polymorphism.service;
 
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 
+/**
+ * Validation of VanOfCoffee object which is taken as parameter by methods of
+ * FindByPatameterService interface and SortingService interface
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param van
+ * @return boolean
+ * @exception ServiceException
+ * @throws ServiceException in case of invalid data or file not found
+ */
 public class Validation {
 
 	public boolean isValid(VanOfCoffee van) throws ServiceException {

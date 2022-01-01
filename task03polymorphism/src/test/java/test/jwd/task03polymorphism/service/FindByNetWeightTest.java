@@ -22,7 +22,7 @@ import by.jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl;
 @RunWith(JUnitPlatform.class)
 @SelectPackages({ "test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao" })
 
-public class FindByNetWeightTest {
+class FindByNetWeightTest {
 
 	FindByParameterService<Integer[]> service = new FindByNetWeightServiceImpl();
 

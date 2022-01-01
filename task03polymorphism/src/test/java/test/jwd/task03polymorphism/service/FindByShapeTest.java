@@ -60,13 +60,14 @@ class FindByShapeTest {
 		assortment.add(item5);
 
 		van = new VanOfCoffee(assortment);
-		
+
 		resultAssortment.add(item5);
 
 		List<ItemOfCoffee> actual = service.find("сублимированный", van);
 		List<ItemOfCoffee> expected = resultAssortment;
 		Assertions.assertEquals(actual, expected);
 	}
+
 	@Test
 	void testFindByShape2() throws ServiceException {
 
@@ -79,11 +80,11 @@ class FindByShapeTest {
 		ItemOfCoffee item2 = new ItemOfCoffee(coffeeBean2, pack2);
 
 		GroundCoffee ground3 = new GroundCoffee("робуста", "Jardin", "темная", 38.0, 500, "мелкий");
-		Packing pack3 = new Packing("пресованная пачка", 3.75, 0.50, 3);
+		Packing pack3 = new Packing("прессованная пачка", 3.75, 0.50, 3);
 		ItemOfCoffee item3 = new ItemOfCoffee(ground3, pack3);
 
 		GroundCoffee ground4 = new GroundCoffee("либерика", "Jardin", "средняя", 42.0, 250, "средний");
-		Packing pack4 = new Packing("пресованная пачка", 3.75, 0.50, 3);
+		Packing pack4 = new Packing("прессованная пачка", 3.4, 0.50, 2);
 		ItemOfCoffee item4 = new ItemOfCoffee(ground4, pack4);
 
 		InstantCoffee instant5 = new InstantCoffee("арабика", "Nescafe", "светлая", 25.0, 125, "сублимированный");
@@ -97,7 +98,7 @@ class FindByShapeTest {
 		assortment.add(item5);
 
 		van = new VanOfCoffee(assortment);
-		
+
 		List<ItemOfCoffee> actual = service.find("гранулированный", van);
 		List<ItemOfCoffee> expected = resultAssortment;
 		Assertions.assertEquals(actual, expected);

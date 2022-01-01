@@ -22,9 +22,8 @@ import by.jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl;
 @RunWith(JUnitPlatform.class)
 @SelectPackages({ "test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao" })
 
-
 class FindByGrindingDegreeTest {
-	
+
 	FindByParameterService<String> service = new FindByGrindingDegreeServiceImpl();
 
 	List<ItemOfCoffee> assortment = new ArrayList<>();
@@ -62,9 +61,9 @@ class FindByGrindingDegreeTest {
 
 		van = new VanOfCoffee(assortment);
 
-		resultAssortment.add(item3);
+		resultAssortment.add(item4);
 
-		List<ItemOfCoffee> actual = service.find("мелкий", van);
+		List<ItemOfCoffee> actual = service.find("средний", van);
 		List<ItemOfCoffee> expected = resultAssortment;
 		Assertions.assertEquals(actual, expected);
 	}

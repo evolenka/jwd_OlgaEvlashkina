@@ -104,7 +104,7 @@
              "netWeight": 500,
              "grindingDegree": "мелкий"},
              "packing":{
-                    "type" : "пресованная пачка",
+                    "type" : "прессованная пачка",
 	    			"price": 3.75,
 	    			"volume": 0.500,
 	    			"weight": 3}
@@ -117,7 +117,7 @@
              "netWeight": 250,
              "grindingDegree": "средний"},
              "packing":{
-                    "type" : "пресованная пачка",
+                   "type" : "прессованная пачка",
 	    			"price": 3.75,
 	    			"volume": 0.500,
 	    			"weight": 3}
@@ -179,7 +179,8 @@
 	             "sort":"либерика",
 	             "roastDegree":"светлая",
 	             "pricePerKg": 15.50,
-	             "netWeight": 100},
+	             "netWeight": 100,
+	             "grindingDegree": "средний"},
                  "packing": { 
 	    			"type" : "чалды",
 	    			"price": 2.50,
@@ -232,7 +233,7 @@
              "netWeight": 450,
              "grindingDegree": "крупный"},
              "packing":{
-                    "type" : "прессованная пачка",
+                   "type" : "прессованная пачка",
 	    			"price": 3.50,
 	    			"volume": 0.125,
 	    			"weight": 2}

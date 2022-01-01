@@ -12,6 +12,16 @@ import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.SortingService;
 import by.jwd.task03polymorphism.service.Validation;
 
+/**
+ * Sorting coffee assortment in the van by price
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param van
+ * @return List<ItemOfCoffee>
+ * @exception ServiceException
+ * @throws ServiceException in case of invalid data or file not found
+ */
 public class SortingByPriceServiceImpl implements SortingService {
 
 	private final DaoFactory daofactory = DaoFactory.getInstance();

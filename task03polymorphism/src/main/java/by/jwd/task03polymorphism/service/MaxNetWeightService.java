@@ -2,6 +2,19 @@ package by.jwd.task03polymorphism.service;
 
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 
+/**
+ * Find max net weight of coffee item, method findMaxNetWeight(VanOfCoffee van) used in 
+ * FindBySeveralParametersServiceimpl in case user chooses search by the range
+ * of the net weight but inputs only min weight
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param van
+ * @return int number
+ * @exception ServiceException
+ * @throws ServiceException
+ */
+
 public class MaxNetWeightService {
 
 	Validation validation = new Validation();

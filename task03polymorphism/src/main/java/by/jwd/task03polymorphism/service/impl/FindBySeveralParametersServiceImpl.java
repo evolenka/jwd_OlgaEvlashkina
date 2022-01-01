@@ -12,6 +12,16 @@ import by.jwd.task03polymorphism.service.MaxNetWeightService;
 import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.Validation;
 
+/**
+ * Find coffee item by parameters among assortment loaded in the van
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param param, van
+ * @return List<ItemOfCoffee>
+ * @exception ServiceException
+ * @throws ServiceException in case of invalid data or file not found
+ */
 public class FindBySeveralParametersServiceImpl implements FindByParameterService<String[]> {
 
 	private final DaoFactory daofactory = DaoFactory.getInstance();
@@ -26,7 +36,6 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 		}
 
 		List<ItemOfCoffee> findedItem;
-
 		VanOfCoffee vanTemp = van;
 		findedItem = van.getAssortment();
 
@@ -287,6 +296,7 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 			case "4": {
 				packing = "чалды";
 			}
+				break;
 			case "5": {
 				packing = "стеклянная банка";
 			}

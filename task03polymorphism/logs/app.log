@@ -2,3 +2,7 @@
 			by.jwd.task03polymorphism.controller.Runner - wrong quantity of args
 2021-12-31 01:35:57 [main] ERROR
 			by.jwd.task03polymorphism.controller.Runner - wrong quantity of args
+2021-12-31 11:34:29 [main] ERROR
+			by.jwd.task03polymorphism.controller.SortByNetWeightCommandImpl - file data not found or incorrect data
+2021-12-31 11:34:29 [main] ERROR
+			by.jwd.task03polymorphism.controller.SortByNetWeightCommandImpl - file data not found or incorrect data

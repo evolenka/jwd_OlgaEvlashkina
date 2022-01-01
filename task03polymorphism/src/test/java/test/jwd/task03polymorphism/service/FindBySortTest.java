@@ -19,7 +19,6 @@ import by.jwd.task03polymorphism.service.FindByParameterService;
 import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.impl.FindBySortServiceImpl;
 
-
 @RunWith(JUnitPlatform.class)
 @SelectPackages({ "test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao" })
 

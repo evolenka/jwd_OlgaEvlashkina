@@ -9,6 +9,17 @@ import by.jwd.task03polymorphism.service.FindByParameterService;
 import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.Validation;
 
+/**
+ * Find coffee item by range of net weight among assortment loaded in the van
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param netWeight, van
+ * @return List<ItemOfCoffee>
+ * @exception ServiceException
+ * @throws ServiceException in case of invalid data or file not found
+ */
+
 public class FindByNetWeightServiceImpl implements FindByParameterService<Integer[]> {
 
 	Validation validation = new Validation();
@@ -22,18 +33,18 @@ public class FindByNetWeightServiceImpl implements FindByParameterService<Intege
 			throw new ServiceException();
 		}
 
-			int netWeightMin = netWeight[0];
-			int netWeightMax = netWeight[1];
+		int netWeightMin = netWeight[0];
+		int netWeightMax = netWeight[1];
 
-			int itemNetWeight;
+		int itemNetWeight;
 
-			for (int i = 0; i < van.getAssortment().size(); i++) {
-				itemNetWeight = van.getItemOfCoffee(i).getCoffee().getNetWeight();
-				if (itemNetWeight <= netWeightMax && itemNetWeight >= netWeightMin) {
-					findedItem.add(van.getItemOfCoffee(i));
-				}
+		for (int i = 0; i < van.getAssortment().size(); i++) {
+			itemNetWeight = van.getItemOfCoffee(i).getCoffee().getNetWeight();
+			if (itemNetWeight <= netWeightMax && itemNetWeight >= netWeightMin) {
+				findedItem.add(van.getItemOfCoffee(i));
 			}
-		
+		}
+
 		return findedItem;
 	}
 }

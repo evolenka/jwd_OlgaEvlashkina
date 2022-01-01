@@ -9,6 +9,16 @@ import by.jwd.task03polymorphism.service.FindByParameterService;
 import by.jwd.task03polymorphism.service.ServiceException;
 import by.jwd.task03polymorphism.service.Validation;
 
+/**
+ * Find coffee item by trademark among assortment loaded in the van
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param trademark, van
+ * @return List<ItemOfCoffee>
+ * @exception ServiceException
+ * @throws ServiceException in case of invalid data or file not found
+ */
 public class FindByTrademarkServiceImpl implements FindByParameterService<String> {
 
 	Validation validation = new Validation();
