@@ -1,8 +1,6 @@
 package by.jwd.task03polymorphism.dao;
 
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -12,12 +10,10 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
 
 import by.jwd.task03polymorphism.entity.CoffeeBean;
 import by.jwd.task03polymorphism.entity.GroundCoffee;
@@ -28,12 +24,13 @@ import by.jwd.task03polymorphism.entity.Packing;
 public class ReadFromJSONDao {
 
 	/**
-	 * @return
-	 * @throws DaoException
-	 * @throws ParseException
-	 * @throws IOException
-	 * @throws FileNotFoundException
-	 * @throws CoffeeBean            coffee
+	 * Read data from json file
+	 * 
+	 * @author evlashkina
+	 * @version 1
+	 * @param filename
+	 * @return List<ItemOfCoffee>
+	 * @exception DaoException
 	 */
 
 	public List<ItemOfCoffee> readDataFromFile(String fileName) throws DaoException {
@@ -44,7 +41,7 @@ public class ReadFromJSONDao {
 		try {
 			URL res = getClass().getClassLoader().getResource(fileName);
 			file = Paths.get(res.toURI()).toFile();
-		} catch (URISyntaxException|NullPointerException e) {
+		} catch (URISyntaxException | NullPointerException e) {
 			throw new DaoException();
 		}
 
@@ -59,18 +56,17 @@ public class ReadFromJSONDao {
 			for (Object o : jsonObjects) {
 
 				JSONObject item = (JSONObject) o;
-				
-				JSONObject coffeeItem = (JSONObject) item.get ("coffee");
-								
-					
+
+				JSONObject coffeeItem = (JSONObject) item.get("coffee");
+
 				CoffeeBean coffee = null;
-				
+
 				String title = (String) coffeeItem.get("title");
 				String trademark = (String) coffeeItem.get("trademark");
 				String sort = (String) coffeeItem.get("sort");
 				String roastDegree = (String) coffeeItem.get("roastDegree");
 				Double pricePerKg = (Double) coffeeItem.get("pricePerKg");
-			    int netWeight = (int)(long) coffeeItem.get("netWeight");
+				int netWeight = (int) (long) coffeeItem.get("netWeight");
 
 				if (title.equals("молотый")) {
 					String grindingDegree = (String) coffeeItem.get("grindingDegree");
@@ -85,10 +81,10 @@ public class ReadFromJSONDao {
 				else {
 					coffee = new CoffeeBean(sort, trademark, roastDegree, pricePerKg, netWeight);
 				}
-				
-				JSONObject pack = (JSONObject) item.get ("packing");
+
+				JSONObject pack = (JSONObject) item.get("packing");
 				Packing packing = null;
-				
+
 				String type = (String) pack.get("type");
 				Double price = (Double) pack.get("price");
 				Double volume = (Double) pack.get("volume");
@@ -98,7 +94,7 @@ public class ReadFromJSONDao {
 
 				assortment.add(new ItemOfCoffee(coffee, packing));
 			}
-			
+
 			return assortment;
 		} catch (IOException | ParseException e) {
 			throw new DaoException();

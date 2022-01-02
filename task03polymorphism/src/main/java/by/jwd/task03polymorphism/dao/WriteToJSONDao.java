@@ -11,6 +11,16 @@ import com.google.gson.Gson;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
 
 public class WriteToJSONDao {
+	
+	/**
+	 * Write data to json file
+	 * 
+	 * @author evlashkina
+	 * @version 1
+	 * @param assortment, filename
+	 * @return void
+	 * @exception DaoException
+	 */
 
 	public void writeDataToJSONFile(List<ItemOfCoffee> assortment, String filename) throws DaoException {
 
