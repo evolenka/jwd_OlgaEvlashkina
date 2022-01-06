@@ -9,7 +9,7 @@ import by.jwd.task02array.service.ServiceException;
 import by.jwd.task02array.service.impl.ShellSortImpl;
 
 public class ShellSortTest {
-	ArraySortingService<Integer> service = new ShellSortImpl();
+	ArraySortingService service = new ShellSortImpl();
 
 	@DataProvider(name = "DataForArraySorting")
 	public Object[][] createDataForArraySorting() {

@@ -1,8 +1,9 @@
-package by.jwd.task02array.controller;
+package by.jwd.task02array.controller.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.jwd.task02array.controller.Command;
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.service.ArrayCreator;
 import by.jwd.task02array.service.ArraySortingService;
@@ -20,7 +21,7 @@ public class ShellSortCommandImpl implements Command {
 
 		ServiceFactory servicefactory = ServiceFactory.getInstance();
 
-		ArraySortingService<Integer> service = servicefactory.getShellSort();
+		ArraySortingService service = servicefactory.getShellSort();
 
 		ArrayCreator arrayCreator = servicefactory.getArrayCreator();
 

@@ -21,10 +21,11 @@ public class MatrixCreator {
 	 * @throws ServiceException if the file not found, invalid data in file
 	 */
 	
-	public Matrix<Integer> createMatrixFromFile(String fileName, int rowQuantity, int columnQuantity)
+	@SuppressWarnings("unchecked")
+	public <T extends Number> Matrix<T> createMatrixFromFile(String fileName, int rowQuantity, int columnQuantity)
 			throws ServiceException {
 
-		Matrix<Integer> matrix = null;
+		Matrix<T> matrix = null;
 
 		try {
 			
@@ -32,12 +33,12 @@ public class MatrixCreator {
 
 			if (param != null) {
 
-				Integer[][] m = new Integer[rowQuantity][columnQuantity];
+				T[][] m = (T[][]) new Double [rowQuantity][columnQuantity];
 				matrix = new Matrix<>(m);
 				int k = 0;
 				for (int i = 0; i < matrix.getRowQuantity(); i++) {
 					for (int j = 0; j < matrix.getColumnQuantity(); j++) {
-						matrix.setElement(i, j, Integer.parseInt(param[k]));
+						matrix.setElement(i, j, (T) Double.valueOf(param[k]));
 						k++;
 					}
 				}

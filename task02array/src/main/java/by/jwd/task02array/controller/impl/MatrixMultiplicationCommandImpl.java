@@ -1,7 +1,9 @@
-package by.jwd.task02array.controller;
+package by.jwd.task02array.controller.impl;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import by.jwd.task02array.controller.Command;
 import by.jwd.task02array.entity.Matrix;
 import by.jwd.task02array.service.MatrixCreator;
 import by.jwd.task02array.service.MatrixOperationService;
@@ -19,7 +21,7 @@ public class MatrixMultiplicationCommandImpl implements Command {
 
 		ServiceFactory servicefactory = ServiceFactory.getInstance();
 
-		MatrixOperationService<Integer> service = servicefactory.getMatrixMultiplication();
+		MatrixOperationService service = servicefactory.getMatrixMultiplication();
 
 		MatrixCreator matrixCreator = servicefactory.getMatrixCreator();
 

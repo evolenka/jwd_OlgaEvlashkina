@@ -3,6 +3,18 @@ package by.jwd.task02array.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import by.jwd.task02array.controller.impl.BubbleSortCommandImpl;
+import by.jwd.task02array.controller.impl.ExternalSortCommandImpl;
+import by.jwd.task02array.controller.impl.InsertionSortByAddressCommandImpl;
+import by.jwd.task02array.controller.impl.InsertionSortCommandImpl;
+import by.jwd.task02array.controller.impl.MatrixAdditionCommandImpl;
+import by.jwd.task02array.controller.impl.MatrixMultiplicationCommandImpl;
+import by.jwd.task02array.controller.impl.SelectionSortCommandImpl;
+import by.jwd.task02array.controller.impl.ShakerSortCommandImpl;
+import by.jwd.task02array.controller.impl.ShellSortCommandImpl;
+import by.jwd.task02array.controller.impl.TwoWayMergeSortCommandImpl;
+import by.jwd.task02array.controller.impl.WrongRequestImpl;
+
 
 public class CommandProvider {
 

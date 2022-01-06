@@ -15,27 +15,27 @@ public class ArrayCreator {
 	 * @author evlashkina
 	 * @version 1
 	 * @param fileName
-	 * @return arrray <Integer>
+	 * @return <T extends Number> Array<T>
 	 * @exception ServiceException
 	 * @throws ServiceException if the file not found, invalid data in file
 	 */
 
-	public Array<Integer> createArrayFromFile(String fileName) throws ServiceException {
+	@SuppressWarnings("unchecked")
+	public <T extends Number> Array<T> createArrayFromFile(String fileName) throws ServiceException {
 
-		Array<Integer> array = null;
+		Array<T> array = null;
 
-		
 		try {
-			
+
 			String[] param = daofactory.getReader().readDataFromFile(fileName);
 
 			if (param != null) {
 
-				Integer[] arr = new Integer[param.length];
+				T[] arr = (T[]) new Double[param.length];
 				array = new Array<>(arr);
 
 				for (int i = 0; i < array.getLength(); i++) {
-					array.setElement(i, Integer.parseInt(param[i]));
+					array.setElement(i, (T) Double.valueOf(param[i]));
 				}
 			}
 			return array;

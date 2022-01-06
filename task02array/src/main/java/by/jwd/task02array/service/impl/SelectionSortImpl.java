@@ -11,7 +11,7 @@ import by.jwd.task02array.service.ServiceException;
  * @author evlashkina
  * @version 1
  * @param array
- * @return Arrray <Integer>
+ * @return <T extends Comparable<T>> Array<T>
  * @exception ServiceException
  * @throws ServiceException if the file not found, invalid data
  */
@@ -22,24 +22,24 @@ import by.jwd.task02array.service.ServiceException;
  * минимальное среди оставишихся элементов и ставим его на второе место и т.д.)
  */
 
-public class SelectionSortImpl implements ArraySortingService<Integer> {
+public class SelectionSortImpl implements ArraySortingService {
 
 	@Override
-	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
+	public <T extends Comparable<T>> Array<T> sortArray(Array<T> array) throws ServiceException {
 		try {
 			for (int i = 0; i < array.getLength(); i++) {
 
-				int min = array.getElement(i);
+				T min = array.getElement(i);
 				int indexMin = i;
 
 				for (int j = i + 1; j < array.getLength(); j++) {
-					if (array.getElement(j) < min) {
+					if (array.getElement(j).compareTo(min) < 0) {
 						min = array.getElement(j);
 						indexMin = j;
 					}
 				}
 
-				int temp = array.getElement(i);
+				T temp = array.getElement(i);
 				array.setElement(i, min);
 				array.setElement(indexMin, temp);
 			}

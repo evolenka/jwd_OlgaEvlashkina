@@ -12,7 +12,7 @@ import by.jwd.task02array.service.impl.ShakerSortImpl;
 
 public class ShakerSortTest {
 
-	ArraySortingService<Integer> service = new ShakerSortImpl();
+	ArraySortingService service = new ShakerSortImpl();
 
 	@DataProvider(name = "DataForArraySorting")
 	public Object[][] createDataForArraySorting() {

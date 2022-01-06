@@ -9,7 +9,7 @@ import by.jwd.task02array.service.ServiceException;
 import by.jwd.task02array.service.impl.TwoWayMergeSortImpl;
 
 public class TwoWayMergeSortTest {
-	ArraySortingService<Integer> service = new TwoWayMergeSortImpl();
+	ArraySortingService service = new TwoWayMergeSortImpl();
 
 	@DataProvider(name = "DataForArraySorting")
 	public Object[][] createDataForArraySorting() {

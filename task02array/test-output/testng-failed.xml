@@ -5,7 +5,8 @@
     <classes>
       <class name="jwd.task02array.MatrixMultiplicationTest">
         <methods>
-          <include name="testMatrixMultiplication1"/>
+          <include name="testMatrixMultiplication2"/>
+          <include name="testMatrixMultiplication3"/>
         </methods>
       </class> <!-- jwd.task02array.MatrixMultiplicationTest -->
     </classes>

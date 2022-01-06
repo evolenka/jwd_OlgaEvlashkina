@@ -36,10 +36,7 @@ public class Matrix<T> {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + Arrays.deepHashCode(a);
-		return result;
+		return Arrays.deepHashCode(a);
 	}
 
 	@Override
@@ -71,7 +68,6 @@ public class Matrix<T> {
 	}
 
 	private boolean checkRange(int i, int j) {
-		return (i < 0 || i > a.length - 1 || j < 0 || j > a[0].length - 1) ? false : true;
+		return !(i < 0 || i > a.length - 1 || j < 0 || j > a[0].length - 1);
 	}
-
 }

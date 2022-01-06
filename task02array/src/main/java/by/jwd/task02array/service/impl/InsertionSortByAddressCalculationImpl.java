@@ -1,11 +1,12 @@
 package by.jwd.task02array.service.impl;
 
+import java.util.List;
+
 import by.jwd.task02array.entity.Array;
 import by.jwd.task02array.entity.ArrayException;
 import by.jwd.task02array.service.ArraySortingService;
 import by.jwd.task02array.service.MyLinkedList;
 import by.jwd.task02array.service.ServiceException;
-
 
 /**
  * Insertion sorting by address calculation
@@ -13,23 +14,24 @@ import by.jwd.task02array.service.ServiceException;
  * @author evlashkina
  * @version 1
  * @param array
- * @return Arrray <Integer>
+ * @return <T extends Comparable<T>> Array<T>
  * @exception ServiceException
  * @throws ServiceException if the file not found, invalid data
  */
-public class InsertionSortByAddressCalculationImpl implements ArraySortingService<Integer> {
+public class InsertionSortByAddressCalculationImpl implements ArraySortingService {
 
 	static final int SIZE = 10;
 
 	@Override
-	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
+	public <T extends Comparable<T>> Array<T> sortArray(Array<T> array) throws ServiceException {
 
-		Array<Integer> result = array;
+		Array<T> result = array;
+		MyLinkedList<T> myLinkedList = new MyLinkedList<T>();
 
 		/* создаем массив связанных списков из 10 списков */
-		MyLinkedList[] lists = new MyLinkedList[SIZE];
+		MyLinkedList <T>[]lists = new MyLinkedList[SIZE];
 		for (int i = 0; i < SIZE; i++) {
-			lists[i] = new MyLinkedList();
+			lists[i] = new MyLinkedList<>();
 		}
 
 		/*
@@ -39,15 +41,15 @@ public class InsertionSortByAddressCalculationImpl implements ArraySortingServic
 		 * описан в классе MyLinkedList)
 		 */
 		try {
-			int address;
-			int max = findMax(array);
+			Integer address;
+			Integer max = (Integer) findMax(array);
 
 			for (int i = 0; i < array.getLength(); i++) {
-				int value = array.getElement(i);
+				T value = array.getElement(i);
 				if (max != 0) {
-					address = (int) (value * 1.0) / max * (SIZE - 1);
+					address = (int) ((int) value * 1.0) / max * (SIZE - 1);
 				} else {
-					address = (int) (value * 1.0) * (SIZE - 1);
+					address = (int) ((int) value * 1.0) * (SIZE - 1);
 				}
 				address = address < 0 ? 0 : address;
 				lists[address].insert(value);
@@ -58,7 +60,7 @@ public class InsertionSortByAddressCalculationImpl implements ArraySortingServic
 			 * вставки числа из списка в массив описан в классе MyLinkedList
 			 */
 
-			MyLinkedList.passToArray(array, lists);
+			myLinkedList.passToArray(array, lists);
 
 			return result;
 
@@ -68,12 +70,12 @@ public class InsertionSortByAddressCalculationImpl implements ArraySortingServic
 	}
 
 	/* метод для поиска максимального элемента в массиве */
-	public int findMax(Array<Integer> array) throws ServiceException {
+	public <T extends Comparable<T>> T findMax(Array<T> array) throws ServiceException {
 
 		try {
-			int max = array.getElement(0);
+			T max = array.getElement(0);
 			for (int i = 0; i < array.getLength() - 1; i++) {
-				if (array.getElement(i + 1) > max) {
+				if (array.getElement(i + 1).compareTo(max) > 0) {
 					max = array.getElement(i + 1);
 				}
 			}

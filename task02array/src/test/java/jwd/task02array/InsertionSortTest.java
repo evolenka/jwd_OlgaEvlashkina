@@ -12,7 +12,7 @@ import by.jwd.task02array.service.impl.InsertionSortImpl;
 
 public class InsertionSortTest {
 
-	ArraySortingService<Integer> service = new InsertionSortImpl();
+	ArraySortingService service = new InsertionSortImpl();
 
 	@DataProvider(name = "DataForArraySorting")
 	public Object[][] createDataForArraySorting() {

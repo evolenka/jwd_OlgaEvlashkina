@@ -13,7 +13,7 @@ import by.jwd.task02array.service.ServiceException;
  * @author evlashkina
  * @version 1
  * @param array
- * @return Arrray <Integer>
+ * @return <T extends Comparable<T>> Array<T>Arrray <T>
  * @exception ServiceException
  * @throws ServiceException if the file not found, invalid data
  */
@@ -24,12 +24,12 @@ import by.jwd.task02array.service.ServiceException;
  * перемещая наименьший элемент в начало массива
  */
 
-public class ShakerSortImpl implements ArraySortingService<Integer> {
+public class ShakerSortImpl implements ArraySortingService {
 
 	static Logger logger = LogManager.getLogger(ShakerSortImpl.class);
 
 	@Override
-	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
+	public <T extends Comparable<T>> Array<T> sortArray(Array<T> array) throws ServiceException {
 
 		try {
 
@@ -60,7 +60,7 @@ public class ShakerSortImpl implements ArraySortingService<Integer> {
 				 */
 
 				for (int i = leftBounder; i < rightBounder; i++) {
-					if (array.getElement(i) > array.getElement(i + 1)) {
+					if (array.getElement(i).compareTo(array.getElement(i + 1)) > 0) {
 						swap(array, i, i + 1);
 						indexLastSwap = i;
 					}
@@ -77,7 +77,7 @@ public class ShakerSortImpl implements ArraySortingService<Integer> {
 				 */
 
 				for (int i = rightBounder; i > leftBounder; i--) {
-					if (array.getElement(i) < array.getElement(i - 1)) {
+					if (array.getElement(i).compareTo(array.getElement(i - 1)) < 0) {
 						swap(array, i, i - 1);
 						indexLastSwap = i;
 					}
@@ -95,9 +95,9 @@ public class ShakerSortImpl implements ArraySortingService<Integer> {
 	}
 
 	/* вспомогательный метод для обмена элементов местами */
-	public void swap(Array<Integer> array, int i, int j) throws ServiceException {
+	public <T> void swap(Array<T> array, int i, int j) throws ServiceException {
 		try {
-			int temp = array.getElement(i);
+			T temp = array.getElement(i);
 			array.setElement(i, array.getElement(j));
 			array.setElement(j, temp);
 		} catch (ArrayException e) {

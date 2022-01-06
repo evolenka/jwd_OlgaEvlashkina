@@ -11,15 +11,15 @@ import by.jwd.task02array.service.ServiceException;
  * @author evlashkina
  * @version 1
  * @param array
- * @return Arrray <Integer>
+ * @return <T extends Comparable<T>> Array<T>
  * @exception ServiceException
  * @throws ServiceException if the file not found, invalid data
  */
 
-public class ShellSortImpl implements ArraySortingService<Integer> {
+public class ShellSortImpl implements ArraySortingService {
 
 	@Override
-	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
+	public <T extends Comparable<T>> Array<T> sortArray(Array<T> array) throws ServiceException {
 
 		try {
 
@@ -29,15 +29,14 @@ public class ShellSortImpl implements ArraySortingService<Integer> {
 
 					int i = j - h;
 
-					int temp = array.getElement(j);
+					T temp = array.getElement(j);
 
-					while (i >= 0 && temp < array.getElement(i)) {
+					while (i >= 0 && temp.compareTo(array.getElement(i)) < 0) {
 						array.setElement((i + h), array.getElement(i));
 						i = i - h;
 					}
 
 					array.setElement((i + h), temp);
-
 				}
 			}
 

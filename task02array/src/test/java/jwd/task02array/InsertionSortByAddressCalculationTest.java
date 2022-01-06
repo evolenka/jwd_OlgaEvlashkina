@@ -10,12 +10,13 @@ import org.testng.annotations.Test;
 
 public class InsertionSortByAddressCalculationTest {
 
-	ArraySortingService<Integer> service = new InsertionSortByAddressCalculationImpl();
+	ArraySortingService service = new InsertionSortByAddressCalculationImpl();
 
 	@DataProvider(name = "DataForArraySorting")
 	public Object[][] createDataForArraySorting() {
 		return new Object[][] { new Integer[][] { { 1 }, { 1 } }, new Integer[][] { { 0 }, { 0 } },
-				new Integer[][] { { 3, 5 }, { 3, 5 } }, new Integer[][] { { 5, 4 }, { 4, 5 } },
+				new Integer[][] { { 3, 5 }, { 3, 5 } }, new Integer[][] { { 5, 5 }, { 5, 5 } },
+				new Integer[][] { { 5, 4 }, { 4, 5 } },
 				new Integer[][] { { 5, 6, 7, 8, 9, 10, 11, 12 }, { 5, 6, 7, 8, 9, 10, 11, 12 } },
 				new Integer[][] { { -8, 0, -7, -9, -58, -6 }, { -58, -9, -8, -7, -6, 0 } },
 				new Integer[][] { { 20, 19, 18, 17, 16, 15, 14, 13, 12, 11 },

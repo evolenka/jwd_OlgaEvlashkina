@@ -8,16 +8,16 @@ import by.jwd.task02array.service.ServiceException;
 /**
  * Bubble Sorting of array
  * 
- * @author evlashkina
+ * @author e vlashkina
  * @version 1
  * @param array
- * @return Arrray <Integer>
+ * @return <T extends Comparable<T>> Array<T>
  * @exception ServiceException
  * @throws ServiceException if the file not found, invalid data
  */
 
-//сортируем массив по возрастанию обменами (сравниваем два соседних числа и делается перестановка,
-//если второе число больше первого. Так продолжается до тех пор, пока все элементы не станут расположены
+//сортируем массив по возрастанию обменами (сравниваем два соседних числа и делаем перестановку,
+//если второе число больше первого. Продолжаем, пока все элементы не станут расположены
 //в порядке возрастания. Подсчитываем при этом количество перестановок. 
 
 //переменная quantity служит индикатором для того чтобы понимать нужна ли еще сортировка,
@@ -26,11 +26,10 @@ import by.jwd.task02array.service.ServiceException;
 //будет равна 0 и цикл while будет завершен (для запуска цикла присваиваем начальное значение переменной = 1
 //затем обнуляем его в цикле)
 
-public class BubbleSortImpl implements ArraySortingService <Integer> {
+public class BubbleSortImpl implements ArraySortingService {
 
 	@Override
-	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
-
+	public <T extends Comparable<T>> Array<T> sortArray(Array<T> array) throws ServiceException {
 		try {
 			int quantity = 1;
 
@@ -42,7 +41,7 @@ public class BubbleSortImpl implements ArraySortingService <Integer> {
 				// внутренний цикл для сравнения соседних элементов массива по порядку
 				for (int i = 1; i < array.getLength(); i++) {
 
-					if (array.getElement(i) < array.getElement(i - 1)) {
+					if (array.getElement(i).compareTo(array.getElement(i - 1)) < 0) {
 						swap(array, i, i - 1);
 						quantity++;
 					}

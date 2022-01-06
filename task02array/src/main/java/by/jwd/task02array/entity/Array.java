@@ -15,14 +15,14 @@ public class Array<T> {
 	}
 
 	public T getElement(int i) throws ArrayException {
-		if (i < 0 || i > a.length - 1) {
+		if (checkRange(i)) {
 			throw new ArrayException();
 		}
 		return a[i];
 	}
 
 	public void setElement(int i, T value) throws ArrayException {
-		if (i < 0 || i > a.length - 1) {
+		if (checkRange(i)) {
 			throw new ArrayException();
 		}
 		a[i] = value;
@@ -30,10 +30,7 @@ public class Array<T> {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + Arrays.hashCode(a);
-		return result;
+		return Arrays.deepHashCode(a);
 	}
 
 	@Override
@@ -45,7 +42,7 @@ public class Array<T> {
 		if (getClass() != obj.getClass())
 			return false;
 		Array<?> other = (Array<?>) obj;
-		if (!Arrays.equals(a, other.a))
+		if (!Arrays.deepEquals(a, other.a))
 			return false;
 		return true;
 	}
@@ -57,5 +54,9 @@ public class Array<T> {
 			s.append(value + " ");
 		}
 		return s.toString();
+	}
+
+	private boolean checkRange(int i) {
+		return (i < 0 || i > a.length - 1);
 	}
 }

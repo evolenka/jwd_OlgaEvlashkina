@@ -12,7 +12,7 @@ import by.jwd.task02array.service.impl.SelectionSortImpl;
 
 public class SelectionSortTest {
 	
-	ArraySortingService<Integer> service = new SelectionSortImpl();
+	ArraySortingService service = new SelectionSortImpl();
 
 	@DataProvider(name = "DataForArraySorting")
 	public Object[][] createDataForArraySorting() {

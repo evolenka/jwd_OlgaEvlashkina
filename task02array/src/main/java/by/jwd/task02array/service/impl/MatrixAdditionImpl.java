@@ -11,14 +11,16 @@ import by.jwd.task02array.service.ServiceException;
  * @author evlashkina
  * @version 1
  * @param p, q
- * @return Matrix <Integer>
+ * @return <T extends Number> Matrix <T>
  * @exception ServiceException
  * @throws ServiceException if the file not found, invalid data
  */
 
-public class MatrixAdditionImpl implements MatrixOperationService<Integer> {
+public class MatrixAdditionImpl implements MatrixOperationService {
 
-	public Matrix<Integer> doOperation(Matrix<Integer> p, Matrix<Integer> q) throws ServiceException {
+	
+	@SuppressWarnings("unchecked")// unchecked cast from Double to T
+	public <T extends Number> Matrix<T> doOperation(Matrix<T> p, Matrix<T> q) throws ServiceException {
 		try {
 			int a = p.getRowQuantity();
 			int b = q.getRowQuantity();
@@ -28,13 +30,14 @@ public class MatrixAdditionImpl implements MatrixOperationService<Integer> {
 			if (a != b || c != d) {
 				throw new MatrixException();
 			}
-			Integer[][] matrix = new Integer[a][c];
-			Matrix<Integer> result = new Matrix<>(matrix);
+	
+			T[][] matrix = (T [] []) new Double[a][c];
+			Matrix<T> result = new Matrix<>(matrix);
 
 			for (int i = 0; i < a; i++) {
 				for (int j = 0; j < c; j++) {
-					int value = p.getElement(i, j) + q.getElement(i, j);
-					result.setElement(i, j, value);
+					Double value = (Double) p.getElement(i, j) + (Double) q.getElement(i, j);
+					result.setElement(i, j, ((T) value));
 				}
 			}
 			return result;

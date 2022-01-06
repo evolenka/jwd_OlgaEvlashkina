@@ -20962,3 +20962,9 @@
 2021-12-26 21:31:52 [main] ERROR by.jwd.task02array.controller.BubbleSortCommandImpl - wrong number format
 2021-12-26 21:32:15 [main] ERROR by.jwd.task02array.controller.BubbleSortCommandImpl - wrong quantity of args
 2021-12-26 21:32:15 [main] ERROR by.jwd.task02array.controller.BubbleSortCommandImpl - wrong quantity of args
+2022-01-05 18:52:24 [main] ERROR by.jwd.task02array.controller.MatrixMultiplicationCommandImpl - wrong quantity of args
+2022-01-05 18:52:24 [main] ERROR by.jwd.task02array.controller.MatrixMultiplicationCommandImpl - wrong quantity of args
+2022-01-05 18:53:06 [main] ERROR by.jwd.task02array.controller.MatrixMultiplicationCommandImpl - error
+2022-01-05 18:53:06 [main] ERROR by.jwd.task02array.controller.MatrixMultiplicationCommandImpl - error
+2022-01-05 18:53:28 [main] ERROR by.jwd.task02array.controller.MatrixMultiplicationCommandImpl - wrong quantity of args
+2022-01-05 18:53:28 [main] ERROR by.jwd.task02array.controller.MatrixMultiplicationCommandImpl - wrong quantity of args

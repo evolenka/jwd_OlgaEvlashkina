@@ -11,15 +11,15 @@ import by.jwd.task02array.service.ServiceException;
  * @author evlashkina
  * @version 1
  * @param array
- * @return Arrray <Integer>
+ * @return <T extends Comparable<T>> Array<T>
  * @exception ServiceException
  * @throws ServiceException if the file not found, invalid data
  */
 
-public class InsertionSortImpl implements ArraySortingService<Integer> {
+public class InsertionSortImpl implements ArraySortingService {
 
 	@Override
-	public Array<Integer> sortArray(Array<Integer> array) throws ServiceException {
+	public <T extends Comparable<T>> Array<T> sortArray(Array<T> array) throws ServiceException {
 		/*
 		 * внешний цикл: проходимся по каждому элементу, начиная со второго (j =1) и
 		 * сравниваем его с предыдущим (слева), значение элемента, которому ищем место
@@ -30,13 +30,13 @@ public class InsertionSortImpl implements ArraySortingService<Integer> {
 
 				int i = j - 1;
 
-				int temp = array.getElement(j);
+				T temp = array.getElement(j);
 				/*
 				 * внутренний цикл идем влево пока не встретим элемент,который меньше либо пока
 				 * не дойдем до начала каждый раз сдвигаем встречающийся (больший элемент)
 				 * вправо
 				 */
-				while (i >= 0 && (temp < array.getElement(i))) {
+				while (i >= 0 && (temp.compareTo(array.getElement(i))<0)) {
 					array.setElement((i + 1), array.getElement(i));
 					i--;
 				}

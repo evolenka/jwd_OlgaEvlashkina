@@ -1,35 +1,579 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="65" passed="65" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-19T22:28:36 MSK" name="Default suite" finished-at="2021-12-19T22:28:36 MSK" duration-ms="53">
+  <suite started-at="2022-01-06T20:44:52 MSK" name="Default suite" finished-at="2022-01-06T20:44:52 MSK" duration-ms="230">
     <groups>
       <group name="service">
-        <method signature="MatrixMultiplicationTest.testMatrixMultiplication1()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" name="testMatrixMultiplication1" class="jwd.task02array.MatrixMultiplicationTest"/>
-        <method signature="MatrixMultiplicationTest.testMatrixMultiplication2()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" name="testMatrixMultiplication2" class="jwd.task02array.MatrixMultiplicationTest"/>
-        <method signature="MatrixMultiplicationTest.testMatrixMultiplication3()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" name="testMatrixMultiplication3" class="jwd.task02array.MatrixMultiplicationTest"/>
-        <method signature="MatrixMultiplicationTest.testMatrixMultiplication4()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" name="testMatrixMultiplication4" class="jwd.task02array.MatrixMultiplicationTest"/>
+        <method signature="ArrayCreatorTest.testDataForArrayCreating(java.lang.String,[Ljava.lang.Double;)[pri:0, instance:jwd.task02array.ArrayCreatorTest@f667fe]" name="testDataForArrayCreating" class="jwd.task02array.ArrayCreatorTest"/>
+        <method signature="BubbleSortTest.testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" name="testDataForArraySorting" class="jwd.task02array.BubbleSortTest"/>
+        <method signature="InsertionSortByAddressCalculationTest.testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" name="testDataForArraySorting" class="jwd.task02array.InsertionSortByAddressCalculationTest"/>
+        <method signature="InsertionSortTest.testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" name="testDataForArraySorting" class="jwd.task02array.InsertionSortTest"/>
+        <method signature="MatrixMultiplicationTest.testMatrixMultiplication1()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" name="testMatrixMultiplication1" class="jwd.task02array.MatrixMultiplicationTest"/>
+        <method signature="MatrixMultiplicationTest.testMatrixMultiplication2()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" name="testMatrixMultiplication2" class="jwd.task02array.MatrixMultiplicationTest"/>
+        <method signature="MatrixMultiplicationTest.testMatrixMultiplication3()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" name="testMatrixMultiplication3" class="jwd.task02array.MatrixMultiplicationTest"/>
+        <method signature="MatrixMultiplicationTest.testMatrixMultiplication4()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" name="testMatrixMultiplication4" class="jwd.task02array.MatrixMultiplicationTest"/>
+        <method signature="SelectionSortTest.testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" name="testDataForArraySorting" class="jwd.task02array.SelectionSortTest"/>
+        <method signature="ShakerSortTest.testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" name="testDataForArraySorting" class="jwd.task02array.ShakerSortTest"/>
+        <method signature="ShellSortTest.testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" name="testDataForArraySorting" class="jwd.task02array.ShellSortTest"/>
+        <method signature="TwoWayMergeSortTest.testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" name="testDataForArraySorting" class="jwd.task02array.TwoWayMergeSortTest"/>
       </group> <!-- service -->
     </groups>
-    <test started-at="2021-12-19T22:28:36 MSK" name="Default test" finished-at="2021-12-19T22:28:36 MSK" duration-ms="53">
+    <test started-at="2022-01-06T20:44:52 MSK" name="Default test" finished-at="2022-01-06T20:44:52 MSK" duration-ms="230">
+      <class name="jwd.task02array.InsertionSortTest">
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@41a90fa8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3d8bbcdc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4fad94a7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@475835b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5fcacc0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@533b266e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@452ba1db]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2289aca5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4f936da8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4215838f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@f9d87b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6ffab045]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6865c751]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@62679465]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortTest@41fecb8b]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@26fb628]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3e2943ab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+      </class> <!-- jwd.task02array.InsertionSortTest -->
+      <class name="jwd.task02array.InsertionSortByAddressCalculationTest">
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@625e134e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@72bd06ca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@119f1f2a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@1a1da881]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5f3b9c57]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@1e044120]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@30ea8c23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@7b139eab]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@71e5f61d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2ce86164]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2552f2cb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@33352f32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@76a36b71]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@184497d1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@172ca72b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5bda80bf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.InsertionSortByAddressCalculationTest@6c130c45]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4e76dac]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@611df6e3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+      </class> <!-- jwd.task02array.InsertionSortByAddressCalculationTest -->
+      <class name="jwd.task02array.ShellSortTest">
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2cf23c81]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3624da92]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3e2822]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@79e18e38]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@165b8a71]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6175619b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2d10e0b1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@1c98290c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@64337702]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2cf92cc7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@191ae03f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@9635fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@52b56a3e]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@fd0e5b6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShellSortTest@223aa2f7]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3f2ef586]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@751d3241]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+      </class> <!-- jwd.task02array.ShellSortTest -->
+      <class name="jwd.task02array.ShakerSortTest">
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5f2f577]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6273c5a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@41fe9859]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5ac86ba5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@18a3962d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@78aea4b9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3c0fae6c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4c168660]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@69c79f09]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@1ca25c47]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@716a7124]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@77192705]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@89c10b7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5dbe30be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.ShakerSortTest@20a8a64e]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2a65bb85]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4b85880b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+      </class> <!-- jwd.task02array.ShakerSortTest -->
       <class name="jwd.task02array.MatrixMultiplicationTest">
-        <test-method signature="testMatrixMultiplication1()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" started-at="2021-12-19T22:28:36 MSK" name="testMatrixMultiplication1" description="MatrixMultiplicationTestPositive1" finished-at="2021-12-19T22:28:36 MSK" duration-ms="9" status="PASS">
+        <test-method signature="testMatrixMultiplication1()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" started-at="2022-01-06T20:44:52 MSK" name="testMatrixMultiplication1" description="MatrixMultiplicationTestPositive1" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMatrixMultiplication1 -->
-        <test-method signature="testMatrixMultiplication2()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" started-at="2021-12-19T22:28:36 MSK" name="testMatrixMultiplication2" description="MatrixMultiplicationTestPositive2" finished-at="2021-12-19T22:28:36 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testMatrixMultiplication2()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" started-at="2022-01-06T20:44:52 MSK" name="testMatrixMultiplication2" description="MatrixMultiplicationTestPositive2" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMatrixMultiplication2 -->
-        <test-method signature="testMatrixMultiplication3()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" started-at="2021-12-19T22:28:36 MSK" name="testMatrixMultiplication3" description="MatrixMultiplicationTestPositive3" finished-at="2021-12-19T22:28:36 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testMatrixMultiplication3()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" started-at="2022-01-06T20:44:52 MSK" name="testMatrixMultiplication3" description="MatrixMultiplicationTestPositive3" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMatrixMultiplication3 -->
-        <test-method signature="testMatrixMultiplication4()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@77eca502]" started-at="2021-12-19T22:28:36 MSK" name="testMatrixMultiplication4" description="MatrixMultiplicationTestNegative" finished-at="2021-12-19T22:28:36 MSK" duration-ms="1" status="PASS">
+        <test-method signature="testMatrixMultiplication4()[pri:0, instance:jwd.task02array.MatrixMultiplicationTest@65b3a85a]" started-at="2022-01-06T20:44:52 MSK" name="testMatrixMultiplication4" description="MatrixMultiplicationTestNegative" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
           <exception class="by.jwd.task02array.service.ServiceException">
             <full-stacktrace>
               <![CDATA[by.jwd.task02array.service.ServiceException
-at by.jwd.task02array.service.impl.MatrixMultiplicationImpl.doOperation(MatrixMultiplicationImpl.java:44)
+at by.jwd.task02array.service.impl.MatrixMultiplicationImpl.doOperation(MatrixMultiplicationImpl.java:46)
 at jwd.task02array.MatrixMultiplicationTest.testMatrixMultiplication4(MatrixMultiplicationTest.java:71)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -66,6 +610,462 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- testMatrixMultiplication4 -->
       </class> <!-- jwd.task02array.MatrixMultiplicationTest -->
+      <class name="jwd.task02array.BubbleSortTest">
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4eed46ee]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@36b0fcd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5e8f9e2d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@51df223b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@55795845]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3d08f3f5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2f058b8a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@756cf158]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6d1d4d7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@89ff02e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5d465e4b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@53e211ee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6a988392]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@1d71006f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.BubbleSortTest@57eda880]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@52500920]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@117e0fe5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+      </class> <!-- jwd.task02array.BubbleSortTest -->
+      <class name="jwd.task02array.SelectionSortTest">
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6326d182]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5241cf67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@757d6814]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@649725e3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5b6813df]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5f2606b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@fd46303]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@60d8c0dc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6c67e137]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2c9399a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@29a60c27]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@1849db1a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@226642a5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@7e809b79]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.SelectionSortTest@53d1b9b3]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@53ab0286]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@63c5efee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+      </class> <!-- jwd.task02array.SelectionSortTest -->
+      <class name="jwd.task02array.TwoWayMergeSortTest">
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4204541c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6a62689d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@c7a975a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2c1b9e4b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@6256ac4f]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@44c79f32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@35fe2125]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@94f6bfb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4602c2a9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@60fa3495]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@4a9f80d3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@35beb15e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@2b58f754]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@3ebff828]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+        <test-method signature="testDataForArraySorting([Ljava.lang.Integer;,[Ljava.lang.Integer;)[pri:0, instance:jwd.task02array.TwoWayMergeSortTest@163d04ff]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArraySorting" data-provider="DataForArraySorting" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@5b970f7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Integer;@7fd4acee]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArraySorting -->
+      </class> <!-- jwd.task02array.TwoWayMergeSortTest -->
+      <class name="jwd.task02array.ArrayCreatorTest">
+        <test-method signature="testDataForArrayCreating(java.lang.String,[Ljava.lang.Double;)[pri:0, instance:jwd.task02array.ArrayCreatorTest@f667fe]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArrayCreating" data-provider="DataForArrayCreating" finished-at="2022-01-06T20:44:52 MSK" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dataTest1.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Double;@76c7beb3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArrayCreating -->
+        <test-method signature="testDataForArrayCreating(java.lang.String,[Ljava.lang.Double;)[pri:0, instance:jwd.task02array.ArrayCreatorTest@f667fe]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArrayCreating" data-provider="DataForArrayCreating" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dataTest2.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Double;@4fe89c24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArrayCreating -->
+        <test-method signature="testDataForArrayCreating(java.lang.String,[Ljava.lang.Double;)[pri:0, instance:jwd.task02array.ArrayCreatorTest@f667fe]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArrayCreating" data-provider="DataForArrayCreating" finished-at="2022-01-06T20:44:52 MSK" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dataTest3.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Double;@70dd7e15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArrayCreating -->
+        <test-method signature="testDataForArrayCreating(java.lang.String,[Ljava.lang.Double;)[pri:0, instance:jwd.task02array.ArrayCreatorTest@f667fe]" started-at="2022-01-06T20:44:52 MSK" name="testDataForArrayCreating" data-provider="DataForArrayCreating" finished-at="2022-01-06T20:44:52 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dataTest4.txt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Double;@5cc126dc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataForArrayCreating -->
+      </class> <!-- jwd.task02array.ArrayCreatorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class BubbleSortTest {
 
-	ArraySortingService<Integer> service = new BubbleSortImpl();
+	ArraySortingService service = new BubbleSortImpl();
 
 	@DataProvider(name = "DataForArraySorting")
 	public Object[][] createDataForArraySorting() {
