@@ -17,12 +17,12 @@ public class WriteDepartmentListToJSONDaoImpl implements WriteToJSONDao<String> 
 	public void writeDataToJSONFile(List<String> searchResult, String fileName) throws DaoException {
 
 
-		try (FileWriter file = new FileWriter(new File(fileName))) {
+		try (FileWriter fileWriter = new FileWriter(new File(fileName))) {
 
 			for (int j = 0; j < searchResult.size(); j++) {
 				Gson gson = new Gson();
 				String string = gson.toJson(searchResult.get(j));
-				file.write(string);
+				fileWriter.write(string);
 			}
 
 		} catch (IOException e) {
