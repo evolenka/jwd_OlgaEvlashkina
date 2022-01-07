@@ -3,6 +3,9 @@ package by.jwd.task03polymorphism.service.impl;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.task03polymorphism.dao.DaoException;
 import by.jwd.task03polymorphism.dao.DaoFactory;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
@@ -23,6 +26,8 @@ import by.jwd.task03polymorphism.service.Validation;
  * @throws ServiceException in case of invalid data or file not found
  */
 public class SortingByPriceToNetWeightRatioServiceImpl implements SortingService {
+	
+	static Logger logger = LogManager.getLogger(SortingByPriceToNetWeightRatioServiceImpl.class);
 
 	private final DaoFactory daofactory = DaoFactory.getInstance();
 
@@ -35,16 +40,19 @@ public class SortingByPriceToNetWeightRatioServiceImpl implements SortingService
 			throw new ServiceException();
 		}
 		List<ItemOfCoffee> sortedAssortment = van.getAssortment();
-
+		
+		logger.debug("start sort");
 		Collections.sort(sortedAssortment, new PriceToNetWeightComparator());
-
+		logger.debug("end sort");
+		
+		logger.debug("start write to json file");
 		try {
 			daofactory.getWriter().writeDataToJSONFile(sortedAssortment, "SortingByRatio.json");
 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-
+		logger.debug("end write to json file");
 		return sortedAssortment;
 	}
 }

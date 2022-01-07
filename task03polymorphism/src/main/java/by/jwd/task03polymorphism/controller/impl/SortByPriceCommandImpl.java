@@ -1,10 +1,11 @@
-package by.jwd.task03polymorphism.controller;
+package by.jwd.task03polymorphism.controller.impl;
 
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.jwd.task03polymorphism.controller.Command;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 import by.jwd.task03polymorphism.service.LoadVanService;

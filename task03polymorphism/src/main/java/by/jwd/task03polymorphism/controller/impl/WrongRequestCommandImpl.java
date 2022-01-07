@@ -1,5 +1,6 @@
-package by.jwd.task03polymorphism.controller;
+package by.jwd.task03polymorphism.controller.impl;
 
+import by.jwd.task03polymorphism.controller.Command;
 import by.jwd.task03polymorphism.view.MessageManager;
 import by.jwd.task03polymorphism.view.Output;
 

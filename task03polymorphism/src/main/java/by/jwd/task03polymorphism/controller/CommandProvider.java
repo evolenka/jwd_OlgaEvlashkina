@@ -3,6 +3,12 @@ package by.jwd.task03polymorphism.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import by.jwd.task03polymorphism.controller.impl.FindByParameterCommandImpl;
+import by.jwd.task03polymorphism.controller.impl.SortByNetWeightCommandImpl;
+import by.jwd.task03polymorphism.controller.impl.SortByPriceCommandImpl;
+import by.jwd.task03polymorphism.controller.impl.SortByRatioCommandImpl;
+import by.jwd.task03polymorphism.controller.impl.WrongRequestCommandImpl;
+
 
 public class CommandProvider {
 	
