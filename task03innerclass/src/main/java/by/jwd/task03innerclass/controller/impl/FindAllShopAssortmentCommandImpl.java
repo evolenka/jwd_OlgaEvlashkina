@@ -14,9 +14,9 @@ import by.jwd.task03innerclass.service.ShopCreatorService;
 import by.jwd.task03innerclass.view.MessageManager;
 import by.jwd.task03innerclass.view.Output;
 
-public class FindAllStoreDepartmentCommandImpl implements Command{
+public class FindAllShopAssortmentCommandImpl implements Command{
 	
-	static Logger logger = LogManager.getLogger(FindAllStoreDepartmentCommandImpl.class);
+	static Logger logger = LogManager.getLogger(FindAllShopAssortmentCommandImpl.class);
 
 	@Override
 	public void execute(MessageManager current, String [] param) {
@@ -25,15 +25,15 @@ public class FindAllStoreDepartmentCommandImpl implements Command{
 
 		ShopCreatorService shopService = servicefactory.getShop();
 
-		FindService <String> service = servicefactory.getFindAllDepartment();
+		FindService <String> service = servicefactory.getFindAllAssortment();
 
 		Output view = new Output();
 
 		try {
 			Shop shop = shopService.create(param [0]);
 			
-			List <String> departmentName = service.find(shop);
-			view.print(current.getString("res1") + "\n" + departmentName.toString());
+			List <String> listOfGoodTitles  = service.find(shop);
+			view.print(current.getString("res2") + listOfGoodTitles.toString());
 			
 		} catch (ServiceException e) {
 			logger.error("file data not found or incorrect data");

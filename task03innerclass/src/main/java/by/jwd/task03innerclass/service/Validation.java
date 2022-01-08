@@ -10,7 +10,7 @@ import by.jwd.task03innerclass.entity.Shop;
  * 
  * @author evlashkina
  * @version 1
- * @param store
+ * @param shop
  * @return boolean
  * @exception ServiceException
  * @throws ServiceException in case of invalid data or file not found
@@ -19,16 +19,16 @@ public class Validation {
 
 	static Logger logger = LogManager.getLogger(Validation.class);
 
-	public boolean isValid(Shop store) throws ServiceException {
+	public boolean isValid(Shop shop) throws ServiceException {
 
 		logger.debug("start validation");
 		boolean res = true;
 		try {
-			for (int i = 0; i < store.getDepartmentQuantity(); i++) {
-				for (int j = 0; j < store.getDepartment(i).getAssortmentQuantity(); j++) {
+			for (int i = 0; i < shop.getDepartmentQuantity(); i++) {
+				for (int j = 0; j < shop.getDepartment(i).getAssortmentQuantity(); j++) {
 
-					if (store.getDepartment(i).getGood(j).getPrice() <= 0
-							|| store.getDepartment(i).getGood(j).getQuantity() <= 0) {
+					if (shop.getDepartment(i).getGood(j).getPrice() <= 0
+							|| shop.getDepartment(i).getGood(j).getQuantity() <= 0) {
 						res = false;
 						break;
 					}

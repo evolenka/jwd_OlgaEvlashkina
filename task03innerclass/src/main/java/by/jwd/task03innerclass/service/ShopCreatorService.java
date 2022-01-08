@@ -20,15 +20,23 @@ import by.jwd.task03innerclass.entity.Shop;
 
 public class ShopCreatorService {
 
-	static Logger logger = LogManager.getLogger(Validation.class);
+	static Logger logger = LogManager.getLogger(ShopCreatorService.class);
 
 	private final DaoFactory daofactory = DaoFactory.getInstance();
 
+	Validation validation = new Validation();
+
 	public Shop create(String fileName) throws ServiceException {
 
-		logger.debug("read from file");
+		Shop shop;
+
+		logger.debug("get shop object from json file");
 		try {
-			return daofactory.getReader().readDataFromFile(fileName);
+			shop = daofactory.getReader().readDataFromJSON(fileName);
+			if (!validation.isValid(shop)) {
+				throw new ServiceException();
+			}
+			return shop;
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}

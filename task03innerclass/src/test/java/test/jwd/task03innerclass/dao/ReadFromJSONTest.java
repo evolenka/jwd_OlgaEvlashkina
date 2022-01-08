@@ -62,7 +62,7 @@ class ReadFromJSONTest {
 		department2.addGood(good9);
 		department2.addGood(good10);
 
-		Shop actual = dao.readDataFromFile("dataTest.json");
+		Shop actual = dao.readDataFromJSON("dataTest.json");
 		Shop expected = shop;
 		Assertions.assertEquals(actual, expected);
 	}
@@ -71,7 +71,7 @@ class ReadFromJSONTest {
 	void testReadFromJSONNegative() throws DaoException {
 
 		assertThrows(DaoException.class, () -> {
-			dao.readDataFromFile("FileNotExist.json");
+			dao.readDataFromJSON("FileNotExist.json");
 		});
 	}
 }

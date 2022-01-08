@@ -30,7 +30,7 @@ public class LoadVanService {
 
 	private final DaoFactory daofactory = DaoFactory.getInstance();
 
-	private final static int COEFFICIENT = 1000;// to cast capacity (in cubic metre) to the volume of packing (in
+	private static final int COEFFICIENT = 1000;// to cast capacity (in cubic metre) to the volume of packing (in
 												// litres)
 
 	public VanOfCoffee loadVan(int capacity, int amount, String fileName) throws ServiceException {

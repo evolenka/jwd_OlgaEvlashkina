@@ -9,6 +9,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -29,9 +31,12 @@ import by.jwd.task03innerclass.entity.Shop.Department;
  */
 
 public class ReadFromJSONDao {
+	
+	static Logger logger = LogManager.getLogger(ReadFromJSONDao.class);
 
-	public Shop readDataFromFile(String fileName) throws DaoException {
-
+	public Shop readDataFromJSON(String fileName) throws DaoException {
+		
+		
 		List<Department> listOfDepartment = new ArrayList<>();
 		Shop shop = new Shop(listOfDepartment);
 
@@ -47,11 +52,12 @@ public class ReadFromJSONDao {
 		JSONParser parser = new JSONParser();
 
 		try {
-
+            logger.debug("start parse");
 			Object obj = parser.parse(new FileReader(file));
 
 			JSONArray jsonObjects = (JSONArray) obj;
-
+			
+			logger.debug("parse department object");
 			for (int i = 0; i < jsonObjects.size(); i++) {
 
 				List<Good> assortment = new ArrayList<>();
@@ -61,7 +67,8 @@ public class ReadFromJSONDao {
 				String name = (String) departmentObject.get("name");
 
 				JSONArray assortmentObject = (JSONArray) departmentObject.get("assortment");
-
+				
+				logger.debug("parse assortment");
 				for (int j = 0; j < assortmentObject.size(); j++) {
 
 					JSONObject goodObject = (JSONObject) assortmentObject.get(j);
@@ -75,7 +82,7 @@ public class ReadFromJSONDao {
 					assortment.add(good);
 
 				}
-
+				logger.debug("create department");
 				Shop.Department department = shop.new Department(name, assortment);
 				listOfDepartment.add(department);
 			}

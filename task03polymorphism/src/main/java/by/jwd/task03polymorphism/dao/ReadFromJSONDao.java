@@ -10,6 +10,8 @@ import java.util.ArrayList;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -20,8 +22,7 @@ import by.jwd.task03polymorphism.entity.GroundCoffee;
 import by.jwd.task03polymorphism.entity.InstantCoffee;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
 import by.jwd.task03polymorphism.entity.Packing;
-
-public class ReadFromJSONDao {
+import by.jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl;
 
 	/**
 	 * Read data from json file
@@ -32,7 +33,10 @@ public class ReadFromJSONDao {
 	 * @return List<ItemOfCoffee>
 	 * @exception DaoException
 	 */
-
+	public class ReadFromJSONDao {
+		
+	static Logger logger = LogManager.getLogger(ReadFromJSONDao.class);
+	
 	public List<ItemOfCoffee> readDataFromFile(String fileName) throws DaoException {
 
 		List<ItemOfCoffee> assortment = new ArrayList<>();
@@ -48,6 +52,7 @@ public class ReadFromJSONDao {
 		JSONParser parser = new JSONParser();
 
 		try {
+			logger.debug("start parsing");
 
 			Object obj = parser.parse(new FileReader(file));
 
@@ -56,7 +61,8 @@ public class ReadFromJSONDao {
 			for (Object o : jsonObjects) {
 
 				JSONObject item = (JSONObject) o;
-
+				
+				logger.debug("parse coffeeItem");
 				JSONObject coffeeItem = (JSONObject) item.get("coffee");
 
 				CoffeeBean coffee = null;
@@ -82,6 +88,8 @@ public class ReadFromJSONDao {
 					coffee = new CoffeeBean(sort, trademark, roastDegree, pricePerKg, netWeight);
 				}
 
+				logger.debug("parse packing");
+				
 				JSONObject pack = (JSONObject) item.get("packing");
 				Packing packing = null;
 

@@ -6,3 +6,3015 @@
 			by.jwd.task03polymorphism.controller.SortByNetWeightCommandImpl - file data not found or incorrect data
 2021-12-31 11:34:29 [main] ERROR
 			by.jwd.task03polymorphism.controller.SortByNetWeightCommandImpl - file data not found or incorrect data
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by trademark
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - start find max net weight
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - start find max net weight
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - end find max net weight
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - end find max net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find max net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find max net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - initiation of min net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - initiation of min net weight
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by packing
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start sort
+2022-01-08 01:07:43 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start read from file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start read from file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end read from file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end read from file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start creation of van object
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start creation of van object
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end creation of van object
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end creation of van object
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - start find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - end find cycle
+2022-01-08 01:07:44 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by trademark
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - start find max net weight
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - start find max net weight
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - end find max net weight
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - end find max net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find max net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find max net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - initiation of min net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - initiation of min net weight
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by packing
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start read from file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start read from file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end read from file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end read from file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start creation of van object
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start creation of van object
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end creation of van object
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end creation of van object
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - start find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - end find cycle
+2022-01-08 01:10:05 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByTrademarkServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by trademark
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByRoastDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by roast degree
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - start find max net weight
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - start find max net weight
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - end find max net weight
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.MaxNetWeightService - end find max net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find max net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find max net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - initiation of min net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - initiation of min net weight
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of title
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of trademark
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of roastDegree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of price
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of net weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of max weight
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of grinding degree
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of shape
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end initiation of packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end parse
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start find
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by sort
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - find item by packing
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySeveralParametersServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByCoffeeTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByPackingTypeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByNetWeightServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindBySortServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end initiation of min and max
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByNetWeightServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByShapeServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceToNetWeightRatioServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start read from file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start read from file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end read from file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end read from file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - add item to assortment
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing capacity
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - decreasing amount
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start creation of van object
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - start creation of van object
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end creation of van object
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.LoadVanService - end creation of van object
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end sort
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - start write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.SortingByPriceServiceImpl - end write to json file
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - start validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			by.jwd.task03polymorphism.service.Validation - end validation
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - start find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - find item
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - end find cycle
+2022-01-08 01:10:19 [main] DEBUG
+			jwd.task03polymorphism.service.impl.FindByMaxPriceServiceImpl - end find cycle
