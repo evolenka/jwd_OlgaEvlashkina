@@ -96,7 +96,7 @@ public class EllipseRepository<T extends IEllipse> implements BasicRepository<T>
 	public boolean remove(T ellipse) {
 
 		ellipsepseStorage.remove(instance.readById(ellipse.getId()));
-		logger.debug("ellipse is removed {}, id =", ellipse.getId());
+		logger.debug("ellipse is removed");
 		return true;
 	}
 
@@ -117,7 +117,7 @@ public class EllipseRepository<T extends IEllipse> implements BasicRepository<T>
 	}
 
 	@Override
-	public List<T> findQuery(FindSpecification<T> specification) {
+	public List<T> findQuery(FindSpecification<T> specification) throws ServiceException {
 		List<T> selected = new ArrayList<>();
 		for (T ellipse : ellipsepseStorage) {
 

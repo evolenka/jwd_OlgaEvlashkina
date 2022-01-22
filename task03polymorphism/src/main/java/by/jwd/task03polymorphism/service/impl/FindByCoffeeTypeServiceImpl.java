@@ -36,19 +36,18 @@ public class FindByCoffeeTypeServiceImpl implements FindByParameterService<Strin
 		if (!validation.isValid(van)) {
 			throw new ServiceException();
 		}
-		
-		logger.debug("start find cycle");
-		
-		for (int i = 0; i < van.getAssortment().size(); i++) {
 
-			if (van.getItemOfCoffee(i).getCoffee().getTitle().equals(title)) {
-				
+		logger.debug("start find cycle");
+
+		for (int i = 0; i < van.getAssortment().size(); i++) {
+			if (van.getItemOfCoffee(i).getCoffee().getTitle().toString().equals(title)) {
+
 				logger.debug("find item");
 				findedItem.add(van.getItemOfCoffee(i));
 			}
 		}
-		
+
 		logger.debug("end find cycle");
-		 return findedItem;
+		return findedItem;
 	}
 }

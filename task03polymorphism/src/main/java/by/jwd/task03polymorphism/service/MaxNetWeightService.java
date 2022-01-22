@@ -27,7 +27,7 @@ public class MaxNetWeightService {
 	public int findMaxNetWeight(VanOfCoffee van) throws ServiceException {
 
 		if (!validation.isValid(van)) {
-			throw new ServiceException();
+			throw new ServiceException("Incorrect data");
 		}
 		logger.debug("start find max net weight");
 		int max = van.getItemOfCoffee(0).getCoffee().getNetWeight();

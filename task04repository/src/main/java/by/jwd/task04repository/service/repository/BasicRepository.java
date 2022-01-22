@@ -24,7 +24,7 @@ public interface BasicRepository<T extends ITwoDShape> {
 
 	public T readById(Long id);
 
-	public List<T> findQuery(FindSpecification<T> specification);
+	public List<T> findQuery(FindSpecification<T> specification) throws ServiceException;
 
 	public List<T> sortQuery(SortSpecification<T> specification);
 }

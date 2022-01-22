@@ -17,26 +17,26 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import by.jwd.task03polymorphism.entity.CoffeeBean;
-import by.jwd.task03polymorphism.entity.GroundCoffee;
-import by.jwd.task03polymorphism.entity.InstantCoffee;
+import by.jwd.task03polymorphism.entity.Coffee;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
 import by.jwd.task03polymorphism.entity.Packing;
-import by.jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl;
+import by.jwd.task03polymorphism.service.CoffeeCreator;
+import by.jwd.task03polymorphism.service.GrossWeightCalculation;
+import by.jwd.task03polymorphism.service.TotalPriceCalculation;
 
-	/**
-	 * Read data from json file
-	 * 
-	 * @author evlashkina
-	 * @version 1
-	 * @param filename
-	 * @return List<ItemOfCoffee>
-	 * @exception DaoException
-	 */
-	public class ReadFromJSONDao {
-		
+/**
+ * Read data from json file
+ * 
+ * @author evlashkina
+ * @version 1
+ * @param filename
+ * @return List<ItemOfCoffee>
+ * @exception DaoException
+ */
+public class ReadFromJSONDao {
+
 	static Logger logger = LogManager.getLogger(ReadFromJSONDao.class);
-	
+
 	public List<ItemOfCoffee> readDataFromFile(String fileName) throws DaoException {
 
 		List<ItemOfCoffee> assortment = new ArrayList<>();
@@ -45,7 +45,7 @@ import by.jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl;
 		try {
 			URL res = getClass().getClassLoader().getResource(fileName);
 			file = Paths.get(res.toURI()).toFile();
-		} catch (URISyntaxException | NullPointerException e) {
+		} catch (URISyntaxException | NullPointerException e1) {
 			throw new DaoException();
 		}
 
@@ -61,50 +61,64 @@ import by.jwd.task03polymorphism.service.impl.FindByGrindingDegreeServiceImpl;
 			for (Object o : jsonObjects) {
 
 				JSONObject item = (JSONObject) o;
-				
-				logger.debug("parse coffeeItem");
+
+				logger.debug("start invoke coffeeItem");
 				JSONObject coffeeItem = (JSONObject) item.get("coffee");
 
-				CoffeeBean coffee = null;
+				Coffee coffee = null;
+				CoffeeCreator creator = new CoffeeCreator();
 
 				String title = (String) coffeeItem.get("title");
+				logger.debug("title{}", title);
+
 				String trademark = (String) coffeeItem.get("trademark");
+				logger.debug("trademark {}", trademark);
+
 				String sort = (String) coffeeItem.get("sort");
+				logger.debug("sort {}", sort);
+
 				String roastDegree = (String) coffeeItem.get("roastDegree");
-				Double pricePerKg = (Double) coffeeItem.get("pricePerKg");
+				logger.debug("roastDegree {}", roastDegree);
+
+				double pricePerKg = (double) coffeeItem.get("pricePerKg");
+				logger.debug("pricePerKg {}", pricePerKg);
+
 				int netWeight = (int) (long) coffeeItem.get("netWeight");
+				logger.debug("netWeight {}", netWeight);
 
-				if (title.equals("молотый")) {
-					String grindingDegree = (String) coffeeItem.get("grindingDegree");
-					coffee = new GroundCoffee(sort, trademark, roastDegree, pricePerKg, netWeight, grindingDegree);
-				}
+				String grindingDegree = (String) coffeeItem.get("grindingDegree");
+				logger.debug("grindingDegree {}", grindingDegree);
 
-				else if (title.equals("растворимый")) {
-					String shape = (String) coffeeItem.get("shape");
-					coffee = new InstantCoffee(sort, trademark, roastDegree, pricePerKg, netWeight, shape);
-				}
+				String shape = (String) coffeeItem.get("shape");
+				logger.debug("shape {}", shape);
 
-				else {
-					coffee = new CoffeeBean(sort, trademark, roastDegree, pricePerKg, netWeight);
-				}
+				coffee = creator.create(title, sort, trademark, roastDegree, pricePerKg, netWeight, grindingDegree,
+						shape);
 
-				logger.debug("parse packing");
-				
+				logger.debug("invoke packing");
+
 				JSONObject pack = (JSONObject) item.get("packing");
 				Packing packing = null;
 
 				String type = (String) pack.get("type");
-				Double price = (Double) pack.get("price");
-				Double volume = (Double) pack.get("volume");
+				double price = (double) pack.get("price");
+				double volume = (double) pack.get("volume");
 				int weight = (int) (long) pack.get("weight");
 
+				if (price < 0 || weight < 0) {
+					throw new IllegalArgumentException();
+				}
 				packing = new Packing(type, price, volume, weight);
 
-				assortment.add(new ItemOfCoffee(coffee, packing));
+				TotalPriceCalculation priceCalc = new TotalPriceCalculation();
+				GrossWeightCalculation weightCalc = new GrossWeightCalculation();
+
+				assortment.add(new ItemOfCoffee(coffee, packing, priceCalc.calculate(coffee),
+						weightCalc.calculate(coffee, packing)));
 			}
 
 			return assortment;
-		} catch (IOException | ParseException e) {
+		} catch (IOException | ParseException | IllegalArgumentException e) {
 			throw new DaoException();
 		}
 	}

@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.task03polymorphism.dao.DaoException;
 import by.jwd.task03polymorphism.dao.DaoFactory;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
-import by.jwd.task03polymorphism.entity.VanException;
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 
 /**
@@ -40,7 +39,7 @@ public class LoadVanService {
 
 		/* arguments validation */
 		try {
-			if (amount < 0 || capacity < 0) {
+			if (amount <= 0 || capacity <= 0) {
 				throw new IllegalArgumentException();
 			}
 
@@ -76,7 +75,7 @@ public class LoadVanService {
 
 			return van;
 
-		} catch (DaoException | VanException | IllegalArgumentException e) {
+		} catch (DaoException | IllegalArgumentException e) {
 			throw new ServiceException();
 		}
 	}

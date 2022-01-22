@@ -14,17 +14,17 @@ import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.SelectPackages;
 import org.junit.runner.RunWith;
 
-import by.jwd.task04repository.entity.FigureType;
+import by.jwd.task04repository.entity.Ellipse;
+import by.jwd.task04repository.entity.EllipseToObserve;
 import by.jwd.task04repository.entity.IEllipse;
+import by.jwd.task04repository.entity.Point;
 import by.jwd.task04repository.service.ServiceException;
 import by.jwd.task04repository.service.repository.EllipseRepository;
-import by.jwd.task04repository.service.specification.FindSpecification;
-import by.jwd.task04repository.service.specification.impl.FindByNameSpecificationImpl;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages("test.jwd.task04repository.service")
 
-class EllipseRepositoryFindByNameTest {
+class EllipseRepositoryRemoveTest {
 
 	static EllipseRepository<IEllipse> repository;
 	static List<IEllipse> expectedList;
@@ -37,38 +37,37 @@ class EllipseRepositoryFindByNameTest {
 
 	@ParameterizedTest
 	@MethodSource("dataProvider")
-	void testFindByName(List<IEllipse> actual, List<IEllipse> expected) {
+	void testEllipseRepositoryRemove(List<IEllipse> actual, List<IEllipse> expected) {
 		Assertions.assertEquals(actual, expected);
 	}
 
 	static Stream<Arguments> dataProvider() throws ServiceException {
+		
+		IEllipse ellipse11 = new EllipseToObserve(new Ellipse(new Point(1.8, 5.0), new Point(4.0, 0.0)));
+		repository.save(ellipse11);
 
-		FindSpecification<IEllipse> specification1 = new FindByNameSpecificationImpl<>(FigureType.ELLIPSE);
+		repository.remove(ellipse11);
 
-		List<IEllipse> actual1 = repository.findQuery(specification1);
+		List<IEllipse> actual = repository.readAll();
 
-		FindSpecification<IEllipse> specification2 = new FindByNameSpecificationImpl<>(FigureType.CIRCLE);
-		List<IEllipse> actual2 = repository.findQuery(specification2);
+		List<IEllipse> expected = new ArrayList<>();
 
-		List<IEllipse> expected1 = new ArrayList<>();
-		expected1.add(expectedList.get(0));
-		expected1.add(expectedList.get(1));
-		expected1.add(expectedList.get(3));
-		expected1.add(expectedList.get(4));
-		expected1.add(expectedList.get(5));
-		expected1.add(expectedList.get(6));
-		expected1.add(expectedList.get(9));
+		expected.add(expectedList.get(0));
+		expected.add(expectedList.get(1));
+		expected.add(expectedList.get(2));
+		expected.add(expectedList.get(3));
+		expected.add(expectedList.get(4));
+		expected.add(expectedList.get(5));
+		expected.add(expectedList.get(6));
+		expected.add(expectedList.get(7));
+		expected.add(expectedList.get(8));
+		expected.add(expectedList.get(9));
 
-		List<IEllipse> expected2 = new ArrayList<>();
-		expected2.add(expectedList.get(2));
-		expected2.add(expectedList.get(7));
-		expected2.add(expectedList.get(8));
-
-		return Stream.of(Arguments.of(actual1, expected1), Arguments.of(actual2, expected2));
+		return Stream.of(Arguments.of(actual, expected));
 	}
 
 	@AfterAll
-	public static void tearDown() {
+	public static void tearDown() throws ServiceException {
 		repository = null;
 		expectedList = null;
 	}

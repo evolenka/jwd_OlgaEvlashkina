@@ -33,7 +33,7 @@ public class WriteToJSONDao {
 			}
 
 		} catch (IOException e) {
-			throw new DaoException();
+			throw new DaoException(e);
 		}
 	}
 }

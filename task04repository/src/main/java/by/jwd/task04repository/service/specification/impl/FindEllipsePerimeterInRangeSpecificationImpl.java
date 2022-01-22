@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.task04repository.entity.EllipseRegistrator;
 import by.jwd.task04repository.entity.IEllipse;
+import by.jwd.task04repository.service.ServiceException;
 import by.jwd.task04repository.service.repository.EllipseRepository;
 import by.jwd.task04repository.service.specification.CompositeSpecification;
 
@@ -28,10 +29,13 @@ public class FindEllipsePerimeterInRangeSpecificationImpl<T extends IEllipse> ex
 	}
 
 	@Override
-	public boolean isSpecified(T ellipse) {
-		EllipseRegistrator registrator = repository.readRegistratorById(ellipse.getId());
-		logger.debug("ellipse id {}", registrator);
+	public boolean isSpecified(T ellipse) throws ServiceException {
+		if (range.length == 2) {
+			EllipseRegistrator registrator = repository.readRegistratorById(ellipse.getId());
+			logger.debug("ellipse id {}", registrator);
 
-		return (registrator.getPerimeter() >= range[0] && registrator.getPerimeter() <= range[1]);
+			return (registrator.getPerimeter() >= range[0] && registrator.getPerimeter() <= range[1]);
+		} else
+			throw new ServiceException();
 	}
 }

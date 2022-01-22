@@ -31,7 +31,7 @@ import by.jwd.task03innerclass.entity.Shop.Department;
  */
 
 public class ReadFromJSONDao {
-	
+
 	static Logger logger = LogManager.getLogger(ReadFromJSONDao.class);
 
 	public Shop readDataFromJSON(String fileName) throws DaoException {
@@ -57,7 +57,7 @@ public class ReadFromJSONDao {
 
 			JSONArray jsonObjects = (JSONArray) obj;
 			
-			logger.debug("parse department object");
+			logger.debug("invoke department object");
 			for (int i = 0; i < jsonObjects.size(); i++) {
 
 				List<Good> assortment = new ArrayList<>();
@@ -68,7 +68,7 @@ public class ReadFromJSONDao {
 
 				JSONArray assortmentObject = (JSONArray) departmentObject.get("assortment");
 				
-				logger.debug("parse assortment");
+				
 				for (int j = 0; j < assortmentObject.size(); j++) {
 
 					JSONObject goodObject = (JSONObject) assortmentObject.get(j);
@@ -78,8 +78,13 @@ public class ReadFromJSONDao {
 					Double price = (Double) goodObject.get("price");
 					int quantity = (int) (long) goodObject.get("quantity");
 
+					if (price <= 0 || quantity < 0) {
+						throw new IllegalArgumentException();
+					}
+					
 					Good good = new Good(title, trademark, price, quantity);
 					assortment.add(good);
+					logger.debug("invoke assortment {}", assortment);
 
 				}
 				logger.debug("create department");
@@ -88,7 +93,7 @@ public class ReadFromJSONDao {
 			}
 			
 			return shop;
-		} catch (IOException | ParseException e) {
+		} catch (IOException | ParseException | IllegalArgumentException e) {
 			throw new DaoException();
 		}
 	}

@@ -1,5 +1,6 @@
 package by.jwd.task04repository.service.specification;
 
+import by.jwd.task04repository.service.ServiceException;
 
 public class AndSpecification<T> extends CompositeSpecification<T> {
 
@@ -13,7 +14,7 @@ public class AndSpecification<T> extends CompositeSpecification<T> {
 	}
 
 	@Override
-	public boolean isSpecified(T entity) {
+	public boolean isSpecified(T entity) throws ServiceException {
 		return left.isSpecified(entity) && right.isSpecified(entity);
 	}
 }

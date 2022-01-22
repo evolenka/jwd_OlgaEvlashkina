@@ -1,6 +1,6 @@
 package by.jwd.task03polymorphism.entity;
 
-public class InstantCoffee extends CoffeeBean {
+public class InstantCoffee extends Coffee {
 
 	private String shape;
 
@@ -8,7 +8,7 @@ public class InstantCoffee extends CoffeeBean {
 			String shape) {
 
 		super(sort, trademark, roastDegree, pricePerKg, netWeight);
-		super.setTitle("растворимый");
+		super.setTitle(Title.INSTANT);
 		this.shape = shape;
 
 	}

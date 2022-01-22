@@ -37,6 +37,10 @@ public class SortByNetWeightCommandImpl implements Command {
 			List<ItemOfCoffee> sorted = service.sort(van);
 			view.print(current.getString("res2") + sorted.toString());
 
+		} catch (NumberFormatException e) {
+			logger.error("wrong format of arguments");
+			view.print(current.getString("err4"));
+
 		} catch (ServiceException e) {
 			logger.error("file data not found or incorrect data");
 			view.print(current.getString("err2"));

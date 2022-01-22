@@ -1,6 +1,6 @@
 package by.jwd.task03polymorphism.entity;
 
-public class GroundCoffee extends CoffeeBean {
+public class GroundCoffee extends Coffee {
 
 	private String grindingDegree;
 
@@ -8,14 +8,13 @@ public class GroundCoffee extends CoffeeBean {
 			String grindingDegree) {
 
 		super(sort, trademark, roastDegree, pricePerKg, netWeight);
-		super.setTitle("молотый");
+		super.setTitle(Title.GROUND);
 		this.grindingDegree = grindingDegree;
 	}
 
 	public String getGrindingDegree() {
 		return grindingDegree;
 	}
-
 	public void setGrindingDegree(String grindingDegree) {
 		this.grindingDegree = grindingDegree;
 	}

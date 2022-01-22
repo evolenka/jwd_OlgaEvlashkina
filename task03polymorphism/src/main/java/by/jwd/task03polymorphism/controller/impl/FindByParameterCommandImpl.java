@@ -20,7 +20,7 @@ public class FindByParameterCommandImpl implements Command {
 	static Logger logger = LogManager.getLogger(FindByParameterCommandImpl.class);
 
 	@Override
-	public void execute(MessageManager current, String [] []param) {
+	public void execute(MessageManager current, String[][] param) {
 
 		ServiceFactory servicefactory = ServiceFactory.getInstance();
 
@@ -29,17 +29,21 @@ public class FindByParameterCommandImpl implements Command {
 		FindByParameterService<String[]> service = servicefactory.getFindByParameter();
 
 		Output view = new Output();
-			
-		
+
 		try {
-			VanOfCoffee van = loadVan.loadVan(Integer.parseInt(param[0][0]),(Integer.parseInt(param[0][1])),param[0][2]);
-		
-			List <ItemOfCoffee> finded = service.find(param [1], van);
+			VanOfCoffee van = loadVan.loadVan(Integer.parseInt(param[0][0]), (Integer.parseInt(param[0][1])),
+					param[0][2]);
+
+			List<ItemOfCoffee> finded = service.find(param[1], van);
 			view.print(current.getString("res4") + finded.toString());
-			
+
+		} catch (NumberFormatException e) {
+			logger.error("wrong format of arguments");
+			view.print(current.getString("err4"));
+
 		} catch (ServiceException e) {
 			logger.error("file data not found or incorrect data");
 			view.print(current.getString("err2"));
 		}
 	}
-} 
+}

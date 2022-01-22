@@ -30,7 +30,7 @@ class EllipseRepositorySortByIdTest {
 
 	@BeforeAll
 	public static void setUp() throws ServiceException {
-		repository = RepositoryCreatorTest.repository;
+		repository = EllipseRepositorySaveTest.repository;
 		expectedList = ResultListEllipse.listOfEllipse;
 	}
 

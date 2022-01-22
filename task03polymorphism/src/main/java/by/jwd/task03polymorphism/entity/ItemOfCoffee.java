@@ -2,28 +2,28 @@ package by.jwd.task03polymorphism.entity;
 
 import java.io.Serializable;
 
-public class ItemOfCoffee implements Serializable{
+public class ItemOfCoffee implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
-	private CoffeeBean coffee;
+
+	private Coffee coffee;
 	private Packing packing;
 	double totalPrice;
 	int grossWeight;
 
-	public ItemOfCoffee(CoffeeBean coffee, Packing packing) {
+	public ItemOfCoffee(Coffee coffee, Packing packing, double totalPrice, int grossWeight) {
 
 		this.coffee = coffee;
 		this.packing = packing;
-		this.totalPrice = new Price().calculatePrice();
-		this.grossWeight = new GrossWeight().calculateGrossWeight();
+		this.totalPrice = totalPrice;
+		this.grossWeight = grossWeight;
 	}
 
-	public CoffeeBean getCoffee() {
+	public Coffee getCoffee() {
 		return coffee;
 	}
 
-	public void setCoffee(CoffeeBean coffee) {
+	public void setCoffee(Coffee coffee) {
 		this.coffee = coffee;
 	}
 
@@ -41,6 +41,18 @@ public class ItemOfCoffee implements Serializable{
 
 	public int getGrossWeight() {
 		return grossWeight;
+	}
+	
+	public double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(double totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+
+	public void setGrossWeight(int grossWeight) {
+		this.grossWeight = grossWeight;
 	}
 
 	@Override
@@ -83,18 +95,5 @@ public class ItemOfCoffee implements Serializable{
 	@Override
 	public String toString() {
 		return "\n" + coffee + ", total price:" + totalPrice + ", grossweight:" + grossWeight + ", Packing:" + packing;
-	}
-
-	class Price {
-		double calculatePrice() {
-			return coffee.getPricePerKg() * coffee.getNetWeight() / 1000;
-		}
-	}
-
-	class GrossWeight {
-		int calculateGrossWeight() {
-			return coffee.getNetWeight() + packing.getWeight();
-		}
-
 	}
 }

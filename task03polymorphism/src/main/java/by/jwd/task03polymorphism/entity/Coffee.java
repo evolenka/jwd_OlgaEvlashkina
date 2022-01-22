@@ -1,16 +1,16 @@
 package by.jwd.task03polymorphism.entity;
 
-public class CoffeeBean {
+public abstract class Coffee {
 
-	private String title;
+	private Title title;
 	private String sort;
 	private String trademark;
 	private String roastDegree;
 	private double pricePerKg;
 	private int netWeight;
-
-	public CoffeeBean(String sort, String trademark, String roastDegree, double pricePerKg, int netWeight) {
-		this.title = "зерновой";
+	
+	protected Coffee(String sort, String trademark, String roastDegree, double pricePerKg, int netWeight) {
+		
 		this.sort = sort;
 		this.trademark = trademark;
 		this.roastDegree = roastDegree;
@@ -18,11 +18,11 @@ public class CoffeeBean {
 		this.netWeight = netWeight;
 	}
 
-	public String getTitle() {
+	public Title getTitle() {
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(Title title) {
 		this.title = title;
 	}
 
@@ -66,6 +66,7 @@ public class CoffeeBean {
 		this.netWeight = netWeight;
 	}
 
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -87,7 +88,7 @@ public class CoffeeBean {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CoffeeBean other = (CoffeeBean) obj;
+		Coffee other = (Coffee) obj;
 		if (netWeight != other.netWeight)
 			return false;
 		if (pricePerKg != other.pricePerKg)
@@ -117,8 +118,7 @@ public class CoffeeBean {
 
 	@Override
 	public String toString() {
-		return "title: " + title + ", sort: " + sort + ", trademark: " + trademark + ", roastDegree: "
-				+ roastDegree + ", pricePerKg: " + pricePerKg + ", netWeight: " + netWeight;
+		return "title: " + title + ", sort: " + sort + ", trademark: " + trademark + ", roastDegree: " + roastDegree
+				+ ", pricePerKg: " + pricePerKg + ", netWeight: " + netWeight;
 	}
-
 }

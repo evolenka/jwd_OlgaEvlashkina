@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.task03polymorphism.entity.InstantCoffee;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
+import by.jwd.task03polymorphism.entity.Title;
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 import by.jwd.task03polymorphism.service.FindByParameterService;
 import by.jwd.task03polymorphism.service.ServiceException;
@@ -30,8 +31,6 @@ public class FindByShapeServiceImpl implements FindByParameterService<String> {
 
 	Validation validation = new Validation();
 	
-	private static final String INSTANT = "растворимый";
-
 	@Override
 	public List<ItemOfCoffee> find(String shape, VanOfCoffee van) throws ServiceException {
 
@@ -43,7 +42,7 @@ public class FindByShapeServiceImpl implements FindByParameterService<String> {
 		logger.debug("start find cycle");
 		for (int i = 0; i < van.getAssortment().size(); i++) {
 
-			if (van.getItemOfCoffee(i).getCoffee().getTitle().equals(INSTANT)
+			if (van.getItemOfCoffee(i).getCoffee().getTitle().equals(Title.INSTANT)
 					&& ((InstantCoffee) van.getItemOfCoffee(i).getCoffee()).getShape().equals(shape)) {
 
 				logger.debug("find item");

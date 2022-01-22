@@ -11,13 +11,14 @@ import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.SelectPackages;
 import org.junit.runner.RunWith;
 
-import by.jwd.task03polymorphism.entity.CoffeeBean;
+import by.jwd.task03polymorphism.entity.BeanCoffee;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
 import by.jwd.task03polymorphism.entity.Packing;
-import by.jwd.task03polymorphism.entity.VanException;
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
+import by.jwd.task03polymorphism.service.GrossWeightCalculation;
 import by.jwd.task03polymorphism.service.LoadVanService;
 import by.jwd.task03polymorphism.service.ServiceException;
+import by.jwd.task03polymorphism.service.TotalPriceCalculation;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages({ "test.jwd.task03polymorphism.service", "test.jwd.task03polymorphism.dao" })
@@ -28,17 +29,22 @@ class LoadVanTest {
 
 	List<ItemOfCoffee> resultAssortment = new ArrayList<>();
 	VanOfCoffee van = new VanOfCoffee();
+	TotalPriceCalculation priceCalc = new TotalPriceCalculation();
+	GrossWeightCalculation weightCalc = new GrossWeightCalculation();
+
 
 	@Test
-	void testLoadVanPositiveTest() throws ServiceException, VanException {
+	void testLoadVanPositiveTest() throws ServiceException {
 
-		CoffeeBean coffeeBean1 = new CoffeeBean("арабика", "Lavazza", "средняя", 70.5, 500);
+		BeanCoffee coffee1 = new BeanCoffee("арабика", "Lavazza", "средняя", 70.5, 500);
 		Packing pack1 = new Packing("пластиковая банка", 5.5, 0.500, 10);
-		ItemOfCoffee item1 = new ItemOfCoffee(coffeeBean1, pack1);
+		ItemOfCoffee item1 = new ItemOfCoffee(coffee1, pack1, priceCalc.calculate(coffee1),
+				weightCalc.calculate(coffee1, pack1));
 
-		CoffeeBean coffeeBean2 = new CoffeeBean("арабика", "Lavazza", "темная", 69.0, 1000);
+		BeanCoffee coffee2 = new BeanCoffee("арабика", "Lavazza", "темная", 69.0, 1000);
 		Packing pack2 = new Packing("бумажный пакет", 2.5, 1.1, 2);
-		ItemOfCoffee item2 = new ItemOfCoffee(coffeeBean2, pack2);
+		ItemOfCoffee item2 = new ItemOfCoffee(coffee2, pack2, priceCalc.calculate(coffee2),
+				weightCalc.calculate(coffee2, pack2));
 
 		resultAssortment.add(item1);
 		resultAssortment.add(item2);

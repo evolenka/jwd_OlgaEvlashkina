@@ -1,12 +1,9 @@
 package by.jwd.task03polymorphism.entity;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VanOfCoffee implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class VanOfCoffee {
 
 	private int capacity;
 	private List<ItemOfCoffee> assortment = new ArrayList<>();
@@ -18,13 +15,10 @@ public class VanOfCoffee implements Serializable {
 		this.assortment = assortment;
 	}
 
-	public VanOfCoffee(int capacity, List<ItemOfCoffee> assortment) throws VanException {
+	public VanOfCoffee(int capacity, List<ItemOfCoffee> assortment) {
 
-		if (checkVolume(capacity, assortment)) {
-			this.capacity = capacity;
-			this.assortment = assortment;
-		} else
-			throw new VanException();
+		this.capacity = capacity;
+		this.assortment = assortment;
 	}
 
 	public int getCapacity() {
@@ -49,16 +43,6 @@ public class VanOfCoffee implements Serializable {
 
 	public void deleteItemOfCofee(ItemOfCoffee item) {
 		assortment.remove(item);
-	}
-
-	public boolean checkVolume(int capacity, List<ItemOfCoffee> assortment) {
-		double assortmentVolume = 0;
-		final int COEFFICIENT = 1000;
-
-		for (int i = 0; i < assortment.size(); i++) {
-			assortmentVolume += assortment.get(i).getPacking().getVolume();
-		}
-		return (capacity * COEFFICIENT > assortmentVolume);
 	}
 
 	@Override

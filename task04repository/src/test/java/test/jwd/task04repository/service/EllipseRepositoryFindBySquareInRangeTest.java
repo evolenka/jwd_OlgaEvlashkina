@@ -24,14 +24,14 @@ import by.jwd.task04repository.service.specification.impl.FindEllipseSquareInRan
 @RunWith(JUnitPlatform.class)
 @SelectPackages("test.jwd.task04repository.service")
 
-class FindBySquareInRangeTest {
+class EllipseRepositoryFindBySquareInRangeTest {
 
 	static EllipseRepository<IEllipse> repository;
 	static List<IEllipse> expectedList;
 
 	@BeforeAll
 	public static void setUp() throws ServiceException {
-		repository = RepositoryCreatorTest.repository;
+		repository = EllipseRepositorySaveTest.repository;
 		expectedList = ResultListEllipse.listOfEllipse;
 	}
 

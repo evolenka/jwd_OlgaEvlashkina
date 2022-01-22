@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.task03polymorphism.entity.GroundCoffee;
 import by.jwd.task03polymorphism.entity.ItemOfCoffee;
+import by.jwd.task03polymorphism.entity.Title;
 import by.jwd.task03polymorphism.entity.VanOfCoffee;
 import by.jwd.task03polymorphism.service.FindByParameterService;
 import by.jwd.task03polymorphism.service.ServiceException;
@@ -31,8 +32,6 @@ public class FindByGrindingDegreeServiceImpl implements FindByParameterService<S
 
 	Validation validation = new Validation();
 
-	private static final String GROUND = "молотый";
-
 	@Override
 	public List<ItemOfCoffee> find(String grindingDegree, VanOfCoffee van) throws ServiceException {
 
@@ -45,7 +44,7 @@ public class FindByGrindingDegreeServiceImpl implements FindByParameterService<S
 		logger.debug("start find cycle");
 		for (int i = 0; i < van.getAssortment().size(); i++) {
 
-			if (van.getItemOfCoffee(i).getCoffee().getTitle().equals(GROUND)
+			if (van.getItemOfCoffee(i).getCoffee().getTitle().equals(Title.GROUND)
 					&& ((GroundCoffee) van.getItemOfCoffee(i).getCoffee()).getGrindingDegree().equals(grindingDegree)) {
 				
 				logger.debug("find item");

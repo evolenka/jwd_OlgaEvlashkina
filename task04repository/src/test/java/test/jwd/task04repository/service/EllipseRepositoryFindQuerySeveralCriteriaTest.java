@@ -27,14 +27,14 @@ import by.jwd.task04repository.service.specification.impl.FindFirstQuadrantEllip
 @RunWith(JUnitPlatform.class)
 @SelectPackages("test.jwd.task04repository.service")
 
-class EllipseRepositoryFindQueryTest {
+class EllipseRepositoryFindQuerySeveralCriteriaTest {
 
 	static EllipseRepository<IEllipse> repository;
 	static List<IEllipse> expectedList;
 
 	@BeforeAll
 	public static void setUp() throws ServiceException {
-		repository = RepositoryCreatorTest.repository;
+		repository = EllipseRepositorySaveTest.repository;
 		expectedList = ResultListEllipse.listOfEllipse;
 	}
 

@@ -151,15 +151,15 @@ public class FindBySeveralParametersServiceImpl implements FindByParameterServic
 			logger.debug("start initiation of title");
 			switch (param[0]) {
 			case "1": {
-				title = "зерновой";
+				title = "BEAN";
 			}
 				break;
 			case "2": {
-				title = "молотый";
+				title = "GROUND";
 			}
 				break;
 			case "3": {
-				title = "растворимый";
+				title = "INSTANT";
 			}
 				break;
 			default:
