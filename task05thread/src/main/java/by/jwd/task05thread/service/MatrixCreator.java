@@ -45,6 +45,7 @@ public class MatrixCreator {
 			int numberOfThreads = Runtime.getRuntime().availableProcessors();
 			if (rowQuantity * columnQuantity <= numberOfThreads) {
 				numberOfThreads = rowQuantity * columnQuantity;
+			logger.debug(numberOfThreads);
 			}
 
 			CountDownLatch countDown = new CountDownLatch(numberOfThreads + 1);

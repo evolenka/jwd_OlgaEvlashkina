@@ -60,12 +60,12 @@ public class MatrixCreatorThread<T extends Number> extends Thread {
 
 			// index of row for first element which should be put into te matrix by current
 			// thread
-			int startRowIndex = index * quantity / matrix.getRowQuantity();
+			int startRowIndex = index * quantity / matrix.getColumnQuantity();
 
 			// index of column for first element which should be put into te matrix by
 			// current thread
-			int startColumnIndex = index * quantity - startRowIndex * matrix.getRowQuantity();
-
+			int startColumnIndex = index * quantity - startRowIndex * matrix.getColumnQuantity();
+				
 			while (startParamIndex < endParamIndex
 					&& startParamIndex < matrix.getRowQuantity() * matrix.getColumnQuantity()) {
 				

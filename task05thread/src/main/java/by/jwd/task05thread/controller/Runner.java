@@ -19,16 +19,16 @@ public class Runner {
 		DaoFactory factory = DaoFactory.getInstance();
 
 		try {
-			int numberOfclientRequests = factory.getReader().readDataFromFile("data.txt").size();
+			int numberOfClientRequests = factory.getReader().readDataFromFile("data.txt").size();
 
 			Semaphore sem = new Semaphore(numberOfThreads);
 			CommonResource res = new CommonResource();
 
-			for (int i = 0; i < numberOfclientRequests; i++) {
+			for (int i = 0; i < numberOfClientRequests; i++) {
 				new Client(res, sem, "Client" + (i + 1), i).start();
 			}
 		} catch (DaoException e) {
-			e.printStackTrace();
+			logger.error("reading of client`s commands from file has not been successfull");
 		}
 	}
 }

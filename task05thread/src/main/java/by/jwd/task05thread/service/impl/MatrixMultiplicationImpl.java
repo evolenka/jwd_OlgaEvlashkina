@@ -36,11 +36,14 @@ public class MatrixMultiplicationImpl implements MatrixOperationService {
 
 	public <T extends Number & Comparable<T>> Matrix<T> doOperation(Matrix<T> p, Matrix<T> q) throws ServiceException {
 		
-		int numberOfThreads = Runtime.getRuntime().availableProcessors();
+				
 		try {
-			if (p.getRowQuantity() != q.getColumnQuantity()) {
+			if (p.getColumnQuantity() != q.getRowQuantity()) {
 				throw new MatrixException();
 			}
+			
+			int numberOfThreads = Runtime.getRuntime().availableProcessors();
+			
 
 			Double[][] matrix = new Double[p.getRowQuantity()][q.getColumnQuantity()];
 
@@ -54,7 +57,6 @@ public class MatrixMultiplicationImpl implements MatrixOperationService {
 			// запускаем потоки, осуществляющие вычисления по iой строке первой матрицы,
 
 			for (int i = 0; i < p.getRowQuantity(); i++) {
-
 				future = executor.submit(new MatrixMultiplicationThread<T>(i, p, q, result));
 			}
 			// после выполнения всех расчетов останавливаем запуск новых потоков,
