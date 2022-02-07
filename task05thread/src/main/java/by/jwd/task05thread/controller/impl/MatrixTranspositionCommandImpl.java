@@ -28,18 +28,18 @@ public class MatrixTranspositionCommandImpl implements Command {
 		try {
 			String fileName1 = param[0];
 			logger.debug("fileName1 = {}", fileName1);
-			
+
 			int rowQuantity1 = Integer.parseInt(param[1]);
 			logger.debug("rowQuantity1 = {}", rowQuantity1);
-			
+
 			int columnQuantity1 = Integer.parseInt(param[2]);
-			logger.debug("columnQuantity1 = {}", columnQuantity1 );
-			
+			logger.debug("columnQuantity1 = {}", columnQuantity1);
+
 			Matrix<T> matrix1 = matrixCreator.createMatrixFromFile(fileName1, rowQuantity1, columnQuantity1);
-						
+
 			Matrix<T> resultMatrix = service.doOperation(matrix1);
 
-			view.print(Thread.currentThread().getName() + ": " + current.getString("res10") + resultMatrix.toString());
+			view.print(Thread.currentThread().getName() + ": " + current.getString("res11") + resultMatrix.toString());
 
 		} catch (ServiceException e) {
 			logger.error("file not founded of file data incorrect");

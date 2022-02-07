@@ -12,8 +12,7 @@ import by.jwd.task05thread.entity.MatrixException;
 
 /**
  * Class MatrixTranspositionThread<T extends Number & Comparable<T>> implements
- * Runnable. The thread makes partial transposition of the
- * matrix row 
+ * Runnable. The thread makes partial transposition of the matrix row
  * 
  * @author evlashkina
  * @version 1
@@ -22,17 +21,18 @@ public class MatrixTranspositionThread<T extends Number & Comparable<T>> impleme
 
 	static Logger logger = LogManager.getLogger(MatrixTranspositionThread.class);
 
-	private int index;
 	private CyclicBarrier barrier;
+	private int quantity;
+	private int index;
 	private Matrix<T> p;
 	private Matrix<T> result;
 
-	public MatrixTranspositionThread(CyclicBarrier barrier, int index, Matrix<T> p, Matrix<T> result) {
-
+	public MatrixTranspositionThread(CyclicBarrier barrier, int index, int quantity, Matrix<T> p, Matrix<T> result) {
+		this.barrier = barrier;
 		this.index = index;
+		this.quantity = quantity;
 		this.p = p;
 		this.result = result;
-		this.barrier = barrier;
 	}
 
 	@SuppressWarnings("unchecked") // unchecked cast from Double to T
@@ -42,20 +42,38 @@ public class MatrixTranspositionThread<T extends Number & Comparable<T>> impleme
 
 		try {
 
-			for (int j = index + 1; j < p.getColumnQuantity(); j++) {
+			// index of row for first element which should be put into te matrix by current
+			// thread
+			int startRowIndex = index * quantity / p.getRowQuantity();
 
-				Double temp = p.getElement(index, j).doubleValue();
-				result.setElement(index, j, p.getElement(j, index));
-				TimeUnit.MILLISECONDS.sleep(1500);
-				result.setElement(j, index, (T) temp);// unchecked cast from Double to T
-				logger.debug("result: {}", Thread.currentThread().getName());
-			
+			// index of column for first element which should be put into te matrix by
+			// current thread
+			int startColumnIndex = index * quantity - startRowIndex * p.getRowQuantity();
+
+			while (quantity > 0 && startRowIndex < p.getRowQuantity()) {
+				quantity--;
+
+				if (startColumnIndex > startRowIndex) {
+
+					Double temp = p.getElement(startRowIndex, startColumnIndex).doubleValue();
+					result.setElement(startRowIndex, startColumnIndex, p.getElement(startColumnIndex, startRowIndex));
+					result.setElement(startColumnIndex, startRowIndex, (T) temp);// unchecked cast from Double to T
+				}
+				if (startColumnIndex < p.getColumnQuantity() - 1) {
+					startColumnIndex++;// go to the next column
+				} else {
+					startRowIndex++;// go to the next row
+					startColumnIndex = 0;
+				}
 			}
+
+			TimeUnit.MILLISECONDS.sleep(50);
 			barrier.await();
-			logger.debug("thread has finished the transposition: {}", Thread.currentThread().getName());
-		} catch (BrokenBarrierException| InterruptedException | MatrixException e) {
+		} catch (BrokenBarrierException | InterruptedException | MatrixException e) {
+
 			Thread.currentThread().interrupt();
-			logger.debug("matrixException, thread has been interrupted");
+			e.printStackTrace();
 		}
+		logger.debug("thread has finished the transposition: {}", Thread.currentThread().getName());
 	}
 }

@@ -1,6 +1,8 @@
 package by.jwd.task05thread.service;
 
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,15 +18,15 @@ public class ArrayCreator {
 	static Logger logger = LogManager.getLogger(ArrayCreator.class);
 
 	/**
-	 * Creation of array from File
+	 * Multithreading creating of array
 	 * 
 	 * @author evlashkina
 	 * @version 1
 	 * @param fileName
-	 * @return
-	 * @return <T extends Number> 
+	 * @return <T extends Number>
 	 * @exception ServiceException
 	 * @throws ServiceException if the file not found, invalid data in file
+	 * @see ArrayCreatorThread.class
 	 */
 
 	@SuppressWarnings("unchecked") // unchecked cast from Array <Double> to Array <T>
@@ -32,26 +34,54 @@ public class ArrayCreator {
 
 		Array<T> array = null;
 
+		int numberOfThreads = Runtime.getRuntime().availableProcessors();
+
 		try {
+			List<String> param = daofactory.getReader().readDataFromFile(fileName);// read param for array from file
 
-			List<String> param = daofactory.getReader().readDataFromFile(fileName);
-			
-			DataParser parser = DataParser.getInstance();
+			if (param != null) {
+				DataParser parser = DataParser.getInstance();
+				String[] parsedParam = parser.parse(param, 0);
 
-			String[] parsedParam = parser.parse(param, 0);
+				ConcurrentHashMap<Integer, Double> paramHashMap = new ConcurrentHashMap<>();
 
-			if (parsedParam != null) {
-				Double[] arr = new Double[parsedParam.length];
-				for (int i = 0; i < arr.length; i++) {
-					arr[i] = Double.valueOf(parsedParam[i]);
+				for (int i = 0; i < parsedParam.length; i++) {
+					paramHashMap.put(i, Double.valueOf(parsedParam[i]));
 				}
 
+				Double[] arr = new Double[paramHashMap.size()];
+
 				array = (Array<T>) new Array<>(arr);// unchecked cast from Array <Double> to Array <T>
+
+				// calculate quantity of elements which each thread should put into the array
+				int quantity = paramHashMap.size() / numberOfThreads;
+
+				// create and start of threads
+				for (int i = 0; i <= numberOfThreads; i++) {
+
+					new ArrayCreatorThread<>("ThreadArrayCreator " + i, paramHashMap, array, quantity).start();
+					TimeUnit.MILLISECONDS.sleep(50);
+				}
+
+				TimeUnit.SECONDS.sleep(2);
+				logger.debug("hashmap {}", paramHashMap);
+
+                //check whether all elements have been put into the array,
+				// create additional thread, if not
+				if (!paramHashMap.isEmpty()) {
+					quantity = paramHashMap.size();
+					ArrayCreatorThread<T> extraThread = new ArrayCreatorThread<>("AdditionalThreadArrayCreator ",
+							paramHashMap, array, quantity);
+					extraThread.start();
+					extraThread.join();
+				}
 			}
-		} catch (NumberFormatException | DaoException e) {
-			throw new ServiceException();
+		} catch (InterruptedException |NumberFormatException | DaoException e) {
+			Thread.currentThread().interrupt();
+			logger.error("thread has been interrupted");
 		}
 		logger.debug("array has been created: {}", Thread.currentThread().getName());
+		logger.debug(array);
 		return array;
 	}
 }

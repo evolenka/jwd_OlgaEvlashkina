@@ -25,7 +25,8 @@ import by.jwd.task05thread.service.ServiceException;
  * @param p, q
  * @return <T extends Number & Comparable<T>>
  * @exception ServiceException
- * @throws ServiceException if the thread has been interrupted
+ * @throws ServiceException if the matrixes are incompatible, thread has been
+ *                          interrupted
  * @see MatrixMultiplicationThread.class
  */
 
@@ -33,9 +34,9 @@ public class MatrixMultiplicationImpl implements MatrixOperationService {
 
 	static Logger logger = LogManager.getLogger(MatrixMultiplicationImpl.class);
 
-	private static final int NUMBER_OF_THREADS = 4;
-
 	public <T extends Number & Comparable<T>> Matrix<T> doOperation(Matrix<T> p, Matrix<T> q) throws ServiceException {
+		
+		int numberOfThreads = Runtime.getRuntime().availableProcessors();
 		try {
 			if (p.getRowQuantity() != q.getColumnQuantity()) {
 				throw new MatrixException();
@@ -46,7 +47,7 @@ public class MatrixMultiplicationImpl implements MatrixOperationService {
 			@SuppressWarnings("unchecked")
 			Matrix<T> result = (Matrix<T>) new Matrix<>(matrix);// unchecked cast from Double to T
 
-			ExecutorService executor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
+			ExecutorService executor = Executors.newFixedThreadPool(numberOfThreads);
 
 			Future<Matrix<T>> future = null;
 
@@ -72,6 +73,5 @@ public class MatrixMultiplicationImpl implements MatrixOperationService {
 			Thread.currentThread().interrupt();
 			throw new ServiceException();
 		}
-
 	}
 }

@@ -59,7 +59,6 @@ public class InsertionSortByAddressCalculationImpl implements ArraySortingServic
 				}
 				address = address < 0 ? 0 : address;
 				lists[address].insert(value);
-				logger.debug("value is inserted in the linked list by address {}", value);
 			}
 
 			/*

@@ -1,10 +1,8 @@
 package by.jwd.task05thread.service;
 
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,14 +12,15 @@ import by.jwd.task05thread.dao.DaoFactory;
 import by.jwd.task05thread.entity.Matrix;
 
 /**
- * Creation of matrix from File
+ * Multithreading creating of matrix
  * 
  * @author evlashkina
  * @version 1
  * @param fileName, rowQuantity, columnQuantity
- * @return Matrix<Integer>
+ * @return Matrix<T extends Number>
  * @exception ServiceException
- * @throws ServiceException if the file not found, invalid data in file
+ * @throws ServiceException if the file not found, invalid data in file, thread
+ *                          has been interrupted
  */
 
 public class MatrixCreator {
@@ -35,74 +34,70 @@ public class MatrixCreator {
 	public <T extends Number> Matrix<T> createMatrixFromFile(String fileName, int rowQuantity, int columnQuantity)
 			throws ServiceException {
 
-		if (rowQuantity <= 0 || columnQuantity <= 0) {
-			throw new ServiceException();
-		}
-
 		Matrix<T> matrix = null;
-//		
-//		try {
-//
-//			List<String> param = daofactory.getReader().readDataFromFile(fileName);
-//
-//			if (param != null) {
-//
-//				DataParser parser = DataParser.getInstance();
-//				String[] parsedParam = parser.parse(param, 0);
-//
-//		ConcurrentHashMap<Integer, Double> rows = new ConcurrentHashMap <>();
-//		
-//		int k = 0;
-//		for (int i = 0; i < rowQuantity; i++) {
-//			for (int j = 0; j < columnQuantity; j++) {
-//				h.put(i, Double.valueOf(parsedParam[k]));
-//				k++;
-//			}
-//		}
-//		
-//		Set <Integer> hset = ConcurrentHashMap.newKeySet();
-//		for (int i = 0; i < rowQuantity*columnQuantity; i++) {
-//		hset.add(i);
-//		}
-//		
-//		hset.add(Double.valueOf(parsedParam[k]))
-//		
-//		Iterator<Integer>iterator = hset.iterator();
-//	    while (iterator.hasNext()) {
-//	    	
-//	        mInfoTextView.setText(mInfoTextView.getText() + iterator.next()
-//	                + ", ");
-//	    }
-//	}
-//		Iterator <Double> i = h.iterator();
-//		while (i.hasNext())
 
+		// check arguments before creating of matrix
 		try {
+			if (rowQuantity <= 0 || columnQuantity <= 0) {
+				throw new ServiceException();
+			}
 
-			List<String> param = daofactory.getReader().readDataFromFile(fileName);
+			int numberOfThreads = Runtime.getRuntime().availableProcessors();
+			if (rowQuantity * columnQuantity <= numberOfThreads) {
+				numberOfThreads = rowQuantity * columnQuantity;
+			}
+
+			CountDownLatch countDown = new CountDownLatch(numberOfThreads + 1);
+
+			Double[][] m = new Double[rowQuantity][columnQuantity];
+
+			matrix = (Matrix<T>) new Matrix<>(m);
+
+			List<String> param = daofactory.getReader().readDataFromFile(fileName);// read param for matrix from file
 
 			if (param != null) {
 
 				DataParser parser = DataParser.getInstance();
 				String[] parsedParam = parser.parse(param, 0);
 
-				Double[][] m = new Double[rowQuantity][columnQuantity];
+				// calculate quantity of elements which each thread should put into the matrix
+				int quantity = rowQuantity * columnQuantity / numberOfThreads;
+				logger.debug("quantity{}", quantity);
+				
+				// create and start of threads
+				for (int i = 0; i <= numberOfThreads; i++) {
 
-				int k = 0;
-				for (int i = 0; i < m.length; i++) {
-					for (int j = 0; j < m[0].length; j++) {
-						m[i][j] = Double.valueOf(parsedParam[k]);
-						k++;
-					}
+					MatrixCreatorThread<T> t = new MatrixCreatorThread<>(countDown, parsedParam, matrix, i, quantity);
+					t.setName("ThreadMatrixCreator " + i);
+					t.start();
+					TimeUnit.MILLISECONDS.sleep(500);
 				}
 
-				matrix = (Matrix<T>) new Matrix<>(m);// unchecked cast from Matrix <Double> to Matrix <T>
-			}
+				// wait until all threads have completed (the latch has counted down to zero),
+				// or the specified waiting time elapses.
 
-		} catch (NumberFormatException | DaoException e) {
-			throw new ServiceException();
+				boolean isSuccessfull = countDown.await(5, TimeUnit.SECONDS);
+				logger.debug(isSuccessfull);
+
+				/*
+				 * in case not all threads have completed (specified awaiting time elapses, but
+				 * latch does not equal to zero), create additional thread instead of
+				 * interrupted thread
+				 */
+
+				if (!isSuccessfull) {
+					int i = MatrixCreatorThread.getErrorIndex();
+					MatrixCreatorThread<T> t = new MatrixCreatorThread<>(countDown, parsedParam, matrix, i, quantity);
+					t.setName("AdditionalThreadMatrixCreator " + i);
+					t.start();
+					t.join();
+				}
+			}
+		} catch (InterruptedException | NumberFormatException | DaoException e) {
+			Thread.currentThread().interrupt();
+			logger.error("thread has been interrupted {}", Thread.currentThread().getName());
 		}
-		logger.debug("matrix has been created: {}", Thread.currentThread().getName());
+		logger.debug("matrix has been created");
 		return matrix;
 	}
 }

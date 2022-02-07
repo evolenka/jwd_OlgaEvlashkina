@@ -46,8 +46,9 @@ public class MatrixAdditionCommandImpl implements Command {
 			logger.debug("columnQuantity2 =  {}", columnQuantity2);
 
 			Matrix<T> matrix1 = matrixCreator.createMatrixFromFile(fileName1, rowQuantity1, columnQuantity1);
+			logger.debug("matrix1 =  {}", matrix1);
 			Matrix<T> matrix2 = matrixCreator.createMatrixFromFile(fileName2, rowQuantity2, columnQuantity2);
-
+			logger.debug("matrix2 =  {}", matrix2);
 			Matrix<T> resultMatrix = service.doOperation(matrix1, matrix2);
 
 			view.print(Thread.currentThread().getName() + ": " + current.getString("res10") + resultMatrix.toString());

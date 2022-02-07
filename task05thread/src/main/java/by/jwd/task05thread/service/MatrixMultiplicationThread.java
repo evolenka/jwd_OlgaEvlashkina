@@ -48,7 +48,6 @@ public class MatrixMultiplicationThread<T extends Number & Comparable<T>> implem
 				for (int k = 0; k < p.getColumnQuantity(); k++) {
 
 					value += p.getElement(index, k).doubleValue() * (q.getElement(k, j).doubleValue());
-
 				}
 
 				result.setElement(index, j, (T) value);// unchecked cast from Double to T

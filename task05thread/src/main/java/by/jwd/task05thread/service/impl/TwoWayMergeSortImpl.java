@@ -37,14 +37,12 @@ public class TwoWayMergeSortImpl implements ArraySortingService {
 
 			// Sort first and second halves
 			mergeSort(array, first, middle);
-			logger.debug("first half has been merged");
-			
+						
 			mergeSort(array, middle + 1, last);
-			logger.debug("second half has been merged");
 			
 			// Merge the sorted halves
 			merge(array, first, middle, last);
-			logger.debug("two halves have been merged");
+			//logger.debug("two halves have been merged");
 		}
 	}
 

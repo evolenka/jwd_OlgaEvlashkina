@@ -15,7 +15,8 @@ public class Client extends Thread {
 
 	static Logger logger = LogManager.getLogger(Client.class);
 
-	private static final int QUANTITY = 8;
+	private static final int QUANTITY1 = 8;//quantity of client params for operations with two matrixes
+	private static final int QUANTITY2 = 6;//quantity of client params for operations with one matrix (trasposition)
 
 	private int threadId;
 	Semaphore sem;
@@ -75,12 +76,12 @@ public class Client extends Thread {
 			String[] param;
 
 			if (commandName.equals("8") || commandName.equals("9")) {
-				param = new String[QUANTITY];
+				param = new String[QUANTITY1];
 				for (int i = 2, j = 0; j < param.length && i < lineParam.length; i++, j++) {
 					param[j] = lineParam[i];
 				}
 			} else if (commandName.equals("10")) {
-				param = new String[6];
+				param = new String[QUANTITY2];
 				for (int i = 2, j = 0; j < param.length && i < lineParam.length; i++, j++) {
 					param[j] = lineParam[i];
 				}
