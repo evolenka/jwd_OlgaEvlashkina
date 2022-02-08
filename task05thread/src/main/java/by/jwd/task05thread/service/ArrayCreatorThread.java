@@ -44,8 +44,8 @@ public class ArrayCreatorThread<T extends Number> extends Thread {
 			int index;
 			Iterator<ConcurrentHashMap.Entry<Integer, Double>> itr = paramHashMap.entrySet().iterator();
 
-			// put part of the elements from collection to the array, delete
-			// the element, which has been already added to the array, from collection
+			// put part of the elements from collection to the array, delete from collection
+			// the element, which has been already added to the array, 
 
 			while (itr.hasNext() && quantity > 0) {
 

@@ -18,11 +18,10 @@ import by.jwd.task05thread.controller.impl.ShellSortCommandImpl;
 import by.jwd.task05thread.controller.impl.TwoWayMergeSortCommandImpl;
 import by.jwd.task05thread.controller.impl.WrongRequestImpl;
 
-
 public class CommandProvider {
-	
+
 	static Logger logger = LogManager.getLogger(CommandProvider.class);
-	
+
 	private Map<String, Command> commands = new HashMap<>();
 
 	public CommandProvider() {

@@ -13,16 +13,16 @@ public class Runner {
 	static Logger logger = LogManager.getLogger(Runner.class);
 
 	public static void main(String[] args) {
-		
+
 		int numberOfThreads = Runtime.getRuntime().availableProcessors();
 
-		DaoFactory factory = DaoFactory.getInstance();
-
 		try {
-			int numberOfClientRequests = factory.getReader().readDataFromFile("data.txt").size();
-
+			
 			Semaphore sem = new Semaphore(numberOfThreads);
 			CommonResource res = new CommonResource();
+			
+			//quantity of client`s requests
+			int numberOfClientRequests = DaoFactory.getInstance().getReader().readDataFromFile("data.txt").size();
 
 			for (int i = 0; i < numberOfClientRequests; i++) {
 				new Client(res, sem, "Client" + (i + 1), i).start();

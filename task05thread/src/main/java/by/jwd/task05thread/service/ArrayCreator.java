@@ -25,7 +25,8 @@ public class ArrayCreator {
 	 * @param fileName
 	 * @return <T extends Number>
 	 * @exception ServiceException
-	 * @throws ServiceException if the file not found, invalid data in file
+	 * @throws ServiceException if the file not found, invalid data in file, thread
+	 *                          has been interrupted
 	 * @see ArrayCreatorThread.class
 	 */
 
@@ -56,7 +57,7 @@ public class ArrayCreator {
 				// calculate quantity of elements which each thread should put into the array
 				int quantity = paramHashMap.size() / numberOfThreads;
 
-				// create and start of threads
+				// creating and starting threads
 				for (int i = 0; i <= numberOfThreads; i++) {
 
 					new ArrayCreatorThread<>("ThreadArrayCreator " + i, paramHashMap, array, quantity).start();
@@ -66,7 +67,7 @@ public class ArrayCreator {
 				TimeUnit.SECONDS.sleep(2);
 				logger.debug("hashmap {}", paramHashMap);
 
-                //check whether all elements have been put into the array,
+				// check whether all elements have been put into the array,
 				// create additional thread, if not
 				if (!paramHashMap.isEmpty()) {
 					quantity = paramHashMap.size();
@@ -76,9 +77,10 @@ public class ArrayCreator {
 					extraThread.join();
 				}
 			}
-		} catch (InterruptedException |NumberFormatException | DaoException e) {
+		} catch (InterruptedException | NumberFormatException | DaoException e) {
 			Thread.currentThread().interrupt();
 			logger.error("thread has been interrupted");
+			throw new ServiceException();
 		}
 		logger.debug("array has been created: {}", Thread.currentThread().getName());
 		logger.debug(array);

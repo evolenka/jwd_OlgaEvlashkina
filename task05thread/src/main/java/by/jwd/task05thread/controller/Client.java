@@ -15,12 +15,12 @@ public class Client extends Thread {
 
 	static Logger logger = LogManager.getLogger(Client.class);
 
-	private static final int QUANTITY1 = 8;//quantity of client params for operations with two matrixes
-	private static final int QUANTITY2 = 6;//quantity of client params for operations with one matrix (trasposition)
+	private static final int QUANTITY1 = 8;// quantity of client params for operations with two matrixes
+	private static final int QUANTITY2 = 6;// quantity of client params for operations with one matrix (trasposition)
 
 	private int threadId;
-	Semaphore sem;
-	CommonResource res;
+	private Semaphore sem;
+	private CommonResource res;
 
 	Client() {
 	}
@@ -36,6 +36,10 @@ public class Client extends Thread {
 	public void run() {
 
 		try {
+
+			// поток запрашивает разрешение на выполнение запроса клиента (семафор
+			// ограничивает количество одновременно работающих потоков)
+			
 			logger.debug("waiting for permission: {}", Thread.currentThread().getName());
 
 			sem.acquire();
@@ -51,10 +55,12 @@ public class Client extends Thread {
 
 			DataParser parser = DataParser.getInstance();
 
+			// каждый поток читает из файла свою строку (имитация запросов от клиентов)
 			String[] lineParam = parser.parse(fileData, threadId);
 
 			MessageManager current;
 
+			// в запросе от клиента первый параметр - это выбор языка
 			String language = lineParam[0];
 
 			switch (language) {
@@ -71,8 +77,11 @@ public class Client extends Thread {
 			CommandProvider provider = new CommandProvider();
 			Command command;
 
+			// второй параметр = номер команды
 			String commandName = lineParam[1];
 
+			// в зависимости от выбранной команды количество параметров от клиента
+			// отличается
 			String[] param;
 
 			if (commandName.equals("8") || commandName.equals("9")) {
@@ -92,6 +101,7 @@ public class Client extends Thread {
 
 			command = provider.getCommand(commandName);
 			command.execute(current, param);
+
 		} catch (DaoException e) {
 			logger.error("Incorrect input");
 
@@ -99,6 +109,8 @@ public class Client extends Thread {
 			logger.warn("Interrupted!", e);
 			Thread.currentThread().interrupt();
 		}
+		// после выполнения запроса от клиента, поток осбовождает разрешение, полуенное
+		// от семафора
 		logger.debug("thread has released the permission: {} ", Thread.currentThread().getName());
 		sem.release();
 		res.count--;

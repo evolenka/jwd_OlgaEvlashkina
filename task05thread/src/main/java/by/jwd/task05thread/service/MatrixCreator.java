@@ -19,8 +19,8 @@ import by.jwd.task05thread.entity.Matrix;
  * @param fileName, rowQuantity, columnQuantity
  * @return Matrix<T extends Number>
  * @exception ServiceException
- * @throws ServiceException if the file not found, invalid data in file, thread
- *                          has been interrupted
+ * @throws ServiceException if file not found, invalid arguments or invalid data
+ *                          in file, thread has been interrupted
  */
 
 public class MatrixCreator {
@@ -43,9 +43,10 @@ public class MatrixCreator {
 			}
 
 			int numberOfThreads = Runtime.getRuntime().availableProcessors();
+
 			if (rowQuantity * columnQuantity <= numberOfThreads) {
 				numberOfThreads = rowQuantity * columnQuantity;
-			logger.debug(numberOfThreads);
+				logger.debug(numberOfThreads);
 			}
 
 			CountDownLatch countDown = new CountDownLatch(numberOfThreads + 1);
@@ -64,7 +65,7 @@ public class MatrixCreator {
 				// calculate quantity of elements which each thread should put into the matrix
 				int quantity = rowQuantity * columnQuantity / numberOfThreads;
 				logger.debug("quantity{}", quantity);
-				
+
 				// create and start of threads
 				for (int i = 0; i <= numberOfThreads; i++) {
 
@@ -97,6 +98,7 @@ public class MatrixCreator {
 		} catch (InterruptedException | NumberFormatException | DaoException e) {
 			Thread.currentThread().interrupt();
 			logger.error("thread has been interrupted {}", Thread.currentThread().getName());
+			throw new ServiceException();
 		}
 		logger.debug("matrix has been created");
 		return matrix;
