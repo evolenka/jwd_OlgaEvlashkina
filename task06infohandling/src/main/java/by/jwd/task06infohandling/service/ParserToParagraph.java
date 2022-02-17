@@ -5,9 +5,9 @@ import java.util.regex.Pattern;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.jwd.task06infohandling.entity.Composite;
+import by.jwd.task06infohandling.entity.DelimeterType;
 import by.jwd.task06infohandling.entity.Component;
-import by.jwd.task06infohandling.entity.Delimeter;
-import by.jwd.task06infohandling.entity.IComponent;
 
 /**
  * Class ParserToParagraph for parsing of String text into the paragraphs
@@ -15,17 +15,14 @@ import by.jwd.task06infohandling.entity.IComponent;
  * @author Evlashkina
  */
 
-public class ParserToParagraph implements Handler {
+public class ParserToParagraph extends Handler {
 
 	static Logger logger = LogManager.getLogger(ParserToParagraph.class);
 
 	private static final String REGEX = ("[\r\n\t]+");
 
-	private Handler next;
-
-	public ParserToParagraph(Handler next) {
-		super();
-		this.next = next;
+	public ParserToParagraph(Handler nextParser) {
+		this.nextParser = nextParser;
 	}
 
 	/**
@@ -36,16 +33,16 @@ public class ParserToParagraph implements Handler {
 	 */
 
 	@Override
-	public IComponent parse(String stringToParse) {
+	public Component parse(String stringToParse) {
 
-		IComponent text = new Component(Delimeter.TEXT);
+		Component text = new Composite(DelimeterType.TEXT);
 
 		Pattern pattern = Pattern.compile(REGEX);
 
 		String[] paragraphs = pattern.split(stringToParse);
 
 		for (String p : paragraphs) {
-			IComponent paragraph = next.parse(p);
+			Component paragraph = nextParser.parse(p);
 			text.add(paragraph);
 		}
 		logger.debug("text has been parsed to paragraphs {}", text);

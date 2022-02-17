@@ -3,9 +3,9 @@ package by.jwd.task06infohandling.service;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.jwd.task06infohandling.entity.Composite;
+import by.jwd.task06infohandling.entity.DelimeterType;
 import by.jwd.task06infohandling.entity.Component;
-import by.jwd.task06infohandling.entity.Delimeter;
-import by.jwd.task06infohandling.entity.IComponent;
 import by.jwd.task06infohandling.entity.Symbol;
 
 /**
@@ -14,12 +14,12 @@ import by.jwd.task06infohandling.entity.Symbol;
  * @author Evlashkina
  */
 
-public class ParserToSymbol implements Handler {
+public class ParserToSymbol extends Handler {
 
 	static Logger logger = LogManager.getLogger(ParserToSymbol.class);
 
-	public ParserToSymbol() {
-		super();
+	public ParserToSymbol(Handler nextParser) {
+		this.nextParser = nextParser;
 	}
 
 	/**
@@ -30,11 +30,12 @@ public class ParserToSymbol implements Handler {
 	 */
 
 	@Override
-	public IComponent parse(String stringToParse) {
+	public Component parse(String stringToParse) {
 
-		IComponent word = new Component(Delimeter.WORD);
+		Component word = new Composite(DelimeterType.WORD);
+		
 		for (int i = 0; i < stringToParse.length(); i++) {
-			IComponent symbol = new Symbol(stringToParse.charAt(i));
+			Component symbol = new Symbol(stringToParse.charAt(i));
 			word.add(symbol);
 		}
 		logger.debug("word has been parsed to symbols {}", word);

@@ -6,9 +6,9 @@ import java.util.regex.Pattern;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.jwd.task06infohandling.entity.Composite;
+import by.jwd.task06infohandling.entity.DelimeterType;
 import by.jwd.task06infohandling.entity.Component;
-import by.jwd.task06infohandling.entity.Delimeter;
-import by.jwd.task06infohandling.entity.IComponent;
 
 /**
  * Class ParserToWord for parsing of String text into the words
@@ -16,18 +16,15 @@ import by.jwd.task06infohandling.entity.IComponent;
  * @author Evlashkina
  */
 
-public class ParserToWord implements Handler {
+public class ParserToWord extends Handler {
 
 	static Logger logger = LogManager.getLogger(ParserToWord.class);
 
 	private static final String LEXEME_REGEX = ("[\s\t\r\n]+");
-	private static final String WORD_REGEX =("(\\(*\\~*\\-*\\w*[\\d\\-\\|\\&\\^\\~\\>+\\<+\\(\\)]*)([\\,\\'\\!\\:\\;\\?\\.+\\?!]*)");
+	private static final String WORD_REGEX = ("(\\(*\\~*\\-*\\w*[\\d\\-\\|\\&\\^\\~\\>+\\<+\\(\\)]*)([\\,\\'\\!\\:\\;\\?\\.+\\?!]*)");
 
-	private Handler next;
-
-	public ParserToWord(Handler next) {
-		super();
-		this.next = next;
+	public ParserToWord(Handler nextParser) {
+		this.nextParser = nextParser;
 	}
 
 	/**
@@ -38,27 +35,21 @@ public class ParserToWord implements Handler {
 	 */
 
 	@Override
-	public IComponent parse(String stringToParse) {
+	public Component parse(String stringToParse) {
 
-		IComponent lexeme = new Component(Delimeter.LEXEME);
+		Component lexeme = new Composite(DelimeterType.LEXEME);
 
 		Pattern pattern1 = Pattern.compile(LEXEME_REGEX);
 		String[] lexemes = pattern1.split(stringToParse.trim());
 		Pattern pattern2 = Pattern.compile(WORD_REGEX);
-		
+
 		for (String l : lexemes) {
 			Matcher m = pattern2.matcher(l);
-//			if (l.equals("-")) {
-//				IComponent word = next.parse("-");
-//				lexeme.add(word);
-//				IComponent punctuation = next.parse("");
-//				lexeme.add(punctuation);
-				
-	//		}
+
 			while (m.find()) {
-				IComponent word = next.parse(m.group(1));
+				Component word = nextParser.parse(m.group(1));
 				lexeme.add(word);
-				IComponent punctuation = next.parse(m.group(2));
+				Component punctuation = nextParser.parse(m.group(2));
 				lexeme.add(punctuation);
 			}
 		}
