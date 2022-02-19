@@ -5,8 +5,6 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.task06infohandling.entity.Component;
 
-import by.jwd.task06infohandling.entity.DelimeterType;
-
 public class CollectService {
 
 	static Logger logger = LogManager.getLogger(CollectService.class);

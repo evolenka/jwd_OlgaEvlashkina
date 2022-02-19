@@ -36,7 +36,6 @@ public class SortParagraphBySentenceQuantityImpl implements TextSorting {
 		if (textComponent.getType() == DelimeterType.TEXT) {
 			resultList.sort((Component textComponent1, Component textComponent2) -> textComponent1.getSize()
 					- textComponent2.getSize());
-
 		}
 
 		logger.debug("paragraps have been sorted by quantity of sentences");

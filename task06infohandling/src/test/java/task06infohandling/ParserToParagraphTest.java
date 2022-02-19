@@ -18,12 +18,12 @@ public class ParserToParagraphTest {
 	public Object[][] createDataForParserToParagraph() {
 		return new Object[][] { {
 				"They thought Mary was not listening because she was standing a little apart from them at the window of the private hotel they had gone to.\r\n"
-				+ " She was watching the passing buses and cabs and people, but she heard quite well and was made very curious about her uncle and the place he lived in. What sort of a place was it, and what would he be like? What was a hunchback? She had never seen one.\r\n"
-				+ " Perhaps there were none in India.",
+						+ "She was watching the passing buses and cabs and people, but she heard quite well and was made very curious about her uncle and the place he lived in. What sort of a place was it, and what would he be like? What was a hunchback? She had never seen one.\r\n"
+						+ "Perhaps there were none in India.",
 				"They thought Mary was not listening because she was standing a little apart from them at the window of the private hotel they had gone to.\r\n"
-				+ " She was watching the passing buses and cabs and people, but she heard quite well and was made very curious about her uncle and the place he lived in. What sort of a place was it, and what would he be like? What was a hunchback? She had never seen one.\r\n"
-				+ " Perhaps there were none in India."},
-				{ "Nb.", "Nb."} };
+						+ "She was watching the passing buses and cabs and people, but she heard quite well and was made very curious about her uncle and the place he lived in. What sort of a place was it, and what would he be like? What was a hunchback? She had never seen one.\r\n"
+						+ "Perhaps there were none in India." },
+				{ "Hello word.", "Hello word." } };
 	}
 
 	@Test(groups = { "infoHandler" }, dataProvider = "DataForParserToParagraph")
