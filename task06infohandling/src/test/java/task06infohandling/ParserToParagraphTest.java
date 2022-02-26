@@ -29,8 +29,7 @@ public class ParserToParagraphTest {
 	@Test(groups = { "infoHandler" }, dataProvider = "DataForParserToParagraph")
 	public void testParserToParagraph(String text, String parsedText) {
 
-		Handler parser = new ParserToParagraph(
-				new ParserToSentence(new ParserToLexeme(new ParserToWord(new ParserToSymbol(null)))));
+		Handler parser = new ParserToParagraph(new ParserToSentence(new ParserToLexeme(new ParserToWord(new ParserToSymbol(null)))));
 		String actual = parser.parse(text).toString();
 		String expected = parsedText;
 		assertEquals(actual, expected);

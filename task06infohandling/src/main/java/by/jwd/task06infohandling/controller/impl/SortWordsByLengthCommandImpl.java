@@ -25,18 +25,17 @@ public class SortWordsByLengthCommandImpl implements Command {
 
 	@Override
 	public void execute(String[] param) {
+
+		Output view = new Output();
+		
 		try {
-
-			Output view = new Output();
-
 			ReadFromFile reader = new ReadFromFile();
-
-			String textComponent = reader.read(param[0]);
+			String textpart = reader.read(param[0]);
 
 			Handler parser = new ParserToParagraph(
 					new ParserToSentence(new ParserToLexeme(new ParserToWord(new ParserToSymbol(null)))));
 
-			Component component = parser.parse(textComponent);
+			Component component = parser.parse(textpart);
 
 			TextSorting service = new SortWordsByLengthImpl();
 			List<Component> result = service.sort(component);
@@ -46,6 +45,7 @@ public class SortWordsByLengthCommandImpl implements Command {
 
 		} catch (DaoException e) {
 			logger.error("file data not found or incorrect data");
+			view.print("file data not found or incorrect data");
 		}
 	}
 }

@@ -25,29 +25,27 @@ public class SortLexemeByQuantityOfGivenSymbolCommandImpl implements Command {
 
 	@Override
 	public void execute(String[] param) {
+
+		Output view = new Output();
 		try {
-
-			Output view = new Output();
-
 			ReadFromFile reader = new ReadFromFile();
-
-			String textComponent = reader.read(param[0]);
-			logger.debug(param[0]);
+			String textpart = reader.read(param[0]);
 
 			Handler parser = new ParserToParagraph(
 					new ParserToSentence(new ParserToLexeme(new ParserToWord(new ParserToSymbol(null)))));
 
-			Component component = parser.parse(textComponent);
+			Component component = parser.parse(textpart);
 
 			TextSorting service = new SortLexemeByQuantityOfGivenSymbolImpl(param[1].charAt(0));
 			List<Component> result = service.sort(component);
 
-			view.print("Results of sorting lexemes by quantity of the repetitions of the character '"
+			view.print("Result of sorting lexemes by quantity of the repetitions of the character '"
 					+ param[1].charAt(0) + "'");
 			view.print(result);
 
 		} catch (DaoException e) {
 			logger.error("file data not found or incorrect data");
+			view.print("file data not found or incorrect data");
 		}
 	}
 }

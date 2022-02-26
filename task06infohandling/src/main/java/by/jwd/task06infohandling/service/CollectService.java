@@ -54,12 +54,11 @@ public class CollectService {
 				IsExpression check = new IsExpression();
 				if (check.isBitExpression(component)) {
 
-					Interpreter service = new Interpreter(component.toString());
+					Interpreter service = new Interpreter(composite.getChild(0).toString());
 					logger.debug("interpretator for bit expression has been created");
 
 					text.append(String.valueOf(service.calculate()));
 					logger.debug("calculation of bit expression has been finished");
-
 				} else {
 					text.append(collectComponent(component));
 				}

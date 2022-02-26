@@ -10,13 +10,9 @@ public class Input {
 
 	public String read() throws IOException {
 
-		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-			String str;
-			str = br.readLine();
-			return str;
-		} catch (IOException e) {
-			throw new IOException(e);
-		}
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String str;
+		str = br.readLine();
+		return str;
 	}
 }

@@ -21,21 +21,24 @@ public class ParseAndCollectCommandImpl implements Command {
 
 	@Override
 	public void execute(String[] param) {
+
+		Output view = new Output();
+		
 		try {
-
-			Output view = new Output();
-
 			ReadFromFile reader = new ReadFromFile();
+
 			String component = reader.read(param[0]);
 
-			Handler parser = new ParserToParagraph(new ParserToSentence(new ParserToLexeme(new ParserToWord(new ParserToSymbol(null)))));
+			Handler parser = new ParserToParagraph(
+					new ParserToSentence(new ParserToLexeme(new ParserToWord(new ParserToSymbol(null)))));
 
 			Component result = parser.parse(component);
-			
+
 			view.print("Text after parsing and collecting again:\n" + result.toString());
 
 		} catch (DaoException e) {
 			logger.error("file data not found or incorrect data");
+			view.print("file data not found or incorrect data");
 		}
 	}
 }

@@ -36,11 +36,13 @@ public class Runner {
 			param = input.read().split("\\s+");
 			command = provider.getCommand(commandName);
 			command.execute(param);
+			
 		} catch (IOException e) {
 			logger.error("incorrect input");
+			output.print ("incorrect input");
 		} catch (ArrayIndexOutOfBoundsException e) {
 			logger.error("wrong quantity of args");
-
+			output.print ("wrong quantity of args");
 		}
 	}
 }

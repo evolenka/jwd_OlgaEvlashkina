@@ -53,7 +53,7 @@ public class ParserToWord extends Handler {
 				lexeme.add(punctuation);
 			}
 		}
-		logger.debug("lexeme has been parsed to words {}", lexeme);
+		logger.debug("lexeme has been parsed to words");
 		return lexeme;
 	}
 }

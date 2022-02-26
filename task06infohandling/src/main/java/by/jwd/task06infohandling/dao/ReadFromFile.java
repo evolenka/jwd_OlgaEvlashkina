@@ -22,19 +22,15 @@ public class ReadFromFile {
 		try {
 			URL res = getClass().getClassLoader().getResource(fileName);
 			param = Files.readAllLines(Paths.get(res.toURI()));
-			
+
 		} catch (URISyntaxException | NullPointerException | IOException e) {
 			throw new DaoException();
 		}
 		logger.debug("File has been read");
+		
 		for (String s : param) {
 			result.append(s);
 		}
 		return result.toString();
-	}
-
-	public String readFromFile(String fileName) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

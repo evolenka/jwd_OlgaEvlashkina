@@ -33,12 +33,13 @@ public class ParserToSymbol extends Handler {
 	public Component parse(String stringToParse) {
 
 		Component word = new Composite(DelimeterType.WORD);
-		
+
 		for (int i = 0; i < stringToParse.length(); i++) {
 			Component symbol = new Symbol(stringToParse.charAt(i));
 			word.add(symbol);
 		}
-		logger.debug("word has been parsed to symbols {}", word);
+
+		logger.debug("word has been parsed to symbols");
 		return word;
 	}
 }
