@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://jwd.by/task07xmlparser/visits"
+	xmlns:tns="http://jwd.by/task07xmlparser/visits"
+	elementFormDefault="qualified">
+
+	<element name="visits">
+		<complexType>
+			<sequence>
+				<element name="visit" type="tns:Visit" minOccurs="16"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="Visit">
+		<sequence>
+			<element ref="tns:user" minOccurs="1" maxOccurs="unbounded" />
+			<element name="danceClass" type="tns:DanceClass"
+				minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="id" type="int" use="required" />
+		<attribute name="status" use="optional" default="PLANNED">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="PLANNED"></enumeration>
+					<enumeration value="ATTENDED"></enumeration>
+					<enumeration value="ABSENT"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<complexType name="User">
+		<sequence>
+			<element name="password" type="string" />
+			<element name="surname" type="string" />
+			<element name="name" type="string" />
+		</sequence>
+		<attribute name="id" type="int" use="required" />
+		<attribute name="login" type="string" use="required" />
+		<attribute name="role" use="required">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="CLIENT"></enumeration>
+					<enumeration value="TEACHER"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<element name="user" type="tns:User" abstract="true"></element>
+	<element name="client" type="tns:Client"
+		substitutionGroup="tns:user"></element>
+	<element name="teacher" type="tns:Teacher"
+		substitutionGroup="tns:user"></element>
+	<complexType name="Client">
+		<complexContent>
+			<extension base="tns:User">
+				<sequence>
+					<element name="patronymic" type="string" />
+				</sequence>
+				<attribute name="phone" use="optional" default="-">
+					<simpleType>
+						<restriction base="string">
+							<pattern value="\+?[0-9\s\-\(\)]+" />
+						</restriction>
+					</simpleType>
+				</attribute>
+				<attribute name="email" use="optional">
+					<simpleType>
+						<restriction base="string">
+							<pattern value="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" />
+						</restriction>
+					</simpleType>
+				</attribute>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="DanceClass">
+		<sequence>
+			<element name="schedule" type="tns:Schedule" minOccurs="1"
+				maxOccurs="unbounded" />
+			<element name="date" type="date" />
+		</sequence>
+		<attribute name="id" type="int" use="required" />
+	</complexType>
+	<complexType name="Schedule">
+		<sequence>
+			<element name="time" type="time" />
+			<element name="duration" type="string" />
+			<element name="group" type="tns:Group" minOccurs="1"
+				maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="id" type="int" use="required" />
+		<attribute name="weekDay" use="required">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="MONDAY"></enumeration>
+					<enumeration value="TUESDAY"></enumeration>
+					<enumeration value="WEDNESDAY"></enumeration>
+					<enumeration value="THURSDAY"></enumeration>
+					<enumeration value="FRIDAY"></enumeration>
+					<enumeration value="SATURDAY"></enumeration>
+					<enumeration value="SUNDAY"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<complexType name="Group">
+		<sequence>
+			<element name="title" type="string" />
+			<element ref="tns:user"  minOccurs="1"
+				maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="id" type="int" use="required" />
+		<attribute name="level" use="required">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="BEG"></enumeration>
+					<enumeration value="PRO"></enumeration>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<complexType name="Teacher">
+		<complexContent>
+			<extension base="tns:User">
+				<sequence>
+					<element name="danceStyle" type="string"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>

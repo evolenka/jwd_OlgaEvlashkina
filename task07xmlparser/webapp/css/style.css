@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+table, th, td {
+	border: 0.5px solid white;
+	border-collapse: collapse;
+	font-family: monospace;
+	color: #686868;
+	margin: 15px;
+}
+
+th, td {
+	padding: 15px;
+}
+
+th {
+	background-color: #FFB6C1;
+}
+
+tr:nth-child(even) {
+	background-color: #E9E9E9;
+}
+
+label {
+	font-family: monospace;
+	color: #686868;
+	font-size: 120%
+}
+
+p {
+	font-family: monospace;
+	color: #686868;
+	font-size: 120%
+}
+
+h1 {
+	font-family: monospace;
+	color: #686868;
+	text-align: center;
+}
+
+input[type=file], select {
+	padding: 12px 20px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	background-color: #F1F1F1;
+	border-radius: 2px;
+	text-align: center;
+	font-family: monospace;
+	color: #686868;
+	width: 400px;
+	display: block;
+}
+
+input[type=submit] {
+	background-color: #FFB6C1;
+	color: white;
+	padding: 12px 20px;
+	margin-left: 120px;
+	width: 200px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+img {
+	width: 1425;
+	height: 200;
+}
+
+a:link {
+	color: blue;
+}
+
+a:active {
+	color: green;
+}

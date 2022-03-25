@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<visits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://jwd.by/task07xmlparser/visits"
+	xsi:schemaLocation="http://jwd.by/task07xmlparser/visits visits.xsd">
+	<visit id="1">
+		<client id = "5" login="MARKOVA" role="CLIENT" email="markovamarialex@gmail.com">
+			<password>Uas78XWK8NI4PXz6h+b/vw==</password>
+			<surname>Маркова</surname>
+			<name>Мария</name>
+			<patronymic>Алексеевна</patronymic>
+		</client>
+		<danceClass id = "1">
+			<schedule id = "1" weekDay="MONDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "1" level="BEG">
+					<title>group1</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+	<visit id="2" status="ATTENDED">
+		<client id = "6" login="nataliana" role="CLIENT" phone = "+375(44)789-41-78" email="nnandreeva85@mail.ru">
+			<password>U0Tcja4XuTrc4I9sWAIr6w==</password>
+			<surname>Андреева</surname>
+			<name>Наталья</name>
+			<patronymic>Николаевна</patronymic>
+		</client>
+		<danceClass id = "1">
+			<schedule id = "1" weekDay="MONDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "1" level="BEG">
+					<title>group1</title>
+					<teacher id = "1" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemprorary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+	<visit id="3" status="ABSENT">
+		<client id = "7" login="vikkra" role="CLIENT" phone="+375(44)789-41-78" email="kratkovavikki@gmail.com">
+			<password>pfg78g4XWX8NI4PXz6h+c/vw==</password>
+			<surname>Кратова</surname>
+			<name>Виктория</name>
+			<patronymic>Петровна</patronymic>
+		</client>
+		<danceClass id = "1">
+			<schedule id = "1" weekDay="MONDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "1" level="BEG">
+					<title>group1</title>
+					<teacher id = "1" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemprorary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+	<visit id="4" status="ATTENDED">
+		<client id = "8" login="anastaissakis" role="CLIENT" phone="+375(29)698-25-63" email="akiseleva89@mail.ru">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Киселева</surname>
+			<name>Анастасия</name>
+			<patronymic>Алексеевна</patronymic>
+		</client>
+		<danceClass id = "1">
+			<schedule id = "1" weekDay="MONDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "1" level="BEG">
+					<title>group1</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+	<visit id="5" status="ATTENDED">
+		<client id = "10" login="koblubov" role="CLIENT" phone="+375(29)784-11-67" email="lkoblova@mail.ru">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Коблова</surname>
+			<name>Любовь</name>
+			<patronymic>Дмитриевна</patronymic>
+		</client>
+		<danceClass id = "2">
+			<schedule id = "2" weekDay="MONDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "2" level="PRO">
+					<title>group2</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+		<visit id="6" status="ATTENDED">
+		<client id = "11" login="potapova" role="CLIENT" phone="+375(44)588-20-87" email="potapovamargo@gmail.com">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Потапова</surname>
+			<name>Маргарита</name>
+			<patronymic>Марковна</patronymic>
+		</client>
+		<danceClass id = "2">
+			<schedule id = "2" weekDay="MONDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "2" level="PRO">
+					<title>group2</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+	<visit id="7" status="ATTENDED">
+		<client id = "12" login="mishukova" role="CLIENT" phone="+375(29)814-35-65" email="umishukova@gmail.com">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Мишукова</surname>
+			<name>Ульяна</name>
+			<patronymic>Алексеевна</patronymic>
+		</client>
+		<danceClass id = "2">
+			<schedule id = "2" weekDay="MONDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "2" level="PRO">
+					<title>group2</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+	<visit id="8" status="ATTENDED">
+		<client id = "13" login="efimenmarg" role="CLIENT" phone="+375(29)215-15-80" email="efimenko@gmail.com">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Ефименко</surname>
+			<name>Маргарита</name>
+			<patronymic>Сергеевна</patronymic>
+		</client>
+		<danceClass id = "2">
+			<schedule id = "2" weekDay="MONDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "2" level="PRO">
+					<title>group2</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+		<visit id="9" status="ABSENT">
+		<client id = "9" login="kirstepnov" role="CLIENT" phone="+375(29)259-47-16" email="stepnovka@mail.ru">
+			<password>YFGjdu7d56ggy/wePXzb+py==</password>
+			<surname>Степнов</surname>
+			<name>Кирилл</name>
+			<patronymic>Александрович</patronymic>
+		</client>
+		<danceClass id = "3">
+			<schedule id = "3" weekDay="TUESDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="BEG">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+	<visit id="10" status="ATTENDED">
+		<client id = "13" login="andreev" role="CLIENT" phone="+375(44)655-15-78" email="andreev@gmail.com">
+			<password>YFGjdu7d56ggy/wePXzb+py==</password>
+			<surname>Андреев</surname>
+			<name>Илья</name>
+			<patronymic>Александрович</patronymic>
+		</client>
+		<danceClass id = "3">
+			<schedule id = "3" weekDay="TUESDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="BEG">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+	<visit id="11" status="ATTENDED">
+		<client id = "14" login="dimonmesh" role="CLIENT" phone="+375(44)741-89-00" email="meshkov@gmail.com">
+			<password>YFGjdu7d56ggy/wePXzb+py==</password>
+			<surname>Мешков</surname>
+			<name>Дмитрий</name>
+			<patronymic>Иванович</patronymic>
+		</client>
+		<danceClass id = "3">
+			<schedule id = "3" weekDay="TUESDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="BEG">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+	<visit id="12" status="ATTENDED">
+		<client id = "11" login="potapova" role="CLIENT" phone="+375(44)588-20-87" email="potapovamargo@gmail.com">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Потапова</surname>
+			<name>Маргарита</name>
+			<patronymic>Марковна</patronymic>
+		</client>
+		<danceClass id = "3">
+			<schedule id = "3" weekDay="TUESDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="BEG">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+	<visit id="13" status="ATTENDED">
+		<client id = "15" login="fedorov" role="CLIENT" phone="+375(25)168-25-89" email="fedorov@gmail.com">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Федоров</surname>
+			<name>Евгений</name>
+			<patronymic>Денисович</patronymic>
+		</client>
+		<danceClass id = "4">
+			<schedule id = "4" weekDay="TUESDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="PRO">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+		<visit id="14" status="ATTENDED">
+		<client id = "16" login="popovaalex" role="CLIENT" phone="+375(29)789-05-49" email="apopova@gmail.com">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Попова</surname>
+			<name>Александра</name>
+			<patronymic>Сергеевна</patronymic>
+		</client>
+		<danceClass id = "4">
+			<schedule id = "4" weekDay="TUESDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="PRO">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+		<visit id="15" status="ATTENDED">
+		<client id = "17" login="fedorshut" role="CLIENT" phone="+375(29)158-15-78" email="sshutov@gmail.com">
+			<password>qas64XWX8NI4PXz6h+b+yu==</password>
+			<surname>Шутов</surname>
+			<name>Сергей</name>
+			<patronymic>Федорович</patronymic>
+		</client>
+		<danceClass id = "4">
+			<schedule id = "4" weekDay="TUESDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="PRO">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+		<visit id="16" status="ATTENDED">
+			<client id = "6" login="nataliana" role="CLIENT" phone = "+375(44)789-41-78" email="nnandreeva85@mail.ru">
+			<password>U0Tcja4XuTrc4I9sWAIr6w==</password>
+			<surname>Андреева</surname>
+			<name>Наталья</name>
+			<patronymic>Николаевна</patronymic>
+		</client>
+		<danceClass id = "4">
+			<schedule id = "4" weekDay="TUESDAY">
+				<time>19:00:00</time>
+				<duration>60</duration>
+				<group id = "3" level="PRO">
+					<title>group3</title>
+					<teacher id = "3" login="divanov" role="TEACHER">
+						<password>rZDdprnLVXNuvafESK0DUA==</password>
+						<surname>Иванов</surname>
+						<name>Дмитрий</name>
+						<danceStyle>hip-hop</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-15</date>
+		</danceClass>
+	</visit>
+</visits>
