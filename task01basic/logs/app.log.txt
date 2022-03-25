@@ -1,0 +1,11 @@
+2021-11-30 20:15:16 [main] ERROR jwd.task01basic.controller.impl.AverageOfTwoNumberControllerImpl - wrong format of args
+2021-11-30 20:15:16 [main] ERROR jwd.task01basic.controller.impl.AverageOfTwoNumberControllerImpl - wrong format of args
+2021-11-30 20:15:43 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong guantity of args
+2021-11-30 20:15:43 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong guantity of args
+2021-11-30 20:16:14 [main] TRACE jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - Start
+2021-11-30 20:16:14 [main] TRACE jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - Start
+2021-11-30 20:16:14 [main] ERROR jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - wrong quantity of args
+2021-11-30 20:16:14 [main] ERROR jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - wrong quantity of args
+2021-11-30 22:53:05 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong format of args
+2021-11-30 22:53:05 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong format of args
+2021-11-30 22:54:02 [main] ERROR jwd.task01basic.controller.impl.MaxDigitOfNumberControllerImpl - negative number

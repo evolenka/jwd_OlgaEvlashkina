@@ -1,0 +1,1446 @@
+<html>
+<head>
+<title>TestNG:  CheckGroup</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CheckGroup</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>121/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 05 20:58:15 MSK 2021</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (268 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>service </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfPositiveRowMemberTest.testSumOfPositive()'><b>testSumOfPositive</b><br>Test class: test.jwd.task01basic.service.SumOfPositiveRowMemberTest<br>Parameters: [D@403132fc, 0.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@71c5b236, 6.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testPosBrickAndRectangle()'><b>testPosBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Positive_scenario<br>Parameters: [D@2cab9998, true</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@2f7a7219, 2</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testPosBrickAndRectangle()'><b>testPosBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Positive_scenario<br>Parameters: [D@669513d8, true</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AbsValueOfExpressionTest.testAbsValueOfExpression()'><b>testAbsValueOfExpression</b><br>Test class: test.jwd.task01basic.service.AbsValueOfExpressionTest<br>Parameters: [D@3a1d593e, 2</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@4a8a60bc, 3</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@361c294e, 3.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AbsValueOfExpressionTest.testAbsValueOfExpression()'><b>testAbsValueOfExpression</b><br>Test class: test.jwd.task01basic.service.AbsValueOfExpressionTest<br>Parameters: [D@7859e786, 23.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MinOfTwoNumberTest.testMinOfTwo()'><b>testMinOfTwo</b><br>Test class: test.jwd.task01basic.service.MinOfTwoNumberTest<br>Parameters: [D@285d851a, -2147483647</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.FunctionValueTest.test2FunctionValue()'><b>test2FunctionValue</b><br>Test class: test.jwd.task01basic.service.FunctionValueTest<br>Test method: FunctionValueTest2</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.FunctionValueTest@a8e6492</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: ~, 126</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToIntTest@10d307f1</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle()'><b>testNegBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Negative_scenario<br>Parameters: [D@314b8f2d, false</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1107579932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107579932'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@7876d598, 0.5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.RectangleAreaTest@505a9d7c</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@4a3e3e8b, 125</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToCharTest@4a7f959b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle()'><b>testNegBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Negative_scenario<br>Parameters: [D@5af28b27, false</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace4073506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4073506'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AbsValueOfExpressionTest.testAbsValueOfExpression()'><b>testAbsValueOfExpression</b><br>Test class: test.jwd.task01basic.service.AbsValueOfExpressionTest<br>Parameters: [D@71104a4, 2.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: M, 77</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToIntTest@10d307f1</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfOddNumberTest.testSumOfOddNumber()'><b>testSumOfOddNumber</b><br>Test class: test.jwd.task01basic.service.SumOfOddNumberTest<br>Test method: Sum of odd numbers from 1 to 99</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfOddNumberTest@1fcb4808</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberPos()'><b>testMaxDigitOfNumberPos</b><br>Test class: test.jwd.task01basic.service.MaxDigitOfNumberTest<br>Test method: Positive_scenario<br>Parameters: 1151, 5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: !, 33</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToIntTest@10d307f1</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MinOfTwoNumberTest.testMinOfTwo()'><b>testMinOfTwo</b><br>Test class: test.jwd.task01basic.service.MinOfTwoNumberTest<br>Parameters: [D@4985cbcb, 0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AccessByPasswordTest.testAccessByPassword()'><b>testAccessByPassword</b><br>Test class: test.jwd.task01basic.service.AccessByPasswordTest<br>Parameters: 1748, Your acess level: bases A,B,C</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AccessByPasswordTest@7b324585</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 2.0, 0.57735</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 1.0, 0.288675</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MinOfTwoNumberTest.testMinOfTwo()'><b>testMinOfTwo</b><br>Test class: test.jwd.task01basic.service.MinOfTwoNumberTest<br>Parameters: [D@72f46e16, -1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AccessByPasswordTest.testAccessByPassword()'><b>testAccessByPassword</b><br>Test class: test.jwd.task01basic.service.AccessByPasswordTest<br>Parameters: 3331, Your acess level: bases B,C</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AccessByPasswordTest@7b324585</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testPosBrickAndRectangle()'><b>testPosBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Positive_scenario<br>Parameters: [D@3c9168dc, false</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters:  , 32</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToIntTest@10d307f1</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.FunctionValueTest.test3FunctionValue()'><b>test3FunctionValue</b><br>Test class: test.jwd.task01basic.service.FunctionValueTest<br>Test method: FunctionValueTest3</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.FunctionValueTest@a8e6492</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 2147483647, 1.8597753925136538E9</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleHeightTest@45c8d09f</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@332a7fce, 1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle()'><b>testNegBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Negative_scenario<br>Parameters: [D@549621f3, false</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace100445376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace100445376'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationPos()'><b>testAreaCalculationPos</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Test method: Positive scenario<br>Parameters: 1.0, 0.4330127018922193</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleAreaTest@72cf2de5</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AccessByPasswordTest.testAccessByPassword()'><b>testAccessByPassword</b><br>Test class: test.jwd.task01basic.service.AccessByPasswordTest<br>Parameters: 9583, Your acess level: bases A,B,C</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AccessByPasswordTest@7b324585</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfPositiveRowMemberTest.testSumOfPositive()'><b>testSumOfPositive</b><br>Test class: test.jwd.task01basic.service.SumOfPositiveRowMemberTest<br>Parameters: [D@54361a9, 1.3564814814814814</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@32232e55, 1.7976931348623157E308</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.RectangleAreaTest@505a9d7c</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@5217f3d0, 0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.PhysicsTest@19ae6bb</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 100, 86.603</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleHeightTest@45c8d09f</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testPosBrickAndRectangle()'><b>testPosBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Positive_scenario<br>Parameters: [D@37ebc9d8, false</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfPositiveRowMemberTest.testSumOfPositive()'><b>testSumOfPositive</b><br>Test class: test.jwd.task01basic.service.SumOfPositiveRowMemberTest<br>Parameters: [D@293bb8a5, 0.8333333333333333</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@2416a51, 1.5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@6fa590ba, 0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.PhysicsTest@19ae6bb</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: =, 61</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToIntTest@10d307f1</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@6e9319f, 0.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 5.0, 2.886751</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@72e34f77, 78</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToCharTest@4a7f959b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@7bf9b098, -2</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.PhysicsTest@19ae6bb</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: k, 107</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToIntTest@10d307f1</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@389adf1d, 1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.PhysicsTest@19ae6bb</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MinOfTwoNumberTest.testMinOfTwo()'><b>testMinOfTwo</b><br>Test class: test.jwd.task01basic.service.MinOfTwoNumberTest<br>Parameters: [D@77307458, -5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@1fc0053e, -1.5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 5.0, 1.443376</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 2.0, 1.732</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleHeightTest@45c8d09f</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg()'><b>testMaxDigitOfNumberNeg</b><br>Test class: test.jwd.task01basic.service.MaxDigitOfNumberTest<br>Test method: Negative_scenario<br>Parameters: -8, 0</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+	at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1733056574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1733056574'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+	at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@290b1b2e, 19</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.PhysicsTest@19ae6bb</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@47874b25, 5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.PhysicsTest@19ae6bb</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberPos()'><b>testMaxDigitOfNumberPos</b><br>Test class: test.jwd.task01basic.service.MaxDigitOfNumberTest<br>Test method: Positive_scenario<br>Parameters: 5555, 5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.FunctionValueTest.test1FunctionValue()'><b>test1FunctionValue</b><br>Test class: test.jwd.task01basic.service.FunctionValueTest<br>Test method: FunctionValueTest1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.FunctionValueTest@a8e6492</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle()'><b>testNegBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Negative_scenario<br>Parameters: [D@33617539, false</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace698747943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace698747943'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SwapExtraTaskTest.testSwapExtraTask1()'><b>testSwapExtraTask1</b><br>Test class: test.jwd.task01basic.service.SwapExtraTaskTest<br>Test method: SwapExtraTaskTest1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationPos()'><b>testAreaCalculationPos</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Test method: Positive scenario<br>Parameters: 2.0, 1.7320508075688772</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleAreaTest@72cf2de5</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg()'><b>testAreaCalculationNeg</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Test method: Negative scenario<br>Parameters: -2147483647, 0.0</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+	at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace16373883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16373883'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+	at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleAreaTest@72cf2de5</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg()'><b>testMaxDigitOfNumberNeg</b><br>Test class: test.jwd.task01basic.service.MaxDigitOfNumberTest<br>Test method: Negative_scenario<br>Parameters: 0, 0</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+	at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1059300256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059300256'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+	at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@2c177f9e, 1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@5db4c359, 91</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToCharTest@4a7f959b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.PhysicsTest.testDistance()'><b>testDistance</b><br>Test class: test.jwd.task01basic.service.PhysicsTest<br>Parameters: [I@209775a9, 2147483647</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.PhysicsTest@19ae6bb</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 2.0, 1.154701</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@18e7143f, 5000.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.RectangleAreaTest@505a9d7c</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@f9b7332, 0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@74cec793, 0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@6fefce9e, 126</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToCharTest@4a7f959b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 2147483647, 6.19925130837885E8</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AccessByPasswordTest.testAccessByPassword()'><b>testAccessByPassword</b><br>Test class: test.jwd.task01basic.service.AccessByPasswordTest<br>Parameters: 9455, Your acess level: base C</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AccessByPasswordTest@7b324585</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AbsValueOfExpressionTest.testAbsValueOfExpression()'><b>testAbsValueOfExpression</b><br>Test class: test.jwd.task01basic.service.AbsValueOfExpressionTest<br>Parameters: [D@4f8969b0, 18.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AbsValueOfExpressionTest.testAbsValueOfExpression()'><b>testAbsValueOfExpression</b><br>Test class: test.jwd.task01basic.service.AbsValueOfExpressionTest<br>Parameters: [D@1bdf8190, 1.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AbsValueOfExpressionTest.testAbsValueOfExpression()'><b>testAbsValueOfExpression</b><br>Test class: test.jwd.task01basic.service.AbsValueOfExpressionTest<br>Parameters: [D@192f2f27, 0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusInTest.testRadiusInCalculation()'><b>testRadiusInCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusInTest<br>Parameters: 100, 28.867513</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusInTest@14b030a0</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 100, 57.735027</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@8a589a2, 32</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToCharTest@4a7f959b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 1.0, 0.866</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleHeightTest@45c8d09f</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfPositiveRowMemberTest.testSumOfPositive()'><b>testSumOfPositive</b><br>Test class: test.jwd.task01basic.service.SumOfPositiveRowMemberTest<br>Parameters: [D@c65a5ef, 1.1944444444444444</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToIntTest.testConvertToInt()'><b>testConvertToInt</b><br>Test class: test.jwd.task01basic.service.ConvertToIntTest<br>Parameters: [, 91</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToIntTest@10d307f1</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SwapExtraTaskTest.testSwapExtraTask2()'><b>testSwapExtraTask2</b><br>Test class: test.jwd.task01basic.service.SwapExtraTaskTest<br>Test method: SwapExtraTaskTest2</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle()'><b>testNegBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Negative_scenario<br>Parameters: [D@6b5176f2, false</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1174586025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1174586025'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.RectangleAreaServiceImpl.doCalculation(RectangleAreaServiceImpl.java:36)
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:43)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.ConvertToCharTest.testConvertToChar()'><b>testConvertToChar</b><br>Test class: test.jwd.task01basic.service.ConvertToCharTest<br>Parameters: [C@b672aa8, 99</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.ConvertToCharTest@4a7f959b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AccessByPasswordTest.testAccessByPassword()'><b>testAccessByPassword</b><br>Test class: test.jwd.task01basic.service.AccessByPasswordTest<br>Parameters: 7922, Your acess level: bases B,C</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AccessByPasswordTest@7b324585</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberPos()'><b>testMaxDigitOfNumberPos</b><br>Test class: test.jwd.task01basic.service.MaxDigitOfNumberTest<br>Test method: Positive_scenario<br>Parameters: 8426, 8</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testPosBrickAndRectangle()'><b>testPosBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Positive_scenario<br>Parameters: [D@2fab4aff, false</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MinOfTwoNumberTest.testMinOfTwo()'><b>testMinOfTwo</b><br>Test class: test.jwd.task01basic.service.MinOfTwoNumberTest<br>Parameters: [D@ec0c838, -2147483647</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@6e46d9f4, 2</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@5cc69cfe, 0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AccessByPasswordTest.testAccessByPassword()'><b>testAccessByPassword</b><br>Test class: test.jwd.task01basic.service.AccessByPasswordTest<br>Parameters: 8997, Your acess level: base C</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AccessByPasswordTest@7b324585</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AbsValueOfExpressionTest.testAbsValueOfExpression()'><b>testAbsValueOfExpression</b><br>Test class: test.jwd.task01basic.service.AbsValueOfExpressionTest<br>Parameters: [D@29cfd92b, 36.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AbsValueOfExpressionTest@75e91545</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@21c64522, 2</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MinOfTwoNumberTest.testMinOfTwo()'><b>testMinOfTwo</b><br>Test class: test.jwd.task01basic.service.MinOfTwoNumberTest<br>Parameters: [D@7997b197, -6</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MinOfTwoNumberTest@ed3068a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@11dee337, 2147483647</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationPos()'><b>testAreaCalculationPos</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Test method: Positive scenario<br>Parameters: 10.0, 43.30127018922193</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleAreaTest@72cf2de5</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg()'><b>testMaxDigitOfNumberNeg</b><br>Test class: test.jwd.task01basic.service.MaxDigitOfNumberTest<br>Test method: Negative_scenario<br>Parameters: -98567, 0</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+	at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1605988985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605988985'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl.calculate(MaxDigitOfNumberServiceImpl.java:47)
+	at test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberNeg(MaxDigitOfNumberTest.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.MaxDigitOfNumberTest.testMaxDigitOfNumberPos()'><b>testMaxDigitOfNumberPos</b><br>Test class: test.jwd.task01basic.service.MaxDigitOfNumberTest<br>Test method: Positive_scenario<br>Parameters: 1589, 9</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.MaxDigitOfNumberTest@60dce7ea</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationPos()'><b>testAreaCalculationPos</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Test method: Positive scenario<br>Parameters: 2147483647, 1.99691862125803878E18</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleAreaTest@72cf2de5</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfPositiveRowMemberTest.testSumOfPositive()'><b>testSumOfPositive</b><br>Test class: test.jwd.task01basic.service.SumOfPositiveRowMemberTest<br>Parameters: [D@460f76a6, 1.1944444444444444</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle()'><b>testNegBrickAndRectangle</b><br>Test class: test.jwd.task01basic.service.DoesBrickFitRectangleTest<br>Test method: Negative_scenario<br>Parameters: [D@55f3c410, false</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1774690057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774690057'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl.doLogic(DoesBrickFitRectangleServiceImpl.java:56)
+	at test.jwd.task01basic.service.DoesBrickFitRectangleTest.testNegBrickAndRectangle(DoesBrickFitRectangleTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.DoesBrickFitRectangleTest@56bca85b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfPositiveRowMemberTest.testSumOfPositive()'><b>testSumOfPositive</b><br>Test class: test.jwd.task01basic.service.SumOfPositiveRowMemberTest<br>Parameters: [D@11acdc30, 0.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@770d4269, -2147483647</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg()'><b>testAreaCalculationNeg</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Test method: Negative scenario<br>Parameters: -5, 0.0</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+	at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1990421361", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1990421361'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+	at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleAreaTest@72cf2de5</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AccessByPasswordTest.testAccessByPassword()'><b>testAccessByPassword</b><br>Test class: test.jwd.task01basic.service.AccessByPasswordTest<br>Parameters: 45845455, Invalid password</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AccessByPasswordTest@7b324585</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@4a8ab068, 3</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@1922e6d, 1.7976931348623157E308</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.RectangleAreaTest@505a9d7c</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleHeightTest.testHeightCalculation()'><b>testHeightCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleHeightTest<br>Parameters: 5.0, 4.33</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleHeightTest@45c8d09f</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@76a82f33, 1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 2147483647, 1.239850261675769E9</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SwapExtraTaskTest.testSwapExtraTask3()'><b>testSwapExtraTask3</b><br>Test class: test.jwd.task01basic.service.SwapExtraTaskTest<br>Test method: SwapExtraTaskTest3</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SwapExtraTaskTest@fd8294b</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@6bab2585, 1.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg()'><b>testAreaCalculationNeg</b><br>Test class: test.jwd.task01basic.service.TriangleAreaTest<br>Test method: Negative scenario<br>Parameters: 0.0, 0</td>
+<td><div><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+	at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1160487387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1160487387'><pre>by.jwd.task01basic.service.ServiceException
+	at by.jwd.task01basic.service.impl.TriangleAreaServiceImpl.doCalculation(TriangleAreaServiceImpl.java:40)
+	at test.jwd.task01basic.service.TriangleAreaTest.testAreaCalculationNeg(TriangleAreaTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleAreaTest@72cf2de5</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.SumOfPositiveRowMemberTest.testSumOfPositive()'><b>testSumOfPositive</b><br>Test class: test.jwd.task01basic.service.SumOfPositiveRowMemberTest<br>Parameters: [D@74bdc168, 0.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.SumOfPositiveRowMemberTest@ea9b7c6</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.RectangleAreaTest.testAreaCalculation()'><b>testAreaCalculation</b><br>Test class: test.jwd.task01basic.service.RectangleAreaTest<br>Parameters: [D@644c78d4, 2.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.RectangleAreaTest@505a9d7c</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.TriangleRadiusOutTest.testRadiusOutCalculation()'><b>testRadiusOutCalculation</b><br>Test class: test.jwd.task01basic.service.TriangleRadiusOutTest<br>Parameters: 1.0, 0.57735</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.TriangleRadiusOutTest@422c3c7a</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.QuantityOfPositiveNumberTest.testDataForQuantityOfPositiveNumber()'><b>testDataForQuantityOfPositiveNumber</b><br>Test class: test.jwd.task01basic.service.QuantityOfPositiveNumberTest<br>Parameters: [I@532a02d9, 1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.QuantityOfPositiveNumberTest@40c80397</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@611f8234, -4.5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+<tr>
+<td title='test.jwd.task01basic.service.AverageOfTwoNumberTest.testCalculationAverage()'><b>testCalculationAverage</b><br>Test class: test.jwd.task01basic.service.AverageOfTwoNumberTest<br>Parameters: [D@7bb3a9fe, 0.0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task01basic.service.AverageOfTwoNumberTest@d29f28</td></tr>
+</table><p>
+</body>
+</html>

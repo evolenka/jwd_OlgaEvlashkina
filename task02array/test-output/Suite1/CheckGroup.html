@@ -1,0 +1,359 @@
+<html>
+<head>
+<title>TestNG:  CheckGroup</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CheckGroup</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>56/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 17 00:03:10 MSK 2021</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (287 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>service </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@5b970f7, [Ljava.lang.Integer;@7fd4acee</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@165b8a71, [Ljava.lang.Integer;@6175619b</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@2f058b8a, [Ljava.lang.Integer;@756cf158</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@3f2ef586, [Ljava.lang.Integer;@751d3241</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@76c7beb3, [Ljava.lang.Integer;@64337702</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@2cf92cc7, [Ljava.lang.Integer;@30ea8c23</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@7b139eab, [Ljava.lang.Integer;@4e76dac</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@611df6e3, [Ljava.lang.Integer;@5f2f577</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@6273c5a4, [Ljava.lang.Integer;@5d465e4b</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@53e211ee, [Ljava.lang.Integer;@41a90fa8</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@3d8bbcdc, [Ljava.lang.Integer;@52500920</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@117e0fe5, [Ljava.lang.Integer;@18a3962d</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@78aea4b9, [Ljava.lang.Integer;@2a65bb85</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@4b85880b, [Ljava.lang.Integer;@4f936da8</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@4215838f, [Ljava.lang.Integer;@452ba1db</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@2289aca5, [Ljava.lang.Integer;@76a36b71</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@184497d1, [Ljava.lang.Integer;@f9d87b</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@6ffab045, [Ljava.lang.Integer;@26fb628</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@3e2943ab, [Ljava.lang.Integer;@70dd7e15</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@4a9f80d3, [Ljava.lang.Integer;@35beb15e</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@41fe9859, [Ljava.lang.Integer;@5ac86ba5</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@6c67e137, [Ljava.lang.Integer;@2c9399a4</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@191ae03f, [Ljava.lang.Integer;@9635fa</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@53ab0286, [Ljava.lang.Integer;@63c5efee</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@2d10e0b1, [Ljava.lang.Integer;@1c98290c</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@172ca72b, [Ljava.lang.Integer;@5bda80bf</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@71e5f61d, [Ljava.lang.Integer;@2ce86164</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@5e8f9e2d, [Ljava.lang.Integer;@51df223b</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@fd46303, [Ljava.lang.Integer;@60d8c0dc</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@4204541c, [Ljava.lang.Integer;@6a62689d</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@4602c2a9, [Ljava.lang.Integer;@60fa3495</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@3e2822, [Ljava.lang.Integer;@79e18e38</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@29a60c27, [Ljava.lang.Integer;@1849db1a</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@69c79f09, [Ljava.lang.Integer;@1ca25c47</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@5fcacc0, [Ljava.lang.Integer;@533b266e</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@6d1d4d7, [Ljava.lang.Integer;@89ff02e</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@6865c751, [Ljava.lang.Integer;@62679465</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@6a988392, [Ljava.lang.Integer;@1d71006f</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@5b6813df, [Ljava.lang.Integer;@5f2606b</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@2b58f754, [Ljava.lang.Integer;@3ebff828</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@2552f2cb, [Ljava.lang.Integer;@33352f32</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@5f3b9c57, [Ljava.lang.Integer;@1e044120</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@2cf23c81, [Ljava.lang.Integer;@3624da92</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@35fe2125, [Ljava.lang.Integer;@94f6bfb</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShakerSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShakerSortTest<br>Parameters: [Ljava.lang.Integer;@34645867, [Ljava.lang.Integer;@2484f433</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShakerSortTest@7c209437</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@60b71e8f, [Ljava.lang.Integer;@1255b1d1</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@464649c, [Ljava.lang.Integer;@7c22d4f</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@5f59185e, [Ljava.lang.Integer;@60bdf15d</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.SelectionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.SelectionSortTest<br>Parameters: [Ljava.lang.Integer;@47da3952, [Ljava.lang.Integer;@51e4ccb3</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.SelectionSortTest@793be5ca</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@46e8a539, [Ljava.lang.Integer;@495083a0</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@5fd62371, [Ljava.lang.Integer;@28a0fd6c</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.ShellSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.ShellSortTest<br>Parameters: [Ljava.lang.Integer;@2b62442c, [Ljava.lang.Integer;@66629f63</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.ShellSortTest@7e928e2f</td></tr>
+<tr>
+<td title='test.jwd.task02array.BubbleSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.BubbleSortTest<br>Parameters: [Ljava.lang.Integer;@841e575, [Ljava.lang.Integer;@27a5328c</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.BubbleSortTest@27ff5d15</td></tr>
+<tr>
+<td title='test.jwd.task02array.TwoWayMergeSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.TwoWayMergeSortTest<br>Parameters: [Ljava.lang.Integer;@1e5f4170, [Ljava.lang.Integer;@6c345c5f</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.TwoWayMergeSortTest@788fcafb</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortByAddressCalculationTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortByAddressCalculationTest<br>Parameters: [Ljava.lang.Integer;@6b5966e1, [Ljava.lang.Integer;@65e61854</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortByAddressCalculationTest@3514a4c0</td></tr>
+<tr>
+<td title='test.jwd.task02array.InsertionSortTest.testDataForArraySorting()'><b>testDataForArraySorting</b><br>Test class: test.jwd.task02array.InsertionSortTest<br>Parameters: [Ljava.lang.Integer;@1568159, [Ljava.lang.Integer;@4fcee388</td>
+<td></td>
+<td>0</td>
+<td>test.jwd.task02array.InsertionSortTest@446293d</td></tr>
+</table><p>
+</body>
+</html>

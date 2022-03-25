@@ -1,0 +1,56 @@
+[ {
+  "name" : "cosmetics",
+  "assortment" : [ {
+    "title" : "shampoo",
+    "trademark" : "Schauma",
+    "price" : 5.59,
+    "quantity" : 40
+},{
+    "title" : "shampoo",
+    "trademark" : "Syoss",
+    "price" : 10.60,
+    "quantity" : 20
+  }, {
+    "title" : "shower gel",
+    "trademark" : "Dove",
+    "price" : 5.59,
+    "quantity" : 35
+  }, {
+    "title" : "shower gel",
+    "trademark" : "Fa",
+    "price" : 4.6,
+    "quantity" : 30
+  }, {
+    "title" : "shower gel",
+    "trademark" : "Nivea",
+    "price" : 7.3,
+    "quantity" : 25
+  }]}, {
+  "name" : "other",
+  "assortment" : [ { 
+  "title" : "hair spray",
+    "trademark" : "Taft",
+    "price" : 5.4,
+    "quantity" : 35
+  }, {
+    "title" : "hair spray",
+    "trademark" : "Loreal",
+    "price" : 7.2,
+    "quantity" : 20
+  }, {
+    "title" : "toothpaste",
+    "trademark" : "Colgate",
+    "price" : 4.3,
+    "quantity" : 25
+  }, {
+    "title" : "toothpaste",
+    "trademark" : "Lacalut",
+    "price" : 6.9,
+    "quantity" : 25
+  }, {
+    "title" : "toothpaste",
+    "trademark" : "Splat",
+    "price" : 8.5,
+    "quantity" : 35}
+]
+}]

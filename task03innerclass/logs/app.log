@@ -1,0 +1,2022 @@
+2022-01-02 23:23:54 [main] ERROR
+			by.jwd.task03innerclass.controller.Runner - wrong quantity of args
+2022-01-02 23:23:54 [main] ERROR
+			by.jwd.task03innerclass.controller.Runner - wrong quantity of args
+2022-01-02 23:25:32 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-02 23:25:32 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-03 00:39:57 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-03 00:39:57 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-03 00:57:22 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllShopDepartmentCommandImpl - file data not found or incorrect data
+2022-01-03 00:57:22 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllShopDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 00:40:34 [main] ERROR
+			by.jwd.task03innerclass.controller.Runner - Wrong quantity of args
+2022-01-04 00:40:34 [main] ERROR
+			by.jwd.task03innerclass.controller.Runner - Wrong quantity of args
+2022-01-04 00:43:58 [main] ERROR
+			by.jwd.task03innerclass.controller.Runner - Wrong quantity of args
+2022-01-04 00:43:58 [main] ERROR
+			by.jwd.task03innerclass.controller.Runner - Wrong quantity of args
+2022-01-04 13:45:31 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-04 13:45:31 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-04 13:46:11 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-04 13:46:11 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-04 18:11:56 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 18:11:56 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 18:12:16 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 18:12:16 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 18:12:27 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 18:12:27 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 18:12:55 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 18:12:55 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 19:14:29 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 19:14:29 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAssortmentOfDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 20:26:01 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 20:26:01 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 20:26:31 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-04 20:26:31 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-04 20:37:39 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-04 20:37:39 [main] ERROR
+			by.jwd.task03innerclass.controller.FindAllStoreDepartmentCommandImpl - file data not found or incorrect data
+2022-01-07 01:08:29 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-07 01:08:29 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-07 01:09:33 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-07 01:09:33 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-07 01:19:02 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-07 01:19:02 [main] ERROR
+			by.jwd.task03innerclass.controller.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 20:42:03 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 20:42:19 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 22:13:27 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - read from file
+2022-01-07 22:13:27 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - read from file
+2022-01-07 22:13:27 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:13:27 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:13:27 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:13:27 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 22:13:27 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:56 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - start find assortment
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 22:22:56 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableAssortmentServiceImpl - end find assortment
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - start find departments
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAllAvailiableDepartmentsServiceImpl - end find departments
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 22:22:57 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 23:33:43 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - read from file
+2022-01-07 23:33:43 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - read from file
+2022-01-07 23:33:43 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 23:33:43 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-07 23:33:43 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 23:33:43 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-07 23:33:43 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-09 20:29:12 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:29:12 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:29:12 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-09 20:29:12 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-09 20:35:10 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:35:10 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:35:11 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:35:11 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:35:11 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:35:11 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:35:11 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:35:11 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:35:11 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindAllShopDepartmentCommandImpl - file data not found or incorrect data
+2022-01-09 20:35:11 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindAllShopDepartmentCommandImpl - file data not found or incorrect data
+2022-01-09 20:35:17 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:35:17 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:35:17 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:35:17 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:35:17 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindAllShopDepartmentCommandImpl - file data not found or incorrect data
+2022-01-09 20:35:17 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindAllShopDepartmentCommandImpl - file data not found or incorrect data
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:36:06 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:36:06 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-09 20:36:06 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:36:46 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:36:46 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-09 20:36:46 [main] ERROR
+			jwd.task03innerclass.controller.impl.FindDepartmentByGoodCommandImpl - file data not found or incorrect data
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20, 
+title: eyebrow pencil, trademark: Relouis, price: 3.5, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20, 
+title: eyebrow pencil, trademark: Relouis, price: 3.5, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15, 
+title: kitchen cleaner, trademark: Tytan, price: 4.8, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15, 
+title: kitchen cleaner, trademark: Tytan, price: 4.8, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25, 
+title: toothpaste, trademark: Splat, price: 8.5, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25, 
+title: toothpaste, trademark: Splat, price: 8.5, quantity: 35]
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:12 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start find department by good title
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end find department by good title
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - start write to file
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-09 20:37:12 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindDepartmentByGoodTitleServiceImpl - end write to file
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.ShopCreatorService - get shop object from json file
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - start parse
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke department object
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20, 
+title: eyebrow pencil, trademark: Relouis, price: 3.5, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: mascara, trademark: Belor Design, price: 5.59, quantity: 50, 
+title: mascara, trademark: Bourjois, price: 15.59, quantity: 10, 
+title: mascara, trademark: Relouis, price: 7.59, quantity: 45, 
+title: lipstick, trademark: Belor Design, price: 6.67, quantity: 30, 
+title: lipstick, trademark: Luxvisage, price: 7.67, quantity: 30, 
+title: lipstick, trademark: Loreal, price: 20.15, quantity: 35, 
+title: eyeshadow, trademark: Luxvisage, price: 10.4, quantity: 20, 
+title: eyeshadow, trademark: Belor Design, price: 5.8, quantity: 25, 
+title: eyeshadow, trademark: Loreal, price: 27.9, quantity: 15, 
+title: tone cream, trademark: Maybelline, price: 18.5, quantity: 30, 
+title: tone cream, trademark: Loreal, price: 20.7, quantity: 25, 
+title: tone cream, trademark: Bourjois, price: 25.5, quantity: 10, 
+title: eyebrow pencil, trademark: Luxvisage, price: 4.1, quantity: 25, 
+title: eyebrow pencil, trademark: Maybelline, price: 12.5, quantity: 20, 
+title: eyebrow pencil, trademark: Relouis, price: 3.5, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15, 
+title: kitchen cleaner, trademark: Tytan, price: 4.8, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: washing powder, trademark: Ariel, price: 25.6, quantity: 15, 
+title: washing powder, trademark: Losk, price: 15.7, quantity: 30, 
+title: washing powder, trademark: Persil, price: 35.8, quantity: 20, 
+title: dish detergent, trademark: Fairy, price: 9.59, quantity: 45, 
+title: dish detergent, trademark: Sorti, price: 5.35, quantity: 50, 
+title: fabric softener, trademark: Vernel, price: 8.15, quantity: 15, 
+title: fabric softener, trademark: Lenor, price: 10.5, quantity: 20, 
+title: kitchen cleaner, trademark: Cif, price: 5.6, quantity: 35, 
+title: kitchen cleaner, trademark: Sanitar, price: 2.5, quantity: 15, 
+title: kitchen cleaner, trademark: Tytan, price: 4.8, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25, 
+title: toothpaste, trademark: Splat, price: 8.5, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - invoke assortment [
+title: shampoo, trademark: Schauma, price: 5.59, quantity: 40, 
+title: shampoo, trademark: Syoss, price: 10.6, quantity: 20, 
+title: shower gel, trademark: Dove, price: 5.59, quantity: 35, 
+title: shower gel, trademark: Fa, price: 4.6, quantity: 30, 
+title: shower gel, trademark: Nivea, price: 7.3, quantity: 25, 
+title: hair spray, trademark: Taft, price: 5.4, quantity: 35, 
+title: hair spray, trademark: Loreal, price: 7.2, quantity: 20, 
+title: toothpaste, trademark: Colgate, price: 4.3, quantity: 25, 
+title: toothpaste, trademark: Lacalut, price: 6.9, quantity: 25, 
+title: toothpaste, trademark: Splat, price: 8.5, quantity: 35]
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.dao.ReadFromJSONDao - create department
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - start validation
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:30 [main] DEBUG
+			by.jwd.task03innerclass.service.Validation - end validation
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start find assortment of the named department
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end find assortment of the named department
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - start write to file
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file
+2022-01-09 20:37:30 [main] DEBUG
+			jwd.task03innerclass.service.impl.FindAssortmentOfDepartmentServiceImpl - end write to file

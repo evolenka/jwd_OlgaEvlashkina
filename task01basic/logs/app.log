@@ -1,0 +1,229 @@
+2021-11-29 23:53:45 [main] TRACE jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - Start
+2021-11-29 23:53:45 [main] ERROR jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - wrong quantity of args
+ 2021-11-30 22:55:39 [main] TRACE jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - Start
+2021-11-30 22:55:39 [main] ERROR jwd.task01basic.controller.impl.AbsValueOfExpressionControllerImpl - wrong format of args
+2021-11-30 22:56:51 [main] ERROR jwd.task01basic.controller.impl.PhysicsControllerImpl - wrong quantity of args
+2021-11-30 23:00:16 [main] ERROR jwd.task01basic.controller.impl.SumOfPositiveRowMemberControllerImpl - wrong format of args
+2021-11-30 23:00:16 [main] ERROR jwd.task01basic.controller.impl.SumOfPositiveRowMemberControllerImpl - wrong format of args
+2021-11-30 23:07:40 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:07:40 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:07:40 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong format of args
+2021-11-30 23:07:40 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong format of args
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - start validation
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - end validation
+2021-11-30 23:08:21 [main] DEBUG jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - end validation
+2021-12-01 00:20:40 [main] ERROR jwd.task01basic.controller.impl.GuessNumberControllerImpl - wrong format of args
+2021-12-01 00:20:40 [main] ERROR jwd.task01basic.controller.impl.GuessNumberControllerImpl - wrong format of args
+2021-12-02 08:24:23 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong quantity of args
+2021-12-02 08:24:23 [main] ERROR jwd.task01basic.controller.impl.DoesBrickFitRectangleControllerImpl - wrong quantity of args
+2021-12-04 20:32:10 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:32:10 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:32:23 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 20:32:23 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 20:34:33 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 20:34:33 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 20:35:51 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:35:51 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:39:02 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:39:02 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:40:11 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:40:11 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:50:55 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 20:50:55 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 20:52:19 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:52:19 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 20:52:39 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 20:52:39 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 21:14:48 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 21:14:48 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 21:16:25 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 21:16:25 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 22:00:49 [main] ERROR by.jwd.task01basic.controller.Runner - negative number
+2021-12-04 22:00:49 [main] ERROR by.jwd.task01basic.controller.Runner - negative number
+2021-12-04 22:10:55 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number
+2021-12-04 22:10:55 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number
+2021-12-04 22:11:10 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number
+2021-12-04 22:11:10 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number
+2021-12-04 23:26:33 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 23:26:33 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 23:26:41 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:26:41 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:26:53 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:26:53 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:27:04 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number
+2021-12-04 23:27:04 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number
+2021-12-04 23:27:35 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 23:27:35 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 23:28:16 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:28:16 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:28:38 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:28:38 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:29:18 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 23:29:18 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-04 23:29:45 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:29:45 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:29:51 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:29:51 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:30:15 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 23:30:15 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 23:30:23 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:30:23 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:30:41 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:30:41 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:30:50 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:30:50 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:31:03 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:31:03 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:33:48 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:33:48 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:36:29 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:36:29 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:40:36 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:40:36 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:44:00 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:44:00 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-04 23:44:53 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-04 23:44:53 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 00:02:10 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-05 00:02:10 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-05 00:05:08 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-05 00:05:08 [main] ERROR by.jwd.task01basic.controller.TaskManager - negative number or 0
+2021-12-05 00:10:57 [main] ERROR by.jwd.task01basic.controller.Runner - negative number or 0
+2021-12-05 00:10:57 [main] ERROR by.jwd.task01basic.controller.Runner - negative number or 0
+2021-12-05 01:21:06 [main] ERROR jwd.task01basic.controller.impl.RectangleAreaCommandImpl - negative number (or = 0)
+2021-12-05 01:21:06 [main] ERROR jwd.task01basic.controller.impl.RectangleAreaCommandImpl - negative number (or = 0)
+2021-12-05 01:21:22 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 01:21:22 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 01:21:42 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 01:21:42 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 01:22:05 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 01:22:05 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 01:22:17 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-05 01:22:17 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-05 01:22:31 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-05 01:22:31 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-05 01:23:02 [main] ERROR jwd.task01basic.controller.impl.PhysicsCommandImpl - negative number (or = 0)
+2021-12-05 01:23:02 [main] ERROR jwd.task01basic.controller.impl.PhysicsCommandImpl - negative number (or = 0)
+2021-12-05 19:59:45 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 19:59:45 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:01:59 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:01:59 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:02:48 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-05 20:02:48 [main] ERROR by.jwd.task01basic.controller.Runner - wrong quantity of args
+2021-12-05 20:04:14 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:04:14 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:04:14 [main] ERROR jwd.task01basic.controller.impl.MaxDigitOfNumberCommandImpl - negative number (or = 0)
+2021-12-05 20:04:14 [main] ERROR jwd.task01basic.controller.impl.MaxDigitOfNumberCommandImpl - negative number (or = 0)
+2021-12-05 20:04:23 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:04:23 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:04:30 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:04:30 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:17:03 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:03 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:03 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:03 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:03 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:03 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:17:16 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:34:09 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:34:25 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:34:25 [main] ERROR by.jwd.task01basic.controller.Runner - wrong format of args
+2021-12-05 20:35:36 [main] ERROR jwd.task01basic.controller.impl.RectangleAreaCommandImpl - negative number (or = 0)
+2021-12-05 20:35:36 [main] ERROR jwd.task01basic.controller.impl.RectangleAreaCommandImpl - negative number (or = 0)
+2021-12-05 20:36:03 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:36:03 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:36:03 [main] ERROR jwd.task01basic.controller.impl.RectangleAreaCommandImpl - negative number (or = 0)
+2021-12-05 20:36:03 [main] ERROR jwd.task01basic.controller.impl.RectangleAreaCommandImpl - negative number (or = 0)
+2021-12-05 20:37:22 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:37:22 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:37:22 [main] ERROR jwd.task01basic.controller.impl.MaxDigitOfNumberCommandImpl - negative number (or = 0)
+2021-12-05 20:37:22 [main] ERROR jwd.task01basic.controller.impl.MaxDigitOfNumberCommandImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:37:36 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:37:37 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:37:37 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:37:37 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:37:37 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:37:37 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:37:37 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.TriangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.RectangleAreaServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.DoesBrickFitRectangleServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
+2021-12-05 20:58:15 [main] ERROR jwd.task01basic.service.impl.MaxDigitOfNumberServiceImpl - negative number (or = 0)
