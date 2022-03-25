@@ -28,6 +28,11 @@ import by.jwd.task07xmlparser.service.BaseBuilder;
 import by.jwd.task07xmlparser.service.VisitXmlTag;
 import by.jwd.task07xmlparser.service.XMLValidation;
 
+/**
+ * Parsing of xml file by STAX parser
+ * 
+ * @author Evlashkina
+ */
 public class StaxParserImpl extends BaseBuilder {
 
 	static Logger logger = LogManager.getLogger(StaxParserImpl.class);
@@ -48,7 +53,7 @@ public class StaxParserImpl extends BaseBuilder {
 
 		XMLStreamReader reader;
 		String name;
-		
+
 		try {
 			FileInputStream inputStream = new FileInputStream(filename);
 

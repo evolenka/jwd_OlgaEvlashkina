@@ -23,6 +23,13 @@ import by.jwd.task07xmlparser.service.VisitErrorHandler;
 import by.jwd.task07xmlparser.service.VisitHandler;
 import by.jwd.task07xmlparser.service.XMLValidation;
 
+/**
+ * Provides parsing of xml file by SAX parser using VisitHandler.class
+ * 
+ * @author Evlashkina
+ * @see VisitHandler.class
+ */
+
 public class SaxParserImpl extends BaseBuilder {
 
 	static Logger logger = LogManager.getLogger(SaxParserImpl.class);
@@ -40,7 +47,6 @@ public class SaxParserImpl extends BaseBuilder {
 
 	@Override
 	public void buildSetVisits(String filename, String xsdFile) {
-		
 
 		XMLValidation validation = new XMLValidation();
 		validation.isValid(filename, xsdFile);

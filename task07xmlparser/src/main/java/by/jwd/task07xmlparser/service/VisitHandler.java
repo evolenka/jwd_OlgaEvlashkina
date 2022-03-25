@@ -21,6 +21,12 @@ import by.jwd.task07xmlparser.entity.Teacher;
 import by.jwd.task07xmlparser.entity.Visit;
 import by.jwd.task07xmlparser.entity.WeekDay;
 
+/**
+ * Parsing of xml file by SAX parser
+ * 
+ * @author Evlashkina
+ */
+
 public class VisitHandler extends DefaultHandler {
 	static Logger logger = LogManager.getLogger(VisitHandler.class);
 

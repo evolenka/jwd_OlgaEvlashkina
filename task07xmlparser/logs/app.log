@@ -28290,3 +28290,781 @@ role: CLIENT
 patronymic: Николаевна
 e-mail: nnandreeva85@mail.ru
 phone: +375(44)789-41-78
+2022-03-26 01:06:24 [main] DEBUG by.jwd.task07xmlparser.service.XMLValidation - xml file is not valid
+2022-03-26 01:06:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - \src\main\visits.xml
+2022-03-26 01:06:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - \src\main\visits.xsd
+2022-03-26 01:07:33 [main] DEBUG by.jwd.task07xmlparser.service.XMLValidation - xml file is not valid
+2022-03-26 01:07:33 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - src/main/visits.xml
+2022-03-26 01:07:33 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - src/main/visits.xsd
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - src/main/resources/visits.xml
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - src/main/resources/visits.xsd
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 7
+login: vikkra
+password: pfg78g4XWX8NI4PXz6h+c/vw==
+name: Виктория
+surname: Кратова
+role: CLIENT
+patronymic: Петровна
+e-mail: kratkovavikki@gmail.com
+phone: +375(44)789-41-78
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 8
+login: anastaissakis
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Анастасия
+surname: Киселева
+role: CLIENT
+patronymic: Алексеевна
+e-mail: akiseleva89@mail.ru
+phone: +375(29)698-25-63
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 10
+login: koblubov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Любовь
+surname: Коблова
+role: CLIENT
+patronymic: Дмитриевна
+e-mail: lkoblova@mail.ru
+phone: +375(29)784-11-67
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Маргарита
+surname: Потапова
+role: CLIENT
+patronymic: Марковна
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 12
+login: mishukova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Ульяна
+surname: Мишукова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: umishukova@gmail.com
+phone: +375(29)814-35-65
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: efimenmarg
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Маргарита
+surname: Ефименко
+role: CLIENT
+patronymic: Сергеевна
+e-mail: efimenko@gmail.com
+phone: +375(29)215-15-80
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 9
+login: kirstepnov
+password: YFGjdu7d56ggy/wePXzb+py==
+name: Кирилл
+surname: Степнов
+role: CLIENT
+patronymic: Александрович
+e-mail: stepnovka@mail.ru
+phone: +375(29)259-47-16
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: andreev
+password: YFGjdu7d56ggy/wePXzb+py==
+name: Илья
+surname: Андреев
+role: CLIENT
+patronymic: Александрович
+e-mail: andreev@gmail.com
+phone: +375(44)655-15-78
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 14
+login: dimonmesh
+password: YFGjdu7d56ggy/wePXzb+py==
+name: Дмитрий
+surname: Мешков
+role: CLIENT
+patronymic: Иванович
+e-mail: meshkov@gmail.com
+phone: +375(44)741-89-00
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Маргарита
+surname: Потапова
+role: CLIENT
+patronymic: Марковна
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 15
+login: fedorov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Евгений
+surname: Федоров
+role: CLIENT
+patronymic: Денисович
+e-mail: fedorov@gmail.com
+phone: +375(25)168-25-89
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 16
+login: popovaalex
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Александра
+surname: Попова
+role: CLIENT
+patronymic: Сергеевна
+e-mail: apopova@gmail.com
+phone: +375(29)789-05-49
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 17
+login: fedorshut
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Сергей
+surname: Шутов
+role: CLIENT
+patronymic: Федорович
+e-mail: sshutov@gmail.com
+phone: +375(29)158-15-78
+2022-03-26 01:08:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag

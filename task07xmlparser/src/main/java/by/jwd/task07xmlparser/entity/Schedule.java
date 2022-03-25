@@ -2,6 +2,7 @@ package by.jwd.task07xmlparser.entity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
 
 public class Schedule {
 	
@@ -55,10 +56,26 @@ public class Schedule {
 	}
 
 	@Override
+	public int hashCode() {
+		return Objects.hash(duration, group, id, time, weekday);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Schedule other = (Schedule) obj;
+		return duration == other.duration && Objects.equals(group, other.group) && id == other.id
+				&& Objects.equals(time, other.time) && weekday == other.weekday;
+	}
+
+	@Override
 	public String toString() {
 		return "\nSchedule [id=" + id + ", weekday=" + weekday + ", time=" + new SimpleDateFormat("HH:mm").format(time) + ", group=" + group + ", duration="
 				+ duration + "]";
 	}
-	
-
 }

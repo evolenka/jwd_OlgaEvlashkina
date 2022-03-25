@@ -1,6 +1,5 @@
 package by.jwd.task07xmlparser.controller;
 
-import java.io.File;
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -14,8 +13,6 @@ import by.jwd.task07xmlparser.view.Output;
 public class Runner {
 	static Logger logger = LogManager.getLogger(Runner.class);
 
-	private static final String RESOURSE_DIRECTORY = "\\new workspace\\task07xmlparser\\src\\main\\resources";
-
 	public static void main(String[] args) {
 
 		Output output = new Output();
@@ -28,12 +25,7 @@ public class Runner {
 			String type = input.read();
 			BaseBuilder builder = BuildFactory.createParser(type);
 
-			output.print("please input the name of xml file and the name of xsd file:");
-			String[] param = input.read().split("\\s+");
-
-			builder.buildSetVisits(RESOURSE_DIRECTORY + File.separator + param[0],
-					RESOURSE_DIRECTORY + File.separator + param[1]);
-
+			builder.buildSetVisits("src/main/resources/visits.xml", "src/main/resources/visits.xsd");
 			String res = builder.getVisits().toString();
 			output.print(res);
 

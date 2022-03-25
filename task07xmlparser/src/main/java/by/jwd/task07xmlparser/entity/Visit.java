@@ -1,5 +1,7 @@
 package by.jwd.task07xmlparser.entity;
 
+import java.util.Objects;
+
 public class Visit {
 	
 	private int id;
@@ -40,6 +42,24 @@ public class Visit {
 	}
 	public void setStatus(Status status) {
 		this.status = status;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(client, danceClass, id, status);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Visit other = (Visit) obj;
+		return Objects.equals(client, other.client) && Objects.equals(danceClass, other.danceClass) && id == other.id
+				&& status == other.status;
 	}
 
 	@Override

@@ -1,6 +1,7 @@
 package by.jwd.task07xmlparser.entity;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Membership {
 
@@ -91,6 +92,34 @@ public class Membership {
 
 	public void setPrice(double price) {
 		this.price = price;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(balanceClassQuantity, client, endDate, id, maxClassQuantity, name, price, startDate);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Membership other = (Membership) obj;
+		return balanceClassQuantity == other.balanceClassQuantity && Objects.equals(client, other.client)
+				&& Objects.equals(endDate, other.endDate) && id == other.id
+				&& maxClassQuantity == other.maxClassQuantity && Objects.equals(name, other.name)
+				&& Double.doubleToLongBits(price) == Double.doubleToLongBits(other.price)
+				&& Objects.equals(startDate, other.startDate);
+	}
+
+	@Override
+	public String toString() {
+		return "Membership [id=" + id + ", client=" + client + ", name=" + name + ", startDate=" + startDate
+				+ ", endDate=" + endDate + ", balanceClassQuantity=" + balanceClassQuantity + ", maxClassQuantity="
+				+ maxClassQuantity + ", price=" + price + "]";
 	};
 
-	}
+}

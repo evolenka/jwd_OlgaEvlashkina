@@ -60,23 +60,7 @@ public class DomParserImpl extends BaseBuilder {
 	public void buildSetVisits(String filename, String xsdFile) {
 
 		XMLValidation validation = new XMLValidation();
-	validation.isValid(filename, xsdFile);
-		logger.debug(filename);
-		logger.debug(xsdFile);
-
-//		File file = null;
-//		File xsd = null;
-//		try {
-//			URL res1 = getClass().getClassLoader().getResource(filename);
-//			logger.debug(res1);
-//			file = Paths.get(res1.toURI()).toFile();
-//			logger.debug(file);
-//			URL res2 = getClass().getClassLoader().getResource(xsdFile);
-//			xsd = Paths.get(res2.toURI()).toFile();
-//			logger.debug(xsd);
-//		} catch (URISyntaxException | NullPointerException e1) {
-//			logger.debug("Files not found");
-//		}
+		validation.isValid(filename, xsdFile);
 
 		String constant = XMLConstants.W3C_XML_SCHEMA_NS_URI;
 		SchemaFactory xsdFactory = SchemaFactory.newInstance(constant);

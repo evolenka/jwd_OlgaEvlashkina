@@ -60,10 +60,9 @@ public class ParserServlet extends HttpServlet {
 			String type = request.getParameter("parser");
 			logger.debug("type {}", type);
 			BaseBuilder builder = BuildFactory.createParser(type);
-			logger.debug("fileName {}", fileName);
-			logger.debug("xsdFile {}", xsdFile);
+
 			builder.buildSetVisits(uploadPath + File.separator + fileName, uploadPath + File.separator + xsdFile);
-			
+
 			request.setAttribute("visits", builder.getVisits());
 
 		} catch (FileNotFoundException e) {
