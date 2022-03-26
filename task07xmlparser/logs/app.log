@@ -29068,3 +29068,3575 @@ phone: +375(44)789-41-78
 2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
 2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
 2022-03-26 01:19:35 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: РњР°СЂРёСЏ
+surname: РњР°СЂРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 7
+login: vikkra
+password: pfg78g4XWX8NI4PXz6h+c/vw==
+name: Р’РёРєС‚РѕСЂРёСЏ
+surname: РљСЂР°С‚РѕРІР°
+role: CLIENT
+patronymic: РџРµС‚СЂРѕРІРЅР°
+e-mail: kratkovavikki@gmail.com
+phone: +375(44)789-41-78
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 8
+login: anastaissakis
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђРЅР°СЃС‚Р°СЃРёСЏ
+surname: РљРёСЃРµР»РµРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: akiseleva89@mail.ru
+phone: +375(29)698-25-63
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 10
+login: koblubov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р›СЋР±РѕРІСЊ
+surname: РљРѕР±Р»РѕРІР°
+role: CLIENT
+patronymic: Р”РјРёС‚СЂРёРµРІРЅР°
+e-mail: lkoblova@mail.ru
+phone: +375(29)784-11-67
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 12
+login: mishukova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЈР»СЊСЏРЅР°
+surname: РњРёС€СѓРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: umishukova@gmail.com
+phone: +375(29)814-35-65
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: efimenmarg
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: Р•С„РёРјРµРЅРєРѕ
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: efimenko@gmail.com
+phone: +375(29)215-15-80
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 9
+login: kirstepnov
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РљРёСЂРёР»Р»
+surname: РЎС‚РµРїРЅРѕРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: stepnovka@mail.ru
+phone: +375(29)259-47-16
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: andreev
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РР»СЊСЏ
+surname: РђРЅРґСЂРµРµРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: andreev@gmail.com
+phone: +375(44)655-15-78
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 14
+login: dimonmesh
+password: YFGjdu7d56ggy/wePXzb+py==
+name: Р”РјРёС‚СЂРёР№
+surname: РњРµС€РєРѕРІ
+role: CLIENT
+patronymic: РРІР°РЅРѕРІРёС‡
+e-mail: meshkov@gmail.com
+phone: +375(44)741-89-00
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 15
+login: fedorov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р•РІРіРµРЅРёР№
+surname: Р¤РµРґРѕСЂРѕРІ
+role: CLIENT
+patronymic: Р”РµРЅРёСЃРѕРІРёС‡
+e-mail: fedorov@gmail.com
+phone: +375(25)168-25-89
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 16
+login: popovaalex
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђР»РµРєСЃР°РЅРґСЂР°
+surname: РџРѕРїРѕРІР°
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: apopova@gmail.com
+phone: +375(29)789-05-49
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 17
+login: fedorshut
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЎРµСЂРіРµР№
+surname: РЁСѓС‚РѕРІ
+role: CLIENT
+patronymic: Р¤РµРґРѕСЂРѕРІРёС‡
+e-mail: sshutov@gmail.com
+phone: +375(29)158-15-78
+2022-03-26 13:14:02 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 17:04:49 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: РњР°СЂРёСЏ
+surname: РњР°СЂРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 7
+login: vikkra
+password: pfg78g4XWX8NI4PXz6h+c/vw==
+name: Р’РёРєС‚РѕСЂРёСЏ
+surname: РљСЂР°С‚РѕРІР°
+role: CLIENT
+patronymic: РџРµС‚СЂРѕРІРЅР°
+e-mail: kratkovavikki@gmail.com
+phone: +375(44)789-41-78
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 8
+login: anastaissakis
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђРЅР°СЃС‚Р°СЃРёСЏ
+surname: РљРёСЃРµР»РµРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: akiseleva89@mail.ru
+phone: +375(29)698-25-63
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 10
+login: koblubov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р›СЋР±РѕРІСЊ
+surname: РљРѕР±Р»РѕРІР°
+role: CLIENT
+patronymic: Р”РјРёС‚СЂРёРµРІРЅР°
+e-mail: lkoblova@mail.ru
+phone: +375(29)784-11-67
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 12
+login: mishukova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЈР»СЊСЏРЅР°
+surname: РњРёС€СѓРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: umishukova@gmail.com
+phone: +375(29)814-35-65
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: efimenmarg
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: Р•С„РёРјРµРЅРєРѕ
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: efimenko@gmail.com
+phone: +375(29)215-15-80
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 9
+login: kirstepnov
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РљРёСЂРёР»Р»
+surname: РЎС‚РµРїРЅРѕРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: stepnovka@mail.ru
+phone: +375(29)259-47-16
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: andreev
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РР»СЊСЏ
+surname: РђРЅРґСЂРµРµРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: andreev@gmail.com
+phone: +375(44)655-15-78
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 14
+login: dimonmesh
+password: YFGjdu7d56ggy/wePXzb+py==
+name: Р”РјРёС‚СЂРёР№
+surname: РњРµС€РєРѕРІ
+role: CLIENT
+patronymic: РРІР°РЅРѕРІРёС‡
+e-mail: meshkov@gmail.com
+phone: +375(44)741-89-00
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 15
+login: fedorov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р•РІРіРµРЅРёР№
+surname: Р¤РµРґРѕСЂРѕРІ
+role: CLIENT
+patronymic: Р”РµРЅРёСЃРѕРІРёС‡
+e-mail: fedorov@gmail.com
+phone: +375(25)168-25-89
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 16
+login: popovaalex
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђР»РµРєСЃР°РЅРґСЂР°
+surname: РџРѕРїРѕРІР°
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: apopova@gmail.com
+phone: +375(29)789-05-49
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 17
+login: fedorshut
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЎРµСЂРіРµР№
+surname: РЁСѓС‚РѕРІ
+role: CLIENT
+patronymic: Р¤РµРґРѕСЂРѕРІРёС‡
+e-mail: sshutov@gmail.com
+phone: +375(29)158-15-78
+2022-03-26 17:04:50 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: РњР°СЂРёСЏ
+surname: РњР°СЂРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: РњР°СЂРёСЏ
+surname: РњР°СЂРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 7
+login: vikkra
+password: pfg78g4XWX8NI4PXz6h+c/vw==
+name: Р’РёРєС‚РѕСЂРёСЏ
+surname: РљСЂР°С‚РѕРІР°
+role: CLIENT
+patronymic: РџРµС‚СЂРѕРІРЅР°
+e-mail: kratkovavikki@gmail.com
+phone: +375(44)789-41-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 7
+login: vikkra
+password: pfg78g4XWX8NI4PXz6h+c/vw==
+name: Р’РёРєС‚РѕСЂРёСЏ
+surname: РљСЂР°С‚РѕРІР°
+role: CLIENT
+patronymic: РџРµС‚СЂРѕРІРЅР°
+e-mail: kratkovavikki@gmail.com
+phone: +375(44)789-41-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 8
+login: anastaissakis
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђРЅР°СЃС‚Р°СЃРёСЏ
+surname: РљРёСЃРµР»РµРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: akiseleva89@mail.ru
+phone: +375(29)698-25-63
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 8
+login: anastaissakis
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђРЅР°СЃС‚Р°СЃРёСЏ
+surname: РљРёСЃРµР»РµРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: akiseleva89@mail.ru
+phone: +375(29)698-25-63
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 10
+login: koblubov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р›СЋР±РѕРІСЊ
+surname: РљРѕР±Р»РѕРІР°
+role: CLIENT
+patronymic: Р”РјРёС‚СЂРёРµРІРЅР°
+e-mail: lkoblova@mail.ru
+phone: +375(29)784-11-67
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 10
+login: koblubov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р›СЋР±РѕРІСЊ
+surname: РљРѕР±Р»РѕРІР°
+role: CLIENT
+patronymic: Р”РјРёС‚СЂРёРµРІРЅР°
+e-mail: lkoblova@mail.ru
+phone: +375(29)784-11-67
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 12
+login: mishukova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЈР»СЊСЏРЅР°
+surname: РњРёС€СѓРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: umishukova@gmail.com
+phone: +375(29)814-35-65
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 12
+login: mishukova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЈР»СЊСЏРЅР°
+surname: РњРёС€СѓРєРѕРІР°
+role: CLIENT
+patronymic: РђР»РµРєСЃРµРµРІРЅР°
+e-mail: umishukova@gmail.com
+phone: +375(29)814-35-65
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: efimenmarg
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: Р•С„РёРјРµРЅРєРѕ
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: efimenko@gmail.com
+phone: +375(29)215-15-80
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: efimenmarg
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: Р•С„РёРјРµРЅРєРѕ
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: efimenko@gmail.com
+phone: +375(29)215-15-80
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 9
+login: kirstepnov
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РљРёСЂРёР»Р»
+surname: РЎС‚РµРїРЅРѕРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: stepnovka@mail.ru
+phone: +375(29)259-47-16
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 9
+login: kirstepnov
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РљРёСЂРёР»Р»
+surname: РЎС‚РµРїРЅРѕРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: stepnovka@mail.ru
+phone: +375(29)259-47-16
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: andreev
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РР»СЊСЏ
+surname: РђРЅРґСЂРµРµРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: andreev@gmail.com
+phone: +375(44)655-15-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 13
+login: andreev
+password: YFGjdu7d56ggy/wePXzb+py==
+name: РР»СЊСЏ
+surname: РђРЅРґСЂРµРµРІ
+role: CLIENT
+patronymic: РђР»РµРєСЃР°РЅРґСЂРѕРІРёС‡
+e-mail: andreev@gmail.com
+phone: +375(44)655-15-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 14
+login: dimonmesh
+password: YFGjdu7d56ggy/wePXzb+py==
+name: Р”РјРёС‚СЂРёР№
+surname: РњРµС€РєРѕРІ
+role: CLIENT
+patronymic: РРІР°РЅРѕРІРёС‡
+e-mail: meshkov@gmail.com
+phone: +375(44)741-89-00
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 14
+login: dimonmesh
+password: YFGjdu7d56ggy/wePXzb+py==
+name: Р”РјРёС‚СЂРёР№
+surname: РњРµС€РєРѕРІ
+role: CLIENT
+patronymic: РРІР°РЅРѕРІРёС‡
+e-mail: meshkov@gmail.com
+phone: +375(44)741-89-00
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 11
+login: potapova
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РњР°СЂРіР°СЂРёС‚Р°
+surname: РџРѕС‚Р°РїРѕРІР°
+role: CLIENT
+patronymic: РњР°СЂРєРѕРІРЅР°
+e-mail: potapovamargo@gmail.com
+phone: +375(44)588-20-87
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 15
+login: fedorov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р•РІРіРµРЅРёР№
+surname: Р¤РµРґРѕСЂРѕРІ
+role: CLIENT
+patronymic: Р”РµРЅРёСЃРѕРІРёС‡
+e-mail: fedorov@gmail.com
+phone: +375(25)168-25-89
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 15
+login: fedorov
+password: qas64XWX8NI4PXz6h+b+yu==
+name: Р•РІРіРµРЅРёР№
+surname: Р¤РµРґРѕСЂРѕРІ
+role: CLIENT
+patronymic: Р”РµРЅРёСЃРѕРІРёС‡
+e-mail: fedorov@gmail.com
+phone: +375(25)168-25-89
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 16
+login: popovaalex
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђР»РµРєСЃР°РЅРґСЂР°
+surname: РџРѕРїРѕРІР°
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: apopova@gmail.com
+phone: +375(29)789-05-49
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 16
+login: popovaalex
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РђР»РµРєСЃР°РЅРґСЂР°
+surname: РџРѕРїРѕРІР°
+role: CLIENT
+patronymic: РЎРµСЂРіРµРµРІРЅР°
+e-mail: apopova@gmail.com
+phone: +375(29)789-05-49
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 17
+login: fedorshut
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЎРµСЂРіРµР№
+surname: РЁСѓС‚РѕРІ
+role: CLIENT
+patronymic: Р¤РµРґРѕСЂРѕРІРёС‡
+e-mail: sshutov@gmail.com
+phone: +375(29)158-15-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 17
+login: fedorshut
+password: qas64XWX8NI4PXz6h+b+yu==
+name: РЎРµСЂРіРµР№
+surname: РЁСѓС‚РѕРІ
+role: CLIENT
+patronymic: Р¤РµРґРѕСЂРѕРІРёС‡
+e-mail: sshutov@gmail.com
+phone: +375(29)158-15-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 17:23:59 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: РќР°С‚Р°Р»СЊСЏ
+surname: РђРЅРґСЂРµРµРІР°
+role: CLIENT
+patronymic: РќРёРєРѕР»Р°РµРІРЅР°
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:06:14 [main] DEBUG by.jwd.task07xmlparser.service.XMLValidation - xml file is not valid
+2022-03-26 20:06:14 [main] DEBUG by.jwd.task07xmlparser.service.XMLValidation - xml file is not valid
+2022-03-26 20:09:12 [main] DEBUG by.jwd.task07xmlparser.service.XMLValidation - xml file is not valid
+2022-03-26 20:09:12 [main] DEBUG by.jwd.task07xmlparser.service.XMLValidation - xml file is not valid
+2022-03-26 20:11:35 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:11:35 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:11:35 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:11:35 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:14:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:14:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:14:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:14:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:18:13 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:18:13 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:18:13 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:18:13 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:19:11 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:19:11 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:19:11 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:19:11 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:20:36 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:20:36 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 20:20:36 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 20:20:36 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:33:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:33:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:33:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:33:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:40:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:40:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:40:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:40:24 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:41:27 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:41:27 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:41:27 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:41:27 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:42:23 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:42:23 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:42:23 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:42:23 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:45:15 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:45:15 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:45:15 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:45:15 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:48:14 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:48:14 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:48:14 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:48:14 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:49:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:49:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:49:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:49:44 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:51:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:51:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:51:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:51:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:55:41 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:55:41 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:55:41 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:55:41 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:58:20 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:58:20 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 21:58:20 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 21:58:20 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:01:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:01:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:01:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:01:51 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:03:40 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:03:40 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:03:40 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:03:40 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:04:09 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:04:09 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:04:09 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:04:09 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:04:42 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:04:42 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:04:42 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:04:42 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:07:00 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:07:00 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:07:00 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:07:00 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:15:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:15:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:15:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:15:04 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:19:30 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:19:45 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:19:45 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:19:45 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:19:45 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:19:45 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:23:39 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Uas78XWK8NI4PXz6h+b/vw==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Uas78XWK8NI4PXz6h+b/vw==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Маркова
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Маркова
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Мария
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Мария
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Алексеевна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Алексеевна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content U0Tcja4XuTrc4I9sWAIr6w==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content U0Tcja4XuTrc4I9sWAIr6w==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Андреева
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Андреева
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Наталья
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Наталья
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Николаевна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Николаевна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:24:02 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Uas78XWK8NI4PXz6h+b/vw==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Uas78XWK8NI4PXz6h+b/vw==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Маркова
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Маркова
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Мария
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Мария
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Алексеевна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Алексеевна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content U0Tcja4XuTrc4I9sWAIr6w==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content U0Tcja4XuTrc4I9sWAIr6w==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Андреева
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Андреева
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Наталья
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Наталья
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Николаевна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Николаевна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:44 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.DomParserImpl - 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default {} + currentXmlTag
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of visit element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of client element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for client has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of patronymic element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of patronymic element has been completed {}, currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of client element has been completed{},currentClient
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of danceClass element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of schedule element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of time element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of time element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of duration element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of duration element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of group element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of title element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of title element has been completed+ currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of teacher element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of password element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of password element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of surname element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of surname element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of name element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of name element for teacher has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of dancestyle element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of dancestyle element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of teacher element has been completed {}, currentTeacher
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of group element has been completed {},currentGroup
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of schedule element has been completed {}, currentSchedule
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - start parsing of date element
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - tag content has been parsed {}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of danceClass element has been completed{}, currentDanceClass
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - parsing of visit element has been completed{}, currentVisit
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:32:54 [main] DEBUG by.jwd.task07xmlparser.service.VisitHandler - default end+ currentXmlTag
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Uas78XWK8NI4PXz6h+b/vw==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Uas78XWK8NI4PXz6h+b/vw==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Маркова
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Маркова
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Мария
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Мария
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Алексеевна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Алексеевна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content U0Tcja4XuTrc4I9sWAIr6w==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content U0Tcja4XuTrc4I9sWAIr6w==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Андреева
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Андреева
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Наталья
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Наталья
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Николаевна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Николаевна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - client element has been parsed 
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 18:00:00
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 60
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content group1
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content VLD1B6ane2DpKxt9PkIC9g==
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Павлова
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content Татьяна
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - teacher element has been parsed
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - 
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - group element has been parsed 
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - schedule element has been parsed 
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - text content 2022-03-14
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - danceClass element has been parsed 
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit element has been parsed 
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits
+2022-03-26 22:32:54 [main] DEBUG jwd.task07xmlparser.service.impl.StaxParserImpl - visit has been added to visits

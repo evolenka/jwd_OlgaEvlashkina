@@ -22,7 +22,7 @@ import by.jwd.task07xmlparser.entity.Visit;
 import by.jwd.task07xmlparser.entity.WeekDay;
 
 /**
- * Parsing of xml file by SAX parser
+ * Parsing of xml file with dance studio visits data by SAX parser
  * 
  * @author Evlashkina
  */

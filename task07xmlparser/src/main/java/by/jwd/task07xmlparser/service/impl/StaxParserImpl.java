@@ -29,7 +29,7 @@ import by.jwd.task07xmlparser.service.VisitXmlTag;
 import by.jwd.task07xmlparser.service.XMLValidation;
 
 /**
- * Parsing of xml file by STAX parser
+ * Parsing of xml file with dance studio visits data by STAX parser
  * 
  * @author Evlashkina
  */

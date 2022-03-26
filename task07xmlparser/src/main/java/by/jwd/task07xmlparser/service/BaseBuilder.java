@@ -5,6 +5,11 @@ import java.util.Set;
 
 import by.jwd.task07xmlparser.entity.Visit;
 
+/**
+ * Abstract class for parsing of xml file with dance studio visits data
+ * 
+ * @author Evlashkina
+ */
 
 public abstract class BaseBuilder {
 

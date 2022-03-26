@@ -37,7 +37,7 @@ import by.jwd.task07xmlparser.service.BaseBuilder;
 import by.jwd.task07xmlparser.service.XMLValidation;
 
 /**
- * Parsing of xml file by DOM parser
+ * Parsing of xml file with dance studio visits data by DOM parser
  * 
  * @author Evlashkina
  */

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-26T19:32:53Z" name="Default suite" finished-at="2022-03-26T19:32:54Z" duration-ms="560">
+    <groups>
+      <group name="service">
+        <method signature="DomParserTest.testDomParser([Ljava.lang.String;, java.util.Set)[pri:0, instance:by.jwd.task07xmlparser.DomParserTest@7b36aa0c]" name="testDomParser" class="by.jwd.task07xmlparser.DomParserTest"/>
+        <method signature="SaxParserTest.testSaxParser([Ljava.lang.String;, java.util.Set)[pri:0, instance:by.jwd.task07xmlparser.SaxParserTest@e350b40]" name="testSaxParser" class="by.jwd.task07xmlparser.SaxParserTest"/>
+        <method signature="StaxParserTest.testStaxParser([Ljava.lang.String;, java.util.Set)[pri:0, instance:by.jwd.task07xmlparser.StaxParserTest@f09733f]" name="testStaxParser" class="by.jwd.task07xmlparser.StaxParserTest"/>
+      </group> <!-- service -->
+    </groups>
+    <test started-at="2022-03-26T19:32:53Z" name="Default test" finished-at="2022-03-26T19:32:54Z" duration-ms="560">
+      <class name="by.jwd.task07xmlparser.DomParserTest">
+        <test-method signature="testDomParser([Ljava.lang.String;, java.util.Set)[pri:0, instance:by.jwd.task07xmlparser.DomParserTest@7b36aa0c]" started-at="2022-03-26T22:32:54Z" name="testDomParser" data-provider="domParser" finished-at="2022-03-26T22:32:54Z" duration-ms="101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3bd7f8dc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED], 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=PLANNED]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDomParser -->
+      </class> <!-- by.jwd.task07xmlparser.DomParserTest -->
+      <class name="by.jwd.task07xmlparser.SaxParserTest">
+        <test-method signature="testSaxParser([Ljava.lang.String;, java.util.Set)[pri:0, instance:by.jwd.task07xmlparser.SaxParserTest@e350b40]" started-at="2022-03-26T22:32:54Z" name="testSaxParser" data-provider="saxParser" finished-at="2022-03-26T22:32:54Z" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@2f2bf0e2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED], 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=PLANNED]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaxParser -->
+      </class> <!-- by.jwd.task07xmlparser.SaxParserTest -->
+      <class name="by.jwd.task07xmlparser.StaxParserTest">
+        <test-method signature="testStaxParser([Ljava.lang.String;, java.util.Set)[pri:0, instance:by.jwd.task07xmlparser.StaxParserTest@f09733f]" started-at="2022-03-26T22:32:54Z" name="testStaxParser" data-provider="staxParser" finished-at="2022-03-26T22:32:54Z" duration-ms="24" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1eba372c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED], 
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: null, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStaxParser -->
+      </class> <!-- by.jwd.task07xmlparser.StaxParserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<visits xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://jwd.by/task07xmlparser/visits"
+	xsi:schemaLocation="http://jwd.by/task07xmlparser/visits visits.xsd">
+	<visit id="1">
+		<client id = "5" login="MARKOVA" role="CLIENT" email="markovamarialex@gmail.com">
+			<password>Uas78XWK8NI4PXz6h+b/vw==</password>
+			<surname>Маркова</surname>
+			<name>Мария</name>
+			<patronymic>Алексеевна</patronymic>
+		</client>
+		<danceClass id = "1">
+			<schedule id = "1" weekDay="MONDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "1" level="BEG">
+					<title>group1</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+	<visit id="2" status="ATTENDED">
+		<client id = "6" login="nataliana" role="CLIENT" phone = "+375(44)789-41-78" email="nnandreeva85@mail.ru">
+			<password>U0Tcja4XuTrc4I9sWAIr6w==</password>
+			<surname>Андреева</surname>
+			<name>Наталья</name>
+			<patronymic>Николаевна</patronymic>
+		</client>
+		<danceClass id = "1">
+			<schedule id = "1" weekDay="MONDAY">
+				<time>18:00:00</time>
+				<duration>60</duration>
+				<group id = "1" level="BEG">
+					<title>group1</title>
+					<teacher id = "2" login="tpavlova" role="TEACHER">
+						<password>VLD1B6ane2DpKxt9PkIC9g==</password>
+						<surname>Павлова</surname>
+						<name>Татьяна</name>
+						<danceStyle>contemporary</danceStyle>
+					</teacher>
+				</group>
+			</schedule>
+			<date>2022-03-14</date>
+		</danceClass>
+	</visit>
+</visits>
