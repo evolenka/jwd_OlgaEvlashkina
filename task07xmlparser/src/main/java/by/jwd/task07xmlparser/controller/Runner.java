@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.task07xmlparser.service.BaseBuilder;
 import by.jwd.task07xmlparser.service.BuildFactory;
+import by.jwd.task07xmlparser.service.ServiceException;
 import by.jwd.task07xmlparser.view.Input;
 import by.jwd.task07xmlparser.view.Output;
 
@@ -29,8 +30,8 @@ public class Runner {
 			String res = builder.getVisits().toString();
 			output.print(res);
 
-		} catch (NullPointerException | IOException e1) {
-			logger.error("incorrect input");
+		} catch (ServiceException| NullPointerException | IOException e1) {
+			logger.error("incorrect input or parsing error");
 		}
 	}
 }

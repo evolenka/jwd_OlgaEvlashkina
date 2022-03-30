@@ -9,7 +9,7 @@ public class Client extends User {
 
 	public Client() {
 		setRole(Role.CLIENT);
-	};
+	}
 
 	public Client(int id) {
 		super(id);

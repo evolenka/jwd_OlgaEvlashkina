@@ -6,14 +6,14 @@
 <html lang="en-us">
 <head>
 <title>Visits</title>
-<link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="css/style.css">
+<c:url value="favicon.ico" var="icon" />
+<link rel="icon" href="<c:out value="${ icon }"/>">
+<c:url value="css/style.css" var="stylesheet" />
+<link rel="stylesheet" href="<c:out value="${ stylesheet }"/>">
 </head>
 <body>
-	<img src="img/banner.jpg" alt="dance">
-	<c:url value="index.jsp" var="home" />
-	<br>
-	<a href="<c:out value="${ home }"/>">BACK</a>
+	<c:url value="img/banner.jpg" var="img" />
+	<img src="<c:out value="${ img }" />" alt="dance">
 	<h1>Dance studio visits</h1>
 	<table>
 		<tr>

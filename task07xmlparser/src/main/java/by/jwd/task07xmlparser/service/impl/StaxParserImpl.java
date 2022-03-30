@@ -25,6 +25,7 @@ import by.jwd.task07xmlparser.entity.Teacher;
 import by.jwd.task07xmlparser.entity.Visit;
 import by.jwd.task07xmlparser.entity.WeekDay;
 import by.jwd.task07xmlparser.service.BaseBuilder;
+import by.jwd.task07xmlparser.service.ServiceException;
 import by.jwd.task07xmlparser.service.VisitXmlTag;
 import by.jwd.task07xmlparser.service.XMLValidation;
 
@@ -45,10 +46,9 @@ public class StaxParserImpl extends BaseBuilder {
 	}
 
 	@Override
-	public void buildSetVisits(String filename, String xsdFile) {
+	public void buildSetVisits(String filename, String xsdFile) throws ServiceException {
 
 		XMLValidation validation = new XMLValidation();
-
 		validation.isValid(filename, xsdFile);
 
 		XMLStreamReader reader;
@@ -72,6 +72,7 @@ public class StaxParserImpl extends BaseBuilder {
 			}
 		} catch (XMLStreamException | IOException e) {
 			logger.debug("XMLStreamExceptionvisit or IOException has been catched");
+			throw new ServiceException ();
 		}
 
 		visits = getVisits();
@@ -93,7 +94,7 @@ public class StaxParserImpl extends BaseBuilder {
 				case CLIENT -> visit.setClient(buildClient(reader));
 				case DANCECLASS -> visit.setDanceClass(buildDanceClass(reader));
 				default -> throw new IllegalArgumentException(
-						"Unexpected value: " + VisitXmlTag.valueOf(name.toUpperCase()));
+						"Unexpected value: {}" + VisitXmlTag.valueOf(name.toUpperCase()));
 				}
 			}
 
@@ -131,7 +132,7 @@ public class StaxParserImpl extends BaseBuilder {
 				case PATRONYMIC -> client.setPatronymic(getXMLText(reader));
 				case PASSWORD -> client.setPassword(getXMLText(reader));
 				default -> throw new IllegalArgumentException(
-						"Unexpected value: " + VisitXmlTag.valueOf(name.toUpperCase()));
+						"Unexpected value: {}" + VisitXmlTag.valueOf(name.toUpperCase()));
 				}
 			}
 
@@ -167,7 +168,7 @@ public class StaxParserImpl extends BaseBuilder {
 					}
 				}
 				default -> throw new IllegalArgumentException(
-						"Unexpected value: " + VisitXmlTag.valueOf(name.toUpperCase()));
+						"Unexpected value: {} " + VisitXmlTag.valueOf(name.toUpperCase()));
 				}
 				break;
 
@@ -204,7 +205,7 @@ public class StaxParserImpl extends BaseBuilder {
 				case DURATION -> schedule.setDuration(Integer.parseInt(getXMLText(reader)));
 				case GROUP -> schedule.setGroup(buildGroup(reader));
 				default -> throw new IllegalArgumentException(
-						"Unexpected value: " + VisitXmlTag.valueOf(name.toUpperCase()));
+						"Unexpected value: {}" + VisitXmlTag.valueOf(name.toUpperCase()));
 				}
 			} else if (type == XMLStreamConstants.END_ELEMENT) {
 				name = reader.getLocalName();
@@ -232,7 +233,7 @@ public class StaxParserImpl extends BaseBuilder {
 				case TITLE -> group.setTitle(getXMLText(reader));
 				case TEACHER -> group.setTeacher(buildTeacher(reader));
 				default -> throw new IllegalArgumentException(
-						"Unexpected value: " + VisitXmlTag.valueOf(name.toUpperCase()));
+						"Unexpected value: {} " + VisitXmlTag.valueOf(name.toUpperCase()));
 				}
 			} else if (type == XMLStreamConstants.END_ELEMENT) {
 				name = reader.getLocalName();

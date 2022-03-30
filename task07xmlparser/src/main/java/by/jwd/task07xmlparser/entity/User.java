@@ -111,4 +111,4 @@ public class User extends Entity {
 		sb.append("\nrole: ").append(role);
 		return sb.toString();
 	}
-}
+} 

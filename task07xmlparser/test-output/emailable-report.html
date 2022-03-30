@@ -31,21 +31,44 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0,6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
 <tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">by.jwd.task07xmlparser.DomParserTest</td><td><a href="#m1"><b>testDomParser</b> (service) </a></td><td class="numi">1</td><td>1648323174238</td><td class="numi">101</td></tr>
-<tr class="passedeven"><td rowspan="1">by.jwd.task07xmlparser.SaxParserTest</td><td><a href="#m2"><b>testSaxParser</b> (service) </a></td><td class="numi">1</td><td>1648323174341</td><td class="numi">34</td></tr>
-<tr class="passedodd"><td rowspan="1">by.jwd.task07xmlparser.StaxParserTest</td><td><a href="#m3"><b>testStaxParser</b> (service) </a></td><td class="numi">1</td><td>1648323174377</td><td class="numi">24</td></tr>
+<tr class="passedodd"><td rowspan="1">by.jwd.task07xmlparser.DomParserTest</td><td><a href="#m1"><b>testDomParser</b> (service) </a></td><td class="numi">1</td><td>1648664335455</td><td class="numi">95</td></tr>
+<tr class="passedeven"><td rowspan="1">by.jwd.task07xmlparser.SaxParserTest</td><td><a href="#m2"><b>testSaxParser</b> (service) </a></td><td class="numi">1</td><td>1648664335552</td><td class="numi">34</td></tr>
+<tr class="passedodd"><td rowspan="1">by.jwd.task07xmlparser.StaxParserTest</td><td><a href="#m3"><b>testStaxParser</b> (service) </a></td><td class="numi">1</td><td>1648664335588</td><td class="numi">22</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">by.jwd.task07xmlparser.StaxParserTest:testStaxParser</h2>
+<h2 id="m1">by.jwd.task07xmlparser.SaxParserTest:testSaxParser</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>[testResourses/visitsTest.xml, testResourses/visits.xsd]</td>
 <td>[
+Visit [id=1, client=
+Client:
+
+id: 5
+login: MARKOVA
+password: Uas78XWK8NI4PXz6h+b/vw==
+name: Мария
+surname: Маркова
+role: CLIENT
+patronymic: Алексеевна
+e-mail: markovamarialex@gmail.com
+phone: -, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=PLANNED], 
 Visit [id=2, client=
 Client:
 
@@ -68,7 +91,15 @@ password: VLD1B6ane2DpKxt9PkIC9g==
 name: Татьяна
 surname: Павлова
 role: TEACHER
-dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED], 
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">by.jwd.task07xmlparser.StaxParserTest:testStaxParser</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[testResourses/visitsTest.xml, testResourses/visits.xsd]</td>
+<td>[
 Visit [id=1, client=
 Client:
 
@@ -91,15 +122,7 @@ password: VLD1B6ane2DpKxt9PkIC9g==
 name: Татьяна
 surname: Павлова
 role: TEACHER
-dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null]]</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">by.jwd.task07xmlparser.SaxParserTest:testSaxParser</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>[testResourses/visitsTest.xml, testResourses/visits.xsd]</td>
-<td>[
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=null], 
 Visit [id=2, client=
 Client:
 
@@ -122,30 +145,7 @@ password: VLD1B6ane2DpKxt9PkIC9g==
 name: Татьяна
 surname: Павлова
 role: TEACHER
-dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED], 
-Visit [id=1, client=
-Client:
-
-id: 5
-login: MARKOVA
-password: Uas78XWK8NI4PXz6h+b/vw==
-name: Мария
-surname: Маркова
-role: CLIENT
-patronymic: Алексеевна
-e-mail: markovamarialex@gmail.com
-phone: -, danceClass=
-DanceClass [id=1, schedule=
-Schedule [id=1, weekday=MONDAY, time=18:00, group=
-Group [id=1, teacher=
-Teacher:
-id: 2
-login: tpavlova
-password: VLD1B6ane2DpKxt9PkIC9g==
-name: Татьяна
-surname: Павлова
-role: TEACHER
-dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=PLANNED]]</td>
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]]</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
@@ -154,29 +154,6 @@ dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.202
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>[testResourses/visitsTest.xml, testResourses/visits.xsd]</td>
 <td>[
-Visit [id=2, client=
-Client:
-
-id: 6
-login: nataliana
-password: U0Tcja4XuTrc4I9sWAIr6w==
-name: Наталья
-surname: Андреева
-role: CLIENT
-patronymic: Николаевна
-e-mail: nnandreeva85@mail.ru
-phone: +375(44)789-41-78, danceClass=
-DanceClass [id=1, schedule=
-Schedule [id=1, weekday=MONDAY, time=18:00, group=
-Group [id=1, teacher=
-Teacher:
-id: 2
-login: tpavlova
-password: VLD1B6ane2DpKxt9PkIC9g==
-name: Татьяна
-surname: Павлова
-role: TEACHER
-dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED], 
 Visit [id=1, client=
 Client:
 
@@ -199,7 +176,30 @@ password: VLD1B6ane2DpKxt9PkIC9g==
 name: Татьяна
 surname: Павлова
 role: TEACHER
-dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=PLANNED]]</td>
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=PLANNED], 
+Visit [id=2, client=
+Client:
+
+id: 6
+login: nataliana
+password: U0Tcja4XuTrc4I9sWAIr6w==
+name: Наталья
+surname: Андреева
+role: CLIENT
+patronymic: Николаевна
+e-mail: nnandreeva85@mail.ru
+phone: +375(44)789-41-78, danceClass=
+DanceClass [id=1, schedule=
+Schedule [id=1, weekday=MONDAY, time=18:00, group=
+Group [id=1, teacher=
+Teacher:
+id: 2
+login: tpavlova
+password: VLD1B6ane2DpKxt9PkIC9g==
+name: Татьяна
+surname: Павлова
+role: TEACHER
+dancestyle: contemporary, title=group1, level=BEG], duration=60], date=14.03.2022], status=ATTENDED]]</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>

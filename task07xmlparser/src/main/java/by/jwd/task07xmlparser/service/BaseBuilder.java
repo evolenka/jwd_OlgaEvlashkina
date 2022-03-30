@@ -27,5 +27,5 @@ public abstract class BaseBuilder {
 		return visits;
 	}
 
-	public abstract void buildSetVisits(String filename, String xsdFile);
+	public abstract void buildSetVisits(String filename, String xsdFile) throws ServiceException;
 }

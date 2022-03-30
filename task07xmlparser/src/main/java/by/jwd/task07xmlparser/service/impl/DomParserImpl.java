@@ -34,6 +34,7 @@ import by.jwd.task07xmlparser.entity.Teacher;
 import by.jwd.task07xmlparser.entity.Visit;
 import by.jwd.task07xmlparser.entity.WeekDay;
 import by.jwd.task07xmlparser.service.BaseBuilder;
+import by.jwd.task07xmlparser.service.ServiceException;
 import by.jwd.task07xmlparser.service.XMLValidation;
 
 /**
@@ -46,8 +47,6 @@ public class DomParserImpl extends BaseBuilder {
 
 	static Logger logger = LogManager.getLogger(DomParserImpl.class);
 
-	private DocumentBuilder docBuilder;
-
 	public DomParserImpl() {
 		visits = new HashSet<>();
 	}
@@ -57,7 +56,7 @@ public class DomParserImpl extends BaseBuilder {
 	}
 
 	@Override
-	public void buildSetVisits(String filename, String xsdFile) {
+	public void buildSetVisits(String filename, String xsdFile) throws ServiceException {
 
 		XMLValidation validation = new XMLValidation();
 		validation.isValid(filename, xsdFile);
@@ -73,10 +72,11 @@ public class DomParserImpl extends BaseBuilder {
 			factory.setValidating(false);
 			factory.setSchema(schema);
 
-			docBuilder = factory.newDocumentBuilder();
+			DocumentBuilder docBuilder = factory.newDocumentBuilder();
 			Document doc = docBuilder.parse(filename);
 
 			Element root = doc.getDocumentElement();
+			
 			// getting a list of <visit> child elements
 			NodeList visitList = root.getElementsByTagName("visit");
 			for (int i = 0; i < visitList.getLength(); i++) {
@@ -84,14 +84,13 @@ public class DomParserImpl extends BaseBuilder {
 				Visit visit = buildVisit(visitElement);
 				visits.add(visit);
 			}
-		} catch (SAXException |
-
-				IOException | ParserConfigurationException e) {
-			e.printStackTrace();
+		} catch (SAXException |	IOException | ParserConfigurationException e) {
+			logger.error("error has been found while parsing xml by SAXParser");
+			throw new ServiceException ();
 		}
 	}
 
-	private Visit buildVisit(Element visitElement) {
+	private Visit buildVisit(Element visitElement) throws ServiceException {
 		Visit visit = new Visit();
 
 		visit.setId(Integer.parseInt(visitElement.getAttribute("id")));
@@ -103,6 +102,7 @@ public class DomParserImpl extends BaseBuilder {
 		if (visitElement.hasAttribute("status")) {
 			visit.setStatus(Status.valueOf(visitElement.getAttribute("status")));
 		}
+		logger.debug("visit element has been parsed");
 		return visit;
 	}
 
@@ -121,12 +121,12 @@ public class DomParserImpl extends BaseBuilder {
 		if (clientElement.hasAttribute("phone")) {
 			client.setPhone(clientElement.getAttribute("phone"));
 		}
-		logger.debug(client);
+		logger.debug("client element has been parsed {}", client);
 		return client;
 
 	}
 
-	private DanceClass buildDanceClass(Element danceClassElement) {
+	private DanceClass buildDanceClass(Element danceClassElement) throws ServiceException {
 		DanceClass danceClass = new DanceClass();
 		danceClass.setId(Integer.parseInt(danceClassElement.getAttribute("id")));
 		Element scheduleElement = (Element) danceClassElement.getElementsByTagName("schedule").item(0);
@@ -137,11 +137,13 @@ public class DomParserImpl extends BaseBuilder {
 			danceClass.setDate(date);
 		} catch (ParseException e) {
 			logger.error("error has bee found while parsing date of the danceClass");
+			throw new ServiceException ();
 		}
+		logger.debug("danceClass element has been parsed");
 		return danceClass;
 	}
 
-	private Schedule buildSchedule(Element scheduleElement) {
+	private Schedule buildSchedule(Element scheduleElement) throws ServiceException {
 		Schedule schedule = new Schedule();
 		schedule.setId(Integer.parseInt(scheduleElement.getAttribute("id")));
 		schedule.setWeekDay(WeekDay.valueOf(scheduleElement.getAttribute("weekDay")));
@@ -152,9 +154,11 @@ public class DomParserImpl extends BaseBuilder {
 			schedule.setTime(time);
 		} catch (ParseException e) {
 			logger.error("error has bee found while parsing time of the danceClass");
+			throw new ServiceException ();
 		}
 		Element groupElement = (Element) scheduleElement.getElementsByTagName("group").item(0);
 		schedule.setGroup(buildGroup(groupElement));
+		logger.debug("schedule element has been parsed");
 		return schedule;
 	}
 
@@ -165,6 +169,7 @@ public class DomParserImpl extends BaseBuilder {
 		group.setLevel(Level.valueOf(groupElement.getAttribute("level")));
 		Element teacherElement = (Element) groupElement.getElementsByTagName("teacher").item(0);
 		group.setTeacher(buildTeacher(teacherElement));
+		logger.debug("group element has been parsed");
 		return group;
 	}
 
@@ -177,6 +182,7 @@ public class DomParserImpl extends BaseBuilder {
 		teacher.setName(getElementTextContent(teacherElement, "name"));
 		teacher.setSurname(getElementTextContent(teacherElement, "surname"));
 		teacher.setDanceStyle(getElementTextContent(teacherElement, "danceStyle"));
+		logger.debug("teacher element has been parsed");
 		return teacher;
 	}
 

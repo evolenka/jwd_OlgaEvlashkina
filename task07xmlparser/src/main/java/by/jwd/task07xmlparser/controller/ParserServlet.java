@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.task07xmlparser.service.BaseBuilder;
 import by.jwd.task07xmlparser.service.BuildFactory;
+import by.jwd.task07xmlparser.service.ServiceException;
 
 @WebServlet("/start")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
@@ -61,7 +62,11 @@ public class ParserServlet extends HttpServlet {
 			logger.debug("type {}", type);
 			BaseBuilder builder = BuildFactory.createParser(type);
 
-			builder.buildSetVisits(uploadPath + File.separator + fileName, uploadPath + File.separator + xsdFile);
+			try {
+				builder.buildSetVisits(uploadPath + File.separator + fileName, uploadPath + File.separator + xsdFile);
+			} catch (ServiceException e) {
+				logger.error("parsing error");
+			}
 
 			request.setAttribute("visits", builder.getVisits());
 

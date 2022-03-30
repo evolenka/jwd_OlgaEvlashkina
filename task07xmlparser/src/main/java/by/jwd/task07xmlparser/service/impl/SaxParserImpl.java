@@ -19,6 +19,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
 import by.jwd.task07xmlparser.service.BaseBuilder;
+import by.jwd.task07xmlparser.service.ServiceException;
 import by.jwd.task07xmlparser.service.VisitErrorHandler;
 import by.jwd.task07xmlparser.service.VisitHandler;
 import by.jwd.task07xmlparser.service.XMLValidation;
@@ -37,7 +38,6 @@ public class SaxParserImpl extends BaseBuilder {
 	private static String constant = XMLConstants.W3C_XML_SCHEMA_NS_URI;
 
 	private VisitHandler handler;
-	private XMLReader reader;
 	private SchemaFactory xsdFactory;
 
 	public SaxParserImpl() {
@@ -46,7 +46,7 @@ public class SaxParserImpl extends BaseBuilder {
 	}
 
 	@Override
-	public void buildSetVisits(String filename, String xsdFile) {
+	public void buildSetVisits(String filename, String xsdFile) throws ServiceException {
 
 		XMLValidation validation = new XMLValidation();
 		validation.isValid(filename, xsdFile);
@@ -61,13 +61,14 @@ public class SaxParserImpl extends BaseBuilder {
 			factory.setSchema(schema);
 
 			SAXParser saxParser = factory.newSAXParser();
-			reader = saxParser.getXMLReader();
+			XMLReader reader = saxParser.getXMLReader();
 			reader.setErrorHandler(new VisitErrorHandler("app.log"));
 			reader.setContentHandler(handler);
 			reader.parse(filename);
 
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			logger.error("error has been found while parsing xml by SAXParser");
+			throw new ServiceException ();
 		}
 
 		visits = handler.getVisits();
