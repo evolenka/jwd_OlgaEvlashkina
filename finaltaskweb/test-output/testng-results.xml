@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-02T08:14:20Z" name="Default suite" finished-at="2022-04-02T08:14:21Z" duration-ms="518">
+    <groups>
+      <group name="dao">
+        <method signature="ReadAllTest.testReadAll()[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadAllTest@5b64c4b7]" name="testReadAll" class="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadAllTest"/>
+        <method signature="ReadByLevelTest.testReadByLevel(by.jwd.finaltaskweb.entity.Level, java.util.List)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByLevelTest@7bc10d84]" name="testReadByLevel" class="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByLevelTest"/>
+        <method signature="ReadByTeacherTest.testReadByTeacher(java.lang.Integer, java.util.List)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByTeacherTest@72445aba]" name="testReadByTeacher" class="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByTeacherTest"/>
+        <method signature="ReadEntityByIdTest.testReadById(java.lang.Integer, by.jwd.finaltaskweb.entity.Group)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest@4763c727]" name="testReadById" class="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest"/>
+      </group> <!-- dao -->
+    </groups>
+    <test started-at="2022-04-02T08:14:20Z" name="Default test" finished-at="2022-04-02T08:14:21Z" duration-ms="518">
+      <class name="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByLevelTest">
+        <test-method signature="testReadByLevel(by.jwd.finaltaskweb.entity.Level, java.util.List)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByLevelTest@7bc10d84]" started-at="2022-04-02T11:14:20Z" name="testReadByLevel" data-provider="ReadByLevel" finished-at="2022-04-02T11:14:20Z" duration-ms="165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BEG]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[
+Group:
+id: 1
+title: group1
+teacher: 
+Teacher:
+id: 2
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: [], 
+Group:
+id: 3
+title: group3
+teacher: 
+Teacher:
+id: 3
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: [], 
+Group:
+id: 5
+title: group5
+teacher: 
+Teacher:
+id: 4
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: [], 
+Group:
+id: 7
+title: group7
+teacher: 
+Teacher:
+id: 5
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: []]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadByLevel -->
+        <test-method signature="testReadByLevel(by.jwd.finaltaskweb.entity.Level, java.util.List)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByLevelTest@7bc10d84]" started-at="2022-04-02T11:14:20Z" name="testReadByLevel" data-provider="ReadByLevel" finished-at="2022-04-02T11:14:20Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PRO]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[
+Group:
+id: 2
+title: group2
+teacher: 
+Teacher:
+id: 2
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: PRO
+schedule: [], 
+Group:
+id: 4
+title: group4
+teacher: 
+Teacher:
+id: 3
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: PRO
+schedule: [], 
+Group:
+id: 6
+title: group6
+teacher: 
+Teacher:
+id: 4
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: PRO
+schedule: []]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadByLevel -->
+      </class> <!-- test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByLevelTest -->
+      <class name="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadAllTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadAllTest@5b64c4b7]" started-at="2022-04-02T11:14:20Z" name="beforeTest" finished-at="2022-04-02T11:14:20Z" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByLevelTest@7bc10d84]" started-at="2022-04-02T11:14:20Z" name="beforeTest" finished-at="2022-04-02T11:14:20Z" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByTeacherTest@72445aba]" started-at="2022-04-02T11:14:20Z" name="beforeTest" finished-at="2022-04-02T11:14:20Z" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest@4763c727]" started-at="2022-04-02T11:14:20Z" name="beforeTest" finished-at="2022-04-02T11:14:20Z" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="testReadAll()[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadAllTest@5b64c4b7]" started-at="2022-04-02T11:14:20Z" name="testReadAll" description="readAll" finished-at="2022-04-02T11:14:20Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadAll -->
+      </class> <!-- test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadAllTest -->
+      <class name="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest">
+        <test-method signature="testReadById(java.lang.Integer, by.jwd.finaltaskweb.entity.Group)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest@4763c727]" started-at="2022-04-02T11:14:20Z" name="testReadById" data-provider="ReadById" finished-at="2022-04-02T11:14:20Z" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[
+Group:
+id: 1
+title: group1
+teacher: 
+Teacher:
+id: 2
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: []]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadById -->
+        <test-method signature="testReadById(java.lang.Integer, by.jwd.finaltaskweb.entity.Group)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest@4763c727]" started-at="2022-04-02T11:14:20Z" name="testReadById" data-provider="ReadById" finished-at="2022-04-02T11:14:20Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[
+Group:
+id: 2
+title: group2
+teacher: 
+Teacher:
+id: 2
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: PRO
+schedule: []]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadById -->
+        <test-method signature="testReadById(java.lang.Integer, by.jwd.finaltaskweb.entity.Group)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest@4763c727]" started-at="2022-04-02T11:14:20Z" name="testReadById" data-provider="ReadById" finished-at="2022-04-02T11:14:20Z" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[
+Group:
+id: 3
+title: group3
+teacher: 
+Teacher:
+id: 3
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: []]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadById -->
+      </class> <!-- test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadEntityByIdTest -->
+      <class name="test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByTeacherTest">
+        <test-method signature="testReadByTeacher(java.lang.Integer, java.util.List)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByTeacherTest@72445aba]" started-at="2022-04-02T11:14:20Z" name="testReadByTeacher" data-provider="ReadByTeacher" finished-at="2022-04-02T11:14:21Z" duration-ms="35" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[
+Group:
+id: 3
+title: group3
+teacher: 
+Teacher:
+id: 3
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: [], 
+Group:
+id: 4
+title: group4
+teacher: 
+Teacher:
+id: 3
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: PRO
+schedule: []]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadByTeacher -->
+        <test-method signature="testReadByTeacher(java.lang.Integer, java.util.List)[pri:0, instance:test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByTeacherTest@72445aba]" started-at="2022-04-02T11:14:21Z" name="testReadByTeacher" data-provider="ReadByTeacher" finished-at="2022-04-02T11:14:21Z" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[
+Group:
+id: 7
+title: group7
+teacher: 
+Teacher:
+id: 5
+login: null
+password: null
+name: null
+surname: null
+role: TEACHER
+dancestyle: null
+portfolio: null[]
+level: BEG
+schedule: []]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadByTeacher -->
+      </class> <!-- test.by.jwd.finaltaskweb.dao.suite.groupdao.ReadByTeacherTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
