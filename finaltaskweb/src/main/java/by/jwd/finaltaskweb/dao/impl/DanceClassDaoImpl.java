@@ -1,6 +1,5 @@
 package by.jwd.finaltaskweb.dao.impl;
 
-import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,13 +12,13 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.jwd.finaltaskweb.dao.ConnectionPool;
 import by.jwd.finaltaskweb.dao.DanceClassDao;
 import by.jwd.finaltaskweb.dao.DaoException;
+import by.jwd.finaltaskweb.dao.StudioDaoImpl;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Schedule;
 
-public class DanceClassDaoImpl implements DanceClassDao {
+public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 
 	static Logger logger = LogManager.getLogger(DanceClassDaoImpl.class);
 
@@ -27,33 +26,21 @@ public class DanceClassDaoImpl implements DanceClassDao {
 
 	private static final String SQL_SELECT_BY_ID = "SELECT danceclass.schedule_id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.id = ?";
 
-	private static final String SQL_SELECT_ACTIVE_BY_SCHEDULE = "SELECT danceclass.id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.schedule_id= ? AND danceclass.is_active = TRUE AND danceclass.date > СURRENT_DATE";
+	private static final String SQL_SELECT_ACTIVE_BY_SCHEDULE = "SELECT danceclass.id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.schedule_id= ? AND danceclass.is_active = TRUE AND danceclass.date >= CURRENT_DATE()";
 
 	private static final String SQL_SELECT_BY_SCHEDULE = "SELECT danceclass.id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.schedule_id= ?";
 
 	private static final String SQL_SELECT_ACTIVE_BY_DATE = "SELECT danceclass.id, danceclass.schedule_id, danceclass.is_active FROM `danceclass` WHERE danceclass.date = ? AND danceclass.is_active = TRUE";
 
 	private static final String SQL_SELECT_BY_DATE_AND_SCHEDULE = "SELECT danceclass.id, danceclass.is_active FROM `danceclass` WHERE danceclass.date = ? AND danceclass.schedule_id = ?";
-	
-	private static final String SQL_SELECT_BY_PERIOD = "SELECT danceclass.id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.date >= ? AND danceclass.date <= ?";
-	
-	private static final String SQL_INSERT_DANCECLASS = "INSERT INTO danceclass (schedule_id, date) VALUES (?, ?)";
+
+	private static final String SQL_SELECT_BY_PERIOD = "SELECT danceclass.id, danceclass.schedule_id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.date >= ? AND danceclass.date <= ?";
+
+	private static final String SQL_INSERT_DANCECLASS = "INSERT INTO danceclass (schedule_id, date, is_active) VALUES (?, ?, ?)";
 
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM group WHERE id = ?";
 
-	private static final String SQL_UPDATE_DANCECLASS = "UPDATE group SET schedule_id = ?, date = ? danceclass.is_active = ? WHERE id = ?";
-
-	private Connection connection;
-
-	ConnectionPool pool = ConnectionPool.getInstance();
-
-	public DanceClassDaoImpl() {
-		try {
-			connection = pool.getConnection();
-		} catch (DaoException e) {
-			logger.error("It is impossible to connect to a database", e);
-		}
-	}
+	private static final String SQL_UPDATE_DANCECLASS = "UPDATE group SET schedule_id = ?, date = ? is_active = ? WHERE id = ?";
 
 	@Override
 	public List<DanceClass> readAll() throws DaoException {
@@ -63,7 +50,6 @@ public class DanceClassDaoImpl implements DanceClassDao {
 		Statement statement = null;
 
 		try {
-
 			statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_DANCECLASSES);
 
@@ -71,7 +57,7 @@ public class DanceClassDaoImpl implements DanceClassDao {
 
 				DanceClass danceClass = new DanceClass(resultSet.getInt(1));
 				danceClass.setSchedule(new Schedule(resultSet.getInt(2)));
-				danceClass.setDate(resultSet.getDate(2).toLocalDate());
+				danceClass.setDate(resultSet.getDate(3).toLocalDate());
 				danceClass.setActive(resultSet.getBoolean(4));
 
 				danceClasses.add(danceClass);
@@ -80,12 +66,6 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
-
 		}
 		logger.debug("dance classes  have been read from db");
 		return danceClasses;
@@ -117,31 +97,26 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return danceClass;
 	}
 
 	@Override
-	public List<DanceClass> readActiveBySchedule(Integer scheduleId) throws DaoException {
+	public List<DanceClass> readActiveBySchedule(Schedule schedule) throws DaoException {
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		PreparedStatement statement = null;
 
 		try {
 			statement = connection.prepareStatement(SQL_SELECT_ACTIVE_BY_SCHEDULE);
-			statement.setInt(1, scheduleId);
+			statement.setInt(1, schedule.getId());
 
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
 				DanceClass danceClass = new DanceClass();
 				danceClass.setId(resultSet.getInt(1));
-				danceClass.setSchedule(new Schedule(scheduleId));
+				danceClass.setSchedule(new Schedule(schedule.getId()));
 				danceClass.setDate(resultSet.getDate(2).toLocalDate());
 				danceClass.setActive(resultSet.getBoolean(3));
 				danceClasses.add(danceClass);
@@ -152,32 +127,27 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return danceClasses;
 	}
-	
+
 	@Override
-	public List<DanceClass> readBySchedule(Integer scheduleId) throws DaoException {
-		
+	public List<DanceClass> readBySchedule(Schedule schedule) throws DaoException {
+
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		PreparedStatement statement = null;
 
 		try {
 			statement = connection.prepareStatement(SQL_SELECT_BY_SCHEDULE);
-			statement.setInt(1, scheduleId);
+			statement.setInt(1, schedule.getId());
 
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
 				DanceClass danceClass = new DanceClass();
 				danceClass.setId(resultSet.getInt(1));
-				danceClass.setSchedule(new Schedule(scheduleId));
+				danceClass.setSchedule(new Schedule(schedule.getId()));
 				danceClass.setDate(resultSet.getDate(2).toLocalDate());
 				danceClass.setActive(resultSet.getBoolean(3));
 				danceClasses.add(danceClass);
@@ -188,19 +158,13 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return danceClasses;
 	}
-	
 
 	@Override
 	public List<DanceClass> readActiveByDate(LocalDate date) throws DaoException {
-		
+
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		PreparedStatement statement = null;
@@ -225,18 +189,13 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return danceClasses;
 	}
-		
+
 	@Override
-	public DanceClass readByDateAndSchedule(LocalDate date, Integer scheduleId) throws DaoException {
-		
+	public DanceClass readByDateAndSchedule(LocalDate date, Schedule schedule) throws DaoException {
+
 		DanceClass danceClass = new DanceClass();
 
 		PreparedStatement statement = null;
@@ -244,18 +203,17 @@ public class DanceClassDaoImpl implements DanceClassDao {
 		try {
 			statement = connection.prepareStatement(SQL_SELECT_BY_DATE_AND_SCHEDULE);
 			statement.setDate(1, Date.valueOf(date));
-			statement.setInt(2, scheduleId);
+			statement.setInt(2, schedule.getId());
 
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
-				
-				
+
 				danceClass.setId(resultSet.getInt(1));
-				danceClass.setSchedule(new Schedule(scheduleId));
+				danceClass.setSchedule(new Schedule(schedule.getId()));
 				danceClass.setDate(date);
 				danceClass.setActive(resultSet.getBoolean(2));
-				
+
 				logger.debug("dance class have been read by date and schedule");
 			}
 
@@ -263,18 +221,13 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return danceClass;
 	}
-	
+
 	@Override
 	public List<DanceClass> readByPeriod(LocalDate startDate, LocalDate endDate) throws DaoException {
-		
+
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		PreparedStatement statement = null;
@@ -300,11 +253,6 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return danceClasses;
 	}
@@ -322,11 +270,6 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 
 		logger.debug("dance class has been deleted");
@@ -342,19 +285,15 @@ public class DanceClassDaoImpl implements DanceClassDao {
 			// if(!danceClass.getId()==null) {
 			statement = connection.prepareStatement(SQL_INSERT_DANCECLASS);
 			statement.setInt(1, danceClass.getSchedule().getId());
-			statement.setString(2, danceClass.getDate().toString());
-			
+			statement.setDate(2, Date.valueOf(danceClass.getDate()));
+			statement.setBoolean(3, danceClass.isActive());
+
 			statement.executeUpdate();
 			logger.debug("dance class has been created");
 		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return true;
 	}
@@ -365,21 +304,19 @@ public class DanceClassDaoImpl implements DanceClassDao {
 		PreparedStatement statement = null;
 
 		try {
-		
+
 			statement = connection.prepareStatement(SQL_UPDATE_DANCECLASS);
 			statement.setInt(1, danceClass.getSchedule().getId());
-			statement.setString(2, danceClass.getDate().toString());
+			statement.setDate(2, Date.valueOf(danceClass.getDate()));
 			statement.setBoolean(3, danceClass.isActive());
 			statement.executeUpdate();
 			close(statement);
 			logger.debug("dance class has been updated");
 
 		} catch (SQLException e) {
-
 			throw new DaoException();
 
 		} finally {
-
 			close(statement);
 		}
 		return true;

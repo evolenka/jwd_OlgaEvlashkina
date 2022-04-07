@@ -5,20 +5,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import by.jwd.finaltaskweb.dao.DaoException;
-import by.jwd.finaltaskweb.dao.DaoFactory;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.MembershipType;
 import by.jwd.finaltaskweb.service.MembershipService;
 import by.jwd.finaltaskweb.service.ServiceException;
+import by.jwd.finaltaskweb.service.StudioServiceImpl;
 
-public class MembershipServiceImpl implements MembershipService {
-
-	private DaoFactory factory = DaoFactory.getInstance();
+public class MembershipServiceImpl extends StudioServiceImpl implements MembershipService {
 
 	@Override
 	public boolean create(Membership membership) throws ServiceException {
 		try {
-			factory.getMembershipDao().create(membership);
+			transaction.createDaoFactory().getMembershipDao().create(membership);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
@@ -28,7 +28,9 @@ public class MembershipServiceImpl implements MembershipService {
 	@Override
 	public boolean update(Membership membership) throws ServiceException {
 		try {
-			factory.getMembershipDao().update(membership);
+			transaction.createDaoFactory().getMembershipDao().update(membership);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
@@ -38,7 +40,9 @@ public class MembershipServiceImpl implements MembershipService {
 	@Override
 	public boolean delete(Integer id) throws ServiceException {
 		try {
-			factory.getMembershipDao().delete(id);
+			transaction.createDaoFactory().getMembershipDao().delete(id);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
@@ -47,10 +51,11 @@ public class MembershipServiceImpl implements MembershipService {
 
 	@Override
 	public List<Membership> readAll() throws ServiceException {
-		
+
 		List<Membership> memberships = new ArrayList<>();
 		try {
-			memberships = factory.getMembershipDao().readAll();
+			memberships = transaction.createDaoFactory().getMembershipDao().readAll();
+			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -62,7 +67,8 @@ public class MembershipServiceImpl implements MembershipService {
 	public Membership readEntityById(Integer id) throws ServiceException {
 		Membership membership = new Membership();
 		try {
-			membership = factory.getMembershipDao().readEntityById(id);
+			membership = transaction.createDaoFactory().getMembershipDao().readEntityById(id);
+			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -73,9 +79,12 @@ public class MembershipServiceImpl implements MembershipService {
 	@Override
 	public List<Membership> readByClientAndPeriod(Integer clientId, LocalDate startDate, LocalDate endDate)
 			throws ServiceException {
-		List<Membership> memberships = new ArrayList<>();;
+		List<Membership> memberships = new ArrayList<>();
+
 		try {
-			memberships = factory.getMembershipDao().readByClientAndPeriod(clientId, startDate, endDate);
+			memberships = transaction.createDaoFactory().getMembershipDao().readByClientAndPeriod(clientId, startDate,
+					endDate);
+			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -85,10 +94,11 @@ public class MembershipServiceImpl implements MembershipService {
 
 	@Override
 	public List<Membership> readValidByClient(Integer clientId) throws ServiceException {
-		
+
 		List<Membership> memberships = new ArrayList<>();
 		try {
-			memberships = factory.getMembershipDao().readValidByClient(clientId);
+			memberships = transaction.createDaoFactory().getMembershipDao().readValidByClient(clientId);
+			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -100,7 +110,8 @@ public class MembershipServiceImpl implements MembershipService {
 	public List<Membership> readByPeriod(LocalDate startDate, LocalDate endDate) throws ServiceException {
 		List<Membership> memberships = null;
 		try {
-			memberships = factory.getMembershipDao().readByPeriod(startDate, endDate);
+			memberships = transaction.createDaoFactory().getMembershipDao().readByPeriod(startDate, endDate);
+			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -132,7 +143,8 @@ public class MembershipServiceImpl implements MembershipService {
 	public List<MembershipType> readAllTypes() throws ServiceException {
 		List<MembershipType> memberships = null;
 		try {
-			memberships = factory.getMembershipDao().readAllTypes();
+			memberships = transaction.createDaoFactory().getMembershipDao().readAllTypes();
+			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -143,7 +155,9 @@ public class MembershipServiceImpl implements MembershipService {
 	@Override
 	public boolean deleteType(Integer id) throws ServiceException {
 		try {
-			factory.getMembershipDao().deleteType(id);
+			transaction.createDaoFactory().getMembershipDao().deleteType(id);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
@@ -153,7 +167,9 @@ public class MembershipServiceImpl implements MembershipService {
 	@Override
 	public boolean createType(MembershipType type) throws ServiceException {
 		try {
-			factory.getMembershipDao().createType(type);
+			transaction.createDaoFactory().getMembershipDao().createType(type);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
@@ -163,7 +179,9 @@ public class MembershipServiceImpl implements MembershipService {
 	@Override
 	public boolean updateType(MembershipType type) throws ServiceException {
 		try {
-			factory.getMembershipDao().updateType(type);
+			transaction.createDaoFactory().getMembershipDao().updateType(type);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}

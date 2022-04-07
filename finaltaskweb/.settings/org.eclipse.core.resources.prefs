@@ -4,4 +4,5 @@ encoding//src/main/resources=UTF-8
 encoding//src/main/resources/pagecontent_be_BY.properties=UTF-8
 encoding//src/main/resources/pagecontent_ru_RU.properties=UTF-8
 encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
 encoding/<project>=UTF-8

@@ -17,8 +17,6 @@ public class ReadAllScheduleCommandImpl implements Command{
 	
 	static Logger logger = LogManager.getLogger(ReadAllScheduleCommandImpl.class);
 
-	ServiceFactory servicefactory = ServiceFactory.getInstance();
-
 	@Override
 	public String execute(HttpServletRequest request) {
 
@@ -26,7 +24,9 @@ public class ReadAllScheduleCommandImpl implements Command{
 
 		List<Schedule> schedule;
 		try {
-			schedule = servicefactory.getScheduleService().readAll();
+			
+			schedule = ServiceFactory.getInstance().getScheduleService().readAll();
+			
 			request.setAttribute("schedule", schedule);
 			page = ConfigurationManager.getProperty("path.page.schedule");
 			logger.debug("page {}", page);

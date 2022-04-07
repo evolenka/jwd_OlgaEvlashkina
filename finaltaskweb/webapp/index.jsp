@@ -2,13 +2,15 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<fmt:setLocale value="be_BY" scope="session" />
+<fmt:setLocale value="en_US" scope="session" />
 <fmt:setBundle basename="pagecontent" var="rb" />
 <html>
 <head>
-<title><fmt:message key="title" bundle="${ rb }" /></title>
-<link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="css/style.css">
+<title><fmt:message key="indextitle" bundle="${ rb }" /></title>
+<c:url value="favicon.ico" var="icon" />
+<link rel="icon" href="<c:out value="${ icon }"/>">
+<c:url value="css/style.css" var="stylesheet" />
+<link rel="stylesheet" href="<c:out value="${ stylesheet }"/>">
 <body>
 	<form method="post" action="action">
 		<button type="submit" name="command" value="READALLSCHEDULE">

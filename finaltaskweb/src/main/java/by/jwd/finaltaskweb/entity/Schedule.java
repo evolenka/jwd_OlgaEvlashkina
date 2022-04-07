@@ -1,13 +1,12 @@
 package by.jwd.finaltaskweb.entity;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalTime;
 import java.util.Objects;
 
 public class Schedule extends Entity{
 	
 	private WeekDay weekday;
-	private Date time;
+	private LocalTime time;
 	private Group group;
 	private int duration;
 	
@@ -24,10 +23,10 @@ public class Schedule extends Entity{
 	public void setWeekDay(WeekDay weekday) {
 		this.weekday = weekday;
 	}
-	public Date getTime() {
+	public LocalTime getTime() {
 		return time;
 	}
-	public void setTime(Date time) {
+	public void setTime(LocalTime time) {
 		this.time = time;
 	}
 	public Group getGroup() {
@@ -70,7 +69,7 @@ public class Schedule extends Entity{
 		final StringBuilder sb = new StringBuilder("\nSchedule:");
 		sb.append("\n").append(super.toString());
 		sb.append("\nweekday: ").append(weekday);
-		sb.append("\ntime: ").append(new SimpleDateFormat("HH:mm").format(time));
+		sb.append("\ntime: ").append(time);
 		sb.append(group);
 		sb.append("\nduration: ").append(duration);
 		return sb.toString();

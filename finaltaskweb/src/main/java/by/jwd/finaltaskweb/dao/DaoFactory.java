@@ -1,5 +1,7 @@
 package by.jwd.finaltaskweb.dao;
 
+import java.sql.Connection;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,72 +13,47 @@ import by.jwd.finaltaskweb.dao.impl.UserDaoImpl;
 import by.jwd.finaltaskweb.dao.impl.VisitDaoImpl;
 
 public class DaoFactory {
-
+	
 	static Logger logger = LogManager.getLogger(DaoFactory.class);
 
-	private static final DaoFactory instance = new DaoFactory();
+	private Connection connection;
 
-	private UserDao userDao = new UserDaoImpl();
-	private GroupDao groupDao = new GroupDaoImpl();
-	private MembershipDao membershipDao = new MembershipDaoImpl();
-	private ScheduleDao scheduleDao = new ScheduleDaoImpl();
-	private DanceClassDao danceClassDao = new DanceClassDaoImpl();
-	private VisitDao visitDao = new VisitDaoImpl();
-	
-
-	private DaoFactory() {
+	public DaoFactory(Connection connection) {
+		this.connection = connection;
 	}
-
-	public static DaoFactory getInstance() {
-		return instance;
-	}
-
 	public UserDao getUserDao() {
-		return userDao;
-	}
-
-	public void setUserDao(UserDao userDao) {
-		this.userDao = userDao;
+		StudioDaoImpl userDao = new UserDaoImpl();
+		userDao.setConnection(connection);
+		return (UserDao) userDao;
 	}
 
 	public GroupDao getGroupDao() {
-		return groupDao;
-	}
-
-	public void setGroupDao(GroupDao groupDao) {
-		this.groupDao = groupDao;
+		StudioDaoImpl groupDao = new GroupDaoImpl();
+		groupDao.setConnection(connection);
+		return (GroupDao) groupDao;
 	}
 
 	public MembershipDao getMembershipDao() {
-		return membershipDao;
-	}
-
-	public void setMembershipDao(MembershipDao membershipDao) {
-		this.membershipDao = membershipDao;
+		StudioDaoImpl  membershipDao = new MembershipDaoImpl();
+		membershipDao.setConnection(connection);
+		return (MembershipDao) membershipDao;
 	}
 
 	public ScheduleDao getScheduleDao() {
-		return scheduleDao;
-	}
-
-	public void setScheduleDao(ScheduleDao scheduleDao) {
-		this.scheduleDao = scheduleDao;
+		StudioDaoImpl  scheduleDao = new ScheduleDaoImpl();
+		scheduleDao.setConnection(connection);
+		return (ScheduleDao) scheduleDao;
 	}
 
 	public DanceClassDao getDanceClassDao() {
-		return danceClassDao;
-	}
-
-	public void setDanceClassDao(DanceClassDao danceClassDao) {
-		this.danceClassDao = danceClassDao;
+		StudioDaoImpl danceClassDao = new DanceClassDaoImpl();
+		danceClassDao.setConnection(connection);
+		return (DanceClassDao) danceClassDao;
 	}
 
 	public VisitDao getVisitDao() {
-		return visitDao;
+		StudioDaoImpl visitDao = new VisitDaoImpl();
+		visitDao.setConnection(connection);
+		return (VisitDao) visitDao;
 	}
-
-	public void setVisitDao(VisitDao visitDao) {
-		this.visitDao = visitDao;
-	}
-	
 }

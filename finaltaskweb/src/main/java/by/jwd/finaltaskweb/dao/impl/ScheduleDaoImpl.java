@@ -1,26 +1,24 @@
 package by.jwd.finaltaskweb.dao.impl;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.jwd.finaltaskweb.dao.ConnectionPool;
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.ScheduleDao;
+import by.jwd.finaltaskweb.dao.StudioDaoImpl;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.WeekDay;
 
-public class ScheduleDaoImpl implements ScheduleDao {
+public class ScheduleDaoImpl extends StudioDaoImpl implements ScheduleDao {
 
 	static Logger logger = LogManager.getLogger(ScheduleDaoImpl.class);
 
@@ -38,18 +36,6 @@ public class ScheduleDaoImpl implements ScheduleDao {
 
 	private static final String SQL_UPDATE_SCHEDULE = "UPDATE schedule SET schedule.weekday = ?, schedule.time = ?, schedule.duration =?, schedule.group_id =? WHERE id = ?";
 
-	private Connection connection;
-
-	ConnectionPool pool = ConnectionPool.getInstance();
-
-	public ScheduleDaoImpl() {
-		try {
-			connection = pool.getConnection();
-		} catch (DaoException e) {
-			logger.error("It is impossible to connect to a database", e);
-		}
-	}
-
 	@Override
 	public List<Schedule> readAll() throws DaoException {
 
@@ -66,22 +52,16 @@ public class ScheduleDaoImpl implements ScheduleDao {
 
 				Schedule schedule = new Schedule(resultSet.getInt(1));
 				schedule.setWeekDay(WeekDay.valueOf(resultSet.getString(2)));
-				schedule.setTime(new SimpleDateFormat().parse(resultSet.getString(3)));
+				schedule.setTime(resultSet.getTime(3).toLocalTime());
 				schedule.setDuration(resultSet.getInt(4));
 				schedule.setGroup(new Group(resultSet.getInt(5)));
 
 				schedules.add(schedule);
 			}
-		} catch (SQLException | ParseException e) {
+		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
-
 		}
 		logger.debug("schedules have been read from db");
 		return schedules;
@@ -105,22 +85,17 @@ public class ScheduleDaoImpl implements ScheduleDao {
 				schedule = new Schedule(id);
 
 				schedule.setWeekDay(WeekDay.valueOf(resultSet.getString(1)));
-				schedule.setTime(new SimpleDateFormat().parse(resultSet.getString(2)));
+				schedule.setTime(resultSet.getTime(2).toLocalTime());
 				schedule.setDuration(resultSet.getInt(3));
 				schedule.setGroup(new Group(resultSet.getInt(4)));
 
 				logger.debug("schedule has been read by id");
 			}
 
-		} catch (SQLException | ParseException e) {
+		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return schedule;
 	}
@@ -145,7 +120,7 @@ public class ScheduleDaoImpl implements ScheduleDao {
 
 				schedule.setId(resultSet.getInt(1));
 				schedule.setWeekDay(WeekDay.valueOf(resultSet.getString(2)));
-				schedule.setTime(new SimpleDateFormat().parse(resultSet.getString(3)));
+				schedule.setTime(resultSet.getTime(3).toLocalTime());
 				schedule.setDuration(resultSet.getInt(4));
 				schedule.setGroup(new Group(groupId));
 
@@ -154,15 +129,10 @@ public class ScheduleDaoImpl implements ScheduleDao {
 				logger.debug("schedule has been read by group");
 			}
 
-		} catch (SQLException | ParseException e) {
+		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return schedules;
 	}
@@ -187,7 +157,7 @@ public class ScheduleDaoImpl implements ScheduleDao {
 
 				schedule.setId(resultSet.getInt(1));
 				schedule.setWeekDay(weekday);
-				schedule.setTime(new SimpleDateFormat().parse(resultSet.getString(2)));
+				schedule.setTime(resultSet.getTime(2).toLocalTime());
 				schedule.setDuration(resultSet.getInt(3));
 				schedule.setGroup(new Group(resultSet.getInt(4)));
 
@@ -196,20 +166,13 @@ public class ScheduleDaoImpl implements ScheduleDao {
 				logger.debug("schedule has been read by group");
 			}
 
-		} catch (SQLException | ParseException e) {
+		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return schedules;
 	}
-
-
 
 	@Override
 	public boolean delete(Integer id) throws DaoException {
@@ -245,7 +208,7 @@ public class ScheduleDaoImpl implements ScheduleDao {
 			statement = connection.prepareStatement(SQL_INSERT_SCHEDULE);
 
 			statement.setString(1, schedule.getWeekDay().toString());
-			statement.setString(2, schedule.getTime().toString());
+			statement.setTime(2, Time.valueOf(schedule.getTime()));
 			statement.setInt(3, schedule.getDuration());
 			statement.setInt(4, schedule.getGroup().getId());
 
@@ -255,11 +218,6 @@ public class ScheduleDaoImpl implements ScheduleDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return true;
 	}
@@ -272,12 +230,12 @@ public class ScheduleDaoImpl implements ScheduleDao {
 		try {
 			statement = connection.prepareStatement(SQL_UPDATE_SCHEDULE);
 			statement.setString(1, schedule.getWeekDay().toString());
-			statement.setString(2, schedule.getTime().toString());
+			statement.setTime(2, Time.valueOf(schedule.getTime()));
 			statement.setInt(3, schedule.getDuration());
 			statement.setInt(4, schedule.getGroup().getId());
-
+			statement.setInt(5, schedule.getId());
 			statement.executeUpdate();
-			close(statement);
+
 			logger.debug("schedule has been updated");
 
 		} catch (SQLException e) {

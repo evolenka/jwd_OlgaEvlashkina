@@ -1,6 +1,6 @@
 package by.jwd.finaltaskweb.dao.impl;
 
-import java.sql.Connection;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,49 +11,39 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.jwd.finaltaskweb.dao.ConnectionPool;
 import by.jwd.finaltaskweb.dao.DaoException;
+import by.jwd.finaltaskweb.dao.StudioDaoImpl;
 import by.jwd.finaltaskweb.dao.UserDao;
 import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.Role;
 import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.entity.User;
 
-public class UserDaoImpl implements UserDao {
+public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
 	static Logger logger = LogManager.getLogger(UserDaoImpl.class);
 
 	private static final String SQL_SELECT_ALL_USER = "SELECT user.id, user.login, user.password, user.role FROM `user`";
 	private static final String SQL_SELECT_ALL_CLIENT = "SELECT user.id, user.login, user.password, client.surname, client.name, client.patronymic, client.phone, client.email FROM `user` join `client` ON user.id = client.id";
 	private static final String SQL_SELECT_ALL_TEACHER = "SELECT user.id, user.login, user.password, teacher.surname, teacher.name, teacher.dancestyle, teacher.portfolio from `user` join `teacher` ON user.id = teacher.id";
+	private static final String SQL_SELECT_OTHER_USER = "SELECT user.id, user.login, user.password, user.role FROM `user` WHERE user.role = 'ADMIN'";
 	private static final String SQL_SELECT_ALL_DANCESTYLE = "SELECT DISTINCT dancestyle FROM `teacher`";
 
 	private static final String SQL_SELECT_BY_ID = "SELECT user.login, user.password, user.role, client.surname, client.name, client.patronymic, client.phone, client.email, teacher.surname, teacher.name, teacher.dancestyle, teacher.portfolio FROM `user` LEFT JOIN `client` ON user.id = client.id LEFT JOIN `teacher` on user.id = teacher.id WHERE user.id = ?";
 	private static final String SQL_SELECT_BY_LOGIN = "SELECT user.id, user.login, user.password, user.role, client.surname, client.name, client.patronymic, client.phone, client.email, teacher.surname, teacher.name, teacher.dancestyle, teacher.portfolio FROM `user` LEFT JOIN `client` ON user.id = client.id LEFT JOIN `teacher` on user.id = teacher.id WHERE user.login = ?";
-	private static final String SQL_SELECT_BY_SURNAME = "SELECT user.id, user.login, user.password, user.role, client.surname, client.name, client.patronymic, client.phone, client.email, teacher.surname, teacher.name, teacher.dancestyle, teacher.portfolio FROM `user` LEFT JOIN `client` ON user.id = client.id LEFT JOIN `teacher` on user.id = teacher.id WHERE teacher.surname = ? OR client.surname = ?";
-	private static final String SQL_SELECT_BY_DANCESTYLE = "SELECT user.id, user.login, user.password, user.role, teacher.name, teacher.surname, teacher.dancestyle, teacher.portfolio FROM `user` join `teacher`ON user.id = teacher.id WHERE teacher.dancestyle = ?";
+	private static final String SQL_SELECT_BY_LOGIN_AND_PASSWORD = "SELECT user.id, user.login, user.password, user.role, client.surname, client.name, client.patronymic, client.phone, client.email, teacher.surname, teacher.name, teacher.dancestyle, teacher.portfolio FROM `user` LEFT JOIN `client` ON user.id = client.id LEFT JOIN `teacher` on user.id = teacher.id WHERE user.login = ? AND user.password = ?";
+
+	private static final String SQL_SELECT_BY_DANCESTYLE = "SELECT user.id, user.login, user.password, user.role, teacher.name, teacher.surname, teacher.portfolio FROM `user` join `teacher`ON user.id = teacher.id WHERE teacher.dancestyle = ?";
 
 	private static final String SQL_INSERT_USER = "INSERT INTO user(login, password, role) VALUES (?, ?, ?)";
 	private static final String SQL_INSERT_CLIENT = "INSERT INTO client (id, surname, name, patronymic, phone, email)  VALUES (?, ?, ?, ?, ?, ?)";
-	private static final String SQL_INSERT_TEACHER = "INSERT INTO teacher (id, surname, name, dancestyle, teacher.portfolio)  VALUES (?, ?, ?, ?)";
+	private static final String SQL_INSERT_TEACHER = "INSERT INTO teacher (id, surname, name, dancestyle, teacher.portfolio)  VALUES (?, ?, ?, ?, ?)";
 
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM user WHERE id = ?";
 
 	private static final String SQL_UPDATE_USER = "UPDATE user SET login = ?, password = ?, role = ? WHERE id = ?";
 	private static final String SQL_UPDATE_CLIENT = "UPDATE client SET surname = ?,name = ?, patronymic = ?, phone = ?, email = ? WHERE id = ?";
 	private static final String SQL_UPDATE_TEACHER = "UPDATE teacher SET surname = ?, name = ?, dancestyle = ? teacher.portfolio = ? WHERE id = ?";
-
-	private Connection connection;
-
-	ConnectionPool pool = ConnectionPool.getInstance();
-	
-	public UserDaoImpl() {
-		try {
-			connection = pool.getConnection();
-		} catch (DaoException e) {
-			logger.error("It is impossible to connect to a database", e);
-		}
-	}
 
 	@Override
 	public List<User> readAll() throws DaoException {
@@ -78,79 +68,98 @@ public class UserDaoImpl implements UserDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		logger.debug("users have been read from db");
 		return users;
 	}
 
 	@Override
-	public List<Client> readAllClient() throws DaoException {
+	public <T extends User> List<T> readByRole(Role role) throws DaoException {
 
-		List<Client> clients = new ArrayList<>();
-		Statement statement = null;
+		if (role == Role.CLIENT) {
 
-		try {
-			statement = connection.createStatement();
-			ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_CLIENT);
+			List<Client> clients = new ArrayList<>();
+			Statement statement = null;
 
-			while (resultSet.next()) {
+			try {
+				statement = connection.createStatement();
+				ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_CLIENT);
 
-				Client client = new Client(resultSet.getInt(1));
+				while (resultSet.next()) {
 
-				client.setLogin(resultSet.getString(2));
-				client.setPassword(resultSet.getString(3));
-				client.setSurname(resultSet.getString(4));
-				client.setName(resultSet.getString(5));
-				client.setPatronymic(resultSet.getString(6));
-				client.setPhone(resultSet.getString(7));
-				client.setEmail(resultSet.getString(8));
+					Client client = new Client(resultSet.getInt(1));
 
-				clients.add(client);
+					client.setLogin(resultSet.getString(2));
+					client.setPassword(resultSet.getString(3));
+					client.setSurname(resultSet.getString(4));
+					client.setName(resultSet.getString(5));
+					client.setPatronymic(resultSet.getString(6));
+					client.setPhone(resultSet.getString(7));
+					client.setEmail(resultSet.getString(8));
+
+					clients.add(client);
+				}
+			} catch (SQLException e) {
+				throw new DaoException();
+			} finally {
+				close(statement);
 			}
-		} catch (SQLException e) {
-			throw new DaoException();
-		} finally {
-			close(statement);
-		}
-		logger.debug("clients have been read from db");
-		return clients;
-	}
+			logger.debug("clients have been read from db");
+			return (List<T>) clients;
+		} else if (role == Role.TEACHER) {
+			List<Teacher> teachers = new ArrayList<>();
+			Statement statement = null;
 
-	@Override
-	public List<Teacher> readAllTeacher() throws DaoException {
+			try {
+				statement = connection.createStatement();
+				ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_TEACHER);
 
-		List<Teacher> teachers = new ArrayList<>();
-		Statement statement = null;
+				while (resultSet.next()) {
 
-		try {
-			statement = connection.createStatement();
-			ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_TEACHER);
+					Teacher teacher = new Teacher(resultSet.getInt(1));
 
-			while (resultSet.next()) {
+					teacher.setLogin(resultSet.getString(2));
+					teacher.setPassword(resultSet.getString(3));
+					teacher.setSurname(resultSet.getString(4));
+					teacher.setName(resultSet.getString(5));
+					teacher.setDanceStyle(resultSet.getString(6));
+					teacher.setPortfolio(resultSet.getString(7));
 
-				Teacher teacher = new Teacher(resultSet.getInt(1));
-
-				teacher.setLogin(resultSet.getString(2));
-				teacher.setPassword(resultSet.getString(3));
-				teacher.setSurname(resultSet.getString(4));
-				teacher.setName(resultSet.getString(5));
-				teacher.setDanceStyle(resultSet.getString(6));
-				teacher.setPortfolio(resultSet.getString(7));
-
-				teachers.add(teacher);
+					teachers.add(teacher);
+				}
+			} catch (SQLException e) {
+				throw new DaoException();
+			} finally {
+				close(statement);
 			}
-		} catch (SQLException e) {
-			throw new DaoException();
-		} finally {
-			close(statement);
+			logger.debug("teachers have been read from db");
+			return (List<T>) teachers;
+		} else {
+			List<User> users = new ArrayList<>();
+
+			Statement statement = null;
+
+			try {
+				statement = connection.createStatement();
+				ResultSet resultSet = statement.executeQuery(SQL_SELECT_OTHER_USER);
+
+				while (resultSet.next()) {
+
+					User user = new User(resultSet.getInt(1));
+
+					user.setLogin(resultSet.getString(2));
+					user.setPassword(resultSet.getString(3));
+					user.setRole(role);
+					users.add(user);
+				}
+			} catch (SQLException e) {
+				throw new DaoException();
+			} finally {
+				close(statement);
+			}
+			logger.debug("other users (admin) have been read from db");
+			return (List<T>) users;
 		}
-		logger.debug("teachers have been read from db");
-		return teachers;
 	}
 
 	@Override
@@ -247,7 +256,6 @@ public class UserDaoImpl implements UserDao {
 					((Teacher) user).setDanceStyle(resultSet.getString(12));
 					((Teacher) user).setPortfolio(resultSet.getString(13));
 
-
 					logger.debug("teacher has been read by login");
 
 				} else {
@@ -265,6 +273,64 @@ public class UserDaoImpl implements UserDao {
 			close(statement);
 		}
 		logger.debug("user has been read by login");
+		return user;
+	}
+
+	@Override
+	public User readByLoginAndPassword(String login, String password) throws DaoException {
+
+		User user = null;
+
+		PreparedStatement statement = null;
+
+		try {
+
+			statement = connection.prepareStatement(SQL_SELECT_BY_LOGIN_AND_PASSWORD);
+			statement.setString(1, login);
+			statement.setString(2, password);
+			
+			ResultSet resultSet = statement.executeQuery();
+
+			while (resultSet.next()) {
+
+				Role role = Role.valueOf(resultSet.getString(4));
+
+				if (role == Role.CLIENT) {
+					user = new Client(resultSet.getInt(1));
+					user.setLogin(resultSet.getString(2));
+					user.setPassword(resultSet.getString(3));
+					user.setSurname(resultSet.getString(5));
+					user.setName(resultSet.getString(6));
+					((Client) user).setPatronymic(resultSet.getString(7));
+					((Client) user).setPhone(resultSet.getString(8));
+					((Client) user).setEmail(resultSet.getString(9));
+					logger.debug("client has been read by login and password");
+
+				} else if (role == Role.TEACHER) {
+					user = new Teacher(resultSet.getInt(1));
+					user.setLogin(resultSet.getString(2));
+					user.setPassword(resultSet.getString(3));
+					user.setSurname(resultSet.getString(10));
+					user.setName(resultSet.getString(11));
+					((Teacher) user).setDanceStyle(resultSet.getString(12));
+					((Teacher) user).setPortfolio(resultSet.getString(13));
+
+					logger.debug("teacher has been read by login and password");
+
+				} else {
+					user = new User(resultSet.getInt(1));
+					user.setLogin(resultSet.getString(2));
+					user.setPassword(resultSet.getString(3));
+					user.setRole(role);
+
+					logger.debug("admin has been read by login and password");
+				}
+			}
+		} catch (SQLException e) {
+			throw new DaoException();
+		} finally {
+			close(statement);
+		}
 		return user;
 	}
 
@@ -338,7 +404,7 @@ public class UserDaoImpl implements UserDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
- 		}
+		}
 		return true;
 	}
 
@@ -386,13 +452,10 @@ public class UserDaoImpl implements UserDao {
 				statement.executeUpdate();
 				logger.debug("teacher has been updated");
 			}
-
 		} catch (SQLException e) {
 
 			try {
-				//if (connection != null) {
-					connection.rollback();
-				//}
+				connection.rollback();
 			} catch (SQLException e1) {
 				logger.debug("rollback error");
 			}
@@ -406,7 +469,6 @@ public class UserDaoImpl implements UserDao {
 				}
 			} catch (SQLException e1) {
 				logger.debug("setAutoCommit error");
-
 			}
 			close(statement);
 		}
@@ -414,58 +476,8 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public List<User> readBySurname(String surname) throws DaoException {
-		
-		List<User> result = new ArrayList<>();
-		PreparedStatement statement = null;
-
-		try {
-
-			statement = connection.prepareStatement(SQL_SELECT_BY_SURNAME);
-			statement.setString(1, surname);
-			statement.setString(2, surname);
-
-			ResultSet resultSet = statement.executeQuery();
-
-			while (resultSet.next()) {
-				Role role = Role.valueOf(resultSet.getString(4));
-
-				if (role == Role.CLIENT) {
-					Client client = new Client(resultSet.getInt(1));
-					client.setLogin(resultSet.getString(2));
-					client.setPassword(resultSet.getString(3));
-					client.setSurname(resultSet.getString(5));
-					client.setName(resultSet.getString(6));
-					client.setPatronymic(resultSet.getString(7));
-					client.setPhone(resultSet.getString(8));
-					client.setEmail(resultSet.getString(9));
-					logger.debug("client has been read by surname");
-					result.add(client);
-
-				} else if (role == Role.TEACHER) {
-					Teacher teacher = new Teacher(resultSet.getInt(1));
-					teacher.setLogin(resultSet.getString(2));
-					teacher.setPassword(resultSet.getString(3));
-					teacher.setSurname(resultSet.getString(10));
-					teacher.setName(resultSet.getString(11));
-					teacher.setDanceStyle(resultSet.getString(12));
-					teacher.setPortfolio(resultSet.getString(13));
-					
-					logger.debug("teacher has been read by surname");
-					result.add(teacher);
-				}
-			}
-		} catch (SQLException e) {
-			throw new DaoException();
-		} finally {
-			close(statement);
-		}
-		return result;
-	}
-
-	@Override
 	public List<Teacher> readByDanceStyle(String danceStyle) throws DaoException {
-		
+
 		List<Teacher> result = new ArrayList<>();
 		PreparedStatement statement = null;
 
@@ -484,6 +496,7 @@ public class UserDaoImpl implements UserDao {
 				teacher.setName(resultSet.getString(5));
 				teacher.setSurname(resultSet.getString(6));
 				teacher.setDanceStyle(danceStyle);
+				teacher.setPortfolio(resultSet.getString(7));
 				result.add(teacher);
 			}
 		} catch (SQLException e) {
@@ -520,11 +533,5 @@ public class UserDaoImpl implements UserDao {
 		}
 		logger.debug("all dancestyles have been read from db");
 		return result;
-	}
-
-	@Override
-	public boolean authorization(String login, String password) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 }

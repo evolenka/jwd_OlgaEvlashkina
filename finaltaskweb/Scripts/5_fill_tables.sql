@@ -94,7 +94,7 @@ INSERT INTO `teacher` (
 	"Павлова",
 	"Татьяна",
 	"contemporary",
-	"Танцевальный опыт 6 лет. Опыт преподавания 3 года. Участница международных и республиканских соревнований. Многократная чемпионка в составе команды на Белорусских Чемпионатах и Конкурсах."
+	"Танцевальный опыт - 6 лет. Опыт преподавания - 3 года. Участница международных и республиканских соревнований. Многократная чемпионка в составе команды на Белорусских Чемпионатах и Конкурсах."
 	);
 INSERT INTO `teacher` (
     `id`,
@@ -107,7 +107,7 @@ INSERT INTO `teacher` (
 	"Иванов",
 	"Дмитрий",
 	"hip-hop",
-	"В танцах уже 18 лет. Опыт преподавания 6 лет. Постановщик и участник конкурсных программ, ТВ-Шоу, музыкальных клипов, рекламных видеороликов и подтанцовок"
+	"В танцах уже 18 лет. Опыт преподавания - 6 лет. Постановщик и участник конкурсных программ, ТВ-Шоу, музыкальных клипов, рекламных видеороликов и подтанцовок"
 	);
 	INSERT INTO `teacher` (
     `id`,
@@ -120,8 +120,7 @@ INSERT INTO `teacher` (
 	"Лесная",
 	"Ольга",
 	"jazz-funk",
-	"Окончила БГУКИ с отличием, эстрадное отделение. Опыт преподавания более 10 лет. 
-Призер множества международных и республиканских соревнований."
+	"Окончила БГУКИ с отличием, эстрадное отделение. Опыт преподавания более 10 лет. Призер множества международных и республиканских соревнований."
 	);
 	INSERT INTO `teacher` (
     `id`,
@@ -145,7 +144,7 @@ INSERT INTO `client` (
 	`email`,
 	`phone`
 ) VALUES (
-    "5",
+    "6",
 	"Маркова",
 	"Мария",
 	"Алексеевна",
@@ -160,7 +159,7 @@ INSERT INTO `client` (
 	`email`,
 	`phone`
 ) VALUES (
-    "6",
+    "7",
 	"Андреева",
 	"Наталья",
 	"Николаевна",
@@ -175,7 +174,7 @@ INSERT INTO `client` (
 	`email`,
 	`phone`
 ) VALUES (
-    "7",
+    "8",
 	"Кратова",
 	"Виктория",
 	"Петровна",
@@ -190,7 +189,7 @@ INSERT INTO `client` (
 	`email`,
 	`phone`
 ) VALUES (
-    "8",
+    "9",
 	"Киселева",
 	"Анастасия",
 	"Алексеевна",
@@ -206,7 +205,7 @@ INSERT INTO `client` (
 	`email`,
 	`phone`
 ) VALUES (
-    "9",
+    "10",
 	"Степнов",
 	"Кирилл",
 	"Александрович",
@@ -214,79 +213,344 @@ INSERT INTO `client` (
 	"+375(29)259-47-15"
 	);
 INSERT INTO `group` (
-    `id`,
     `title`,
 	`teacher_id`,
 	`level`
 ) VALUES (
-    "1",
-	"group1",
+  	"group1",
 	"2",
 	"beg"
 	);
 INSERT INTO `group` (
-    `id`,
     `title`,
 	`teacher_id`,
 	`level`
 ) VALUES (
-    "2",
-	"group2",
+   	"group2",
 	"2",
 	"pro"
 	);
 INSERT INTO `group` (
-    `id`,
     `title`,
 	`teacher_id`,
 	`level`
 ) VALUES (
-    "3",
-	"group3",
+   	"group3",
 	"3",
 	"beg"
 	);
 INSERT INTO `group` (
-    `id`,
     `title`,
 	`teacher_id`,
 	`level`
 ) VALUES (
-    "4",
-	"group4",
+    "group4",
 	"3",
 	"pro"
 	);
 INSERT INTO `group` (
-    `id`,
     `title`,
 	`teacher_id`,
 	`level`
 ) VALUES (
-    "5",
-	"group5",
+   	"group5",
 	"4",
 	"beg"
 	);
 INSERT INTO `group` (
-    `id`,
     `title`,
 	`teacher_id`,
 	`level`
 ) VALUES (
-    "6",
-	"group6",
+    "group6",
 	"4",
 	"pro"
 	);
 INSERT INTO `group` (
-    `id`,
     `title`,
 	`teacher_id`,
 	`level`
 ) VALUES (
-    "7",
-	"group7",
+    "group7",
 	"5",
 	"beg"
 	);
+INSERT INTO `type_of_membership` (
+    `title`,
+	`max_class_quantity`,
+	`price`
+) VALUES (
+   	"GUEST",
+	"1",
+	"15"
+	);
+INSERT INTO `type_of_membership` (
+    `title`,
+	`max_class_quantity`,
+	`price`
+) VALUES (
+   	"LIGHT",
+	"4",
+	"48"
+	);
+INSERT INTO `type_of_membership` (
+    `title`,
+	`max_class_quantity`,
+	`price`
+) VALUES (
+   	"BASIC",
+	"8",
+	"80"
+	);
+INSERT INTO `type_of_membership` (
+    `id`,
+    `title`,
+	`max_class_quantity`,
+	`price`
+) VALUES (
+    "4",
+   	"STRONG",
+	"16",
+	"150"
+	);
+INSERT INTO `type_of_membership` (
+    `id`,
+    `title`,
+	`price`
+) VALUES (
+     "5",
+   	"UNLIM",
+	"190"
+	);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`,
+	`balance_quantity`	
+) VALUES (
+   	"5",
+	"1",
+	"2022-03-12",
+	"2022-03-13",
+	"0"
+	);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`,
+	`balance_quantity`	
+) VALUES (
+   	"6",
+	"2",
+	"2022-04-01",
+	"2022-05-01",
+	"4"
+	);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`,
+	`balance_quantity`
+) VALUES (
+    "6",
+	"1",
+	"2022-03-28",
+	"2022-03-29",
+	"1"	
+	);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`,
+	`balance_quantity`
+) VALUES (
+    "7",
+	"1",
+	"2022-04-02",
+	"2022-04-03",
+	"1"	
+	);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`,
+	`balance_quantity`
+) VALUES (
+    "7",
+	"3",
+	"2022-04-07",
+	"2022-05-07",
+	"8"	
+	);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`
+	) VALUES (
+    "8",
+	"5",
+	"2022-04-10",
+	"2022-05-10"
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`,
+	`balance_quantity`
+	) VALUES (
+    "9",
+	"4",
+	"2022-04-10",
+	"2022-05-10",
+	"16"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "MONDAY",
+	"18:00",
+	"60",
+	"1"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "MONDAY",
+	"19:00",
+	"60",
+	"2"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "MONDAY",
+	"20:00",
+	"60",
+	"5"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "TUESDAY",
+	"18:00",
+	"60",
+	"3"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "TUESDAY",
+	"19:00",
+	"60",
+	"4"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "TUESDAY",
+	"20:00",
+	"60",
+	"6"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "WEDNESDAY",
+	"18:00",
+	"60",
+	"1"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "WEDNESDAY",
+	"19:00",
+	"60",
+	"2"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "WEDNESDAY",
+	"20:00",
+	"60",
+	"5"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "THURSDAY",
+	"18:00",
+	"60",
+	"3"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "THURSDAY",
+	"19:00",
+	"60",
+	"4"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "THURSDAY",
+	"20:00",
+	"60",
+	"6"
+);
+INSERT INTO `schedule` (
+    `weekday`,
+	`time`,
+	`duration`,
+	`group_id`
+	) VALUES (
+    "FRIDAY",
+	"18:00",
+	"90",
+	"7"
+);

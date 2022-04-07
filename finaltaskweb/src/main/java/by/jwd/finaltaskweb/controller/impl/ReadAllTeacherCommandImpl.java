@@ -17,8 +17,6 @@ public class ReadAllTeacherCommandImpl implements Command {
 
 	static Logger logger = LogManager.getLogger(ReadAllTeacherCommandImpl.class);
 
-	ServiceFactory servicefactory = ServiceFactory.getInstance();
-
 	@Override
 	public String execute(HttpServletRequest request) {
 
@@ -26,7 +24,8 @@ public class ReadAllTeacherCommandImpl implements Command {
 
 		List<Teacher> teachers ;
 		try {
-			teachers = servicefactory.getUserService().readAllTeacher();
+			teachers = ServiceFactory.getInstance().getUserService().readAllTeacher();
+			
 			request.setAttribute("teachers", teachers);
 			page = ConfigurationManager.getProperty("path.page.teacher");
 			logger.debug("page {}", page);
@@ -34,6 +33,5 @@ public class ReadAllTeacherCommandImpl implements Command {
 			logger.error("error");
 		}
 		return page;
-
 	}
 } 

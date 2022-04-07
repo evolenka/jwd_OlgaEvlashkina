@@ -1,6 +1,5 @@
 package by.jwd.finaltaskweb.dao.impl;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,14 +10,14 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.jwd.finaltaskweb.dao.ConnectionPool;
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.GroupDao;
+import by.jwd.finaltaskweb.dao.StudioDaoImpl;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Level;
 import by.jwd.finaltaskweb.entity.Teacher;
 
-public class GroupDaoImpl implements GroupDao {
+public class GroupDaoImpl extends StudioDaoImpl implements GroupDao {
 
 	static Logger logger = LogManager.getLogger(GroupDaoImpl.class);
 
@@ -33,18 +32,6 @@ public class GroupDaoImpl implements GroupDao {
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM `group` WHERE id = ?";
 
 	private static final String SQL_UPDATE_GROUP = "UPDATE `group` SET title = ?, teacher_id = ?, level = ? WHERE id = ?";
-
-	private Connection connection;
-
-	ConnectionPool pool = ConnectionPool.getInstance();
-
-	public GroupDaoImpl() {
-		try {
-			connection = pool.getConnection();
-		} catch (DaoException e) {
-			logger.error("It is impossible to connect to a database", e);
-		}
-	}
 
 	@Override
 	public List<Group> readAll() throws DaoException {
@@ -71,7 +58,6 @@ public class GroupDaoImpl implements GroupDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-
 		}
 		logger.debug("groups have been read from db");
 		return groups;
@@ -122,7 +108,6 @@ public class GroupDaoImpl implements GroupDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-
 		}
 		logger.debug("group has been deleted");
 		return true;
@@ -134,7 +119,7 @@ public class GroupDaoImpl implements GroupDao {
 		PreparedStatement statement = null;
 
 		try {
-		//	if (group.getId()!=null) {
+			// if (group.getId()!=null) {
 			statement = connection.prepareStatement(SQL_INSERT_GROUP);
 			statement.setString(1, group.getTitle());
 			statement.setInt(2, group.getTeacher().getId());
@@ -145,7 +130,6 @@ public class GroupDaoImpl implements GroupDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-
 		}
 		return true;
 	}
@@ -156,7 +140,7 @@ public class GroupDaoImpl implements GroupDao {
 		PreparedStatement statement = null;
 
 		try {
-		
+
 			statement = connection.prepareStatement(SQL_UPDATE_GROUP);
 			statement.setString(1, group.getTitle());
 			statement.setInt(2, group.getTeacher().getId());
@@ -168,13 +152,9 @@ public class GroupDaoImpl implements GroupDao {
 			logger.debug("group has been updated");
 
 		} catch (SQLException e) {
-
 			throw new DaoException();
-
 		} finally {
-
 			close(statement);
-
 		}
 		return true;
 	}
@@ -207,7 +187,6 @@ public class GroupDaoImpl implements GroupDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-
 		}
 		return groups;
 	}
@@ -240,7 +219,6 @@ public class GroupDaoImpl implements GroupDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-
 		}
 		return groups;
 	}

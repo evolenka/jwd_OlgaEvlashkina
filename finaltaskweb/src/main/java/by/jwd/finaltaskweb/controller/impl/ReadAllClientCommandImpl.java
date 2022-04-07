@@ -17,23 +17,25 @@ public class ReadAllClientCommandImpl implements Command {
 
 	static Logger logger = LogManager.getLogger(ReadAllClientCommandImpl.class);
 
-	ServiceFactory servicefactory = ServiceFactory.getInstance();
 
 	@Override
 	public String execute(HttpServletRequest request) {
+	
 
 		String page = null;
 
 		List<Client> clients;
+		
 		try {
-			clients = servicefactory.getUserService().readAllClient();
+		
+			clients = ServiceFactory.getInstance().getUserService().readAllClient();
 			request.setAttribute("clients", clients);
 			page = ConfigurationManager.getProperty("path.page.client");
+			
 			logger.debug("page {}", page);
 		} catch (ServiceException e) {
-			logger.error("error");
+			logger.error("no database connection");
 		}
 		return page;
-
 	}
 }

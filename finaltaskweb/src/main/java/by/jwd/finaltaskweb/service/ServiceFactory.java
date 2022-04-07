@@ -1,6 +1,7 @@
 package by.jwd.finaltaskweb.service;
 
-import by.jwd.finaltaskweb.entity.Schedule;
+import by.jwd.finaltaskweb.dao.DaoException;
+import by.jwd.finaltaskweb.dao.TransactionFactoryImpl;
 import by.jwd.finaltaskweb.service.impl.DanceClassServiceImpl;
 import by.jwd.finaltaskweb.service.impl.GroupServiceImpl;
 import by.jwd.finaltaskweb.service.impl.MembershipServiceImpl;
@@ -9,68 +10,80 @@ import by.jwd.finaltaskweb.service.impl.UserServiceImpl;
 import by.jwd.finaltaskweb.service.impl.VisitServiceImpl;
 
 public class ServiceFactory {
+
 	private static final ServiceFactory instance = new ServiceFactory();
 
-	private UserService userService = new UserServiceImpl();
-	private MembershipService membershipService = new MembershipServiceImpl();
-	private DanceClassService danceClassService = new DanceClassServiceImpl();
-	private VisitService visitservice = new VisitServiceImpl();
-	private GroupService groupService = new GroupServiceImpl();
-	private StudioService <Integer, Schedule> scheduleService = new ScheduleServiceImpl();
+	private static TransactionFactoryImpl factory;
 
 	private ServiceFactory() {
 	}
 
-	public static ServiceFactory getInstance() {
+	public static ServiceFactory getInstance() throws ServiceException {
+		try {
+			factory = TransactionFactoryImpl.getInstance();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
 		return instance;
 	}
 
-	public UserService getUserService() {
-		return userService;
+	public UserService getUserService() throws ServiceException {
+		StudioServiceImpl userservice = new UserServiceImpl();
+		try {
+			userservice.setTransaction(factory.createTransaction());
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return (UserService) userservice;
 	}
 
-	public void setUserService(UserService userService) {
-		this.userService = userService;
+	public MembershipService getMembershipService() throws ServiceException {
+		StudioServiceImpl membershipService = new MembershipServiceImpl();
+		try {
+			membershipService.setTransaction(factory.createTransaction());
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return (MembershipService) membershipService;
 	}
 
-	public MembershipService getMembershipService() {
-		return membershipService;
+	public DanceClassService getDanceClassService() throws ServiceException {
+		StudioServiceImpl danceClassService = new DanceClassServiceImpl();
+		try {
+			danceClassService.setTransaction(factory.createTransaction());
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return (DanceClassService) danceClassService;
 	}
 
-	public void setMembershipService(MembershipService membershipService) {
-		this.membershipService = membershipService;
+	public VisitService getVisitservice() throws ServiceException {
+		StudioServiceImpl visitService = new VisitServiceImpl();
+		try {
+			visitService.setTransaction(factory.createTransaction());
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return (VisitService) visitService;
 	}
 
-	public DanceClassService getDanceClassService() {
-		return danceClassService;
+	public GroupService getGroupService() throws ServiceException {
+		StudioServiceImpl groupService = new GroupServiceImpl();
+		try {
+			groupService.setTransaction(factory.createTransaction());
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return (GroupService) groupService;
 	}
 
-	public void setDanceClassService(DanceClassService danceClassService) {
-		this.danceClassService = danceClassService;
+	public ScheduleServiceImpl getScheduleService() throws ServiceException {
+		StudioServiceImpl scheduleService = new ScheduleServiceImpl();
+		try {
+			scheduleService.setTransaction(factory.createTransaction());
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return (ScheduleServiceImpl) scheduleService;
 	}
-
-	public VisitService getVisitservice() {
-		return visitservice;
-	}
-
-	public void setVisitservice(VisitService visitservice) {
-		this.visitservice = visitservice;
-	}
-
-	public GroupService getGroupService() {
-		return groupService;
-	}
-
-	public void setGroupService(GroupService groupService) {
-		this.groupService = groupService;
-	}
-
-	public StudioService <Integer, Schedule> getScheduleService() {
-		return scheduleService;
-	}
-
-	public void setScheduleService(StudioService <Integer, Schedule> scheduleService) {
-		this.scheduleService = scheduleService;
-	}
-
 }

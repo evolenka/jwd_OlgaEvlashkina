@@ -70,7 +70,7 @@ CREATE TABLE `danceclass` (
 	`id` BIGINT NOT NULL AUTO_INCREMENT,
 	`schedule_id` INTEGER NOT NULL,
 	`date` Date NOT NULL,
-	`is_active`Bool default TRUE,
+	`is_active` Bool default TRUE,
 	CONSTRAINT PK_danceclass PRIMARY KEY (`id`),
     CONSTRAINT FK_danceclass_schedule FOREIGN KEY(`schedule_id`)
     REFERENCES `schedule` (`id`)
@@ -86,7 +86,7 @@ CREATE TABLE `type_of_membership` (
     CONSTRAINT PK_type_of_membership PRIMARY KEY (`id`),
     CONSTRAINT UC_type_of_membership UNIQUE (`title`, `max_class_quantity`),
 	CONSTRAINT CHK_PRICE CHECK (`price` > 0),
-	CONSTRAINT CHK_QUANTITY CHECK (`max_class_quantity` IN (1, 4, 8, 16, NULL))
+	CONSTRAINT CHK_QUANTITY CHECK (`max_class_quantity` IN (1, 4, 8, 16)
 );
 
 CREATE TABLE `membership` (
@@ -95,8 +95,8 @@ CREATE TABLE `membership` (
    	`type_of_membership_id` INTEGER NOT NULL,
 	`start_date` DATE NOT NULL,
 	`end_date` DATE NOT NULL,
-	`balance_quantity` TINYINT NOT NULL,
-	CONSTRAINT CHK_END_DATE CHECK (`end_date` > `start_date`),
+	`balance_quantity` TINYINT,
+	CONSTRAINT CHK_END_DATE CHECK (`end_date` >= `start_date`),
 	CONSTRAINT CHK_BALANCE CHECK (`balance_quantity` >= 0),
     CONSTRAINT PK_memberships PRIMARY KEY (`id`),
     CONSTRAINT FK_membership_client FOREIGN KEY (`client_id`)

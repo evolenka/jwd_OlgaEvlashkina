@@ -17,8 +17,6 @@ public class ReadAllMembershipTypesCommandImpl implements Command {
 	
 	static Logger logger = LogManager.getLogger(ReadAllMembershipTypesCommandImpl.class);
 
-	ServiceFactory servicefactory = ServiceFactory.getInstance();
-
 	@Override
 	public String execute(HttpServletRequest request) {
 
@@ -26,7 +24,9 @@ public class ReadAllMembershipTypesCommandImpl implements Command {
 
 		List<MembershipType> membershipTypes;
 		try {
-			membershipTypes = servicefactory.getMembershipService().readAllTypes();
+			
+			membershipTypes = ServiceFactory.getInstance().getMembershipService().readAllTypes();
+		
 			request.setAttribute("membershipTypes", membershipTypes);
 			page = ConfigurationManager.getProperty("path.page.membershipTypes");
 			logger.debug("page {}", page);

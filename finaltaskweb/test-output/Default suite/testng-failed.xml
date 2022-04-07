@@ -3,13 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="test.by.jwd.finaltaskweb.dao.UpdateTest">
+      <class name="test.by.jwd.finaltaskweb.dao.UpdateVisitStatusAndCancelTest">
         <methods>
-          <include name="testUpdate"/>
+          <include name="testUpdateStatusToAbsent"/>
           <include name="beforeTest"/>
-          <include name="testUpdate2"/>
         </methods>
-      </class> <!-- test.by.jwd.finaltaskweb.dao.UpdateTest -->
+      </class> <!-- test.by.jwd.finaltaskweb.dao.UpdateVisitStatusAndCancelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

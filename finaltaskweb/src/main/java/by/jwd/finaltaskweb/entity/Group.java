@@ -2,10 +2,11 @@ package by.jwd.finaltaskweb.entity;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Group extends Entity {
 
-	private int id;
+	
 	private Teacher teacher;
 	private String title;
 	private Level level;
@@ -50,15 +51,12 @@ public class Group extends Entity {
 		this.schedule = schedule;
 	}
 
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
-		int result = 1;
-		result = prime * result + id;
-		result = prime * result + ((level == null) ? 0 : level.hashCode());
-		result = prime * result + ((schedule == null) ? 0 : schedule.hashCode());
-		result = prime * result + ((teacher == null) ? 0 : teacher.hashCode());
-		result = prime * result + ((title == null) ? 0 : title.hashCode());
+		int result = super.hashCode();
+		result = prime * result + Objects.hash(level, schedule, teacher, title);
 		return result;
 	}
 
@@ -66,31 +64,13 @@ public class Group extends Entity {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
+		if (!super.equals(obj))
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
 		Group other = (Group) obj;
-		if (id != other.id)
-			return false;
-		if (level != other.level)
-			return false;
-		if (schedule == null) {
-			if (other.schedule != null)
-				return false;
-		} else if (!schedule.equals(other.schedule))
-			return false;
-		if (teacher == null) {
-			if (other.teacher != null)
-				return false;
-		} else if (!teacher.equals(other.teacher))
-			return false;
-		if (title == null) {
-			if (other.title != null)
-				return false;
-		} else if (!title.equals(other.title))
-			return false;
-		return true;
+		return level == other.level && Objects.equals(schedule, other.schedule)
+				&& Objects.equals(teacher, other.teacher) && Objects.equals(title, other.title);
 	}
 
 	@Override

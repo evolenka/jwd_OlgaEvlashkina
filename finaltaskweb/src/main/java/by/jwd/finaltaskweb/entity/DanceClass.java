@@ -77,7 +77,7 @@ public class DanceClass extends Entity{
 		final StringBuilder sb = new StringBuilder("\nDanceClass:");
 		sb.append("\n").append(super.toString());
 		sb.append(schedule);
-		sb.append("\ndate: ").append(new SimpleDateFormat("dd.MM.yyyy").format(date));
+		sb.append("\ndate: ").append(date);
 		sb.append(clients);
 		return sb.toString();
 	}

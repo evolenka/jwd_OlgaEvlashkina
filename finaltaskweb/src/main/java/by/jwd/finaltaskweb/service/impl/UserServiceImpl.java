@@ -4,114 +4,98 @@ import java.util.ArrayList;
 import java.util.List;
 
 import by.jwd.finaltaskweb.dao.DaoException;
-import by.jwd.finaltaskweb.dao.DaoFactory;
 import by.jwd.finaltaskweb.entity.Client;
+import by.jwd.finaltaskweb.entity.Role;
 import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.entity.User;
 import by.jwd.finaltaskweb.service.ServiceException;
+import by.jwd.finaltaskweb.service.StudioServiceImpl;
 import by.jwd.finaltaskweb.service.UserService;
 
-public class UserServiceImpl implements UserService {
-
-	private DaoFactory factory = DaoFactory.getInstance();
-
-	@Override
-	public User readByLogin(String login) throws ServiceException {
-
-		try {
-			return factory.getUserDao().readByLogin(login);
-		} catch (DaoException e) {
-			throw new ServiceException();
-		}
-	}
-
-	@Override
-	public List<User> readBySurname(String surname) throws ServiceException {
-
-		try {
-			return factory.getUserDao().readBySurname(surname);
-		} catch (DaoException e) {
-			throw new ServiceException();
-		}
-	}
+public class UserServiceImpl extends StudioServiceImpl implements UserService {
 
 	@Override
 	public List<User> readAll() throws ServiceException {
+		List<User> users = null;
 		try {
-			return factory.getUserDao().readAll();
+			transaction.createDaoFactory().getUserDao().readAll();
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		return users;
 	}
 
 	@Override
 	public List<Client> readAllClient() throws ServiceException {
+		List<Client> clients = null;
 		try {
-			return factory.getUserDao().readAllClient();
+			clients = transaction.createDaoFactory().getUserDao().readByRole(Role.CLIENT);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		return clients;
 	}
 
 	@Override
 	public List<Teacher> readAllTeacher() throws ServiceException {
+		List<Teacher> teachers = null;
 		try {
-			return factory.getUserDao().readAllTeacher();
+			teachers = transaction.createDaoFactory().getUserDao().readByRole(Role.TEACHER);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+
+		return teachers;
 	}
 
 	@Override
-	public Client readEntityById(Integer id) throws ServiceException {
+	public User readEntityById(Integer id) throws ServiceException {
+		User user = null;
 		try {
-			return (Client) factory.getUserDao().readEntityById(id);
+			user = transaction.createDaoFactory().getUserDao().readEntityById(id);
+			transaction.close();
+
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		return user;
 	}
 
 	@Override
-	public boolean delete(Integer id) throws ServiceException {
+	public User readByLogin(String login) throws ServiceException {
+		User user = null;
 		try {
-			return factory.getUserDao().delete(id);
+			transaction.createDaoFactory().getUserDao().readByLogin(login);
+			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		return user;
 	}
 
-	@Override
-	public boolean create(User user) throws ServiceException {
+	public User readByLoginAndPassword(String login, String password) throws ServiceException {
+		User user = null;
 		try {
-			return factory.getUserDao().create(user);
+			transaction.createDaoFactory().getUserDao().readByLoginAndPassword(login, password);
+			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-	}
-
-	@Override
-	public boolean update(User user) throws ServiceException {
-		try {
-			return factory.getUserDao().update(user);
-		} catch (DaoException e) {
-			throw new ServiceException();
-		}
-	}
-
-	@Override
-	public boolean authorization(String login, String password) throws ServiceException {
-		try {
-			return factory.getUserDao().authorization(login, password);
-		} catch (DaoException e) {
-			throw new ServiceException();
-		}
+		return user;
 	}
 
 	@Override
 	public List<Teacher> readByDanceStyle(String danceStyle) throws ServiceException {
 		List<Teacher> teachers = new ArrayList<>();
 		try {
-			factory.getUserDao().readByDanceStyle(danceStyle);
+			transaction.createDaoFactory().getUserDao().readByDanceStyle(danceStyle);
+			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
@@ -122,11 +106,44 @@ public class UserServiceImpl implements UserService {
 	public List<String> readAllDanceStyle() throws ServiceException {
 		List<String> danceStyles = new ArrayList<>();
 		try {
-
-			factory.getUserDao().readAllDanceStyle();
+			transaction.createDaoFactory().getUserDao().readAllDanceStyle();
+			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
 		return danceStyles;
+	}
+
+	@Override
+	public boolean delete(Integer id) throws ServiceException {
+		try {
+			transaction.createDaoFactory().getUserDao().delete(id);
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return true;
+	}
+
+	@Override
+	public boolean create(User user) throws ServiceException {
+		try {
+			transaction.createDaoFactory().getUserDao().create(user);
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return true;
+	}
+
+	@Override
+	public boolean update(User user) throws ServiceException {
+		try {
+			transaction.createDaoFactory().getUserDao().update(user);
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return true;
 	}
 }

@@ -1,6 +1,5 @@
 package by.jwd.finaltaskweb.dao.impl;
 
-import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,44 +12,32 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import by.jwd.finaltaskweb.dao.ConnectionPool;
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.MembershipDao;
+import by.jwd.finaltaskweb.dao.StudioDaoImpl;
 import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.MembershipType;
 
-public class MembershipDaoImpl implements MembershipDao {
+public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 
 	static Logger logger = LogManager.getLogger(MembershipDaoImpl.class);
 
 	private static final String SQL_SELECT_ALL_MEMBERSHIP = "SELECT membership.id, membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership`";
 	private static final String SQL_SELECT_ALL_TYPES = "SELECT type_of_membership.id,  type_of_membership.title, type_of_membership.max_class_quantity, type_of_membership.price FROM `type_of_membership`";
 
-	private static final String SQL_SELECT_BY_ID = "SELECT membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership_id = ?";
-	private static final String SQL_SELECT_BY_CLIENT_AND_PERIOD = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.start_date > = ? AND membership.end_date <= ?";
-	private static final String SQL_SELECT_BY_PERIOD = "SELECT membership.id, membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.start_date > = ? AND membership.end_date <= ?";
-	private static final String SQL_SELECT_VALID_BY_CLIENT = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.balance_quantity > 0 AND membership.end_date <= СURRENT_DATE";
-	private static final String SQL_INSERT_MEMBERSHIP = "INSERT INTO membership (client_id, start_date, end_date, type_of_membership_id) VALUES (?, ?, ?, ?)";
-	private static final String SQL_INSERT_TYPE = "INSERT INTO type_of_membership (title, max_class_quantity, price) VALUES (?, ?, ?)";
+	private static final String SQL_SELECT_BY_ID = "SELECT membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.id = ?";
+	private static final String SQL_SELECT_BY_CLIENT_AND_PERIOD = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.start_date >= ? AND membership.start_date <= ?";
+	private static final String SQL_SELECT_BY_PERIOD = "SELECT membership.id, membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.start_date >= ? AND membership.start_date <= ?";
+	private static final String SQL_SELECT_VALID_BY_CLIENT = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.balance_quantity > 0 AND membership.end_date >= CURRENT_DATE()";
+	private static final String SQL_INSERT_MEMBERSHIP = "INSERT INTO `membership` (client_id, start_date, end_date, membership.balance_quantity, type_of_membership_id) VALUES (?, ?, ?, ?, ?)";
+	private static final String SQL_INSERT_TYPE = "INSERT INTO `type_of_membership` (title, max_class_quantity, price) VALUES (?, ?, ?)";
 
-	private static final String SQL_DELETE_BY_ID = "DELETE FROM membership WHERE id = ?";
-	private static final String SQL_DELETE_TYPE_BY_ID = "DELETE FROM type_of_membership WHERE id = ?";
+	private static final String SQL_DELETE_BY_ID = "DELETE FROM `membership` WHERE id = ?";
+	private static final String SQL_DELETE_TYPE_BY_ID = "DELETE FROM `type_of_membership` WHERE id = ?";
 
-	private static final String SQL_UPDATE_MEMBERSHIP = "UPDATE membership SET client_id = ?, start_date = ?, end_date = ?, balance_quantity = ?, type_of_membership_id = ? WHERE id = ?";
-	private static final String SQL_UPDATE_TYPE = "UPDATE type_of_membership SET title = ?, max_class_quantity = ?, price = ?";
-
-	private Connection connection;
-
-	ConnectionPool pool = ConnectionPool.getInstance();
-
-	public MembershipDaoImpl() {
-		try {
-			connection = pool.getConnection();
-		} catch (DaoException e) {
-			logger.error("It is impossible to connect to a database", e);
-		}
-	}
+	private static final String SQL_UPDATE_MEMBERSHIP = "UPDATE `membership` SET client_id = ?, start_date = ?, end_date = ?, balance_quantity = ?, type_of_membership_id = ? WHERE id = ?";
+	private static final String SQL_UPDATE_TYPE = "UPDATE `type_of_membership` SET title = ?, max_class_quantity = ?, price = ? WHERE id = ?";
 
 	@Override
 	public List<Membership> readAll() throws DaoException {
@@ -79,12 +66,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
-
 		}
 		logger.debug("memberships have been read from db");
 		return memberships;
@@ -111,12 +92,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
-
 		}
 		logger.debug("types of memberships have been read from db");
 		return types;
@@ -140,10 +115,9 @@ public class MembershipDaoImpl implements MembershipDao {
 				Membership membership = new Membership(resultSet.getInt(1));
 				membership.setClient(new Client(clientId));
 				membership.setStartDate(resultSet.getDate(2).toLocalDate());
-				membership.setBalanceClassQuantity(resultSet.getInt(3));
-				membership.setEndDate(resultSet.getDate(4).toLocalDate());
-				membership.setBalanceClassQuantity(resultSet.getInt(5));
-				membership.setType(new MembershipType(resultSet.getInt(6)));
+				membership.setEndDate(resultSet.getDate(3).toLocalDate());
+				membership.setBalanceClassQuantity(resultSet.getInt(4));
+				membership.setType(new MembershipType(resultSet.getInt(5)));
 
 				memberships.add(membership);
 			}
@@ -151,12 +125,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
-
 		}
 		logger.debug("all valid memberships have been read from db");
 		return memberships;
@@ -172,6 +140,7 @@ public class MembershipDaoImpl implements MembershipDao {
 		try {
 			statement = connection.prepareStatement(SQL_SELECT_BY_ID);
 			statement.setInt(1, id);
+			logger.debug("statement {}", statement.toString());
 
 			ResultSet resultSet = statement.executeQuery();
 
@@ -181,10 +150,9 @@ public class MembershipDaoImpl implements MembershipDao {
 
 				membership.setClient(new Client(resultSet.getInt(1)));
 				membership.setStartDate(resultSet.getDate(2).toLocalDate());
-				membership.setBalanceClassQuantity(resultSet.getInt(3));
-				membership.setEndDate(resultSet.getDate(4).toLocalDate());
-				membership.setBalanceClassQuantity(resultSet.getInt(5));
-				membership.setType(new MembershipType(resultSet.getInt(6)));
+				membership.setEndDate(resultSet.getDate(3).toLocalDate());
+				membership.setBalanceClassQuantity(resultSet.getInt(4));
+				membership.setType(new MembershipType(resultSet.getInt(5)));
 
 				logger.debug("membership has been read by id");
 			}
@@ -193,11 +161,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return membership;
 	}
@@ -215,11 +178,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 
 		logger.debug("membership been deleted");
@@ -236,8 +194,8 @@ public class MembershipDaoImpl implements MembershipDao {
 			statement = connection.prepareStatement(SQL_INSERT_MEMBERSHIP);
 
 			statement.setInt(1, membership.getClient().getId());
-			statement.setString(2, membership.getStartDate().toString());
-			statement.setString(3, membership.getEndDate().toString());
+			statement.setDate(2, Date.valueOf(membership.getStartDate()));
+			statement.setDate(3, Date.valueOf(membership.getEndDate()));
 			statement.setInt(4, membership.getBalanceClassQuantity());
 			statement.setInt(5, membership.getType().getId());
 
@@ -247,11 +205,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return true;
 	}
@@ -264,20 +217,22 @@ public class MembershipDaoImpl implements MembershipDao {
 		try {
 
 			statement = connection.prepareStatement(SQL_UPDATE_MEMBERSHIP);
+
 			statement.setInt(1, membership.getClient().getId());
-			statement.setString(2, membership.getStartDate().toString());
-			statement.setString(3, membership.getEndDate().toString());
+			statement.setDate(2, Date.valueOf(membership.getStartDate()));
+			statement.setDate(3, Date.valueOf(membership.getEndDate()));
 			statement.setInt(4, membership.getBalanceClassQuantity());
 			statement.setInt(5, membership.getType().getId());
+			statement.setInt(6, membership.getId());
 
+			logger.debug("statement {}", statement.toString());
 			statement.executeUpdate();
+
 			close(statement);
 			logger.debug("membership has been updated");
 
 		} catch (SQLException e) {
-
 			throw new DaoException();
-
 		} finally {
 			close(statement);
 		}
@@ -285,7 +240,8 @@ public class MembershipDaoImpl implements MembershipDao {
 	}
 
 	@Override
-	public List<Membership> readByClientAndPeriod(Integer clientId, LocalDate startDate, LocalDate endDate) throws DaoException {
+	public List<Membership> readByClientAndPeriod(Integer clientId, LocalDate startDate, LocalDate endDate)
+			throws DaoException {
 
 		List<Membership> memberships = new ArrayList<>();
 
@@ -297,7 +253,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			statement.setDate(2, Date.valueOf(startDate));
 			statement.setDate(3, Date.valueOf(endDate));
 
-
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
@@ -308,23 +263,17 @@ public class MembershipDaoImpl implements MembershipDao {
 				membership.setStartDate(resultSet.getDate(2).toLocalDate());
 				membership.setEndDate(resultSet.getDate(3).toLocalDate());
 				membership.setBalanceClassQuantity(resultSet.getInt(4));
-				membership.setBalanceClassQuantity(resultSet.getInt(5));
-				membership.setType(new MembershipType(resultSet.getInt(6)));
+				membership.setType(new MembershipType(resultSet.getInt(5)));
 
 				memberships.add(membership);
 
-				logger.debug("memberships has been read by client");
+				logger.debug("memberships have been read by client {}", membership);
 			}
 
 		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return memberships;
 	}
@@ -346,28 +295,23 @@ public class MembershipDaoImpl implements MembershipDao {
 			while (resultSet.next()) {
 
 				Membership membership = new Membership();
-				
+
 				membership.setId(resultSet.getInt(1));
 				membership.setClient(new Client(resultSet.getInt(2)));
 				membership.setStartDate(resultSet.getDate(3).toLocalDate());
-				membership.setStartDate(resultSet.getDate(4).toLocalDate());
+				membership.setEndDate(resultSet.getDate(4).toLocalDate());
 				membership.setBalanceClassQuantity(resultSet.getInt(5));
 				membership.setType(new MembershipType(resultSet.getInt(6)));
 
 				memberships.add(membership);
 
-				logger.debug("memberships has been read by period");
+				logger.debug("memberships have been read by period");
 			}
 
 		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return memberships;
 	}
@@ -384,11 +328,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 
 		logger.debug("type of membership been deleted");
@@ -414,11 +353,6 @@ public class MembershipDaoImpl implements MembershipDao {
 			throw new DaoException();
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return true;
 	}
@@ -429,14 +363,15 @@ public class MembershipDaoImpl implements MembershipDao {
 		PreparedStatement statement = null;
 
 		try {
-			connection.setAutoCommit(false);
+
 			statement = connection.prepareStatement(SQL_UPDATE_TYPE);
+
 			statement.setString(1, type.getTitle());
 			statement.setInt(2, type.getMaxClassQuantity());
 			statement.setDouble(3, type.getPrice());
-
+			statement.setInt(4, type.getId());
+			
 			statement.executeUpdate();
-			close(statement);
 			logger.debug("type of membership has been updated");
 
 		} catch (SQLException e) {
@@ -444,11 +379,6 @@ public class MembershipDaoImpl implements MembershipDao {
 
 		} finally {
 			close(statement);
-			try {
-				connection.close();
-			} catch (SQLException e) {
-				throw new DaoException();
-			}
 		}
 		return true;
 	}

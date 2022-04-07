@@ -10,10 +10,8 @@ public interface UserService extends StudioService <Integer, User> {
 	
 	User readByLogin(String login) throws ServiceException;
 	
-	boolean authorization (String login, String password) throws ServiceException;
-
-	List<User> readBySurname(String surname) throws ServiceException;
-
+	User readByLoginAndPassword(String login, String password) throws ServiceException;
+	
 	List<Client> readAllClient() throws ServiceException;
 	
 	List<Teacher> readAllTeacher() throws ServiceException;
