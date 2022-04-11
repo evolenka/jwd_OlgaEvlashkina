@@ -4,7 +4,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.finaltaskweb.dao.DaoException;
+import by.jwd.finaltaskweb.dao.DaoFactory;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.service.DanceClassService;
@@ -12,6 +16,10 @@ import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
 
 public class DanceClassServiceImpl extends StudioServiceImpl implements DanceClassService {
+	
+	private static Logger logger = LogManager.getLogger(DanceClassServiceImpl.class);
+	
+	private DaoFactory factory = DaoFactory.getInstance();
 
 	@Override
 	public List<DanceClass> readAll() throws ServiceException {
@@ -19,7 +27,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		List<DanceClass> danceClasses = null;
 
 		try {
-			danceClasses = transaction.createDaoFactory().getDanceClassDao().readAll();
+			danceClasses = factory.getDanceClassDao(transaction).readAll();
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -33,7 +41,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		DanceClass danceClass = null;
 
 		try {
-			danceClass = transaction.createDaoFactory().getDanceClassDao().readEntityById(id);
+			danceClass = factory.getDanceClassDao(transaction).readEntityById(id);
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -45,7 +53,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 	@Override
 	public boolean delete(Integer id) throws ServiceException {
 		try {
-			transaction.createDaoFactory().getDanceClassDao().delete(id);
+			factory.getDanceClassDao(transaction).delete(id);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -56,7 +64,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 	@Override
 	public boolean create(DanceClass danceClass) throws ServiceException {
 		try {
-			transaction.createDaoFactory().getDanceClassDao().create(danceClass);
+			factory.getDanceClassDao(transaction).create(danceClass);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -67,7 +75,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 	@Override
 	public boolean update(DanceClass danceClass) throws ServiceException {
 		try {
-			transaction.createDaoFactory().getDanceClassDao().update(danceClass);
+			factory.getDanceClassDao(transaction).update(danceClass);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -82,12 +90,12 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		try {
-			List<Schedule> schedules = transaction.createDaoFactory().getScheduleDao().readByGroup(groupId);
+			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupId);
 
 			for (LocalDate date : availiableDates) {
 				for (Schedule schedule : schedules) {
 					danceClasses.add(
-							transaction.createDaoFactory().getDanceClassDao().readByDateAndSchedule(date, schedule));
+							factory.getDanceClassDao(transaction).readByDateAndSchedule(date, schedule));
 				}
 			}
 			transaction.close();
@@ -104,10 +112,10 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		List<LocalDate> availiableDates = new ArrayList<>();
 
 		try {
-			List<Schedule> schedules = transaction.createDaoFactory().getScheduleDao().readByGroup(groupId);
+			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupId);
 
 			for (Schedule schedule : schedules) {
-				List<DanceClass> danceClasses = transaction.createDaoFactory().getDanceClassDao()
+				List<DanceClass> danceClasses = factory.getDanceClassDao(transaction)
 						.readActiveBySchedule(schedule);
 
 				for (DanceClass danceClass : danceClasses) {
@@ -128,9 +136,9 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		try {
-			List<Schedule> schedules = transaction.createDaoFactory().getScheduleDao().readByGroup(groupId);
+			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupId);
 			for (Schedule schedule : schedules) {
-				List<DanceClass> danceClassesBySchedule = transaction.createDaoFactory().getDanceClassDao()
+				List<DanceClass> danceClassesBySchedule = factory.getDanceClassDao(transaction)
 						.readBySchedule(schedule);
 
 				for (DanceClass danceClass : danceClassesBySchedule) {

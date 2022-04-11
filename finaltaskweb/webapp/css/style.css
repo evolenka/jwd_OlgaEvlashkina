@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body, html {
+	height: 100%;
+}
+.index{
+	background-image: url('../img/bg.jfif');
+	background-size: cover;
+	position: relative;
+	height: 100%;
+}
+
+.nav{
+	height:10%;
+}
+
+.main {
+	display: flex;
+	margin-top: 50px;
+	height: 65%;
+}
+
+.blockquote-custom {
+	position: relative;
+	font-size: 1.1rem;
+	font: italic;
+	padding: 100px 30px 30px
+}
+
+.title {
+	position: relative;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.blockquote-footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 0.5px solid white;
+}
+
+.phone {
+	text-align : center;
+	height: 10%;
+}
+
+.card-footer {
+	text-align: left;
+	border-bottom-left-radius: 25px;
+	height: 5%;
+}
+
+th, td {
+	padding: 15px;
+}
+
+th {
+	background-color: #FFB6C1;
+}
+
+tr:nth-child(even) {
+	background-color: #E9E9E9;
+}
+
+input[type=file], select {
+	padding: 12px 20px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	background-color: #F1F1F1;
+	border-radius: 2px;
+	text-align: center;
+	font-family: monospace;
+	color: #686868;
+	width: 400px;
+	display: block;
+}
+
+input[type=submit] {
+	background-color: #FFB6C1;
+	color: white;
+	padding: 12px 20px;
+	margin-left: 120px;
+	width: 200px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+a {
+	font:italic;
+	color: white;
+}

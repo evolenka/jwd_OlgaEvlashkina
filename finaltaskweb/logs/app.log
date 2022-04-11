@@ -5973,3 +5973,9 @@ id: 1title: nullmax quantity of classes: 0price: 0.0
 2022-04-07 12:59:54 [main] DEBUG jwd.finaltaskweb.dao.impl.DanceClassDaoImpl - dance classes have been read by schedule_id
 2022-04-07 12:59:54 [main] DEBUG jwd.finaltaskweb.dao.pool.ConnectionPool - Connection was received from pool. Current pool size: 57 used connections; 0 free connection
 2022-04-07 12:59:54 [main] DEBUG jwd.finaltaskweb.dao.impl.DanceClassDaoImpl - dance classes have been read by schedule_id
+2022-04-08 13:35:37 [main] DEBUG jwd.finaltaskweb.dao.pool.ConnectionPool - Connection was received from pool. Current pool size: 1 used connections; 0 free connection
+2022-04-08 13:35:37 [main] DEBUG jwd.finaltaskweb.dao.impl.UserDaoImpl - client has been read by login and password
+2022-04-08 13:35:38 [main] DEBUG jwd.finaltaskweb.dao.pool.ConnectionPool - Connection was received from pool. Current pool size: 2 used connections; 0 free connection
+2022-04-08 13:35:38 [main] DEBUG jwd.finaltaskweb.dao.impl.UserDaoImpl - teacher has been read by login and password
+2022-04-08 13:35:38 [main] DEBUG jwd.finaltaskweb.dao.pool.ConnectionPool - Connection was received from pool. Current pool size: 3 used connections; 0 free connection
+2022-04-08 13:35:38 [main] DEBUG jwd.finaltaskweb.dao.impl.UserDaoImpl - admin has been read by login and password

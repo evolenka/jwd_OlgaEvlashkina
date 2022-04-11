@@ -15,9 +15,9 @@ CREATE TABLE `client` (
 	`id` INTEGER NOT NULL,
 	`surname` VARCHAR(100) NOT NULL,
 	`name` VARCHAR(50) NOT NULL,
-	`patronymic` VARCHAR(100) NOT NULL,
+	`patronymic` VARCHAR(100),
 	`email` VARCHAR(254) NOT NULL,
-	`phone` VARCHAR(50) NOT NULL,
+	`phone` VARCHAR(50),
 	CONSTRAINT PK_client PRIMARY KEY (`id`),
     CONSTRAINT FK_client_user FOREIGN KEY (`id`)
     REFERENCES `user` (`id`)

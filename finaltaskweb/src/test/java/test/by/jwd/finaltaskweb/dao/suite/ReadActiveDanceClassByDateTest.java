@@ -17,6 +17,7 @@ import org.testng.annotations.Test;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
+import by.jwd.finaltaskweb.dao.TransactionImpl;
 import by.jwd.finaltaskweb.dao.pool.ConnectionPool;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Schedule;
@@ -98,8 +99,9 @@ public class ReadActiveDanceClassByDateTest {
 	public void testReadActiveByDate(LocalDate date, List <DanceClass> expected) throws DaoException {
 
 		Connection connection = ConnectionPool.getInstance().getConnection();
-		DaoFactory factory = new DaoFactory (connection);
-		List <DanceClass>  actual = factory.getDanceClassDao().readActiveByDate (date);
+		TransactionImpl transaction = new TransactionImpl(connection);
+		DaoFactory factory = DaoFactory.getInstance();
+		List <DanceClass>  actual = factory.getDanceClassDao(transaction).readActiveByDate (date);
 		assertEquals(actual, expected);
 	}
 }

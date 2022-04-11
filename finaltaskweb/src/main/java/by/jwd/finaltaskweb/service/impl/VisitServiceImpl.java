@@ -6,7 +6,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import by.jwd.finaltaskweb.dao.DaoException;
+import by.jwd.finaltaskweb.dao.DaoFactory;
+import by.jwd.finaltaskweb.dao.impl.UserDaoImpl;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
@@ -18,6 +23,10 @@ import by.jwd.finaltaskweb.service.StudioServiceImpl;
 import by.jwd.finaltaskweb.service.VisitService;
 
 public class VisitServiceImpl extends StudioServiceImpl implements VisitService {
+	
+	private static Logger logger = LogManager.getLogger(VisitServiceImpl.class);
+
+	private DaoFactory factory = DaoFactory.getInstance();
 
 	@Override
 	public List<Visit> readAll() throws ServiceException {
@@ -25,7 +34,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 		List<Visit> visits = new ArrayList<>();
 
 		try {
-			visits = transaction.createDaoFactory().getVisitDao().readAll();
+			visits = factory.getVisitDao(transaction).readAll();
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -38,7 +47,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	public Visit readEntityById(Integer id) throws ServiceException {
 		Visit visit = null;
 		try {
-			visit = transaction.createDaoFactory().getVisitDao().readEntityById(id);
+			visit = factory.getVisitDao(transaction).readEntityById(id);
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -51,7 +60,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	public boolean delete(Integer id) throws ServiceException {
 
 		try {
-			transaction.createDaoFactory().getVisitDao().delete(id);
+			factory.getVisitDao(transaction).delete(id);
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -63,7 +72,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	@Override
 	public boolean create(Visit visit) throws ServiceException {
 		try {
-			transaction.createDaoFactory().getVisitDao().create(visit);
+			factory.getVisitDao(transaction).create(visit);
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -75,7 +84,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	@Override
 	public boolean update(Visit visit) throws ServiceException {
 		try {
-			transaction.createDaoFactory().getVisitDao().update(visit);
+			factory.getVisitDao(transaction).update(visit);
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -91,13 +100,11 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 		try {
 
-			List<Membership> memberships = transaction.createDaoFactory().getMembershipDao()
-					.readValidByClient(clientId);
+			List<Membership> memberships = factory.getMembershipDao(transaction).readValidByClient(clientId);
 
 			for (Membership membership : memberships) {
 
-				List<Visit> visitByMembership = transaction.createDaoFactory().getVisitDao()
-						.readPlannedByMembership(membership);
+				List<Visit> visitByMembership = factory.getVisitDao(transaction).readPlannedByMembership(membership);
 
 				for (Visit visit : visitByMembership) {
 					visits.add(visit);
@@ -116,22 +123,20 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 		List<Visit> visits = new ArrayList<>();
 
 		try {
-			List<Group> groups = transaction.createDaoFactory().getGroupDao().readByTeacherId(teacherId);
+			List<Group> groups = factory.getGroupDao(transaction).readByTeacherId(teacherId);
 
 			for (Group group : groups) {
-				List<Schedule> schedules = transaction.createDaoFactory().getScheduleDao().readByGroup(group.getId());
+				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
 				for (Schedule schedule : schedules) {
 
-					List<DanceClass> danceClasses = transaction.createDaoFactory().getDanceClassDao()
-							.readBySchedule(schedule);
+					List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readBySchedule(schedule);
 
 					for (DanceClass danceClass : danceClasses) {
 
 						if (isPlanned(danceClass)) {
 
-							visits.add(transaction.createDaoFactory().getVisitDao().readByDanceClass(danceClass));
+							visits.add(factory.getVisitDao(transaction).readByDanceClass(danceClass));
 						}
-
 					}
 				}
 			}
@@ -150,17 +155,17 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 		try {
 
-			List<Membership> memberships = transaction.createDaoFactory().getMembershipDao()
+			List<Membership> memberships = factory.getMembershipDao(transaction)
 					.readValidByClient(clientId);
 
-			List<DanceClass> danceClasses = transaction.createDaoFactory().getDanceClassDao().readByPeriod(startDate,
+			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate,
 					endDate);
 
 			for (Membership membership : memberships) {
 
 				for (DanceClass danceClass : danceClasses) {
 
-					Visit visit = transaction.createDaoFactory().getVisitDao().readByMembershipAndDanceClass(membership,
+					Visit visit = factory.getVisitDao(transaction).readByMembershipAndDanceClass(membership,
 							danceClass);
 
 					if (visit != null) {
@@ -182,16 +187,15 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 		List<Visit> visits = new ArrayList<>();
 		try {
-			List<DanceClass> danceClasses = transaction.createDaoFactory().getDanceClassDao().readByPeriod(startDate,
+			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate,
 					endDate);
 
 			for (DanceClass danceClass : danceClasses) {
 
 				if (danceClass.getSchedule().getGroup().getId() == groupId) {
 
-					visits.add(transaction.createDaoFactory().getVisitDao().readByDanceClass(danceClass));
+					visits.add(factory.getVisitDao(transaction).readByDanceClass(danceClass));
 				}
-
 			}
 			transaction.close();
 		} catch (DaoException e) {
@@ -207,7 +211,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 		Map<Group, Integer> visits = new HashMap<>();
 		try {
-			List<Group> groups = transaction.createDaoFactory().getGroupDao().readAll();
+			List<Group> groups = factory.getGroupDao(transaction).readAll();
 
 			for (Group group : groups) {
 				int quantity = this.readByGroupAndPeriod(group.getId(), startDate, endDate).size();
@@ -225,7 +229,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	public boolean isPlanned(DanceClass danceClass) throws ServiceException {
 		Visit visit;
 		try {
-			visit = transaction.createDaoFactory().getVisitDao().readByDanceClass(danceClass);
+			visit =  factory.getVisitDao(transaction).readByDanceClass(danceClass);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -237,8 +241,8 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	public boolean markPresence(Visit visit, Status status) throws ServiceException {
 		try {
 			if (status != Status.PLANNED && visit.getStatus() == Status.PLANNED || visit.getStatus() == Status.ABSENT) {
-			transaction.createDaoFactory().getVisitDao().updateStatus(visit, status);
-			transaction.close();
+				 factory.getVisitDao(transaction).updateStatus(visit, status);
+				transaction.close();
 			} else {
 				return false;
 			}
@@ -248,13 +252,13 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 		}
 		return true;
 	}
-	
+
 	@Override
 	public boolean cancelMarkPresence(Visit visit) throws ServiceException {
 		try {
 			if (visit.getStatus() != Status.PLANNED) {
-			transaction.createDaoFactory().getVisitDao().cancelUpdateStatus(visit);
-			transaction.close();
+				 factory.getVisitDao(transaction).cancelUpdateStatus(visit);
+				transaction.close();
 			} else {
 				return false;
 			}

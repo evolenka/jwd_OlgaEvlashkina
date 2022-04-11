@@ -21,7 +21,7 @@ import by.jwd.finaltaskweb.entity.User;
 
 public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
-	static Logger logger = LogManager.getLogger(UserDaoImpl.class);
+	private static Logger logger = LogManager.getLogger(UserDaoImpl.class);
 
 	private static final String SQL_SELECT_ALL_USER = "SELECT user.id, user.login, user.password, user.role FROM `user`";
 	private static final String SQL_SELECT_ALL_CLIENT = "SELECT user.id, user.login, user.password, client.surname, client.name, client.patronymic, client.phone, client.email FROM `user` join `client` ON user.id = client.id";

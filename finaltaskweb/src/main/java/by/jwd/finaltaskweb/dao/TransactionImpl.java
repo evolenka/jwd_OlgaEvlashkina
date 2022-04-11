@@ -9,11 +9,11 @@ public class TransactionImpl implements Transaction {
 
 	public TransactionImpl(Connection connection) {
 		this.connection = connection;
-	}
-
-	@Override
-	public DaoFactory createDaoFactory() {
-		return new DaoFactory(connection);
+	}  
+	
+	@Override 
+	public Connection getConnection() {
+		return connection;
 	}
 
 	@Override 

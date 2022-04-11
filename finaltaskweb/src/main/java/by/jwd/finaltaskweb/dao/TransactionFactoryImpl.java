@@ -8,30 +8,28 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.pool.ConnectionPool;
 
-
 public class TransactionFactoryImpl implements TransactionFactory {
 
 	static Logger logger = LogManager.getLogger(TransactionFactoryImpl.class);
-	
-	private static Connection connection;
-	
+
 	private static final TransactionFactoryImpl instance = new TransactionFactoryImpl();
-	
-	private TransactionFactoryImpl () {
+
+	private TransactionFactoryImpl() {
 	}
-	
-	public static TransactionFactoryImpl getInstance() throws DaoException {
-		connection = ConnectionPool.getInstance().getConnection();
-//		try {
-//			connection.setAutoCommit(false);
-//		} catch (SQLException e) {
-//			throw new DaoException();
-//		}
+
+	public static TransactionFactoryImpl getInstance() {
 		return instance;
 	}
 
 	@Override
 	public Transaction createTransaction() throws DaoException {
+		Connection connection;
+		try {
+			connection = ConnectionPool.getInstance().getConnection();
+			connection.setAutoCommit(false);
+		} catch (SQLException e) {
+			throw new DaoException();
+		}
 		return new TransactionImpl(connection);
 	}
 }

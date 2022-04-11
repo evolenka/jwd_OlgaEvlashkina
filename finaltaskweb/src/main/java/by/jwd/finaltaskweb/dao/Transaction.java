@@ -1,9 +1,10 @@
 package by.jwd.finaltaskweb.dao;
 
+import java.sql.Connection;
 
 public interface Transaction {
-
-	public DaoFactory createDaoFactory();
+	
+	public Connection getConnection () throws DaoException;
 
 	public void commit() throws DaoException;
 

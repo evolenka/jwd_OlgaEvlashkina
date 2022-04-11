@@ -6,14 +6,14 @@
 <fmt:setBundle basename="pagecontent" var="rb" />
 <html>
 <head>
-<title><fmt:message key="membershippage" bundle="${ rb }" /></title>
+<title><fmt:message key="membershippagetitle" bundle="${ rb }" /></title>
 <c:url value="favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${ icon }"/>">
 <c:url value="css/style.css" var="stylesheet" />
 <link rel="stylesheet" href="<c:out value="${ stylesheet }"/>">
 <body>
 	<h1>
-		<fmt:message key="membershippage" bundle="${ rb }" />
+		<fmt:message key="membershippagetitle" bundle="${ rb }" />
 	</h1>
 	<table>
 		<tr>

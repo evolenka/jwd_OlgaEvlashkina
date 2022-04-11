@@ -16,19 +16,17 @@ import by.jwd.finaltaskweb.service.ServiceFactory;
 public class ReadAllClientCommandImpl implements Command {
 
 	static Logger logger = LogManager.getLogger(ReadAllClientCommandImpl.class);
-
+private ServiceFactory factory = ServiceFactory.getInstance();
 
 	@Override
 	public String execute(HttpServletRequest request) {
 	
-
 		String page = null;
-
 		List<Client> clients;
 		
 		try {
-		
-			clients = ServiceFactory.getInstance().getUserService().readAllClient();
+
+			clients = factory.getUserService().readAllClient();
 			request.setAttribute("clients", clients);
 			page = ConfigurationManager.getProperty("path.page.client");
 			

@@ -1,16 +1,21 @@
 package by.jwd.finaltaskweb.controller;
 
+import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class MessageManager {
+public enum MessageManager {
 
-	private final static ResourceBundle resourceBundle = ResourceBundle.getBundle("resources.messages");
+	EN(ResourceBundle.getBundle("pagecontent", new Locale("en", "US"))),
+	RU(ResourceBundle.getBundle("pagecontent", new Locale("ru", "RU"))),
+	BY(ResourceBundle.getBundle("pagecontent", new Locale("be", "BY")));
 
-	// класс извлекает информацию из файла messages.properties
-	private MessageManager() {
+	private ResourceBundle bundle;
+
+	MessageManager(ResourceBundle bundle) {
+		this.bundle = bundle;
 	}
 
-	public static String getProperty(String key) {
-		return resourceBundle.getString(key);
+	public String getProperty(String key) {
+		return bundle.getString(key);
 	}
 }

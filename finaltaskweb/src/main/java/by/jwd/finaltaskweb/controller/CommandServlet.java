@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -61,12 +62,20 @@ public class CommandServlet extends HttpServlet {
 
 	private void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		logger.debug("receive request");
 		String page = null;
 		response.setCharacterEncoding("utf8");
 
+		HttpSession session = request.getSession(true);
+		MessageManager manager = MessageManager.EN;
+		if (session.getAttribute("role") == null) {
+			session.setAttribute("role",  request.getParameter("role"));
+		}
+
 		// определение команды, пришедшей из JSP
-		ActionCommand client = new ActionCommand();
-		Command command = client.defineCommand(request);
+		CommandProvider provider = new CommandProvider();
+		Command command = provider.getCommand(request);
+		logger.debug(command);
 
 		/*
 		 * вызов реализованного метода execute() и передача параметров
@@ -82,7 +91,7 @@ public class CommandServlet extends HttpServlet {
 		} else {
 			// установка страницы c cообщением об ошибке
 			page = ConfigurationManager.getProperty("path.page.index");
-			request.getSession().setAttribute("nullPage", MessageManager.getProperty("message.nullpage"));
+			request.getSession().setAttribute("nullPage", manager.getProperty("nullpage"));//TO DO
 			response.sendRedirect(request.getContextPath() + page);
 		}
 	}

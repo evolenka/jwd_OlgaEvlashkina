@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
+import by.jwd.finaltaskweb.dao.TransactionImpl;
 import by.jwd.finaltaskweb.dao.pool.ConnectionPool;
 import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.Role;
@@ -89,8 +90,9 @@ public class ReadUserByLoginAndPasswordTest {
 
 	
 		Connection connection = ConnectionPool.getInstance().getConnection();
-		DaoFactory factory = new DaoFactory (connection);
-		User  actual = factory.getUserDao().readByLoginAndPassword (login, password);
+		TransactionImpl transaction = new TransactionImpl(connection);
+		DaoFactory factory = DaoFactory.getInstance();
+		User  actual = factory.getUserDao(transaction).readByLoginAndPassword (login, password);
 		assertEquals(actual, expected);
 	}
 }
