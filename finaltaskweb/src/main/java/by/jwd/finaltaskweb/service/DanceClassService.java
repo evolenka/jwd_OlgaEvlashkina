@@ -13,6 +13,6 @@ public interface DanceClassService extends StudioService <Integer, DanceClass>{
 	
 	public List <DanceClass> readByGroup(Integer groupId) throws ServiceException;
 	
-	public List <LocalDate> findAvailiableDates (Integer groupId) throws ServiceException;
+	public List <LocalDate> readAvailiableDates (Integer groupId) throws ServiceException;
 
 }

@@ -12,7 +12,7 @@ public interface GroupService extends StudioService<Integer, Group> {
 
 	public List<Group> readByWeekDay(List <WeekDay> weekdays) throws ServiceException;
 
-	public List<Group> readByDanceStyle(String dancestyle) throws ServiceException ;
+	public List<Group> readByDanceStyle(String dancestyle) throws ServiceException;
 	
-	public List<Group> readByTeacher (Integer teacher_id) throws ServiceException ;
+	public List<Group> readByTeacher (Integer teacherId) throws ServiceException;
 }

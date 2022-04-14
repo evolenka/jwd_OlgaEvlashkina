@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class MembershipType extends Entity {
 
-	private String title;
+	private Type title;
 	private int maxClassQuantity;
 	private double price;
 
@@ -32,11 +32,11 @@ public class MembershipType extends Entity {
 		this.price = price;
 	}
 
-	public String getTitle() {
+	public Type getTitle() {
 		return title;
 	}
 
-	public void setTitle(String title) {
+	public void setTitle(Type title) {
 		this.title = title;
 	}
 

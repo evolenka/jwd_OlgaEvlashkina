@@ -31,7 +31,7 @@ public class LoginationCommandImpl implements Command {
 		
 		logger.debug("language {}", language);
 		
-		MessageManager manager = MessageManager.EN;
+		MessageManager manager;
 
 		switch (language) {
 			case "en":
@@ -42,6 +42,7 @@ public class LoginationCommandImpl implements Command {
 				break;
 			case "be":
 				manager = MessageManager.BY;
+				break;
 			default:
 				manager = MessageManager.EN;
 			}

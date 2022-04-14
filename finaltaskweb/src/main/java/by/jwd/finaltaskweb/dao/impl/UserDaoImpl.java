@@ -44,7 +44,8 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 	private static final String SQL_UPDATE_USER = "UPDATE user SET login = ?, password = ?, role = ? WHERE id = ?";
 	private static final String SQL_UPDATE_CLIENT = "UPDATE client SET surname = ?,name = ?, patronymic = ?, phone = ?, email = ? WHERE id = ?";
 	private static final String SQL_UPDATE_TEACHER = "UPDATE teacher SET surname = ?, name = ?, dancestyle = ? teacher.portfolio = ? WHERE id = ?";
-
+	
+	
 	@Override
 	public List<User> readAll() throws DaoException {
 
@@ -358,6 +359,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
 		PreparedStatement statement = null;
 		try {
+			connection.setAutoCommit(false);
 			statement = connection.prepareStatement(SQL_INSERT_USER, Statement.RETURN_GENERATED_KEYS);
 
 			statement.setString(1, user.getLogin());
@@ -370,6 +372,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 			ResultSet resultSet = statement.getGeneratedKeys();
 			if (resultSet.next()) {
 				int key = resultSet.getInt(1);
+				logger.debug(key);
 				close(statement);
 
 				if (role == Role.CLIENT) {
@@ -382,8 +385,10 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 					statement.setString(4, client.getPatronymic());
 					statement.setString(5, client.getPhone());
 					statement.setString(6, client.getEmail());
+					logger.debug(statement.toString());
 					statement.executeUpdate();
 					logger.debug("client has been created");
+					connection.commit();
 
 				} else if (role == Role.TEACHER) {
 
@@ -396,18 +401,33 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 					statement.setString(5, teacher.getPortfolio());
 					statement.executeUpdate();
 					logger.debug("teacher has been created");
+					connection.commit();
 				}
 			} else {
 				logger.debug("user has not been created, this login already exists");
 			}
-		} catch (SQLException e) {
+		}catch (SQLException e) {
+			
+			try {
+				connection.rollback();
+			} catch (SQLException e1) {
+				logger.debug("rollback error");
+			}
 			throw new DaoException();
+
 		} finally {
+
+			try {
+				if (connection != null) {
+					connection.setAutoCommit(true);
+				}
+			} catch (SQLException e1) {
+				logger.debug("setAutoCommit error");
+			}
 			close(statement);
 		}
 		return true;
 	}
-
 	@Override
 	public boolean update(User user) throws DaoException {
 
@@ -440,6 +460,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 				statement.setInt(6, client.getId());
 
 				statement.executeUpdate();
+				logger.debug("client has been updated");
 				connection.commit();
 			} else if (role == Role.TEACHER) {
 				statement = connection.prepareStatement(SQL_UPDATE_TEACHER);
@@ -450,6 +471,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 				statement.setString(4, teacher.getPortfolio());
 				statement.setInt(5, teacher.getId());
 				statement.executeUpdate();
+				connection.commit();
 				logger.debug("teacher has been updated");
 			}
 		} catch (SQLException e) {
@@ -534,4 +556,5 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 		logger.debug("all dancestyles have been read from db");
 		return result;
 	}
+
 }

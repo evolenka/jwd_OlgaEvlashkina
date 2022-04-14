@@ -1,7 +1,7 @@
 package by.jwd.finaltaskweb.controller;
 
 import java.io.IOException;
-
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 import javax.servlet.RequestDispatcher;
@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.pool.ConnectionPool;
 
-@WebServlet("/action")
+@WebServlet("/jsp/action")
 @MultipartConfig(fileSizeThreshold = 1024 * 1024, maxFileSize = 1024 * 1024 * 5, maxRequestSize = 1024 * 1024 * 5 * 5)
 
 public class CommandServlet extends HttpServlet {
@@ -46,6 +46,7 @@ public class CommandServlet extends HttpServlet {
 		} catch (DaoException e) {
 			logger.error("initializatin failed");
 		}
+		logger.debug(Locale.getDefault());
 	}
 
 	@Override
@@ -62,12 +63,33 @@ public class CommandServlet extends HttpServlet {
 
 	private void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		logger.debug("receive request");
 		String page = null;
 		response.setCharacterEncoding("utf8");
-
+		
 		HttpSession session = request.getSession(true);
-		MessageManager manager = MessageManager.EN;
+		String language = (String) session.getAttribute("language");
+
+		logger.debug("language {}", language);
+
+		MessageManager manager;
+
+		switch (language) {
+		case "en":
+			manager = MessageManager.EN;
+			break;
+		case "ru":
+			manager = MessageManager.RU;
+			break;
+		case "be":
+			manager = MessageManager.BY;
+		default:
+			manager = MessageManager.EN;
+		}
+		request.setAttribute("language",  session.getAttribute("language"));
+		logger.debug("language {}", language);
+		
 		if (session.getAttribute("role") == null) {
 			session.setAttribute("role",  request.getParameter("role"));
 		}

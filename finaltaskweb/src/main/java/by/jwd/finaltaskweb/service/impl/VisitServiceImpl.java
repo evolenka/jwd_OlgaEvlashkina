@@ -1,5 +1,6 @@
 package by.jwd.finaltaskweb.service.impl;
 
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,19 +12,20 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
-import by.jwd.finaltaskweb.dao.impl.UserDaoImpl;
+
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.Status;
+import by.jwd.finaltaskweb.entity.Type;
 import by.jwd.finaltaskweb.entity.Visit;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
 import by.jwd.finaltaskweb.service.VisitService;
 
 public class VisitServiceImpl extends StudioServiceImpl implements VisitService {
-	
+
 	private static Logger logger = LogManager.getLogger(VisitServiceImpl.class);
 
 	private DaoFactory factory = DaoFactory.getInstance();
@@ -155,11 +157,9 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 		try {
 
-			List<Membership> memberships = factory.getMembershipDao(transaction)
-					.readValidByClient(clientId);
+			List<Membership> memberships = factory.getMembershipDao(transaction).readValidByClient(clientId);
 
-			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate,
-					endDate);
+			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate, endDate);
 
 			for (Membership membership : memberships) {
 
@@ -187,8 +187,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 		List<Visit> visits = new ArrayList<>();
 		try {
-			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate,
-					endDate);
+			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate, endDate);
 
 			for (DanceClass danceClass : danceClasses) {
 
@@ -229,7 +228,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	public boolean isPlanned(DanceClass danceClass) throws ServiceException {
 		Visit visit;
 		try {
-			visit =  factory.getVisitDao(transaction).readByDanceClass(danceClass);
+			visit = factory.getVisitDao(transaction).readByDanceClass(danceClass);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -239,33 +238,82 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 	@Override
 	public boolean markPresence(Visit visit, Status status) throws ServiceException {
+		boolean result = false;
 		try {
-			if (status != Status.PLANNED && visit.getStatus() == Status.PLANNED || visit.getStatus() == Status.ABSENT) {
-				 factory.getVisitDao(transaction).updateStatus(visit, status);
-				transaction.close();
+			/* additional check whether the client membership is valid */
+			if ((Status.ATTENDED == status) && (visit.getMembership().getBalanceClassQuantity() == 0)) {
+				logger.debug("membership is not valid");
+				result = false;
+			} else if ((visit.getStatus() != Status.PLANNED)) {
+				logger.debug("visit status is not valid for marking presence");
+				result = false;
 			} else {
-				return false;
+				transaction.setAutoCommit(false);
+				factory.getVisitDao(transaction).updateStatus(visit, status);
+
+				if ((Status.ATTENDED == status) || !(visit.getMembership().getType().getTitle().equals(Type.UNLIM))) {
+					factory.getMembershipDao(transaction).decreasebalanceClassQuantity(visit.getMembership().getId());
+					logger.debug("membership balance quantity has been decreased");
+				}
+				transaction.commit();
+				logger.debug("precense has been marked successfully");
+				transaction.close();
+				result = true;
 			}
 
 		} catch (DaoException e) {
-			throw new ServiceException();
+			try {
+				transaction.rollback();
+			} catch (DaoException e1) {
+				logger.debug("rollback error");
+				throw new ServiceException();
+			}
+		} finally {
+			try {
+				transaction.setAutoCommit(true);
+			} catch (DaoException e1) {
+				logger.debug("setAutoCommit error");
+			}
 		}
-		return true;
+		return result;
 	}
 
 	@Override
 	public boolean cancelMarkPresence(Visit visit) throws ServiceException {
+		boolean result = false;
 		try {
-			if (visit.getStatus() != Status.PLANNED) {
-				 factory.getVisitDao(transaction).cancelUpdateStatus(visit);
+			Status current = visit.getStatus();
+			if (current != Status.PLANNED) {
+				transaction.setAutoCommit(false);
+				factory.getVisitDao(transaction).cancelUpdateStatus(visit);
+
+				if (Status.ATTENDED == current) {
+					factory.getMembershipDao(transaction).increasebalanceClassQuantity(visit.getMembership().getId());
+					logger.debug("membership balance quantity has been increased");
+				}
+				transaction.commit();
+				logger.debug("precense has been cancelled");
 				transaction.close();
+
+				result = true;
 			} else {
-				return false;
+				result = false;
+			}
+		} catch (DaoException e) {
+			try {
+				transaction.rollback();
+			} catch (DaoException e1) {
+				logger.debug("rollback error");
+				throw new ServiceException();
+			}
+		} finally {
+			try {
+				transaction.setAutoCommit(true);
+			} catch (DaoException e1) {
+				logger.debug("setAutoCommit error");
 			}
 
-		} catch (DaoException e) {
-			throw new ServiceException();
 		}
-		return true;
+		return result;
 	}
 }

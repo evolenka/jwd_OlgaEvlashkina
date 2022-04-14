@@ -107,7 +107,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 	}
 
 	@Override
-	public List<LocalDate> findAvailiableDates(Integer groupId) throws ServiceException {
+	public List<LocalDate> readAvailiableDates(Integer groupId) throws ServiceException {
 
 		List<LocalDate> availiableDates = new ArrayList<>();
 

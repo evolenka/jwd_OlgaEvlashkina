@@ -17,9 +17,9 @@ import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
 
 public class MembershipServiceImpl extends StudioServiceImpl implements MembershipService {
-	
+
 	private static Logger logger = LogManager.getLogger(MembershipServiceImpl.class);
-	
+
 	private DaoFactory factory = DaoFactory.getInstance();
 
 	@Override
@@ -91,8 +91,7 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 		List<Membership> memberships = new ArrayList<>();
 
 		try {
-			memberships = factory.getMembershipDao(transaction).readByClientAndPeriod(clientId, startDate,
-					endDate);
+			memberships = factory.getMembershipDao(transaction).readByClientAndPeriod(clientId, startDate, endDate);
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -161,39 +160,53 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 		return memberships;
 	}
 
+//	@Override
+//	public boolean deleteType(Integer id) throws ServiceException {
+//		try {
+//			factory.getMembershipDao(transaction).deleteType(id);
+//			transaction.close();
+//
+//		} catch (DaoException e) {
+//			throw new ServiceException();
+//		}
+//		return false;
+//	}
+//
+//	@Override
+//	public boolean createType(MembershipType type) throws ServiceException {
+//		try {
+//			factory.getMembershipDao(transaction).createType(type);
+//			transaction.close();
+//
+//		} catch (DaoException e) {
+//			throw new ServiceException();
+//		}
+//		return false;
+//	}
+//
+//	@Override
+//	public boolean updateType(MembershipType type) throws ServiceException {
+//		try {
+//			factory.getMembershipDao(transaction).updateType(type);
+//			transaction.close();
+//
+//		} catch (DaoException e) {
+//			throw new ServiceException();
+//		}
+//		return false;
+//	}
+
 	@Override
-	public boolean deleteType(Integer id) throws ServiceException {
+	public MembershipType readTypeById(Integer id) throws ServiceException {
+
+		MembershipType type = new MembershipType();
 		try {
-			factory.getMembershipDao(transaction).deleteType(id);
+			type = factory.getMembershipDao(transaction).readTypeById(id);
 			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
-	}
-
-	@Override
-	public boolean createType(MembershipType type) throws ServiceException {
-		try {
-			factory.getMembershipDao(transaction).createType(type);
-			transaction.close();
-
-		} catch (DaoException e) {
-			throw new ServiceException();
-		}
-		return false;
-	}
-
-	@Override
-	public boolean updateType(MembershipType type) throws ServiceException {
-		try {
-			factory.getMembershipDao(transaction).updateType(type);
-			transaction.close();
-
-		} catch (DaoException e) {
-			throw new ServiceException();
-		}
-		return false;
+		return type;
 	}
 }

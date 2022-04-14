@@ -19,10 +19,12 @@ public interface MembershipService extends StudioService <Integer, Membership>{
 	public int countQuantityForPeriod (LocalDate startDate, LocalDate endDate) throws ServiceException;
 	
 	public List<MembershipType> readAllTypes() throws ServiceException;
+	
+	public MembershipType readTypeById (Integer id) throws ServiceException;
 
-	public boolean deleteType(Integer id) throws ServiceException;
+	//public boolean deleteType(Integer id) throws ServiceException;
 
-	public boolean createType(MembershipType type) throws ServiceException;
+	//public boolean createType(MembershipType type) throws ServiceException;
 
-	public boolean updateType(MembershipType type) throws ServiceException;
+	//public boolean updateType(MembershipType type) throws ServiceException;
 }

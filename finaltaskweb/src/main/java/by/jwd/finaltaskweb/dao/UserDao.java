@@ -17,5 +17,4 @@ public interface UserDao extends StudioDao<Integer, User> {
 	public List<Teacher> readByDanceStyle(String danceStyle) throws DaoException;
 
 	public List<String> readAllDanceStyle() throws DaoException;
-
 }

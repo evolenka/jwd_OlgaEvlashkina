@@ -1,5 +1,6 @@
 package by.jwd.finaltaskweb.dao.impl;
 
+
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,6 +19,8 @@ import by.jwd.finaltaskweb.dao.StudioDaoImpl;
 import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.MembershipType;
+import by.jwd.finaltaskweb.entity.Type;
+
 
 public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 
@@ -27,17 +30,21 @@ public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 	private static final String SQL_SELECT_ALL_TYPES = "SELECT type_of_membership.id,  type_of_membership.title, type_of_membership.max_class_quantity, type_of_membership.price FROM `type_of_membership`";
 
 	private static final String SQL_SELECT_BY_ID = "SELECT membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.id = ?";
+	private static final String SQL_SELECT_TYPE_BY_ID = "SELECT title, max_class_quantity, price FROM `type_of_membership` WHERE id = ?";
 	private static final String SQL_SELECT_BY_CLIENT_AND_PERIOD = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.start_date >= ? AND membership.start_date <= ?";
 	private static final String SQL_SELECT_BY_PERIOD = "SELECT membership.id, membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.start_date >= ? AND membership.start_date <= ?";
 	private static final String SQL_SELECT_VALID_BY_CLIENT = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.balance_quantity > 0 AND membership.end_date >= CURRENT_DATE()";
 	private static final String SQL_INSERT_MEMBERSHIP = "INSERT INTO `membership` (client_id, start_date, end_date, membership.balance_quantity, type_of_membership_id) VALUES (?, ?, ?, ?, ?)";
-	private static final String SQL_INSERT_TYPE = "INSERT INTO `type_of_membership` (title, max_class_quantity, price) VALUES (?, ?, ?)";
+	//private static final String SQL_INSERT_TYPE = "INSERT INTO `type_of_membership` (title, max_class_quantity, price) VALUES (?, ?, ?)";
 
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM `membership` WHERE id = ?";
-	private static final String SQL_DELETE_TYPE_BY_ID = "DELETE FROM `type_of_membership` WHERE id = ?";
+	//private static final String SQL_DELETE_TYPE_BY_ID = "DELETE FROM `type_of_membership` WHERE id = ?";
 
 	private static final String SQL_UPDATE_MEMBERSHIP = "UPDATE `membership` SET client_id = ?, start_date = ?, end_date = ?, balance_quantity = ?, type_of_membership_id = ? WHERE id = ?";
-	private static final String SQL_UPDATE_TYPE = "UPDATE `type_of_membership` SET title = ?, max_class_quantity = ?, price = ? WHERE id = ?";
+	//private static final String SQL_UPDATE_TYPE = "UPDATE `type_of_membership` SET title = ?, max_class_quantity = ?, price = ? WHERE id = ?";
+
+	private static final String SQL_DECREASE_BALANCE_QUANTITY = "UPDATE membership SET membership.balance_quantity = membership.balance_quantity-1 WHERE membership.id = ?";
+	private static final String SQL_INCREASE_BALANCE_QUANTITY = "UPDATE membership SET membership.balance_quantity = membership.balance_quantity+1 WHERE membership.id = ?";
 
 	@Override
 	public List<Membership> readAll() throws DaoException {
@@ -82,7 +89,7 @@ public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 			ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_TYPES);
 			while (resultSet.next()) {
 				MembershipType type = new MembershipType(resultSet.getInt(1));
-				type.setTitle(resultSet.getString(2));
+				type.setTitle(Type.valueOf(resultSet.getString(2)));
 				type.setMaxClassQuantity(resultSet.getInt(3));
 				type.setPrice(resultSet.getInt(4));
 
@@ -316,39 +323,118 @@ public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 		return memberships;
 	}
 
+//	@Override
+//	public boolean deleteType(Integer id) throws DaoException {
+//		PreparedStatement statement = null;
+//
+//		try {
+//			statement = connection.prepareStatement(SQL_DELETE_TYPE_BY_ID);
+//			statement.setInt(1, id);
+//			statement.executeUpdate();
+//		} catch (SQLException e) {
+//			throw new DaoException();
+//		} finally {
+//			close(statement);
+//		}
+//
+//		logger.debug("type of membership been deleted");
+//		return true;
+//	}
+//
+//	@Override
+//	public boolean createType(MembershipType type) throws DaoException {
+//
+//		PreparedStatement statement = null;
+//
+//		try {
+//			// if(!danceClass.getId()==null) {
+//			statement = connection.prepareStatement(SQL_INSERT_TYPE);
+//
+//			statement.setString(1, type.getTitle());
+//			statement.setInt(2, type.getMaxClassQuantity());
+//			statement.setDouble(3, type.getPrice());
+//
+//			statement.executeUpdate();
+//			logger.debug("type of membership has been created");
+//		} catch (SQLException e) {
+//			throw new DaoException();
+//		} finally {
+//			close(statement);
+//		}
+//		return true;
+//	}
+//
+//	@Override
+//	public boolean updateType(MembershipType type) throws DaoException {
+//
+//		PreparedStatement statement = null;
+//
+//		try {
+//
+//			statement = connection.prepareStatement(SQL_UPDATE_TYPE);
+//
+//			statement.setString(1, type.getTitle());
+//			statement.setInt(2, type.getMaxClassQuantity());
+//			statement.setDouble(3, type.getPrice());
+//			statement.setInt(4, type.getId());
+//
+//			statement.executeUpdate();
+//			logger.debug("type of membership has been updated");
+//
+//		} catch (SQLException e) {
+//			throw new DaoException();
+//
+//		} finally {
+//			close(statement);
+//		}
+//		return true;
+//	}
+
 	@Override
-	public boolean deleteType(Integer id) throws DaoException {
+	public MembershipType readTypeById(Integer id) throws DaoException {
+		MembershipType type = null;
+
 		PreparedStatement statement = null;
 
 		try {
-			statement = connection.prepareStatement(SQL_DELETE_TYPE_BY_ID);
+			statement = connection.prepareStatement(SQL_SELECT_TYPE_BY_ID);
 			statement.setInt(1, id);
-			statement.executeUpdate();
+
+			ResultSet resultSet = statement.executeQuery();
+
+			while (resultSet.next()) {
+
+				type = new MembershipType(id);
+
+				type.setTitle(Type.valueOf(resultSet.getString(1)));
+				type.setMaxClassQuantity(resultSet.getInt(2));
+				type.setPrice(resultSet.getDouble(3));
+
+				logger.debug("membership type has been read by id");
+			}
+
 		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
 			close(statement);
 		}
-
-		logger.debug("type of membership been deleted");
-		return true;
+		return type;
 	}
 
 	@Override
-	public boolean createType(MembershipType type) throws DaoException {
-
+	public boolean decreasebalanceClassQuantity(Integer membershipId) throws DaoException {
 		PreparedStatement statement = null;
 
 		try {
-			// if(!danceClass.getId()==null) {
-			statement = connection.prepareStatement(SQL_INSERT_TYPE);
-
-			statement.setString(1, type.getTitle());
-			statement.setInt(2, type.getMaxClassQuantity());
-			statement.setDouble(3, type.getPrice());
+			statement = connection.prepareStatement(SQL_DECREASE_BALANCE_QUANTITY);
+			statement.setInt(1, membershipId);
 
 			statement.executeUpdate();
-			logger.debug("type of membership has been created");
+			close(statement);
+			connection.commit();
+
+			logger.debug("balance quantity in membership has been decreased");
+
 		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {
@@ -358,25 +444,22 @@ public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 	}
 
 	@Override
-	public boolean updateType(MembershipType type) throws DaoException {
+	public boolean increasebalanceClassQuantity(Integer membershipId) throws DaoException {
 
 		PreparedStatement statement = null;
 
 		try {
+			statement = connection.prepareStatement(SQL_INCREASE_BALANCE_QUANTITY);
+			statement.setInt(1, membershipId);
 
-			statement = connection.prepareStatement(SQL_UPDATE_TYPE);
-
-			statement.setString(1, type.getTitle());
-			statement.setInt(2, type.getMaxClassQuantity());
-			statement.setDouble(3, type.getPrice());
-			statement.setInt(4, type.getId());
-			
 			statement.executeUpdate();
-			logger.debug("type of membership has been updated");
+			close(statement);
+			connection.commit();
+
+			logger.debug("balance quantity in membership has been increased");
 
 		} catch (SQLException e) {
 			throw new DaoException();
-
 		} finally {
 			close(statement);
 		}

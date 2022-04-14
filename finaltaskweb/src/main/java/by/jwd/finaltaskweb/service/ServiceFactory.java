@@ -3,6 +3,8 @@ package by.jwd.finaltaskweb.service;
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.TransactionFactoryImpl;
 import by.jwd.finaltaskweb.service.impl.BuilderClient;
+import by.jwd.finaltaskweb.service.impl.BuilderMembership;
+import by.jwd.finaltaskweb.service.impl.BuilderVisit;
 import by.jwd.finaltaskweb.service.impl.DanceClassServiceImpl;
 import by.jwd.finaltaskweb.service.impl.GroupServiceImpl;
 import by.jwd.finaltaskweb.service.impl.MembershipServiceImpl;
@@ -14,7 +16,7 @@ public class ServiceFactory {
 
 	private static final ServiceFactory instance = new ServiceFactory();
 	private static final TransactionFactoryImpl factory = TransactionFactoryImpl.getInstance();
-	
+
 	private StudioServiceImpl userservice = new UserServiceImpl();
 	private StudioServiceImpl membershipService = new MembershipServiceImpl();
 	private StudioServiceImpl danceClassService = new DanceClassServiceImpl();
@@ -22,6 +24,8 @@ public class ServiceFactory {
 	private StudioServiceImpl visitService = new VisitServiceImpl();
 	private StudioServiceImpl scheduleService = new ScheduleServiceImpl();
 	private BuilderClient clientBuilder = new BuilderClient();
+	private BuilderMembership membershipBuilder = new BuilderMembership();
+	private BuilderVisit visitbuilder = new BuilderVisit();
 
 	private ServiceFactory() {
 	}
@@ -31,7 +35,7 @@ public class ServiceFactory {
 	}
 
 	public UserService getUserService() throws ServiceException {
-		
+
 		try {
 			userservice.setTransaction(factory.createTransaction());
 		} catch (DaoException e) {
@@ -41,7 +45,7 @@ public class ServiceFactory {
 	}
 
 	public MembershipService getMembershipService() throws ServiceException {
-		
+
 		try {
 			membershipService.setTransaction(factory.createTransaction());
 		} catch (DaoException e) {
@@ -51,7 +55,7 @@ public class ServiceFactory {
 	}
 
 	public DanceClassService getDanceClassService() throws ServiceException {
-		
+
 		try {
 			danceClassService.setTransaction(factory.createTransaction());
 		} catch (DaoException e) {
@@ -60,8 +64,8 @@ public class ServiceFactory {
 		return (DanceClassService) danceClassService;
 	}
 
-	public VisitService getVisitservice() throws ServiceException {
-		
+	public VisitService getVisitService() throws ServiceException {
+
 		try {
 			visitService.setTransaction(factory.createTransaction());
 		} catch (DaoException e) {
@@ -71,7 +75,7 @@ public class ServiceFactory {
 	}
 
 	public GroupService getGroupService() throws ServiceException {
-		
+
 		try {
 			groupService.setTransaction(factory.createTransaction());
 		} catch (DaoException e) {
@@ -81,7 +85,7 @@ public class ServiceFactory {
 	}
 
 	public ScheduleServiceImpl getScheduleService() throws ServiceException {
-		
+
 		try {
 			scheduleService.setTransaction(factory.createTransaction());
 		} catch (DaoException e) {
@@ -92,5 +96,13 @@ public class ServiceFactory {
 
 	public BuilderClient getClientBuilder() {
 		return clientBuilder;
+	}
+
+	public BuilderMembership getMembershipBuilder() {
+		return membershipBuilder;
+	}
+
+	public BuilderVisit getVisitbuilder() {
+		return visitbuilder;
 	}
 }

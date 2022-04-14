@@ -9,14 +9,14 @@ public class TransactionImpl implements Transaction {
 
 	public TransactionImpl(Connection connection) {
 		this.connection = connection;
-	}  
-	
-	@Override 
+	}
+
+	@Override
 	public Connection getConnection() {
 		return connection;
 	}
 
-	@Override 
+	@Override
 	public void commit() throws DaoException {
 		try {
 			connection.commit();
@@ -33,11 +33,21 @@ public class TransactionImpl implements Transaction {
 			throw new DaoException();
 		}
 	}
+
 	@Override
 	public void close() throws DaoException {
 
 		try {
 			connection.close();
+		} catch (SQLException e) {
+			throw new DaoException();
+		}
+	}
+
+	@Override
+	public void setAutoCommit(Boolean autoCommit) throws DaoException {
+		try {
+			connection.setAutoCommit(autoCommit);
 		} catch (SQLException e) {
 			throw new DaoException();
 		}

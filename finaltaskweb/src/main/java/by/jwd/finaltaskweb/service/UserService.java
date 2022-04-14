@@ -8,15 +8,18 @@ import by.jwd.finaltaskweb.entity.User;
 
 public interface UserService extends StudioService <Integer, User> {
 	
-	User readByLogin(String login) throws ServiceException;
+	public User readByLogin(String login) throws ServiceException;
 	
-	User readByLoginAndPassword(String login, String password) throws ServiceException;
+	public  User readByLoginAndPassword(String login, String password) throws ServiceException;
 	
-	List<Client> readAllClient() throws ServiceException;
+	public List<Client> readAllClient() throws ServiceException;
 	
-	List<Teacher> readAllTeacher() throws ServiceException;
+	public List<Teacher> readAllTeacher() throws ServiceException;
 	
-	List<Teacher> readByDanceStyle(String danceStyle) throws ServiceException;
+	public List<Teacher> readByDanceStyle(String danceStyle) throws ServiceException;
 
-	List<String> readAllDanceStyle() throws ServiceException;
+	public List<String> readAllDanceStyle() throws ServiceException;
+	
+	public boolean updatePassword (Integer clientId, String password) throws ServiceException;
+	
 }

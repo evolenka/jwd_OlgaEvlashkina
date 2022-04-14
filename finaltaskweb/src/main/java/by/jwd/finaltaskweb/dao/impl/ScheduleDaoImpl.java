@@ -163,7 +163,7 @@ public class ScheduleDaoImpl extends StudioDaoImpl implements ScheduleDao {
 
 				schedules.add(schedule);
 
-				logger.debug("schedule has been read by group");
+				logger.debug("schedule has been read by weekday");
 			}
 
 		} catch (SQLException e) {

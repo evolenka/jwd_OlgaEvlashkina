@@ -80,7 +80,7 @@ CREATE TABLE `danceclass` (
 
 CREATE TABLE `type_of_membership` (
 	`id` INTEGER NOT NULL AUTO_INCREMENT,
-	`title` VARCHAR(100) NOT NULL,
+	`title` ENUM ('GUEST', 'LIGHT','BASIC', 'STRONG', 'UNLIM'), 
 	`max_class_quantity` TINYINT,
 	`price` DECIMAL NOT NULL,
     CONSTRAINT PK_type_of_membership PRIMARY KEY (`id`),

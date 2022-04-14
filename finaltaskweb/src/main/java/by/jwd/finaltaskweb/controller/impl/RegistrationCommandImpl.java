@@ -10,7 +10,6 @@ import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.Client;
-import by.jwd.finaltaskweb.entity.User;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
@@ -24,27 +23,27 @@ public class RegistrationCommandImpl implements Command {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
-		
+
 		HttpSession session = request.getSession(true);
-		String language = "en";
-				//(String) session.getAttribute("language");//to do
-		
+		String language = (String) session.getAttribute("language");
+
 		logger.debug("language {}", language);
-		
-		MessageManager manager = MessageManager.EN;
+
+		MessageManager manager;
 
 		switch (language) {
-			case "en":
-				manager = MessageManager.EN;
-				break;
-			case "ru":
-				manager = MessageManager.RU;
-				break;
-			case "be":
-				manager = MessageManager.BY;
-			default:
-				manager = MessageManager.EN;
-			}
+		case "en":
+			manager = MessageManager.EN;
+			break;
+		case "ru":
+			manager = MessageManager.RU;
+			break;
+		case "be":
+			manager = MessageManager.BY;
+			break;
+		default:
+			manager = MessageManager.EN;
+		}
 
 		String login = request.getParameter("login");
 		logger.debug("login {}", login);
@@ -62,33 +61,30 @@ public class RegistrationCommandImpl implements Command {
 		logger.debug("email {}", email);
 		String phone = request.getParameter("phone");
 		logger.debug("phone {}", phone);
+
 		try {
-			if (login == null || password == null || password2 == null || surname == null || name == null
-					|| patronymic == null || email == null) {
-				request.setAttribute("errorRequiredFieldRegMessage",
-						manager.getProperty("errorRequiredFieldRegMessage"));
-				page = ConfigurationManager.getProperty("path.page.registration");
-			} 
-			 if (!(password.equals(password2))) {
+			if (!(password.equals(password2))) {
 				request.setAttribute("errorPassRegMessage", manager.getProperty("errorPassRegMessage"));
 				page = ConfigurationManager.getProperty("path.page.registration");
-			} 
-			 User user = factory.getUserService().readByLogin(login);
-			 logger.debug(user);
-			 if (user != null) {
+
+			} else if (factory.getUserService().readByLogin(login) != null) {
 				request.setAttribute("errorLoginMessage", manager.getProperty("errorLoginMessage"));
 				page = ConfigurationManager.getProperty("path.page.registration");
-				logger.debug(factory.getUserService().readByLogin(login));;
-			}
-			 
-				Client client = factory.getClientBuilder().buildClient(login, password, surname, name, patronymic,
-						phone, email);
-				logger.debug(factory.getUserService().create(client));
+				logger.debug(factory.getUserService().readByLogin(login));
+
+			} else {
+
+				Client client = factory.getClientBuilder().buildClient(null, login, password, surname, name, patronymic,
+						email, phone);
+				
 				if (factory.getUserService().create(client)) {
 					request.setAttribute("successRegMessage", manager.getProperty("successRegMessage"));
-					page = ConfigurationManager.getProperty("path.page.index");
+					page = ConfigurationManager.getProperty("path.page.registration");
+				} else {
+					request.setAttribute("errorRegMessage", manager.getProperty("errorRegMessage"));
+					page = ConfigurationManager.getProperty("path.page.registration");
 				}
-			
+			}
 		} catch (ServiceException e) {
 			request.setAttribute("errorRegMessage", manager.getProperty("errorRegMessage"));
 			page = ConfigurationManager.getProperty("path.page.registration");

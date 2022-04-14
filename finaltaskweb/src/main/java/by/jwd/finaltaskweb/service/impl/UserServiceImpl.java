@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
-import by.jwd.finaltaskweb.dao.impl.UserDaoImpl;
 import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.Role;
 import by.jwd.finaltaskweb.entity.Teacher;
@@ -149,6 +148,19 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	public boolean update(User user) throws ServiceException {
 		try {
 			factory.getUserDao(transaction).update(user);
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return true;
+	}
+
+	@Override
+	public boolean updatePassword(Integer clientId, String password) throws ServiceException {
+		try {
+			User client = factory.getUserDao(transaction).readEntityById(clientId);
+			client.setPassword(password);
+			factory.getUserDao(transaction).update(client);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();

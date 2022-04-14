@@ -37,8 +37,6 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 	private static final String SQL_UPDATE_VISIT = "UPDATE visit SET membership_id = ?, danceclass_id = ? WHERE id = ?";
 	private static final String SQL_UPDATE_VISIT_STATUS = "UPDATE visit SET status = ? WHERE id = ?";
 	private static final String SQL_UPDATE_VISIT_STATUS_TO_PLANNED = "UPDATE visit SET status = 'PLANNED' WHERE id = ?";
-	private static final String SQL_DECREASE_BALANCE_QUANTITY = "UPDATE membership SET membership.balance_quantity = membership.balance_quantity-1 WHERE membership.id = ?";
-	private static final String SQL_INCREASE_BALANCE_QUANTITY = "UPDATE membership SET membership.balance_quantity = membership.balance_quantity+1 WHERE membership.id = ?";
 
 	@Override
 	public List<Visit> readAll() throws DaoException {
@@ -170,42 +168,18 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 		PreparedStatement statement = null;
 
 		try {
-			connection.setAutoCommit(false);
 			statement = connection.prepareStatement(SQL_UPDATE_VISIT_STATUS);
 			statement.setString(1, status.toString());
 			statement.setInt(2, visit.getId());
 
 			statement.executeUpdate();
-			close(statement);
-
-			if (Status.ATTENDED == status) {
-				statement = connection.prepareStatement(SQL_DECREASE_BALANCE_QUANTITY);
-				statement.setInt(1, visit.getMembership().getId());
-
-				statement.executeUpdate();
-				close(statement);
-				connection.commit();
-
-				logger.debug("balance quantity in membership has been decreased");
-			} else {
-				connection.commit();
-			}
+			logger.debug("status has been updated");
 		} catch (SQLException e) {
-			try {
-				connection.rollback();
-			} catch (SQLException e1) {
-				logger.debug("rollback error");
-				throw new DaoException();
-			}
+			throw new DaoException();
 		} finally {
-			try {
-				connection.setAutoCommit(true);
-			} catch (SQLException e1) {
-				logger.debug("setAutoCommit error");
-			}
 			close(statement);
 		}
-		logger.debug("status has been updated");
+
 		return true;
 	}
 
@@ -215,41 +189,18 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 		PreparedStatement statement = null;
 
 		try {
-			connection.setAutoCommit(false);
+
 			statement = connection.prepareStatement(SQL_UPDATE_VISIT_STATUS_TO_PLANNED);
 			statement.setInt(1, visit.getId());
 
 			statement.executeUpdate();
-			close(statement);
-
-			if (Status.ATTENDED == visit.getStatus()) {
-				statement = connection.prepareStatement(SQL_INCREASE_BALANCE_QUANTITY);
-				statement.setInt(1, visit.getMembership().getId());
-
-				statement.executeUpdate();
-				close(statement);
-				connection.commit();
-
-				logger.debug("balance quantity in membership has been increased");
-			} else {
-				connection.commit();
-			}
+			logger.debug("status has been restored");
 		} catch (SQLException e) {
-			try {
-				connection.rollback();
-			} catch (SQLException e1) {
-				logger.debug("rollback error");
-				throw new DaoException();
-			}
+			throw new DaoException();
 		} finally {
-			try {
-				connection.setAutoCommit(true);
-			} catch (SQLException e1) {
-				logger.debug("setAutoCommit error");
-			}
 			close(statement);
 		}
-		logger.debug("status has been restored");
+
 		return true;
 	}
 
