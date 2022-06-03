@@ -15,6 +15,12 @@ import by.jwd.finaltaskweb.entity.User;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * LoginationCommandImpl implements command for logging in the private account
+ * 
+ * @author Evlashkina
+ *
+ */
 public class LoginationCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(LoginationCommandImpl.class);
@@ -90,9 +96,10 @@ public class LoginationCommandImpl implements Command {
 				logger.debug("current user is admin");
 			}
 			request.setAttribute("userName", userName.toString());
+			session.setAttribute("userName", userName);
 			
 		} else {
-			request.setAttribute("errorLoginPassMessage", manager.getProperty("messageloginerror"));
+			request.setAttribute("errorLogInMessage", manager.getProperty("errorlogInMessage"));
 			page = ConfigurationManager.getProperty("path.page.login");
 		}
 		return page;

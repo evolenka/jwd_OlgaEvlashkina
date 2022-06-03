@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
-import by.jwd.finaltaskweb.dao.impl.UserDaoImpl;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Level;
 import by.jwd.finaltaskweb.entity.Schedule;
@@ -92,15 +91,26 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 
 	@Override
 	public List<Group> readByLevel(Level level) throws ServiceException {
-		List<Group> groups = null;
+		
+		List<Group> groups = new ArrayList<>();
 
 		try {
-			groups = factory.getGroupDao(transaction).readByLevel(level);
+			List<Group> tempGroups = factory.getGroupDao(transaction).readByLevel(level);
+			
+			for (Group group : tempGroups) {
+				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
+				group.setTeacher(teacher);
+				List <Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+				group.setSchedule(schedules);
+				groups.add(group);
+				}
+			
 			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("groups {}",groups);
 		return groups;
 	}
 
@@ -110,15 +120,30 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 		try {
 			for (WeekDay day : weekDays) {
 				List<Schedule> schedules = factory.getScheduleDao(transaction).readByWeekDay(day);
+				
 				for (Schedule schedule : schedules) {
-					groups.add(schedule.getGroup());
+					
+					Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+					
+					Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
+					
+					group.setTeacher(teacher);
+					
+					List <Schedule> groupSchedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+					group.setSchedule(groupSchedules);
+					
+					if (!groups.contains(group)) {
+					groups.add(group);
+					logger.debug(group);
+					}
 				}
 			}
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-
+		
+		logger.debug("groups {}",groups);
 		return groups;
 
 	}
@@ -130,19 +155,28 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 		List<Group> groups = new ArrayList<>();
 		try {
 			List<Teacher> teachers = factory.getUserDao(transaction).readByDanceStyle(dancestyle);
+			logger.debug("teachers {}", teachers);
 
 			for (Teacher teacher : teachers) {
 				teachersGroup = readByTeacher(teacher.getId());
-
+				
+							
 				for (Group group : teachersGroup) {
+					if (!groups.contains(group)) {
+					group.setTeacher(teacher);
+									
+					List <Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+					group.setSchedule(schedules);
 					groups.add(group);
+					}
 				}
 			}
 			transaction.close();
-
+ 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("groups {}",groups);
 		return groups;
 	}
 

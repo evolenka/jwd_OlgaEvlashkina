@@ -238,7 +238,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 	@Override
 	public boolean markPresence(Visit visit, Status status) throws ServiceException {
-		boolean result = false;
+		boolean result =false;
 		try {
 			/* additional check whether the client membership is valid */
 			if ((Status.ATTENDED == status) && (visit.getMembership().getBalanceClassQuantity() == 0)) {
@@ -296,9 +296,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 				transaction.close();
 
 				result = true;
-			} else {
-				result = false;
-			}
+			} 
 		} catch (DaoException e) {
 			try {
 				transaction.rollback();

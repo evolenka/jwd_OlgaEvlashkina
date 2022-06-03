@@ -55,7 +55,7 @@
 						<div class="dropdown">
 							<button type="button" class="btn btn-secondary dropdown-toggle"
 								data-toggle="dropdown">
-								<fmt:message key="enrolment" bundle="${ rb }" />
+								<fmt:message key="enroll.ment" bundle="${ rb }" />
 							</button>
 							<div class="dropdown-menu">
 								<form method="post" action="action">
@@ -66,8 +66,8 @@
 								</form>
 								<form method="post" action="action">
 									<button type="submit" class="dropdown-item btn btn-light"
-										name="command" value="ENROLMENT">
-										<fmt:message key="enrolment" bundle="${ rb }" />
+										name="command" value="ENROLlMENT">
+										<fmt:message key="enrollment" bundle="${ rb }" />
 									</button>
 								</form>
 							</div>
@@ -98,12 +98,12 @@
 				</tr>
 				<tbody>
 					<tr>
-						<th rowspan="3"><fmt:message key="monday" bundle="${ rb }" /></th>
+						<th rowspan="3"><fmt:message key="MONDAY" bundle="${ rb }" /></th>
 						<c:forEach var="scheduleMonday" items="${scheduleMonday}">
 							<td class="colgroup text-left"><span
 								class="badge badge-secondary"><c:out
 										value='${scheduleMonday.group.level}' /></span></td>
-							<td class="pt-3"><c:out
+							<td class="colgroup pl-4 text-left"><c:out
 									value="${scheduleMonday.group.title}" /></td>
 						</c:forEach>
 					</tr>
@@ -118,18 +118,18 @@
 					<tr>
 						<c:forEach var="scheduleMonday" items="${scheduleMonday}">
 							<td class="rowgroup colgroup pl-4 pb-3 text-right font-italic"><c:out
-									value="${scheduleMonday.group.teacher.surname}" /></td>
-							<td class="rowgroup pb-3 font-italic"><c:out
+									value="${scheduleMonday.group.teacher.surname}" /> <c:out
 									value="${scheduleMonday.group.teacher.name}" /></td>
+									<td/>
 						</c:forEach>
 					</tr>
 					<tr>
-						<th rowspan="3"><fmt:message key="tuesday" bundle="${ rb }" /></th>
+						<th rowspan="3"><fmt:message key="TUESDAY" bundle="${ rb }" /></th>
 						<c:forEach var="scheduleTuesday" items="${scheduleTuesday}">
 							<td class="colgroup text-left"><span
 								class="badge badge-secondary"><c:out
 										value="${scheduleTuesday.group.level}" /></span></td>
-							<td class="pt-3"><c:out
+							<td class="colgroup pl-4 text-left"><c:out
 									value="${scheduleTuesday.group.title}" /></td>
 						</c:forEach>
 					</tr>
@@ -144,18 +144,18 @@
 					<tr>
 						<c:forEach var="scheduleTuesday" items="${scheduleTuesday}">
 							<td class="rowgroup colgroup pl-4 pb-3 text-right font-italic"><c:out
-									value="${scheduleTuesday.group.teacher.surname}" /></td>
-							<td class="rowgroup pb-3 font-italic"><c:out
+									value="${scheduleTuesday.group.teacher.surname}" /> <c:out
 									value="${scheduleTuesday.group.teacher.name}" /></td>
+									<td/>
 						</c:forEach>
 					</tr>
 					<tr>
-						<th rowspan="3"><fmt:message key="wednesday" bundle="${ rb }" /></th>
+						<th rowspan="3"><fmt:message key="WEDNESDAY" bundle="${ rb }" /></th>
 						<c:forEach var="scheduleWednesday" items="${scheduleWednesday}">
 							<td class="colgroup text-left"><span
 								class="badge badge-secondary"><c:out
 										value="${scheduleWednesday.group.level}" /></span></td>
-							<td class="pt-3"><c:out
+							<td class="colgroup pl-4 text-left"><c:out
 									value="${scheduleWednesday.group.title}" /></td>
 						</c:forEach>
 					</tr>
@@ -170,18 +170,18 @@
 					<tr>
 						<c:forEach var="scheduleWednesday" items="${scheduleWednesday}">
 							<td class="rowgroup colgroup pl-4 pb-3 text-right font-italic"><c:out
-									value="${scheduleWednesday.group.teacher.surname}" /></td>
-							<td class="rowgroup pb-3 font-italic"><c:out
+									value="${scheduleWednesday.group.teacher.surname}" /> <c:out
 									value="${scheduleWednesday.group.teacher.name}" /></td>
+									<td/>
 						</c:forEach>
 					</tr>
 					<tr>
-						<th rowspan="3"><fmt:message key="thursday" bundle="${ rb }" /></th>
+						<th rowspan="3"><fmt:message key="THURSDAY" bundle="${ rb }" /></th>
 						<c:forEach var="scheduleThursday" items="${scheduleThursday}">
 							<td class="colgroup text-left"><span
 								class="badge badge-secondary"><c:out
 										value="${scheduleThursday.group.level}" /></span></td>
-							<td class="pt-3"><c:out
+							<td class="colgroup pl-4 text-left"><c:out
 									value="${scheduleThursday.group.title}" /></td>
 						</c:forEach>
 					</tr>
@@ -196,18 +196,18 @@
 					<tr>
 						<c:forEach var="scheduleThursday" items="${scheduleThursday}">
 							<td class="rowgroup colgroup pl-4 pb-3 text-right font-italic"><c:out
-									value="${scheduleThursday.group.teacher.surname}" /></td>
-							<td class="rowgroup pb-3 font-italic"><c:out
+									value="${scheduleThursday.group.teacher.surname}" /> <c:out
 									value="${scheduleThursday.group.teacher.name}" /></td>
+									<td/>
 						</c:forEach>
 					</tr>
 					<tr>
-						<th rowspan="3"><fmt:message key="friday" bundle="${ rb }" /></th>
+						<th rowspan="3"><fmt:message key="FRIDAY" bundle="${ rb }" /></th>
 						<c:forEach var="scheduleFriday" items="${scheduleFriday}">
 							<td class="colgroup text-left"><span
 								class="badge badge-secondary"><c:out
 										value="${scheduleFriday.group.level}" /></span></td>
-							<td class="pt-3"><c:out
+							<td class="colgroup pl-4 text-left"><c:out
 									value="${scheduleFriday.group.title}" /></td>
 						</c:forEach>
 					</tr>
@@ -222,9 +222,9 @@
 					<tr>
 						<c:forEach var="scheduleFriday" items="${scheduleFriday}">
 							<td class="colgroup pl-4 pb-3 text-right font-italic"><c:out
-									value="${scheduleFriday.group.teacher.surname}" /></td>
-							<td class="pb-3 font-italic"><c:out
+									value="${scheduleFriday.group.teacher.surname}" /> <c:out
 									value="${scheduleFriday.group.teacher.name}" /></td>
+									<td/>
 						</c:forEach>
 					</tr>
 				</tbody>

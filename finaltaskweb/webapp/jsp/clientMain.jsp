@@ -3,7 +3,9 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<c:set var = "language" value ="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale.language}" scope="session" />
+<c:set var="language"
+	value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale.language}"
+	scope="session" />
 <fmt:setLocale value="${language}" />
 <fmt:setBundle basename="pagecontent" var="rb" />
 <html lang="${language}">
@@ -19,6 +21,9 @@
 <c:url value="registration.jsp" var="regLink" />
 <c:url value="login.jsp" var="login" />
 <c:url value="index.jsp" var="main" />
+<c:url value="myMemberships.jsp" var="membershiplink" />
+<c:url value="purchaseMembership.jsp" var="purchaseMembershiplink" />
+<c:url value="myVisits.jsp" var="myVisitslink" />
 <title>Dance studio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -52,7 +57,7 @@
 						</button>
 					</form>
 					<div class="btn-group">
-						<button type="button" class="btn btn-secondary dropdown-toggle"
+						<button class="btn btn-secondary dropdown-toggle"
 							data-toggle="dropdown">
 							<fmt:message key="enrolment" bundle="${ rb }" />
 						</button>
@@ -73,58 +78,71 @@
 					</div>
 				</div>
 			</div>
-			<p class= "float-right text-light" >${userName}<fmt:message key="welcome" bundle="${ rb }" />
-		</p>
-		<div>
-		<form method="post" action="action">
-								<button type="submit" class="btn btn-light dropdown-item"
-									data-toggle="dropdown" name="command" value="LOGOUT">
-									<fmt:message key="logout" bundle="${ rb }" />
-								</button>
-							</form>
-		</div>
+			<p class="float-right text-light">${userName}<fmt:message
+					key="welcome" bundle="${ rb }" />
+			</p>
+			<div>
+				<form method="post" action="action">
+					<button type="submit" class="btn btn-light dropdown-item"
+						data-toggle="dropdown" name="command" value="LOGOUT">
+						<fmt:message key="logout" bundle="${ rb }" />
+					</button>
+				</form>
+				<span></span>
+			</div>
 			<div class="dropdown">
 				<form>
-							<select id="language" name="language" onchange="submit()">
-							<option value="en_US" ${language == 'en' ? 'selected' : ''}>EN</option>
-						    <option value="ru_RU" ${language == 'ru' ? 'selected' : ''}>RU</option>
-						    <option value="be_BY" ${language == 'be' ? 'selected' : ''}>BY</option>
+					<select id="language" name="language" onchange="submit()">
+						<option value="en_US" ${language == 'en' ? 'selected' : ''}>EN</option>
+						<option value="ru_RU" ${language == 'ru' ? 'selected' : ''}>RU</option>
+						<option value="be_BY" ${language == 'be' ? 'selected' : ''}>BY</option>
 					</select>
 				</form>
 			</div>
-			
 		</nav>
-		<form method="post" action="action">
-			<button type="submit" name="command" value="UPDATECLIENT">
-				<fmt:message key="updateclient" bundle="${ rb }" />
-			</button>
-		</form>
-		<form method="post" action="action">
-			<button type="submit" name="command" value="UPDATEPASSWORD">
-				<fmt:message key="changepass" bundle="${ rb }" />
-			</button>
-		</form>
-		
-		<form method="post" action="action">
-			<button type="submit" name="command" value="PLANNEDCLASSES">
-				<fmt:message key="plannedclasses" bundle="${ rb }" />
-			</button>
-		</form>
-		<form method="post" action="action">
-			<button type="submit" name="command" value="MYMEMBERSHIPS">
-				<fmt:message key="mymemberships" bundle="${ rb }" />
-			</button>
-		</form>
-		<form method="post" action="action">
-			<button type="submit" name="command" value="CREATEMEMBERSHIP">
-				<fmt:message key="buymembership" bundle="${ rb }" />
-			</button>
-		</form>
-		<form method="post" action="action">
-			<button type="submit" name="command" value="MYVISITS">
-				<fmt:message key="myvisits" bundle="${ rb }" />
-			</button>
-		</form>
+		<div class="mainIndex container-fluid">
+			<div class=row>
+				<div class="col-md-6 col-xl-4">
+					<div class="btn-group-vertical">
+
+
+
+						<form method="post" action="action">
+							<button type="submit" class="btn btn-light" name="command"
+								value="PLANNEDVISITS">
+								<fmt:message key="plannedclasses" bundle="${ rb }" />
+							</button>
+
+						</form>
+						<br> <a class="btn btn-light"
+							href='<c:out value="${membershiplink}"/>'><fmt:message
+								key="mymemberships" bundle="${ rb }" /> </a> <br> <a
+							class="btn btn-light" style="width: 150px"
+							href='<c:out value="${purchaseMembershipLink}"/>'><fmt:message
+								key="buymembership" bundle="${ rb }" /> </a> <br> <a
+							class="btn btn-light" href='<c:out value="${myvisitsLink}"/>'><fmt:message
+								key="myvisits" bundle="${ rb }" /> </a> <br>
+
+					</div>
+				</div>
+				<div class=" col-md col-xl-4"></div>
+				<div class=" col-md-6 col-xl-4">
+					<div class=card style="background: grey">
+						<form method="post" action="action">
+							<button type="submit" class="btn btn-light" name="command"
+								value="UPDATECLIENT">
+								<fmt:message key="updateclient" bundle="${ rb }" />
+							</button>
+						</form>
+						<form method="post" action="action">
+							<button type="submit" name="command" value="UPDATEPASSWORD">
+								<fmt:message key="changepass" bundle="${ rb }" />
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer class="card-footer">
 			<div class="container-fluid text-center">
 				<div class="row">

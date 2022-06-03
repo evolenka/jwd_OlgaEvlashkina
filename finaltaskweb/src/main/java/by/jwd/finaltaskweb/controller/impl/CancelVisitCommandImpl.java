@@ -13,6 +13,13 @@ import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * CancelVisitCommandImpl implements command to cancel planned visit by client
+ * in his private account
+ * 
+ * @author Evlashkina
+ *
+ */
 public class CancelVisitCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(CancelVisitCommandImpl.class);
@@ -22,7 +29,7 @@ public class CancelVisitCommandImpl implements Command {
 	@Override
 	public String execute(HttpServletRequest request) {
 
-		String page = null;
+		String page;
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
@@ -46,13 +53,17 @@ public class CancelVisitCommandImpl implements Command {
 			Integer visitId = Integer.parseInt(request.getParameter("visit"));
 			logger.debug("visit id{}", visitId);
 
-			factory.getVisitService().delete(visitId);
-			page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
+			if (factory.getVisitService().delete(visitId)) {
+				request.setAttribute("successCancelMessage", manager.getProperty("successCancelMessage"));
+			} else {
+				request.setAttribute("errorCancelMessage", manager.getProperty("errorCancelMessage"));
+			}
 
 		} catch (ServiceException e) {
-			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
+			request.setAttribute("errorCancelMessage", manager.getProperty("errorCancelMessage"));
+			logger.error(e);
 		}
+		page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
 		return page;
 	}
 }

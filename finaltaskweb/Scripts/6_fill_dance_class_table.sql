@@ -294,7 +294,7 @@ INSERT INTO `danceclass` (
 	`is_active`
 ) VALUES (
 	"3",
-	"2022-04-11",
+	"2022-06-11",
 	TRUE
 );
 INSERT INTO `danceclass` (
@@ -312,7 +312,7 @@ INSERT INTO `danceclass` (
 	`is_active`
 ) VALUES (
 	"5",
-	"2022-04-12",
+	"2022-06-12",
 	TRUE
 );
 INSERT INTO `danceclass` (
@@ -321,6 +321,6 @@ INSERT INTO `danceclass` (
 	`is_active`
 ) VALUES (
 	"6",
-	"2022-04-12",
+	"2022-06-12",
 	TRUE
 );

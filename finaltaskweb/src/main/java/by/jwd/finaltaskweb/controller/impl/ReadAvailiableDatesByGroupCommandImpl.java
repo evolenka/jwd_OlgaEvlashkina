@@ -11,13 +11,19 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
-import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * ReadAvailiableDatesByGroupCommandImpl implements command for viewing all
+ * available dates for enrollment to the chosen group
+ * 
+ * @author Evlashkina
+ *
+ */
 public class ReadAvailiableDatesByGroupCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(ReadGroupByStyleCommandImpl.class);
+	private static Logger logger = LogManager.getLogger(ReadAvailiableDatesByGroupCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -29,33 +35,16 @@ public class ReadAvailiableDatesByGroupCommandImpl implements Command {
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
 
-		MessageManager manager;
-
-		switch (language) {
-		case "en":
-			manager = MessageManager.EN;
-			break;
-		case "ru":
-			manager = MessageManager.RU;
-			break;
-		case "be":
-			manager = MessageManager.BY;
-			break;
-		default:
-			manager = MessageManager.EN;
-		}
-		
 		Integer groupId = Integer.valueOf(request.getParameter("groupId"));
-		
+		logger.debug("groupId {}", groupId);
+
 		try {
-		
-			List<LocalDate> dates = factory.getDanceClassService().readAvailiableDates(groupId);
+
+			List<LocalDate> dates = factory.getDanceClassService().readAvailiableDatesByGroup(groupId);
 			request.setAttribute("dates", dates);
-			page = ConfigurationManager.getProperty("path.page.enrolment");
+			page = ConfigurationManager.getProperty("path.page.enrollment3");
 		} catch (ServiceException e) {
-			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			page = ConfigurationManager.getProperty("path.page.enrolment");
-			logger.error(" request has been failed");
+			logger.error(e);
 		}
 		return page;
 	}

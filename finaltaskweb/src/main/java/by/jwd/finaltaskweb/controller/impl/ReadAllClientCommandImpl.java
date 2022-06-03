@@ -13,9 +13,15 @@ import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * 
+ * 
+ * @author Evlashkina
+ *
+ */
 public class ReadAllClientCommandImpl implements Command {
 
-	static Logger logger = LogManager.getLogger(ReadAllClientCommandImpl.class);
+static Logger logger = LogManager.getLogger(ReadAllClientCommandImpl.class);
 private ServiceFactory factory = ServiceFactory.getInstance();
 
 	@Override
@@ -32,7 +38,7 @@ private ServiceFactory factory = ServiceFactory.getInstance();
 			
 			logger.debug("page {}", page);
 		} catch (ServiceException e) {
-			logger.error("no database connection");
+			logger.error(e);
 		}
 		return page;
 	}

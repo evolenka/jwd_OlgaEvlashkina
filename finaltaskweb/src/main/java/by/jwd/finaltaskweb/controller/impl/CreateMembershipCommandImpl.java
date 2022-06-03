@@ -17,6 +17,13 @@ import by.jwd.finaltaskweb.entity.MembershipType;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * CreateMembershipCommandImpl implements command to buy membership by client in
+ * his private account
+ * 
+ * @author Evlashkina
+ *
+ */
 public class CreateMembershipCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(CreateMembershipCommandImpl.class);
@@ -26,7 +33,7 @@ public class CreateMembershipCommandImpl implements Command {
 	@Override
 	public String execute(HttpServletRequest request) {
 
-		String page = null;
+		String page;
 
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
@@ -64,16 +71,14 @@ public class CreateMembershipCommandImpl implements Command {
 
 			if (factory.getMembershipService().create(membership)) {
 				request.setAttribute("successPurchaseMessage", manager.getProperty("successPurchaseMessage"));
-				page = ConfigurationManager.getProperty("path.page.purchaseMembership");
 			} else {
 				request.setAttribute("errorPurchaseRegMessage", manager.getProperty("errorPurchaseMessage"));
-				page = ConfigurationManager.getProperty("path.page.purchaseMembership");
 			}
 		} catch (ServiceException e) {
 			request.setAttribute("errorPurchaseRegMessage", manager.getProperty("errorPurchaseMessage"));
-			page = ConfigurationManager.getProperty("path.page.purchaseMembership");
-
+			logger.error(e);
 		}
+		page = ConfigurationManager.getProperty("path.page.purchaseMembership");
 		return page;
 	}
 }

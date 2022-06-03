@@ -10,11 +10,18 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
-import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Level;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
+
+/**
+ * ReadGroupByLevelCommandImpl implements command for viewing all groups
+ * filtered by chosen level on the enrollment page
+ * 
+ * @author Evlashkina
+ *
+ */
 
 public class ReadGroupByLevelCommandImpl implements Command {
 
@@ -30,32 +37,14 @@ public class ReadGroupByLevelCommandImpl implements Command {
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
 
-		MessageManager manager;
-
-		switch (language) {
-		case "en":
-			manager = MessageManager.EN;
-			break;
-		case "ru":
-			manager = MessageManager.RU;
-			break;
-		case "be":
-			manager = MessageManager.BY;
-			break;
-		default:
-			manager = MessageManager.EN;
-		}
-
 		Level level = Level.valueOf(request.getParameter("level"));
 
 		try {
 			List<Group> groups = factory.getGroupService().readByLevel(level);
 			request.setAttribute("groups", groups);
-			page = ConfigurationManager.getProperty("path.page.groups");
+			page = ConfigurationManager.getProperty("path.page.enrollment2");
 		} catch (ServiceException e) {
-			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			page = ConfigurationManager.getProperty("path.page.groups");
-			logger.error(" request has been failed");
+			logger.error(e);
 		}
 		return page;
 	}

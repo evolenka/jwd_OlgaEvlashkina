@@ -69,8 +69,9 @@ public class DanceClass extends Entity{
 		DanceClass other = (DanceClass) obj;
 		return Objects.equals(clients, other.clients) && Objects.equals(date, other.date)
 				&& Objects.equals(schedule, other.schedule);
+		
 	}
-
+		
 	@Override
 	public String toString() {
 		final StringBuilder sb = new StringBuilder("\nDanceClass:");

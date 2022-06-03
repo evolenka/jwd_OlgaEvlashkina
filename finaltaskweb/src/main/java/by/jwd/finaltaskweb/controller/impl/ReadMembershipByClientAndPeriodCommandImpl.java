@@ -49,9 +49,9 @@ public class ReadMembershipByClientAndPeriodCommandImpl implements Command {
 			}
 			Integer id = (Integer) session.getAttribute("id");
 			logger.debug("login {}", id);
-			LocalDate startDate = (LocalDate) session.getAttribute("startdate");
+			LocalDate startDate = LocalDate.parse(request.getParameter("startdate"));
 			logger.debug("startdate {}", startDate);
-			LocalDate endDate = (LocalDate) session.getAttribute("enddate");
+			LocalDate endDate = LocalDate.parse(request.getParameter("enddate"));
 			logger.debug("enddate {}", endDate);
 			
 			try {

@@ -15,6 +15,13 @@ import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+* ReadAllScheduleCommandImpl implements command for viewing dance classes schedule
+* 
+* @author Evlashkina
+*
+*/
+
 public class ReadAllScheduleCommandImpl implements Command{
 	
 	static Logger logger = LogManager.getLogger(ReadAllScheduleCommandImpl.class);
@@ -25,8 +32,8 @@ public class ReadAllScheduleCommandImpl implements Command{
 		String page = null;
 
 		EnumMap<WeekDay, List <Schedule>> schedule;
+		
 		try {
-			
 			schedule = ServiceFactory.getInstance().getScheduleService().allScheduleByWeekDay();
 			request.setAttribute("scheduleMonday", schedule.get(WeekDay.MONDAY));
 			request.setAttribute("scheduleTuesday", schedule.get(WeekDay.TUESDAY));
@@ -36,8 +43,9 @@ public class ReadAllScheduleCommandImpl implements Command{
 			
 			page = ConfigurationManager.getProperty("path.page.schedule");
 			logger.debug("page {}", page);
+			
 		} catch (ServiceException e) {
-			logger.error("error");
+			logger.error(e);
 		}
 		return page;
 

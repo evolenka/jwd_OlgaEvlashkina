@@ -8,6 +8,8 @@
 <fmt:setBundle basename="pagecontent" var="rb" />
 <html lang="${language}">
 <head>
+<title>Dance studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <c:url
 	value="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
 	var="bootstrap" />
@@ -17,8 +19,14 @@
 <c:url value="/img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${ icon }"/>">
 <c:url value="index.jsp" var="main" />
-<title>Dance studio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<c:url value="enrollment.jsp" var="enrollment" />
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
 	<div class=page>
@@ -58,14 +66,14 @@
 							<div class="dropdown-menu">
 								<form method="post" action="action">
 									<button type="submit" class="dropdown-item btn btn-light"
-										name="command" value="ENROLMENT">
+										name="command" value="ENROLlMENT">
 										<fmt:message key="enrolment" bundle="${ rb }" />
 									</button>
 								</form>
 								<form method="post" action="action">
 									<button type="submit" class="dropdown-item btn btn-light"
-										name="command" value="ENROLMENT">
-										<fmt:message key="enrolment" bundle="${ rb }" />
+										name="command" value="ENROLlMENT">
+										<fmt:message key="enrollment" bundle="${ rb }" />
 									</button>
 								</form>
 							</div>

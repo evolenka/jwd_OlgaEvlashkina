@@ -1,1 +1,2 @@
-update client set id = 6 where id =5;
+DROP TABLE IF EXISTS `client`;
+DROP TABLE IF EXISTS `user`;

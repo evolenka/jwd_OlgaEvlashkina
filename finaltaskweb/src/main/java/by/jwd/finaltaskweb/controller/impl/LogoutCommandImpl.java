@@ -9,6 +9,12 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 
+/**
+ * LogoutCommandImpl implements command for logging out the private account
+ * 
+ * @author Evlashkina
+ *
+ */
 public class LogoutCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(LogoutCommandImpl.class);

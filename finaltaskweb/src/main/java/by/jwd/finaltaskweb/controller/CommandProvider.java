@@ -15,11 +15,14 @@ import by.jwd.finaltaskweb.controller.impl.CreateVisitCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.EmptyCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.LoginationCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.LogoutCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadAllAvailiableDatesCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllClientCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadAllLevelCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllMembershipTypesCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllScheduleCommandImpl;
-import by.jwd.finaltaskweb.controller.impl.ReadAllStylesCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadAllStyleCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllTeacherCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadAllWeekDayCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAvailiableDatesByGroupCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupByLevelCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupByScheduleCommandImpl;
@@ -58,10 +61,13 @@ public class CommandProvider {
 		commands.put(CommandEnum.READGROUPBYSCHEDULE, new ReadGroupByScheduleCommandImpl());
 		commands.put(CommandEnum.READGROUPBYSTYLE, new ReadGroupByStyleCommandImpl());
 		commands.put(CommandEnum.READGROUPBYLEVEL, new ReadGroupByLevelCommandImpl());
-		commands.put(CommandEnum.READALLSTYLES, new ReadAllStylesCommandImpl());
+		commands.put(CommandEnum.READALLSTYLE, new ReadAllStyleCommandImpl());
+		commands.put(CommandEnum.READALLLEVEL, new ReadAllLevelCommandImpl());
+		commands.put(CommandEnum.READALLWEEKDAY, new ReadAllWeekDayCommandImpl());
 		commands.put(CommandEnum.READPLANNEDCLASSESBYGROUP, new ReadPlannedClassesByGroupCommandImpl());
 		commands.put(CommandEnum.READAVAILIABLEDATESBYGROUP, new ReadAvailiableDatesByGroupCommandImpl());
 		commands.put(CommandEnum.CREATEVISIT, new CreateVisitCommandImpl());
+		commands.put(CommandEnum.READALLAVAILIABLEDATES, new ReadAllAvailiableDatesCommandImpl());
 		commands.put(CommandEnum.WRONGCOMMAND, new EmptyCommandImpl());
 	}
 

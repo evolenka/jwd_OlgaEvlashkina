@@ -86,7 +86,7 @@ CREATE TABLE `type_of_membership` (
     CONSTRAINT PK_type_of_membership PRIMARY KEY (`id`),
     CONSTRAINT UC_type_of_membership UNIQUE (`title`, `max_class_quantity`),
 	CONSTRAINT CHK_PRICE CHECK (`price` > 0),
-	CONSTRAINT CHK_QUANTITY CHECK (`max_class_quantity` IN (1, 4, 8, 16)
+	CONSTRAINT CHK_QUANTITY CHECK (`max_class_quantity` IN (1, 4, 8, 16))
 );
 
 CREATE TABLE `membership` (

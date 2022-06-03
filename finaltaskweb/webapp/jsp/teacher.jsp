@@ -90,7 +90,7 @@
 			</div>
 		</nav>
 		<h1 class=mt-3>
-			<fmt:message key="teacher" bundle="${ rb }" />
+			<fmt:message key="teachers" bundle="${ rb }" />
 		</h1>
 		<div class="container" style="margin-top: 30px">
 			<div class="row">

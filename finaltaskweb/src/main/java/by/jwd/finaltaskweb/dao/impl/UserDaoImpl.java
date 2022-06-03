@@ -507,7 +507,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
 			statement = connection.prepareStatement(SQL_SELECT_BY_DANCESTYLE);
 			statement.setString(1, danceStyle);
-
+			
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
@@ -527,7 +527,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 			close(statement);
 
 		}
-		logger.debug("teacher has been read by dancestyle");
+		logger.debug("teachers have been read by dancestyle {}", result);
 		return result;
 	}
 

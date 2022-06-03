@@ -26,7 +26,7 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	public List<User> readAll() throws ServiceException {
 		List<User> users = null;
 		try {
-			factory.getUserDao(transaction).readAll();
+			users = factory.getUserDao(transaction).readAll();
 			transaction.close();
 
 		} catch (DaoException e) {
@@ -102,11 +102,12 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	public List<Teacher> readByDanceStyle(String danceStyle) throws ServiceException {
 		List<Teacher> teachers = new ArrayList<>();
 		try {
-			factory.getUserDao(transaction).readByDanceStyle(danceStyle);
+			teachers = factory.getUserDao(transaction).readByDanceStyle(danceStyle);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("teachers{}", teachers);
 		return teachers;
 	}
 
@@ -114,7 +115,7 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	public List<String> readAllDanceStyle() throws ServiceException {
 		List<String> danceStyles = new ArrayList<>();
 		try {
-			factory.getUserDao(transaction).readAllDanceStyle();
+			danceStyles = factory.getUserDao(transaction).readAllDanceStyle();
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();

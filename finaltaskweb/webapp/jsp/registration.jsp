@@ -22,7 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div class=page>
+	<div class = page>
 		<nav class="navbar navbar-expand-md bg-secondary navbar-dark">
 			<a class="navbar-brand" href='<c:out value="${main}"/>'> <fmt:message
 					key="main" bundle="${ rb }" /></a>

@@ -63,6 +63,7 @@ public class ReadPlannedClassesByGroupCommandImpl implements Command {
 			 List <DanceClass> classes = factory.getDanceClassService().readByDateAndGroup(availiableDates, groupId);
 
 					request.setAttribute("classes", classes);
+					request.setAttribute("userName", session.getAttribute("userName"));
 					page = ConfigurationManager.getProperty("path.page.enrolment");
 				
 			} catch (ServiceException e) {

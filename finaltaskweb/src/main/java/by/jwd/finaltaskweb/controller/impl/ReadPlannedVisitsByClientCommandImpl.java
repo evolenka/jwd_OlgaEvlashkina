@@ -54,13 +54,13 @@ public class ReadPlannedVisitsByClientCommandImpl implements Command {
 
 				List<Visit> plannedVisits = factory.getVisitService().readPlannedByClient(id);
 				request.setAttribute("plannedVisits", plannedVisits);
-				page = ConfigurationManager.getProperty("path.page.plannedVisits");
+				page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
 			} else {
 				page = ConfigurationManager.getProperty("path.page.login");
 			}
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			page = ConfigurationManager.getProperty("path.page.plannedVisits");
+			page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
 			logger.error(" request has been failed");
 		}
 		return page;

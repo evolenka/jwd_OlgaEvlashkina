@@ -16,9 +16,9 @@ import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
 
 public class DanceClassServiceImpl extends StudioServiceImpl implements DanceClassService {
-	
+
 	private static Logger logger = LogManager.getLogger(DanceClassServiceImpl.class);
-	
+
 	private DaoFactory factory = DaoFactory.getInstance();
 
 	@Override
@@ -94,8 +94,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 
 			for (LocalDate date : availiableDates) {
 				for (Schedule schedule : schedules) {
-					danceClasses.add(
-							factory.getDanceClassDao(transaction).readByDateAndSchedule(date, schedule));
+					danceClasses.add(factory.getDanceClassDao(transaction).readByDateAndSchedule(date, schedule));
 				}
 			}
 			transaction.close();
@@ -107,7 +106,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 	}
 
 	@Override
-	public List<LocalDate> readAvailiableDates(Integer groupId) throws ServiceException {
+	public List<LocalDate> readAvailiableDatesByGroup(Integer groupId) throws ServiceException {
 
 		List<LocalDate> availiableDates = new ArrayList<>();
 
@@ -115,8 +114,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupId);
 
 			for (Schedule schedule : schedules) {
-				List<DanceClass> danceClasses = factory.getDanceClassDao(transaction)
-						.readActiveBySchedule(schedule);
+				List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readActiveBySchedule(schedule);
 
 				for (DanceClass danceClass : danceClasses) {
 					availiableDates.add(danceClass.getDate());
@@ -124,6 +122,31 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 			}
 			transaction.close();
 		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		logger.debug("availiableDates {}", availiableDates);
+		return availiableDates;
+	}
+
+	@Override
+	public List<LocalDate> readAllAvailiableDates() throws ServiceException {
+
+		List<LocalDate> availiableDates = new ArrayList<>();
+
+		try {
+			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readAll();
+
+			for (DanceClass danceClass : danceClasses) {
+				if (!danceClass.getDate().isBefore(LocalDate.now())) {
+					availiableDates.add(danceClass.getDate());
+					logger.debug(danceClass.getDate());
+				}
+			}
+
+			transaction.close();
+		} catch (
+
+		DaoException e) {
 			throw new ServiceException();
 		}
 

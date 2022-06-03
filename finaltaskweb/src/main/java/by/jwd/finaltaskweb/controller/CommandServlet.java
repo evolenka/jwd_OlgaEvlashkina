@@ -84,6 +84,7 @@ public class CommandServlet extends HttpServlet {
 			break;
 		case "be":
 			manager = MessageManager.BY;
+			break;
 		default:
 			manager = MessageManager.EN;
 		}
@@ -112,8 +113,8 @@ public class CommandServlet extends HttpServlet {
 			dispatcher.forward(request, response);
 		} else {
 			// установка страницы c cообщением об ошибке
-			page = ConfigurationManager.getProperty("path.page.index");
-			request.getSession().setAttribute("nullPage", manager.getProperty("nullpage"));//TO DO
+			page = ConfigurationManager.getProperty("path.page.error");
+			request.getSession().setAttribute("errorMessage", manager.getProperty("errorMessage"));//TO DO
 			response.sendRedirect(request.getContextPath() + page);
 		}
 	}
