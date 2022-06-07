@@ -21,6 +21,7 @@
 <c:url value="registration.jsp" var="regLink" />
 <c:url value="login.jsp" var="login" />
 <c:url value="index.jsp" var="main" />
+<c:url value="membershipTypes.jsp" var="membershipTypes" />
 <c:url value="enrollment.jsp" var="enrollment" />
 <c:url value="enrollment3.jsp" var="enrollment3" />
 <c:url value="login.jsp" var="login" />
@@ -95,13 +96,14 @@ $(document).ready(function(){
 			<fmt:message key="secondStep" bundle="${ rb }" />
 		</h2>
 		<c:if test = "${not empty noMembership}">
-		<form class="link" method="post">
-	<input type="hidden" name="command" value="CREATEMEMBERSHIP">
-	<p><c:out value="${noMembership}"/>
-	<input type= "submit" value= '<fmt:message
-								key="here" bundle="${ rb }"/>'></p>
-								
-</form>
+		<p><c:out value="${noMembership}"/></p>
+		<form method="post" action="action">
+						<a>	<button type="submit"  name="command"
+								value="READALLMEMBERSHIPTYPES">
+								<fmt:message key="here" bundle="${ rb }"/>
+								</button>
+							</a>
+							</form>
 		
 		</c:if>
 		<c:if test = "${empty noMembership}">
@@ -109,17 +111,15 @@ $(document).ready(function(){
 		<table class="table mx-auto">
 		<tr>
 		<th id=group class="rowgroup"></th>
-				<th><fmt:message key="membershiptype" bundle="${ rb }" /></th>
-				<th><fmt:message key="balanceClassQuantity" bundle="${ rb }" /></th>
-				<th><fmt:message key="membershipstartdate" bundle="${ rb }" /></th>
-				<th><fmt:message key="membershipenddate" bundle="${ rb }" /></th>
+				<th id=group class="rowgroup"><fmt:message key="membershiptype" bundle="${ rb }" /></th>
+				<th id=group class="rowgroup"><fmt:message key="balanceClassQuantity" bundle="${ rb }" /></th>
+				<th id=group class="rowgroup"><fmt:message key="membershipstartdate" bundle="${ rb }" /></th>
+				<th id=group class="rowgroup"><fmt:message key="membershipenddate" bundle="${ rb }" /></th>
 			</tr>
 			<c:forEach var="membership" items="${validMemberships}">
 				<tr>
-				<td class="pt-3"><input type="radio" id="membershipId" name = "membershipId" value = "${membership.id}" required>
-				<input type = hidden id="membershipStartDate" name = "membershipStartDate" value = "${membership.startDate}">
-				<input type = hidden id="membershipEndDate" name = "membershipEndDate" value = "${membership.endDate}">
-					<td><c:out value="${membership.type.title}" /></td>
+				<td class="pt-3"><input type="radio" id="membershipId" name = "membershipId" value = "${membership.id}" required/></td>
+				<td class="pt-3"><c:out value="${membership.type.title}" /></td>
 					<c:choose>
 						<c:when test="${membership.balanceClassQuantity !=  0 }">
 							<td><c:out value="${membership.balanceClassQuantity}" /></td>
@@ -128,16 +128,17 @@ $(document).ready(function(){
 							<td>-</td>
 					</c:otherwise>
 					</c:choose>
-					<td><c:out value="${membership.startDate}" /></td>
-					<td><c:out value="${membership.endDate}" /></td>
+					<td class="pt-3"><c:out value="${membership.startDate}" /></td>
+					<td class="pt-3"><c:out value="${membership.endDate}" /></td>
 				</tr>
 
 			</c:forEach>
 	</table>
-	<a class="btn btn-sm btn-secondary"
-							href='<c:out value="${enrollment3}"/>'><fmt:message
-								key="next" bundle="${ rb }" /> </a>
-	</form>
+	<button type="submit" class="btn btn-light" name="command"
+				value="CONFIRMVISIT">
+				<fmt:message key="next" bundle="${ rb }" />
+			</button>
+			</form>
 	
 	</c:if>
 		<footer class="card-footer">

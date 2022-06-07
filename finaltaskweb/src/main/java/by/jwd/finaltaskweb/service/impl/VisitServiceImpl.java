@@ -80,7 +80,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -92,7 +92,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override

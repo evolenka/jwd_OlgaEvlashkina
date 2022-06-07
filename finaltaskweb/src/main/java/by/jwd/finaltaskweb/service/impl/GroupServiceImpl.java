@@ -28,15 +28,25 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 	@Override
 	public List<Group> readAll() throws ServiceException {
 
-		List<Group> groups = null;
+		List<Group> groupsTemp = null;
+		List <Group> groups = new ArrayList<>();
 
 		try {
-			groups = factory.getGroupDao(transaction).readAll();
+			groupsTemp = factory.getGroupDao(transaction).readAll();
+			
+			for (Group group : groupsTemp) {
+				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
+				group.setTeacher(teacher);
+				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+				group.setSchedule(schedules);
+				groups.add(group);
+			}
 			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("groups {}", groups);
 		return groups;
 	}
 
@@ -47,11 +57,18 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 
 		try {
 			group = factory.getGroupDao(transaction).readEntityById(id);
-			transaction.close();
+		
+				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
+				group.setTeacher(teacher);
+				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+				group.setSchedule(schedules);
+	
+				transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("group {}", group);
 		return group;
 	}
 
@@ -64,7 +81,7 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -76,7 +93,7 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -88,7 +105,7 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override

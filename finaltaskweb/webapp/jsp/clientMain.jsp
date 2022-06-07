@@ -129,11 +129,12 @@
 								value="PLANNEDVISITS">
 								<fmt:message key="plannedclasses" bundle="${ rb }" />
 							</button>
-
 						</form>
-						<br> <a class="btn btn-light"
+						<br>
+						 <a class="btn btn-light"
 							href='<c:out value="${membershiplink}"/>'><fmt:message
-								key="mymemberships" bundle="${ rb }" /> </a> <br> <a
+								key="mymemberships" bundle="${ rb }" /> </a>
+								 <br> <a
 							class="btn btn-light" style="width: 150px"
 							href='<c:out value="${purchaseMembershipLink}"/>'><fmt:message
 								key="buymembership" bundle="${ rb }" /> </a> <br> <a

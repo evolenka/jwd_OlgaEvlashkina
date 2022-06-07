@@ -10,6 +10,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.impl.CancelVisitCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ChooseMembershipCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ConfirmVisitCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.CreateMembershipCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.CreateVisitCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.EmptyCommandImpl;
@@ -57,6 +59,7 @@ public class CommandProvider {
 		commands.put(CommandEnum.MYVALIDMEMBERSHIPS, new ReadValidMembershipsByClientCommandImpl());
 		commands.put(CommandEnum.MYMEMBERSHIPSPERIOD, new ReadMembershipByClientAndPeriodCommandImpl());
 		commands.put(CommandEnum.CREATEMEMBERSHIP, new CreateMembershipCommandImpl());
+		commands.put(CommandEnum.CHOOSEMEMBERSHIP, new ChooseMembershipCommandImpl());
 		commands.put(CommandEnum.MYVISITS, new ReadVisitsByClientAndPeriodCommandImpl());
 		commands.put(CommandEnum.CANCELVISIT, new CancelVisitCommandImpl());
 		commands.put(CommandEnum.READGROUPBYSCHEDULE, new ReadGroupByScheduleCommandImpl());
@@ -69,6 +72,7 @@ public class CommandProvider {
 		commands.put(CommandEnum.READPLANNEDCLASSESBYGROUP, new ReadPlannedClassesByGroupCommandImpl());
 		commands.put(CommandEnum.READAVAILIABLEDATESBYGROUP, new ReadAvailiableDatesByGroupCommandImpl());
 		commands.put(CommandEnum.CREATEVISIT, new CreateVisitCommandImpl());
+		commands.put(CommandEnum.CONFIRMVISIT, new ConfirmVisitCommandImpl());
 		commands.put(CommandEnum.READALLAVAILIABLEDATES, new ReadAllAvailiableDatesCommandImpl());
 		commands.put(CommandEnum.WRONGCOMMAND, new EmptyCommandImpl());
 	}

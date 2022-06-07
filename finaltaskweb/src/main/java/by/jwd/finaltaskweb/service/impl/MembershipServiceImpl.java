@@ -31,7 +31,7 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override

@@ -121,15 +121,21 @@
 		<h1 class="mt-3 mb-3">
 			<fmt:message key="membershippagetitle" bundle="${ rb }" />
 		</h1>
+		<form method="post" action="action">
 		<table class="table mx-auto">
+		
 			<tr>
+			<th></th>
 				<th><fmt:message key="membershiptitle" bundle="${ rb }" /></th>
 				<th><fmt:message key="membershipquantity" bundle="${ rb }" /></th>
 				<th><fmt:message key="membershipprice" bundle="${ rb }" /></th>
+				<th></th>
 			</tr>
-			<c:forEach var="membershipType" items="${membershipTypes}"
-				varStatus="status">
+			<c:forEach var="membershipType" items="${membershipTypes}">
+				
 				<tr>
+			
+				<td class="pt-3"><input type="radio" id="membershipTypeId" name = "membershipTypeId" value = "${membershipType.id}" required/></td>
 					<td><c:out value="${membershipType.title}" /></td>
 					<c:choose>
 						<c:when test="${membershipType.maxClassQuantity !=  0 }">
@@ -141,9 +147,19 @@
 					</c:choose>
 					<td><fmt:formatNumber value="${membershipType.price}"
 							type="currency" /></td>
+							<td>
+							
+							 <button type="submit" class="btn btn-light" name="command"
+				value="CHOOSEMEMBERSHIP">
+				<fmt:message key="purchase" bundle="${ rb }" />
+			</button>
+		
+			</td>
 				</tr>
 			</c:forEach>
+			
 		</table>
+		</form>
 		<footer class="card-footer">
 			<div class="container-fluid text-center">
 				<div class="row">

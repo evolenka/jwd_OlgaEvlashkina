@@ -91,12 +91,11 @@ $(document).ready(function(){
 				</form>
 			</div>
 		</nav>
+		<c:if test = "${empty noSession}">
 		<h2 class="mt-3 mb-3">
 			<fmt:message key="thirdStep" bundle="${ rb }" />
 		</h2>
-		<p>Подтвердите запись на <c:out value="${date}"/> в группу <c:out value="${group.title}"/> 
-		</p>
-	
+		
 <form method="post" action="action">
 		<table class="table mx-auto">
 		<tr>
@@ -123,20 +122,27 @@ $(document).ready(function(){
 				<td class="pt-3"><c:out value="${group.teacher.danceStyle}" /></td>
 								<td class="pt-3"><c:out value="${group.level}"/></td>
 								<td class="pt-3"><c:out value="${group.teacher.surname}" /> <c:out value="${group.teacher.name}" /></td>
-								<td class="pt-3"><c:out value="${group.schedule[0].time}" /></td>
+								<c:set var = "schedule" value = "${group.schedule[0]}"/>
+							<td class="pt-3"><c:out value="${schedule.time}" /></td>
+								
 								<td class="pt-3"><c:out value="${membership.startDate}" /></td>
 								<td class="pt-3"><c:out value="${membership.endDate}" /></td>
 						
 				</tr>
 
 	</table>
+	<input type = hidden name ="membershipId" value  = "${membership.id}">
 	<button type="submit" class="btn btn-light" name="command"
 				value="CREATEVISIT">
 				<fmt:message key="confirm" bundle="${ rb }" />
 			</button>
 	</form>
-	<p><c:out value="${noSession}"/></p>
+	</c:if>
 	<p><c:out value="${successVisitMessage}"/><c:out value="${errorVisitMessage}" /></p>
+		
+			<c:if test = "${not empty noSession}">
+			<p><c:out value="${noSession}"/></p>
+			</c:if>
 		<footer class="card-footer">
 			<div class="container-fluid text-center">
 				<div class="row">

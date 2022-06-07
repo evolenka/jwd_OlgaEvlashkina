@@ -1,5 +1,9 @@
 package by.jwd.finaltaskweb.controller.impl;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -10,21 +14,14 @@ import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.DanceClass;
+import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
-import by.jwd.finaltaskweb.entity.Visit;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
-/**
- * CreateVisitCommandImpl implements command to make enrollment for dance
- * classes by client
- * 
- * @author Evlashkina
- *
- */
-public class CreateVisitCommandImpl implements Command {
+public class ConfirmVisitCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(CreateVisitCommandImpl.class);
+	private static Logger logger = LogManager.getLogger(ConfirmVisitCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -32,8 +29,11 @@ public class CreateVisitCommandImpl implements Command {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
+		
+
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
+
 		logger.debug("language {}", language);
 
 		MessageManager manager;
@@ -51,36 +51,23 @@ public class CreateVisitCommandImpl implements Command {
 		default:
 			manager = MessageManager.EN;
 		}
+
 		try {
-			Integer danceClassId =  (Integer) session.getAttribute("danceClassId");
-			logger.debug("danceClassId {}", danceClassId);
-			
-			Integer membershipId =  Integer.parseInt(request.getParameter("membershipId"));
-			logger.debug("membershipId {}", membershipId);
-			
-			if (danceClassId == null) {
+
+			if (session.getAttribute("danceClassId") == null || session.getAttribute("group") == null) {
 				session.setAttribute("noSession", manager.getProperty("noSession"));
 			} else {
-				
+
+				Integer membershipId = Integer.parseInt(request.getParameter("membershipId"));
+
 				Membership membership = factory.getMembershipService().readEntityById(membershipId);
+				session.setAttribute("membership", membership);
 
-				DanceClass danceClass = factory.getDanceClassService().readEntityById(danceClassId);
-				Visit visit = factory.getVisitbuilder().buildVisit(membership, danceClass);
-
-				if (factory.getVisitService().create(visit)) {
-					request.setAttribute("successVisitMessage", manager.getProperty("successVisitMessage"));
-					logger.debug("visit has been created");
-				} else {
-					request.setAttribute("errorVisitMessage", manager.getProperty("errorVisitMessage"));
-				}
 			}
 			page = ConfigurationManager.getProperty("path.page.enrollment3");
 		} catch (ServiceException e) {
-			page = ConfigurationManager.getProperty("path.page.error");
-			request.getSession().setAttribute("errorMessage", manager.getProperty("errorMessage"));
 			logger.error(e);
 		}
-
 		return page;
 	}
 }

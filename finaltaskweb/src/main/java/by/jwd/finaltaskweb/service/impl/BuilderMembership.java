@@ -9,14 +9,14 @@ import by.jwd.finaltaskweb.entity.MembershipType;
 
 public class BuilderMembership {
 	
-	public Membership buildMembership (Client client, MembershipType type,	LocalDate startDate, LocalDate endDate) {
+	public Membership buildMembership (Client client, MembershipType type,	LocalDate startDate) {
 			
 		Membership membership= new Membership();
 		
 		membership.setClient(client);
 		membership.setType(type);
 		membership.setStartDate(startDate);
-		membership.setEndDate(endDate);
+		membership.setEndDate(startDate.plusMonths(1));
 		membership.setBalanceClassQuantity(type.getMaxClassQuantity());
 		
 		return membership;

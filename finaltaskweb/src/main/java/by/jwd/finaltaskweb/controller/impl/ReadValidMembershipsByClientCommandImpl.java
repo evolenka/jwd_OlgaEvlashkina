@@ -2,6 +2,7 @@ package by.jwd.finaltaskweb.controller.impl;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,6 +17,8 @@ import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
+import by.jwd.finaltaskweb.entity.Schedule;
+import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
@@ -67,11 +70,11 @@ public class ReadValidMembershipsByClientCommandImpl implements Command {
 
 					DanceClass danceClass = factory.getDanceClassService().readByDateAndGroup(date, groupId);
 					session.setAttribute("danceClassId", danceClass.getId());
-					logger.debug("danceClassId {}", danceClass.getId());
+										
 					
-					Group group = factory.getGroupService().readEntityById(groupId);
+					Group group = factory.getGroupService().readEntityById(groupId);					
 					session.setAttribute("group", group);
-					logger.debug("group {}", group);
+					
 							
 				validMemberships = factory.getMembershipService().readValidByClient(id);
 				logger.debug("valid memberships {}", validMemberships);
