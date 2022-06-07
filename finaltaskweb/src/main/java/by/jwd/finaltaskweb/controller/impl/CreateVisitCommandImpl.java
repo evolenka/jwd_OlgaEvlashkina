@@ -31,7 +31,7 @@ public class CreateVisitCommandImpl implements Command {
 	@Override
 	public String execute(HttpServletRequest request) {
 
-		String page;
+		String page = null;
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
@@ -52,26 +52,32 @@ public class CreateVisitCommandImpl implements Command {
 			manager = MessageManager.EN;
 		}
 		try {
-			String classId = (request.getParameter("class"));
-			logger.debug("class id{}", classId);
-			Integer membershipId = Integer.parseInt(request.getParameter("membership"));
-			logger.debug("membership id {}", membershipId);
-
-			Membership membership = factory.getMembershipService().readEntityById(membershipId);
-
-			DanceClass danceClass = factory.getDanceClassService().readEntityById(Integer.parseInt(classId));
-			Visit visit = factory.getVisitbuilder().buildVisit(membership, danceClass);
+			logger.debug("danceClassId {}", session.getAttribute("danceClassId"));
+			logger.debug("membershipId {}", request.getParameter("membershipId"));
 			
-			if (factory.getVisitService().create(visit)) {
-				request.setAttribute("successVisitMessage", manager.getProperty("successVisitMessage"));
+			if (session.getAttribute("danceClassId") == null) {
+				session.setAttribute("noSession", manager.getProperty("noSession"));
 			} else {
-				request.setAttribute("errorVisitMessage", manager.getProperty("errorVisitMessage"));
+				Integer classId = Integer.parseInt((String) session.getAttribute("classId"));
+				logger.debug("class id{}", classId);
+				Integer membershipId = Integer.parseInt((String) request.getParameter("membershipId"));
+				logger.debug("membership id {}", membershipId);
+				Membership membership = factory.getMembershipService().readEntityById(membershipId);
+
+				DanceClass danceClass = factory.getDanceClassService().readEntityById(classId);
+				Visit visit = factory.getVisitbuilder().buildVisit(membership, danceClass);
+
+				if (factory.getVisitService().create(visit)) {
+					request.setAttribute("successVisitMessage", manager.getProperty("successVisitMessage"));
+				} else {
+					request.setAttribute("errorVisitMessage", manager.getProperty("errorVisitMessage"));
+				}
 			}
+			page = ConfigurationManager.getProperty("path.page.enrollment3");
 		} catch (ServiceException e) {
-			request.setAttribute("errorVisitMessage", manager.getProperty("errorVisitMessage"));
 			logger.error(e);
 		}
-		page = ConfigurationManager.getProperty("path.page.enrollment");
+
 		return page;
 	}
 }

@@ -17,7 +17,7 @@ import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
  * ReadGroupByLevelCommandImpl implements command for viewing all groups
- * filtered by chosen level on the enrollment page
+ * filtered by chosen level by client while picking up the dance class
  * 
  * @author Evlashkina
  *
@@ -42,7 +42,7 @@ public class ReadGroupByLevelCommandImpl implements Command {
 		try {
 			List<Group> groups = factory.getGroupService().readByLevel(level);
 			request.setAttribute("groups", groups);
-			page = ConfigurationManager.getProperty("path.page.enrollment2");
+			page = ConfigurationManager.getProperty("path.page.chooseGroupByLevel");
 		} catch (ServiceException e) {
 			logger.error(e);
 		}

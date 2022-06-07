@@ -21,10 +21,24 @@
 <c:url value="registration.jsp" var="regLink" />
 <c:url value="login.jsp" var="login" />
 <c:url value="index.jsp" var="main" />
-<title>Dance studio</title>
+<c:url value="enrollment.jsp" var="enrollment" />
+<c:url value="login.jsp" var="login" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dance studio</title>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
 </head>
 <body>
+<script type= "text/javascript">
+$(document).ready(function(){
+	
+	   $('#datepicker').datepicker();
+});	  
+	</script>
 	<div class=page>
 		<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
 			<a class="navbar-brand" href='<c:out value="${main}"/>'> <fmt:message
@@ -80,19 +94,63 @@
 			<fmt:message key="firstStep" bundle="${ rb }" />
 		</h2>
 		<form method="post" action="action">
-			<input type="radio" id="style" name=command value="READALLSTYLE" checked
-				required> <label for="byStyle"><fmt:message
-					key="byStyle" bundle="${ rb }" /></label> <br> <input type="radio"
-				id="level" name=command value="READALLLEVEL" required> <label
-				for="byLevel"><fmt:message key="byLevel" bundle="${ rb }" /></label>
-			<br> <input type="radio" id="schedule" name=command
-				value="READALLWEEKDAY" required> <label for="bySchedule"><fmt:message
-					key="bySchedule" bundle="${ rb }" /></label> <br> <input type="radio"
-				id="date" name=command value="READALLAVAILIABLEDATES" required> <label for="byDate"><fmt:message
-					key="byDate" bundle="${ rb }" /></label> <br> <input type="submit" class="btn btn-light"
-				value="<fmt:message
-								key="next" bundle="${ rb }" />">
-		</form>
+	<input type="text" id="datepicker" name="date">
+<button type="submit" class="btn btn-light" name="command"
+				value="READGROUPBYDATE">
+				<fmt:message key="choose" bundle="${ rb }" />
+			</button>
+			</form>
+			
+			 <c:if test="${not empty groups}">
+		<form method="post" action="action">
+			<div class="table-responsive">
+				<table>
+					<tr>
+					<th id=group class="rowgroup"></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="group" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="style" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="level" bundle="${ rb }"/></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="teacher" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="schedule" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="time" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="duration" bundle="${ rb }" /></th>
+					</tr>
+					<tbody>
+						<c:forEach var="group" items="${groups}">
+							<tr>
+							<td class="pt-3"><input type="radio" id="groupId" name = "groupId" value = "${group.id}" required>
+							<td class="pt-3"><c:out
+											value='${group.title}'/></td>
+								<td class="pt-3"><c:out value="${group.teacher.danceStyle}" /></td>
+								<td class="pt-3"><c:out value="${group.level}"/></td>
+								<td class="pt-3"><c:out value="${group.teacher.surname}" /> <c:out value="${group.teacher.name}" /></td>
+								<td class="pt-3">
+								<c:forEach var = "schedule" items = "${group.schedule}">
+								<c:out value="${schedule.weekDay}"/><br>
+								</c:forEach>
+								</td>
+								<c:set var = "schedule" value = "${group.schedule[0]}"/>
+							<td class="pt-3"><c:out value="${schedule.time}" /></td>
+								<c:set var = "schedule" value = "${group.schedule[0]}"/>
+							<td class="pt-3"><c:out value="${schedule.duration}" /></td>
+								</tr>
+						</c:forEach>
+					</tbody>
+				</table>
+				</div>
+				<button type="submit" class="btn btn-light" name="command"
+				value="MYVALIDMEMBERSHIPS">
+				<fmt:message key="next" bundle="${ rb }" />
+			</button>
+				</form>
+		</c:if>
 		<footer class="card-footer">
 			<div class="container-fluid text-center">
 				<div class="row">

@@ -105,9 +105,14 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 
 		List<Membership> memberships = new ArrayList<>();
 		try {
-			memberships = factory.getMembershipDao(transaction).readValidByClient(clientId);
+			List<Membership> membershipsTemp  = factory.getMembershipDao(transaction).readValidByClient(clientId);
+			for (Membership membership: membershipsTemp) {
+				MembershipType type = factory.getMembershipDao(transaction).readTypeById(membership.getType().getId());
+				membership.setType(type);
+				memberships.add(membership);
+				transaction.close();
 			transaction.close();
-
+			}
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
@@ -116,11 +121,15 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 
 	@Override
 	public List<Membership> readByPeriod(LocalDate startDate, LocalDate endDate) throws ServiceException {
-		List<Membership> memberships = null;
+		List<Membership> memberships = new ArrayList<>();
 		try {
-			memberships = factory.getMembershipDao(transaction).readByPeriod(startDate, endDate);
+			List<Membership> membershipsTemp = factory.getMembershipDao(transaction).readByPeriod(startDate, endDate);
+			for (Membership membership: membershipsTemp) {
+			MembershipType type = factory.getMembershipDao(transaction).readTypeById(membership.getType().getId());
+			membership.setType(type);
+			memberships.add(membership);
 			transaction.close();
-
+			}
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}

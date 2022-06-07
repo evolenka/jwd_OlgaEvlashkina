@@ -26,7 +26,7 @@ public class GroupDaoImpl extends StudioDaoImpl implements GroupDao {
 	private static final String SQL_SELECT_BY_ID = "SELECT group.title, group.teacher_id, group.level FROM `group` WHERE group.id = ?";
 	private static final String SQL_SELECT_BY_LEVEL = "SELECT group.id, group.title, group.teacher_id FROM `group` WHERE level = ?";
 	private static final String SQL_SELECT_BY_TEACHER_ID = "SELECT group.id, group.title, group.level FROM `group` WHERE teacher_id = ?";
-
+		
 	private static final String SQL_INSERT_GROUP = "INSERT INTO `group` (title, teacher_id, level) VALUES (?, ?, ?)";
 
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM `group` WHERE id = ?";
@@ -222,4 +222,5 @@ public class GroupDaoImpl extends StudioDaoImpl implements GroupDao {
 		}
 		return groups;
 	}
+
 }

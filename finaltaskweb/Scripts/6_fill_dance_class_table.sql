@@ -277,7 +277,7 @@ INSERT INTO `danceclass` (
 ) VALUES (
 	"1",
 	"2022-04-11",
-	TRUE
+	FALSE
 );
 INSERT INTO `danceclass` (
 	`schedule_id`,
@@ -286,7 +286,7 @@ INSERT INTO `danceclass` (
 ) VALUES (
 	"2",
 	"2022-04-11",
-	TRUE
+	FALSE
 );
 INSERT INTO `danceclass` (
 	`schedule_id`,
@@ -294,8 +294,8 @@ INSERT INTO `danceclass` (
 	`is_active`
 ) VALUES (
 	"3",
-	"2022-06-11",
-	TRUE
+	"2022-04-11",
+	FALSE
 );
 INSERT INTO `danceclass` (
 	`schedule_id`,
@@ -304,6 +304,33 @@ INSERT INTO `danceclass` (
 ) VALUES (
 	"4",
 	"2022-04-12",
+	FALSE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"5",
+	"2022-04-12",
+	FALSE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"6",
+	"2022-04-12",
+	FALSE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"4",
+	"2022-06-07",
 	TRUE
 );
 INSERT INTO `danceclass` (
@@ -312,7 +339,7 @@ INSERT INTO `danceclass` (
 	`is_active`
 ) VALUES (
 	"5",
-	"2022-06-12",
+	"2022-06-07",
 	TRUE
 );
 INSERT INTO `danceclass` (
@@ -321,6 +348,69 @@ INSERT INTO `danceclass` (
 	`is_active`
 ) VALUES (
 	"6",
-	"2022-06-12",
+	"2022-06-07",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"7",
+	"2022-06-08",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"8",
+	"2022-06-08",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"9",
+	"2022-06-08",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"10",
+	"2022-06-09",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"11",
+	"2022-06-09",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"12",
+	"2022-06-09",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"13",
+	"2022-06-10",
 	TRUE
 );

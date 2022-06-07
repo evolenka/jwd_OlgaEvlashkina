@@ -37,9 +37,9 @@ public class ReadAllStyleCommandImpl implements Command {
 		
 		try {
 			List<String> styles = factory.getUserService().readAllDanceStyle();
-			request.setAttribute("styles", styles);
+			session.setAttribute("styles", styles);
 			logger.debug("styles {}", styles);
-			page = ConfigurationManager.getProperty("path.page.enrollment1");
+			page = ConfigurationManager.getProperty("path.page.chooseGroupByStyle");
 			
 		} catch (ServiceException e) {
 			logger.error(e);

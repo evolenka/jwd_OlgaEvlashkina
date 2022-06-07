@@ -70,7 +70,7 @@ public class LoginationCommandImpl implements Command {
 
 			// save user role as session attribute
 			session.setAttribute("role", user.getRole());
-			session.setAttribute("id", user.getId());
+			session.setAttribute("clientId", user.getId());
 			
 			StringBuilder userName = new StringBuilder("");
 			

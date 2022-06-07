@@ -1,7 +1,7 @@
 package by.jwd.finaltaskweb.controller.impl;
 
-import java.util.ArrayList;
-
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,20 +13,21 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.entity.Group;
-import by.jwd.finaltaskweb.entity.WeekDay;
+import by.jwd.finaltaskweb.entity.Level;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadGroupByScheduleCommandImpl implements command for viewing all groups
- * filtered by chosen week day(s) by client while picking up the dance class
+ * ReadGroupByDateCommandImpl implements command for viewing all groups
+ * filtered by chosen date on the enrollment page
  * 
  * @author Evlashkina
  *
  */
-public class ReadGroupByScheduleCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(ReadGroupByScheduleCommandImpl.class);
+public class ReadGroupByDateCommandImpl implements Command {
+
+	private static Logger logger = LogManager.getLogger(ReadGroupByDateCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -37,21 +38,17 @@ public class ReadGroupByScheduleCommandImpl implements Command {
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
+		
+		session.setAttribute("date", request.getParameter("date"));
+		logger.debug("date {}", request.getParameter("date"));
 
-		
-		String [] days = request.getParameterValues("weekday");
-		logger.debug(days.toString());
-		
-		List <WeekDay> weekdays = new ArrayList <>();
-		
-		for (String day:days) {
-			weekdays.add (WeekDay.valueOf(day));
-		}
-		
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+		LocalDate date = LocalDate.parse(request.getParameter("date"), formatter);
+
 		try {
-			List<Group> groups = factory.getGroupService().readByWeekDay(weekdays);
+			List<Group> groups = factory.getGroupService().readByDate(date);
 			request.setAttribute("groups", groups);
-			page = ConfigurationManager.getProperty("path.page.chooseGroupByWeekDay");
+			page = ConfigurationManager.getProperty("path.page.enrollment");
 		} catch (ServiceException e) {
 			logger.error(e);
 		}

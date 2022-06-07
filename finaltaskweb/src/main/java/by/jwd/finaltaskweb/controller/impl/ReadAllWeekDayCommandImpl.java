@@ -34,9 +34,9 @@
 
 		
 				List<WeekDay> weekdays = Arrays.asList(WeekDay.values());
-				request.setAttribute("weekdays", weekdays);
+				session.setAttribute("weekdays", weekdays);
 				logger.debug("weekdays {}", weekdays);
-				page = ConfigurationManager.getProperty("path.page.enrollment1");
+				page = ConfigurationManager.getProperty("path.page.chooseGroupByWeekDay");
 		
 			return page;
 		}

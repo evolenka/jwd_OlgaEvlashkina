@@ -21,7 +21,9 @@
 <c:url value="registration.jsp" var="regLink" />
 <c:url value="login.jsp" var="login" />
 <c:url value="index.jsp" var="main" />
-<c:url value="enrollment2.jsp" var="enrollment2" />
+<c:url value="enrollment.jsp" var="enrollment" />
+<c:url value="enrollment3.jsp" var="enrollment3" />
+<c:url value="login.jsp" var="login" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dance studio</title>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
@@ -29,19 +31,15 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
 </head>
 <body>
-<script>
-
-$(function(){
-	$('#datepicker').datepicker({
-		  beforeShowDay: function(date) {
-		    return [date.getDay() === 1]
-		  }
-		});
-}
+<script type= "text/javascript">
+$(document).ready(function(){
+	
+	   $('#datepicker').datepicker();
+});	  
 	</script>
-
 	<div class=page>
 		<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
 			<a class="navbar-brand" href='<c:out value="${main}"/>'> <fmt:message
@@ -94,20 +92,51 @@ $(function(){
 			</div>
 		</nav>
 		<h2 class="mt-3 mb-3">
-			<fmt:message key="secondStep" bundle="${ rb }" />
+			<fmt:message key="thirdStep" bundle="${ rb }" />
 		</h2>
-		<form method="post" action="action">
-		<input type="text" id="datepicker" name="dates">
-				 			
-				<a class="btn btn-light" href='<c:out value="${enrollment2}"/>'>
-					<fmt:message key="back" bundle="${ rb }" />
-				</a>
-				<button type="submit" class="btn btn-light" name="command"
-				value="READAVAILIABLEDATESBYGROUP">
-				<fmt:message key="next" bundle="${ rb }" />
-			</button>
-			</form>
+		<p>Подтвердите запись на <c:out value="${date}"/> в группу <c:out value="${group.title}"/> 
+		</p>
+	
+<form method="post" action="action">
+		<table class="table mx-auto">
+		<tr>
 		
+				<th><fmt:message key="date" bundle="${ rb }" /></th>
+				<th id=group class="rowgroup"><fmt:message
+								key="group" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="style" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="level" bundle="${ rb }"/></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="teacher" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="time" bundle="${ rb }" /></th>
+					
+				<th id=group class="rowgroup"><fmt:message key="membershipstartdate" bundle="${ rb }" /></th>
+				<th id=group class="rowgroup"><fmt:message key="membershipenddate" bundle="${ rb }" /></th>
+			</tr>
+			
+				<tr>
+				<td class="pt-3"><c:out value="${date}" /></td>
+				<td class="pt-3"><c:out value="${group.title}" /></td>
+				<td class="pt-3"><c:out value="${group.teacher.danceStyle}" /></td>
+								<td class="pt-3"><c:out value="${group.level}"/></td>
+								<td class="pt-3"><c:out value="${group.teacher.surname}" /> <c:out value="${group.teacher.name}" /></td>
+								<td class="pt-3"><c:out value="${group.schedule[0].time}" /></td>
+								<td class="pt-3"><c:out value="${membership.startDate}" /></td>
+								<td class="pt-3"><c:out value="${membership.endDate}" /></td>
+						
+				</tr>
+
+	</table>
+	<button type="submit" class="btn btn-light" name="command"
+				value="CREATEVISIT">
+				<fmt:message key="confirm" bundle="${ rb }" />
+			</button>
+	</form>
+	<p><c:out value="${noSession}"/></p>
+	<p><c:out value="${successVisitMessage}"/><c:out value="${errorVisitMessage}" /></p>
 		<footer class="card-footer">
 			<div class="container-fluid text-center">
 				<div class="row">

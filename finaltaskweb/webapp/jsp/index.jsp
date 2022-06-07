@@ -25,6 +25,7 @@
 <c:url value="index.jsp" var="main" />
 <c:url value="enrollment.jsp" var="enrollment" />
 
+
 <script
 	src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 <script
@@ -42,7 +43,6 @@
 				data-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 
 			<div class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class="navbar-nav">
@@ -71,6 +71,32 @@
 						</form>
 
 					</li>
+					<li class="btn-group">
+				
+							<button type="button" class="btn btn-secondary dropdown-toggle"
+								data-toggle="dropdown">
+								<fmt:message key="chooseGroup" bundle="${ rb }" />
+							</button>
+							<div class="dropdown-menu">
+								<form method="post" action="action">
+									<button type="submit" class="btn btn-light dropdown-item" name= "command" value="READALLSTYLE">
+										<fmt:message key="byStyle" bundle="${ rb }" />
+										</button>
+								</form>
+								<form method="post" action="action">
+									<button type="submit" class="btn btn-light dropdown-item"
+										name= "command" value="READALLWEEKDAY">
+										<fmt:message key="byWeekDay" bundle="${ rb }" />
+									</button>
+									</form>
+									<form method="post" action="action">							
+									<button type="submit" class="btn btn-light dropdown-item"
+										name="command" value="READALLLEVEL">
+										<fmt:message key="byLevel" bundle="${ rb }" />
+									</button>
+									</form>								
+							</div>
+						</li>
 					<li class="nav-item"><a class="btn btn-secondary"
 						href='<c:out value="${enrollment}"/>'> <fmt:message
 								key="enrollment" bundle="${ rb }" />

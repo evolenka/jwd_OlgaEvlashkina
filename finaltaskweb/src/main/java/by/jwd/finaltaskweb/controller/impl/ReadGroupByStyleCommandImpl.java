@@ -1,7 +1,7 @@
 
 package by.jwd.finaltaskweb.controller.impl;
 
-import java.util.Enumeration;
+
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,7 +18,7 @@ import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
  * ReadGroupByStyleCommandImpl implements command for viewing all groups
- * filtered by chosen dance style on the enrollment page
+ * filtered by chosen dance style by client while picking up the dance class
  * 
  * @author Evlashkina
  *
@@ -49,7 +49,7 @@ public class ReadGroupByStyleCommandImpl implements Command {
 		try {
 			List<Group> groups = factory.getGroupService().readByDanceStyle(style);
 			request.setAttribute("groups", groups);
-			page = ConfigurationManager.getProperty("path.page.enrollment2");
+			page = ConfigurationManager.getProperty("path.page.chooseGroupByStyle");
 		} catch (ServiceException e) {
 			logger.error(e);
 		}

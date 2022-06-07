@@ -52,19 +52,6 @@ INSERT INTO `membership` (
 	`end_date`,
 	`balance_quantity`	
 ) VALUES (
-   	"5",
-	"1",
-	"2022-03-12",
-	"2022-03-13",
-	"0"
-	);
-INSERT INTO `membership` (
-    `client_id`,
-	`type_of_membership_id`,
-	`start_date`,
-	`end_date`,
-	`balance_quantity`	
-) VALUES (
    	"6",
 	"2",
 	"2022-04-01",
@@ -133,4 +120,93 @@ INSERT INTO `membership` (
 	"2022-04-10",
 	"2022-05-10",
 	"16"
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`, 
+	`balance_quantity`
+	) VALUES (
+    "6",
+	"4",
+	"2022-06-01",
+	"2022-07-01",
+	"16"
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`, 
+	`balance_quantity`
+	) VALUES (
+    "7",
+	"3",
+	"2022-06-01",
+	"2022-07-01",
+	"8"
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`
+	
+	) VALUES (
+    "8",
+	"5",
+	"2022-06-01",
+	"2022-07-01"
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`, 
+	`balance_quantity`
+	) VALUES (
+    "9",
+	"2",
+	"2022-06-01",
+	"2022-07-01",
+	"4"
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`, 
+	`balance_quantity`
+	) VALUES (
+    "10",
+	"4",
+	"2022-06-01",
+	"2022-07-01",
+	"16"
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`
+	) VALUES (
+    "11",
+	"5",
+	"2022-06-01",
+	"2022-07-01"
+	
+);
+INSERT INTO `membership` (
+    `client_id`,
+	`type_of_membership_id`,
+	`start_date`,
+	`end_date`, 
+	`balance_quantity`
+	) VALUES (
+    "6",
+	"1",
+	"2022-06-08",
+	"2022-06-08",
+	"1"
 );

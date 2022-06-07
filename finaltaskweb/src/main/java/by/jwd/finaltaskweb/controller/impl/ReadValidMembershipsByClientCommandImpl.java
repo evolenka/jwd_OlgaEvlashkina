@@ -1,5 +1,7 @@
 package by.jwd.finaltaskweb.controller.impl;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +13,8 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
+import by.jwd.finaltaskweb.entity.DanceClass;
+import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
@@ -25,6 +29,7 @@ public class ReadValidMembershipsByClientCommandImpl implements Command {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
+		List<Membership> validMemberships;
 
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
@@ -46,22 +51,42 @@ public class ReadValidMembershipsByClientCommandImpl implements Command {
 		default:
 			manager = MessageManager.EN;
 		}
-		Integer id = (Integer) session.getAttribute("id");
-		logger.debug("login {}", id);
 
-		try {
-			if (id != null) {
+		Integer id = (Integer) session.getAttribute("clientId");
+		logger.debug("client id {}", id);
 
-				List<Membership> validMemberships = factory.getMembershipService().readValidByClient(id);
-				request.setAttribute("validMemberships", validMemberships);
-				page = ConfigurationManager.getProperty("path.page.myMemberships");
-			} else {
-				page = ConfigurationManager.getProperty("path.page.login");
+			try {
+
+				if (session.getAttribute("date") == null || id == null) {
+					session.setAttribute("noSession", manager.getProperty("noSession"));
+				} else {
+					DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+					LocalDate date = LocalDate.parse((String) session.getAttribute("date"), formatter);
+
+					Integer groupId = Integer.parseInt(request.getParameter("groupId"));
+
+					DanceClass danceClass = factory.getDanceClassService().readByDateAndGroup(date, groupId);
+					session.setAttribute("danceClassId", danceClass.getId());
+					logger.debug("danceClassId {}", danceClass.getId());
+					
+					Group group = factory.getGroupService().readEntityById(groupId);
+					session.setAttribute("group", group);
+					logger.debug("group {}", group);
+							
+				validMemberships = factory.getMembershipService().readValidByClient(id);
+				logger.debug("valid memberships {}", validMemberships);
+				
+				if (validMemberships.isEmpty()) {
+					logger.debug("no valid memberships");
+					session.setAttribute("noMembership", manager.getProperty("noMembership"));
+				} else {
+					session.setAttribute("validMemberships", validMemberships);
+									
+				}
 			}
+			page = ConfigurationManager.getProperty("path.page.enrollment2");
 		} catch (ServiceException e) {
-			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			page = ConfigurationManager.getProperty("path.page.myMemberships");
-			logger.error(" request has been failed");
+			logger.error(e);
 		}
 		return page;
 	}

@@ -9,7 +9,7 @@ import by.jwd.finaltaskweb.entity.DanceClass;
 
 public interface DanceClassService extends StudioService <Integer, DanceClass>{
 
-	public List <DanceClass> readByDateAndGroup(List <LocalDate> availiableDates, Integer groupId) throws ServiceException;
+	public DanceClass readByDateAndGroup(LocalDate date, Integer groupId) throws ServiceException;
 	
 	public List <DanceClass> readByGroup(Integer groupId) throws ServiceException;
 	

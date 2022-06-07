@@ -34,10 +34,10 @@
 			logger.debug("language {}", language);
 
 				List<Level> levels = Arrays.asList(Level.values());
-				request.setAttribute("levels", levels);
+				session.setAttribute("levels", levels);
 				logger.debug("levels {}", levels);
 				
-				page = ConfigurationManager.getProperty("path.page.enrollment1");
+				page = ConfigurationManager.getProperty("path.page.chooseGroupByLevel");
 			
 			return page;
 		}

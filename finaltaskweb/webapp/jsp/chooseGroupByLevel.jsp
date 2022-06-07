@@ -23,9 +23,6 @@
 <c:url value="registration.jsp" var="regLink" />
 <c:url value="login.jsp" var="login" />
 <c:url value="index.jsp" var="main" />
-<c:url value="myMemberships.jsp" var="membershiplink" />
-<c:url value="purchaseMembership.jsp" var="purchaseMembershiplink" />
-<c:url value="myVisits.jsp" var="myVisitslink" />
 <c:url value="enrollment.jsp" var="enrollment" />
 
 <script
@@ -116,50 +113,69 @@
 				</form>
 			</div>
 		</nav>
+		
+	  	<form method="post" action="action">
+			<c:forEach var="level" items="${levels}">
 
-		<div class="mainIndex container-fluid">
-			<div class=row>
-				<div class="col-md-6 col-xl-4">
-					<div class="btn-group-vertical">
-
-
-
-						<form method="post" action="action">
-							<button type="submit" class="btn btn-light" name="command"
-								value="PLANNEDVISITS">
-								<fmt:message key="plannedclasses" bundle="${ rb }" />
-							</button>
-
-						</form>
-						<br> <a class="btn btn-light"
-							href='<c:out value="${membershiplink}"/>'><fmt:message
-								key="mymemberships" bundle="${ rb }" /> </a> <br> <a
-							class="btn btn-light" style="width: 150px"
-							href='<c:out value="${purchaseMembershipLink}"/>'><fmt:message
-								key="buymembership" bundle="${ rb }" /> </a> <br> <a
-							class="btn btn-light" href='<c:out value="${myvisitsLink}"/>'><fmt:message
-								key="myvisits" bundle="${ rb }" /> </a> <br>
-
-					</div>
+				<input type="radio" id="level" name="level" value="${level}"
+					required>
+				<label for="level"> <c:out value="${level}" /></label>
+				<br>
+			</c:forEach>
+			
+			<button type="submit" class="btn btn-light" name="command"
+				value="READGROUPBYLEVEL">
+				<fmt:message key="choose" bundle="${ rb }" />
+			</button>
+		</form>
+	
+		
+		<c:if test="${not empty groups}">
+		
+			<div class="table-responsive">
+				<table>
+					<tr>
+					
+						<th id=group class="rowgroup"><fmt:message
+								key="group" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="style" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="level" bundle="${ rb }"/></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="teacher" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="schedule" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="time" bundle="${ rb }" /></th>
+						<th id=group class="rowgroup"><fmt:message
+								key="duration" bundle="${ rb }" /></th>
+					</tr>
+					<tbody>
+						<c:forEach var="group" items="${groups}">
+							<tr>
+							
+								<td class="pt-3"><c:out
+											value='${group.title}'/></td>
+								<td class="pt-3"><c:out value="${group.teacher.danceStyle}" /></td>
+								<td class="pt-3"><c:out value="${group.level}"/></td>
+								<td class="pt-3"><c:out value="${group.teacher.surname}" /> <c:out value="${group.teacher.name}" /></td>
+								<td class="pt-3">
+								<c:forEach var = "schedule" items = "${group.schedule}">
+								<c:out value="${schedule.weekDay}"/><br>
+								</c:forEach>
+								</td>
+								<c:set var = "schedule" value = "${group.schedule[0]}"/>
+							<td class="pt-3"><c:out value="${schedule.time}" /></td>
+								<c:set var = "schedule" value = "${group.schedule[0]}"/>
+							<td class="pt-3"><c:out value="${schedule.duration}" /></td>
+								</tr>
+						</c:forEach>
+					</tbody>
+				</table>
 				</div>
-				<div class=" col-md col-xl-4"></div>
-				<div class=" col-md-6 col-xl-4">
-					<div class=card style="background: grey">
-						<form method="post" action="action">
-							<button type="submit" class="btn btn-light" name="command"
-								value="UPDATECLIENT">
-								<fmt:message key="updateclient" bundle="${ rb }" />
-							</button>
-						</form>
-						<form method="post" action="action">
-							<button type="submit" name="command" value="UPDATEPASSWORD">
-								<fmt:message key="changepass" bundle="${ rb }" />
-							</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+				</c:if>
+
 		<footer class="card-footer">
 			<div class="container-fluid text-center">
 				<div class="row">

@@ -84,25 +84,25 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 	}
 
 	@Override
-	public List<DanceClass> readByDateAndGroup(List<LocalDate> availiableDates, Integer groupId)
+	public DanceClass readByDateAndGroup(LocalDate date, Integer groupId)
 			throws ServiceException {
 
-		List<DanceClass> danceClasses = new ArrayList<>();
+		DanceClass danceClass = null;
 
 		try {
 			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupId);
 
-			for (LocalDate date : availiableDates) {
+		
 				for (Schedule schedule : schedules) {
-					danceClasses.add(factory.getDanceClassDao(transaction).readByDateAndSchedule(date, schedule));
+					danceClass = factory.getDanceClassDao(transaction).readByDateAndSchedule(date, schedule);
 				}
-			}
+			
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
 
-		return danceClasses;
+		return danceClass;
 	}
 
 	@Override

@@ -66,8 +66,7 @@ public class CommandServlet extends HttpServlet {
 		
 		logger.debug("receive request");
 		String page = null;
-		response.setCharacterEncoding("utf8");
-		
+				
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
 
@@ -98,7 +97,7 @@ public class CommandServlet extends HttpServlet {
 		// определение команды, пришедшей из JSP
 		CommandProvider provider = new CommandProvider();
 		Command command = provider.getCommand(request);
-		logger.debug(command);
+		logger.debug("command {}", command);
 
 		/*
 		 * вызов реализованного метода execute() и передача параметров
@@ -114,7 +113,7 @@ public class CommandServlet extends HttpServlet {
 		} else {
 			// установка страницы c cообщением об ошибке
 			page = ConfigurationManager.getProperty("path.page.error");
-			request.getSession().setAttribute("errorMessage", manager.getProperty("errorMessage"));//TO DO
+			request.getSession().setAttribute("errorMessage", manager.getProperty("errorMessage"));
 			response.sendRedirect(request.getContextPath() + page);
 		}
 	}
