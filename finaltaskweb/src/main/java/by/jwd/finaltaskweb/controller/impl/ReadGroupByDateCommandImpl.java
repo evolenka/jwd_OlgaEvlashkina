@@ -12,14 +12,14 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
+import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.Group;
-import by.jwd.finaltaskweb.entity.Level;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadGroupByDateCommandImpl implements command for viewing all groups
- * filtered by chosen date on the enrollment page
+ * ReadGroupByDateCommandImpl implements command for viewing all groups filtered
+ * by chosen date on the enrollment page
  * 
  * @author Evlashkina
  *
@@ -38,19 +38,48 @@ public class ReadGroupByDateCommandImpl implements Command {
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
-		
-		session.setAttribute("date", request.getParameter("date"));
-		logger.debug("date {}", request.getParameter("date"));
 
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-		LocalDate date = LocalDate.parse(request.getParameter("date"), formatter);
+		MessageManager manager;
+
+		switch (language) {
+		case "en", "en_US":
+			manager = MessageManager.EN;
+			break;
+		case "ru", "ru_RU":
+			manager = MessageManager.RU;
+			break;
+		case "be", "be_BY":
+			manager = MessageManager.BY;
+			break;
+		default:
+			manager = MessageManager.EN;
+		}
+
+		Integer clientId = (Integer) session.getAttribute("clientId");
 
 		try {
-			List<Group> groups = factory.getGroupService().readByDate(date);
-			request.setAttribute("groups", groups);
-			page = ConfigurationManager.getProperty("path.page.enrollment");
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
+		
+			} else {
+
+				if (request.getParameter("enrollmentDate") != null) {
+
+					session.setAttribute("enrollmentDate", request.getParameter("enrollmentDate"));
+					logger.debug("enrollment date {}", request.getParameter("enrollmentDate"));
+				}
+
+				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+				LocalDate date = LocalDate.parse((String) session.getAttribute("enrollmentDate"), formatter);
+
+				List<Group> groups = factory.getGroupService().readByDate(date);
+				session.setAttribute("groups", groups);
+				page = ConfigurationManager.getProperty("path.page.enrollment2");
+			}
 		} catch (ServiceException e) {
-			logger.error(e);
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			page = ConfigurationManager.getProperty("path.page.error");
 		}
 		return page;
 	}

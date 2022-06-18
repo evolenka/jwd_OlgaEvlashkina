@@ -25,10 +25,9 @@ public class PasswordHashGenerator {
 		return instance;
 	}
 
-	public static String generate(String password) throws ServiceException {
-		SecureRandom random = new SecureRandom();
-		byte[] salt = new byte[16];
-		random.nextBytes(salt);
+	public static String generate(String password, String login) throws ServiceException {
+		
+		byte[] salt = login.getBytes();
 		KeySpec spec = new PBEKeySpec(password.toCharArray(), salt, ITERATIONS, LENGTH);
 		SecretKeyFactory factory;
 		byte[] hash;

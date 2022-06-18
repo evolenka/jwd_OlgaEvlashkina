@@ -6,7 +6,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"tpavlova",
-	"VLD1B6ane2DpKxt9PkIC9g==",
+	"N/xGlJZrZ9VM6azV9T1OFA==",
 	'TEACHER'
 );
 
@@ -16,7 +16,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"divanov",
-	"rZDdprnLVXNuvafESK0DUA==",
+	"jgPhc9OAmZgFxy5EHGvUPA==",
 	'TEACHER'
 );
 INSERT INTO `user` (
@@ -25,7 +25,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"olesnaya",
-	"ufuE2rE3X5GOegBcxcsedA==",
+	"SIZtBADJbA4NQm7g7ZZi6A==",
 	'TEACHER'
 );
 
@@ -35,7 +35,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"atalai",
-	"qas64XWX8NI4PXz6h+b/vw==",
+	"Wo40uw2qC7rGYuyZCmDlww==",
 	'TEACHER'
 );
 INSERT INTO `user` (
@@ -44,7 +44,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"MARKOVA",
-	"Uas78XWK8NI4PXz6h+b/vw==",
+	"iPj6NrCja2GZEJTZo4M/XA==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -53,7 +53,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"nataliana",
-	"U0Tcja4XuTrc4I9sWAIr6w==",
+	"vNSrTgDubqB7ibbYiDeIOg==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -62,7 +62,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"vikkra",
-	"pfg78g4XWX8NI4PXz6h+c/vw==",
+	"pgSwtmJ3xGXAAr/Vwaw+ZA==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -71,7 +71,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"anastaissakis",
-	"qas64XWX8NI4PXz6h+b+yu==",
+	"21WLfIPgQ6l/dozEbphQLg==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -80,7 +80,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"kirstepnov",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"rbL+B1sF3TKkl1cXbDx0Zg==",
 	'CLIENT'
 );
 
@@ -90,7 +90,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"andreev",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"3EH3MuLk3lIMClgR9HmaiQ==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -99,7 +99,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"meshkov",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"9NKXeQb9UmYVSC6odyGUFA==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -108,7 +108,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"POTAPAVA",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"VYIf8j2LGCbh6DXT3klVLQ==",
 	'CLIENT'
 );
 
@@ -118,7 +118,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"penkina",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"TIQx8kCh07119BvCRCfTtQ==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -127,7 +127,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"kuvshinka",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"vg5r3gG3LvyJePgh47nAxQ==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -136,7 +136,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"koblova",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"2ZgGr9auLZD9v5Qm0tRvhg==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -145,7 +145,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"Umishukova",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"G5Eqok4l7KxKuBaq4kjiJA==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -154,7 +154,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"efimenko",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"rtyCl+v7NWm50wVonQ/7dw==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -163,7 +163,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"fedorovE",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"jXmo9oofX1ffjcavrpr6YQ==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -172,7 +172,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"popova",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"drLAHLMsZKtfqL0kLydkQw==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -181,7 +181,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"shut1000",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"le67Yy/OOkRHs1jNNo+IqA==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -190,7 +190,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"kobec",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"F2xKWmZ+tiznnZJuT7jKEA==",
 	'CLIENT'
 );
 INSERT INTO `user` (
@@ -199,7 +199,7 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"sobstkristi",
-	"YFGjdu7d56ggy/wePXzb+py==",
+	"TcNyeTXMhSpKFWIGkm8Nkg==",
 	'CLIENT'
 );
 

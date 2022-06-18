@@ -28,7 +28,7 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 	private static final String SQL_SELECT_BY_ID = "SELECT visit.membership_id, visit.danceclass_id, visit.status FROM `visit` WHERE visit.id = ?";
 	private static final String SQL_SELECT_BY_MEMBERSHIP_AND_DANCECLASS = "SELECT visit.id, visit.status FROM `visit` WHERE visit.membership_id = ? AND visit.danceclass_id = ? ";
 	private static final String SQL_SELECT_BY_DANCECLASS = "SELECT visit.id, visit.membership_id, visit.status FROM `visit` WHERE visit.danceclass_id = ? ";
-	private static final String SQL_SELECT_PLANNED_BY_MEMBERSHIP = "SELECT visit.id, visit.status FROM `visit` WHERE visit.membership_id = ? AND visit.status = 'PLANNED'";
+	private static final String SQL_SELECT_PLANNED_BY_MEMBERSHIP = "SELECT visit.id, visit.danceclass_id, visit.status FROM `visit` WHERE visit.membership_id = ? AND visit.status = 'PLANNED'";
 
 	private static final String SQL_INSERT_VISIT = "INSERT INTO visit(membership_id, danceclass_id) VALUES (?, ?)";
 
@@ -207,7 +207,7 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 	@Override
 	public Visit readByMembershipAndDanceClass(Membership membership, DanceClass danceClass) throws DaoException {
 
-		Visit visit = new Visit();
+		Visit visit = null;
 
 		PreparedStatement statement = null;
 
@@ -220,11 +220,11 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
-
+                visit = new Visit();
 				visit.setId(resultSet.getInt(1));
 				visit.setMembership(new Membership(membership.getId()));
 				visit.setDanceClass(new DanceClass(danceClass.getId()));
-				visit.setStatus(Status.valueOf(resultSet.getString(3)));
+				visit.setStatus(Status.valueOf(resultSet.getString(2)));
 
 				logger.debug("visit has been read by client and by dance class");
 			}
@@ -239,7 +239,8 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 
 	@Override
 	public Visit readByDanceClass(DanceClass danceClass) throws DaoException {
-		Visit visit = new Visit();
+		
+		Visit visit = null;
 
 		PreparedStatement statement = null;
 
@@ -251,7 +252,7 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
-
+                visit = new Visit();
 				visit.setId(resultSet.getInt(1));
 				visit.setMembership(new Membership(resultSet.getInt(2)));
 				visit.setDanceClass(new DanceClass(danceClass.getId()));

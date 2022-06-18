@@ -18,56 +18,74 @@ import by.jwd.finaltaskweb.service.ServiceFactory;
 
 public class ReadMembershipByClientAndPeriodCommandImpl implements Command {
 
-		private static Logger logger = LogManager.getLogger(ReadValidMembershipsByClientCommandImpl.class);
+	private static Logger logger = LogManager.getLogger(ReadValidMembershipsByClientCommandImpl.class);
 
-		private ServiceFactory factory = ServiceFactory.getInstance();
+	private ServiceFactory factory = ServiceFactory.getInstance();
 
-		@Override
-		public String execute(HttpServletRequest request) {
+	@Override
+	public String execute(HttpServletRequest request) {
 
-			String page = null;
+		String page = null;
 
-			HttpSession session = request.getSession(true);
-			String language = (String) session.getAttribute("language");
+		HttpSession session = request.getSession(true);
+		String language = (String) session.getAttribute("language");
 
-			logger.debug("language {}", language);
+		logger.debug("language {}", language);
 
-			MessageManager manager;
+		MessageManager manager;
 
-			switch (language) {
-			case "en":
-				manager = MessageManager.EN;
-				break;
-			case "ru":
-				manager = MessageManager.RU;
-				break;
-			case "be":
-				manager = MessageManager.BY;
-				break;
-			default:
-				manager = MessageManager.EN;
-			}
-			Integer id = (Integer) session.getAttribute("id");
-			logger.debug("login {}", id);
-			LocalDate startDate = LocalDate.parse(request.getParameter("startdate"));
-			logger.debug("startdate {}", startDate);
-			LocalDate endDate = LocalDate.parse(request.getParameter("enddate"));
-			logger.debug("enddate {}", endDate);
-			
-			try {
-				if (id != null) {
-
-					List<Membership> memberships = factory.getMembershipService().readByClientAndPeriod(id, startDate, endDate);
-					request.setAttribute("memberships", memberships);
-					page = ConfigurationManager.getProperty("path.page.myMemberships");
-				} else {
-					page = ConfigurationManager.getProperty("path.page.login");
-				}
-			} catch (ServiceException e) {
-				request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-				page = ConfigurationManager.getProperty("path.page.myMemberships");
-				logger.error(" request has been failed");
-			}
-			return page;
+		switch (language) {
+		case "en", "en_US":
+			manager = MessageManager.EN;
+			break;
+		case "ru", "ru_RU":
+			manager = MessageManager.RU;
+			break;
+		case "be", "be_BY":
+			manager = MessageManager.BY;
+			break;
+		default:
+			manager = MessageManager.EN;
 		}
+
+		Integer id = (Integer) session.getAttribute("clientId");
+		logger.debug("clientId {}", id);
+
+		session.setAttribute("isCheckedPeriod", true);
+		logger.debug("isCheckedPeriod {}", session.getAttribute("isCheckedPeriod"));
+
+		try {
+			if (id == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+			} else {
+
+				if (request.getParameter("startdate") != null && request.getParameter("enddate") != null) {
+					session.setAttribute("startdate", request.getParameter("startdate"));
+					session.setAttribute("enddate", request.getParameter("enddate"));
+				}
+
+				if (session.getAttribute("startdate") != null && session.getAttribute("enddate") != null) {
+
+					LocalDate startDate = LocalDate.parse((String) session.getAttribute("startdate"));
+					logger.debug("startdate {}", startDate);
+
+					LocalDate endDate = LocalDate.parse((String) session.getAttribute("enddate"));
+					logger.debug("enddate {}", endDate);
+
+					List<Membership> memberships = factory.getMembershipService().readByClientAndPeriod(id, startDate,
+							endDate);
+					request.setAttribute("memberships", memberships);
+
+				} else {
+					request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				}
+			}
+		} catch (ServiceException e) {
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			page = ConfigurationManager.getProperty("path.page.error");
+
+		}
+		page = ConfigurationManager.getProperty("path.page.myMemberships");
+		return page;
 	}
+}

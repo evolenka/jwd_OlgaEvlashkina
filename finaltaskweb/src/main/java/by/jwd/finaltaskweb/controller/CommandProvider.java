@@ -74,6 +74,9 @@ public class CommandProvider {
 		commands.put(CommandEnum.CREATEVISIT, new CreateVisitCommandImpl());
 		commands.put(CommandEnum.CONFIRMVISIT, new ConfirmVisitCommandImpl());
 		commands.put(CommandEnum.READALLAVAILIABLEDATES, new ReadAllAvailiableDatesCommandImpl());
+		commands.put(CommandEnum.READPLANNEDCLASSESBYTEACHER, new ReadPlannedClassesByTeacherCommandImpl());
+		commands.put(CommandEnum.MARKPRESENCE, new UpdateVisitStatusCommandImpl());
+		
 		commands.put(CommandEnum.WRONGCOMMAND, new EmptyCommandImpl());
 	}
 
@@ -103,10 +106,18 @@ public class CommandProvider {
 		Command command;
 		// извлечение имени команды из запроса
 		String action = request.getParameter("command");
+		
+		if(action !=null) {
+	
+		session.setAttribute("command", action);
 		logger.debug("action {}", action);
+		}
+		
+		if(action==null && session.getAttribute("command") != null ) {
+			action = (String) session.getAttribute("command");
+		}
 
 		if (action == null || action.isEmpty()) {
-			// если команда не задана в текущем запросе
 			command = commands.get(CommandEnum.WRONGCOMMAND);
 		} else {
 			// получение объекта, соответствующего команде
@@ -115,8 +126,7 @@ public class CommandProvider {
 				command = commands.get(currentEnum);
 
 			} catch (IllegalArgumentException e) {
-				command = commands.get(CommandEnum.WRONGCOMMAND);
-				request.setAttribute("wrongAction", action + manager.getProperty("message.wrongaction"));//TODO
+				command = commands.get(CommandEnum.WRONGCOMMAND);			
 			}
 		}
 		return command;

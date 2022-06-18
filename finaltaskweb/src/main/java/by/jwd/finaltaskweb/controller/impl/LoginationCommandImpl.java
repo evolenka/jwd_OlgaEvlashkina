@@ -40,38 +40,48 @@ public class LoginationCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-			case "en":
-				manager = MessageManager.EN;
-				break;
-			case "ru":
-				manager = MessageManager.RU;
-				break;
-			case "be":
-				manager = MessageManager.BY;
-				break;
-			default:
-				manager = MessageManager.EN;
-			}
+		case "en", "en_US":
+			manager = MessageManager.EN;
+			break;
+		case "ru", "ru_RU":
+			manager = MessageManager.RU;
+			break;
+		case "be","be_BY":
+			manager = MessageManager.BY;
+			break;
+		default:
+			manager = MessageManager.EN;
+		}
+		
+		String login = null;
+		String password = null;
 
-		String login = request.getParameter("login");
-		logger.debug("login {}", login);
-		String pass = request.getParameter("password");
-		logger.debug("password {}", pass);
+		if (request.getParameter("login")!=null && request.getParameter("password")!=null) {
+		session.setAttribute("login", request.getParameter("login"));
+		login = request.getParameter("login");
+		logger.debug("reqLogin {}", login);
+		session.setAttribute("password", request.getParameter("password"));		
+		password = request.getParameter("password");
+		logger.debug("reqPassword {}", password);
+		
+		} else if (session.getAttribute("login") !=null && session.getAttribute("password") !=null) {
+			login = (String) session.getAttribute("login");
+			logger.debug("sessionLogin {}", login);
+			password = (String) session.getAttribute("password");
+			logger.debug("sessionPassword {}", password);
+		}
 
 		User user = null;
+		
 		try {
-			user = factory.getUserService().readByLoginAndPassword(login, pass);
-		} catch (ServiceException e) {
-			logger.error("data base connection error");
-		}
-		logger.debug("user {}", user);
+			user = factory.getUserService().readByLoginAndPassword(login, password);
+			logger.debug(user);
 
 		if (user != null) {
 
-			// save user role as session attribute
 			session.setAttribute("role", user.getRole());
-			session.setAttribute("clientId", user.getId());
-			
+			session.setAttribute("userId", user.getId());
+								
 			StringBuilder userName = new StringBuilder("");
 			
 			if (Role.CLIENT == user.getRole()) {
@@ -79,6 +89,8 @@ public class LoginationCommandImpl implements Command {
 				userName.append(user.getName());
 				userName.append(" ").append(((Client) user).getPatronymic());
 				userName.append(" ").append(user.getSurname());
+				session.setAttribute("clientId", user.getId());
+				session.setAttribute("client", user);
 				
 				logger.debug("current user is a client");
 				
@@ -86,21 +98,28 @@ public class LoginationCommandImpl implements Command {
 				page = ConfigurationManager.getProperty("path.page.teacherMain");
 				userName.append(user.getName());
 				userName.append(" ").append(user.getSurname());
+				session.setAttribute("teacherId", user.getId());
 				
 				logger.debug("current user is a teacher");
 				
 			} else if (Role.ADMIN == user.getRole()) {
 				page = ConfigurationManager.getProperty("path.page.adminMain");
 				userName.append(user.getName());
-				
+				session.setAttribute("admin {}", user.getId());
 				logger.debug("current user is admin");
 			}
-			request.setAttribute("userName", userName.toString());
+			
 			session.setAttribute("userName", userName);
+			logger.debug("name {}", userName);
 			
 		} else {
-			request.setAttribute("errorLogInMessage", manager.getProperty("errorlogInMessage"));
-			page = ConfigurationManager.getProperty("path.page.login");
+			request.setAttribute("errorLoginOrPassword", manager.getProperty("errorLoginOrPassword"));
+			logger.debug("errorLoginOrPasswordMessage{}", manager.getProperty("errorLoginOrPassword"));
+			page = ConfigurationManager.getProperty("path.page.index");
+		}
+		} catch (ServiceException e) {
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			page = ConfigurationManager.getProperty("path.page.error");
 		}
 		return page;
 	}

@@ -29,7 +29,7 @@ public class CancelVisitCommandImpl implements Command {
 	@Override
 	public String execute(HttpServletRequest request) {
 
-		String page;
+		String page = null;
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
@@ -37,33 +37,46 @@ public class CancelVisitCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be","be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
+		
+		Integer clientId = (Integer) session.getAttribute("clientId");
+
 		try {
-			Integer visitId = Integer.parseInt(request.getParameter("visit"));
-			logger.debug("visit id{}", visitId);
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
+
+			} else {
+
+				if (request.getParameter("plannedvisitId") != null) {
+					session.setAttribute("plannedvisitId", request.getParameter("plannedvisitId"));
+				}
+		
+			Integer visitId = Integer.parseInt((String)session.getAttribute("plannedvisitId"));
+			logger.debug("planned visit id{}", visitId);
 
 			if (factory.getVisitService().delete(visitId)) {
 				request.setAttribute("successCancelMessage", manager.getProperty("successCancelMessage"));
 			} else {
 				request.setAttribute("errorCancelMessage", manager.getProperty("errorCancelMessage"));
 			}
-
+				}
+				page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
 		} catch (ServiceException e) {
 			request.setAttribute("errorCancelMessage", manager.getProperty("errorCancelMessage"));
-			logger.error(e);
 		}
-		page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
+		
 		return page;
 	}
 }

@@ -9,10 +9,19 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
+import by.jwd.finaltaskweb.entity.User;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
-public class UpdatePasswordCommandImpl implements Command{
+/**
+ * UpdatePasswordCommandImpl implements command for changing the password by
+ * client in his private account
+ * 
+ * @author Evlashkina
+ *
+ */
+
+public class UpdatePasswordCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(UpdatePasswordCommandImpl.class);
 
@@ -31,13 +40,13 @@ public class UpdatePasswordCommandImpl implements Command{
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
@@ -45,34 +54,39 @@ public class UpdatePasswordCommandImpl implements Command{
 		}
 
 		String login = request.getParameter("login");
-
-		String password = request.getParameter("password");
+		String currentPassword = request.getParameter("currentPassword");
+		String newPassword = request.getParameter("newPassword");
 		String confirmPassword = request.getParameter("confirmPassword");
 
+		User user = null;
 		try {
-			if (!(password.equals(confirmPassword))) {
-				request.setAttribute("errorPassRegMessage", manager.getProperty("errorPassRegMessage"));
-				page = ConfigurationManager.getProperty("path.page.registration");
+			user = factory.getUserService().readByLoginAndPassword(login, currentPassword);
+			logger.debug("user {}", user);
 
-			} else if (factory.getUserService().readByLogin(login) == null) {
-				request.setAttribute("errorNoLoginMessage", manager.getProperty("errorNoLoginMessage"));
-				page = ConfigurationManager.getProperty("path.page.registration");
+			if (user == null) {
+				request.setAttribute("errorLoginOrPassMessage", manager.getProperty("incorrectLoginOrPasswordMessage"));
 				logger.debug(factory.getUserService().readByLogin(login));
-
 			} else {
-				Integer clientId = (factory.getUserService().readByLogin(login).getId());
 
-				if (factory.getUserService().updatePassword(clientId, password)) {
-					request.setAttribute("successUpdatePassMessage", manager.getProperty("successUpdatePassMessage"));
-					page = ConfigurationManager.getProperty("path.page.login");
+				if (!(newPassword.equals(confirmPassword))) {
+					request.setAttribute("errorPassMatchMessage", manager.getProperty("errorPassMatchMessage"));
+
 				} else {
-					request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-					page = ConfigurationManager.getProperty("path.page.login");
+					Integer userId = user.getId();
+
+					if (factory.getUserService().updatePassword(userId, newPassword)) {
+						request.setAttribute("successUpdatePassMessage",
+								manager.getProperty("successUpdatePassMessage"));
+
+					} else {
+						request.setAttribute("errorUpdatePassMessage", manager.getProperty("errorUpdatePassMessage"));
+					}
 				}
 			}
+			page = ConfigurationManager.getProperty("path.page.changePassword");
 		} catch (ServiceException e) {
-			request.setAttribute("errorRegMessage", manager.getProperty("errorRegMessage"));
-			page = ConfigurationManager.getProperty("path.page.login");
+			request.setAttribute("errorUpdatePassMessage", manager.getProperty("errorUpdatePassMessage"));
+			page = ConfigurationManager.getProperty("path.page.changePassword");
 		}
 		return page;
 	}

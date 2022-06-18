@@ -12,14 +12,15 @@ import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.Role;
 import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.entity.User;
+import by.jwd.finaltaskweb.service.PasswordHashGenerator;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
 import by.jwd.finaltaskweb.service.UserService;
 
 public class UserServiceImpl extends StudioServiceImpl implements UserService {
-	
+
 	private static Logger logger = LogManager.getLogger(UserServiceImpl.class);
-	
+
 	private DaoFactory factory = DaoFactory.getInstance();
 
 	@Override
@@ -90,7 +91,9 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	public User readByLoginAndPassword(String login, String password) throws ServiceException {
 		User user = null;
 		try {
-			user = factory.getUserDao(transaction).readByLoginAndPassword(login, password);
+			String hashPassword = PasswordHashGenerator.generate(password, login);
+			logger.debug("hashPassword {}", hashPassword);
+			user = factory.getUserDao(transaction).readByLoginAndPassword(login, hashPassword);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -137,6 +140,10 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	@Override
 	public boolean create(User user) throws ServiceException {
 		try {
+			String hashPassword = PasswordHashGenerator.generate(user.getPassword(), user.getLogin());
+			logger.debug("hashPassword {}", hashPassword);
+			user.setPassword(hashPassword);
+			
 			factory.getUserDao(transaction).create(user);
 			transaction.close();
 		} catch (DaoException e) {
@@ -148,6 +155,7 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	@Override
 	public boolean update(User user) throws ServiceException {
 		try {
+			
 			factory.getUserDao(transaction).update(user);
 			transaction.close();
 		} catch (DaoException e) {
@@ -159,9 +167,11 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	@Override
 	public boolean updatePassword(Integer clientId, String password) throws ServiceException {
 		try {
-			User client = factory.getUserDao(transaction).readEntityById(clientId);
-			client.setPassword(password);
-			factory.getUserDao(transaction).update(client);
+			User user = factory.getUserDao(transaction).readEntityById(clientId);
+		    String hashPassword = PasswordHashGenerator.generate(user.getPassword(), user.getLogin());
+			logger.debug("hashPassword {}", hashPassword);
+			user.setPassword(hashPassword);
+			factory.getUserDao(transaction).update(user);
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();

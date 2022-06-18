@@ -10,6 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
+import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Level;
 import by.jwd.finaltaskweb.service.ServiceException;
@@ -37,14 +38,44 @@ public class ReadGroupByLevelCommandImpl implements Command {
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
 
-		Level level = Level.valueOf(request.getParameter("level"));
+		MessageManager manager;
+
+		switch (language) {
+		case "en", "en_US":
+			manager = MessageManager.EN;
+			break;
+		case "ru", "ru_RU":
+			manager = MessageManager.RU;
+			break;
+		case "be", "be_BY":
+			manager = MessageManager.BY;
+			break;
+		default:
+			manager = MessageManager.EN;
+		}
+
+		Integer clientId = (Integer) session.getAttribute("clientId");
 
 		try {
-			List<Group> groups = factory.getGroupService().readByLevel(level);
-			request.setAttribute("groups", groups);
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
+
+			} else {
+
+				if (request.getParameter("level") != null) {
+					session.setAttribute(("level"), request.getParameter("level"));
+				}
+
+				Level level = Level.valueOf((String) session.getAttribute("level"));
+
+				List<Group> groups = factory.getGroupService().readByLevel(level);
+				request.setAttribute("groups", groups);
+			}
 			page = ConfigurationManager.getProperty("path.page.chooseGroupByLevel");
 		} catch (ServiceException e) {
-			logger.error(e);
+			page = ConfigurationManager.getProperty("path.page.error");
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 		}
 		return page;
 	}

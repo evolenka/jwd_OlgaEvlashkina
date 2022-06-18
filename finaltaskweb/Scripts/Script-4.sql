@@ -1,2 +1,2 @@
-DROP TABLE IF EXISTS `client`;
-DROP TABLE IF EXISTS `user`;
+update user set password = 'TcNyeTXMhSpKFWIGkm8Nkg==' where id =23;
+delete from user where id = 26;

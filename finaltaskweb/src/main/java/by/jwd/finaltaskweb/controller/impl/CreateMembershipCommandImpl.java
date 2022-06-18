@@ -42,35 +42,41 @@ public class CreateMembershipCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
 
+		
 		Integer clientId = (Integer) session.getAttribute("clientId");
-
-		Integer membershipTypeId = Integer.valueOf(request.getParameter("membershipTypeId"));
-		logger.debug("membershipTypeId {}", membershipTypeId);
-
-		LocalDate startDate = LocalDate.parse(request.getParameter("startDate"));
 
 		try {
 			if (clientId == null) {
-				session.setAttribute("noSession", manager.getProperty("noSession"));
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 
 			} else {
 				Client client = (Client) factory.getUserService().readEntityById(clientId);
-				MembershipType type = factory.getMembershipService().readTypeById(membershipTypeId);
+				
+				Integer membershipTypeId = Integer.parseInt((String) session.getAttribute("membershipTypeId"));
+				logger.debug("membershipTypeId {}", membershipTypeId);
 
+				MembershipType type = factory.getMembershipService().readTypeById(membershipTypeId);
+				
+				//checking in case of updating page
+				if (request.getParameter("membershipStartDate") != null) {
+					session.setAttribute("membershipStartDate", request.getParameter("membershipStartDate"));
+				}
+
+				LocalDate startDate = LocalDate.parse((String) session.getAttribute("membershipStartDate"));
 				Membership membership = factory.getMembershipBuilder().buildMembership(client, type, startDate);
 
 				if (factory.getMembershipService().create(membership)) {
@@ -80,12 +86,12 @@ public class CreateMembershipCommandImpl implements Command {
 					request.setAttribute("errorPurchaseMessage", manager.getProperty("errorPurchaseMessage"));
 				}
 			}
-				page = ConfigurationManager.getProperty("path.page.purchaseMembership");
-			
+			page = ConfigurationManager.getProperty("path.page.purchaseMembership");
+
 		} catch (ServiceException e) {
 			page = ConfigurationManager.getProperty("path.page.error");
-			request.getSession().setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			logger.error(e);
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			
 		}
 
 		return page;

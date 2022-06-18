@@ -1,8 +1,5 @@
 package by.jwd.finaltaskweb.controller.impl;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,11 +11,7 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
-import by.jwd.finaltaskweb.entity.DanceClass;
-import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
-import by.jwd.finaltaskweb.entity.Schedule;
-import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
@@ -36,60 +29,68 @@ public class ReadValidMembershipsByClientCommandImpl implements Command {
 
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
-
 		logger.debug("language {}", language);
 
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
 
-		Integer id = (Integer) session.getAttribute("clientId");
-		logger.debug("client id {}", id);
+		Integer clientId = (Integer) session.getAttribute("clientId");
 
-			try {
+		try {
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
 
-				if (session.getAttribute("date") == null || id == null) {
-					session.setAttribute("noSession", manager.getProperty("noSession"));
-				} else {
-					DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-					LocalDate date = LocalDate.parse((String) session.getAttribute("date"), formatter);
+				session.setAttribute("isCheckedValid", true);
+				logger.debug("isCheckedValid {}", session.getAttribute("isCheckedValid"));
 
-					Integer groupId = Integer.parseInt(request.getParameter("groupId"));
-
-					DanceClass danceClass = factory.getDanceClassService().readByDateAndGroup(date, groupId);
-					session.setAttribute("danceClassId", danceClass.getId());
-										
-					
-					Group group = factory.getGroupService().readEntityById(groupId);					
-					session.setAttribute("group", group);
-					
-							
-				validMemberships = factory.getMembershipService().readValidByClient(id);
-				logger.debug("valid memberships {}", validMemberships);
+			} else {
 				
+				if (request.getParameter("groupId") != null) {
+					session.setAttribute(("groupId"), request.getParameter("groupId"));
+				}
+
+				validMemberships = factory.getMembershipService().readValidByClient(clientId);
+				logger.debug("valid memberships {}", validMemberships);
+
 				if (validMemberships.isEmpty()) {
 					logger.debug("no valid memberships");
-					session.setAttribute("noMembership", manager.getProperty("noMembership"));
+					request.setAttribute("myMemberships.noMembership",
+							manager.getProperty("myMemberships.noMembership"));
 				} else {
-					session.setAttribute("validMemberships", validMemberships);
-									
+					session.setAttribute("memberships", validMemberships);
+
 				}
 			}
-			page = ConfigurationManager.getProperty("path.page.enrollment2");
+			if (request.getParameter("page") != null) {
+				session.setAttribute("page", request.getParameter("page"));
+			}
+
+			if (session.getAttribute("page").equals("myMemberships")) {
+
+				page = ConfigurationManager.getProperty("path.page.myMemberships");
+				logger.debug("page - myMemberships");
+			} else {
+				page = ConfigurationManager.getProperty("path.page.enrollment3");
+				logger.debug("page - enrollment3");
+
+			}
 		} catch (ServiceException e) {
-			logger.error(e);
+			page = ConfigurationManager.getProperty("path.page.error");
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 		}
 		return page;
 	}

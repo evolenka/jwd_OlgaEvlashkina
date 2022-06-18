@@ -1,7 +1,7 @@
 package by.jwd.finaltaskweb.controller.impl;
 
 import java.time.LocalDate;
-import java.util.Arrays;
+
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +12,6 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
-import by.jwd.finaltaskweb.entity.Level;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 

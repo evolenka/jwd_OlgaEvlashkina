@@ -34,32 +34,32 @@ public class ReadPlannedVisitsByClientCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be","be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
-		Integer id = (Integer) session.getAttribute("id");
+		Integer id = (Integer) session.getAttribute("clientId");
 		logger.debug("login {}", id);
 
 		try {
 			if (id != null) {
 
 				List<Visit> plannedVisits = factory.getVisitService().readPlannedByClient(id);
-				request.setAttribute("plannedVisits", plannedVisits);
+				session.setAttribute("plannedVisits", plannedVisits);
 				page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
 			} else {
 				page = ConfigurationManager.getProperty("path.page.login");
 			}
 		} catch (ServiceException e) {
-			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			session.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 			page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
 			logger.error(" request has been failed");
 		}

@@ -2,7 +2,6 @@ package by.jwd.finaltaskweb.controller.impl;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -14,11 +13,17 @@ import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.DanceClass;
-import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * ConfirmVisitCommandImpl implements command for viewing details of enrollment
+ * by client
+ * 
+ * @author Evlashkina
+ *
+ */
 public class ConfirmVisitCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(ConfirmVisitCommandImpl.class);
@@ -29,7 +34,6 @@ public class ConfirmVisitCommandImpl implements Command {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
-		
 
 		HttpSession session = request.getSession(true);
 		String language = (String) session.getAttribute("language");
@@ -39,34 +43,49 @@ public class ConfirmVisitCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
 
-		try {
+		Integer clientId = (Integer) session.getAttribute("clientId");
 
-			if (session.getAttribute("danceClassId") == null || session.getAttribute("group") == null) {
-				session.setAttribute("noSession", manager.getProperty("noSession"));
+		try {
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
 			} else {
 
-				Integer membershipId = Integer.parseInt(request.getParameter("membershipId"));
+				if (request.getParameter("membershipId") != null) {
+					session.setAttribute("membershipId", request.getParameter("membershipId"));
+				}
+
+				Integer membershipId = Integer.parseInt((String) session.getAttribute("membershipId"));
 
 				Membership membership = factory.getMembershipService().readEntityById(membershipId);
 				session.setAttribute("membership", membership);
+				
+				Integer groupId = Integer.parseInt((String) session.getAttribute("groupId"));
+				
+				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+				LocalDate enrollmentDate = LocalDate.parse((String) session.getAttribute("enrollmentDate"), formatter);
+				
+				DanceClass danceClass =  factory.getDanceClassService().readByDateAndGroup(enrollmentDate, groupId);
+				session.setAttribute("danceClass", danceClass);
 
 			}
-			page = ConfigurationManager.getProperty("path.page.enrollment3");
+			page = ConfigurationManager.getProperty("path.page.enrollment4");
 		} catch (ServiceException e) {
-			logger.error(e);
+			page = ConfigurationManager.getProperty("path.page.error");
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 		}
 		return page;
 	}

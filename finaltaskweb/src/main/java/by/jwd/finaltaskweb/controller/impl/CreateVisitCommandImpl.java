@@ -39,32 +39,38 @@ public class CreateVisitCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
-		try {
-			Integer danceClassId =  (Integer) session.getAttribute("danceClassId");
-			logger.debug("danceClassId {}", danceClassId);
-			
-			Integer membershipId =  Integer.parseInt(request.getParameter("membershipId"));
-			logger.debug("membershipId {}", membershipId);
-			
-			if (danceClassId == null) {
-				session.setAttribute("noSession", manager.getProperty("noSession"));
-			} else {
-				
-				Membership membership = factory.getMembershipService().readEntityById(membershipId);
 
-				DanceClass danceClass = factory.getDanceClassService().readEntityById(danceClassId);
+		Integer clientId = (Integer) session.getAttribute("clientId");
+
+		try {
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
+			} else {
+
+				// Integer danceClassId = Integer.parseInt((String)
+				// session.getAttribute("danceClassId"));
+				// logger.debug("danceClassId {}", danceClassId);
+
+				// Integer membershipId =
+				// Integer.parseInt((String)session.getAttribute("membershipId"));
+				// logger.debug("membershipId {}", membershipId);
+
+				Membership membership = (Membership) session.getAttribute("membership");
+				DanceClass danceClass = (DanceClass) session.getAttribute("danceClass");
+
 				Visit visit = factory.getVisitbuilder().buildVisit(membership, danceClass);
 
 				if (factory.getVisitService().create(visit)) {
@@ -74,11 +80,10 @@ public class CreateVisitCommandImpl implements Command {
 					request.setAttribute("errorVisitMessage", manager.getProperty("errorVisitMessage"));
 				}
 			}
-			page = ConfigurationManager.getProperty("path.page.enrollment3");
+			page = ConfigurationManager.getProperty("path.page.enrollment4");
 		} catch (ServiceException e) {
 			page = ConfigurationManager.getProperty("path.page.error");
-			request.getSession().setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			logger.error(e);
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 		}
 
 		return page;

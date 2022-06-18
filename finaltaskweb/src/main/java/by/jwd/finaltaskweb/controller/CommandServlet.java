@@ -46,7 +46,6 @@ public class CommandServlet extends HttpServlet {
 		} catch (DaoException e) {
 			logger.error("initializatin failed");
 		}
-		logger.debug(Locale.getDefault());
 	}
 
 	@Override
@@ -68,8 +67,8 @@ public class CommandServlet extends HttpServlet {
 		String page = null;
 				
 		HttpSession session = request.getSession(true);
+								
 		String language = (String) session.getAttribute("language");
-
 		logger.debug("language {}", language);
 
 		MessageManager manager;
@@ -87,8 +86,7 @@ public class CommandServlet extends HttpServlet {
 		default:
 			manager = MessageManager.EN;
 		}
-		request.setAttribute("language",  session.getAttribute("language"));
-		logger.debug("language {}", language);
+	
 		
 		if (session.getAttribute("role") == null) {
 			session.setAttribute("role",  request.getParameter("role"));

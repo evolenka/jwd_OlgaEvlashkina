@@ -12,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
+import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.ServiceException;
@@ -38,22 +39,52 @@ public class ReadGroupByScheduleCommandImpl implements Command {
 		String language = (String) session.getAttribute("language");
 		logger.debug("language {}", language);
 
-		
-		String [] days = request.getParameterValues("weekday");
-		logger.debug(days.toString());
-		
-		List <WeekDay> weekdays = new ArrayList <>();
-		
-		for (String day:days) {
-			weekdays.add (WeekDay.valueOf(day));
+		MessageManager manager;
+
+		switch (language) {
+		case "en", "en_US":
+			manager = MessageManager.EN;
+			break;
+		case "ru", "ru_RU":
+			manager = MessageManager.RU;
+			break;
+		case "be", "be_BY":
+			manager = MessageManager.BY;
+			break;
+		default:
+			manager = MessageManager.EN;
 		}
-		
+
+		Integer clientId = (Integer) session.getAttribute("clientId");
+
 		try {
-			List<Group> groups = factory.getGroupService().readByWeekDay(weekdays);
-			request.setAttribute("groups", groups);
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
+
+			} else {
+
+				if (request.getParameterValues("weekday") != null) {
+					session.setAttribute(("weekday"), request.getParameterValues("weekday"));
+				}
+
+				String[] days = (String[]) session.getAttribute(("weekday"));
+
+				List<WeekDay> weekdays = new ArrayList<>();
+				if (days != null) {
+					for (String day : days) {
+						logger.debug("days {}", day);
+						weekdays.add(WeekDay.valueOf(day));
+					}
+
+					List<Group> groups = factory.getGroupService().readByWeekDay(weekdays);
+					request.setAttribute("groups", groups);
+				}
+			}
 			page = ConfigurationManager.getProperty("path.page.chooseGroupByWeekDay");
 		} catch (ServiceException e) {
-			logger.error(e);
+			page = ConfigurationManager.getProperty("path.page.error");
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 		}
 		return page;
 	}

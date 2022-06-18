@@ -10,7 +10,9 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
 import by.jwd.finaltaskweb.entity.DanceClass;
+import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Schedule;
+import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.service.DanceClassService;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
@@ -58,7 +60,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -69,7 +71,7 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -80,28 +82,46 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
-	public DanceClass readByDateAndGroup(LocalDate date, Integer groupId)
-			throws ServiceException {
+	public DanceClass readByDateAndGroup(LocalDate date, Integer groupId) throws ServiceException {
 
 		DanceClass danceClass = null;
+		DanceClass danceClassTemp = null;
 
 		try {
 			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupId);
 
-		
-				for (Schedule schedule : schedules) {
-					danceClass = factory.getDanceClassDao(transaction).readByDateAndSchedule(date, schedule);
+			for (Schedule schedule : schedules) {
+				danceClassTemp = factory.getDanceClassDao(transaction).readByDateAndSchedule(date, schedule);
+				if (danceClassTemp != null) {
+					danceClass = danceClassTemp;
+					logger.debug("danceClass {}", danceClass);
+					break;
 				}
-			
+			}
+			if (danceClass != null) {
+				Schedule schedule = factory.getScheduleDao(transaction)
+						.readEntityById(danceClass.getSchedule().getId());
+
+				Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+
+				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
+
+				group.setTeacher(teacher);
+
+				schedule.setGroup(group);
+
+				danceClass.setSchedule(schedule);
+				logger.debug("danceClassFinal {}", danceClass);
+			}
+
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-
 		return danceClass;
 	}
 

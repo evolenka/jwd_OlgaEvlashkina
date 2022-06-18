@@ -23,10 +23,6 @@
 </filter-mapping>
 <filter-mapping>
 <filter-name>Page redirect</filter-name>
-<url-pattern>/jsp/enrollment.jsp</url-pattern>
-</filter-mapping>
-<filter-mapping>
-<filter-name>Page redirect</filter-name>
-<url-pattern>/jsp/purchaseMembership.jsp</url-pattern>
+<url-pattern>/jsp/clientMain.jsp</url-pattern>
 </filter-mapping>
 </web-app>

@@ -16,6 +16,13 @@ import by.jwd.finaltaskweb.entity.Visit;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * ReadVisitsByClientAndPeriodCommandImpl implements command for viewing all
+ * visits of client for the given period
+ * 
+ * @author Evlashkina
+ *
+ */
 public class ReadVisitsByClientAndPeriodCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(ReadVisitsByClientAndPeriodCommandImpl.class);
@@ -35,40 +42,54 @@ public class ReadVisitsByClientAndPeriodCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
-		
-		Integer id = (Integer) session.getAttribute("id");
-		logger.debug("login {}", id);
-		LocalDate startDate = (LocalDate) session.getAttribute("startdate");
-		logger.debug("startdate {}", startDate);
-		LocalDate endDate = (LocalDate) session.getAttribute("enddate");
-		logger.debug("enddate {}", endDate);
+
+		Integer id = (Integer) session.getAttribute("clientId");
+		logger.debug("clientId {}", id);
 
 		try {
-			if (id != null) {
 
-				List<Visit> visits = factory.getVisitService().readByClientAndPeriod(id, startDate, endDate);
-				request.setAttribute("visits", visits);
-				page = ConfigurationManager.getProperty("path.page.myVisits");
+			if (id == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 			} else {
-				page = ConfigurationManager.getProperty("path.page.login");
+
+				if (request.getParameter("startDateVisit") != null && request.getParameter("endDateVisit") != null) {
+					session.setAttribute("startDateVisit", request.getParameter("startDateVisit"));
+					session.setAttribute("endDateVisit", request.getParameter("endDateVisit"));
+				}
+
+				if (session.getAttribute("startDateVisit") != null && session.getAttribute("endDateVisit") != null) {
+
+					LocalDate startDate = LocalDate.parse((String) session.getAttribute("startDateVisit"));
+					logger.debug("startdate {}", startDate);
+					LocalDate endDate = LocalDate.parse((String) session.getAttribute("endDateVisit"));
+					logger.debug("enddate {}", endDate);
+
+					List<Visit> visits = factory.getVisitService().readByClientAndPeriod(id, startDate, endDate);
+					request.setAttribute("visits", visits);
+
+				} else {
+					request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+
+				}
 			}
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			page = ConfigurationManager.getProperty("path.page.myVisits");
-			logger.error(" request has been failed");
+			page = ConfigurationManager.getProperty("path.page.error");
+
 		}
+		page = ConfigurationManager.getProperty("path.page.myVisits");
 		return page;
 	}
 }

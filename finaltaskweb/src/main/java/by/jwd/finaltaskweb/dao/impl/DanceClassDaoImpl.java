@@ -196,7 +196,7 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 	@Override
 	public DanceClass readByDateAndSchedule(LocalDate date, Schedule schedule) throws DaoException {
 
-		DanceClass danceClass = new DanceClass();
+		DanceClass danceClass = null;
 
 		PreparedStatement statement = null;
 
@@ -208,7 +208,7 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
-
+				danceClass = new DanceClass();
 				danceClass.setId(resultSet.getInt(1));
 				danceClass.setSchedule(new Schedule(schedule.getId()));
 				danceClass.setDate(date);
@@ -231,7 +231,7 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		PreparedStatement statement = null;
-
+		
 		try {
 			statement = connection.prepareStatement(SQL_SELECT_BY_PERIOD);
 			statement.setDate(1, Date.valueOf(startDate));

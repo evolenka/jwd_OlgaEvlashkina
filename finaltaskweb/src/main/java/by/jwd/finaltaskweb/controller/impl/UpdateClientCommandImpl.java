@@ -1,6 +1,5 @@
 package by.jwd.finaltaskweb.controller.impl;
 
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -14,6 +13,13 @@ import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
+/**
+ * UpdateClientCommandImpl implements command for changing personal details of
+ * the client by himself in his private account
+ * 
+ * @author Evlashkina
+ *
+ */
 public class UpdateClientCommandImpl implements Command {
 
 	private static Logger logger = LogManager.getLogger(UpdateClientCommandImpl.class);
@@ -33,52 +39,56 @@ public class UpdateClientCommandImpl implements Command {
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
-		
-		Integer id = (Integer) session.getAttribute("id");
-		logger.debug("login {}", id);
-		
-		String login = request.getParameter("login");
-		logger.debug("login {}", login);
-		String password = request.getParameter("password");
-		logger.debug("password {}", password);
-		String surname = request.getParameter("surname");
-		logger.debug("surname {}", surname);
-		String name = request.getParameter("name");
-		logger.debug("name {}", name);
-		String patronymic = request.getParameter("patronymic");
-		logger.debug("patronymic {}", patronymic);
-		String email = request.getParameter("email");
-		logger.debug("email {}", email);
-		String phone = request.getParameter("phone");
-		logger.debug("phone {}", phone);
+
+		Integer clientId = (Integer) session.getAttribute("clientId");
+		logger.debug("clientId {}", clientId);
 
 		try {
-			if (id != null) {
-				Client client = factory.getClientBuilder().buildClient(id, login, password, surname, name, patronymic,
-						email, phone);
-				if(factory.getUserService().update(client)) {
-					request.setAttribute("successUpdateClientMessage", manager.getProperty("successUpdateClientMessage"));
-					page = ConfigurationManager.getProperty("path.page.profile");
+
+			if (clientId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+			} else {
+				Client client = (Client) factory.getUserService().readEntityById(clientId);
+
+				String surname = request.getParameter("surname");
+				logger.debug("surname {}", surname);
+				String name = request.getParameter("name");
+				logger.debug("name {}", name);
+				String patronymic = request.getParameter("patronymic");
+				logger.debug("patronymic {}", patronymic);
+				String email = request.getParameter("email");
+				logger.debug("email {}", email);
+				String phone = request.getParameter("phone");
+				logger.debug("phone {}", phone);
+
+				client = factory.getClientBuilder().buildClient(client.getLogin(), client.getPassword(), surname, name,
+						patronymic, email, phone);
+				client.setId(clientId);
+				if (factory.getUserService().update(client)) {
+					request.setAttribute("successUpdateClientMessage",
+							manager.getProperty("successUpdateClientMessage"));
+
 				} else {
-					request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-					page = ConfigurationManager.getProperty("path.page.profile");
+					request.setAttribute("errorUpdateClientMessage", manager.getProperty("errorUpdateClientMessage"));
 				}
+				session.setAttribute("client", client);
 			}
+			page = ConfigurationManager.getProperty("path.page.updateClient");
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
-			page = ConfigurationManager.getProperty("path.page.profile");
+			page = ConfigurationManager.getProperty("path.page.error");
 		}
 		return page;
 	}

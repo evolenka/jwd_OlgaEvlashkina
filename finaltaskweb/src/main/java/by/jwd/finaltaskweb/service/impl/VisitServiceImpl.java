@@ -1,6 +1,5 @@
 package by.jwd.finaltaskweb.service.impl;
 
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,6 +17,7 @@ import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.Status;
+import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.entity.Type;
 import by.jwd.finaltaskweb.entity.Visit;
 import by.jwd.finaltaskweb.service.ServiceException;
@@ -68,7 +68,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return false;
+		return true;
 	}
 
 	@Override
@@ -108,7 +108,27 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 				List<Visit> visitByMembership = factory.getVisitDao(transaction).readPlannedByMembership(membership);
 
+				membership = factory.getMembershipDao(transaction).readEntityById(membership.getId());
+
 				for (Visit visit : visitByMembership) {
+					visit.setMembership(membership);
+
+					DanceClass danceClass = factory.getDanceClassDao(transaction)
+							.readEntityById(visit.getDanceClass().getId());
+
+					Schedule schedule = factory.getScheduleDao(transaction)
+							.readEntityById(danceClass.getSchedule().getId());
+
+					Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+
+					Teacher teacher = (Teacher) factory.getUserDao(transaction)
+							.readEntityById(group.getTeacher().getId());
+
+					group.setTeacher(teacher);
+					schedule.setGroup(group);
+					danceClass.setSchedule(schedule);
+					visit.setDanceClass(danceClass);
+
 					visits.add(visit);
 				}
 			}
@@ -116,6 +136,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("visits {}", visits);
 		return visits;
 	}
 
@@ -169,15 +190,37 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 							danceClass);
 
 					if (visit != null) {
+					
+						membership = factory.getMembershipDao(transaction).readEntityById(membership.getId());
+						visit.setMembership(membership);
+
+						danceClass = factory.getDanceClassDao(transaction).readEntityById(danceClass.getId());
+
+						Schedule schedule = factory.getScheduleDao(transaction)
+								.readEntityById(danceClass.getSchedule().getId());
+
+						Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+
+						Teacher teacher = (Teacher) factory.getUserDao(transaction)
+								.readEntityById(group.getTeacher().getId());
+
+						group.setTeacher(teacher);
+						schedule.setGroup(group);
+						danceClass.setSchedule(schedule);
+						visit.setDanceClass(danceClass);
+
 						visits.add(visit);
 					}
-
 				}
 			}
+
 			transaction.close();
-		} catch (DaoException e) {
+		} catch (
+
+		DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("visits {}", visits);
 		return visits;
 	}
 
@@ -238,7 +281,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 
 	@Override
 	public boolean markPresence(Visit visit, Status status) throws ServiceException {
-		boolean result =false;
+		boolean result = false;
 		try {
 			/* additional check whether the client membership is valid */
 			if ((Status.ATTENDED == status) && (visit.getMembership().getBalanceClassQuantity() == 0)) {
@@ -296,7 +339,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 				transaction.close();
 
 				result = true;
-			} 
+			}
 		} catch (DaoException e) {
 			try {
 				transaction.rollback();

@@ -36,13 +36,13 @@ public class ReadPlannedClassesByGroupCommandImpl implements Command {
 			MessageManager manager;
 
 			switch (language) {
-			case "en":
+			case "en", "en_US":
 				manager = MessageManager.EN;
 				break;
-			case "ru":
+			case "ru", "ru_RU":
 				manager = MessageManager.RU;
 				break;
-			case "be":
+			case "be","be_BY":
 				manager = MessageManager.BY;
 				break;
 			default:

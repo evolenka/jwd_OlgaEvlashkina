@@ -9,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
-import by.jwd.finaltaskweb.dao.impl.UserDaoImpl;
 import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.MembershipType;
 import by.jwd.finaltaskweb.service.MembershipService;
@@ -92,11 +91,17 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 
 		try {
 			memberships = factory.getMembershipDao(transaction).readByClientAndPeriod(clientId, startDate, endDate);
+			for (Membership membership: memberships) {
+				MembershipType type = factory.getMembershipDao(transaction).readTypeById(membership.getType().getId());
+				membership.setType(type);
+			}
+			
 			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("all memberships of the client for given period {}", memberships);
 		return memberships;
 	}
 
@@ -110,9 +115,9 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 				MembershipType type = factory.getMembershipDao(transaction).readTypeById(membership.getType().getId());
 				membership.setType(type);
 				memberships.add(membership);
-				transaction.close();
-			transaction.close();
 			}
+			transaction.close();
+			
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}

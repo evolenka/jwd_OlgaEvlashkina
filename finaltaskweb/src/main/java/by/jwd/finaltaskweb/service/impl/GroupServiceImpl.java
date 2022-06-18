@@ -136,6 +136,7 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 	@Override
 	public List<Group> readByWeekDay(List<WeekDay> weekDays) throws ServiceException {
 		List<Group> groups = new ArrayList<>();
+		
 		try {
 			for (WeekDay day : weekDays) {
 				List<Schedule> schedules = factory.getScheduleDao(transaction).readByWeekDay(day);
