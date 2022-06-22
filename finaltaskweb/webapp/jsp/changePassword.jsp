@@ -29,15 +29,22 @@
 		<div class="content conteiner-fluid">
 			<div class=row>
 				<div class="col-lg-2">
-					<u:clientmenu />
+					<c:choose>
+						<c:when test="${role == 'CLIENT'}">
+							<u:clientmenu />
+						</c:when>
+						<c:when test="${role == 'TEACHER'}">
+							<u:teachermenu />
+						</c:when>
+						<c:when test="${role == 'ADMIN'}">
+							<u:adminmenu />
+						</c:when>
+					</c:choose>
 				</div>
 				<div class="col-lg-10">
-			<h1 class="subtitle">
-				<fmt:message key="changePasswordForm" bundle="${ rb }" />
-			</h1>
-			<div class="row">
-				<div class="col-sm-2 col-lg-4"></div>
-				<div class="col-sm-8 col-lg-4">
+					<h1 class="subtitle" style="margin-bottom: 50px">
+						<fmt:message key="changePasswordForm" bundle="${ rb }" />
+					</h1>
 					<form method="post" action="action" class="needs-validation">
 						<label for="login"><fmt:message key="registration.login"
 								bundle="${ rb }" /></label><br> <input type="text"
@@ -74,7 +81,7 @@
 						<c:out value="${successUpdatePassMessage}" />
 					</p>
 					<p class=error>
-						<c:out value="${errorUpdatePassMessage }" />
+						<c:out value="${errorMessage }" />
 					</p>
 					<p class="text-small">
 						<fmt:message key="comment" bundle="${ rb }" />
@@ -82,8 +89,6 @@
 				</div>
 				<div class="col-sm-2 col-lg-4"></div>
 			</div>
-		</div>
-		</div>
 		</div>
 		<u:footer />
 	</div>

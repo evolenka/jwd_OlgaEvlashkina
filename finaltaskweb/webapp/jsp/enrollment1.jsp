@@ -23,23 +23,8 @@
 <c:url value="img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${icon}"/>">
 
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
-<link rel="stylesheet"
-	href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-
 </head>
 <body>
-	<script type="text/javascript">
-		$(document).ready(function() {
-
-			$('#datepicker').datepicker({ dateFormat: 'yy-mm-dd' });
-		
-		});
-	</script>
-
 	<div class="wrapper">
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
@@ -59,8 +44,9 @@
 							<c:set var="currentdate">
 								<ctg:currentdate />
 							</c:set>
-							<input type="text" id="datepicker" name="enrollmentDate"
-								value=${not empty enrollmentDate ? enrollmentDate : currentdate} required> <br>
+							<input type="date" name="enrollmentDate"
+								value=${not empty enrollmentDate ? enrollmentDate : currentdate}
+								required> <br>
 							<button type="submit" class="btn colorBtn" name="command"
 								value="READGROUPBYDATE">
 								<fmt:message key="next" bundle="${ rb }" />

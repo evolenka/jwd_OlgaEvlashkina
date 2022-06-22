@@ -28,35 +28,37 @@
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class=row>
+				<div class="col-lg-12">
+					<h1 class="subtitle" style="margin-bottom: 50px">
+						<fmt:message key="markPresence.unmarkedDanceClass"/>
+					</h1>
+				</div>
 				<div class="col-lg-2">
 					<u:teachermenu />
 				</div>
 				<div class="col-lg-10">
-					<h1 class="subtitle">
-						<fmt:message key="markPresence.chooseDanceClass" bundle="${ rb }" />
-					</h1>
-					<c:if test="${not empty plannedvisit}">
-						<form method="post" action="action">
-							<div class="table-responsive">
+					<c:if test="${not empty plannedVisits}">
+						<div class="table-responsive">
+							<form method="post" action="action">
 								<table>
 									<tr>
-										<th></th>
-										<th class="rowgroup"><fmt:message key="date"
-												bundle="${ rb }" /></th>
+										<th><fmt:message key="date" bundle="${ rb }" /></th>
 										<th class="rowgroup"><fmt:message key="group"
 												bundle="${ rb }" /></th>
 										<th class="rowgroup"><fmt:message key="time"
 												bundle="${ rb }" /></th>
-										<th id=group colspan="2" class="rowgroup"><fmt:message
-												key="client" bundle="${ rb }" /></th>
+										<th id=group class="rowgroup"><fmt:message key="surname"
+												bundle="${ rb }" /></th>
+										<th id=group class="rowgroup"><fmt:message key="name"
+												bundle="${ rb }" /></th>
+										<th id=group class="rowgroup"><fmt:message
+												key="patronymic" bundle="${ rb }" /></th>
+										<th></th>
 										<th></th>
 										<th></th>
 									</tr>
 									<tbody>
 										<c:forEach var="visit" items="${plannedVisits}">
-											<input type="radio" id="level" name="level" value="${level}"
-												required>
-
 											<tr>
 												<td class="pt-3"><c:out
 														value='${visit.danceClass.date}' /></td>
@@ -64,36 +66,38 @@
 														value="${visit.danceClass.schedule.group.title}" /></td>
 												<td class="pt-3"><c:out
 														value="${visit.danceClass.schedule.time}" /></td>
-												<c:forEach var="client" items="${visit.danceClass.clients}">
-													<td class="pt-3"><c:out value="${client.surname}" /></td>
-													<td class="pt-3"><c:out value="${client.name}" /></td>
-												</c:forEach>
-												<td>
-													<button type="button" class="btn colorBtn" name="status"
-														value="ATTENDED">
-														<fmt:message key="attended" bundle="${ rb }" />
-													</button>
-												</td>
-												<td>
-													<button type="button" class="btn colorBtn" name="status"
-														value="ABSENT">
-														<fmt:message key="absent" bundle="${ rb }" />
-													</button>
-												</td>
 
+												<td class="pt-3"><c:out
+														value="${visit.membership.client.surname}" /></td>
+												<td class="pt-3"><c:out
+														value="${visit.membership.client.name}" /></td>
+												<td class="pt-3"><c:out
+														value="${visit.membership.client.patronymic}" /></td>
+												<td><input type="radio" id=attended name="status"
+													value="ATTENDED" required> <label for="status">
+														<fmt:message key="attended" bundle="${ rb }" />
+												</label></td>
+												<td><input type="radio" id="absent" name="status"
+													value="ABSENT" required> <label for="status">
+														<fmt:message key="absent" bundle="${ rb }" />
+												</label></td>
+												<td><input type="hidden" name="visitId"
+													value="${visit.id}">
+													<button type="submit" class="btn colorBtn" name="command"
+														value="MARKPRESENCE">
+														<fmt:message key="markPresence" bundle="${ rb }" />
+													</button>
 											</tr>
 										</c:forEach>
 									</tbody>
 								</table>
-
-								<button type="submit" class="btn colorBtn" name="command"
-									value="MARKPRESENCE">
-									<fmt:message key="markPresence" bundle="${ rb }" />
-								</button>
-							</div>
-						</form>
+							</form>
+						</div>
+						<p>
+							<c:out value="${errorMessage }" />
+						</p>
 					</c:if>
-					<c:if test="${empty plannedvisit}">
+					<c:if test="${empty plannedVisits}">
 						<fmt:message key="noUnmarkedClasses" bundle="${ rb }" />
 					</c:if>
 					<p>

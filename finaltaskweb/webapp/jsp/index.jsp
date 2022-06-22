@@ -27,23 +27,17 @@
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class="row">
-				<div class="col-lg-4"></div>
+				<div class="col-lg-6"></div>
 				<div class="col-lg-4">
 					<h1 class="title">L`Antre Studio</h1>
 				</div>
-				<div class="col-sm-6 col-lg-3">
-					<blockquote class="blockquote blockquote-custom">
-						<p>"Nobody cares if you cannot dance well. Just get up and
-							dance. Great dancers are great because of their passion"</p>
-						<footer class="blockquote-footer"> Martha Graham </footer>
-					</blockquote>
-				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-2 col-lg-4"></div>
-				<div class="col-sm-8 col-lg-4">
+				<div class="col-sm-3 col-lg-8"></div>
+				<div class="card col-sm-6 col-lg-3">
 					<u:login />
 				</div>
+				<div class="col-sm-3 col-lg-1"></div>
 			</div>
 		</div>
 		<u:footer />

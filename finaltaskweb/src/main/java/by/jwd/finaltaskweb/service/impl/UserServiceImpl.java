@@ -165,10 +165,11 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	}
 
 	@Override
-	public boolean updatePassword(Integer clientId, String password) throws ServiceException {
+	public boolean updatePassword(Integer userId, String password) throws ServiceException {
 		try {
-			User user = factory.getUserDao(transaction).readEntityById(clientId);
-		    String hashPassword = PasswordHashGenerator.generate(user.getPassword(), user.getLogin());
+			User user = factory.getUserDao(transaction).readEntityById(userId);
+			logger.debug("user {}",user);
+		    String hashPassword = PasswordHashGenerator.generate(password, user.getLogin());
 			logger.debug("hashPassword {}", hashPassword);
 			user.setPassword(hashPassword);
 			factory.getUserDao(transaction).update(user);

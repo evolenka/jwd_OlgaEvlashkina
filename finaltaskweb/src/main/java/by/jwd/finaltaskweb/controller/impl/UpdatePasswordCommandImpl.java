@@ -79,14 +79,14 @@ public class UpdatePasswordCommandImpl implements Command {
 								manager.getProperty("successUpdatePassMessage"));
 
 					} else {
-						request.setAttribute("errorUpdatePassMessage", manager.getProperty("errorUpdatePassMessage"));
+						request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 					}
 				}
 			}
 			page = ConfigurationManager.getProperty("path.page.changePassword");
 		} catch (ServiceException e) {
-			request.setAttribute("errorUpdatePassMessage", manager.getProperty("errorUpdatePassMessage"));
-			page = ConfigurationManager.getProperty("path.page.changePassword");
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			page = ConfigurationManager.getProperty("path.page.error");
 		}
 		return page;
 	}

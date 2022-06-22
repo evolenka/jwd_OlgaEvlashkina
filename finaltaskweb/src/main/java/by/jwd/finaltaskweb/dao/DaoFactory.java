@@ -1,8 +1,6 @@
 package by.jwd.finaltaskweb.dao;
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.impl.DanceClassDaoImpl;
 import by.jwd.finaltaskweb.dao.impl.GroupDaoImpl;

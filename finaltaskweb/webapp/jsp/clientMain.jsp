@@ -35,16 +35,8 @@
 				</div>
 			</div>
 			<div class=row>
-				<div class="col-lg-6">
+			<div class="col-lg-6">
 					<u:clientmenu />
-				</div>
-				<div class="col-lg-2"></div>
-				<div class="col-sm-6 col-lg-3">
-					<blockquote class="blockquote blockquote-custom">
-						<p>"Nobody cares if you cannot dance well. Just get up and
-							dance. Great dancers are great because of their passion"</p>
-						<footer class="blockquote-footer"> Martha Graham </footer>
-					</blockquote>
 				</div>
 			</div>
 		</div>

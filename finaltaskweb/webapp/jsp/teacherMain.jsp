@@ -22,12 +22,20 @@
 <c:url value="img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${icon}"/>">
 </head>
-<body>
-	<div class=page>
+<body class=index>
+	<div class="wrapper">
 		<u:mainmenu />
-			<div class="mainIndex container-fluid">
+		<div class="content conteiner-fluid">
 			<div class=row>
-				<div class="col-md-6 col-xl-4">
+				<div class="col-lg-12">
+					<h4 class="welcomeMessage">
+						<c:out value="${userName}"></c:out>
+						<fmt:message key="welcome" bundle="${ rb }" />
+					</h4>
+				</div>
+			</div>
+			<div class=row>
+				<div class="col-lg-6">
 					<u:teachermenu />
 				</div>
 			</div>

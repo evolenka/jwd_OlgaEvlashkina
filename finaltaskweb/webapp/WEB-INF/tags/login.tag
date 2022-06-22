@@ -10,7 +10,7 @@
 <c:url value="changePassword.jsp" var="changePassword" />
 
 
-<div class="form-group col-lg-8">
+<div class="form-group">
 	<form method="post" action="action" class="needs-validation">
 		<label for="login"><fmt:message key="login" bundle="${ rb }" /></label>
 		<input type="text" class="form-control" id="login" name="login"
@@ -18,12 +18,12 @@
 				key="password" bundle="${ rb }" /></label> <input type="password"
 			class="form-control" id="password" name="password" required>
 		<br>
-		<button type="submit" class="btn btn-sm btn-secondary loginformBtn"
+		<button type="submit" class="btn btn-sm loginformBtn"
 			name="command" value="LOGINATION">
 			<fmt:message key="logIn" bundle="${rb}" />
 		</button>
 		<a href='<c:out value="${regLink}"/>'>
-			<button type="button" class="btn btn-sm btn-secondary loginformBtn">
+			<button type="button" class="btn btn-sm loginformBtn">
 				<fmt:message key="register" bundle="${rb}" />
 			</button>
 		</a>

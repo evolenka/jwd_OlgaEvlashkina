@@ -8,15 +8,9 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.TagSupport;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-
-
 @SuppressWarnings("serial")
 public class InfoYearTag  extends TagSupport {
-	private static Logger logger = LogManager.getLogger(InfoYearTag .class);
-	
+		
 	@Override
 	public int doStartTag() throws JspException {
 		

@@ -9,7 +9,7 @@ public class DanceClass extends Entity{
 	private Schedule schedule;
 	private LocalDate date;
 	private boolean isActive;
-	private List<Client> clients;
+	private List<Visit> visits;
 
 	public DanceClass() {
 	}
@@ -34,12 +34,12 @@ public class DanceClass extends Entity{
 		this.date = date;
 	}
 
-	public List<Client> getClients() {
-		return clients;
+	public List<Visit> getVisits() {
+		return visits;
 	}
 
-	public void setClients(List<Client> clients) {
-		this.clients = clients;
+	public void setVisits(List<Visit> visits) {
+		this.visits = visits;
 	}
 
 	public boolean isActive() {
@@ -54,7 +54,7 @@ public class DanceClass extends Entity{
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
-		result = prime * result + Objects.hash(clients, date, schedule);
+		result = prime * result + Objects.hash(visits, date, schedule);
 		return result;
 	}
 
@@ -67,7 +67,7 @@ public class DanceClass extends Entity{
 		if (getClass() != obj.getClass())
 			return false;
 		DanceClass other = (DanceClass) obj;
-		return Objects.equals(clients, other.clients) && Objects.equals(date, other.date)
+		return Objects.equals(visits, other.visits) && Objects.equals(date, other.date)
 				&& Objects.equals(schedule, other.schedule);
 		
 	}
@@ -78,7 +78,7 @@ public class DanceClass extends Entity{
 		sb.append("\n").append(super.toString());
 		sb.append(schedule);
 		sb.append("\ndate: ").append(date);
-		sb.append(clients);
+		sb.append(visits);
 		return sb.toString();
 	}
 }

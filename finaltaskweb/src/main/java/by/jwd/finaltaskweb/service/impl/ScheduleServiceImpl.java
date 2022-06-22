@@ -2,23 +2,20 @@ package by.jwd.finaltaskweb.service.impl;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
-import by.jwd.finaltaskweb.dao.impl.UserDaoImpl;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.ScheduleService;
 import by.jwd.finaltaskweb.service.ServiceException;
-import by.jwd.finaltaskweb.service.StudioService;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
 
 public class ScheduleServiceImpl extends StudioServiceImpl implements ScheduleService {

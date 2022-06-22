@@ -29,11 +29,11 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 	public List<Group> readAll() throws ServiceException {
 
 		List<Group> groupsTemp = null;
-		List <Group> groups = new ArrayList<>();
+		List<Group> groups = new ArrayList<>();
 
 		try {
 			groupsTemp = factory.getGroupDao(transaction).readAll();
-			
+
 			for (Group group : groupsTemp) {
 				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
 				group.setTeacher(teacher);
@@ -57,13 +57,13 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 
 		try {
 			group = factory.getGroupDao(transaction).readEntityById(id);
-		
-				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
-				group.setTeacher(teacher);
-				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
-				group.setSchedule(schedules);
-	
-				transaction.close();
+
+			Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
+			group.setTeacher(teacher);
+			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+			group.setSchedule(schedules);
+
+			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
@@ -136,7 +136,7 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 	@Override
 	public List<Group> readByWeekDay(List<WeekDay> weekDays) throws ServiceException {
 		List<Group> groups = new ArrayList<>();
-		
+
 		try {
 			for (WeekDay day : weekDays) {
 				List<Schedule> schedules = factory.getScheduleDao(transaction).readByWeekDay(day);
@@ -232,11 +232,19 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 		List<Group> groups = new ArrayList<>();
 		try {
 			groups = factory.getGroupDao(transaction).readByTeacherId(teacherId);
+			Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(teacherId);
+			for (Group group : groups) {
+				group.setTeacher(teacher);
+				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+				group.setSchedule(schedules);
+			}
+
 			transaction.close();
 
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
+		logger.debug("groups {}", groups);
 		return groups;
 	}
 }

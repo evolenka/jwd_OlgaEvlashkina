@@ -43,7 +43,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
 	private static final String SQL_UPDATE_USER = "UPDATE user SET login = ?, password = ?, role = ? WHERE id = ?";
 	private static final String SQL_UPDATE_CLIENT = "UPDATE client SET surname = ?,name = ?, patronymic = ?, phone = ?, email = ? WHERE id = ?";
-	private static final String SQL_UPDATE_TEACHER = "UPDATE teacher SET surname = ?, name = ?, dancestyle = ? teacher.portfolio = ? WHERE id = ?";
+	private static final String SQL_UPDATE_TEACHER = "UPDATE teacher SET surname = ?, name = ?, dancestyle = ?, portfolio = ? WHERE id = ?";
 	
 	
 	@Override
@@ -447,6 +447,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 			logger.debug("user has been updated");
 
 			Role role = user.getRole();
+			logger.debug(role);
 			if (role == Role.CLIENT) {
 
 				statement = connection.prepareStatement(SQL_UPDATE_CLIENT);
@@ -463,6 +464,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 				logger.debug("client has been updated");
 				connection.commit();
 			} else if (role == Role.TEACHER) {
+				
 				statement = connection.prepareStatement(SQL_UPDATE_TEACHER);
 				Teacher teacher = (Teacher) user;
 				statement.setString(1, teacher.getSurname());
@@ -470,6 +472,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 				statement.setString(3, teacher.getDanceStyle());
 				statement.setString(4, teacher.getPortfolio());
 				statement.setInt(5, teacher.getId());
+				logger.debug(statement.toString());
 				statement.executeUpdate();
 				connection.commit();
 				logger.debug("teacher has been updated");

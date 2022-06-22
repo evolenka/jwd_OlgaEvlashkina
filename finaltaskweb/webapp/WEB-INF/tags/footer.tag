@@ -4,7 +4,7 @@
 	
 		<p>
 			Copyright©
-			<ctg:year />
+			<ctg:year/>
 			L`Antre Studio
 		</p>
 	

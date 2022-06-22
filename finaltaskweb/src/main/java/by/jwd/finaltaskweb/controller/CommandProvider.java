@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import by.jwd.finaltaskweb.controller.impl.CancelUpdateStatusCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.CancelVisitCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ChooseMembershipCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ConfirmVisitCommandImpl;
@@ -30,14 +31,18 @@ import by.jwd.finaltaskweb.controller.impl.ReadGroupByDateCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupByLevelCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupByScheduleCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupByStyleCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadGroupsByTeacherCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadMembershipByClientAndPeriodCommandImpl;
-import by.jwd.finaltaskweb.controller.impl.ReadPlannedClassesByGroupCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadPlannedClassesByTeacherCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadPlannedVisitsByClientCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadValidMembershipsByClientCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadVisitsByClientAndPeriodCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadDanceClassByGroupAndDateCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.RegistrationCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdateClientCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdatePasswordCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.UpdateVisitStatusCommandImpl;
 
 public class CommandProvider {
 
@@ -69,14 +74,16 @@ public class CommandProvider {
 		commands.put(CommandEnum.READALLSTYLE, new ReadAllStyleCommandImpl());
 		commands.put(CommandEnum.READALLLEVEL, new ReadAllLevelCommandImpl());
 		commands.put(CommandEnum.READALLWEEKDAY, new ReadAllWeekDayCommandImpl());
-		commands.put(CommandEnum.READPLANNEDCLASSESBYGROUP, new ReadPlannedClassesByGroupCommandImpl());
 		commands.put(CommandEnum.READAVAILIABLEDATESBYGROUP, new ReadAvailiableDatesByGroupCommandImpl());
 		commands.put(CommandEnum.CREATEVISIT, new CreateVisitCommandImpl());
 		commands.put(CommandEnum.CONFIRMVISIT, new ConfirmVisitCommandImpl());
 		commands.put(CommandEnum.READALLAVAILIABLEDATES, new ReadAllAvailiableDatesCommandImpl());
 		commands.put(CommandEnum.READPLANNEDCLASSESBYTEACHER, new ReadPlannedClassesByTeacherCommandImpl());
 		commands.put(CommandEnum.MARKPRESENCE, new UpdateVisitStatusCommandImpl());
-		
+		commands.put(CommandEnum.CANCELMARKEDPRESENCE, new CancelUpdateStatusCommandImpl());
+		commands.put(CommandEnum.READVISITSBYGROUPANDDATE, new ReadDanceClassByGroupAndDateCommandImpl());
+		commands.put(CommandEnum.READGROUPSBYTEACHER, new ReadGroupsByTeacherCommandImpl());
+		commands.put(CommandEnum.READVISITCOUNTBYTEACHERGROUPSANDPERIOD, new ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl());
 		commands.put(CommandEnum.WRONGCOMMAND, new EmptyCommandImpl());
 	}
 
@@ -87,21 +94,7 @@ public class CommandProvider {
 
 		logger.debug("language {}", language);
 
-		MessageManager manager;
-
-		switch (language) {
-		case "en":
-			manager = MessageManager.EN;
-			break;
-		case "ru":
-			manager = MessageManager.RU;
-			break;
-		case "be":
-			manager = MessageManager.BY;
-			break;
-		default:
-			manager = MessageManager.EN;
-		}
+	
 		
 		Command command;
 		// извлечение имени команды из запроса

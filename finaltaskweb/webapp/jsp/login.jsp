@@ -32,8 +32,8 @@
 			</h1>
 			<br>
 			<div class="row">
-				<div class="col-sm-2 col-lg-4"></div>
-				<div class="card col-sm-8 col-lg-4">
+				<div class="col-lg-4"></div>
+				<div class="card col-lg-4">
 					<u:login />
 				</div>
 			</div>

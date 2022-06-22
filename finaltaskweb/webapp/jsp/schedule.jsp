@@ -22,7 +22,7 @@
 <c:url value="img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${icon}"/>">
 </head>
-<body class = "index">
+<body>
 	<div class="wrapper">
 		<u:mainmenu />
 		<div class="content conteiner-fluid">

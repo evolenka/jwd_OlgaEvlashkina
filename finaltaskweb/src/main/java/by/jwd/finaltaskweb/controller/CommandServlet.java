@@ -1,7 +1,6 @@
 package by.jwd.finaltaskweb.controller;
 
 import java.io.IOException;
-import java.util.Locale;
 import java.util.ResourceBundle;
 
 import javax.servlet.RequestDispatcher;

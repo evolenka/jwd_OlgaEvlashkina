@@ -11,10 +11,11 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
-
+import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Membership;
+import by.jwd.finaltaskweb.entity.MembershipType;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.Status;
 import by.jwd.finaltaskweb.entity.Teacher;
@@ -143,31 +144,81 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	@Override
 	public List<Visit> readPlannedByTeacher(Integer teacherId) throws ServiceException {
 
-		List<Visit> visits = new ArrayList<>();
+		List<Visit> visits = null;
+		List<Visit> plannedVisits = new ArrayList<>();
 
 		try {
+
+			// find all planned visits
+			visits = factory.getVisitDao(transaction).readAllPlanned();
+			logger.debug("all planned visits {}", visits);
+
+			// find all planned dance classes of the given teacher
 			List<Group> groups = factory.getGroupDao(transaction).readByTeacherId(teacherId);
+			List<DanceClass> danceClassesByTeacher = new ArrayList<>();
 
-			for (Group group : groups) {
-				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
-				for (Schedule schedule : schedules) {
+			for (Group groupByTeacher : groups) {
+				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupByTeacher.getId());
+				for (Schedule scheduleByTeacher : schedules) {
 
-					List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readBySchedule(schedule);
+					List<DanceClass> danceClasses = factory.getDanceClassDao(transaction)
+							.readBySchedule(scheduleByTeacher);
 
 					for (DanceClass danceClass : danceClasses) {
-
-						if (isPlanned(danceClass)) {
-
-							visits.add(factory.getVisitDao(transaction).readByDanceClass(danceClass));
-						}
+						danceClassesByTeacher.add(danceClass);
 					}
 				}
 			}
+
+			logger.debug("all dance classes of the teacher {}", danceClassesByTeacher);
+
+			// find all planned visits of the given teacher`s classes
+			for (Visit visit : visits) {
+				for (DanceClass danceClass : danceClassesByTeacher) {
+					if (visit.getDanceClass().getId() == danceClass.getId()) {
+						plannedVisits.add(visit);
+					}
+				}
+			}
+
+			// fill stub visit objects by data
+			for (Visit visit : plannedVisits) {
+
+				Membership membership = factory.getMembershipDao(transaction)
+						.readEntityById(visit.getMembership().getId());
+				visit.setMembership(membership);
+
+				DanceClass danceClass = factory.getDanceClassDao(transaction)
+						.readEntityById(visit.getDanceClass().getId());
+
+				Client client = (Client) factory.getUserDao(transaction).readEntityById(membership.getClient().getId());
+				membership.setClient(client);
+				visit.setMembership(membership);
+
+				if (danceClass.getVisits() == null) {
+					danceClass.setVisits(new ArrayList<>());
+				}
+
+				if (!(danceClass.getVisits().contains(visit))) {
+					danceClass.getVisits().add(visit);
+				}
+
+				Schedule schedule = factory.getScheduleDao(transaction)
+						.readEntityById(danceClass.getSchedule().getId());
+
+				Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+				schedule.setGroup(group);
+				danceClass.setSchedule(schedule);
+
+				visit.setDanceClass(danceClass);
+			}
+
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return visits;
+		logger.debug("planned visits by teacher {}", plannedVisits);
+		return plannedVisits;
 	}
 
 	@Override
@@ -190,7 +241,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 							danceClass);
 
 					if (visit != null) {
-					
+
 						membership = factory.getMembershipDao(transaction).readEntityById(membership.getId());
 						visit.setMembership(membership);
 
@@ -228,78 +279,117 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	public List<Visit> readByGroupAndPeriod(Integer groupId, LocalDate startDate, LocalDate endDate)
 			throws ServiceException {
 
-		List<Visit> visits = new ArrayList<>();
+		List<Visit> visits = null;
 		try {
 			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate, endDate);
+			logger.debug("danceClasses {}", danceClasses);
 
 			for (DanceClass danceClass : danceClasses) {
 
-				if (danceClass.getSchedule().getGroup().getId() == groupId) {
+				Schedule schedule = factory.getScheduleDao(transaction)
+						.readEntityById(danceClass.getSchedule().getId());
 
-					visits.add(factory.getVisitDao(transaction).readByDanceClass(danceClass));
+				Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+				schedule.setGroup(group);
+				danceClass.setSchedule(schedule);
+
+				if (danceClass.getSchedule().getGroup().getId() == groupId) {
+					visits = factory.getVisitDao(transaction).readByDanceClass(danceClass);
 				}
 			}
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-
+		logger.debug("visits {}", visits);
 		return visits;
 	}
 
 	@Override
-	public Map<Group, Integer> countVisitsForPeriodByGroups(LocalDate startDate, LocalDate endDate)
+	public Map<String, Integer> countVisitsForPeriodByAllGroups(LocalDate startDate, LocalDate endDate)
 			throws ServiceException {
 
-		Map<Group, Integer> visits = new HashMap<>();
+		Map<String, Integer> countVisits = new HashMap<>();
 		try {
 			List<Group> groups = factory.getGroupDao(transaction).readAll();
 
 			for (Group group : groups) {
-				int quantity = this.readByGroupAndPeriod(group.getId(), startDate, endDate).size();
-				visits.put(group, quantity);
+				int count = 0;
+				List<Visit> visits = this.readByGroupAndPeriod(group.getId(), startDate, endDate);
+				for (Visit visit : visits) {
+					if (visit.getStatus() == Status.ATTENDED) {
+						count++;
+					}
+				}
+				countVisits.put(group.getTitle(), count);
+
 			}
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
 
-		return visits;
+		return countVisits;
 	}
 
 	@Override
-	public boolean isPlanned(DanceClass danceClass) throws ServiceException {
-		Visit visit;
+	public Map<String, Integer> countVisitsForPeriodByTeacherGroups(Integer teacherId, LocalDate startDate,
+			LocalDate endDate) throws ServiceException {
+
+		Map<String, Integer> countVisits = new HashMap<>();
+
 		try {
-			visit = factory.getVisitDao(transaction).readByDanceClass(danceClass);
+			List<Group> groups = factory.getGroupDao(transaction).readByTeacherId(teacherId);
+
+			for (Group group : groups) {
+				int count = 0;
+				List<Visit> visits = this.readByGroupAndPeriod(group.getId(), startDate, endDate);
+				
+				if (visits != null) {
+					for (Visit visit : visits) {
+						if (visit.getStatus() == Status.ATTENDED) {
+							count++;
+						}
+					}
+				}
+				countVisits.put(group.getTitle(), count);
+			}
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		return (Status.PLANNED == visit.getStatus() ? true : false);
+		return countVisits;
 	}
 
 	@Override
-	public boolean markPresence(Visit visit, Status status) throws ServiceException {
+	public boolean markPresence(Integer visitId, Status status) throws ServiceException {
 		boolean result = false;
 		try {
+			Visit visit = factory.getVisitDao(transaction).readEntityById(visitId);
+			Membership membership = factory.getMembershipDao(transaction).readEntityById(visit.getMembership().getId());
+			MembershipType type = factory.getMembershipDao(transaction).readTypeById(membership.getType().getId());
+			membership.setType(type);
+			visit.setMembership(membership);
+			logger.debug("membership {}", membership);
+
 			/* additional check whether the client membership is valid */
-			if ((Status.ATTENDED == status) && (visit.getMembership().getBalanceClassQuantity() == 0)) {
+			if ((Status.ATTENDED == status) && (visit.getMembership().getBalanceClassQuantity() == 0)
+					&& (visit.getMembership().getType().getTitle() != Type.UNLIM)) {
 				logger.debug("membership is not valid");
-				result = false;
+
 			} else if ((visit.getStatus() != Status.PLANNED)) {
 				logger.debug("visit status is not valid for marking presence");
-				result = false;
+
 			} else {
 				transaction.setAutoCommit(false);
 				factory.getVisitDao(transaction).updateStatus(visit, status);
 
-				if ((Status.ATTENDED == status) || !(visit.getMembership().getType().getTitle().equals(Type.UNLIM))) {
+				if ((Status.ATTENDED == status) || (visit.getMembership().getType().getTitle() != Type.UNLIM)) {
 					factory.getMembershipDao(transaction).decreasebalanceClassQuantity(visit.getMembership().getId());
 					logger.debug("membership balance quantity has been decreased");
 				}
 				transaction.commit();
-				logger.debug("precense has been marked successfully");
+				logger.debug("presence has been marked successfully");
 				transaction.close();
 				result = true;
 			}
@@ -322,10 +412,15 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	}
 
 	@Override
-	public boolean cancelMarkPresence(Visit visit) throws ServiceException {
+	public boolean cancelMarkPresence(Integer visitId) throws ServiceException {
 		boolean result = false;
 		try {
+			Visit visit = factory.getVisitDao(transaction).readEntityById(visitId);
+			Membership membership = factory.getMembershipDao(transaction).readEntityById(visit.getMembership().getId());
+			visit.setMembership(membership);
+
 			Status current = visit.getStatus();
+			logger.debug("current status {}", current);
 			if (current != Status.PLANNED) {
 				transaction.setAutoCommit(false);
 				factory.getVisitDao(transaction).cancelUpdateStatus(visit);

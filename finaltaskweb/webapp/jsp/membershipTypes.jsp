@@ -6,7 +6,7 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="u"%>
 <c:set var="language"
 	value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale.language}"
-	scope="session" />
+	scope="session"/>
 <fmt:setLocale value="${language}" />
 <fmt:setBundle basename="pagecontent" var="rb" />
 <html lang="${language}">
@@ -53,7 +53,7 @@
 								</c:otherwise>
 							</c:choose>
 							<td><fmt:formatNumber value="${membershipType.price}"
-									type="currency" /></td>
+									type="currency"/></td>
 							<td>
 								<button type="submit" class="btn colorBtn" name="command"
 									value="CHOOSEMEMBERSHIP">

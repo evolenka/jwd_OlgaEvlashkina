@@ -24,6 +24,7 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 	static Logger logger = LogManager.getLogger(VisitDaoImpl.class);
 
 	private static final String SQL_SELECT_ALL_VISIT = "SELECT visit.id, visit.membership_id, visit.danceclass_id, visit.status FROM `visit`";
+	private static final String SQL_SELECT_ALL_PLANNED = "SELECT visit.id, visit.membership_id, visit.danceclass_id, visit.status FROM `visit` WHERE visit.status = 'PLANNED'";
 
 	private static final String SQL_SELECT_BY_ID = "SELECT visit.membership_id, visit.danceclass_id, visit.status FROM `visit` WHERE visit.id = ?";
 	private static final String SQL_SELECT_BY_MEMBERSHIP_AND_DANCECLASS = "SELECT visit.id, visit.status FROM `visit` WHERE visit.membership_id = ? AND visit.danceclass_id = ? ";
@@ -220,7 +221,7 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
-                visit = new Visit();
+				visit = new Visit();
 				visit.setId(resultSet.getInt(1));
 				visit.setMembership(new Membership(membership.getId()));
 				visit.setDanceClass(new DanceClass(danceClass.getId()));
@@ -238,9 +239,9 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 	}
 
 	@Override
-	public Visit readByDanceClass(DanceClass danceClass) throws DaoException {
-		
-		Visit visit = null;
+	public List<Visit> readByDanceClass(DanceClass danceClass) throws DaoException {
+
+		List<Visit> visits = new ArrayList<>();
 
 		PreparedStatement statement = null;
 
@@ -252,13 +253,14 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
-                visit = new Visit();
+				Visit visit = new Visit();
 				visit.setId(resultSet.getInt(1));
 				visit.setMembership(new Membership(resultSet.getInt(2)));
 				visit.setDanceClass(new DanceClass(danceClass.getId()));
 				visit.setStatus(Status.valueOf(resultSet.getString(3)));
+				visits.add(visit);
 
-				logger.debug("visit has been read by client and by dance class");
+				logger.debug("visit has been read by dance class");
 			}
 
 		} catch (SQLException e) {
@@ -266,7 +268,7 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 		} finally {
 			close(statement);
 		}
-		return visit;
+		return visits;
 	}
 
 	@Override
@@ -301,6 +303,35 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 		} finally {
 			close(statement);
 		}
+		return visits;
+	}
+
+	@Override
+	public List<Visit> readAllPlanned() throws DaoException {
+
+		List<Visit> visits = new ArrayList<>();
+
+		Statement statement = null;
+
+		try {
+
+			statement = connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_PLANNED);
+
+			while (resultSet.next()) {
+
+				Visit visit = new Visit(resultSet.getInt(1));
+				visit.setMembership(new Membership(resultSet.getInt(2)));
+				visit.setDanceClass(new DanceClass(resultSet.getInt(3)));
+				visit.setStatus(Status.valueOf(resultSet.getString(4)));
+				visits.add(visit);
+			}
+		} catch (SQLException e) {
+			throw new DaoException();
+		} finally {
+			close(statement);
+		}
+		logger.debug("all planned visits have been read from db");
 		return visits;
 	}
 }

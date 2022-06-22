@@ -12,7 +12,7 @@
 <c:url value="adminMain.jsp" var="adminMain" />
 
 <div class="conteiner-fluid">
-	<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+	<nav class="navbar navbar-expand-sm navbar-dark">
 		<c:choose>
 			<c:when test="${role == 'CLIENT'}">
 				<a class="navbar-brand" href='<c:out value="${clientMain}"/>'> <fmt:message
@@ -40,7 +40,7 @@
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<form method="post" action="action">
-						<button type="submit" class="btn btn-secondary" name="command"
+						<button type="submit" class="btn" name="command"
 							value="READALLSCHEDULE">
 							<fmt:message key="schedule.title" bundle="${ rb }" />
 						</button>
@@ -48,7 +48,7 @@
 				</li>
 				<li class="nav-item">
 					<form method="post" action="action">
-						<button type="submit" class="btn btn-secondary" name="command"
+						<button type="submit" class="btn" name="command"
 							value="READALLTEACHER">
 							<fmt:message key="teacher.title" bundle="${ rb }" />
 						</button>
@@ -56,7 +56,7 @@
 				</li>
 				<li class="nav-item">
 					<form method="post" action="action">
-						<button type="submit" class="btn btn-secondary" name="command"
+						<button type="submit" class="btn" name="command"
 							value="READALLMEMBERSHIPTYPES">
 							<fmt:message key="membershiptypes" bundle="${ rb }" />
 						</button>
@@ -75,4 +75,3 @@
 		</div>
 	</nav>
 </div>
-

@@ -9,10 +9,13 @@ import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.DaoFactory;
+import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Group;
+import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.Teacher;
+import by.jwd.finaltaskweb.entity.Visit;
 import by.jwd.finaltaskweb.service.DanceClassService;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
@@ -115,6 +118,22 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 				schedule.setGroup(group);
 
 				danceClass.setSchedule(schedule);
+				
+				List <Visit> visits = factory.getVisitDao(transaction).readByDanceClass(danceClass);
+				
+				for (Visit visit:visits) {
+
+					Membership membership = factory.getMembershipDao(transaction)
+							.readEntityById(visit.getMembership().getId());
+					visit.setMembership(membership);
+					Client client = (Client) factory.getUserDao(transaction).readEntityById(membership.getClient().getId());
+					membership.setClient(client);
+					visit.setMembership(membership);
+					visit.setDanceClass(danceClass);
+				}
+				
+				danceClass.setVisits(visits);
+								
 				logger.debug("danceClassFinal {}", danceClass);
 			}
 

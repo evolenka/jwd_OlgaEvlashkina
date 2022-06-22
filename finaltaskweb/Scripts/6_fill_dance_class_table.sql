@@ -414,3 +414,30 @@ INSERT INTO `danceclass` (
 	"2022-06-10",
 	TRUE
 );
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"1",
+	"2022-07-04",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"2",
+	"2022-07-04",
+	TRUE
+);
+INSERT INTO `danceclass` (
+	`schedule_id`,
+	`date`,
+	`is_active`
+) VALUES (
+	"3",
+	"2022-07-04",
+	TRUE
+);

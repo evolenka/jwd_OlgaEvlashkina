@@ -19,25 +19,24 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<nav class="navbar">
-	<form method="post" action="action">
-		<ul class="navbar-nav">
-			<li class="dropdown dropright">
+<form method="post" action="action">
+		<ul class="navbar-nav" style = "margin-left:10px">
+			<li class="dropdown dropright"  style="margin-top: 40px">
 				<button type="button"
 					class="btn dropdown-toggle clientMenuBtn btn-light"
 					data-toggle="dropdown">
 					<fmt:message key="clientMain.chooseGroup" bundle="${ rb }" />
 				</button>
 				<div class="dropdown-menu">
-					<button type="submit" class="btn btn-light dropdown-item"
+					<button type="submit" class="btn clientMenuBtn btn-light dropdown-item"
 						name="command" value="READALLSTYLE">
 						<fmt:message key="byStyle" bundle="${ rb }" />
 					</button>
-					<button type="submit" class="btn btn-light dropdown-item"
+					<button type="submit" class="btn clientMenuBtn btn-light dropdown-item"
 						name="command" value="READALLWEEKDAY">
 						<fmt:message key="byWeekDay" bundle="${ rb }" />
 					</button>
-					<button type="submit" class="btn btn-light dropdown-item"
+					<button type="submit" class="btn clientMenuBtn btn-light dropdown-item"
 						name="command" value="READALLLEVEL">
 						<fmt:message key="byLevel" bundle="${ rb }" />
 					</button>
@@ -80,4 +79,3 @@
 			</li>
 		</ul>
 	</form>
-</nav>
