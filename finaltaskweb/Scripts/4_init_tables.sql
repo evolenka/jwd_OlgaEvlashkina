@@ -4,6 +4,6 @@ INSERT INTO `user` (
 	`role`
 ) VALUES (
 	"admin",
-	"CCDny/2uzk0+D3Psha+rIQ==",
+	"QTGNJ2YlM+VPosfftW4xoQ==",
 	'ADMIN'
 );

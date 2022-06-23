@@ -1,7 +1,5 @@
 package by.jwd.finaltaskweb.controller.impl;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -16,16 +14,18 @@ import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadAllTeacherCommandImpl implements command to view all teachers by admin
- * 
+ * EditTeacherCommandImpl implements command for selecting teacher to edit info
+ * about him by admin
  * 
  * @author Evlashkina
  *
  */
+public class EditTeacherCommandImpl implements Command {
 
-public class ReadAllTeacherCommandImpl implements Command {
+	private static Logger logger = LogManager.getLogger(EditTeacherCommandImpl.class);
 
-	static Logger logger = LogManager.getLogger(ReadAllTeacherCommandImpl.class);
+	private ServiceFactory factory = ServiceFactory.getInstance();
+
 	@Override
 	public String execute(HttpServletRequest request) {
 
@@ -53,19 +53,24 @@ public class ReadAllTeacherCommandImpl implements Command {
 		}
 
 		Integer adminId = (Integer) session.getAttribute("adminId");
-
+		logger.debug("adminId {}", adminId);
 		try {
 			if (adminId == null) {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
-		
-			List <Teacher> teachers = ServiceFactory.getInstance().getUserService().readAllTeacher();
-			
-			request.setAttribute("teachers", teachers);
-			page = ConfigurationManager.getProperty("path.page.teachers");
-			logger.debug("page {}", page);
+				if (request.getParameter("teacherId") != null) {
+					session.setAttribute("teacherId", request.getParameter("teacherId"));
+				}
+				Integer teacherId = Integer.parseInt((String) session.getAttribute("teacherId"));
+				
+				logger.debug("teacherId {}", teacherId);
+
+				Teacher teacher = (Teacher) factory.getUserService().readEntityById(teacherId);
+				session.setAttribute("teacher", teacher);
+
 			}
+			page = ConfigurationManager.getProperty("path.page.updateTeacher");
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 			page = ConfigurationManager.getProperty("path.page.error");

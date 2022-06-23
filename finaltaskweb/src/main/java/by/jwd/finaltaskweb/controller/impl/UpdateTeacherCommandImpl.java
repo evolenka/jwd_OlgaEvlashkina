@@ -9,20 +9,20 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
-import by.jwd.finaltaskweb.entity.Client;
+import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * UpdateClientCommandImpl implements command for changing personal details of
- * the client by himself in his private account
+ * UpdateTeacherCommandImpl implements command for changing personal details of
+ * the teacher by admin
  * 
  * @author Evlashkina
  *
  */
-public class UpdateClientCommandImpl implements Command {
+public class UpdateTeacherCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(UpdateClientCommandImpl.class);
+	private static Logger logger = LogManager.getLogger(UpdateTeacherCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -51,43 +51,41 @@ public class UpdateClientCommandImpl implements Command {
 		default:
 			manager = MessageManager.EN;
 		}
-		
+
+		Integer adminId = (Integer) session.getAttribute("adminId");
+		logger.debug("adminId {}", adminId);
 		try {
-			
-		if (request.getParameter("clientId") != null) {
-			session.setAttribute("clientId", request.getParameter("clientId"));
-		}
-		Integer clientId = Integer.parseInt((String) session.getAttribute("clientId"));
-		logger.debug("clientId {}", clientId);
-		
-			if (clientId != null) {
-				
-				Client client = (Client) factory.getUserService().readEntityById(clientId);
+			if (adminId == null) {
+				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
+				logger.debug("session timed out");
+			} else {
+				if (request.getParameter("teacherId") != null) {
+					session.setAttribute("teacherId", request.getParameter("teacherId"));
+				}
+				Integer teacherId = Integer.parseInt((String) session.getAttribute("teacherId"));
+				Teacher teacher = (Teacher) factory.getUserService().readEntityById(teacherId);
 
 				String surname = request.getParameter("surname");
 				logger.debug("surname {}", surname);
 				String name = request.getParameter("name");
 				logger.debug("name {}", name);
-				String patronymic = request.getParameter("patronymic");
-				logger.debug("patronymic {}", patronymic);
-				String email = request.getParameter("email");
-				logger.debug("email {}", email);
-				String phone = request.getParameter("phone");
-				logger.debug("phone {}", phone);
+				String style = request.getParameter("style");
+				logger.debug("style {}", style);
+				String portfolio = request.getParameter("portfolio");
+				logger.debug("portfolio {}", portfolio);
 
-				client = factory.getClientBuilder().buildClient(client.getLogin(), client.getPassword(), surname, name,
-						patronymic, email, phone);
-				client.setId(clientId);
-				if (factory.getUserService().update(client)) {
-					request.setAttribute("successUpdateUserMessage",
-							manager.getProperty("successUpdateUserMessage"));
+				teacher = factory.getTeacherBuilder().buildTeacher(teacher.getLogin(), teacher.getPassword(), surname,
+						name, style, portfolio);
+				teacher.setId(teacherId);
+				if (factory.getUserService().update(teacher)) {
+					request.setAttribute("successUpdateUserMessage", manager.getProperty("successUpdateUserMessage"));
 
 				} else {
 					request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 				}
-				session.setAttribute("client", client);
+				session.setAttribute("teacher", teacher);
 			}
-			page = ConfigurationManager.getProperty("path.page.updateClient");
+			page = ConfigurationManager.getProperty("path.page.updateTeacher");
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 			page = ConfigurationManager.getProperty("path.page.error");

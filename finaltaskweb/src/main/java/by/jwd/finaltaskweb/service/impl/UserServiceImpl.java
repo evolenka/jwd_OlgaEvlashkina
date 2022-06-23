@@ -143,7 +143,7 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 			String hashPassword = PasswordHashGenerator.generate(user.getPassword(), user.getLogin());
 			logger.debug("hashPassword {}", hashPassword);
 			user.setPassword(hashPassword);
-			
+
 			factory.getUserDao(transaction).create(user);
 			transaction.close();
 		} catch (DaoException e) {
@@ -155,7 +155,7 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	@Override
 	public boolean update(User user) throws ServiceException {
 		try {
-			
+
 			factory.getUserDao(transaction).update(user);
 			transaction.close();
 		} catch (DaoException e) {
@@ -168,8 +168,8 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 	public boolean updatePassword(Integer userId, String password) throws ServiceException {
 		try {
 			User user = factory.getUserDao(transaction).readEntityById(userId);
-			logger.debug("user {}",user);
-		    String hashPassword = PasswordHashGenerator.generate(password, user.getLogin());
+			logger.debug("user {}", user);
+			String hashPassword = PasswordHashGenerator.generate(password, user.getLogin());
 			logger.debug("hashPassword {}", hashPassword);
 			user.setPassword(hashPassword);
 			factory.getUserDao(transaction).update(user);
@@ -178,5 +178,31 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 			throw new ServiceException();
 		}
 		return true;
+	}
+
+	@Override
+	public List<Client> readAllClient(int startIndex, int endIndex) throws ServiceException {
+		List<Client> clients = null;
+		try {
+			clients = factory.getUserDao(transaction).readAllClient(startIndex, endIndex);
+			transaction.close();
+
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return clients;
+	}
+
+	@Override
+	public int countClient() throws ServiceException {
+		int count = 0;
+		try {
+			count = factory.getUserDao(transaction).countClient();
+			transaction.close();
+
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return count;
 	}
 }

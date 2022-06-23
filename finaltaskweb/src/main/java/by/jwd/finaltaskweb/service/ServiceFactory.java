@@ -4,6 +4,7 @@ import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.TransactionFactoryImpl;
 import by.jwd.finaltaskweb.service.impl.BuilderClient;
 import by.jwd.finaltaskweb.service.impl.BuilderMembership;
+import by.jwd.finaltaskweb.service.impl.BuilderTeacher;
 import by.jwd.finaltaskweb.service.impl.BuilderVisit;
 import by.jwd.finaltaskweb.service.impl.DanceClassServiceImpl;
 import by.jwd.finaltaskweb.service.impl.GroupServiceImpl;
@@ -24,6 +25,7 @@ public class ServiceFactory {
 	private StudioServiceImpl visitService = new VisitServiceImpl();
 	private StudioServiceImpl scheduleService = new ScheduleServiceImpl();
 	private BuilderClient clientBuilder = new BuilderClient();
+	private BuilderTeacher teacherBuilder = new BuilderTeacher();
 	private BuilderMembership membershipBuilder = new BuilderMembership();
 	private BuilderVisit visitbuilder = new BuilderVisit();
 
@@ -104,5 +106,9 @@ public class ServiceFactory {
 
 	public BuilderVisit getVisitbuilder() {
 		return visitbuilder;
+	}
+
+	public BuilderTeacher getTeacherBuilder() {
+		return teacherBuilder;
 	}
 }

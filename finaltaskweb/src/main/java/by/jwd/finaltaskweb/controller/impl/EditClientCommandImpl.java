@@ -1,7 +1,5 @@
 package by.jwd.finaltaskweb.controller.impl;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -11,21 +9,23 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
-import by.jwd.finaltaskweb.entity.Teacher;
+import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadAllTeacherCommandImpl implements command to view all teachers by admin
- * 
+ * EditClientCommandImpl implements command for selecting client to edit info
+ * about him by admin
  * 
  * @author Evlashkina
  *
  */
+public class EditClientCommandImpl implements Command {
 
-public class ReadAllTeacherCommandImpl implements Command {
+	private static Logger logger = LogManager.getLogger(EditClientCommandImpl.class);
 
-	static Logger logger = LogManager.getLogger(ReadAllTeacherCommandImpl.class);
+	private ServiceFactory factory = ServiceFactory.getInstance();
+
 	@Override
 	public String execute(HttpServletRequest request) {
 
@@ -53,19 +53,24 @@ public class ReadAllTeacherCommandImpl implements Command {
 		}
 
 		Integer adminId = (Integer) session.getAttribute("adminId");
-
+		logger.debug("adminId {}", adminId);
 		try {
 			if (adminId == null) {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
-		
-			List <Teacher> teachers = ServiceFactory.getInstance().getUserService().readAllTeacher();
-			
-			request.setAttribute("teachers", teachers);
-			page = ConfigurationManager.getProperty("path.page.teachers");
-			logger.debug("page {}", page);
+	
+				if (request.getParameter("clientId") != null) {
+					session.setAttribute("clientId", request.getParameter("clientId"));
+				}
+				Integer clientId = Integer.parseInt((String) session.getAttribute("clientId"));
+				logger.debug("clientId {}", clientId);
+
+				Client client = (Client) factory.getUserService().readEntityById(clientId);
+				session.setAttribute("client", client);
+
 			}
+			page = ConfigurationManager.getProperty("path.page.updateClient");
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 			page = ConfigurationManager.getProperty("path.page.error");

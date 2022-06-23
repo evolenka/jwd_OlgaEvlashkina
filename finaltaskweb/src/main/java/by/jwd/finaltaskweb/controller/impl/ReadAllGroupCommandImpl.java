@@ -11,21 +11,22 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
-import by.jwd.finaltaskweb.entity.Teacher;
+import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadAllTeacherCommandImpl implements command to view all teachers by admin
+ * ReadAllGroupCommandImpl implements command to view all groups by admin
  * 
  * 
  * @author Evlashkina
  *
  */
 
-public class ReadAllTeacherCommandImpl implements Command {
+public class ReadAllGroupCommandImpl implements Command {
 
-	static Logger logger = LogManager.getLogger(ReadAllTeacherCommandImpl.class);
+	static Logger logger = LogManager.getLogger(ReadAllGroupCommandImpl.class);
+
 	@Override
 	public String execute(HttpServletRequest request) {
 
@@ -59,12 +60,12 @@ public class ReadAllTeacherCommandImpl implements Command {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
-		
-			List <Teacher> teachers = ServiceFactory.getInstance().getUserService().readAllTeacher();
-			
-			request.setAttribute("teachers", teachers);
-			page = ConfigurationManager.getProperty("path.page.teachers");
-			logger.debug("page {}", page);
+
+				List<Group> groups = ServiceFactory.getInstance().getGroupService().readAll();
+				request.setAttribute("groups", groups);
+				
+				page = ConfigurationManager.getProperty("path.page.groups");
+				logger.debug("page {}", page);
 			}
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));

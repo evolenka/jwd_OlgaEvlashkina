@@ -62,7 +62,7 @@ html, body {
 	height: 100x;
 	text-align: left;
 	margin-top: 10px;
-	color:#596673;
+	color: #596673;
 	background: #94a0ac;
 }
 
@@ -81,10 +81,11 @@ nav {
 	background: #596673;
 	color: white;
 }
+
 .btn {
 	color: white;
 	outline: 0;
-    border: none;
+	border: none;
 }
 
 .card {
@@ -148,6 +149,14 @@ td {
 	padding: 2px;
 	text-align: center;
 	border-color: white;
+}
+
+.page-link {
+	color: #596673;
+}
+
+.active {
+	background: #d3d3e9;
 }
 
 a.link {

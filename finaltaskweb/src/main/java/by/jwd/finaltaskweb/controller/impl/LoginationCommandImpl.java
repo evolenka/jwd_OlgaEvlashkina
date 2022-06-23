@@ -105,8 +105,8 @@ public class LoginationCommandImpl implements Command {
 			} else if (Role.ADMIN == user.getRole()) {
 				page = ConfigurationManager.getProperty("path.page.adminMain");
 				userName.append(user.getName());
-				session.setAttribute("admin {}", user.getId());
-				logger.debug("current user is admin");
+				session.setAttribute("adminId", user.getId());
+				logger.debug("current user is admin, id {}", user.getId());
 			}
 			
 			session.setAttribute("userName", userName);

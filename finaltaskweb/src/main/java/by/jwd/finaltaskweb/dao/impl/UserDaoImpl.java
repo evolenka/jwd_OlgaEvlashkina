@@ -1,6 +1,5 @@
 package by.jwd.finaltaskweb.dao.impl;
 
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -25,6 +24,8 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
 	private static final String SQL_SELECT_ALL_USER = "SELECT user.id, user.login, user.password, user.role FROM `user`";
 	private static final String SQL_SELECT_ALL_CLIENT = "SELECT user.id, user.login, user.password, client.surname, client.name, client.patronymic, client.phone, client.email FROM `user` join `client` ON user.id = client.id";
+	private static final String SQL_SELECT_CLIENT_BY_INDEX_RANGE = "SELECT * FROM (SELECT ROW_NUMBER() OVER(ORDER BY surname) as rowN, user.id, user.login, user.password, client.surname, client.name, client.patronymic, client.phone, client.email FROM `user` join `client` ON user.id = client.id) AS selection WHERE rowN between ? and ?";
+	private static final String SQL_SELECT_COUNT_CLIENT = "SELECT COUNT(*) FROM `client`";
 	private static final String SQL_SELECT_ALL_TEACHER = "SELECT user.id, user.login, user.password, teacher.surname, teacher.name, teacher.dancestyle, teacher.portfolio from `user` join `teacher` ON user.id = teacher.id";
 	private static final String SQL_SELECT_OTHER_USER = "SELECT user.id, user.login, user.password, user.role FROM `user` WHERE user.role = 'ADMIN'";
 	private static final String SQL_SELECT_ALL_DANCESTYLE = "SELECT DISTINCT dancestyle FROM `teacher`";
@@ -44,8 +45,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 	private static final String SQL_UPDATE_USER = "UPDATE user SET login = ?, password = ?, role = ? WHERE id = ?";
 	private static final String SQL_UPDATE_CLIENT = "UPDATE client SET surname = ?,name = ?, patronymic = ?, phone = ?, email = ? WHERE id = ?";
 	private static final String SQL_UPDATE_TEACHER = "UPDATE teacher SET surname = ?, name = ?, dancestyle = ?, portfolio = ? WHERE id = ?";
-	
-	
+
 	@Override
 	public List<User> readAll() throws DaoException {
 
@@ -289,7 +289,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 			statement = connection.prepareStatement(SQL_SELECT_BY_LOGIN_AND_PASSWORD);
 			statement.setString(1, login);
 			statement.setString(2, password);
-			
+
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
@@ -406,8 +406,8 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 			} else {
 				logger.debug("user has not been created, this login already exists");
 			}
-		}catch (SQLException e) {
-			
+		} catch (SQLException e) {
+
 			try {
 				connection.rollback();
 			} catch (SQLException e1) {
@@ -428,6 +428,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 		}
 		return true;
 	}
+
 	@Override
 	public boolean update(User user) throws DaoException {
 
@@ -464,7 +465,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 				logger.debug("client has been updated");
 				connection.commit();
 			} else if (role == Role.TEACHER) {
-				
+
 				statement = connection.prepareStatement(SQL_UPDATE_TEACHER);
 				Teacher teacher = (Teacher) user;
 				statement.setString(1, teacher.getSurname());
@@ -510,7 +511,7 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
 			statement = connection.prepareStatement(SQL_SELECT_BY_DANCESTYLE);
 			statement.setString(1, danceStyle);
-			
+
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
@@ -560,4 +561,62 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 		return result;
 	}
 
+	@Override
+	public List<Client> readAllClient(int startIndex, int endIndex) throws DaoException {
+		List<Client> clients = new ArrayList<>();
+		PreparedStatement statement = null;
+
+		try {
+			statement = connection.prepareStatement(SQL_SELECT_CLIENT_BY_INDEX_RANGE);
+			statement.setInt(1, startIndex);
+			statement.setInt(2, endIndex);
+
+			ResultSet resultSet = statement.executeQuery();
+
+			while (resultSet.next()) {
+
+				Client client = new Client(resultSet.getInt(2));
+
+				client.setLogin(resultSet.getString(3));
+				client.setPassword(resultSet.getString(4));
+				client.setSurname(resultSet.getString(5));
+				client.setName(resultSet.getString(6));
+				client.setPatronymic(resultSet.getString(7));
+				client.setPhone(resultSet.getString(8));
+				client.setEmail(resultSet.getString(9));
+
+				clients.add(client);
+			}
+		} catch (SQLException e) {
+			throw new DaoException();
+		} finally {
+			close(statement);
+		}
+		logger.debug("clients in the given range have been read");
+		return clients;
+	}
+
+	@Override
+	public int countClient() throws DaoException {
+
+		int count = 0;
+
+		Statement statement = null;
+
+		try {
+			statement = connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(SQL_SELECT_COUNT_CLIENT);
+
+			while (resultSet.next()) {
+
+				count = resultSet.getInt(1);
+			}
+		} catch (SQLException e) {
+			throw new DaoException();
+		} finally {
+			close(statement);
+		}
+		logger.debug("clients have been counted");
+		return count;
+	}
 }

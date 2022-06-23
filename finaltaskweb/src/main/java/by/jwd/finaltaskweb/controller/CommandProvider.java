@@ -15,11 +15,16 @@ import by.jwd.finaltaskweb.controller.impl.ChooseMembershipCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ConfirmVisitCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.CreateMembershipCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.CreateVisitCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.DeleteClientCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.DeleteTeacherCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.EditClientCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.EditTeacherCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.EmptyCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.LoginationCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.LogoutCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllAvailiableDatesCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllClientCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadAllGroupCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllLevelCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllMembershipTypesCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllScheduleCommandImpl;
@@ -40,8 +45,10 @@ import by.jwd.finaltaskweb.controller.impl.ReadVisitsByClientAndPeriodCommandImp
 import by.jwd.finaltaskweb.controller.impl.ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadDanceClassByGroupAndDateCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.RegistrationCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.TeacherRegistrationCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdateClientCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdatePasswordCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.UpdateTeacherCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdateVisitStatusCommandImpl;
 
 public class CommandProvider {
@@ -54,11 +61,18 @@ public class CommandProvider {
 		commands.put(CommandEnum.READALLSCHEDULE, new ReadAllScheduleCommandImpl());
 		commands.put(CommandEnum.READALLTEACHER, new ReadAllTeacherCommandImpl());
 		commands.put(CommandEnum.READALLCLIENT, new ReadAllClientCommandImpl());
+		commands.put(CommandEnum.EDITCLIENT, new EditClientCommandImpl());
+		commands.put(CommandEnum.DELETECLIENT, new DeleteClientCommandImpl());
+		commands.put(CommandEnum.EDITTEACHER, new EditTeacherCommandImpl());
+		commands.put(CommandEnum.DELETETEACHER, new DeleteTeacherCommandImpl());
+		commands.put(CommandEnum.READALLGROUP, new ReadAllGroupCommandImpl());
 		commands.put(CommandEnum.READALLMEMBERSHIPTYPES, new ReadAllMembershipTypesCommandImpl());
 		commands.put(CommandEnum.LOGINATION, new LoginationCommandImpl());
 		commands.put(CommandEnum.REGISTRATION, new RegistrationCommandImpl());
+		commands.put(CommandEnum.REGISTRATIONTEACHER, new TeacherRegistrationCommandImpl());
 		commands.put(CommandEnum.LOGOUT, new LogoutCommandImpl());
 		commands.put(CommandEnum.UPDATECLIENT, new UpdateClientCommandImpl());
+		commands.put(CommandEnum.UPDATETEACHER, new UpdateTeacherCommandImpl());
 		commands.put(CommandEnum.UPDATEPASSWORD, new UpdatePasswordCommandImpl());
 		commands.put(CommandEnum.PLANNEDVISITS, new ReadPlannedVisitsByClientCommandImpl());
 		commands.put(CommandEnum.MYVALIDMEMBERSHIPS, new ReadValidMembershipsByClientCommandImpl());

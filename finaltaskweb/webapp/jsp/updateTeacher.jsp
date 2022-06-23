@@ -38,14 +38,16 @@
 			}
 		};
 	</script>
-
 	<div class="wrapper">
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class=row>
+				<div class="col-lg-2">
+					<u:adminmenu />
+				</div>
 				<div class="col-lg-10">
 					<h1 class="subtitle">
-						<fmt:message key="clientMain.updateClient" bundle="${ rb }" />
+						<fmt:message key="updateTeacher" bundle="${ rb }" />
 					</h1>
 					<div class="row">
 						<div class="col-sm-2 col-lg-4"></div>
@@ -54,26 +56,24 @@
 								<label for="surname"><fmt:message
 										key="updateProfile.surname" bundle="${ rb }" /></label><br> <input
 									type="text" class="form-control" id="surname" name="surname"
-									value="${client.surname }" readonly> <label for="name"><fmt:message
+									value="${teacher.surname }" readonly> <label for="name"><fmt:message
 										key="updateProfile.name" bundle="${ rb }" /></label><br> <input
 									type="text" class="form-control" id="name" name="name"
-									value="${client.name }" readonly> <label
-									for="patronymic"><fmt:message
-										key="registration.patronymic" bundle="${ rb }" /></label><br> <input
-									type="text" class="form-control" id="patronymic"
-									name="patronymic" value="${client.patronymic}"
-									readonly="readonly"> <label for="email"><fmt:message
-										key="updateProfile.email" bundle="${ rb }" /></label><br> <input
-									type="email" class="form-control" id="email" name="email"
-									value="${client.email}" readonly> <label for="phone"><fmt:message
-										key="registration.phone" bundle="${ rb }" /></label><br> <input
-									type="text" class="form-control" id="phone" name="phone"
-									value="${client.phone}" readonly> <br>
+									value="${teacher.name }" readonly> <label
+									for="style"><fmt:message key="registration.style"
+										bundle="${ rb }" /></label><br> <input type="text"
+									class="form-control" id="style" name="style"
+									value="${teacher.danceStyle}" readonly="readonly"> <label
+									for="portfolio"><fmt:message key="registration.portfolio"
+										bundle="${ rb }" /></label><br>
+									<input type="text"
+									class="form-control" id="portfolio" name="portfolio"
+									value="${teacher.portfolio}" readonly="readonly">	
 								<button type="button" class="btn colorBtn" onclick="isEdit()">
 									<fmt:message key="edit" bundle="${ rb }" />
 								</button>
 								<button type="submit" class="btn colorBtn" name="command"
-									value="UPDATECLIENT">
+									value="UPDATETEACHER">
 									<fmt:message key="save" bundle="${ rb }" />
 								</button>
 							</form>

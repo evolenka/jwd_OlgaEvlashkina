@@ -94,8 +94,7 @@ public class CommandServlet extends HttpServlet {
 		// определение команды, пришедшей из JSP
 		CommandProvider provider = new CommandProvider();
 		Command command = provider.getCommand(request);
-		logger.debug("command {}", command);
-
+		
 		/*
 		 * вызов реализованного метода execute() и передача параметров
 		 * классу-обработчику конкретной команды
