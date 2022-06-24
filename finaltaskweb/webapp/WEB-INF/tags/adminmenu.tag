@@ -26,7 +26,7 @@
 			</li>
 			<li class="nav-item">
 				<button type="submit" class="btn clientMenuBtn btn-light"
-					name="command" value="READALLTEACHER">
+					name="command" value="READALLTEACHERBYADMIN">
 					<fmt:message key="teachers" bundle="${ rb }" />
 				</button>
 			</li>

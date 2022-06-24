@@ -22,4 +22,6 @@ public interface UserDao extends StudioDao<Integer, User> {
 	public List<Client> readAllClient(int startIndex, int endIndex) throws DaoException;
 
 	public int countClient() throws DaoException;
+
+	public Teacher readBySurname(String surname) throws DaoException;
 }

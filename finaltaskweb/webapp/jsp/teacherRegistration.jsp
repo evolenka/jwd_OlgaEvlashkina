@@ -22,6 +22,7 @@
 <c:url value="img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${icon}"/>">
 <c:url value="index.jsp" var="main" />
+<c:url value="teacherRegistration.jsp" var="regLink" />
 </head>
 <body>
 	<div class="wrapper">

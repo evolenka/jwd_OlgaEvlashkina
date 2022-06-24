@@ -26,7 +26,8 @@ public class GroupDaoImpl extends StudioDaoImpl implements GroupDao {
 	private static final String SQL_SELECT_BY_ID = "SELECT group.title, group.teacher_id, group.level FROM `group` WHERE group.id = ?";
 	private static final String SQL_SELECT_BY_LEVEL = "SELECT group.id, group.title, group.teacher_id FROM `group` WHERE level = ?";
 	private static final String SQL_SELECT_BY_TEACHER_ID = "SELECT group.id, group.title, group.level FROM `group` WHERE teacher_id = ?";
-		
+	private static final String SQL_SELECT_BY_TITLE = "SELECT group.id,  group.teacher_id, group.level FROM `group` WHERE title = ?";
+
 	private static final String SQL_INSERT_GROUP = "INSERT INTO `group` (title, teacher_id, level) VALUES (?, ?, ?)";
 
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM `group` WHERE id = ?";
@@ -223,4 +224,65 @@ public class GroupDaoImpl extends StudioDaoImpl implements GroupDao {
 		return groups;
 	}
 
+	@Override
+	public Group readByTitle(String title) throws DaoException {
+
+		Group group = null;
+
+		PreparedStatement statement = null;
+
+		try {
+
+			statement = connection.prepareStatement(SQL_SELECT_BY_TITLE);
+			statement.setString(1, title);
+
+			ResultSet resultSet = statement.executeQuery();
+
+			while (resultSet.next()) {
+
+				group = new Group(resultSet.getInt(1));
+				group.setTitle(title);
+				group.setTeacher(new Teacher(resultSet.getInt(2)));
+				group.setLevel(Level.valueOf(resultSet.getString(3)));
+
+				logger.debug("group has been read by title {}", group);
+			}
+
+		} catch (SQLException e) {
+			throw new DaoException();
+		} finally {
+			close(statement);
+		}
+		return group;
+	}
+
+	@Override
+	public Integer createGroup(Group group) throws DaoException {
+
+		PreparedStatement statement = null;
+		Integer groupId = null;
+
+		try {
+			statement = connection.prepareStatement(SQL_INSERT_GROUP, Statement.RETURN_GENERATED_KEYS);
+		
+			statement.setString(1, group.getTitle());
+			statement.setInt(2, group.getTeacher().getId());
+			statement.setString(3, group.getLevel().toString());
+			logger.debug(statement.toString());
+		
+			statement.executeUpdate();
+			logger.debug("group has been created");
+
+			ResultSet resultSet = statement.getGeneratedKeys();
+			if (resultSet.next()) {
+				groupId = resultSet.getInt(1);
+				logger.debug(groupId);
+			}
+		} catch (SQLException e) {
+			throw new DaoException();
+		} finally {
+			close(statement);
+		}
+		return groupId;
+	}
 }

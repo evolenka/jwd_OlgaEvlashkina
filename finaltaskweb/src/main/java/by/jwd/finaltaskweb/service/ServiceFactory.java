@@ -2,10 +2,12 @@ package by.jwd.finaltaskweb.service;
 
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.TransactionFactoryImpl;
-import by.jwd.finaltaskweb.service.impl.BuilderClient;
-import by.jwd.finaltaskweb.service.impl.BuilderMembership;
-import by.jwd.finaltaskweb.service.impl.BuilderTeacher;
-import by.jwd.finaltaskweb.service.impl.BuilderVisit;
+import by.jwd.finaltaskweb.service.builder.BuilderClient;
+import by.jwd.finaltaskweb.service.builder.BuilderGroup;
+import by.jwd.finaltaskweb.service.builder.BuilderMembership;
+import by.jwd.finaltaskweb.service.builder.BuilderSchedule;
+import by.jwd.finaltaskweb.service.builder.BuilderTeacher;
+import by.jwd.finaltaskweb.service.builder.BuilderVisit;
 import by.jwd.finaltaskweb.service.impl.DanceClassServiceImpl;
 import by.jwd.finaltaskweb.service.impl.GroupServiceImpl;
 import by.jwd.finaltaskweb.service.impl.MembershipServiceImpl;
@@ -28,6 +30,8 @@ public class ServiceFactory {
 	private BuilderTeacher teacherBuilder = new BuilderTeacher();
 	private BuilderMembership membershipBuilder = new BuilderMembership();
 	private BuilderVisit visitbuilder = new BuilderVisit();
+	private BuilderGroup groupbuilder = new BuilderGroup();
+	private BuilderSchedule schedulebuilder = new BuilderSchedule();
 
 	private ServiceFactory() {
 	}
@@ -111,4 +115,12 @@ public class ServiceFactory {
 	public BuilderTeacher getTeacherBuilder() {
 		return teacherBuilder;
 	}
+
+	public BuilderGroup getGroupbuilder() {
+		return groupbuilder;
+	}
+
+	public BuilderSchedule getSchedulebuilder() {
+		return schedulebuilder;
+	}	
 }

@@ -1,6 +1,7 @@
 package by.jwd.finaltaskweb.controller;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 import javax.servlet.RequestDispatcher;
@@ -61,40 +62,47 @@ public class CommandServlet extends HttpServlet {
 
 	private void processRequest(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		logger.debug("receive request");
 		String page = null;
-				
+
 		HttpSession session = request.getSession(true);
-								
-		String language = (String) session.getAttribute("language");
+		
+		logger.debug(session.getAttribute("language"));
+
+		if (session.getAttribute("language") == null) {
+			String locale = Locale.getDefault().toString();
+			logger.debug("locale {}", locale);
+			session.setAttribute("language", locale);
+		}
+
+		String language = session.getAttribute("language").toString();
 		logger.debug("language {}", language);
 
 		MessageManager manager;
 
 		switch (language) {
-		case "en":
+		case "en", "en_US":
 			manager = MessageManager.EN;
 			break;
-		case "ru":
+		case "ru", "ru_RU":
 			manager = MessageManager.RU;
 			break;
-		case "be":
+		case "be", "be_BY":
 			manager = MessageManager.BY;
 			break;
 		default:
 			manager = MessageManager.EN;
 		}
-	
-		
+
 		if (session.getAttribute("role") == null) {
-			session.setAttribute("role",  request.getParameter("role"));
+			session.setAttribute("role", request.getParameter("role"));
 		}
 
 		// определение команды, пришедшей из JSP
 		CommandProvider provider = new CommandProvider();
 		Command command = provider.getCommand(request);
-		
+
 		/*
 		 * вызов реализованного метода execute() и передача параметров
 		 * классу-обработчику конкретной команды

@@ -31,10 +31,7 @@ public class ReadAllStyleCommandImpl implements Command {
 
 		String page = null;
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
-		logger.debug("language {}", language);
-
-		
+				
 		try {
 			List<String> styles = factory.getUserService().readAllDanceStyle();
 			session.setAttribute("styles", styles);

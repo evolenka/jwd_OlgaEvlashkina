@@ -32,9 +32,7 @@ public class ReadAvailiableDatesByGroupCommandImpl implements Command {
 
 		String page = null;
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
-		logger.debug("language {}", language);
-
+	
 		Integer groupId = Integer.valueOf(request.getParameter("groupId"));
 		logger.debug("groupId {}", groupId);
 

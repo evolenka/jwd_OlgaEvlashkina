@@ -12,8 +12,13 @@ import by.jwd.finaltaskweb.dao.DaoFactory;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Level;
+import by.jwd.finaltaskweb.entity.Membership;
+import by.jwd.finaltaskweb.entity.MembershipType;
 import by.jwd.finaltaskweb.entity.Schedule;
+import by.jwd.finaltaskweb.entity.Status;
 import by.jwd.finaltaskweb.entity.Teacher;
+import by.jwd.finaltaskweb.entity.Type;
+import by.jwd.finaltaskweb.entity.Visit;
 import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.GroupService;
 import by.jwd.finaltaskweb.service.ServiceException;
@@ -86,15 +91,41 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 
 	@Override
 	public boolean create(Group group) throws ServiceException {
+	
 		try {
-			factory.getGroupDao(transaction).create(group);
+			Integer groupId = factory.getGroupDao(transaction).createGroup(group);
+			logger.debug("groupId {}", groupId);
+			
+		
+			Group createdGroup = factory.getGroupDao(transaction).readEntityById(groupId);
+			logger.debug("group {}", createdGroup);
+			
+			for (Schedule schedule : group.getSchedule()){
+				schedule.setGroup(createdGroup);
+				factory.getScheduleDao(transaction).create(schedule);
+			}
 			transaction.close();
 
 		} catch (DaoException e) {
-			throw new ServiceException();
+			
+			try {
+				transaction.rollback();
+			} catch (DaoException e1) {
+				logger.debug("rollback error");
+				throw new ServiceException();
+			}
+		} finally {
+			try {
+				transaction.setAutoCommit(true);
+			} catch (DaoException e1) {
+				logger.debug("setAutoCommit error");
+				throw new ServiceException();
+				
+			}
 		}
 		return true;
 	}
+	
 
 	@Override
 	public boolean update(Group group) throws ServiceException {
@@ -246,5 +277,21 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 		}
 		logger.debug("groups {}", groups);
 		return groups;
+	}
+
+	@Override
+	public Group readByTitle(String title) throws ServiceException {
+		Group group = null;
+
+		try {
+			group = factory.getGroupDao(transaction).readByTitle(title);
+
+			transaction.close();
+
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		logger.debug("group {}", group);
+		return group;
 	}
 }

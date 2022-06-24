@@ -16,10 +16,13 @@ import by.jwd.finaltaskweb.controller.impl.ConfirmVisitCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.CreateMembershipCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.CreateVisitCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.DeleteClientCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.DeleteGroupCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.DeleteTeacherCommandImpl;
-import by.jwd.finaltaskweb.controller.impl.EditClientCommandImpl;
-import by.jwd.finaltaskweb.controller.impl.EditTeacherCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ChooseClientToEditCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ChooseGroupToEditCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ChooseTeacherToEditCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.EmptyCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.CreateGroupCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.LoginationCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.LogoutCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllAvailiableDatesCommandImpl;
@@ -30,6 +33,7 @@ import by.jwd.finaltaskweb.controller.impl.ReadAllMembershipTypesCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllScheduleCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllStyleCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllTeacherCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.ReadAllTeacherByAdminCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllWeekDayCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAvailiableDatesByGroupCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupByDateCommandImpl;
@@ -47,6 +51,7 @@ import by.jwd.finaltaskweb.controller.impl.ReadDanceClassByGroupAndDateCommandIm
 import by.jwd.finaltaskweb.controller.impl.RegistrationCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.TeacherRegistrationCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdateClientCommandImpl;
+import by.jwd.finaltaskweb.controller.impl.UpdateGroupCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdatePasswordCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdateTeacherCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.UpdateVisitStatusCommandImpl;
@@ -60,16 +65,18 @@ public class CommandProvider {
 	public CommandProvider() {
 		commands.put(CommandEnum.READALLSCHEDULE, new ReadAllScheduleCommandImpl());
 		commands.put(CommandEnum.READALLTEACHER, new ReadAllTeacherCommandImpl());
+		commands.put(CommandEnum.READALLTEACHERBYADMIN, new ReadAllTeacherByAdminCommandImpl());
 		commands.put(CommandEnum.READALLCLIENT, new ReadAllClientCommandImpl());
-		commands.put(CommandEnum.EDITCLIENT, new EditClientCommandImpl());
+		commands.put(CommandEnum.EDITCLIENT, new ChooseClientToEditCommandImpl());
 		commands.put(CommandEnum.DELETECLIENT, new DeleteClientCommandImpl());
-		commands.put(CommandEnum.EDITTEACHER, new EditTeacherCommandImpl());
+		commands.put(CommandEnum.EDITTEACHER, new ChooseTeacherToEditCommandImpl());
 		commands.put(CommandEnum.DELETETEACHER, new DeleteTeacherCommandImpl());
 		commands.put(CommandEnum.READALLGROUP, new ReadAllGroupCommandImpl());
 		commands.put(CommandEnum.READALLMEMBERSHIPTYPES, new ReadAllMembershipTypesCommandImpl());
 		commands.put(CommandEnum.LOGINATION, new LoginationCommandImpl());
 		commands.put(CommandEnum.REGISTRATION, new RegistrationCommandImpl());
-		commands.put(CommandEnum.REGISTRATIONTEACHER, new TeacherRegistrationCommandImpl());
+		commands.put(CommandEnum.TEACHERREGISTRATION, new TeacherRegistrationCommandImpl());
+		commands.put(CommandEnum.CREATEGROUP, new CreateGroupCommandImpl());
 		commands.put(CommandEnum.LOGOUT, new LogoutCommandImpl());
 		commands.put(CommandEnum.UPDATECLIENT, new UpdateClientCommandImpl());
 		commands.put(CommandEnum.UPDATETEACHER, new UpdateTeacherCommandImpl());
@@ -97,6 +104,9 @@ public class CommandProvider {
 		commands.put(CommandEnum.CANCELMARKEDPRESENCE, new CancelUpdateStatusCommandImpl());
 		commands.put(CommandEnum.READVISITSBYGROUPANDDATE, new ReadDanceClassByGroupAndDateCommandImpl());
 		commands.put(CommandEnum.READGROUPSBYTEACHER, new ReadGroupsByTeacherCommandImpl());
+		commands.put(CommandEnum.EDITGROUP, new ChooseGroupToEditCommandImpl());
+		commands.put(CommandEnum.UPDATEGROUP, new UpdateGroupCommandImpl());
+		commands.put(CommandEnum.DELETEGROUP, new DeleteGroupCommandImpl());
 		commands.put(CommandEnum.READVISITCOUNTBYTEACHERGROUPSANDPERIOD, new ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl());
 		commands.put(CommandEnum.WRONGCOMMAND, new EmptyCommandImpl());
 	}
@@ -104,8 +114,7 @@ public class CommandProvider {
 	public Command getCommand(HttpServletRequest request) {
 		
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
-
+		String language = session.getAttribute("language").toString();
 		logger.debug("language {}", language);
 
 	

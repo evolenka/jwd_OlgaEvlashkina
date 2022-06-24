@@ -29,10 +29,7 @@
 
 			String page = null;
 			HttpSession session = request.getSession(true);
-			String language = (String) session.getAttribute("language");
-			logger.debug("language {}", language);
-
-		
+					
 				List<WeekDay> weekdays = Arrays.asList(WeekDay.values());
 				session.setAttribute("weekdays", weekdays);
 				logger.debug("weekdays {}", weekdays);

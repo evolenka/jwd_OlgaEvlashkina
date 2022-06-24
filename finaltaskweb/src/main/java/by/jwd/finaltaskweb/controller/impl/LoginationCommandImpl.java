@@ -33,7 +33,7 @@ public class LoginationCommandImpl implements Command {
 		String page = null;
 		
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
+		String language = session.getAttribute("language").toString();
 		
 		logger.debug("language {}", language);
 		
@@ -62,7 +62,7 @@ public class LoginationCommandImpl implements Command {
 		logger.debug("reqLogin {}", login);
 		session.setAttribute("password", request.getParameter("password"));		
 		password = request.getParameter("password");
-		logger.debug("reqPassword {}", password);
+		
 		
 		} else if (session.getAttribute("login") !=null && session.getAttribute("password") !=null) {
 			login = (String) session.getAttribute("login");

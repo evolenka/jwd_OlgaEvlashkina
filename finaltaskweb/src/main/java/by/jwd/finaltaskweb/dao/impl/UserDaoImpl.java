@@ -36,6 +36,8 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 
 	private static final String SQL_SELECT_BY_DANCESTYLE = "SELECT user.id, user.login, user.password, user.role, teacher.name, teacher.surname, teacher.portfolio FROM `user` join `teacher`ON user.id = teacher.id WHERE teacher.dancestyle = ?";
 
+	private static final String SQL_SELECT_TEACHER_BY_SURNAME = "SELECT user.id, user.login, user.password, user.role, teacher.name, teacher.dancestyle, teacher.portfolio FROM `user` join `teacher`ON user.id = teacher.id WHERE teacher.surname = ?";
+
 	private static final String SQL_INSERT_USER = "INSERT INTO user(login, password, role) VALUES (?, ?, ?)";
 	private static final String SQL_INSERT_CLIENT = "INSERT INTO client (id, surname, name, patronymic, phone, email)  VALUES (?, ?, ?, ?, ?, ?)";
 	private static final String SQL_INSERT_TEACHER = "INSERT INTO teacher (id, surname, name, dancestyle, teacher.portfolio)  VALUES (?, ?, ?, ?, ?)";
@@ -618,5 +620,39 @@ public class UserDaoImpl extends StudioDaoImpl implements UserDao {
 		}
 		logger.debug("clients have been counted");
 		return count;
+	}
+
+	@Override
+	public Teacher readBySurname(String surname) throws DaoException {
+
+		Teacher teacher = null;
+		PreparedStatement statement = null;
+
+		try {
+
+			statement = connection.prepareStatement(SQL_SELECT_TEACHER_BY_SURNAME);
+			statement.setString(1, surname);
+
+			ResultSet resultSet = statement.executeQuery();
+
+			while (resultSet.next()) {
+
+				teacher = new Teacher(resultSet.getInt(1));
+				teacher.setLogin(resultSet.getString(2));
+				teacher.setPassword(resultSet.getString(3));
+				teacher.setName(resultSet.getString(5));
+				teacher.setSurname(surname);
+				teacher.setDanceStyle(resultSet.getString(6));
+				teacher.setPortfolio(resultSet.getString(7));
+
+			}
+		} catch (SQLException e) {
+			throw new DaoException();
+		} finally {
+			close(statement);
+
+		}
+		logger.debug("teacher have been read by surname {}", teacher);
+		return teacher;
 	}
 }

@@ -1,4 +1,4 @@
-package by.jwd.finaltaskweb.service.impl;
+package by.jwd.finaltaskweb.service.builder;
 
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Membership;

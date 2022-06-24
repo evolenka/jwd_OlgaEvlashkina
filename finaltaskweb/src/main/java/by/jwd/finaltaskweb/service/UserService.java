@@ -26,4 +26,6 @@ public interface UserService extends StudioService<Integer, User> {
 
 	public int countClient() throws ServiceException;
 
+	public Teacher readBySurname(String surname) throws ServiceException;
+
 }

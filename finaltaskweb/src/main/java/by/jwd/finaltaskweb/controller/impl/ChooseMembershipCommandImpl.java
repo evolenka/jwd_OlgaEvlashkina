@@ -32,7 +32,7 @@ public class ChooseMembershipCommandImpl implements Command {
 		String page;
 
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
+		String language = session.getAttribute("language").toString();
 
 		logger.debug("language {}", language);
 

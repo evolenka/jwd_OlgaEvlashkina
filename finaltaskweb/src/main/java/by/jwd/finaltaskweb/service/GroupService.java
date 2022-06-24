@@ -18,4 +18,6 @@ public interface GroupService extends StudioService<Integer, Group> {
 	public List<Group> readByDate (LocalDate date) throws ServiceException;
 	
 	public List<Group> readByTeacher (Integer teacherId) throws ServiceException;
+
+	public Group readByTitle(String title) throws ServiceException;
 }

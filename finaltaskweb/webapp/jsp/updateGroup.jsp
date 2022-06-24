@@ -21,26 +21,43 @@
 <link rel="stylesheet" href="<c:out value="${css}"/>">
 <c:url value="img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${icon}"/>">
-<c:url value="index.jsp" var="main" />
-<c:url value="groupRegistration.jsp" var="regLink" />
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 </head>
 <body>
+	<script type="text/javascript">
+		function isEdit() {
+			const submitList = document.querySelectorAll('input');
+			for (let i = 0, length = submitList.length; i < length; i++) {
+				submitList[i].removeAttribute('readonly');
+			}
+		};
+	</script>
 	<div class="wrapper">
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
-			<h1 class="subtitle">
-				<fmt:message key="registrationForm" bundle="${ rb }" />
-			</h1>
-			<div class="row">
-				<div class="col-sm-2 col-lg-4"></div>
-				<div class="col-sm-8 col-lg-4">
-					<form method="post" action="action" class="needs-validation">
+			<div class=row>
+				<div class="col-lg-2">
+					<u:adminmenu />
+				</div>
+				<div class="col-lg-10">
+					<h1 class="subtitle">
+						<fmt:message key="updateGroup" bundle="${ rb }" />
+					</h1>
+					<div class="row">
+						<div class="col-sm-2 col-lg-4"></div>
+						<div class="col-sm-8 col-lg-4">
+							
+							<form method="post" action="action" class="needs-validation">
 						<label for="group"><fmt:message key="group.title"
 								bundle="${ rb }" /></label><br> <input type="text"
-							class="form-control" id="group" name="group" required>
-						<p class=error>
-							<c:out value="${errorGroupTitleMessage}" />
-						</p>
+							class="form-control" id="group" name="group" value="${group.title}" readonly>
+						
 						<label for="teacher"> <fmt:message key="teacher"
 								bundle="${ rb }" /></label><br> <select id="teacher"
 							name="teacher">
@@ -66,31 +83,34 @@
 							<br>
 						</c:forEach>
 						 <br> <label for="time"><fmt:message
-								key="time" bundle="${ rb }" /></label><br> <input type="time"
-							class="form-control" id="time" name="time" required> <label
+								key="time" bundle="${ rb }" /></label><br> 
+															
+								<input type="time"
+							class="form-control" id="time" name="time" value="${group.schedule[0].time}" readonly> <label
 							for="duration"><fmt:message key="duration"
 								bundle="${ rb }" /></label><br> <input type="text"
-							class="form-control" id="duration" name="duration" required>
-						<br>
-						<button type="submit" class="btn btn-secondary pl-3"
-							name="command" value="CREATEGROUP">
-							<fmt:message key="register" bundle="${ rb }" />
-						</button>
-						<a class="btn btn-light text-dark"
-							href='<c:out value="${regLink}"/>'><fmt:message key="resert"
-								bundle="${ rb }" /></a>
-					</form>
-					<p class=success>
-						<c:out value="${successRegMessage}" />
-					</p>
-					<p class=error>
-						<c:out value="${errorRegMessage }" />
-					</p>
-					<p class="text-small">
-						<fmt:message key="comment" bundle="${ rb }" />
-					</p>
+							class="form-control" id="duration" name="duration" value="${group.schedule[0].duration}" readonly>
+							
+									
+								<button type="button" class="btn colorBtn" onclick="isEdit()">
+									<fmt:message key="edit" bundle="${ rb }" />
+								</button>
+								<button type="submit" class="btn colorBtn" name="command"
+									value="UPDATEGROUP">
+									<fmt:message key="save" bundle="${ rb }" />
+								</button>
+							</form>
+							<p class=success>
+								<c:out value="${successUpdateUserMessage}" />
+							</p>
+							<p class=error>
+								<c:out value="${errorMessage }" />
+								<c:out value="${errorNoSession}" />
+							</p>
+						</div>
+						<div class="col-sm-2 col-lg-4"></div>
+					</div>
 				</div>
-				<div class="col-sm-2 col-lg-4"></div>
 			</div>
 		</div>
 		<u:footer />

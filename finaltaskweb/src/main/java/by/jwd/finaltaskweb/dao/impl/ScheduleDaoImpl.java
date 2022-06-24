@@ -204,7 +204,7 @@ public class ScheduleDaoImpl extends StudioDaoImpl implements ScheduleDao {
 		PreparedStatement statement = null;
 
 		try {
-			// if(!danceClass.getId()==null) {
+
 			statement = connection.prepareStatement(SQL_INSERT_SCHEDULE);
 
 			statement.setString(1, schedule.getWeekDay().toString());
@@ -212,8 +212,10 @@ public class ScheduleDaoImpl extends StudioDaoImpl implements ScheduleDao {
 			statement.setInt(3, schedule.getDuration());
 			statement.setInt(4, schedule.getGroup().getId());
 
+			logger.debug("statement {}", statement.toString());
 			statement.executeUpdate();
 			logger.debug("schedule has been created");
+
 		} catch (SQLException e) {
 			throw new DaoException();
 		} finally {

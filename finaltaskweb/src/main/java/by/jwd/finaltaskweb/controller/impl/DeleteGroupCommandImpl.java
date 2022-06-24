@@ -1,7 +1,5 @@
 package by.jwd.finaltaskweb.controller.impl;
 
-import java.time.LocalDate;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -11,20 +9,18 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
-import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * CancelUpdateStatusCommandImpl implements command to cancel marked by mistake
- * presence or absence of the client on the dance class
+ * DeleteGroupCommandImpl implements command to delete group by admin
  * 
  * @author Evlashkina
  *
  */
-public class CancelUpdateStatusCommandImpl implements Command {
+public class DeleteGroupCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(CancelUpdateStatusCommandImpl.class);
+	private static Logger logger = LogManager.getLogger(DeleteGroupCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -32,8 +28,10 @@ public class CancelUpdateStatusCommandImpl implements Command {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
+
 		HttpSession session = request.getSession(true);
 		String language = session.getAttribute("language").toString();
+
 		logger.debug("language {}", language);
 
 		MessageManager manager;
@@ -51,35 +49,32 @@ public class CancelUpdateStatusCommandImpl implements Command {
 		default:
 			manager = MessageManager.EN;
 		}
-		Integer teacherId = (Integer) session.getAttribute("teacherId");
-		logger.debug("teacher id {}", teacherId);
+
+		Integer adminId = (Integer) session.getAttribute("adminId");
+		logger.debug("adminId {}", adminId);
+
+		if (request.getParameter("groupId") != null) {
+			session.setAttribute("groupId", request.getParameter("groupId"));
+		}
 
 		try {
-			if (teacherId == null) {
+			if (adminId == null) {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
-				if (request.getParameter("visitId") != null) {
-					session.setAttribute("visitId", request.getParameter("visitId"));
-					
-				}
-				Integer visitId = Integer.parseInt((String) session.getAttribute("visitId"));
-				logger.debug("visit id {}", visitId);
 
-				factory.getVisitService().cancelMarkPresence(visitId);
-				
-				Integer groupId = Integer.parseInt((String)session.getAttribute("groupId"));
-				LocalDate date = LocalDate.parse((String)session.getAttribute("visitDate"));
-				DanceClass danceClass = factory.getDanceClassService().readByDateAndGroup(date, groupId);
-				session.setAttribute("danceClass", danceClass);
-				
+				Integer groupId = Integer.parseInt((String) session.getAttribute("groupId"));
+				logger.debug("groupId {}", groupId);
+
+				factory.getGroupService().delete(groupId);
+				new ReadAllGroupCommandImpl().execute(request);
 			}
-			page = ConfigurationManager.getProperty("path.page.visitsByTeacher2");
+			page = ConfigurationManager.getProperty("path.page.groups");
+
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 			page = ConfigurationManager.getProperty("path.page.error");
 		}
-
 		return page;
 	}
 }

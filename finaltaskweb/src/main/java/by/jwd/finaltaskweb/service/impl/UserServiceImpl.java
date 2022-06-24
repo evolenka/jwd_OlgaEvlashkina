@@ -205,4 +205,17 @@ public class UserServiceImpl extends StudioServiceImpl implements UserService {
 		}
 		return count;
 	}
+
+	@Override
+	public Teacher readBySurname(String surname) throws ServiceException {
+		Teacher teacher = null;
+		try {
+			teacher = factory.getUserDao(transaction).readBySurname(surname);
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		logger.debug("teacher{}", teacher);
+		return teacher;
+	}
 }

@@ -1,26 +1,29 @@
-	package by.jwd.finaltaskweb.controller.impl;
+package by.jwd.finaltaskweb.controller.impl;
 
-	import javax.servlet.http.HttpServletRequest;
-	import javax.servlet.http.HttpSession;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
-	import org.apache.logging.log4j.LogManager;
-	import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
+import by.jwd.finaltaskweb.entity.Group;
+import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.service.ServiceException;
-	import by.jwd.finaltaskweb.service.ServiceFactory;
+import by.jwd.finaltaskweb.service.ServiceFactory;
 
-	/**
-	 * DeleteClientCommandImpl implements command to delete client by admin
+/**
+	 * ChooseGroupToEditCommandImpl implements command for selecting group to edit info
+	 * about him by admin
 	 * 
 	 * @author Evlashkina
 	 *
 	 */
-	public class DeleteClientCommandImpl implements Command {
+	public class ChooseGroupToEditCommandImpl implements Command {
 
-		private static Logger logger = LogManager.getLogger(DeleteClientCommandImpl.class);
+		private static Logger logger = LogManager.getLogger(ChooseGroupToEditCommandImpl.class);
 
 		private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -57,19 +60,21 @@ import by.jwd.finaltaskweb.service.ServiceException;
 					request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 					logger.debug("session timed out");
 				} else {
-		
-					Integer clientId = Integer.parseInt((String) request.getParameter("clientId"));
-					logger.debug("clientId {}", clientId);
+					if (request.getParameter("groupId") != null) {
+						session.setAttribute("groupId", request.getParameter("groupId"));
+					}
+					Integer groupId = Integer.parseInt((String) session.getAttribute("groupId"));
+					logger.debug("groupId {}", groupId);
 
-					factory.getUserService().delete(clientId);
-					new ReadAllClientCommandImpl().execute(request);
+					Group group = factory.getGroupService().readEntityById(groupId);
+					session.setAttribute("group", group);
+
 				}
-					page = ConfigurationManager.getProperty("path.page.clients");
-				
+				page = ConfigurationManager.getProperty("path.page.updateGroup");
 			} catch (ServiceException e) {
 				request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 				page = ConfigurationManager.getProperty("path.page.error");
 			}
 			return page;
 		}
-}
+	}

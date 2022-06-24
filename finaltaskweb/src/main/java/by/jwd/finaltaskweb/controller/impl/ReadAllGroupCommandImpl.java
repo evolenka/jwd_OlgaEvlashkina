@@ -1,5 +1,6 @@
 package by.jwd.finaltaskweb.controller.impl;
 
+import java.util.Arrays;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,9 @@ import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.Group;
+import by.jwd.finaltaskweb.entity.Level;
+import by.jwd.finaltaskweb.entity.Teacher;
+import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
@@ -33,7 +37,7 @@ public class ReadAllGroupCommandImpl implements Command {
 		String page = null;
 
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
+		String language = session.getAttribute("language").toString();
 
 		logger.debug("language {}", language);
 
@@ -62,8 +66,19 @@ public class ReadAllGroupCommandImpl implements Command {
 			} else {
 
 				List<Group> groups = ServiceFactory.getInstance().getGroupService().readAll();
-				request.setAttribute("groups", groups);
+				session.setAttribute("groups", groups);
 				
+				List<Teacher> teachers = ServiceFactory.getInstance().getUserService().readAllTeacher();
+				session.setAttribute("teachers", teachers);
+				
+				List<Level> levels = Arrays.asList(Level.values());
+				session.setAttribute("levels", levels);
+				logger.debug("levels {}", levels);
+								
+				List<WeekDay> weekdays = Arrays.asList(WeekDay.values());
+				session.setAttribute("weekdays", weekdays);
+				logger.debug("weekdays {}", weekdays);
+							
 				page = ConfigurationManager.getProperty("path.page.groups");
 				logger.debug("page {}", page);
 			}

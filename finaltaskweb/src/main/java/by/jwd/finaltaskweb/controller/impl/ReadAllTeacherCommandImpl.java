@@ -16,7 +16,7 @@ import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadAllTeacherCommandImpl implements command to view all teachers by admin
+ * ReadAllTeacherCommandImpl implements command to view info about all teachers
  * 
  * 
  * @author Evlashkina
@@ -26,14 +26,14 @@ import by.jwd.finaltaskweb.service.ServiceFactory;
 public class ReadAllTeacherCommandImpl implements Command {
 
 	static Logger logger = LogManager.getLogger(ReadAllTeacherCommandImpl.class);
+
 	@Override
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
 
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
-
+		String language = session.getAttribute("language").toString();
 		logger.debug("language {}", language);
 
 		MessageManager manager;
@@ -59,12 +59,12 @@ public class ReadAllTeacherCommandImpl implements Command {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
-		
-			List <Teacher> teachers = ServiceFactory.getInstance().getUserService().readAllTeacher();
-			
-			request.setAttribute("teachers", teachers);
-			page = ConfigurationManager.getProperty("path.page.teachers");
-			logger.debug("page {}", page);
+
+				List<Teacher> teachers = ServiceFactory.getInstance().getUserService().readAllTeacher();
+
+				request.setAttribute("teachers", teachers);
+				page = ConfigurationManager.getProperty("path.page.teacherReview");
+				logger.debug("page {}", page);
 			}
 		} catch (ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));

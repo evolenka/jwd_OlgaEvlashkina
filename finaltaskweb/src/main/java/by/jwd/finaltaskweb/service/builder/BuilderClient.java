@@ -1,4 +1,4 @@
-package by.jwd.finaltaskweb.service.impl;
+package by.jwd.finaltaskweb.service.builder;
 
 import by.jwd.finaltaskweb.entity.Client;
 import by.jwd.finaltaskweb.entity.Role;
