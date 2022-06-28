@@ -13,6 +13,8 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.mysql.cj.jdbc.CallableStatement;
+
 import by.jwd.finaltaskweb.dao.DaoException;
 import by.jwd.finaltaskweb.dao.MembershipDao;
 import by.jwd.finaltaskweb.dao.StudioDaoImpl;
@@ -33,7 +35,7 @@ public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 	private static final String SQL_SELECT_TYPE_BY_ID = "SELECT title, max_class_quantity, price FROM `type_of_membership` WHERE id = ?";
 	private static final String SQL_SELECT_BY_CLIENT_AND_PERIOD = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.start_date >= ? AND membership.start_date <= ?";
 	private static final String SQL_SELECT_BY_PERIOD = "SELECT membership.id, membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.start_date >= ? AND membership.start_date <= ?";
-	private static final String SQL_SELECT_VALID_BY_CLIENT = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND (membership.balance_quantity > 0 OR membership.balance_quantity IS NULL) AND membership.end_date >= CURRENT_DATE()";
+	//private static final String SQL_SELECT_VALID_BY_CLIENT = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND (membership.balance_quantity > 0 OR membership.balance_quantity IS NULL) AND membership.end_date >= CURRENT_DATE()";
 	private static final String SQL_INSERT_MEMBERSHIP = "INSERT INTO `membership` (client_id, start_date, end_date, membership.balance_quantity, type_of_membership_id) VALUES (?, ?, ?, ?, ?)";
 	//private static final String SQL_INSERT_TYPE = "INSERT INTO `type_of_membership` (title, max_class_quantity, price) VALUES (?, ?, ?)";
 
@@ -108,13 +110,17 @@ public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 	public List<Membership> readValidByClient(Integer clientId) throws DaoException {
 
 		List<Membership> memberships = new ArrayList<>();
-
-		PreparedStatement statement = null;
+		CallableStatement statement = null;
+		
 
 		try {
-			statement = connection.prepareStatement(SQL_SELECT_VALID_BY_CLIENT);
+			
+			final String SQL = "{CALL validMembershipByClient (?)}";
+			statement = (CallableStatement) connection.prepareCall(SQL);
 			statement.setInt(1, clientId);
-
+			logger.debug("statement {}", statement);
+			statement.execute();
+			
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {

@@ -1,0 +1,1 @@
+CALL dancestudio_db.validMembershipByClient (clientId);

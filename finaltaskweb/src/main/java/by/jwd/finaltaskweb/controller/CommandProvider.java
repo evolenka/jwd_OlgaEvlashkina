@@ -39,7 +39,6 @@ import by.jwd.finaltaskweb.controller.impl.ReadAllStyleCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllTeacherCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllTeacherByAdminCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadAllWeekDayCommandImpl;
-import by.jwd.finaltaskweb.controller.impl.ReadAvailiableDatesByGroupCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupForEnrollmentByDateCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupsByDateCommandImpl;
 import by.jwd.finaltaskweb.controller.impl.ReadGroupByLevelCommandImpl;
@@ -104,7 +103,6 @@ public class CommandProvider {
 		commands.put(CommandEnum.READALLLEVEL, new ReadAllLevelCommandImpl());
 		commands.put(CommandEnum.READALLWEEKDAY, new ReadAllWeekDayCommandImpl());
 		commands.put(CommandEnum.READACTIVECLASSESBYDATE, new ReadActiveClassesByDateComandImpl());
-		commands.put(CommandEnum.READAVAILIABLEDATESBYGROUP, new ReadAvailiableDatesByGroupCommandImpl());
 		commands.put(CommandEnum.CREATEVISIT, new CreateVisitCommandImpl());
 		commands.put(CommandEnum.CONFIRMVISIT, new ConfirmVisitCommandImpl());
 		commands.put(CommandEnum.READALLAVAILIABLEDATES, new ReadAllAvailiableDatesCommandImpl());

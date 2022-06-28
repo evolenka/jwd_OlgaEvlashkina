@@ -145,7 +145,7 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 
 				schedulesAfter.get(i).setId(schedulesBefore.get(i).getId());
 				logger.debug("scheduleAfterId {}", schedulesAfter.get(i).getId());
-				
+
 				factory.getScheduleDao(transaction).update(schedulesAfter.get(i));
 				schedulesBefore.remove(schedulesBefore.get(i));
 				schedulesAfter.remove(schedulesAfter.get(i));
@@ -289,19 +289,21 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 
 		List<Group> groups = new ArrayList<>();
 		try {
-			List<DanceClass> classes = factory.getDanceClassDao(transaction).readActiveByDate(date);
+			if (date.isAfter(LocalDate.now()) || date.isEqual(LocalDate.now())) {
+				List<DanceClass> classes = factory.getDanceClassDao(transaction).readActiveByDate(date);
 
-			for (DanceClass danceClass : classes) {
-				Schedule schedule = factory.getScheduleDao(transaction)
-						.readEntityById(danceClass.getSchedule().getId());
-				Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
-				if (group != null) {
-					Teacher teacher = (Teacher) factory.getUserDao(transaction)
-							.readEntityById(group.getTeacher().getId());
-					group.setTeacher(teacher);
-					List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
-					group.setSchedule(schedules);
-					groups.add(group);
+				for (DanceClass danceClass : classes) {
+					Schedule schedule = factory.getScheduleDao(transaction)
+							.readEntityById(danceClass.getSchedule().getId());
+					Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+					if (group != null) {
+						Teacher teacher = (Teacher) factory.getUserDao(transaction)
+								.readEntityById(group.getTeacher().getId());
+						group.setTeacher(teacher);
+						List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+						group.setSchedule(schedules);
+						groups.add(group);
+					}
 				}
 			}
 			transaction.close();

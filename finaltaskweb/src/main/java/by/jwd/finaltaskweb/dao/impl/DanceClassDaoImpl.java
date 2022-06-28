@@ -27,7 +27,7 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 	private static final String SQL_SELECT_BY_ID = "SELECT danceclass.schedule_id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.id = ?";
 
 	private static final String SQL_SELECT_ACTIVE_BY_SCHEDULE = "SELECT danceclass.id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.schedule_id= ? AND danceclass.is_active = TRUE AND danceclass.date >= CURRENT_DATE()";
-
+ 
 	private static final String SQL_SELECT_BY_SCHEDULE = "SELECT danceclass.id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.schedule_id= ?";
 
 	private static final String SQL_SELECT_ACTIVE_BY_DATE = "SELECT danceclass.id, danceclass.schedule_id, danceclass.is_active FROM `danceclass` WHERE danceclass.date = ? AND danceclass.is_active = TRUE";
