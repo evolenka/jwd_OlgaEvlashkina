@@ -1,5 +1,9 @@
 package by.jwd.finaltaskweb.controller.impl;
 
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -9,11 +13,13 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
+import by.jwd.finaltaskweb.entity.Group;
+import by.jwd.finaltaskweb.entity.Level;
+import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.Teacher;
+import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
-
-	
 
 /**
  * UpdateGroupCommandImpl implements command for editing the group by admin
@@ -52,7 +58,6 @@ public class UpdateGroupCommandImpl implements Command {
 		default:
 			manager = MessageManager.EN;
 		}
-
 		Integer adminId = (Integer) session.getAttribute("adminId");
 		logger.debug("adminId {}", adminId);
 		try {
@@ -60,38 +65,56 @@ public class UpdateGroupCommandImpl implements Command {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
-				if (request.getParameter("teacherId") != null) {
-					session.setAttribute("teacherId", request.getParameter("teacherId"));
-				}
-				Integer teacherId = Integer.parseInt((String) session.getAttribute("teacherId"));
-				Teacher teacher = (Teacher) factory.getUserService().readEntityById(teacherId);
-
-				String surname = request.getParameter("surname");
+				Integer groupId = Integer.parseInt((String) session.getAttribute("groupId"));
+				logger.debug("groupId {}", groupId);
+				
+				String title = request.getParameter("group");
+				logger.debug("title {}", title);
+				String surname = request.getParameter("teacher");
 				logger.debug("surname {}", surname);
-				String name = request.getParameter("name");
-				logger.debug("name {}", name);
-				String style = request.getParameter("style");
-				logger.debug("style {}", style);
-				String portfolio = request.getParameter("portfolio");
-				logger.debug("portfolio {}", portfolio);
+				String level = request.getParameter("level");
+				logger.debug("level {}", level);
+				String[] weekdays = request.getParameterValues("weekday");
+				logger.debug("weekdays {}", weekdays.toString());
+				String time = request.getParameter("time");
+				logger.debug("name {}", time);
+				String duration = request.getParameter("duration");
+				logger.debug("duration {}", duration);
 
-				teacher = factory.getTeacherBuilder().buildTeacher(teacher.getLogin(), teacher.getPassword(), surname,
-						name, style, portfolio);
-				teacher.setId(teacherId);
-				if (factory.getUserService().update(teacher)) {
+				Teacher teacher = factory.getUserService().readBySurname(surname);
+
+				Group group = factory.getGroupbuilder().buildGroup(title, teacher, Level.valueOf(level));
+				group.setId(groupId);
+
+				List<Schedule> schedules = new ArrayList<>();
+
+				for (String weekday : weekdays) {
+					if (duration != null && time != null && weekday != null) {
+						Schedule schedule = factory.getSchedulebuilder().buildSchedule(Integer.parseInt(duration),
+								group, LocalTime.parse(time), WeekDay.valueOf(weekday));
+						schedules.add(schedule);
+					}
+				}
+				group.setSchedule(schedules);
+				logger.debug("newSchedule {}", group.getSchedule());
+
+				if (factory.getGroupService().update(group)) {
 					request.setAttribute("successUpdateUserMessage", manager.getProperty("successUpdateUserMessage"));
+					logger.debug("group has been updated");
 
 				} else {
 					request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
 				}
-				session.setAttribute("teacher", teacher);
 			}
+
 			page = ConfigurationManager.getProperty("path.page.updateGroup");
-		} catch (ServiceException e) {
+		} catch (
+
+		ServiceException e) {
 			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			logger.debug("error");
 			page = ConfigurationManager.getProperty("path.page.error");
 		}
 		return page;
 	}
-
 }

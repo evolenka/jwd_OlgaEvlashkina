@@ -148,6 +148,7 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 		for (Membership membership : memberships) {
 			sum += membership.getType().getPrice();
 		}
+		logger.debug("sum {}", sum);
 		return sum;
 	}
 
@@ -155,9 +156,9 @@ public class MembershipServiceImpl extends StudioServiceImpl implements Membersh
 	public int countQuantityForPeriod(LocalDate startDate, LocalDate endDate) throws ServiceException {
 		int quantity = 0;
 		List<Membership> memberships = readByPeriod(startDate, endDate);
-		for (Membership membership : memberships) {
-			quantity += membership.getType().getPrice();
-		}
+		quantity = memberships.size();
+		
+		logger.debug("quantuty {}", quantity);
 		return quantity;
 	}
 

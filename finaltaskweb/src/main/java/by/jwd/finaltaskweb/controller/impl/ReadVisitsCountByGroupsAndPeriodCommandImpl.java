@@ -16,16 +16,15 @@ import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements command for
- * viewing by teacher the visits statistics in his groups within the selected
- * period
+ * ReadVisitsCountByGroupsAndPeriodCommandImpl implements command for viewing by
+ * admin the visits statistics in all groups within the selected period
  * 
  * @author Evlashkina
  *
  */
-public class ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements Command {
+public class ReadVisitsCountByGroupsAndPeriodCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl.class);
+	private static Logger logger = LogManager.getLogger(ReadVisitsCountByGroupsAndPeriodCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -55,11 +54,11 @@ public class ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements Comma
 			manager = MessageManager.EN;
 		}
 
-		Integer teacherId = (Integer) session.getAttribute("teacherId");
-		logger.debug("teacher id {}", teacherId);
+		Integer adminId = (Integer) session.getAttribute("adminId");
+		logger.debug("admin id {}", adminId);
 
 		try {
-			if (teacherId == null) {
+			if (adminId == null) {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
@@ -76,15 +75,15 @@ public class ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements Comma
 					LocalDate endDate = LocalDate.parse((String) session.getAttribute("endDate"));
 					logger.debug("enddate {}", endDate);
 
-					Map<String, Integer> countVisitsByTeacherGroups = factory.getVisitService()
-							.countVisitsForPeriodByTeacherGroups(teacherId, startDate, endDate);
+					Map<String, Integer> countVisitsByGroups = factory.getVisitService()
+							.countVisitsForPeriodByAllGroups(startDate, endDate);
 
-					logger.debug("group and count {}", countVisitsByTeacherGroups.entrySet().toString());
+					logger.debug("group and count {}", countVisitsByGroups.entrySet().toString());
 
-					session.setAttribute("countVisitsByTeacherGroups", countVisitsByTeacherGroups);
+					session.setAttribute("countVisitsByGroups", countVisitsByGroups);
 				}
 			}
-			page = ConfigurationManager.getProperty("path.page.visitStatisticsForTeacher");
+			page = ConfigurationManager.getProperty("path.page.visitStatisticsForAdmin");
 
 		} catch (ServiceException e) {
 			session.setAttribute("errorMessage", manager.getProperty("errorMessage"));

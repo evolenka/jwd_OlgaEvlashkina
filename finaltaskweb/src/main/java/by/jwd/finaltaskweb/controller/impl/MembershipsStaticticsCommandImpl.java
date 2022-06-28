@@ -12,20 +12,20 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
+import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements command for
- * viewing by teacher the visits statistics in his groups within the selected
- * period
+ * MembershipsStaticticsCommandImpl implements command for viewing quantity and
+ * sum of the sold memberships for period
  * 
  * @author Evlashkina
  *
  */
-public class ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements Command {
+public class MembershipsStaticticsCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl.class);
+	private static Logger logger = LogManager.getLogger(MembershipsStaticticsCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -35,7 +35,7 @@ public class ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements Comma
 		String page = null;
 
 		HttpSession session = request.getSession(true);
-		String language = (String) session.getAttribute("language");
+		String language = session.getAttribute("language").toString();
 
 		logger.debug("language {}", language);
 
@@ -55,11 +55,10 @@ public class ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements Comma
 			manager = MessageManager.EN;
 		}
 
-		Integer teacherId = (Integer) session.getAttribute("teacherId");
-		logger.debug("teacher id {}", teacherId);
-
+		Integer adminId = (Integer) session.getAttribute("adminId");
+		logger.debug("adminId {}", adminId);
 		try {
-			if (teacherId == null) {
+			if (adminId == null) {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
 			} else {
@@ -75,16 +74,15 @@ public class ReadVisitsCountByTeacherGroupsAndPeriodCommandImpl implements Comma
 
 					LocalDate endDate = LocalDate.parse((String) session.getAttribute("endDate"));
 					logger.debug("enddate {}", endDate);
-
-					Map<String, Integer> countVisitsByTeacherGroups = factory.getVisitService()
-							.countVisitsForPeriodByTeacherGroups(teacherId, startDate, endDate);
-
-					logger.debug("group and count {}", countVisitsByTeacherGroups.entrySet().toString());
-
-					session.setAttribute("countVisitsByTeacherGroups", countVisitsByTeacherGroups);
+					
+					Integer quantity = factory.getMembershipService().countQuantityForPeriod(startDate, endDate);
+					session.setAttribute("quantity", quantity);
+					
+					Double sum = factory.getMembershipService().countSumForPeriod(startDate, endDate);
+					session.setAttribute("sum", sum);
 				}
 			}
-			page = ConfigurationManager.getProperty("path.page.visitStatisticsForTeacher");
+			page = ConfigurationManager.getProperty("path.page.membershipStatistics");
 
 		} catch (ServiceException e) {
 			session.setAttribute("errorMessage", manager.getProperty("errorMessage"));

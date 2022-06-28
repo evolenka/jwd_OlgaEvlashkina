@@ -8,7 +8,7 @@
 <fmt:setBundle basename="pagecontent" var="rb"/>
 
 <c:url value="changePassword.jsp" var="changePass"/>
-<c:url value="visitStatistics.jsp" var="visitStatistics"/>
+<c:url value="visitStatisticsForTeacher.jsp" var="visitStatistics"/>
 
 <script
 	src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>

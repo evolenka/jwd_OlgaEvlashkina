@@ -90,10 +90,7 @@
 							</c:forEach>
 						</table>
 					</form>
-					<h5>
-						<c:out value="${successCancelMessage}"></c:out>
-						<c:out value="${errorCancelMessage}"></c:out>
-					</h5>
+					
 				</div>
 			</div>
 		</div>

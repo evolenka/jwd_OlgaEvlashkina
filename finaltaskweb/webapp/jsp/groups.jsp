@@ -47,13 +47,15 @@
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class=row>
+			<div class="col-lg-12">
+				<h1 class="subtitle">
+						<fmt:message key="groups" bundle="${ rb }" />
+					</h1>
+					</div>
 				<div class="col-lg-2">
 					<u:adminmenu />
 				</div>
 				<div class="col-lg-10">
-					<h1 class="subtitle" style="margin-bottom: 50px">
-						<fmt:message key="groups" bundle="${ rb }" />
-					</h1>
 					<c:if test="${not empty groups}">
 						<a class="btn colorBtn"
 							href='<c:out value="${groupRegistration}"/>'> <fmt:message

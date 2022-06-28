@@ -1,6 +1,7 @@
 package by.jwd.finaltaskweb.service.impl;
 
 import java.time.LocalDate;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,13 +13,8 @@ import by.jwd.finaltaskweb.dao.DaoFactory;
 import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.entity.Level;
-import by.jwd.finaltaskweb.entity.Membership;
-import by.jwd.finaltaskweb.entity.MembershipType;
 import by.jwd.finaltaskweb.entity.Schedule;
-import by.jwd.finaltaskweb.entity.Status;
 import by.jwd.finaltaskweb.entity.Teacher;
-import by.jwd.finaltaskweb.entity.Type;
-import by.jwd.finaltaskweb.entity.Visit;
 import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.GroupService;
 import by.jwd.finaltaskweb.service.ServiceException;
@@ -66,6 +62,7 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 			Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
 			group.setTeacher(teacher);
 			List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+			logger.debug("schedules {}", schedules);
 			group.setSchedule(schedules);
 
 			transaction.close();
@@ -91,23 +88,22 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 
 	@Override
 	public boolean create(Group group) throws ServiceException {
-	
+
 		try {
 			Integer groupId = factory.getGroupDao(transaction).createGroup(group);
 			logger.debug("groupId {}", groupId);
-			
-		
+
 			Group createdGroup = factory.getGroupDao(transaction).readEntityById(groupId);
 			logger.debug("group {}", createdGroup);
-			
-			for (Schedule schedule : group.getSchedule()){
+
+			for (Schedule schedule : group.getSchedule()) {
 				schedule.setGroup(createdGroup);
 				factory.getScheduleDao(transaction).create(schedule);
 			}
 			transaction.close();
 
 		} catch (DaoException e) {
-			
+
 			try {
 				transaction.rollback();
 			} catch (DaoException e1) {
@@ -120,21 +116,78 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 			} catch (DaoException e1) {
 				logger.debug("setAutoCommit error");
 				throw new ServiceException();
-				
+
 			}
 		}
 		return true;
 	}
-	
 
 	@Override
 	public boolean update(Group group) throws ServiceException {
+
 		try {
+
 			factory.getGroupDao(transaction).update(group);
+			// Group updatedGroup =
+			// factory.getGroupDao(transaction).readEntityById(group.getId());
+			// logger.debug("groupAfterUpdate {}", updatedGroup);
+
+			Group groupBeforeUpdate = this.readEntityById(group.getId());
+			logger.debug("groupBeforeUpdate {}", groupBeforeUpdate);
+
+			List<Schedule> schedulesBefore = groupBeforeUpdate.getSchedule();
+			logger.debug("schedulesBefore {}", schedulesBefore);
+
+			List<Schedule> schedulesAfter = group.getSchedule();
+			logger.debug("schedulesAfter {}", schedulesAfter);
+
+			for (int i = 0; i < schedulesBefore.size(); i++) {
+
+				schedulesAfter.get(i).setId(schedulesBefore.get(i).getId());
+				logger.debug("scheduleAfterId {}", schedulesAfter.get(i).getId());
+				
+				factory.getScheduleDao(transaction).update(schedulesAfter.get(i));
+				schedulesBefore.remove(schedulesBefore.get(i));
+				schedulesAfter.remove(schedulesAfter.get(i));
+			}
+			logger.debug("schedulesBefore {}", schedulesBefore);
+			logger.debug("schedulesAfter {}", schedulesAfter);
+
+			if (!schedulesBefore.isEmpty()) {
+				for (Schedule scheduleBefore : schedulesBefore) {
+					Group groupNull = new Group();
+					scheduleBefore.setGroup(groupNull);
+					logger.debug("scheduleToUpdate {}", scheduleBefore);
+					factory.getScheduleDao(transaction).update(scheduleBefore);
+				}
+			}
+
+			if (!schedulesAfter.isEmpty()) {
+				for (Schedule scheduleAfter : schedulesAfter) {
+					scheduleAfter.setGroup(group);
+					logger.debug("scheduleToCreate {}", scheduleAfter.toString());
+					factory.getScheduleDao(transaction).create(scheduleAfter);
+				}
+			}
+
 			transaction.close();
 
 		} catch (DaoException e) {
-			throw new ServiceException();
+
+			try {
+				transaction.rollback();
+			} catch (DaoException e1) {
+				logger.debug("rollback error");
+				throw new ServiceException();
+			}
+		} finally {
+			try {
+				transaction.setAutoCommit(true);
+			} catch (DaoException e1) {
+				logger.debug("setAutoCommit error");
+				throw new ServiceException();
+
+			}
 		}
 		return true;
 	}
@@ -242,11 +295,14 @@ public class GroupServiceImpl extends StudioServiceImpl implements GroupService 
 				Schedule schedule = factory.getScheduleDao(transaction)
 						.readEntityById(danceClass.getSchedule().getId());
 				Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
-				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
-				group.setTeacher(teacher);
-				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
-				group.setSchedule(schedules);
-				groups.add(group);
+				if (group != null) {
+					Teacher teacher = (Teacher) factory.getUserDao(transaction)
+							.readEntityById(group.getTeacher().getId());
+					group.setTeacher(teacher);
+					List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(group.getId());
+					group.setSchedule(schedules);
+					groups.add(group);
+				}
 			}
 			transaction.close();
 

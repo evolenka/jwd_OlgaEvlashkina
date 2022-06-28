@@ -22,44 +22,61 @@
 <link rel="stylesheet" href="<c:out value="${css}"/>">
 <c:url value="img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${icon}"/>">
-
 </head>
 <body>
 	<div class="wrapper">
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class=row>
+				<div class="col-lg-12">
+					<h1 class="subtitle">
+						<fmt:message key="openForEnrollment" bundle="${ rb }" />
+					</h1>
+				</div>
 				<div class="col-lg-2">
-					<u:clientmenu />
+					<u:adminmenu />
 				</div>
 				<div class="col-lg-10">
-					<h1 class="subtitle">
-						<fmt:message key="clientMain.enrollment" bundle="${ rb }" />
-					</h1>
-					<div class="col-lg-4">
-						<h5>
-							<fmt:message key="enrollment.firstStep" bundle="${ rb }" />
-						</h5>
-						<form method="post" action="action">
-							<c:set var="currentdate">
-								<ctg:currentdate />
-							</c:set>
-							<input type="date" name="enrollmentDate"
-								value=${not empty enrollmentDate ? enrollmentDate : currentdate}
-								required> <br>
+					<h5>
+						<fmt:message key="visitsByTeacher.chooseGroupAndDate"
+							bundle="${ rb }" />
+					</h5>
+					<form method="post" action="action">
+						<c:set var="currentdate">
+							<ctg:currentdate />
+						</c:set>
+						<input type="date" name="classDate"
+							value=${not empty classDate ? classDate : currentdate} required>
+						<br>
+						<button type="submit" class="btn colorBtn" name="command"
+							value="READGROUPSBYDATE">
+							<fmt:message key="choose" bundle="${ rb }" />
+						</button>
+					</form>
+					<form method="post" action="action">
+						<c:if test="${not empty groupsBySchedule}">
+							<label for="group"> <fmt:message key="groups"
+									bundle="${ rb }" /></label>
+							<br>
+							<c:forEach var="group" items="${groupsBySchedule}">
+								<input type="checkbox" id="group" name="groupId"
+									value="${group.id}">
+								<c:out value = "${group.title}"/>
+								<br>
+							</c:forEach>
 							<button type="submit" class="btn colorBtn" name="command"
-								value="READGROUPFORENROLLMENTBYDATE">
-								<fmt:message key="next" bundle="${ rb }" />
+								value="CREATECLASSES">
+								<fmt:message key="confirm" bundle="${ rb }" />
 							</button>
-						</form>
-					</div>
+						</c:if>
+					</form>
 					<p>
-						<c:out value="${errorNoSession}" />
-					</p>
-				</div>
+					<c:out value="${errorNoSession}" />
+				</p>
 			</div>
 		</div>
-		<u:footer />
+	</div>
+	<u:footer />
 	</div>
 </body>
 </html>

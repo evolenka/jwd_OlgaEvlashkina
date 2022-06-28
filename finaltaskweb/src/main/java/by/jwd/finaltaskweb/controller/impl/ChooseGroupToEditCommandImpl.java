@@ -10,7 +10,6 @@ import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
 import by.jwd.finaltaskweb.entity.Group;
-import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 

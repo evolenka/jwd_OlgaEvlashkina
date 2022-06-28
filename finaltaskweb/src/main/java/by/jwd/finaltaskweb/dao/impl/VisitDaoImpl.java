@@ -28,7 +28,7 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 
 	private static final String SQL_SELECT_BY_ID = "SELECT visit.membership_id, visit.danceclass_id, visit.status FROM `visit` WHERE visit.id = ?";
 	private static final String SQL_SELECT_BY_MEMBERSHIP_AND_DANCECLASS = "SELECT visit.id, visit.status FROM `visit` WHERE visit.membership_id = ? AND visit.danceclass_id = ? ";
-	private static final String SQL_SELECT_BY_DANCECLASS = "SELECT visit.id, visit.membership_id, visit.status FROM `visit` WHERE visit.danceclass_id = ? ";
+	private static final String SQL_SELECT_BY_DANCECLASS = "SELECT visit.id, visit.membership_id, visit.status FROM `visit` WHERE visit.danceclass_id = ?";
 	private static final String SQL_SELECT_PLANNED_BY_MEMBERSHIP = "SELECT visit.id, visit.danceclass_id, visit.status FROM `visit` WHERE visit.membership_id = ? AND visit.status = 'PLANNED'";
 
 	private static final String SQL_INSERT_VISIT = "INSERT INTO visit(membership_id, danceclass_id) VALUES (?, ?)";
@@ -247,9 +247,8 @@ public class VisitDaoImpl extends StudioDaoImpl implements VisitDao {
 
 		try {
 			statement = connection.prepareStatement(SQL_SELECT_BY_DANCECLASS);
-
 			statement.setInt(1, danceClass.getId());
-
+						
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {

@@ -121,16 +121,18 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 							.readEntityById(danceClass.getSchedule().getId());
 
 					Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+					if (group != null) {
+						Teacher teacher = (Teacher) factory.getUserDao(transaction)
+								.readEntityById(group.getTeacher().getId());
 
-					Teacher teacher = (Teacher) factory.getUserDao(transaction)
-							.readEntityById(group.getTeacher().getId());
-
-					group.setTeacher(teacher);
+						group.setTeacher(teacher);
+					}
 					schedule.setGroup(group);
 					danceClass.setSchedule(schedule);
 					visit.setDanceClass(danceClass);
 
 					visits.add(visit);
+
 				}
 			}
 			transaction.close();
@@ -251,11 +253,12 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 								.readEntityById(danceClass.getSchedule().getId());
 
 						Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+						if (group != null) {
+							Teacher teacher = (Teacher) factory.getUserDao(transaction)
+									.readEntityById(group.getTeacher().getId());
 
-						Teacher teacher = (Teacher) factory.getUserDao(transaction)
-								.readEntityById(group.getTeacher().getId());
-
-						group.setTeacher(teacher);
+							group.setTeacher(teacher);
+						}
 						schedule.setGroup(group);
 						danceClass.setSchedule(schedule);
 						visit.setDanceClass(danceClass);
@@ -279,11 +282,12 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 	public List<Visit> readByGroupAndPeriod(Integer groupId, LocalDate startDate, LocalDate endDate)
 			throws ServiceException {
 
+		List<Visit> result = new ArrayList<>();
 		List<Visit> visits = null;
 		try {
 			List<DanceClass> danceClasses = factory.getDanceClassDao(transaction).readByPeriod(startDate, endDate);
-			logger.debug("danceClasses {}", danceClasses);
 
+			// fill bean with data
 			for (DanceClass danceClass : danceClasses) {
 
 				Schedule schedule = factory.getScheduleDao(transaction)
@@ -293,16 +297,24 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 				schedule.setGroup(group);
 				danceClass.setSchedule(schedule);
 
+				// select visits of the class for the given group
 				if (danceClass.getSchedule().getGroup().getId() == groupId) {
 					visits = factory.getVisitDao(transaction).readByDanceClass(danceClass);
+				}
+				if (visits != null) {
+					for (Visit visit : visits) {
+						if(!result.contains(visit)) {
+						result.add(visit);
+						}
+					}
 				}
 			}
 			transaction.close();
 		} catch (DaoException e) {
 			throw new ServiceException();
 		}
-		logger.debug("visits {}", visits);
-		return visits;
+		logger.debug("visits for group {}", result);
+		return result;
 	}
 
 	@Override
@@ -314,8 +326,10 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 			List<Group> groups = factory.getGroupDao(transaction).readAll();
 
 			for (Group group : groups) {
+			
 				int count = 0;
 				List<Visit> visits = this.readByGroupAndPeriod(group.getId(), startDate, endDate);
+				
 				for (Visit visit : visits) {
 					if (visit.getStatus() == Status.ATTENDED) {
 						count++;
@@ -344,7 +358,7 @@ public class VisitServiceImpl extends StudioServiceImpl implements VisitService 
 			for (Group group : groups) {
 				int count = 0;
 				List<Visit> visits = this.readByGroupAndPeriod(group.getId(), startDate, endDate);
-				
+
 				if (visits != null) {
 					for (Visit visit : visits) {
 						if (visit.getStatus() == Status.ATTENDED) {

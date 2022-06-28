@@ -27,7 +27,7 @@
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class=row>
-				<div class="col-lg-6">
+				<div class="col-lg-6" style="margin-top: 30px">
 					<u:adminmenu/>
 				</div>
 			</div>

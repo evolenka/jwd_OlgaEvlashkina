@@ -58,7 +58,7 @@ CREATE TABLE `schedule` (
 	`weekday` ENUM ('MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'SUNDAY'),
 	`time` TIME NOT NULL,
 	`duration` TINYINT NOT NULL,
-	`group_id` INTEGER NOT NULL,
+	`group_id` INTEGER,
 	CONSTRAINT PK_schedule PRIMARY KEY (`id`),
     CONSTRAINT FK_schedule_group FOREIGN KEY(`group_id`)
     REFERENCES `group` (`id`)

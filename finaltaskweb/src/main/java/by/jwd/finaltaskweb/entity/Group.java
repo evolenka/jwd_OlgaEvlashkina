@@ -80,7 +80,7 @@ public class Group extends Entity {
 		sb.append("\ntitle: ").append(title);
 		sb.append("\nteacher: ").append(teacher);
 		sb.append("\nlevel: ").append(level);
-		sb.append("\nschedule: ").append(schedule);
+		sb.append(schedule.toString());
 		return sb.toString();
 	}
 }

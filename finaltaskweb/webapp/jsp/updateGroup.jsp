@@ -52,46 +52,44 @@
 					<div class="row">
 						<div class="col-sm-2 col-lg-4"></div>
 						<div class="col-sm-8 col-lg-4">
-							
+
 							<form method="post" action="action" class="needs-validation">
-						<label for="group"><fmt:message key="group.title"
-								bundle="${ rb }" /></label><br> <input type="text"
-							class="form-control" id="group" name="group" value="${group.title}" readonly>
-						
-						<label for="teacher"> <fmt:message key="teacher"
-								bundle="${ rb }" /></label><br> <select id="teacher"
-							name="teacher">
-							<c:forEach var="teacher" items="${teachers}">
-								<option value="${teacher.surname}">${teacher.surname}</option>
-							</c:forEach>
-						</select> <br>
-						<br> <label for="level"> <fmt:message key="level"
-								bundle="${ rb }" /></label><br>
-						<c:forEach var="level" items="${levels}">
-							<input type="radio" id="level" name="level" value="${level}"
-								required>
-							<c:out value="${level}" />
+								<label for="group"><fmt:message key="group.title"
+										bundle="${ rb }" /></label><br> <input type="text"
+									class="form-control" id="group" name="group"
+									value="${group.title}" readonly> <label for="teacher">
+									<fmt:message key="teacher" bundle="${ rb }" />
+								</label><br> <select id="teacher" name="teacher">
+									<c:forEach var="teacherItem" items="${teachers}">
+										<option value="${teacherItem.surname}"
+											${group.teacher.surname == teacherItem.surname ? 'selected' : ''}>${teacherItem.surname}</option>
+									</c:forEach>
+								</select> <br> <br> <label for="level"> <fmt:message
+										key="level" bundle="${ rb }" /></label><br>
+								<c:forEach var="level" items="${levels}">
+									<input type="radio" id="level" name="level" value="${level}"
+										${group.level == level ? 'checked' : ''}> ${level}
 							<br>
-						</c:forEach>
-						<br>
-						<label for="weekday"> <fmt:message key="weekday"
-								bundle="${ rb }" /></label><br>
-						<c:forEach var="weekday" items="${weekdays}">
-							<input type="checkbox" id="weekday" name="weekday"
-								value="${weekday}">
-							<fmt:message key="${weekday}" bundle="${ rb }" />
-							<br>
-						</c:forEach>
-						 <br> <label for="time"><fmt:message
-								key="time" bundle="${ rb }" /></label><br> 
-															
-								<input type="time"
-							class="form-control" id="time" name="time" value="${group.schedule[0].time}" readonly> <label
-							for="duration"><fmt:message key="duration"
-								bundle="${ rb }" /></label><br> <input type="text"
-							class="form-control" id="duration" name="duration" value="${group.schedule[0].duration}" readonly>
-							
-									
+								</c:forEach>
+								<br> <label for="weekday"> <fmt:message
+										key="weekday" bundle="${ rb }" /></label><br>
+								<c:forEach var="weekday" items="${weekdays}">
+								<input type="checkbox" id="weekday" name="weekday"
+										<c:forEach var="scheduleItem" items="${group.schedule}">
+								value="${weekday}" ${scheduleItem.weekDay == weekday ? 'checked' : ''}</c:forEach>>
+									<fmt:message key="${weekday}" bundle="${ rb }" />
+									<br>
+								</c:forEach>
+								<br> <label for="time"><fmt:message key="time"
+										bundle="${ rb }" /></label><br> <input type="time"
+									class="form-control" id="time" name="time"
+									value="${group.schedule[0].time}" readonly> <label
+									for="duration"><fmt:message key="duration"
+										bundle="${ rb }" /></label><br> <input type="text"
+									class="form-control" id="duration" name="duration"
+									value="${group.schedule[0].duration}" readonly>
+
+
 								<button type="button" class="btn colorBtn" onclick="isEdit()">
 									<fmt:message key="edit" bundle="${ rb }" />
 								</button>

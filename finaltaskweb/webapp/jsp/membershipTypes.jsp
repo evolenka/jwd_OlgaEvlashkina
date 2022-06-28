@@ -52,8 +52,7 @@
 									<td>-</td>
 								</c:otherwise>
 							</c:choose>
-							<td><fmt:formatNumber value="${membershipType.price}"
-									type="currency"/></td>
+							<td><c:out value="${membershipType.price}"/></td>
 							<td>
 								<button type="submit" class="btn colorBtn" name="command"
 									value="CHOOSEMEMBERSHIP">

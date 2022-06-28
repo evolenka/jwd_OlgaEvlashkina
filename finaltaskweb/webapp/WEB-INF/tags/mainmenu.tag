@@ -67,9 +67,9 @@
 		<div class="dropdown">
 			<form>
 				<select id="language" name="language" onchange="submit()">
-					<option value="en_US" ${language == 'en' ? 'selected' : ''}>EN</option>
-					<option value="ru_RU" ${language == 'ru' ? 'selected' : ''}>RU</option>
-					<option value="be_BY" ${language == 'be' ? 'selected' : ''}>BY</option>
+					<option value="en_US" ${language == 'en_US' ? 'selected' : ''}>EN</option>
+					<option value="ru_RU" ${language == 'ru_RU' ? 'selected' : ''}>RU</option>
+					<option value="be_BY" ${language == 'be_BY' ? 'selected' : ''}>BY</option>
 				</select>
 			</form>
 		</div>

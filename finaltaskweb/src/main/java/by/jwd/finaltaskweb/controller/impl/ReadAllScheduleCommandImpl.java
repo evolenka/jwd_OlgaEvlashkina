@@ -36,6 +36,7 @@ public class ReadAllScheduleCommandImpl implements Command{
 		try {
 			schedule = ServiceFactory.getInstance().getScheduleService().allScheduleByWeekDay();
 			request.setAttribute("scheduleMonday", schedule.get(WeekDay.MONDAY));
+			logger.debug("schedule for Monday {}", schedule.get(WeekDay.MONDAY));
 			request.setAttribute("scheduleTuesday", schedule.get(WeekDay.TUESDAY));
 			request.setAttribute("scheduleWednesday", schedule.get(WeekDay.WEDNESDAY));
 			request.setAttribute("scheduleThursday", schedule.get(WeekDay.THURSDAY));

@@ -1,8 +1,10 @@
 package by.jwd.finaltaskweb.service.impl;
 
 import java.time.LocalDate;
+import java.time.format.TextStyle;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,6 +18,7 @@ import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.Schedule;
 import by.jwd.finaltaskweb.entity.Teacher;
 import by.jwd.finaltaskweb.entity.Visit;
+import by.jwd.finaltaskweb.entity.WeekDay;
 import by.jwd.finaltaskweb.service.DanceClassService;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.StudioServiceImpl;
@@ -118,22 +121,23 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 				schedule.setGroup(group);
 
 				danceClass.setSchedule(schedule);
-				
-				List <Visit> visits = factory.getVisitDao(transaction).readByDanceClass(danceClass);
-				
-				for (Visit visit:visits) {
+
+				List<Visit> visits = factory.getVisitDao(transaction).readByDanceClass(danceClass);
+
+				for (Visit visit : visits) {
 
 					Membership membership = factory.getMembershipDao(transaction)
 							.readEntityById(visit.getMembership().getId());
 					visit.setMembership(membership);
-					Client client = (Client) factory.getUserDao(transaction).readEntityById(membership.getClient().getId());
+					Client client = (Client) factory.getUserDao(transaction)
+							.readEntityById(membership.getClient().getId());
 					membership.setClient(client);
 					visit.setMembership(membership);
 					visit.setDanceClass(danceClass);
 				}
-				
+
 				danceClass.setVisits(visits);
-								
+
 				logger.debug("danceClassFinal {}", danceClass);
 			}
 
@@ -213,5 +217,78 @@ public class DanceClassServiceImpl extends StudioServiceImpl implements DanceCla
 		}
 
 		return danceClasses;
+	}
+
+	@Override
+	public boolean createClassesByDateAndGroups(LocalDate date, List<Integer> groupsId) throws ServiceException {
+		try {
+			for (Integer groupId : groupsId) {
+
+				List<Schedule> schedules = factory.getScheduleDao(transaction).readByGroup(groupId);
+
+				for (Schedule schedule : schedules) {
+					if (schedule.getWeekDay().equals(
+							WeekDay.valueOf((date.getDayOfWeek().getDisplayName(TextStyle.FULL_STANDALONE, Locale.US))
+									.toUpperCase()))) {
+						logger.debug("schedule for date {}", schedule);
+
+						DanceClass danceClass = new DanceClass();
+						danceClass.setDate(date);
+						danceClass.setSchedule(schedule);
+						logger.debug("danceClassToCreate {}", danceClass);
+						factory.getDanceClassDao(transaction).create(danceClass);
+					}
+				}
+			}
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return true;
+	}
+
+	@Override
+	public List<DanceClass> readActiveByDate(LocalDate date) throws ServiceException {
+		List<DanceClass> danceClasses = null;
+
+		try {
+			danceClasses = factory.getDanceClassDao(transaction).readActiveByDate(date);
+
+			for (DanceClass danceClass : danceClasses) {
+
+				Schedule schedule = factory.getScheduleDao(transaction)
+						.readEntityById(danceClass.getSchedule().getId());
+
+				Group group = factory.getGroupDao(transaction).readEntityById(schedule.getGroup().getId());
+
+				Teacher teacher = (Teacher) factory.getUserDao(transaction).readEntityById(group.getTeacher().getId());
+
+				group.setTeacher(teacher);
+
+				schedule.setGroup(group);
+
+				danceClass.setSchedule(schedule);
+			}
+
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		logger.debug("danceClasses {}", danceClasses);
+		return danceClasses;
+	}
+
+	@Override
+	public boolean changeForNoActive(Integer danceClassId) throws ServiceException {
+		boolean res = false;
+		try {
+			if (factory.getDanceClassDao(transaction).changeForNoActive(danceClassId)) {
+				res = true;
+			}
+			transaction.close();
+		} catch (DaoException e) {
+			throw new ServiceException();
+		}
+		return res;
 	}
 }

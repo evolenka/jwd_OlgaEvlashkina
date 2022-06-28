@@ -22,42 +22,59 @@
 <link rel="stylesheet" href="<c:out value="${css}"/>">
 <c:url value="img/favicon.ico" var="icon" />
 <link rel="icon" href="<c:out value="${icon}"/>">
-
 </head>
 <body>
 	<div class="wrapper">
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class=row>
-				<div class="col-lg-2">
-					<u:clientmenu />
-				</div>
-				<div class="col-lg-10">
+				<div class="col-lg-12">
 					<h1 class="subtitle">
-						<fmt:message key="clientMain.enrollment" bundle="${ rb }" />
+						<fmt:message key="membershipStatistics" bundle="${ rb }" />
 					</h1>
-					<div class="col-lg-4">
-						<h5>
-							<fmt:message key="enrollment.firstStep" bundle="${ rb }" />
-						</h5>
-						<form method="post" action="action">
-							<c:set var="currentdate">
-								<ctg:currentdate />
-							</c:set>
-							<input type="date" name="enrollmentDate"
-								value=${not empty enrollmentDate ? enrollmentDate : currentdate}
-								required> <br>
-							<button type="submit" class="btn colorBtn" name="command"
-								value="READGROUPFORENROLLMENTBYDATE">
-								<fmt:message key="next" bundle="${ rb }" />
-							</button>
-						</form>
-					</div>
-					<p>
-						<c:out value="${errorNoSession}" />
-					</p>
 				</div>
+				<div class="col-lg-2">
+					<u:adminmenu />
+				</div>
+				<div class="col-lg-6">
+					<h5>
+						<fmt:message key="myVisits.choosePeriod" bundle="${ rb }" />
+					</h5>
+					<form method="post" action="action">
+						<c:set var="currentdate">
+							<ctg:currentdate />
+						</c:set>
+						<input type="date" name="startDate"
+							value=${not empty startDate ? startDate : currentdate}> <input
+							type="date" name="endDate"
+							value=${not empty endDate ? endDate : currentdate}> <br>
+						<button type="submit" class="btn colorBtn" name="command"
+							value="MEMBERSHIPSTATICSFORPERIOD">
+							<fmt:message key="choose" bundle="${ rb }" />
+						</button>
+					</form>
+				
+					<c:if test="${not empty quantity}">
+						<div class="table-responsive">
+							<table>
+								<tr>
+									<th><fmt:message key="membershipCount" bundle="${ rb }" /></th>
+									<th><fmt:message key="sum" bundle="${ rb }" /></th>
+								</tr>
+								<tbody>
+									<tr>
+										<td><c:out value="${quantity}" /></td>
+										<td><c:out value="${sum}" /></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</c:if>
+				
 			</div>
+			<p>
+				<c:out value="${errorNoSession}" />
+			</p>
 		</div>
 		<u:footer />
 	</div>

@@ -1,6 +1,7 @@
-
 package by.jwd.finaltaskweb.controller.impl;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,20 +13,21 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
-import by.jwd.finaltaskweb.entity.Visit;
+import by.jwd.finaltaskweb.entity.Group;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * CancelVisitCommandImpl implements command to cancel planned visit by client
- * in his private account
+ * ReadGroupByDateCommandImpl implements command for viewing all groups filtered
+ * by chosen date on the enrollment page
  * 
  * @author Evlashkina
  *
  */
-public class CancelVisitCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(CancelVisitCommandImpl.class);
+public class ReadGroupForEnrollmentByDateCommandImpl implements Command {
+
+	private static Logger logger = LogManager.getLogger(ReadGroupForEnrollmentByDateCommandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -54,28 +56,32 @@ public class CancelVisitCommandImpl implements Command {
 		}
 
 		Integer clientId = (Integer) session.getAttribute("clientId");
-
+		
+		
 		try {
 			if (clientId == null) {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
-
+		
 			} else {
 
-				if (request.getParameter("plannedvisitId") != null) {
-					session.setAttribute("plannedvisitId", request.getParameter("plannedvisitId"));
+				if (request.getParameter("enrollmentDate") != null) {
+
+					session.setAttribute("enrollmentDate", request.getParameter("enrollmentDate"));
+					logger.debug("enrollment date {}", request.getParameter("enrollmentDate"));
 				}
 
-				Integer visitId = Integer.parseInt((String) session.getAttribute("plannedvisitId"));
-				logger.debug("planned visit id{}", visitId);
+				DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+				LocalDate date = LocalDate.parse((String) session.getAttribute("enrollmentDate"), formatter);
 
-				factory.getVisitService().delete(visitId);
-				List<Visit> plannedVisits = factory.getVisitService().readPlannedByClient(clientId);
-				session.setAttribute("plannedVisits", plannedVisits);
+				List<Group> groups = factory.getGroupService().readByDate(date);
+				session.setAttribute("groups", groups);
+				
+				page = ConfigurationManager.getProperty("path.page.enrollment2");
 			}
-			page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
 		} catch (ServiceException e) {
-			request.setAttribute("errorCancelMessage", manager.getProperty("errorCancelMessage"));
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			page = ConfigurationManager.getProperty("path.page.error");
 		}
 		return page;
 	}

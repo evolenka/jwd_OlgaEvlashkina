@@ -36,11 +36,13 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 
 	private static final String SQL_SELECT_BY_PERIOD = "SELECT danceclass.id, danceclass.schedule_id, danceclass.date, danceclass.is_active FROM `danceclass` WHERE danceclass.date >= ? AND danceclass.date <= ?";
 
-	private static final String SQL_INSERT_DANCECLASS = "INSERT INTO danceclass (schedule_id, date, is_active) VALUES (?, ?, ?)";
+	private static final String SQL_INSERT_DANCECLASS = "INSERT INTO danceclass (schedule_id, date, is_active) VALUES (?, ?, TRUE)";
 
-	private static final String SQL_DELETE_BY_ID = "DELETE FROM group WHERE id = ?";
+	private static final String SQL_DELETE_BY_ID = "DELETE FROM danceclass WHERE id = ?";
 
-	private static final String SQL_UPDATE_DANCECLASS = "UPDATE group SET schedule_id = ?, date = ? is_active = ? WHERE id = ?";
+	private static final String SQL_UPDATE_DANCECLASS = "UPDATE danceclass SET schedule_id = ?, date = ? is_active = ? WHERE id = ?";
+
+	private static final String SQL_UPDATE_IS_ACTIVE = "UPDATE danceclass SET  is_active = FALSE WHERE id = ?";
 
 	@Override
 	public List<DanceClass> readAll() throws DaoException {
@@ -231,7 +233,7 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 		List<DanceClass> danceClasses = new ArrayList<>();
 
 		PreparedStatement statement = null;
-		
+
 		try {
 			statement = connection.prepareStatement(SQL_SELECT_BY_PERIOD);
 			statement.setDate(1, Date.valueOf(startDate));
@@ -286,7 +288,6 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 			statement = connection.prepareStatement(SQL_INSERT_DANCECLASS);
 			statement.setInt(1, danceClass.getSchedule().getId());
 			statement.setDate(2, Date.valueOf(danceClass.getDate()));
-			statement.setBoolean(3, danceClass.isActive());
 
 			statement.executeUpdate();
 			logger.debug("dance class has been created");
@@ -321,4 +322,27 @@ public class DanceClassDaoImpl extends StudioDaoImpl implements DanceClassDao {
 		}
 		return true;
 	}
+
+	@Override
+	public boolean changeForNoActive(Integer danceClassId) throws DaoException {
+		PreparedStatement statement = null;
+
+		try {
+
+			statement = connection.prepareStatement(SQL_UPDATE_IS_ACTIVE);
+			statement.setInt(1, danceClassId);
+
+			statement.executeUpdate();
+			close(statement);
+			logger.debug("dance class has been updated for no active");
+
+		} catch (SQLException e) {
+			throw new DaoException();
+
+		} finally {
+			close(statement);
+		}
+		return true;
+	}
+
 }

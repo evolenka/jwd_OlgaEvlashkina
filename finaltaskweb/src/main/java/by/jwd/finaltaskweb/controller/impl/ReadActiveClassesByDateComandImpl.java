@@ -1,6 +1,6 @@
-
 package by.jwd.finaltaskweb.controller.impl;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,20 +12,21 @@ import org.apache.logging.log4j.Logger;
 import by.jwd.finaltaskweb.controller.Command;
 import by.jwd.finaltaskweb.controller.ConfigurationManager;
 import by.jwd.finaltaskweb.controller.MessageManager;
-import by.jwd.finaltaskweb.entity.Visit;
+import by.jwd.finaltaskweb.entity.DanceClass;
 import by.jwd.finaltaskweb.service.ServiceException;
 import by.jwd.finaltaskweb.service.ServiceFactory;
 
 /**
- * CancelVisitCommandImpl implements command to cancel planned visit by client
- * in his private account
+ * ReadActiveClassesByDateComandImpl implements command for selecting by admin
+ * all active danceClasses by date *
  * 
  * @author Evlashkina
  *
  */
-public class CancelVisitCommandImpl implements Command {
 
-	private static Logger logger = LogManager.getLogger(CancelVisitCommandImpl.class);
+public class ReadActiveClassesByDateComandImpl implements Command {
+
+	private static Logger logger = LogManager.getLogger(ReadActiveClassesByDateComandImpl.class);
 
 	private ServiceFactory factory = ServiceFactory.getInstance();
 
@@ -33,8 +34,10 @@ public class CancelVisitCommandImpl implements Command {
 	public String execute(HttpServletRequest request) {
 
 		String page = null;
+
 		HttpSession session = request.getSession(true);
 		String language = session.getAttribute("language").toString();
+
 		logger.debug("language {}", language);
 
 		MessageManager manager;
@@ -53,29 +56,33 @@ public class CancelVisitCommandImpl implements Command {
 			manager = MessageManager.EN;
 		}
 
-		Integer clientId = (Integer) session.getAttribute("clientId");
+		Integer adminId = (Integer) session.getAttribute("adminId");
 
 		try {
-			if (clientId == null) {
+			if (adminId == null) {
 				request.setAttribute("errorNoSession", manager.getProperty("errorNoSession"));
 				logger.debug("session timed out");
-
 			} else {
 
-				if (request.getParameter("plannedvisitId") != null) {
-					session.setAttribute("plannedvisitId", request.getParameter("plannedvisitId"));
+				if (request.getParameter("classDate") != null) {
+					session.setAttribute("classDate", request.getParameter("classDate"));
 				}
 
-				Integer visitId = Integer.parseInt((String) session.getAttribute("plannedvisitId"));
-				logger.debug("planned visit id{}", visitId);
+				LocalDate date = LocalDate.parse((String) session.getAttribute("classDate"));
 
-				factory.getVisitService().delete(visitId);
-				List<Visit> plannedVisits = factory.getVisitService().readPlannedByClient(clientId);
-				session.setAttribute("plannedVisits", plannedVisits);
+				List<DanceClass> danceClasses = factory.getDanceClassService().readActiveByDate(date);
+
+				if (!danceClasses.isEmpty()) {
+					request.setAttribute("danceClasses", danceClasses);
+				} else {
+					request.setAttribute("noClasses", manager.getProperty("noClasses"));
+				}
 			}
-			page = ConfigurationManager.getProperty("path.page.myPlannedVisits");
+			page = ConfigurationManager.getProperty("path.page.danceClasses");
 		} catch (ServiceException e) {
-			request.setAttribute("errorCancelMessage", manager.getProperty("errorCancelMessage"));
+			request.setAttribute("errorMessage", manager.getProperty("errorMessage"));
+			logger.debug("error");
+			page = ConfigurationManager.getProperty("path.page.error");
 		}
 		return page;
 	}

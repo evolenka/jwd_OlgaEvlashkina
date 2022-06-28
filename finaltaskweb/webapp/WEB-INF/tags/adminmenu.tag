@@ -6,7 +6,12 @@
 	scope="session" />
 <fmt:setLocale value="${language}" />
 <fmt:setBundle basename="pagecontent" var="rb" />
-<c:url value="enrollment1.jsp" var="enrollment1" />
+<c:url value="createClass.jsp" var="createClass" />
+<c:url value="visitStatisticsForAdmin.jsp" var="visitStatistics" />
+<c:url value="membershipStatistics.jsp" var="membershipStatistics" />
+<c:url value="changePassword.jsp" var="changePass" />
+<c:url value="danceClasses.jsp" var="danceClasses" />
+
 <script
 	src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 <script
@@ -16,72 +21,50 @@
 
 
 <form method="post" action="action">
-		<ul class="navbar-nav" style = "margin-left:10px">
-		
-			<li class="nav-item">
-				<button type="submit" class="btn clientMenuBtn btn-light"
-					name="command" value="READALLCLIENT">
-					<fmt:message key="clients" bundle="${ rb }" />
-				</button>
-			</li>
-			<li class="nav-item">
-				<button type="submit" class="btn clientMenuBtn btn-light"
-					name="command" value="READALLTEACHERBYADMIN">
-					<fmt:message key="teachers" bundle="${ rb }" />
-				</button>
-			</li>
-			<li class="nav-item">
-				<button type="submit" class="btn clientMenuBtn btn-light"
-					name="command" value="READALLGROUP">
-					<fmt:message key="groups" bundle="${ rb }" />
-				</button>
-			</li>
-			<li class="nav-item" style="margin-bottom: 30px"><a
-				class="btn clientMenuBtn btn-light"
-				href='<c:out value="${myMemberships}"/>'><fmt:message
-						key="clientMain.mymemberships" bundle="${ rb }" /><br> </a></li>
-			<li class="nav-item"><a class="btn clientMenuBtn btn-light"
-				href='<c:out value="${updateClient}"/>'><fmt:message
-						key="clientMain.updateClient" bundle="${ rb }" /> </a></li>
-			<li class="nav-item"><a class="btn clientMenuBtn btn-light"
-				href='<c:out value="${changePass}"/>'><fmt:message
-						key="clientMain.changePassword" bundle="${ rb }" /> </a></li>
-			<li class="nav-item">
-				<button type="submit" class="btn clientMenuBtn btn-light"
-					name="command" value="LOGOUT">
-					<fmt:message key="logout" bundle="${ rb }" />
-				</button>
-			</li>
-		</ul>
-	</form>
-">
-					<fmt:message key="clientMain.buymembership" bundle="${ rb }" />
-				</button>
-			</li>
-			<li class="nav-item">
-				<button type="submit" class="btn clientMenuBtn btn-light"
-					name="command" value="PLANNEDVISITS">
-					<fmt:message key="clientMain.plannedclasses" bundle="${ rb }" />
-				</button>
-			</li>
-			<li class="nav-item"><a class="btn clientMenuBtn btn-light"
-				href='<c:out value="${myVisits}"/>'><fmt:message
-						key="clientMain.myvisits" bundle="${ rb }" /> </a></li>
-			<li class="nav-item" style="margin-bottom: 30px"><a
-				class="btn clientMenuBtn btn-light"
-				href='<c:out value="${myMemberships}"/>'><fmt:message
-						key="clientMain.mymemberships" bundle="${ rb }" /><br> </a></li>
-			<li class="nav-item"><a class="btn clientMenuBtn btn-light"
-				href='<c:out value="${updateClient}"/>'><fmt:message
-						key="clientMain.updateClient" bundle="${ rb }" /> </a></li>
-			<li class="nav-item"><a class="btn clientMenuBtn btn-light"
-				href='<c:out value="${changePass}"/>'><fmt:message
-						key="clientMain.changePassword" bundle="${ rb }" /> </a></li>
-			<li class="nav-item">
-				<button type="submit" class="btn clientMenuBtn btn-light"
-					name="command" value="LOGOUT">
-					<fmt:message key="logout" bundle="${ rb }" />
-				</button>
-			</li>
-		</ul>
-	</form>
+	<ul class="navbar-nav" style="margin-left: 10px">
+
+		<li class="nav-item">
+			<button type="submit" class="btn clientMenuBtn btn-light"
+				name="command" value="READALLCLIENT">
+				<fmt:message key="clients" bundle="${ rb }" />
+			</button>
+		</li>
+		<li class="nav-item">
+			<button type="submit" class="btn clientMenuBtn btn-light"
+				name="command" value="READALLTEACHERBYADMIN">
+				<fmt:message key="teachers" bundle="${ rb }" />
+			</button>
+		</li>
+		<li class="nav-item">
+			<button type="submit" class="btn clientMenuBtn btn-light"
+				name="command" value="READALLGROUP">
+				<fmt:message key="groups" bundle="${ rb }" />
+			</button>
+		</li>
+		<li class="nav-item"><a class="btn clientMenuBtn btn-light"
+			href='<c:out value="${createClass}"/>'><fmt:message
+					key="openForEnrollment" bundle="${ rb }" /><br> </a></li>
+
+		<li class="nav-item"><a class="btn clientMenuBtn btn-light"
+			href='<c:out value="${danceClasses}"/>'><fmt:message
+					key="closeForEnrollment" bundle="${ rb }" /><br> </a></li>
+
+		<li class="nav-item"><a class="btn clientMenuBtn btn-light"
+			href='<c:out value="${visitStatistics}"/>'><fmt:message
+					key="teacherMain.visitsForPeriod" bundle="${ rb }" /> </a></li>
+
+		<li class="nav-item"><a class="btn clientMenuBtn btn-light"
+			href='<c:out value="${membershipStatistics}"/>'><fmt:message
+					key="membershipStatistics" bundle="${ rb }" /> </a></li>
+
+		<li class="nav-item"><a class="btn clientMenuBtn btn-light"
+			href='<c:out value="${changePass}"/>'><fmt:message
+					key="clientMain.changePassword" bundle="${ rb }" /> </a></li>
+		<li class="nav-item">
+			<button type="submit" class="btn clientMenuBtn btn-light"
+				name="command" value="LOGOUT">
+				<fmt:message key="logout" bundle="${ rb }" />
+			</button>
+		</li>
+	</ul>
+</form>

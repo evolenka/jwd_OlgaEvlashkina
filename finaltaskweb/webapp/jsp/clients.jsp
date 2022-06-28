@@ -47,13 +47,15 @@
 		<u:mainmenu />
 		<div class="content conteiner-fluid">
 			<div class=row>
+				<div class="col-lg-12">
+					<h1 class="subtitle">
+						<fmt:message key="clients" bundle="${ rb }" />
+					</h1>
+				</div>
 				<div class="col-lg-2">
 					<u:adminmenu />
 				</div>
 				<div class="col-lg-10">
-					<h1 class="subtitle" style="margin-bottom: 50px">
-						<fmt:message key="clients" bundle="${ rb }" />
-					</h1>
 					<c:if test="${not empty clients}">
 						<a class="btn colorBtn" href='<c:out value="${registration}"/>'>
 							<fmt:message key="addClient" bundle="${ rb }" />
@@ -109,7 +111,7 @@
 							<ul class="pagination">
 								<c:forEach var="index" begin="1" end="${pageQuantity}">
 									<c:choose>
-										<c:when test = "${index == currentPage}">
+										<c:when test="${index == currentPage}">
 											<li class="page-item active"><input class="page-link"
 												type="submit" value="${index}" name="currentPage"></li>
 										</c:when>

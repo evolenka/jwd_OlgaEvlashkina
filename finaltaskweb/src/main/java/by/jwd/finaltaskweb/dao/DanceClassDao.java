@@ -18,4 +18,6 @@ public interface DanceClassDao extends StudioDao <Integer, DanceClass>{
 	public DanceClass readByDateAndSchedule(LocalDate date, Schedule schedule) throws DaoException;//select dance class by date and group (see DanceClassService)
 
 	public List <DanceClass> readByPeriod (LocalDate startDate, LocalDate endDate) throws DaoException;//select dance classes for the period (see VisitService) 
+	
+	public boolean changeForNoActive (Integer danceClassId) throws DaoException;
 }

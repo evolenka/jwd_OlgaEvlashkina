@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Time;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,13 +29,13 @@ public class ScheduleDaoImpl extends StudioDaoImpl implements ScheduleDao {
 
 	private static final String SQL_SELECT_BY_GROUP = "SELECT schedule.id, schedule.weekday, schedule.time, schedule.duration FROM `schedule` WHERE schedule.group_id = ?";
 
-	private static final String SQL_SELECT_BY_WEEKDAY = "SELECT schedule.id, schedule.time, schedule.duration, schedule.group_id FROM `schedule` WHERE schedule.weekday = ?";
+	private static final String SQL_SELECT_BY_WEEKDAY = "SELECT schedule.id, schedule.time, schedule.duration, schedule.group_id FROM `schedule` WHERE schedule.group_id IS NOT NULL AND schedule.weekday = ?";
 
 	private static final String SQL_INSERT_SCHEDULE = "INSERT INTO schedule (weekday, time, duration, group_id) VALUES (?, ?, ?, ?)";
 
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM schedule WHERE id = ?";
 
-	private static final String SQL_UPDATE_SCHEDULE = "UPDATE schedule SET schedule.weekday = ?, schedule.time = ?, schedule.duration =?, schedule.group_id =? WHERE id = ?";
+	private static final String SQL_UPDATE_SCHEDULE = "UPDATE schedule SET schedule.weekday = ?, schedule.time = ?, schedule.duration =?, schedule.group_id = ? WHERE id = ?";
 
 	@Override
 	public List<Schedule> readAll() throws DaoException {
@@ -234,8 +235,13 @@ public class ScheduleDaoImpl extends StudioDaoImpl implements ScheduleDao {
 			statement.setString(1, schedule.getWeekDay().toString());
 			statement.setTime(2, Time.valueOf(schedule.getTime()));
 			statement.setInt(3, schedule.getDuration());
-			statement.setInt(4, schedule.getGroup().getId());
+			if (schedule.getGroup().getId() == 0) {
+				statement.setNull(4, Types.TINYINT);
+			} else {
+				statement.setInt(4, schedule.getGroup().getId());
+			}
 			statement.setInt(5, schedule.getId());
+			logger.debug("statement {}", statement.toString());
 			statement.executeUpdate();
 
 			logger.debug("schedule has been updated");
