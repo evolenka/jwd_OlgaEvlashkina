@@ -1,6 +1,5 @@
 package by.jwd.finaltaskweb.dao.impl;
 
-
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,28 +22,19 @@ import by.jwd.finaltaskweb.entity.Membership;
 import by.jwd.finaltaskweb.entity.MembershipType;
 import by.jwd.finaltaskweb.entity.Type;
 
-
 public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 
 	static Logger logger = LogManager.getLogger(MembershipDaoImpl.class);
 
 	private static final String SQL_SELECT_ALL_MEMBERSHIP = "SELECT membership.id, membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership`";
 	private static final String SQL_SELECT_ALL_TYPES = "SELECT type_of_membership.id,  type_of_membership.title, type_of_membership.max_class_quantity, type_of_membership.price FROM `type_of_membership`";
-
 	private static final String SQL_SELECT_BY_ID = "SELECT membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.id = ?";
 	private static final String SQL_SELECT_TYPE_BY_ID = "SELECT title, max_class_quantity, price FROM `type_of_membership` WHERE id = ?";
 	private static final String SQL_SELECT_BY_CLIENT_AND_PERIOD = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND membership.start_date >= ? AND membership.start_date <= ?";
 	private static final String SQL_SELECT_BY_PERIOD = "SELECT membership.id, membership.client_id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.start_date >= ? AND membership.start_date <= ?";
-	//private static final String SQL_SELECT_VALID_BY_CLIENT = "SELECT membership.id, membership.start_date, membership.end_date, membership.balance_quantity, membership.type_of_membership_id FROM `membership` WHERE membership.client_id = ? AND (membership.balance_quantity > 0 OR membership.balance_quantity IS NULL) AND membership.end_date >= CURRENT_DATE()";
 	private static final String SQL_INSERT_MEMBERSHIP = "INSERT INTO `membership` (client_id, start_date, end_date, membership.balance_quantity, type_of_membership_id) VALUES (?, ?, ?, ?, ?)";
-	//private static final String SQL_INSERT_TYPE = "INSERT INTO `type_of_membership` (title, max_class_quantity, price) VALUES (?, ?, ?)";
-
 	private static final String SQL_DELETE_BY_ID = "DELETE FROM `membership` WHERE id = ?";
-	//private static final String SQL_DELETE_TYPE_BY_ID = "DELETE FROM `type_of_membership` WHERE id = ?";
-
 	private static final String SQL_UPDATE_MEMBERSHIP = "UPDATE `membership` SET client_id = ?, start_date = ?, end_date = ?, balance_quantity = ?, type_of_membership_id = ? WHERE id = ?";
-	//private static final String SQL_UPDATE_TYPE = "UPDATE `type_of_membership` SET title = ?, max_class_quantity = ?, price = ? WHERE id = ?";
-
 	private static final String SQL_DECREASE_BALANCE_QUANTITY = "UPDATE membership SET membership.balance_quantity = membership.balance_quantity-1 WHERE membership.id = ?";
 	private static final String SQL_INCREASE_BALANCE_QUANTITY = "UPDATE membership SET membership.balance_quantity = membership.balance_quantity+1 WHERE membership.id = ?";
 
@@ -111,16 +101,15 @@ public class MembershipDaoImpl extends StudioDaoImpl implements MembershipDao {
 
 		List<Membership> memberships = new ArrayList<>();
 		CallableStatement statement = null;
-		
 
 		try {
-			
+
 			final String SQL = "{CALL validMembershipByClient (?)}";
 			statement = (CallableStatement) connection.prepareCall(SQL);
 			statement.setInt(1, clientId);
 			logger.debug("statement {}", statement);
 			statement.execute();
-			
+
 			ResultSet resultSet = statement.executeQuery();
 
 			while (resultSet.next()) {
